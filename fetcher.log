@@ -1300,3 +1300,40 @@
 [2023-04-14 01:47:38] WARNING root fetch - processPackages [localplan]: Skipping, unable to determine old version
 [2023-04-14 01:47:38] INFO root fetch - main [MainThread]: End processing [localplan] error
 [2023-04-14 01:47:38] INFO root fetch - main [MainThread]: Store serial: [17699770]
+[2023-04-14 01:52:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699770]
+[2023-04-14 01:52:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-14 01:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sal-code-generator
+[2023-04-14 01:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hdmf
+[2023-04-14 01:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coiled
+[2023-04-14 01:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iconsdk
+[2023-04-14 01:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rucio-consistency
+[2023-04-14 01:52:45] INFO root fetch - processPackages [sal-code-generator]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-14 01:52:45] INFO root fetch - processPackages [rucio-consistency]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-04-14 01:52:45] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-14 01:52:45] INFO root fetch - processPackages [hdmf]: New version: [3.5.5] Old Version: [3.5.4]
+[2023-04-14 01:52:45] INFO root fetch - processPackages [iconsdk]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-04-14 01:52:45] INFO root fetch - processPackages [rucio-consistency]: executing diffoscope
+[2023-04-14 01:52:45] INFO root fetch - processPackages [rucio-consistency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rucio-consistency-1.0.7.tar.gz tmp/rucio-consistency-1.0.9.tar.gz --markdown 20230414/r/rucio-consistency/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 01:52:45] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-14 01:52:45] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230414/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-14 01:52:45] INFO root fetch - processPackages [sal-code-generator]: executing diffoscope
+[2023-04-14 01:52:45] INFO root fetch - processPackages [sal-code-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sal-code-generator-0.0.3.tar.gz tmp/sal-code-generator-0.0.5.tar.gz --markdown 20230414/s/sal-code-generator/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 01:52:45] INFO root fetch - processPackages [iconsdk]: Downloading https://files.pythonhosted.org/packages/c4/0d/bdde2322a9310856b0fd2e43604b194a5c772c707a116daeae2042d4d575/iconsdk-2.4.1.tar.gz
+[2023-04-14 01:52:45] INFO root fetch - processPackages [hdmf]: Downloading https://files.pythonhosted.org/packages/47/05/516406c233272f05c13d12f80e73d7f241ed0efa27b68f14c8482c148725/hdmf-3.5.5.tar.gz
+[2023-04-14 01:52:45] INFO root fetch - processPackages [hdmf]: executing diffoscope
+[2023-04-14 01:52:45] INFO root fetch - processPackages [hdmf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdmf-3.5.4.tar.gz tmp/hdmf-3.5.5.tar.gz --markdown 20230414/h/hdmf/3.5.4-3.5.5/diff.md --exclude *.pyd
+[2023-04-14 01:52:45] INFO root fetch - processPackages [iconsdk]: executing diffoscope
+[2023-04-14 01:52:45] INFO root fetch - processPackages [iconsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iconsdk-2.4.0.tar.gz tmp/iconsdk-2.4.1.tar.gz --markdown 20230414/i/iconsdk/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-04-14 01:52:47] INFO root fetch - processPackages [sal-code-generator]: Start processing: compel
+[2023-04-14 01:52:47] INFO root fetch - main [MainThread]: End processing [sal-code-generator]: success
+[2023-04-14 01:52:47] INFO root fetch - processPackages [compel]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-14 01:52:47] INFO root fetch - main [MainThread]: End processing [rucio-consistency]: success
+[2023-04-14 01:52:47] INFO root fetch - main [MainThread]: End processing [iconsdk]: success
+[2023-04-14 01:52:47] INFO root fetch - processPackages [compel]: Downloading https://files.pythonhosted.org/packages/b1/2e/c23c840e8409b7ff2668008b37960c673ad7cbb57fda8afc7a376d94cf2a/compel-1.1.0.tar.gz
+[2023-04-14 01:52:47] INFO root fetch - processPackages [compel]: Downloading https://files.pythonhosted.org/packages/81/e1/fb6204e1614529fb877c1f65c58dd030936cffb4c2ebedcdd9047c141af3/compel-1.1.1.tar.gz
+[2023-04-14 01:52:47] INFO root fetch - processPackages [compel]: executing diffoscope
+[2023-04-14 01:52:47] INFO root fetch - processPackages [compel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compel-1.1.0.tar.gz tmp/compel-1.1.1.tar.gz --markdown 20230414/c/compel/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-14 01:52:47] INFO root fetch - main [MainThread]: End processing [hdmf]: success
+[2023-04-14 01:52:48] INFO root fetch - main [MainThread]: End processing [compel]: success
+[2023-04-14 01:52:49] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-14 01:52:49] INFO root fetch - main [MainThread]: Store serial: [17699789]
