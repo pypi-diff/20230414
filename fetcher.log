@@ -1113,3 +1113,72 @@
 [2023-04-14 01:25:46] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-04-14 01:26:56] INFO root fetch - main [MainThread]: End processing [pyvelox]: success
 [2023-04-14 01:26:56] INFO root fetch - main [MainThread]: Store serial: [17699654]
+[2023-04-14 01:32:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699654]
+[2023-04-14 01:32:05] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 01:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devops-my-pckg-test-123
+[2023-04-14 01:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ultralytics
+[2023-04-14 01:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytmv1
+[2023-04-14 01:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: manim-ml
+[2023-04-14 01:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: battetl
+[2023-04-14 01:32:05] WARNING root fetch - processPackages [devops-my-pckg-test-123]: Skipping, unable to determine old version
+[2023-04-14 01:32:05] INFO root fetch - processPackages [devops-my-pckg-test-123]: Start processing: TerraVide
+[2023-04-14 01:32:05] INFO root fetch - processPackages [pytmv1]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-14 01:32:05] INFO root fetch - main [MainThread]: End processing [devops-my-pckg-test-123] error
+[2023-04-14 01:32:05] INFO root fetch - processPackages [manim-ml]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 01:32:05] INFO root fetch - processPackages [battetl]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 01:32:05] INFO root fetch - processPackages [ultralytics]: New version: [8.0.9] Old Version: [8.0.8]
+[2023-04-14 01:32:05] INFO root fetch - processPackages [TerraVide]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 01:32:05] INFO root fetch - processPackages [battetl]: Downloading https://files.pythonhosted.org/packages/76/e4/4b0f5484746f2d1537939cd859844fa6cc40e5badbc67b4b07d449a58610/battetl-1.0.0.tar.gz
+[2023-04-14 01:32:05] INFO root fetch - processPackages [manim-ml]: Downloading https://files.pythonhosted.org/packages/df/8b/35fe36f2162afa1db7fc2ff54355ca3ade6f8a9d2000df62ca4bdcf3fb6c/manim-ml-0.0.8.tar.gz
+[2023-04-14 01:32:05] INFO root fetch - processPackages [TerraVide]: Downloading https://files.pythonhosted.org/packages/62/f8/a5e3222da1daa87a3ad85ddb21711049b88597653100de001dacd5206999/TerraVide-0.0.3.tar.gz
+[2023-04-14 01:32:05] INFO root fetch - processPackages [pytmv1]: Downloading https://files.pythonhosted.org/packages/b2/a9/b224fde866ec5e17ffdcb6fc803812d4483fb62ea41d910e869642b62903/pytmv1-0.2.0.tar.gz
+[2023-04-14 01:32:05] INFO root fetch - processPackages [TerraVide]: executing diffoscope
+[2023-04-14 01:32:05] INFO root fetch - processPackages [TerraVide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TerraVide-0.0.2.tar.gz tmp/TerraVide-0.0.3.tar.gz --markdown 20230414/T/TerraVide/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 01:32:05] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-04-14 01:32:05] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.8.tar.gz tmp/ultralytics-8.0.9.tar.gz --markdown 20230414/u/ultralytics/8.0.8-8.0.9/diff.md --exclude *.pyd
+[2023-04-14 01:32:05] INFO root fetch - processPackages [battetl]: Downloading https://files.pythonhosted.org/packages/6d/3c/49a1eca9f094919a3037e87da33c53f1438958a831b625c3144f9246618b/battetl-1.0.1.tar.gz
+[2023-04-14 01:32:05] INFO root fetch - processPackages [pytmv1]: Downloading https://files.pythonhosted.org/packages/fe/6d/3d61f50447153c692e38fea56d2693fd48ab35f56fc9a8caf96319883127/pytmv1-0.3.0.tar.gz
+[2023-04-14 01:32:05] INFO root fetch - processPackages [battetl]: executing diffoscope
+[2023-04-14 01:32:05] INFO root fetch - processPackages [battetl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/battetl-1.0.0.tar.gz tmp/battetl-1.0.1.tar.gz --markdown 20230414/b/battetl/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 01:32:05] INFO root fetch - processPackages [pytmv1]: executing diffoscope
+[2023-04-14 01:32:05] INFO root fetch - processPackages [pytmv1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytmv1-0.2.0.tar.gz tmp/pytmv1-0.3.0.tar.gz --markdown 20230414/p/pytmv1/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 01:32:06] INFO root fetch - processPackages [manim-ml]: Downloading https://files.pythonhosted.org/packages/6b/4c/d0c77e657c3a75c9f4dd1bfe345bf4aae5738daa170d90eb6959fc4316c7/manim-ml-0.0.9.tar.gz
+[2023-04-14 01:32:06] INFO root fetch - processPackages [TerraVide]: Start processing: plone.app.caching
+[2023-04-14 01:32:06] INFO root fetch - main [MainThread]: End processing [TerraVide]: success
+[2023-04-14 01:32:06] INFO root fetch - processPackages [plone.app.caching]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-14 01:32:06] INFO root fetch - processPackages [manim-ml]: executing diffoscope
+[2023-04-14 01:32:06] INFO root fetch - processPackages [manim-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manim-ml-0.0.8.tar.gz tmp/manim-ml-0.0.9.tar.gz --markdown 20230414/m/manim-ml/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 01:32:06] INFO root fetch - processPackages [plone.app.caching]: Downloading https://files.pythonhosted.org/packages/57/ff/0a876677a72644ae2fc496da757fdaa6f70c7842db18de3794e82f268109/plone.app.caching-3.0.4.tar.gz
+[2023-04-14 01:32:06] INFO root fetch - processPackages [battetl]: Start processing: xlsmloader
+[2023-04-14 01:32:06] INFO root fetch - main [MainThread]: End processing [battetl]: success
+[2023-04-14 01:32:06] INFO root fetch - processPackages [xlsmloader]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 01:32:07] INFO root fetch - processPackages [plone.app.caching]: Downloading https://files.pythonhosted.org/packages/9f/28/3745769ca9cac77e741732209fdbd6c53bd0878bb3011ad6090d7ff8e6cb/plone.app.caching-3.0.5.tar.gz
+[2023-04-14 01:32:07] INFO root fetch - processPackages [pytmv1]: Start processing: elifecleaner
+[2023-04-14 01:32:07] INFO root fetch - main [MainThread]: End processing [pytmv1]: success
+[2023-04-14 01:32:07] INFO root fetch - processPackages [xlsmloader]: Downloading https://files.pythonhosted.org/packages/31/47/05d8d1c2ae2ab8243d79b1b123fb44912f4e5cb581a208160fdf32c664a0/xlsmloader-1.0.1.tar.gz
+[2023-04-14 01:32:07] INFO root fetch - processPackages [elifecleaner]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 01:32:07] INFO root fetch - processPackages [plone.app.caching]: executing diffoscope
+[2023-04-14 01:32:07] INFO root fetch - processPackages [plone.app.caching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.caching-3.0.4.tar.gz tmp/plone.app.caching-3.0.5.tar.gz --markdown 20230414/p/plone.app.caching/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-14 01:32:07] INFO root fetch - processPackages [elifecleaner]: Downloading https://files.pythonhosted.org/packages/d8/0e/4046c55d79880da671663d71e149bd71481ded59f3d48fcdbcb00ba806d5/elifecleaner-0.9.0.tar.gz
+[2023-04-14 01:32:07] INFO root fetch - processPackages [xlsmloader]: Downloading https://files.pythonhosted.org/packages/af/e2/762896a993de7eaa85d2792e9504a5f2321e8320ecc181cf41c08c583ec4/xlsmloader-1.0.2.tar.gz
+[2023-04-14 01:32:07] INFO root fetch - processPackages [ultralytics]: Start processing: micromechanics-indentationGUI
+[2023-04-14 01:32:07] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2023-04-14 01:32:07] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 01:32:07] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-14 01:32:07] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230414/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 01:32:07] INFO root fetch - processPackages [xlsmloader]: executing diffoscope
+[2023-04-14 01:32:07] INFO root fetch - processPackages [xlsmloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xlsmloader-1.0.1.tar.gz tmp/xlsmloader-1.0.2.tar.gz --markdown 20230414/x/xlsmloader/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 01:32:07] INFO root fetch - processPackages [manim-ml]: Start processing: weather-command
+[2023-04-14 01:32:07] INFO root fetch - main [MainThread]: End processing [manim-ml]: success
+[2023-04-14 01:32:07] INFO root fetch - processPackages [weather-command]: New version: [5.2.1] Old Version: [5.2.0]
+[2023-04-14 01:32:07] INFO root fetch - processPackages [weather-command]: executing diffoscope
+[2023-04-14 01:32:07] INFO root fetch - processPackages [weather-command]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weather_command-5.2.0.tar.gz tmp/weather_command-5.2.1.tar.gz --markdown 20230414/w/weather-command/5.2.0-5.2.1/diff.md --exclude *.pyd
+[2023-04-14 01:32:07] INFO root fetch - processPackages [elifecleaner]: Downloading https://files.pythonhosted.org/packages/ba/d9/f14856c509de287aec8a31e76808f681383e338462e051c31edcecd1527f/elifecleaner-0.9.1.tar.gz
+[2023-04-14 01:32:08] INFO root fetch - processPackages [elifecleaner]: executing diffoscope
+[2023-04-14 01:32:08] INFO root fetch - processPackages [elifecleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elifecleaner-0.9.0.tar.gz tmp/elifecleaner-0.9.1.tar.gz --markdown 20230414/e/elifecleaner/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 01:32:08] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-14 01:32:08] INFO root fetch - main [MainThread]: End processing [xlsmloader]: success
+[2023-04-14 01:32:08] INFO root fetch - main [MainThread]: End processing [plone.app.caching]: success
+[2023-04-14 01:32:08] INFO root fetch - main [MainThread]: End processing [weather-command]: success
+[2023-04-14 01:32:09] INFO root fetch - main [MainThread]: End processing [elifecleaner]: success
+[2023-04-14 01:32:09] INFO root fetch - main [MainThread]: Store serial: [17699688]
