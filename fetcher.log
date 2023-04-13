@@ -331,3 +331,72 @@
 [2023-04-14 00:25:01] INFO root fetch - main [MainThread]: End processing [evals]: success
 [2023-04-14 00:25:02] INFO root fetch - main [MainThread]: End processing [evals]: success
 [2023-04-14 00:25:02] INFO root fetch - main [MainThread]: Store serial: [17699273]
+[2023-04-14 00:30:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699273]
+[2023-04-14 00:30:09] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 00:30:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yotpy
+[2023-04-14 00:30:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neon-utils
+[2023-04-14 00:30:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: djangoldp-needle
+[2023-04-14 00:30:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qsimcirq
+[2023-04-14 00:30:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cbmc.py
+[2023-04-14 00:30:09] WARNING root fetch - processPackages [cbmc.py]: Skipping, unable to determine old version
+[2023-04-14 00:30:09] INFO root fetch - processPackages [cbmc.py]: Start processing: folderify
+[2023-04-14 00:30:09] INFO root fetch - processPackages [qsimcirq]: New version: [0.9.5] Old Version: [0.9.2]
+[2023-04-14 00:30:09] INFO root fetch - main [MainThread]: End processing [cbmc.py] error
+[2023-04-14 00:30:09] INFO root fetch - processPackages [yotpy]: New version: [0.0.71] Old Version: [0.0.7]
+[2023-04-14 00:30:09] INFO root fetch - processPackages [neon-utils]: New version: [1.5.0a1] Old Version: [1.4.0]
+[2023-04-14 00:30:09] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 00:30:09] INFO root fetch - processPackages [folderify]: New version: [2.4.2] Old Version: [2.4.1]
+[2023-04-14 00:30:09] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-14 00:30:09] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230414/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 00:30:09] INFO root fetch - processPackages [yotpy]: executing diffoscope
+[2023-04-14 00:30:09] INFO root fetch - processPackages [yotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yotpy-0.0.7.tar.gz tmp/yotpy-0.0.71.tar.gz --markdown 20230414/y/yotpy/0.0.7-0.0.71/diff.md --exclude *.pyd
+[2023-04-14 00:30:09] INFO root fetch - processPackages [qsimcirq]: Downloading https://files.pythonhosted.org/packages/f1/b7/f5209414316aced8c706f1efc6eefa355790eff784c5054f218aa525167a/qsimcirq-0.9.2.tar.gz
+[2023-04-14 00:30:09] INFO root fetch - processPackages [folderify]: Downloading https://files.pythonhosted.org/packages/ff/72/ded686a8eeea54b0ffb0789f050597211e37d4e346b20364d634911a9ef4/folderify-2.4.2.tar.gz
+[2023-04-14 00:30:09] INFO root fetch - processPackages [neon-utils]: Downloading https://files.pythonhosted.org/packages/c1/b2/c1da2f9724d2a57e4eb98d57a7f8493da7b68e77589f2ac9e9af83f9f8ac/neon_utils-1.5.0a1-py3-none-any.whl
+[2023-04-14 00:30:10] INFO root fetch - processPackages [neon-utils]: executing diffoscope
+[2023-04-14 00:30:10] INFO root fetch - processPackages [neon-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_utils-1.4.0-py3-none-any.whl.zip tmp/neon_utils-1.5.0a1-py3-none-any.whl.zip --markdown 20230414/n/neon-utils/1.4.0-1.5.0a1/diff.md --exclude *.pyd
+[2023-04-14 00:30:10] INFO root fetch - processPackages [qsimcirq]: Downloading https://files.pythonhosted.org/packages/a0/f3/0e010198a986bd5508c10baeb7ce387a47ad939d31caf46ccdaa8038b8ab/qsimcirq-0.9.5.tar.gz
+[2023-04-14 00:30:10] INFO root fetch - processPackages [qsimcirq]: executing diffoscope
+[2023-04-14 00:30:10] INFO root fetch - processPackages [qsimcirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qsimcirq-0.9.2.tar.gz tmp/qsimcirq-0.9.5.tar.gz --markdown 20230414/q/qsimcirq/0.9.2-0.9.5/diff.md --exclude *.pyd
+[2023-04-14 00:30:10] INFO root fetch - processPackages [djangoldp-needle]: Start processing: tensorflow-transform
+[2023-04-14 00:30:10] INFO root fetch - main [MainThread]: End processing [djangoldp-needle]: success
+[2023-04-14 00:30:10] INFO root fetch - processPackages [yotpy]: Start processing: pipen
+[2023-04-14 00:30:10] INFO root fetch - main [MainThread]: End processing [yotpy]: success
+[2023-04-14 00:30:10] INFO root fetch - processPackages [folderify]: executing diffoscope
+[2023-04-14 00:30:10] INFO root fetch - processPackages [folderify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/folderify-2.4.1.tar.gz tmp/folderify-2.4.2.tar.gz --markdown 20230414/f/folderify/2.4.1-2.4.2/diff.md --exclude *.pyd
+[2023-04-14 00:30:10] INFO root fetch - processPackages [tensorflow-transform]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-14 00:30:10] INFO root fetch - processPackages [pipen]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 00:30:11] INFO root fetch - processPackages [tensorflow-transform]: Downloading https://files.pythonhosted.org/packages/89/26/09576a1d95785e2c68cc49ad9d7f06a8c6a0933cf4b003e6d36c58e30fca/tensorflow_transform-1.8.0-py3-none-any.whl
+[2023-04-14 00:30:11] INFO root fetch - processPackages [pipen]: Downloading https://files.pythonhosted.org/packages/6e/0e/a3e19485eca66a771ee29553d845c11fa8914a7934301c42681ec086b705/pipen-0.9.0.tar.gz
+[2023-04-14 00:30:11] INFO root fetch - processPackages [pipen]: executing diffoscope
+[2023-04-14 00:30:11] INFO root fetch - processPackages [pipen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen-0.8.0.tar.gz tmp/pipen-0.9.0.tar.gz --markdown 20230414/p/pipen/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 00:30:11] INFO root fetch - processPackages [neon-utils]: Start processing: cmlibs.utils
+[2023-04-14 00:30:11] INFO root fetch - main [MainThread]: End processing [neon-utils]: success
+[2023-04-14 00:30:11] WARNING root fetch - processPackages [cmlibs.utils]: Skipping, unable to determine old version
+[2023-04-14 00:30:11] INFO root fetch - processPackages [cmlibs.utils]: Start processing: certora-cli-alpha-master
+[2023-04-14 00:30:11] INFO root fetch - main [MainThread]: End processing [cmlibs.utils] error
+[2023-04-14 00:30:11] INFO root fetch - processPackages [tensorflow-transform]: Downloading https://files.pythonhosted.org/packages/5a/4b/11635bf07606a0e482fd6f3046b6d17d3faab9c50be9ed357855ec72f589/tensorflow_transform-1.9.0-py3-none-any.whl
+[2023-04-14 00:30:11] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230413.9.5.948824] Old Version: [20230413.9.44.47373]
+[2023-04-14 00:30:11] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/ec/ba/c10afbdd268f315990bcbecf2e5c813f86b5f3ad19369e727b950ae35fad/certora-cli-alpha-master-20230413.9.44.47373.tar.gz
+[2023-04-14 00:30:11] INFO root fetch - processPackages [tensorflow-transform]: executing diffoscope
+[2023-04-14 00:30:11] INFO root fetch - processPackages [tensorflow-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_transform-1.8.0-py3-none-any.whl.zip tmp/tensorflow_transform-1.9.0-py3-none-any.whl.zip --markdown 20230414/t/tensorflow-transform/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-14 00:30:11] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38004849>=10485760
+[2023-04-14 00:30:11] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: swarmpal
+[2023-04-14 00:30:11] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-14 00:30:11] INFO root fetch - processPackages [swarmpal]: New version: [0.1.0a4] Old Version: [0.1.0]
+[2023-04-14 00:30:11] INFO root fetch - processPackages [swarmpal]: Downloading https://files.pythonhosted.org/packages/d7/86/134e8a32ad338d26d41df3f466a699038803a08808350d317da63c1dc107/swarmpal-0.1.0.tar.gz
+[2023-04-14 00:30:12] INFO root fetch - processPackages [qsimcirq]: Start processing: keypoint-moseq
+[2023-04-14 00:30:12] INFO root fetch - main [MainThread]: End processing [qsimcirq]: success
+[2023-04-14 00:30:12] INFO root fetch - processPackages [keypoint-moseq]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 00:30:12] INFO root fetch - processPackages [swarmpal]: Downloading https://files.pythonhosted.org/packages/72/16/d04d8063b8060af0d717683d5d73fb275ccd37168a5d5481470ea46755f4/swarmpal-0.1.0a4.tar.gz
+[2023-04-14 00:30:12] INFO root fetch - main [MainThread]: End processing [folderify]: success
+[2023-04-14 00:30:12] INFO root fetch - processPackages [swarmpal]: executing diffoscope
+[2023-04-14 00:30:12] INFO root fetch - processPackages [swarmpal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swarmpal-0.1.0.tar.gz tmp/swarmpal-0.1.0a4.tar.gz --markdown 20230414/s/swarmpal/0.1.0-0.1.0a4/diff.md --exclude *.pyd
+[2023-04-14 00:30:12] INFO root fetch - processPackages [keypoint-moseq]: Downloading https://files.pythonhosted.org/packages/22/28/0bd0dcf64c2e72816326825f16a7f756cdf99f8872cb211a1d81fcab643f/keypoint-moseq-0.0.3.tar.gz
+[2023-04-14 00:30:12] INFO root fetch - main [MainThread]: End processing [pipen]: success
+[2023-04-14 00:30:12] INFO root fetch - processPackages [keypoint-moseq]: executing diffoscope
+[2023-04-14 00:30:12] INFO root fetch - processPackages [keypoint-moseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keypoint-moseq-0.0.2.tar.gz tmp/keypoint-moseq-0.0.3.tar.gz --markdown 20230414/k/keypoint-moseq/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 00:30:13] INFO root fetch - main [MainThread]: End processing [tensorflow-transform]: success
+[2023-04-14 00:30:13] INFO root fetch - main [MainThread]: End processing [swarmpal]: success
+[2023-04-14 00:30:14] INFO root fetch - main [MainThread]: End processing [keypoint-moseq]: success
+[2023-04-14 00:30:14] INFO root fetch - main [MainThread]: Store serial: [17699322]
