@@ -1294,3 +1294,9 @@
 [2023-04-14 01:42:30] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
 [2023-04-14 01:42:31] INFO root fetch - main [MainThread]: End processing [phoebusgen]: success
 [2023-04-14 01:42:31] INFO root fetch - main [MainThread]: Store serial: [17699754]
+[2023-04-14 01:47:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699754]
+[2023-04-14 01:47:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-14 01:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: localplan
+[2023-04-14 01:47:38] WARNING root fetch - processPackages [localplan]: Skipping, unable to determine old version
+[2023-04-14 01:47:38] INFO root fetch - main [MainThread]: End processing [localplan] error
+[2023-04-14 01:47:38] INFO root fetch - main [MainThread]: Store serial: [17699770]
