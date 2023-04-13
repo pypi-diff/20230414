@@ -726,3 +726,144 @@
 [2023-04-14 00:56:17] INFO root fetch - main [MainThread]: End processing [python-project-structure]: success
 [2023-04-14 00:56:20] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-04-14 00:56:20] INFO root fetch - main [MainThread]: Store serial: [17699474]
+[2023-04-14 01:01:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699474]
+[2023-04-14 01:01:27] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-04-14 01:01:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plone.app.dexterity
+[2023-04-14 01:01:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torch-pitch-shift
+[2023-04-14 01:01:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datero
+[2023-04-14 01:01:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysparkler
+[2023-04-14 01:01:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yunxiao
+[2023-04-14 01:01:27] INFO root fetch - processPackages [pysparkler]: New version: [0.3.dev1681426864] Old Version: [0.3.dev1681426546]
+[2023-04-14 01:01:27] INFO root fetch - processPackages [yunxiao]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 01:01:27] INFO root fetch - processPackages [torch-pitch-shift]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-14 01:01:27] INFO root fetch - processPackages [plone.app.dexterity]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-14 01:01:27] WARNING root fetch - processPackages [datero]: Skipping, unable to determine old version
+[2023-04-14 01:01:27] INFO root fetch - processPackages [datero]: Start processing: risset
+[2023-04-14 01:01:27] INFO root fetch - main [MainThread]: End processing [datero] error
+[2023-04-14 01:01:27] INFO root fetch - processPackages [risset]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-04-14 01:01:27] INFO root fetch - processPackages [plone.app.dexterity]: Downloading https://files.pythonhosted.org/packages/32/6d/53819e1497c319be08ae031be5c864ffb27643fa30a251c39bbf0e4a6ce2/plone.app.dexterity-3.0.4.tar.gz
+[2023-04-14 01:01:27] INFO root fetch - processPackages [yunxiao]: Downloading https://files.pythonhosted.org/packages/39/59/162a3ce2066892a4d91aaefa0b83a66cbab355b52e4365a160bb658c8453/yunxiao-0.1.5.tar.gz
+[2023-04-14 01:01:27] INFO root fetch - processPackages [torch-pitch-shift]: Downloading https://files.pythonhosted.org/packages/21/3e/befbe450df93934a20574a631c03afdbe6235d4d1aeb2555e3b366d4870f/torch_pitch_shift-1.2.3.tar.gz
+[2023-04-14 01:01:27] INFO root fetch - processPackages [risset]: Downloading https://files.pythonhosted.org/packages/96/27/3cb88bd89f0d58a1a63e934029fb60e39cd7b1b631865e0f9a1a034e3584/risset-2.4.1.tar.gz
+[2023-04-14 01:01:28] INFO root fetch - processPackages [yunxiao]: Downloading https://files.pythonhosted.org/packages/84/d8/33f271f3b235de2c7587eda26631ab8860a5a4d4cfd2d521483da6b8e450/yunxiao-0.1.6.tar.gz
+[2023-04-14 01:01:28] INFO root fetch - processPackages [risset]: executing diffoscope
+[2023-04-14 01:01:28] INFO root fetch - processPackages [torch-pitch-shift]: Downloading https://files.pythonhosted.org/packages/01/13/771250fc721f387cb4dab3dc17b9167d6df1b87f7161dcff90337293fe5d/torch_pitch_shift-1.2.4.tar.gz
+[2023-04-14 01:01:28] INFO root fetch - processPackages [risset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/risset-2.4.0.tar.gz tmp/risset-2.4.1.tar.gz --markdown 20230414/r/risset/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-04-14 01:01:28] INFO root fetch - processPackages [yunxiao]: executing diffoscope
+[2023-04-14 01:01:28] INFO root fetch - processPackages [yunxiao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yunxiao-0.1.5.tar.gz tmp/yunxiao-0.1.6.tar.gz --markdown 20230414/y/yunxiao/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 01:01:28] INFO root fetch - processPackages [torch-pitch-shift]: executing diffoscope
+[2023-04-14 01:01:28] INFO root fetch - processPackages [torch-pitch-shift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_pitch_shift-1.2.3.tar.gz tmp/torch_pitch_shift-1.2.4.tar.gz --markdown 20230414/t/torch-pitch-shift/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-14 01:01:28] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/0c/47/b80afba6b3fdbe07f0d3c086c833981eed9a9a7fb5def2f83072a2923270/pysparkler-0.3.dev1681426864.tar.gz
+[2023-04-14 01:01:28] INFO root fetch - processPackages [plone.app.dexterity]: Downloading https://files.pythonhosted.org/packages/ef/47/4f8ee07bbcbb89c14d286905185c26169d99c92058c1432d9dfd535818fa/plone.app.dexterity-3.0.5.tar.gz
+[2023-04-14 01:01:28] INFO root fetch - processPackages [plone.app.dexterity]: executing diffoscope
+[2023-04-14 01:01:28] INFO root fetch - processPackages [plone.app.dexterity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.dexterity-3.0.4.tar.gz tmp/plone.app.dexterity-3.0.5.tar.gz --markdown 20230414/p/plone.app.dexterity/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-14 01:01:28] INFO root fetch - processPackages [pysparkler]: executing diffoscope
+[2023-04-14 01:01:28] INFO root fetch - processPackages [pysparkler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkler-0.3.dev1681426546-py3-none-any.whl.zip tmp/pysparkler-0.3.dev1681426864.tar.gz --markdown 20230414/p/pysparkler/0.3.dev1681426546-0.3.dev1681426864/diff.md --exclude *.pyd
+[2023-04-14 01:01:29] INFO root fetch - processPackages [risset]: Start processing: rgcosm
+[2023-04-14 01:01:29] INFO root fetch - main [MainThread]: End processing [risset]: success
+[2023-04-14 01:01:29] INFO root fetch - processPackages [rgcosm]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 01:01:29] INFO root fetch - processPackages [torch-pitch-shift]: Start processing: sage-conf
+[2023-04-14 01:01:29] INFO root fetch - main [MainThread]: End processing [torch-pitch-shift]: success
+[2023-04-14 01:01:29] INFO root fetch - processPackages [sage-conf]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-04-14 01:01:29] INFO root fetch - processPackages [pysparkler]: Start processing: sage-docbuild
+[2023-04-14 01:01:29] INFO root fetch - main [MainThread]: End processing [pysparkler]: success
+[2023-04-14 01:01:29] INFO root fetch - processPackages [sage-docbuild]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-04-14 01:01:29] INFO root fetch - processPackages [yunxiao]: Start processing: sage-setup
+[2023-04-14 01:01:29] INFO root fetch - main [MainThread]: End processing [yunxiao]: success
+[2023-04-14 01:01:29] INFO root fetch - processPackages [rgcosm]: Downloading https://files.pythonhosted.org/packages/6a/ff/dd1627638ac8ff5b1649c8730e2a770bc50631377df32d494bdf211a8ea6/rgcosm-0.0.4.tar.gz
+[2023-04-14 01:01:29] INFO root fetch - processPackages [sage-setup]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-04-14 01:01:29] INFO root fetch - processPackages [rgcosm]: executing diffoscope
+[2023-04-14 01:01:29] INFO root fetch - processPackages [rgcosm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rgcosm-0.0.3.tar.gz tmp/rgcosm-0.0.4.tar.gz --markdown 20230414/r/rgcosm/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 01:01:29] INFO root fetch - processPackages [sage-conf]: Downloading https://files.pythonhosted.org/packages/87/21/012f950f98f90bb49afff7f0aa106a1d0f3f83f7686b6c7639257300de07/sage-conf-9.8b7.tar.gz
+[2023-04-14 01:01:29] INFO root fetch - processPackages [sage-docbuild]: Downloading https://files.pythonhosted.org/packages/68/e5/530ac4d218aa81bb055436ab8553554b883e0e460c773cbd530d7442463a/sage-docbuild-9.8b7.tar.gz
+[2023-04-14 01:01:29] INFO root fetch - processPackages [sage-setup]: Downloading https://files.pythonhosted.org/packages/bb/16/bd3221dd969ef83cdb78698299f6e3cfa8be59d749daa81b4dc97f6d24ed/sage-setup-9.8b7.tar.gz
+[2023-04-14 01:01:29] INFO root fetch - processPackages [sage-docbuild]: Downloading https://files.pythonhosted.org/packages/83/bc/944e941625ce0a283b49b178d1b3dc9b9c8af78512a7f2fd8ec2c617e1eb/sage-docbuild-9.8rc0.tar.gz
+[2023-04-14 01:01:29] INFO root fetch - processPackages [sage-docbuild]: executing diffoscope
+[2023-04-14 01:01:29] INFO root fetch - processPackages [sage-docbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-docbuild-9.8b7.tar.gz tmp/sage-docbuild-9.8rc0.tar.gz --markdown 20230414/s/sage-docbuild/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-04-14 01:01:30] INFO root fetch - processPackages [sage-setup]: Downloading https://files.pythonhosted.org/packages/aa/ea/ed314950f3374f03b1417e552a4f31d8618f2811e6eacf3fe3332268f07c/sage-setup-9.8rc0.tar.gz
+[2023-04-14 01:01:30] INFO root fetch - processPackages [rgcosm]: Start processing: pygpt-net
+[2023-04-14 01:01:30] INFO root fetch - main [MainThread]: End processing [rgcosm]: success
+[2023-04-14 01:01:30] WARNING root fetch - processPackages [pygpt-net]: Skipping, unable to determine old version
+[2023-04-14 01:01:30] INFO root fetch - processPackages [pygpt-net]: Start processing: tmnt-cu101
+[2023-04-14 01:01:30] INFO root fetch - main [MainThread]: End processing [pygpt-net] error
+[2023-04-14 01:01:30] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230413] Old Version: [0.7.0b20230412]
+[2023-04-14 01:01:30] INFO root fetch - processPackages [sage-conf]: Downloading https://files.pythonhosted.org/packages/e9/96/cd18c202ff97cf2010773c4ddf2e91c5e8ec79bf2dd6466b16139b499233/sage-conf-9.8rc0.tar.gz
+[2023-04-14 01:01:30] INFO root fetch - processPackages [sage-setup]: executing diffoscope
+[2023-04-14 01:01:30] INFO root fetch - processPackages [sage-setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-setup-9.8b7.tar.gz tmp/sage-setup-9.8rc0.tar.gz --markdown 20230414/s/sage-setup/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-04-14 01:01:30] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/45/56/9ef95285079cddd8dc33ef81a43725d11b4d18c19096183de97723029876/tmnt-cu101-0.7.0b20230413.tar.gz
+[2023-04-14 01:01:30] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-04-14 01:01:30] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230412.tar.gz tmp/tmnt-cu101-0.7.0b20230413.tar.gz --markdown 20230414/t/tmnt-cu101/0.7.0b20230412-0.7.0b20230413/diff.md --exclude *.pyd
+[2023-04-14 01:01:30] INFO root fetch - processPackages [plone.app.dexterity]: Start processing: sage-sws2rst
+[2023-04-14 01:01:30] INFO root fetch - main [MainThread]: End processing [plone.app.dexterity]: success
+[2023-04-14 01:01:30] INFO root fetch - processPackages [sage-sws2rst]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sage-docbuild]: Start processing: sagemath-categories
+[2023-04-14 01:01:31] INFO root fetch - main [MainThread]: End processing [sage-docbuild]: success
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sagemath-categories]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sage-sws2rst]: Downloading https://files.pythonhosted.org/packages/c7/9a/24d44916ef366f957e246ba99527efc0b4893673067aa991646a73886e88/sage-sws2rst-9.8b7.tar.gz
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sagemath-categories]: Downloading https://files.pythonhosted.org/packages/91/fe/5b4220d8485b9b1ea1e00d27d4033da6b77ab9bb3d90f96c2b0f69915cd9/sagemath-categories-9.8b7.tar.gz
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sage-sws2rst]: Downloading https://files.pythonhosted.org/packages/e2/13/be8c4c1c6ddab4fd81239014b8596bd4a65576cb4ec8fd36b8295e719cd8/sage-sws2rst-9.8rc0.tar.gz
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sage-conf]: executing diffoscope
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sage-conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-conf-9.8b7.tar.gz tmp/sage-conf-9.8rc0.tar.gz --markdown 20230414/s/sage-conf/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sage-sws2rst]: executing diffoscope
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sage-sws2rst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-sws2rst-9.8b7.tar.gz tmp/sage-sws2rst-9.8rc0.tar.gz --markdown 20230414/s/sage-sws2rst/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sagemath-categories]: Downloading https://files.pythonhosted.org/packages/91/dd/0daa405ce2567bb39e004c123601d2ec55ede2bc549eb306d07ba35eb456/sagemath-categories-9.8rc0.tar.gz
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sagemath-categories]: executing diffoscope
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sagemath-categories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-categories-9.8b7.tar.gz tmp/sagemath-categories-9.8rc0.tar.gz --markdown 20230414/s/sagemath-categories/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sage-setup]: Start processing: sagemath-environment
+[2023-04-14 01:01:31] INFO root fetch - main [MainThread]: End processing [sage-setup]: success
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sagemath-environment]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sagemath-environment]: Downloading https://files.pythonhosted.org/packages/63/7d/1a322711621a03371daf041779f473d569145e98561ddd9039e79a30255e/sagemath-environment-9.8b7.tar.gz
+[2023-04-14 01:01:31] INFO root fetch - processPackages [tmnt-cu101]: Start processing: sagemath-objects
+[2023-04-14 01:01:31] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-04-14 01:01:31] INFO root fetch - processPackages [sagemath-objects]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-04-14 01:01:32] INFO root fetch - processPackages [sagemath-environment]: Downloading https://files.pythonhosted.org/packages/25/81/ca7c2bcc4784c3075bcbf1849d48cee85027d56bdb107f8a0bf943b919ad/sagemath-environment-9.8rc0.tar.gz
+[2023-04-14 01:01:32] INFO root fetch - processPackages [sagemath-objects]: Downloading https://files.pythonhosted.org/packages/4c/41/42559ab77e0184ee4c3cc7719ba4348e5aa1307506fab7a306aa4a483214/sagemath-objects-9.8b7.tar.gz
+[2023-04-14 01:01:32] INFO root fetch - processPackages [sagemath-environment]: executing diffoscope
+[2023-04-14 01:01:32] INFO root fetch - processPackages [sagemath-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-environment-9.8b7.tar.gz tmp/sagemath-environment-9.8rc0.tar.gz --markdown 20230414/s/sagemath-environment/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-04-14 01:01:32] INFO root fetch - processPackages [sagemath-objects]: Downloading https://files.pythonhosted.org/packages/3e/ec/de38e0fcc76454c395321b4d2989ffe5f56e6334e310d1d9c6ad53f991f4/sagemath-objects-9.8rc0.tar.gz
+[2023-04-14 01:01:32] INFO root fetch - processPackages [sagemath-objects]: executing diffoscope
+[2023-04-14 01:01:32] INFO root fetch - processPackages [sagemath-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-objects-9.8b7.tar.gz tmp/sagemath-objects-9.8rc0.tar.gz --markdown 20230414/s/sagemath-objects/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-04-14 01:01:32] INFO root fetch - processPackages [sage-sws2rst]: Start processing: sagemath-repl
+[2023-04-14 01:01:32] INFO root fetch - main [MainThread]: End processing [sage-sws2rst]: success
+[2023-04-14 01:01:32] INFO root fetch - processPackages [sagemath-repl]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-04-14 01:01:32] INFO root fetch - processPackages [sagemath-repl]: Downloading https://files.pythonhosted.org/packages/a4/e3/3abe6fb13b6aec05d433260a637c57426bc40016a26515ce1de2f6ccb547/sagemath-repl-9.8b7.tar.gz
+[2023-04-14 01:01:33] INFO root fetch - processPackages [sagemath-repl]: Downloading https://files.pythonhosted.org/packages/fb/3c/6493d3c2a0f3a5c6276a510bac2fc348d682e8e826d3565dfc4f047ed8a2/sagemath-repl-9.8rc0.tar.gz
+[2023-04-14 01:01:33] INFO root fetch - processPackages [sagemath-repl]: executing diffoscope
+[2023-04-14 01:01:33] INFO root fetch - processPackages [sagemath-repl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-repl-9.8b7.tar.gz tmp/sagemath-repl-9.8rc0.tar.gz --markdown 20230414/s/sagemath-repl/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-04-14 01:01:33] INFO root fetch - processPackages [sagemath-environment]: Start processing: sagemath-standard
+[2023-04-14 01:01:33] INFO root fetch - main [MainThread]: End processing [sagemath-environment]: success
+[2023-04-14 01:01:33] INFO root fetch - processPackages [sagemath-standard]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-04-14 01:01:33] INFO root fetch - processPackages [sagemath-standard]: Downloading https://files.pythonhosted.org/packages/ca/44/3341aa128d2058989dc35be67a94f004ad9873fc2cece58881abf81f3091/sagemath-standard-9.8b7.tar.gz
+[2023-04-14 01:01:34] WARNING root fetch - processPackages [sagemath-standard]: Skipping package: exceeds size limit 18194906>=10485760
+[2023-04-14 01:01:34] INFO root fetch - processPackages [sagemath-standard]: Start processing: flwr-nightly
+[2023-04-14 01:01:34] INFO root fetch - main [MainThread]: End processing [sagemath-standard] error
+[2023-04-14 01:01:34] INFO root fetch - processPackages [sagemath-categories]: Start processing: tmnt
+[2023-04-14 01:01:34] INFO root fetch - main [MainThread]: End processing [sagemath-categories]: success
+[2023-04-14 01:01:34] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230413] Old Version: [0.7.0b20230412]
+[2023-04-14 01:01:34] INFO root fetch - processPackages [flwr-nightly]: New version: [1.4.0.dev20230413] Old Version: [1.4.0.dev20230409]
+[2023-04-14 01:01:34] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/ac/8d/fccec6d4d61cc3334ad074a6050bfc2460f51be29abe3bb374041b86b985/flwr_nightly-1.4.0.dev20230409.tar.gz
+[2023-04-14 01:01:34] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/ef/8c/97327747efd6c1aa09592961b5acfb336096775921dbc0e82d275b13417e/tmnt-0.7.0b20230413.tar.gz
+[2023-04-14 01:01:34] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-04-14 01:01:34] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230412.tar.gz tmp/tmnt-0.7.0b20230413.tar.gz --markdown 20230414/t/tmnt/0.7.0b20230412-0.7.0b20230413/diff.md --exclude *.pyd
+[2023-04-14 01:01:34] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/8c/64/5cf79032044f955b1fafa01d8899aaf76ad81a6c479a70b8021720b10126/flwr_nightly-1.4.0.dev20230413-py3-none-any.whl
+[2023-04-14 01:01:34] INFO root fetch - processPackages [sagemath-objects]: Start processing: plone.app.portlets
+[2023-04-14 01:01:34] INFO root fetch - main [MainThread]: End processing [sagemath-objects]: success
+[2023-04-14 01:01:34] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-04-14 01:01:34] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.4.0.dev20230409.tar.gz tmp/flwr_nightly-1.4.0.dev20230413-py3-none-any.whl.zip --markdown 20230414/f/flwr-nightly/1.4.0.dev20230409-1.4.0.dev20230413/diff.md --exclude *.pyd
+[2023-04-14 01:01:34] INFO root fetch - processPackages [plone.app.portlets]: New version: [5.0.3] Old Version: [5.0.2]
+[2023-04-14 01:01:35] INFO root fetch - processPackages [plone.app.portlets]: Downloading https://files.pythonhosted.org/packages/61/09/4c83fa7c24d32a49eac65795ad2b325a235238f7a475138080136c0721d6/plone.app.portlets-5.0.2.tar.gz
+[2023-04-14 01:01:35] INFO root fetch - processPackages [sagemath-repl]: Start processing: djangoldp-needle
+[2023-04-14 01:01:35] INFO root fetch - main [MainThread]: End processing [sagemath-repl]: success
+[2023-04-14 01:01:35] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 01:01:35] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-14 01:01:35] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230414/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 01:01:35] INFO root fetch - processPackages [plone.app.portlets]: Downloading https://files.pythonhosted.org/packages/9f/1a/f66c48fcedd1b0e2dcaa10598041dcc13fc03a0f89d0333ec98f6e2a9be3/plone.app.portlets-5.0.3.tar.gz
+[2023-04-14 01:01:35] INFO root fetch - processPackages [plone.app.portlets]: executing diffoscope
+[2023-04-14 01:01:35] INFO root fetch - processPackages [plone.app.portlets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.portlets-5.0.2.tar.gz tmp/plone.app.portlets-5.0.3.tar.gz --markdown 20230414/p/plone.app.portlets/5.0.2-5.0.3/diff.md --exclude *.pyd
+[2023-04-14 01:01:35] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-04-14 01:01:36] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2023-04-14 01:01:36] INFO root fetch - main [MainThread]: End processing [djangoldp-needle]: success
+[2023-04-14 01:01:38] INFO root fetch - main [MainThread]: End processing [plone.app.portlets]: success
+[2023-04-14 01:04:31] ERROR root fetch - processPackages [sage-conf]: Timeout during execution of pkgdiff
+[2023-04-14 01:04:31] INFO root fetch - main [MainThread]: End processing [sage-conf] error
+[2023-04-14 01:04:31] INFO root fetch - main [MainThread]: Store serial: [17699535]
