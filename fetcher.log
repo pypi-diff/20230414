@@ -54,3 +54,53 @@
 [2023-04-14 00:03:42] INFO root fetch - main [MainThread]: End processing [folderify]: success
 [2023-04-14 00:03:48] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-04-14 00:03:48] INFO root fetch - main [MainThread]: Store serial: [17699117]
+[2023-04-14 00:08:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699117]
+[2023-04-14 00:08:55] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 00:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cqepyutils
+[2023-04-14 00:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezga
+[2023-04-14 00:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyspark-functions
+[2023-04-14 00:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ape-hardhat
+[2023-04-14 00:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mosaicml-cli
+[2023-04-14 00:08:55] INFO root fetch - processPackages [pyspark-functions]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 00:08:55] WARNING root fetch - processPackages [ezga]: Skipping, unable to determine old version
+[2023-04-14 00:08:55] INFO root fetch - processPackages [ezga]: Start processing: pybrcode
+[2023-04-14 00:08:55] INFO root fetch - main [MainThread]: End processing [ezga] error
+[2023-04-14 00:08:55] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 00:08:55] INFO root fetch - processPackages [ape-hardhat]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-14 00:08:55] INFO root fetch - processPackages [mosaicml-cli]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-14 00:08:55] ERROR root fetch - processPackages [pybrcode]: Unable to get metadata: No such project 'pybrcode'
+[2023-04-14 00:08:55] INFO root fetch - processPackages [pybrcode]: Start processing: micromechanics-indentationGUI
+[2023-04-14 00:08:55] INFO root fetch - main [MainThread]: End processing [pybrcode] error
+[2023-04-14 00:08:55] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 00:08:55] INFO root fetch - processPackages [pyspark-functions]: Downloading https://files.pythonhosted.org/packages/ca/3a/b509b3f5291952d7f46a1d9eb8972187d517244a7608319d451ba7a98cab/pyspark_functions-0.0.2.tar.gz
+[2023-04-14 00:08:55] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-14 00:08:55] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230414/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 00:08:55] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-14 00:08:55] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230414/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 00:08:55] INFO root fetch - processPackages [mosaicml-cli]: Downloading https://files.pythonhosted.org/packages/8f/a6/20000a7791cee75ba74d49aba98d9c4143a53f84acff6a611a7a2d1c5b8b/mosaicml_cli-0.3.7-py3-none-any.whl
+[2023-04-14 00:08:55] INFO root fetch - processPackages [pyspark-functions]: Downloading https://files.pythonhosted.org/packages/af/63/8bd3ebdab2890c0fdb806746e37d4a0070254488cc5a00694263d2a7e085/pyspark_functions-0.0.3.tar.gz
+[2023-04-14 00:08:55] INFO root fetch - processPackages [ape-hardhat]: Downloading https://files.pythonhosted.org/packages/08/4c/118067bada0d00265fdb5195781b86ee45bc41b8f331b6eaee60ed02a425/ape-hardhat-0.6.4.tar.gz
+[2023-04-14 00:08:55] INFO root fetch - processPackages [mosaicml-cli]: executing diffoscope
+[2023-04-14 00:08:55] INFO root fetch - processPackages [mosaicml-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaicml_cli-0.3.6-py3-none-any.whl.zip tmp/mosaicml_cli-0.3.7-py3-none-any.whl.zip --markdown 20230414/m/mosaicml-cli/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-14 00:08:55] INFO root fetch - processPackages [pyspark-functions]: executing diffoscope
+[2023-04-14 00:08:55] INFO root fetch - processPackages [pyspark-functions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspark_functions-0.0.2.tar.gz tmp/pyspark_functions-0.0.3.tar.gz --markdown 20230414/p/pyspark-functions/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 00:08:56] INFO root fetch - processPackages [ape-hardhat]: executing diffoscope
+[2023-04-14 00:08:56] INFO root fetch - processPackages [ape-hardhat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-hardhat-0.6.3.tar.gz tmp/ape-hardhat-0.6.4.tar.gz --markdown 20230414/a/ape-hardhat/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-14 00:08:56] INFO root fetch - processPackages [cqepyutils]: Start processing: TerraVide
+[2023-04-14 00:08:56] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-14 00:08:56] WARNING root fetch - processPackages [TerraVide]: Skipping, unable to determine old version
+[2023-04-14 00:08:56] INFO root fetch - processPackages [TerraVide]: Start processing: terka
+[2023-04-14 00:08:56] INFO root fetch - main [MainThread]: End processing [TerraVide] error
+[2023-04-14 00:08:56] INFO root fetch - processPackages [terka]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-04-14 00:08:56] INFO root fetch - processPackages [micromechanics-indentationGUI]: Start processing: pybrcode
+[2023-04-14 00:08:56] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-14 00:08:56] ERROR root fetch - processPackages [pybrcode]: Unable to get metadata: No such project 'pybrcode'
+[2023-04-14 00:08:56] INFO root fetch - main [MainThread]: End processing [pybrcode] error
+[2023-04-14 00:08:57] INFO root fetch - main [MainThread]: End processing [pyspark-functions]: success
+[2023-04-14 00:08:57] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/97/c0/1486658ea1f07b7c883f730618583e9fe7345ef31ce62d2ddf59115bac4c/terka-1.5.0.tar.gz
+[2023-04-14 00:08:57] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-14 00:08:57] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.4.0.tar.gz tmp/terka-1.5.0.tar.gz --markdown 20230414/t/terka/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-04-14 00:08:57] INFO root fetch - main [MainThread]: End processing [ape-hardhat]: success
+[2023-04-14 00:08:58] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-14 00:08:58] INFO root fetch - main [MainThread]: End processing [mosaicml-cli]: success
+[2023-04-14 00:08:58] INFO root fetch - main [MainThread]: Store serial: [17699159]
