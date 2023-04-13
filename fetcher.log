@@ -400,3 +400,48 @@
 [2023-04-14 00:30:13] INFO root fetch - main [MainThread]: End processing [swarmpal]: success
 [2023-04-14 00:30:14] INFO root fetch - main [MainThread]: End processing [keypoint-moseq]: success
 [2023-04-14 00:30:14] INFO root fetch - main [MainThread]: Store serial: [17699322]
+[2023-04-14 00:35:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699322]
+[2023-04-14 00:35:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 00:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myPyllant
+[2023-04-14 00:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shinylive
+[2023-04-14 00:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yaml-requests
+[2023-04-14 00:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tdfpy
+[2023-04-14 00:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dem-stitcher
+[2023-04-14 00:35:21] INFO root fetch - processPackages [tdfpy]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 00:35:21] INFO root fetch - processPackages [yaml-requests]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 00:35:21] INFO root fetch - processPackages [shinylive]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 00:35:21] INFO root fetch - processPackages [myPyllant]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-14 00:35:21] INFO root fetch - processPackages [dem-stitcher]: New version: [2.5.0] Old Version: [2.4.1]
+[2023-04-14 00:35:21] INFO root fetch - processPackages [dem-stitcher]: Downloading https://files.pythonhosted.org/packages/f1/b5/c18fceb90badee0ae05b0017d2cf5df517f96d7b9c6e9aa723ac7ce72982/dem_stitcher-2.4.1.tar.gz
+[2023-04-14 00:35:21] INFO root fetch - processPackages [myPyllant]: Downloading https://files.pythonhosted.org/packages/12/e6/53247a34949f6f9ff8ef9383972173c1c5d069cdf5a97db64daa5c2cb958/mypyllant-0.2.1.tar.gz
+[2023-04-14 00:35:21] INFO root fetch - processPackages [tdfpy]: Downloading https://files.pythonhosted.org/packages/9a/20/4f9d7411f650fe409d8e5b4e89afe3a711e24bc7e28008bac32c692b1778/tdfpy-0.1.6.tar.gz
+[2023-04-14 00:35:21] INFO root fetch - processPackages [yaml-requests]: Downloading https://files.pythonhosted.org/packages/a5/8f/61c8a00dfdbf350a81def57e2c3d442e5ebb6a610df1fb3c441500d5c4ee/yaml_requests-0.8.0.tar.gz
+[2023-04-14 00:35:21] INFO root fetch - processPackages [shinylive]: Downloading https://files.pythonhosted.org/packages/dc/bd/1febe95c8382d6141a8247e700c20d0d3a680a66615654cb1434076451d6/shinylive-0.0.8.tar.gz
+[2023-04-14 00:35:22] INFO root fetch - processPackages [myPyllant]: executing diffoscope
+[2023-04-14 00:35:22] INFO root fetch - processPackages [myPyllant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypyllant-0.2.0.tar.gz tmp/mypyllant-0.2.1.tar.gz --markdown 20230414/m/myPyllant/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 00:35:22] WARNING root fetch - processPackages [dem-stitcher]: Skipping package: exceeds size limit 93330531>=10485760
+[2023-04-14 00:35:22] INFO root fetch - processPackages [dem-stitcher]: Start processing: jarvis-leaderboard
+[2023-04-14 00:35:22] INFO root fetch - main [MainThread]: End processing [dem-stitcher] error
+[2023-04-14 00:35:22] INFO root fetch - processPackages [tdfpy]: executing diffoscope
+[2023-04-14 00:35:22] INFO root fetch - processPackages [tdfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdfpy-0.1.5.tar.gz tmp/tdfpy-0.1.6.tar.gz --markdown 20230414/t/tdfpy/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 00:35:22] INFO root fetch - processPackages [jarvis-leaderboard]: New version: [2023.4.12] Old Version: [2023.4.11.1]
+[2023-04-14 00:35:22] INFO root fetch - processPackages [yaml-requests]: Downloading https://files.pythonhosted.org/packages/cc/6d/9b0477a85071ce0eddaa6271624ec6e233c5426da949f5fbf7658b224a36/yaml_requests-0.9.0.tar.gz
+[2023-04-14 00:35:22] INFO root fetch - processPackages [yaml-requests]: executing diffoscope
+[2023-04-14 00:35:22] INFO root fetch - processPackages [yaml-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yaml_requests-0.8.0.tar.gz tmp/yaml_requests-0.9.0.tar.gz --markdown 20230414/y/yaml-requests/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 00:35:22] INFO root fetch - processPackages [jarvis-leaderboard]: Downloading https://files.pythonhosted.org/packages/92/97/42c4bf13444d6aa590ca1c02db11e39da2d1f36763a75e6c03d4b6eeb911/jarvis_leaderboard-2023.4.12.tar.gz
+[2023-04-14 00:35:22] INFO root fetch - processPackages [jarvis-leaderboard]: executing diffoscope
+[2023-04-14 00:35:22] INFO root fetch - processPackages [jarvis-leaderboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis_leaderboard-2023.4.11.1.tar.gz tmp/jarvis_leaderboard-2023.4.12.tar.gz --markdown 20230414/j/jarvis-leaderboard/2023.4.11.1-2023.4.12/diff.md --exclude *.pyd
+[2023-04-14 00:35:22] INFO root fetch - processPackages [shinylive]: Downloading https://files.pythonhosted.org/packages/8d/be/a35a5b65d34cdd1462e80feed76c05f541de3d1a8298df15c8811e655b37/shinylive-0.0.9.tar.gz
+[2023-04-14 00:35:22] INFO root fetch - processPackages [shinylive]: executing diffoscope
+[2023-04-14 00:35:22] INFO root fetch - processPackages [shinylive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinylive-0.0.8.tar.gz tmp/shinylive-0.0.9.tar.gz --markdown 20230414/s/shinylive/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 00:35:23] INFO root fetch - processPackages [yaml-requests]: Start processing: aind-data-schema
+[2023-04-14 00:35:23] INFO root fetch - main [MainThread]: End processing [yaml-requests]: success
+[2023-04-14 00:35:23] INFO root fetch - processPackages [aind-data-schema]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-14 00:35:23] INFO root fetch - main [MainThread]: End processing [jarvis-leaderboard]: success
+[2023-04-14 00:35:23] INFO root fetch - main [MainThread]: End processing [myPyllant]: success
+[2023-04-14 00:35:23] INFO root fetch - processPackages [aind-data-schema]: executing diffoscope
+[2023-04-14 00:35:23] INFO root fetch - processPackages [aind-data-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-schema-0.9.5.tar.gz tmp/aind-data-schema-0.9.6.tar.gz --markdown 20230414/a/aind-data-schema/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-14 00:35:23] INFO root fetch - main [MainThread]: End processing [shinylive]: success
+[2023-04-14 00:35:24] INFO root fetch - main [MainThread]: End processing [tdfpy]: success
+[2023-04-14 00:35:25] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
+[2023-04-14 00:35:25] INFO root fetch - main [MainThread]: Store serial: [17699346]
