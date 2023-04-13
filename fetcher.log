@@ -867,3 +867,100 @@
 [2023-04-14 01:04:31] ERROR root fetch - processPackages [sage-conf]: Timeout during execution of pkgdiff
 [2023-04-14 01:04:31] INFO root fetch - main [MainThread]: End processing [sage-conf] error
 [2023-04-14 01:04:31] INFO root fetch - main [MainThread]: Store serial: [17699535]
+[2023-04-14 01:09:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699535]
+[2023-04-14 01:09:39] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 01:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seeq-spy
+[2023-04-14 01:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seeq
+[2023-04-14 01:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plone.app.i18n
+[2023-04-14 01:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seeq
+[2023-04-14 01:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ploomber
+[2023-04-14 01:09:39] INFO root fetch - processPackages [seeq-spy]: New version: [187.0] Old Version: [186.9]
+[2023-04-14 01:09:39] INFO root fetch - processPackages [plone.app.i18n]: New version: [4.0.1] Old Version: [4.0.0a1]
+[2023-04-14 01:09:39] INFO root fetch - processPackages [seeq]: New version: [60.1.1] Old Version: [60.0.3]
+[2023-04-14 01:09:39] INFO root fetch - processPackages [ploomber]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-14 01:09:39] INFO root fetch - processPackages [seeq]: New version: [60.1.1] Old Version: [60.0.3]
+[2023-04-14 01:09:39] INFO root fetch - processPackages [plone.app.i18n]: Downloading https://files.pythonhosted.org/packages/c3/e6/eaacb24a9b54d005560e8070b481d6a176f7608d3e182ba2d03def66e1f3/plone.app.i18n-4.0.0a1.tar.gz
+[2023-04-14 01:09:39] INFO root fetch - processPackages [ploomber]: Downloading https://files.pythonhosted.org/packages/9e/09/f09532b768b40c123888ad364edcf2d8efc85bd617e9ff30de3fa37b835e/ploomber-0.9.4-py3-none-any.whl
+[2023-04-14 01:09:39] INFO root fetch - processPackages [seeq]: Downloading https://files.pythonhosted.org/packages/0f/9a/b7bbf1280e27565ae991b317499d7db8cfc4e9334830381baa11dd074a20/seeq-60.0.3.tar.gz
+[2023-04-14 01:09:39] INFO root fetch - processPackages [seeq]: Downloading https://files.pythonhosted.org/packages/0f/9a/b7bbf1280e27565ae991b317499d7db8cfc4e9334830381baa11dd074a20/seeq-60.0.3.tar.gz
+[2023-04-14 01:09:39] INFO root fetch - processPackages [seeq-spy]: Downloading https://files.pythonhosted.org/packages/3b/f9/eb67322e8bea4025e9e833912d47de5445d46f442e8887fa1fd2b286893f/seeq-spy-186.9.tar.gz
+[2023-04-14 01:09:40] INFO root fetch - processPackages [plone.app.i18n]: Downloading https://files.pythonhosted.org/packages/ca/26/8dc0e7673e05359789518efc055c345bfd6ecad3d4caa223215b5ab6cc75/plone.app.i18n-4.0.1.tar.gz
+[2023-04-14 01:09:40] INFO root fetch - processPackages [seeq]: Downloading https://files.pythonhosted.org/packages/e6/99/fbe694f6fb1fcf7ea096fc2dda0446ecb584ae2eee62f9e04342695d8c7d/seeq-60.1.1.tar.gz
+[2023-04-14 01:09:40] INFO root fetch - processPackages [seeq]: Downloading https://files.pythonhosted.org/packages/e6/99/fbe694f6fb1fcf7ea096fc2dda0446ecb584ae2eee62f9e04342695d8c7d/seeq-60.1.1.tar.gz
+[2023-04-14 01:09:40] INFO root fetch - processPackages [ploomber]: Downloading https://files.pythonhosted.org/packages/bc/42/a9177ba45f4033604d120c6cbad7f54188220a43491b141700035ad89e4c/ploomber-0.9.5.tar.gz
+[2023-04-14 01:09:40] INFO root fetch - processPackages [seeq]: executing diffoscope
+[2023-04-14 01:09:40] INFO root fetch - processPackages [seeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seeq-60.0.3.tar.gz tmp/seeq-60.1.1.tar.gz --markdown 20230414/s/seeq/60.0.3-60.1.1/diff.md --exclude *.pyd
+[2023-04-14 01:09:40] INFO root fetch - processPackages [seeq]: executing diffoscope
+[2023-04-14 01:09:40] INFO root fetch - processPackages [seeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seeq-60.0.3.tar.gz tmp/seeq-60.1.1.tar.gz --markdown 20230414/s/seeq/60.0.3-60.1.1/diff.md --exclude *.pyd
+[2023-04-14 01:09:40] INFO root fetch - processPackages [plone.app.i18n]: executing diffoscope
+[2023-04-14 01:09:40] INFO root fetch - processPackages [plone.app.i18n]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.i18n-4.0.0a1.tar.gz tmp/plone.app.i18n-4.0.1.tar.gz --markdown 20230414/p/plone.app.i18n/4.0.0a1-4.0.1/diff.md --exclude *.pyd
+[2023-04-14 01:09:40] INFO root fetch - processPackages [seeq-spy]: Downloading https://files.pythonhosted.org/packages/83/ca/4ff914e02afa497fad488f14ebc30baeae838a7ecacc1c23cfca3b4d60c3/seeq-spy-187.0.tar.gz
+[2023-04-14 01:09:40] INFO root fetch - processPackages [ploomber]: executing diffoscope
+[2023-04-14 01:09:40] INFO root fetch - processPackages [ploomber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ploomber-0.9.4-py3-none-any.whl.zip tmp/ploomber-0.9.5.tar.gz --markdown 20230414/p/ploomber/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-14 01:09:41] INFO root fetch - processPackages [seeq-spy]: executing diffoscope
+[2023-04-14 01:09:41] INFO root fetch - processPackages [seeq-spy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seeq-spy-186.9.tar.gz tmp/seeq-spy-187.0.tar.gz --markdown 20230414/s/seeq-spy/186.9-187.0/diff.md --exclude *.pyd
+[2023-04-14 01:09:41] INFO root fetch - processPackages [plone.app.i18n]: Start processing: plone.app.discussion
+[2023-04-14 01:09:41] INFO root fetch - main [MainThread]: End processing [plone.app.i18n]: success
+[2023-04-14 01:09:41] INFO root fetch - processPackages [plone.app.discussion]: New version: [4.0.1] Old Version: [4.0.0b3]
+[2023-04-14 01:09:41] INFO root fetch - processPackages [plone.app.discussion]: Downloading https://files.pythonhosted.org/packages/08/17/5353d1031b3920c5fcbbf6b7116538b0b1019d2b8fb9dcd2203cb4fa1565/plone.app.discussion-4.0.0b3.tar.gz
+[2023-04-14 01:09:42] INFO root fetch - processPackages [ploomber]: Start processing: gradio-client
+[2023-04-14 01:09:42] INFO root fetch - main [MainThread]: End processing [ploomber]: success
+[2023-04-14 01:09:42] INFO root fetch - processPackages [gradio-client]: New version: [0.1.2b1] Old Version: [0.1.2]
+[2023-04-14 01:09:42] INFO root fetch - processPackages [gradio-client]: Downloading https://files.pythonhosted.org/packages/fa/75/cc3803b59cc37ae70ab2734e4dcdd8ecdc11dd2595df48b99d939045db77/gradio_client-0.1.2.tar.gz
+[2023-04-14 01:09:42] INFO root fetch - processPackages [plone.app.discussion]: Downloading https://files.pythonhosted.org/packages/d1/bf/d596d981c78fc781b5eeda47ae8d4a2b0db433c4c6e46abdd60806823604/plone.app.discussion-4.0.1.tar.gz
+[2023-04-14 01:09:42] INFO root fetch - processPackages [gradio-client]: executing diffoscope
+[2023-04-14 01:09:42] INFO root fetch - processPackages [gradio-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_client-0.1.2.tar.gz tmp/gradio_client-0.1.2b1.tar.gz --markdown 20230414/g/gradio-client/0.1.2-0.1.2b1/diff.md --exclude *.pyd
+[2023-04-14 01:09:42] INFO root fetch - processPackages [plone.app.discussion]: executing diffoscope
+[2023-04-14 01:09:42] INFO root fetch - processPackages [plone.app.discussion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.discussion-4.0.0b3.tar.gz tmp/plone.app.discussion-4.0.1.tar.gz --markdown 20230414/p/plone.app.discussion/4.0.0b3-4.0.1/diff.md --exclude *.pyd
+[2023-04-14 01:09:43] INFO root fetch - processPackages [gradio-client]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-04-14 01:09:43] INFO root fetch - main [MainThread]: End processing [gradio-client]: success
+[2023-04-14 01:09:43] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.272] Old Version: [0.3.271]
+[2023-04-14 01:09:43] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/47/6f/57ac4e0253ca03a31c123031ac567015a3b1da3b88f9da427103af182e1e/pepperize.cdk-ses-smtp-credentials-0.3.272.tar.gz
+[2023-04-14 01:09:43] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-04-14 01:09:43] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.271.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.272.tar.gz --markdown 20230414/p/pepperize.cdk-ses-smtp-credentials/0.3.271-0.3.272/diff.md --exclude *.pyd
+[2023-04-14 01:09:44] INFO root fetch - processPackages [plone.app.discussion]: Start processing: tap-messagebird
+[2023-04-14 01:09:44] INFO root fetch - main [MainThread]: End processing [plone.app.discussion]: success
+[2023-04-14 01:09:44] INFO root fetch - processPackages [tap-messagebird]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 01:09:44] INFO root fetch - processPackages [tap-messagebird]: Downloading https://files.pythonhosted.org/packages/90/39/f2821b059ee533e5e0d397047250e4059f2595bfc8b0d89e6d8574004642/tap_messagebird-0.0.4.tar.gz
+[2023-04-14 01:09:44] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Start processing: locate-pixelcolor-cpp-parallelfor
+[2023-04-14 01:09:44] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-04-14 01:09:44] WARNING root fetch - processPackages [locate-pixelcolor-cpp-parallelfor]: Skipping, unable to determine old version
+[2023-04-14 01:09:44] INFO root fetch - processPackages [locate-pixelcolor-cpp-parallelfor]: Start processing: tap-messagebird
+[2023-04-14 01:09:44] INFO root fetch - main [MainThread]: End processing [locate-pixelcolor-cpp-parallelfor] error
+[2023-04-14 01:09:44] INFO root fetch - processPackages [tap-messagebird]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 01:09:45] INFO root fetch - processPackages [tap-messagebird]: executing diffoscope
+[2023-04-14 01:09:45] INFO root fetch - processPackages [tap-messagebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_messagebird-0.0.4.tar.gz tmp/tap_messagebird-0.0.5.tar.gz --markdown 20230414/t/tap-messagebird/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 01:09:45] INFO root fetch - processPackages [tap-messagebird]: executing diffoscope
+[2023-04-14 01:09:45] INFO root fetch - processPackages [tap-messagebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_messagebird-0.0.4.tar.gz tmp/tap_messagebird-0.0.5.tar.gz --markdown 20230414/t/tap-messagebird/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 01:09:46] INFO root fetch - processPackages [tap-messagebird]: Start processing: plone.stringinterp
+[2023-04-14 01:09:46] INFO root fetch - main [MainThread]: End processing [tap-messagebird]: success
+[2023-04-14 01:09:46] INFO root fetch - processPackages [tap-messagebird]: Start processing: plone.app.users
+[2023-04-14 01:09:46] INFO root fetch - main [MainThread]: End processing [tap-messagebird]: success
+[2023-04-14 01:09:46] INFO root fetch - processPackages [plone.stringinterp]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-14 01:09:46] INFO root fetch - processPackages [plone.app.users]: New version: [3.0.1] Old Version: [3.0.0b4]
+[2023-04-14 01:09:46] INFO root fetch - processPackages [plone.stringinterp]: Downloading https://files.pythonhosted.org/packages/15/3f/a30db021c642a55dbb750b6a414c3489aecec7be8a90fbc07c123ed72872/plone.stringinterp-2.0.0.tar.gz
+[2023-04-14 01:09:46] INFO root fetch - processPackages [plone.app.users]: Downloading https://files.pythonhosted.org/packages/73/c7/df442957b5985ea4dd0bab84472d961232b3d076d3d882efba573d56600c/plone.app.users-3.0.0b4.tar.gz
+[2023-04-14 01:09:46] INFO root fetch - processPackages [plone.stringinterp]: Downloading https://files.pythonhosted.org/packages/08/0a/07509cc874c43dc1c828ab2859a77aea00dc8e3bb102230736a5db2cc7e4/plone.stringinterp-2.0.1.tar.gz
+[2023-04-14 01:09:46] INFO root fetch - processPackages [plone.stringinterp]: executing diffoscope
+[2023-04-14 01:09:46] INFO root fetch - processPackages [plone.stringinterp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.stringinterp-2.0.0.tar.gz tmp/plone.stringinterp-2.0.1.tar.gz --markdown 20230414/p/plone.stringinterp/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-14 01:09:46] INFO root fetch - processPackages [plone.app.users]: Downloading https://files.pythonhosted.org/packages/66/5c/70c3ce9bd2f075d724fa9535c8bc9083dd771e6e0004fa51d0ad04333152/plone.app.users-3.0.1.tar.gz
+[2023-04-14 01:09:46] INFO root fetch - processPackages [plone.app.users]: executing diffoscope
+[2023-04-14 01:09:46] INFO root fetch - processPackages [plone.app.users]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.users-3.0.0b4.tar.gz tmp/plone.app.users-3.0.1.tar.gz --markdown 20230414/p/plone.app.users/3.0.0b4-3.0.1/diff.md --exclude *.pyd
+[2023-04-14 01:09:47] INFO root fetch - processPackages [plone.stringinterp]: Start processing: plone.memoize
+[2023-04-14 01:09:47] INFO root fetch - main [MainThread]: End processing [plone.stringinterp]: success
+[2023-04-14 01:09:47] INFO root fetch - processPackages [plone.memoize]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-04-14 01:09:48] INFO root fetch - processPackages [plone.memoize]: Downloading https://files.pythonhosted.org/packages/24/3c/03616eee696a94826456c0bde9b9ecf00ae39243b311ead233b1bbeea510/plone.memoize-3.0.0.tar.gz
+[2023-04-14 01:09:48] INFO root fetch - processPackages [plone.memoize]: Downloading https://files.pythonhosted.org/packages/5a/ec/621d2d1d6f48799f86eba9acbbe2897ef714c37ce5652040e2af5ea311b0/plone.memoize-3.0.1.tar.gz
+[2023-04-14 01:09:48] INFO root fetch - processPackages [plone.app.users]: Start processing: certora-cli-alpha-master
+[2023-04-14 01:09:48] INFO root fetch - main [MainThread]: End processing [plone.app.users]: success
+[2023-04-14 01:09:48] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230413.9.5.948824] Old Version: [20230413.9.44.47373]
+[2023-04-14 01:09:48] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/ec/ba/c10afbdd268f315990bcbecf2e5c813f86b5f3ad19369e727b950ae35fad/certora-cli-alpha-master-20230413.9.44.47373.tar.gz
+[2023-04-14 01:09:48] INFO root fetch - processPackages [plone.memoize]: executing diffoscope
+[2023-04-14 01:09:48] INFO root fetch - processPackages [plone.memoize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.memoize-3.0.0.tar.gz tmp/plone.memoize-3.0.1.tar.gz --markdown 20230414/p/plone.memoize/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-04-14 01:09:48] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38004849>=10485760
+[2023-04-14 01:09:48] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-14 01:09:49] INFO root fetch - main [MainThread]: End processing [seeq]: success
+[2023-04-14 01:09:49] INFO root fetch - main [MainThread]: End processing [seeq]: success
+[2023-04-14 01:09:49] INFO root fetch - main [MainThread]: End processing [plone.memoize]: success
+[2023-04-14 01:10:04] INFO root fetch - main [MainThread]: End processing [seeq-spy]: success
+[2023-04-14 01:10:04] INFO root fetch - main [MainThread]: Store serial: [17699583]
