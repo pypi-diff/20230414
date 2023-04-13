@@ -163,3 +163,83 @@
 [2023-04-14 00:14:10] INFO root fetch - processPackages [ezbeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezbeq-0.9.2.tar.gz tmp/ezbeq-0.9.3.tar.gz --markdown 20230414/e/ezbeq/0.9.2-0.9.3/diff.md --exclude *.pyd
 [2023-04-14 00:14:12] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-04-14 00:14:12] INFO root fetch - main [MainThread]: Store serial: [17699194]
+[2023-04-14 00:19:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699194]
+[2023-04-14 00:19:21] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 00:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bycycle
+[2023-04-14 00:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: djangoldp-needle
+[2023-04-14 00:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ape-ganache
+[2023-04-14 00:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: locate-pixelcolor-cpppragma
+[2023-04-14 00:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nnogada
+[2023-04-14 00:19:21] WARNING root fetch - processPackages [locate-pixelcolor-cpppragma]: Skipping, unable to determine old version
+[2023-04-14 00:19:21] INFO root fetch - processPackages [locate-pixelcolor-cpppragma]: Start processing: flask-pydantic-api
+[2023-04-14 00:19:21] INFO root fetch - main [MainThread]: End processing [locate-pixelcolor-cpppragma] error
+[2023-04-14 00:19:21] INFO root fetch - processPackages [bycycle]: New version: [1.1.0] Old Version: [1.0.0rc2]
+[2023-04-14 00:19:21] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 00:19:21] INFO root fetch - processPackages [nnogada]: New version: [0.9.1.1] Old Version: [0.9.1]
+[2023-04-14 00:19:21] INFO root fetch - processPackages [ape-ganache]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-14 00:19:21] INFO root fetch - processPackages [flask-pydantic-api]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-14 00:19:21] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-14 00:19:21] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230414/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 00:19:21] INFO root fetch - processPackages [nnogada]: Downloading https://files.pythonhosted.org/packages/13/8a/7eb9fee791168ee28eb76c22d74bb71ab9cd18927f87363abf6a318cb5f1/nnogada-0.9.1.tar.gz
+[2023-04-14 00:19:21] INFO root fetch - processPackages [bycycle]: Downloading https://files.pythonhosted.org/packages/69/00/1b02362929441fb0b8432db4d41b818f748ab1f053ee88c4281f7764efe4/bycycle-1.0.0rc2.tar.gz
+[2023-04-14 00:19:21] INFO root fetch - processPackages [flask-pydantic-api]: Downloading https://files.pythonhosted.org/packages/bf/7a/3ae02e698680a59d34695f8a33fe6be350ddeee6249d478832b860a619d7/flask_pydantic_api-0.9.2-py3-none-any.whl
+[2023-04-14 00:19:21] INFO root fetch - processPackages [ape-ganache]: Downloading https://files.pythonhosted.org/packages/52/dd/22fa1785ace91d76a160476748db5b891cbdd9651dee057229b8d2618285/ape-ganache-0.6.5.tar.gz
+[2023-04-14 00:19:21] INFO root fetch - processPackages [flask-pydantic-api]: Downloading https://files.pythonhosted.org/packages/55/3f/e25416636e073be87d5ded1f81fae86399455ad4ee155798105070ddf55c/flask_pydantic_api-0.9.3-py3-none-any.whl
+[2023-04-14 00:19:21] INFO root fetch - processPackages [nnogada]: Downloading https://files.pythonhosted.org/packages/d4/17/cb80a50adde4f7b2a8d3deb3b29fce21f24b9dfacf77202c79f71ec57bea/nnogada-0.9.1.1.tar.gz
+[2023-04-14 00:19:21] INFO root fetch - processPackages [ape-ganache]: executing diffoscope
+[2023-04-14 00:19:21] INFO root fetch - processPackages [ape-ganache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-ganache-0.6.4.tar.gz tmp/ape-ganache-0.6.5.tar.gz --markdown 20230414/a/ape-ganache/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-14 00:19:21] INFO root fetch - processPackages [bycycle]: Downloading https://files.pythonhosted.org/packages/34/f9/934fbca04a9f3f996fc7e654cbbb17ba1f534abbb5a8dc87d0da69999c9e/bycycle-1.1.0.tar.gz
+[2023-04-14 00:19:21] INFO root fetch - processPackages [flask-pydantic-api]: executing diffoscope
+[2023-04-14 00:19:21] INFO root fetch - processPackages [flask-pydantic-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_pydantic_api-0.9.2-py3-none-any.whl.zip tmp/flask_pydantic_api-0.9.3-py3-none-any.whl.zip --markdown 20230414/f/flask-pydantic-api/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-14 00:19:21] INFO root fetch - processPackages [nnogada]: executing diffoscope
+[2023-04-14 00:19:21] INFO root fetch - processPackages [nnogada]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnogada-0.9.1.tar.gz tmp/nnogada-0.9.1.1.tar.gz --markdown 20230414/n/nnogada/0.9.1-0.9.1.1/diff.md --exclude *.pyd
+[2023-04-14 00:19:21] INFO root fetch - processPackages [bycycle]: executing diffoscope
+[2023-04-14 00:19:21] INFO root fetch - processPackages [bycycle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bycycle-1.0.0rc2.tar.gz tmp/bycycle-1.1.0.tar.gz --markdown 20230414/b/bycycle/1.0.0rc2-1.1.0/diff.md --exclude *.pyd
+[2023-04-14 00:19:22] INFO root fetch - processPackages [djangoldp-needle]: Start processing: tdfpy
+[2023-04-14 00:19:22] INFO root fetch - main [MainThread]: End processing [djangoldp-needle]: success
+[2023-04-14 00:19:22] INFO root fetch - processPackages [tdfpy]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 00:19:22] INFO root fetch - processPackages [tdfpy]: Downloading https://files.pythonhosted.org/packages/04/dd/be8816cb30eb6bd3be106c90461d8776e2e4faddbf954fdc11c150ae626d/tdfpy-0.1.2.tar.gz
+[2023-04-14 00:19:22] INFO root fetch - processPackages [nnogada]: Start processing: sssom
+[2023-04-14 00:19:22] INFO root fetch - main [MainThread]: End processing [nnogada]: success
+[2023-04-14 00:19:22] INFO root fetch - processPackages [sssom]: New version: [0.3.9] Old Version: [0.3.8.dev0]
+[2023-04-14 00:19:22] INFO root fetch - processPackages [flask-pydantic-api]: Start processing: terra-ai-datasets
+[2023-04-14 00:19:22] INFO root fetch - main [MainThread]: End processing [flask-pydantic-api]: success
+[2023-04-14 00:19:22] INFO root fetch - processPackages [terra-ai-datasets]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-14 00:19:23] INFO root fetch - processPackages [terra-ai-datasets]: Downloading https://files.pythonhosted.org/packages/d1/ac/4d193407f4d053ab8ef77dd8f10935968fa164ca12b0248a478b5fe869f2/terra_ai_datasets-1.1.6.tar.gz
+[2023-04-14 00:19:23] INFO root fetch - processPackages [sssom]: executing diffoscope
+[2023-04-14 00:19:23] INFO root fetch - processPackages [sssom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sssom-0.3.8.dev0.tar.gz tmp/sssom-0.3.9.tar.gz --markdown 20230414/s/sssom/0.3.8.dev0-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 00:19:23] INFO root fetch - processPackages [terra-ai-datasets]: executing diffoscope
+[2023-04-14 00:19:23] INFO root fetch - processPackages [terra-ai-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terra_ai_datasets-1.1.5.tar.gz tmp/terra_ai_datasets-1.1.6.tar.gz --markdown 20230414/t/terra-ai-datasets/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-14 00:19:23] INFO root fetch - processPackages [bycycle]: Start processing: matchmaps
+[2023-04-14 00:19:23] INFO root fetch - main [MainThread]: End processing [bycycle]: success
+[2023-04-14 00:19:23] INFO root fetch - processPackages [matchmaps]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-14 00:19:23] INFO root fetch - processPackages [tdfpy]: Downloading https://files.pythonhosted.org/packages/c5/8b/e3bc485b072d4f698dda9f05b75df5e7c85c54f6077b6382e6b853937d86/tdfpy-0.1.3.tar.gz
+[2023-04-14 00:19:23] INFO root fetch - processPackages [matchmaps]: Downloading https://files.pythonhosted.org/packages/06/00/72e0c37c767265f466fdde10c4cc3de4f733f0a7ac906d9b86d9220d482d/matchmaps-0.1.3.tar.gz
+[2023-04-14 00:19:23] INFO root fetch - processPackages [matchmaps]: Downloading https://files.pythonhosted.org/packages/de/d6/a38ef10b7daa28a9911e551dbecd1bca5b2d8caefb8b7853c0e59ba717fe/matchmaps-0.1.4.tar.gz
+[2023-04-14 00:19:24] INFO root fetch - processPackages [matchmaps]: executing diffoscope
+[2023-04-14 00:19:24] INFO root fetch - processPackages [matchmaps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matchmaps-0.1.3.tar.gz tmp/matchmaps-0.1.4.tar.gz --markdown 20230414/m/matchmaps/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-14 00:19:24] INFO root fetch - processPackages [terra-ai-datasets]: Start processing: cbra
+[2023-04-14 00:19:24] INFO root fetch - main [MainThread]: End processing [terra-ai-datasets]: success
+[2023-04-14 00:19:24] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a8]
+[2023-04-14 00:19:24] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-14 00:19:24] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a8.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230414/c/cbra/2.0.0a8-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-14 00:19:24] INFO root fetch - processPackages [sssom]: Start processing: opencmiss.utils
+[2023-04-14 00:19:24] INFO root fetch - main [MainThread]: End processing [sssom]: success
+[2023-04-14 00:19:24] INFO root fetch - processPackages [opencmiss.utils]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-14 00:19:24] INFO root fetch - processPackages [opencmiss.utils]: Downloading https://files.pythonhosted.org/packages/cd/fb/5308dbb5df9e28650c6b5cce5d187a6fda0eec82c59b7c8e1c30572c1141/opencmiss.utils-0.4.1.tar.gz
+[2023-04-14 00:19:24] INFO root fetch - processPackages [ape-ganache]: Start processing: prefect
+[2023-04-14 00:19:24] INFO root fetch - main [MainThread]: End processing [ape-ganache]: success
+[2023-04-14 00:19:24] INFO root fetch - processPackages [prefect]: New version: [2.9.0] Old Version: [2.82]
+[2023-04-14 00:19:25] INFO root fetch - main [MainThread]: End processing [matchmaps]: success
+[2023-04-14 00:19:25] INFO root fetch - processPackages [prefect]: executing diffoscope
+[2023-04-14 00:19:25] INFO root fetch - processPackages [prefect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefect-2.82.tar.gz tmp/prefect-2.9.0.tar.gz --markdown 20230414/p/prefect/2.82-2.9.0/diff.md --exclude *.pyd
+[2023-04-14 00:19:25] INFO root fetch - processPackages [opencmiss.utils]: Downloading https://files.pythonhosted.org/packages/f0/32/b5c0fbf475bab3166240325b9b1ab33b833d9e9722efdc9ab5f11f2d166f/opencmiss.utils-0.4.2.tar.gz
+[2023-04-14 00:19:25] INFO root fetch - processPackages [tdfpy]: executing diffoscope
+[2023-04-14 00:19:25] INFO root fetch - processPackages [tdfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdfpy-0.1.2.tar.gz tmp/tdfpy-0.1.3.tar.gz --markdown 20230414/t/tdfpy/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 00:19:25] INFO root fetch - processPackages [opencmiss.utils]: executing diffoscope
+[2023-04-14 00:19:25] INFO root fetch - processPackages [opencmiss.utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opencmiss.utils-0.4.1.tar.gz tmp/opencmiss.utils-0.4.2.tar.gz --markdown 20230414/o/opencmiss.utils/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-14 00:19:26] INFO root fetch - main [MainThread]: End processing [opencmiss.utils]: success
+[2023-04-14 00:19:26] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-04-14 00:19:27] INFO root fetch - main [MainThread]: End processing [tdfpy]: success
+[2023-04-14 00:19:44] INFO root fetch - main [MainThread]: End processing [prefect]: success
+[2023-04-14 00:19:44] INFO root fetch - main [MainThread]: Store serial: [17699238]
