@@ -1182,3 +1182,35 @@
 [2023-04-14 01:32:08] INFO root fetch - main [MainThread]: End processing [weather-command]: success
 [2023-04-14 01:32:09] INFO root fetch - main [MainThread]: End processing [elifecleaner]: success
 [2023-04-14 01:32:09] INFO root fetch - main [MainThread]: Store serial: [17699688]
+[2023-04-14 01:37:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699688]
+[2023-04-14 01:37:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-14 01:37:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mdast-cli
+[2023-04-14 01:37:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plone.app.linkintegrity
+[2023-04-14 01:37:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: konsepy
+[2023-04-14 01:37:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: runtimepy
+[2023-04-14 01:37:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plone.outputfilters
+[2023-04-14 01:37:16] INFO root fetch - processPackages [mdast-cli]: New version: [2023.4.5] Old Version: [2023.4.4]
+[2023-04-14 01:37:16] INFO root fetch - processPackages [plone.outputfilters]: New version: [5.0.2] Old Version: [5.0.1]
+[2023-04-14 01:37:16] WARNING root fetch - processPackages [konsepy]: Skipping, unable to determine old version
+[2023-04-14 01:37:16] INFO root fetch - processPackages [plone.app.linkintegrity]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-04-14 01:37:16] INFO root fetch - main [MainThread]: End processing [konsepy] error
+[2023-04-14 01:37:16] INFO root fetch - processPackages [runtimepy]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-14 01:37:16] INFO root fetch - processPackages [plone.outputfilters]: Downloading https://files.pythonhosted.org/packages/db/bb/91a49b660efd174d661863e31d66e741e8a71a90f5c62b814aca910e1dc3/plone.outputfilters-5.0.1.tar.gz
+[2023-04-14 01:37:16] INFO root fetch - processPackages [plone.app.linkintegrity]: Downloading https://files.pythonhosted.org/packages/d5/e6/a278c65a4545e31dbd25e91087ba7fc270821c1bcdfb0c393716ef932229/plone.app.linkintegrity-4.0.0.tar.gz
+[2023-04-14 01:37:16] INFO root fetch - processPackages [mdast-cli]: Downloading https://files.pythonhosted.org/packages/c9/ef/0972b02e8823933b7b53893fe1e6cb924536d0cd0ce3ba850a48302387c3/mdast_cli-2023.4.5.tar.gz
+[2023-04-14 01:37:16] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/00/9d/f282c9f23cf40d9501dc640aad7d17a037e2fa0125701fa0758eb5ebb3f5/runtimepy-1.4.1.tar.gz
+[2023-04-14 01:37:16] INFO root fetch - processPackages [runtimepy]: executing diffoscope
+[2023-04-14 01:37:16] INFO root fetch - processPackages [runtimepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtimepy-1.4.0.tar.gz tmp/runtimepy-1.4.1.tar.gz --markdown 20230414/r/runtimepy/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-14 01:37:17] INFO root fetch - processPackages [plone.outputfilters]: Downloading https://files.pythonhosted.org/packages/11/4e/07c717634458a5723616ce0c1217bec4696d3e07ece7449d1a00becc3d23/plone.outputfilters-5.0.2.tar.gz
+[2023-04-14 01:37:17] INFO root fetch - processPackages [mdast-cli]: executing diffoscope
+[2023-04-14 01:37:17] INFO root fetch - processPackages [mdast-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdast_cli-2023.4.4.tar.gz tmp/mdast_cli-2023.4.5.tar.gz --markdown 20230414/m/mdast-cli/2023.4.4-2023.4.5/diff.md --exclude *.pyd
+[2023-04-14 01:37:17] INFO root fetch - processPackages [plone.app.linkintegrity]: Downloading https://files.pythonhosted.org/packages/92/9b/332c5a4ddc432cf8e505db5fdf5c3b14b653176183db2d5835dc7a5eaf1e/plone.app.linkintegrity-4.0.1.tar.gz
+[2023-04-14 01:37:17] INFO root fetch - processPackages [plone.outputfilters]: executing diffoscope
+[2023-04-14 01:37:17] INFO root fetch - processPackages [plone.outputfilters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.outputfilters-5.0.1.tar.gz tmp/plone.outputfilters-5.0.2.tar.gz --markdown 20230414/p/plone.outputfilters/5.0.1-5.0.2/diff.md --exclude *.pyd
+[2023-04-14 01:37:17] INFO root fetch - processPackages [plone.app.linkintegrity]: executing diffoscope
+[2023-04-14 01:37:17] INFO root fetch - processPackages [plone.app.linkintegrity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.linkintegrity-4.0.0.tar.gz tmp/plone.app.linkintegrity-4.0.1.tar.gz --markdown 20230414/p/plone.app.linkintegrity/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-04-14 01:37:18] INFO root fetch - main [MainThread]: End processing [mdast-cli]: success
+[2023-04-14 01:37:18] INFO root fetch - main [MainThread]: End processing [runtimepy]: success
+[2023-04-14 01:37:18] INFO root fetch - main [MainThread]: End processing [plone.outputfilters]: success
+[2023-04-14 01:37:18] INFO root fetch - main [MainThread]: End processing [plone.app.linkintegrity]: success
+[2023-04-14 01:37:18] INFO root fetch - main [MainThread]: Store serial: [17699707]
