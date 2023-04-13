@@ -503,3 +503,99 @@
 [2023-04-14 00:40:37] INFO root fetch - processPackages [django-vendor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-vendor-0.3.8.tar.gz tmp/django-vendor-0.3.9.tar.gz --markdown 20230414/d/django-vendor/0.3.8-0.3.9/diff.md --exclude *.pyd
 [2023-04-14 00:40:39] INFO root fetch - main [MainThread]: End processing [django-vendor]: success
 [2023-04-14 00:40:39] INFO root fetch - main [MainThread]: Store serial: [17699374]
+[2023-04-14 00:45:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699374]
+[2023-04-14 00:45:46] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 00:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycyphal
+[2023-04-14 00:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tdfextractor
+[2023-04-14 00:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onefuzz
+[2023-04-14 00:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onefuzztypes
+[2023-04-14 00:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-project-structure
+[2023-04-14 00:45:46] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.9b7] Old Version: [0.8.9b0]
+[2023-04-14 00:45:46] INFO root fetch - processPackages [pycyphal]: New version: [1.9.1] Old Version: [1.9.0b2]
+[2023-04-14 00:45:46] INFO root fetch - processPackages [onefuzz]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-14 00:45:46] INFO root fetch - processPackages [tdfextractor]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 00:45:46] INFO root fetch - processPackages [onefuzztypes]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-14 00:45:46] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-14 00:45:46] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.9b0.tar.gz tmp/python-project-structure-0.8.9b7.tar.gz --markdown 20230414/p/python-project-structure/0.8.9b0-0.8.9b7/diff.md --exclude *.pyd
+[2023-04-14 00:45:46] INFO root fetch - processPackages [onefuzz]: Downloading https://files.pythonhosted.org/packages/f7/ab/a2bfe248e7097f9b3dbec70f5a3d376aa173deae4cb0cde9a6da7dbfe5e1/onefuzz-7.0.0.tar.gz
+[2023-04-14 00:45:46] INFO root fetch - processPackages [onefuzztypes]: Downloading https://files.pythonhosted.org/packages/82/5d/078ea07ef2387a374c53729e1c96af6b047d2a42d4243f35a2d76e280a0c/onefuzztypes-7.0.0.tar.gz
+[2023-04-14 00:45:46] INFO root fetch - processPackages [pycyphal]: Downloading https://files.pythonhosted.org/packages/4c/b7/d88a03826d7e039947f9bb914a58e83141a8e40a08c30166bbedd2dc154c/pycyphal-1.9.0b2.tar.gz
+[2023-04-14 00:45:46] INFO root fetch - processPackages [tdfextractor]: Downloading https://files.pythonhosted.org/packages/a9/0f/04cca4b33119412de949a2541434f957c5bf89244238c65d78b0cf12f29c/tdfextractor-0.1.6.tar.gz
+[2023-04-14 00:45:46] INFO root fetch - processPackages [tdfextractor]: executing diffoscope
+[2023-04-14 00:45:46] INFO root fetch - processPackages [tdfextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdfextractor-0.1.5.tar.gz tmp/tdfextractor-0.1.6.tar.gz --markdown 20230414/t/tdfextractor/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 00:45:47] INFO root fetch - processPackages [onefuzz]: Downloading https://files.pythonhosted.org/packages/de/b7/e8cc2e386e11f422aa369ccf143bf983d44827ce030fc7b6e0d11539c5f8/onefuzz-8.0.0.tar.gz
+[2023-04-14 00:45:47] INFO root fetch - processPackages [onefuzztypes]: Downloading https://files.pythonhosted.org/packages/b7/73/637af6f20e5ca0ceeafc2729975202481c67ed3bab817c79b36666960849/onefuzztypes-8.0.0.tar.gz
+[2023-04-14 00:45:47] INFO root fetch - processPackages [pycyphal]: Downloading https://files.pythonhosted.org/packages/c5/90/b4a2e3cfbef3ef5d0f13653834aebbfb4b1087ae16a79fcdb3ca6d23028e/pycyphal-1.9.1.tar.gz
+[2023-04-14 00:45:47] INFO root fetch - processPackages [onefuzz]: executing diffoscope
+[2023-04-14 00:45:47] INFO root fetch - processPackages [onefuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onefuzz-7.0.0.tar.gz tmp/onefuzz-8.0.0.tar.gz --markdown 20230414/o/onefuzz/7.0.0-8.0.0/diff.md --exclude *.pyd
+[2023-04-14 00:45:47] INFO root fetch - processPackages [onefuzztypes]: executing diffoscope
+[2023-04-14 00:45:47] INFO root fetch - processPackages [onefuzztypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onefuzztypes-7.0.0.tar.gz tmp/onefuzztypes-8.0.0.tar.gz --markdown 20230414/o/onefuzztypes/7.0.0-8.0.0/diff.md --exclude *.pyd
+[2023-04-14 00:45:47] INFO root fetch - processPackages [pycyphal]: executing diffoscope
+[2023-04-14 00:45:47] INFO root fetch - processPackages [pycyphal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycyphal-1.9.0b2.tar.gz tmp/pycyphal-1.9.1.tar.gz --markdown 20230414/p/pycyphal/1.9.0b2-1.9.1/diff.md --exclude *.pyd
+[2023-04-14 00:45:48] INFO root fetch - processPackages [tdfextractor]: Start processing: jupyter-client
+[2023-04-14 00:45:48] INFO root fetch - main [MainThread]: End processing [tdfextractor]: success
+[2023-04-14 00:45:48] INFO root fetch - processPackages [jupyter-client]: New version: [8.2.0] Old Version: [8.1.0]
+[2023-04-14 00:45:48] INFO root fetch - processPackages [jupyter-client]: Downloading https://files.pythonhosted.org/packages/bd/3d/a65f5f54ebaa2ad32eec08fc8ba471608dbb4a0cb0e91dc8d58ac3bdc3d4/jupyter_client-8.1.0.tar.gz
+[2023-04-14 00:45:48] INFO root fetch - processPackages [python-project-structure]: Start processing: py-partiql-parser
+[2023-04-14 00:45:48] INFO root fetch - main [MainThread]: End processing [python-project-structure]: success
+[2023-04-14 00:45:48] INFO root fetch - processPackages [py-partiql-parser]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 00:45:48] INFO root fetch - processPackages [onefuzztypes]: Start processing: micromechanics-indentationGUI
+[2023-04-14 00:45:48] INFO root fetch - main [MainThread]: End processing [onefuzztypes]: success
+[2023-04-14 00:45:48] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 00:45:48] INFO root fetch - processPackages [jupyter-client]: Downloading https://files.pythonhosted.org/packages/95/81/e9d897aa0f8ae679da86fab982900f5e40c37ebd81b04a3e88f26a201517/jupyter_client-8.2.0.tar.gz
+[2023-04-14 00:45:48] INFO root fetch - processPackages [py-partiql-parser]: Downloading https://files.pythonhosted.org/packages/68/8f/7b37ff6ca28c3f335dd50b4cbb7f4e26c60f16ebd7d89011def96a9354e3/py-partiql-parser-0.1.0.tar.gz
+[2023-04-14 00:45:48] INFO root fetch - processPackages [onefuzz]: Start processing: bagpipes
+[2023-04-14 00:45:48] INFO root fetch - main [MainThread]: End processing [onefuzz]: success
+[2023-04-14 00:45:48] INFO root fetch - processPackages [bagpipes]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 00:45:48] INFO root fetch - processPackages [jupyter-client]: executing diffoscope
+[2023-04-14 00:45:48] INFO root fetch - processPackages [jupyter-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_client-8.1.0.tar.gz tmp/jupyter_client-8.2.0.tar.gz --markdown 20230414/j/jupyter-client/8.1.0-8.2.0/diff.md --exclude *.pyd
+[2023-04-14 00:45:48] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-14 00:45:48] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230414/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 00:45:48] INFO root fetch - processPackages [bagpipes]: Downloading https://files.pythonhosted.org/packages/86/02/2513f83a7ea8f3ca958909812103945fa4c25138075f3cf3fe5f2b91a7b7/bagpipes-1.0.1.tar.gz
+[2023-04-14 00:45:48] INFO root fetch - processPackages [py-partiql-parser]: Downloading https://files.pythonhosted.org/packages/da/64/08edb8ff216c8a13a605f05b4ceff6bab4d24d79ca6b9aca600a8d4bed28/py-partiql-parser-0.2.0.tar.gz
+[2023-04-14 00:45:48] WARNING root fetch - processPackages [bagpipes]: Skipping package: exceeds size limit 209703865>=10485760
+[2023-04-14 00:45:48] INFO root fetch - processPackages [bagpipes]: Start processing: python-ubercode-utils
+[2023-04-14 00:45:48] INFO root fetch - main [MainThread]: End processing [bagpipes] error
+[2023-04-14 00:45:48] INFO root fetch - processPackages [python-ubercode-utils]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-14 00:45:48] INFO root fetch - processPackages [py-partiql-parser]: executing diffoscope
+[2023-04-14 00:45:48] INFO root fetch - processPackages [py-partiql-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-partiql-parser-0.1.0.tar.gz tmp/py-partiql-parser-0.2.0.tar.gz --markdown 20230414/p/py-partiql-parser/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 00:45:49] INFO root fetch - processPackages [python-ubercode-utils]: Downloading https://files.pythonhosted.org/packages/c7/9c/6dd0697f2225b2c1f4f61e51427038ae1de09eaf7feaf233d6bf395f9f9e/python-ubercode-utils-1.0.4.tar.gz
+[2023-04-14 00:45:49] INFO root fetch - processPackages [pycyphal]: Start processing: tdfextractor
+[2023-04-14 00:45:49] INFO root fetch - main [MainThread]: End processing [pycyphal]: success
+[2023-04-14 00:45:49] INFO root fetch - processPackages [tdfextractor]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-14 00:45:49] INFO root fetch - processPackages [python-ubercode-utils]: executing diffoscope
+[2023-04-14 00:45:49] INFO root fetch - processPackages [python-ubercode-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-ubercode-utils-1.0.3.tar.gz tmp/python-ubercode-utils-1.0.4.tar.gz --markdown 20230414/p/python-ubercode-utils/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-14 00:45:49] INFO root fetch - processPackages [tdfextractor]: Downloading https://files.pythonhosted.org/packages/8b/f2/78737f99a6571ffb8d666eebbfc0e1a1660097399f45eb5e751176180340/tdfextractor-0.1.7.tar.gz
+[2023-04-14 00:45:49] INFO root fetch - processPackages [tdfextractor]: executing diffoscope
+[2023-04-14 00:45:49] INFO root fetch - processPackages [tdfextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdfextractor-0.1.6.tar.gz tmp/tdfextractor-0.1.7.tar.gz --markdown 20230414/t/tdfextractor/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-14 00:45:50] INFO root fetch - processPackages [py-partiql-parser]: Start processing: pyxboxcontroller
+[2023-04-14 00:45:50] INFO root fetch - main [MainThread]: End processing [py-partiql-parser]: success
+[2023-04-14 00:45:50] INFO root fetch - processPackages [pyxboxcontroller]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-14 00:45:50] INFO root fetch - processPackages [pyxboxcontroller]: Downloading https://files.pythonhosted.org/packages/0e/0a/55eb311055b95f02f1553ab60d08d00a82df275b3a8f26f3d5cf4f6db048/pyxboxcontroller-0.6.2.tar.gz
+[2023-04-14 00:45:50] INFO root fetch - processPackages [micromechanics-indentationGUI]: Start processing: satori-ci
+[2023-04-14 00:45:50] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-14 00:45:50] INFO root fetch - processPackages [satori-ci]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-14 00:45:50] INFO root fetch - processPackages [pyxboxcontroller]: Downloading https://files.pythonhosted.org/packages/3e/c6/1cfe873fb1e7c5c7a311fd6a24871435092adc3ddc58e23e6b6441afa4a5/pyxboxcontroller-0.6.3.tar.gz
+[2023-04-14 00:45:50] INFO root fetch - processPackages [python-ubercode-utils]: Start processing: ecopipeline
+[2023-04-14 00:45:50] INFO root fetch - main [MainThread]: End processing [python-ubercode-utils]: success
+[2023-04-14 00:45:50] INFO root fetch - processPackages [jupyter-client]: Start processing: cbrzn-ethereum-provider-py
+[2023-04-14 00:45:50] INFO root fetch - main [MainThread]: End processing [jupyter-client]: success
+[2023-04-14 00:45:50] INFO root fetch - processPackages [satori-ci]: executing diffoscope
+[2023-04-14 00:45:50] INFO root fetch - processPackages [satori-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satori-ci-1.1.8.tar.gz tmp/satori-ci-1.1.9.tar.gz --markdown 20230414/s/satori-ci/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-14 00:45:50] INFO root fetch - main [MainThread]: End processing [tdfextractor]: success
+[2023-04-14 00:45:50] INFO root fetch - processPackages [ecopipeline]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 00:45:50] INFO root fetch - processPackages [cbrzn-ethereum-provider-py]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 00:45:50] INFO root fetch - processPackages [pyxboxcontroller]: executing diffoscope
+[2023-04-14 00:45:50] INFO root fetch - processPackages [pyxboxcontroller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxboxcontroller-0.6.2.tar.gz tmp/pyxboxcontroller-0.6.3.tar.gz --markdown 20230414/p/pyxboxcontroller/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-14 00:45:50] INFO root fetch - processPackages [cbrzn-ethereum-provider-py]: Downloading https://files.pythonhosted.org/packages/67/bd/d01644ec591a6d5055fb20c151e52bcb00846076327faacee1d1320bf22b/cbrzn_ethereum_provider_py-0.0.1.tar.gz
+[2023-04-14 00:45:51] INFO root fetch - processPackages [ecopipeline]: Downloading https://files.pythonhosted.org/packages/d8/e3/5775077e223a7f9074ea4029d5583eea00ea6befca8b0690f80a8123b719/ecopipeline-0.0.5.tar.gz
+[2023-04-14 00:45:51] INFO root fetch - processPackages [ecopipeline]: executing diffoscope
+[2023-04-14 00:45:51] INFO root fetch - processPackages [ecopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecopipeline-0.0.4.tar.gz tmp/ecopipeline-0.0.5.tar.gz --markdown 20230414/e/ecopipeline/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 00:45:51] INFO root fetch - processPackages [cbrzn-ethereum-provider-py]: Downloading https://files.pythonhosted.org/packages/70/c0/734cba0915ee31bd678a7c09a0002e92f8442fd7de8def9491ac8f1dc648/cbrzn_ethereum_provider_py-0.0.2.tar.gz
+[2023-04-14 00:45:51] INFO root fetch - main [MainThread]: End processing [satori-ci]: success
+[2023-04-14 00:45:51] INFO root fetch - processPackages [cbrzn-ethereum-provider-py]: executing diffoscope
+[2023-04-14 00:45:51] INFO root fetch - processPackages [cbrzn-ethereum-provider-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbrzn_ethereum_provider_py-0.0.1.tar.gz tmp/cbrzn_ethereum_provider_py-0.0.2.tar.gz --markdown 20230414/c/cbrzn-ethereum-provider-py/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 00:45:51] INFO root fetch - main [MainThread]: End processing [pyxboxcontroller]: success
+[2023-04-14 00:45:52] INFO root fetch - main [MainThread]: End processing [ecopipeline]: success
+[2023-04-14 00:45:52] INFO root fetch - main [MainThread]: End processing [cbrzn-ethereum-provider-py]: success
+[2023-04-14 00:45:52] INFO root fetch - main [MainThread]: Store serial: [17699417]
