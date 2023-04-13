@@ -599,3 +599,76 @@
 [2023-04-14 00:45:52] INFO root fetch - main [MainThread]: End processing [ecopipeline]: success
 [2023-04-14 00:45:52] INFO root fetch - main [MainThread]: End processing [cbrzn-ethereum-provider-py]: success
 [2023-04-14 00:45:52] INFO root fetch - main [MainThread]: Store serial: [17699417]
+[2023-04-14 00:50:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699417]
+[2023-04-14 00:50:59] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 00:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TerraVide
+[2023-04-14 00:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plone.app.iterate
+[2023-04-14 00:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NREL-sup3r
+[2023-04-14 00:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: minichain
+[2023-04-14 00:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rgcosm
+[2023-04-14 00:50:59] INFO root fetch - processPackages [NREL-sup3r]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-14 00:50:59] INFO root fetch - processPackages [minichain]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-14 00:50:59] INFO root fetch - processPackages [plone.app.iterate]: New version: [5.0.2] Old Version: [5.0.1]
+[2023-04-14 00:50:59] INFO root fetch - processPackages [rgcosm]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 00:50:59] INFO root fetch - processPackages [TerraVide]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 00:50:59] INFO root fetch - processPackages [NREL-sup3r]: Downloading https://files.pythonhosted.org/packages/d2/9a/5c83b4a316a93c29c984d5b779baf422d86ca5181e28b0863d02540c81a0/NREL-sup3r-0.0.9.tar.gz
+[2023-04-14 00:50:59] INFO root fetch - processPackages [TerraVide]: Downloading https://files.pythonhosted.org/packages/9c/3a/ef70d975260c847e2bb8ad126640981e141ed89d84156205c96b1bed133b/TerraVide-0.0.1.tar.gz
+[2023-04-14 00:50:59] INFO root fetch - processPackages [rgcosm]: Downloading https://files.pythonhosted.org/packages/4a/01/c586528b7a9c070a8c6642a6dc774525cdfb80419eb9ddafc211fef21942/rgcosm-0.0.2.tar.gz
+[2023-04-14 00:50:59] INFO root fetch - processPackages [plone.app.iterate]: Downloading https://files.pythonhosted.org/packages/44/2d/05e173a7a9915eb7caee2ec4993dc46eede1c43fafe8114869096c4c6582/plone.app.iterate-5.0.1.tar.gz
+[2023-04-14 00:51:00] INFO root fetch - processPackages [minichain]: Downloading https://files.pythonhosted.org/packages/bc/d4/f8abf794401aa91b59489ef47c1e9a5bc325af2bcbbde24a8ec3a088b256/minichain-0.2.2.tar.gz
+[2023-04-14 00:51:00] INFO root fetch - processPackages [NREL-sup3r]: Downloading https://files.pythonhosted.org/packages/eb/70/32314ddc870e305d96944efe659f53bd30229dabdd977a2a1f6c19590c68/NREL-sup3r-0.1.0.tar.gz
+[2023-04-14 00:51:00] INFO root fetch - processPackages [TerraVide]: Downloading https://files.pythonhosted.org/packages/76/04/1e6519545a1dab2931275649a2548d276971d958a90ff0d9d88458cbcffd/TerraVide-0.0.2.tar.gz
+[2023-04-14 00:51:00] INFO root fetch - processPackages [rgcosm]: Downloading https://files.pythonhosted.org/packages/f7/5d/a29bfb406b61cb90aecff98c702f83af3732b3cb4a14cf8555ec453e9178/rgcosm-0.0.3.tar.gz
+[2023-04-14 00:51:00] INFO root fetch - processPackages [plone.app.iterate]: Downloading https://files.pythonhosted.org/packages/8f/64/e4ba5fe0155ec1e6acff435f83b4de714eadf79d2ebfd343437094e1309d/plone.app.iterate-5.0.2.tar.gz
+[2023-04-14 00:51:00] INFO root fetch - processPackages [minichain]: Downloading https://files.pythonhosted.org/packages/03/ce/513f2fd763e5e6af6397a69fde41f2a195c13a136582275be3e34497c8bb/minichain-0.2.3.linux-x86_64.tar.gz
+[2023-04-14 00:51:00] INFO root fetch - processPackages [NREL-sup3r]: executing diffoscope
+[2023-04-14 00:51:00] INFO root fetch - processPackages [NREL-sup3r]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NREL-sup3r-0.0.9.tar.gz tmp/NREL-sup3r-0.1.0.tar.gz --markdown 20230414/N/NREL-sup3r/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-14 00:51:00] INFO root fetch - processPackages [TerraVide]: executing diffoscope
+[2023-04-14 00:51:00] INFO root fetch - processPackages [TerraVide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TerraVide-0.0.1.tar.gz tmp/TerraVide-0.0.2.tar.gz --markdown 20230414/T/TerraVide/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 00:51:00] INFO root fetch - processPackages [plone.app.iterate]: executing diffoscope
+[2023-04-14 00:51:00] INFO root fetch - processPackages [plone.app.iterate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.iterate-5.0.1.tar.gz tmp/plone.app.iterate-5.0.2.tar.gz --markdown 20230414/p/plone.app.iterate/5.0.1-5.0.2/diff.md --exclude *.pyd
+[2023-04-14 00:51:00] INFO root fetch - processPackages [minichain]: executing diffoscope
+[2023-04-14 00:51:00] INFO root fetch - processPackages [minichain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minichain-0.2.2.tar.gz tmp/minichain-0.2.3.linux-x86_64.tar.gz --markdown 20230414/m/minichain/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-14 00:51:00] INFO root fetch - processPackages [rgcosm]: executing diffoscope
+[2023-04-14 00:51:00] INFO root fetch - processPackages [rgcosm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rgcosm-0.0.2.tar.gz tmp/rgcosm-0.0.3.tar.gz --markdown 20230414/r/rgcosm/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 00:51:01] INFO root fetch - processPackages [TerraVide]: Start processing: plone.app.z3cform
+[2023-04-14 00:51:01] INFO root fetch - main [MainThread]: End processing [TerraVide]: success
+[2023-04-14 00:51:01] INFO root fetch - processPackages [plone.app.z3cform]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-04-14 00:51:01] INFO root fetch - processPackages [minichain]: Start processing: headscale-api
+[2023-04-14 00:51:01] INFO root fetch - main [MainThread]: End processing [minichain]: success
+[2023-04-14 00:51:01] INFO root fetch - processPackages [headscale-api]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 00:51:01] INFO root fetch - processPackages [plone.app.z3cform]: Downloading https://files.pythonhosted.org/packages/b7/8f/864e1fd4b8acf78febfaab70cd42b67214b3a67bd6dc8aeef834f929d640/plone.app.z3cform-4.0.2.tar.gz
+[2023-04-14 00:51:01] INFO root fetch - processPackages [headscale-api]: Downloading https://files.pythonhosted.org/packages/60/dd/5c0d010677b022f04ed051e381b96fcf0d7956476b366f1538c23d9bbd31/headscale_api-0.1.2.tar.gz
+[2023-04-14 00:51:02] INFO root fetch - processPackages [rgcosm]: Start processing: pulumi-databricks
+[2023-04-14 00:51:02] INFO root fetch - main [MainThread]: End processing [rgcosm]: success
+[2023-04-14 00:51:02] INFO root fetch - processPackages [plone.app.z3cform]: Downloading https://files.pythonhosted.org/packages/86/38/742fa6265216eaebfaf4bc3405c5f64ea2d49c0badb4b67f513d12228f8a/plone.app.z3cform-4.0.3.tar.gz
+[2023-04-14 00:51:02] INFO root fetch - processPackages [pulumi-databricks]: New version: [1.9.0a1678745257] Old Version: [1.8.0a1678127428]
+[2023-04-14 00:51:02] INFO root fetch - processPackages [headscale-api]: executing diffoscope
+[2023-04-14 00:51:02] INFO root fetch - processPackages [headscale-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headscale_api-0.1.1.tar.gz tmp/headscale_api-0.1.2.tar.gz --markdown 20230414/h/headscale-api/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 00:51:02] INFO root fetch - processPackages [pulumi-databricks]: executing diffoscope
+[2023-04-14 00:51:02] INFO root fetch - processPackages [pulumi-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_databricks-1.8.0a1678127428.tar.gz tmp/pulumi_databricks-1.9.0a1678745257.tar.gz --markdown 20230414/p/pulumi-databricks/1.8.0a1678127428-1.9.0a1678745257/diff.md --exclude *.pyd
+[2023-04-14 00:51:02] INFO root fetch - processPackages [plone.app.z3cform]: executing diffoscope
+[2023-04-14 00:51:02] INFO root fetch - processPackages [plone.app.z3cform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.z3cform-4.0.2.tar.gz tmp/plone.app.z3cform-4.0.3.tar.gz --markdown 20230414/p/plone.app.z3cform/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-04-14 00:51:03] INFO root fetch - processPackages [headscale-api]: Start processing: minichain
+[2023-04-14 00:51:03] INFO root fetch - main [MainThread]: End processing [headscale-api]: success
+[2023-04-14 00:51:03] INFO root fetch - processPackages [minichain]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-14 00:51:03] INFO root fetch - processPackages [plone.app.iterate]: Start processing: traffix
+[2023-04-14 00:51:03] INFO root fetch - main [MainThread]: End processing [plone.app.iterate]: success
+[2023-04-14 00:51:03] INFO root fetch - processPackages [traffix]: New version: [0.1.9a0] Old Version: [0.1.8a0]
+[2023-04-14 00:51:03] INFO root fetch - processPackages [minichain]: executing diffoscope
+[2023-04-14 00:51:03] INFO root fetch - processPackages [minichain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minichain-0.2.2.tar.gz tmp/minichain-0.2.3.linux-x86_64.tar.gz --markdown 20230414/m/minichain/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-14 00:51:03] INFO root fetch - processPackages [traffix]: executing diffoscope
+[2023-04-14 00:51:03] INFO root fetch - processPackages [traffix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traffix-0.1.8a0.tar.gz tmp/traffix-0.1.9a0.tar.gz --markdown 20230414/t/traffix/0.1.8a0-0.1.9a0/diff.md --exclude *.pyd
+[2023-04-14 00:51:03] INFO root fetch - processPackages [plone.app.z3cform]: Start processing: skatepark-lib
+[2023-04-14 00:51:03] INFO root fetch - main [MainThread]: End processing [plone.app.z3cform]: success
+[2023-04-14 00:51:04] INFO root fetch - processPackages [skatepark-lib]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 00:51:04] INFO root fetch - processPackages [skatepark-lib]: Downloading https://files.pythonhosted.org/packages/67/5d/c4b8977df971bad1b65f09b546f080601649c72c356d617ef967fc97102f/skatepark_lib-0.8.0.tar.gz
+[2023-04-14 00:51:04] INFO root fetch - main [MainThread]: End processing [minichain]: success
+[2023-04-14 00:51:04] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
+[2023-04-14 00:51:04] INFO root fetch - main [MainThread]: End processing [traffix]: success
+[2023-04-14 00:51:04] INFO root fetch - main [MainThread]: End processing [NREL-sup3r]: success
+[2023-04-14 00:51:04] INFO root fetch - processPackages [skatepark-lib]: Downloading https://files.pythonhosted.org/packages/5c/73/3d918a227cbdeb934a1fbbfbfc445c15cc994057ca51b9377782f99f05e7/skatepark_lib-0.9.0.tar.gz
+[2023-04-14 00:51:04] INFO root fetch - processPackages [skatepark-lib]: executing diffoscope
+[2023-04-14 00:51:04] INFO root fetch - processPackages [skatepark-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skatepark_lib-0.8.0.tar.gz tmp/skatepark_lib-0.9.0.tar.gz --markdown 20230414/s/skatepark-lib/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 00:51:06] INFO root fetch - main [MainThread]: End processing [skatepark-lib]: success
+[2023-04-14 00:51:06] INFO root fetch - main [MainThread]: Store serial: [17699451]
