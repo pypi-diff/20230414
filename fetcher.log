@@ -1048,3 +1048,68 @@
 [2023-04-14 01:20:27] INFO root fetch - processPackages [warn-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warn-scraper-1.2.8.tar.gz tmp/warn-scraper-1.2.9.tar.gz --markdown 20230414/w/warn-scraper/1.2.8-1.2.9/diff.md --exclude *.pyd
 [2023-04-14 01:20:29] INFO root fetch - main [MainThread]: End processing [warn-scraper]: success
 [2023-04-14 01:20:29] INFO root fetch - main [MainThread]: Store serial: [17699617]
+[2023-04-14 01:25:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699617]
+[2023-04-14 01:25:36] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 01:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gradio
+[2023-04-14 01:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strongmind-platform-sdk
+[2023-04-14 01:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyDesmos
+[2023-04-14 01:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onvif-zeep-async
+[2023-04-14 01:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyvelox
+[2023-04-14 01:25:36] INFO root fetch - processPackages [PyDesmos]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 01:25:36] INFO root fetch - processPackages [onvif-zeep-async]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-14 01:25:36] INFO root fetch - processPackages [strongmind-platform-sdk]: New version: [2.7.0] Old Version: [2.6.0]
+[2023-04-14 01:25:36] INFO root fetch - processPackages [pyvelox]: New version: [0.0.1a899] Old Version: [0.0.1a8]
+[2023-04-14 01:25:36] INFO root fetch - processPackages [gradio]: New version: [3.9.1] Old Version: [3.9]
+[2023-04-14 01:25:37] INFO root fetch - processPackages [pyvelox]: Downloading https://files.pythonhosted.org/packages/ad/c7/eb01bdb447b0f74121e4c7ac5115303bf1159ee56e96ab1d9b70f34d6652/pyvelox-0.0.1a8.tar.gz
+[2023-04-14 01:25:37] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/c3/74/12dc0012cf99d5f823e46076073af18e5fba302e6a601ab1d190fef0c4ea/onvif-zeep-async-1.2.3.tar.gz
+[2023-04-14 01:25:37] INFO root fetch - processPackages [gradio]: Downloading https://files.pythonhosted.org/packages/b2/2d/f8dc88b392cdaac54b5bf6b56af321211f705494f4a0b2a1589717c06ff5/gradio-3.9.tar.gz
+[2023-04-14 01:25:37] INFO root fetch - processPackages [PyDesmos]: Downloading https://files.pythonhosted.org/packages/b1/16/3859780f2eb3f95f30fb8ae0084feea3f99d79dd42364857ff8052d67ef6/PyDesmos-0.1.2.tar.gz
+[2023-04-14 01:25:37] INFO root fetch - processPackages [strongmind-platform-sdk]: Downloading https://files.pythonhosted.org/packages/68/c2/87bc99c7be2d4ef255b2cac16f9b7dabf9150a070b3e6e2831266360b9ac/strongmind-platform-sdk-2.7.0.tar.gz
+[2023-04-14 01:25:38] INFO root fetch - processPackages [PyDesmos]: executing diffoscope
+[2023-04-14 01:25:38] INFO root fetch - processPackages [PyDesmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDesmos-0.1.1.tar.gz tmp/PyDesmos-0.1.2.tar.gz --markdown 20230414/P/PyDesmos/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 01:25:38] INFO root fetch - processPackages [strongmind-platform-sdk]: executing diffoscope
+[2023-04-14 01:25:38] INFO root fetch - processPackages [strongmind-platform-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strongmind-platform-sdk-2.6.0.tar.gz tmp/strongmind-platform-sdk-2.7.0.tar.gz --markdown 20230414/s/strongmind-platform-sdk/2.6.0-2.7.0/diff.md --exclude *.pyd
+[2023-04-14 01:25:38] WARNING root fetch - processPackages [gradio]: Skipping package: exceeds size limit 12444246>=10485760
+[2023-04-14 01:25:38] INFO root fetch - processPackages [gradio]: Start processing: micromechanics-indentationGUI
+[2023-04-14 01:25:38] INFO root fetch - main [MainThread]: End processing [gradio] error
+[2023-04-14 01:25:38] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 01:25:38] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/65/09/b54c30bd617eaffe8406f0c7b16d3dfe153b2282ace1e116d65c7670e1d1/onvif-zeep-async-1.2.4.tar.gz
+[2023-04-14 01:25:38] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-14 01:25:38] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230414/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 01:25:38] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-04-14 01:25:38] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-1.2.3.tar.gz tmp/onvif-zeep-async-1.2.4.tar.gz --markdown 20230414/o/onvif-zeep-async/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-14 01:25:39] INFO root fetch - processPackages [PyDesmos]: Start processing: qnabot
+[2023-04-14 01:25:39] INFO root fetch - main [MainThread]: End processing [PyDesmos]: success
+[2023-04-14 01:25:39] INFO root fetch - processPackages [qnabot]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 01:25:39] INFO root fetch - processPackages [micromechanics-indentationGUI]: Start processing: outerbounds
+[2023-04-14 01:25:39] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-14 01:25:39] INFO root fetch - processPackages [outerbounds]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 01:25:39] INFO root fetch - processPackages [strongmind-platform-sdk]: Start processing: deltacat
+[2023-04-14 01:25:39] INFO root fetch - main [MainThread]: End processing [strongmind-platform-sdk]: success
+[2023-04-14 01:25:39] INFO root fetch - processPackages [qnabot]: Downloading https://files.pythonhosted.org/packages/64/c6/da3410b32fe3ea8eabef979966265ad889d7d6cbf0761c491112e4423d36/qnabot-0.0.4.tar.gz
+[2023-04-14 01:25:39] INFO root fetch - processPackages [deltacat]: New version: [0.1.9.dev0] Old Version: [0.1.9]
+[2023-04-14 01:25:39] INFO root fetch - processPackages [qnabot]: executing diffoscope
+[2023-04-14 01:25:39] INFO root fetch - processPackages [qnabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qnabot-0.0.3-py3-none-any.whl.zip tmp/qnabot-0.0.4.tar.gz --markdown 20230414/q/qnabot/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 01:25:39] INFO root fetch - processPackages [deltacat]: executing diffoscope
+[2023-04-14 01:25:39] INFO root fetch - processPackages [deltacat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltacat-0.1.9.tar.gz tmp/deltacat-0.1.9.dev0.tar.gz --markdown 20230414/d/deltacat/0.1.9-0.1.9.dev0/diff.md --exclude *.pyd
+[2023-04-14 01:25:40] INFO root fetch - processPackages [outerbounds]: executing diffoscope
+[2023-04-14 01:25:40] INFO root fetch - processPackages [outerbounds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outerbounds-0.3.8-py3-none-any.whl.zip tmp/outerbounds-0.3.9-py3-none-any.whl.zip --markdown 20230414/o/outerbounds/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 01:25:40] INFO root fetch - processPackages [onvif-zeep-async]: Start processing: headless
+[2023-04-14 01:25:40] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-04-14 01:25:40] INFO root fetch - processPackages [headless]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-04-14 01:25:40] INFO root fetch - processPackages [headless]: executing diffoscope
+[2023-04-14 01:25:40] INFO root fetch - processPackages [headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-2.0.0a8.tar.gz tmp/headless-2.0.0a9.tar.gz --markdown 20230414/h/headless/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-04-14 01:25:40] INFO root fetch - processPackages [qnabot]: Start processing: chalkpy
+[2023-04-14 01:25:40] INFO root fetch - main [MainThread]: End processing [qnabot]: success
+[2023-04-14 01:25:40] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-14 01:25:40] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-14 01:25:40] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230414/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-14 01:25:40] INFO root fetch - processPackages [pyvelox]: Downloading https://files.pythonhosted.org/packages/57/18/3853cd61841c9f4941b6df3407c82fd1f8e83e855b37d41ddfcb4b69e911/pyvelox-0.0.1a899.tar.gz
+[2023-04-14 01:25:41] INFO root fetch - main [MainThread]: End processing [outerbounds]: success
+[2023-04-14 01:25:41] INFO root fetch - main [MainThread]: End processing [deltacat]: success
+[2023-04-14 01:25:42] INFO root fetch - main [MainThread]: End processing [headless]: success
+[2023-04-14 01:25:42] INFO root fetch - processPackages [pyvelox]: executing diffoscope
+[2023-04-14 01:25:42] INFO root fetch - processPackages [pyvelox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvelox-0.0.1a8.tar.gz tmp/pyvelox-0.0.1a899.tar.gz --markdown 20230414/p/pyvelox/0.0.1a8-0.0.1a899/diff.md --exclude *.pyd
+[2023-04-14 01:25:46] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-04-14 01:26:56] INFO root fetch - main [MainThread]: End processing [pyvelox]: success
+[2023-04-14 01:26:56] INFO root fetch - main [MainThread]: Store serial: [17699654]
