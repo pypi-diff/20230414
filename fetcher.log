@@ -243,3 +243,91 @@
 [2023-04-14 00:19:27] INFO root fetch - main [MainThread]: End processing [tdfpy]: success
 [2023-04-14 00:19:44] INFO root fetch - main [MainThread]: End processing [prefect]: success
 [2023-04-14 00:19:44] INFO root fetch - main [MainThread]: Store serial: [17699238]
+[2023-04-14 00:24:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699238]
+[2023-04-14 00:24:52] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-14 00:24:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yotpy
+[2023-04-14 00:24:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pseudopeople
+[2023-04-14 00:24:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: micromechanics-indentationGUI
+[2023-04-14 00:24:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tdfpy
+[2023-04-14 00:24:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ape-foundry
+[2023-04-14 00:24:52] INFO root fetch - processPackages [yotpy]: New version: [0.0.7] Old Version: [0.0.62]
+[2023-04-14 00:24:52] INFO root fetch - processPackages [ape-foundry]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-04-14 00:24:52] INFO root fetch - processPackages [tdfpy]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-14 00:24:52] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 00:24:52] INFO root fetch - processPackages [pseudopeople]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-14 00:24:52] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-14 00:24:52] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230414/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 00:24:53] INFO root fetch - processPackages [pseudopeople]: Downloading https://files.pythonhosted.org/packages/97/1a/7274b15808da794f671261a0348f6072bf05fecfded94349f753360cafaa/pseudopeople-0.4.0.tar.gz
+[2023-04-14 00:24:53] INFO root fetch - processPackages [yotpy]: Downloading https://files.pythonhosted.org/packages/aa/19/d7f4040c3406996b962fa97762eb48baaa865c7a54ca993c47e920e523e8/yotpy-0.0.7.tar.gz
+[2023-04-14 00:24:53] INFO root fetch - processPackages [tdfpy]: Downloading https://files.pythonhosted.org/packages/14/97/f73aef87f775c8361db0b1125a7b94a221f781906d21c6fb7cbb8d7c1435/tdfpy-0.1.4.tar.gz
+[2023-04-14 00:24:53] WARNING root fetch - processPackages [pseudopeople]: Skipping package: exceeds size limit 10487042>=10485760
+[2023-04-14 00:24:53] INFO root fetch - processPackages [pseudopeople]: Start processing: grafana-api-sdk
+[2023-04-14 00:24:53] INFO root fetch - main [MainThread]: End processing [pseudopeople] error
+[2023-04-14 00:24:53] INFO root fetch - processPackages [grafana-api-sdk]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-14 00:24:53] INFO root fetch - processPackages [ape-foundry]: Downloading https://files.pythonhosted.org/packages/8c/5c/bd408175ff073800e6ba6848e11952ee3c6cd373fede446334433798506d/ape-foundry-0.6.7.tar.gz
+[2023-04-14 00:24:53] INFO root fetch - processPackages [grafana-api-sdk]: Downloading https://files.pythonhosted.org/packages/73/f8/efdc1fe50e7a364eeeef67ceeafbc6a50bc61d51ecb414e6669a9f03ba01/grafana-api-sdk-0.0.9.tar.gz
+[2023-04-14 00:24:53] INFO root fetch - processPackages [ape-foundry]: executing diffoscope
+[2023-04-14 00:24:53] INFO root fetch - processPackages [ape-foundry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-foundry-0.6.6.tar.gz tmp/ape-foundry-0.6.7.tar.gz --markdown 20230414/a/ape-foundry/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-04-14 00:24:53] INFO root fetch - processPackages [yotpy]: executing diffoscope
+[2023-04-14 00:24:53] INFO root fetch - processPackages [yotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yotpy-0.0.62.tar.gz tmp/yotpy-0.0.7.tar.gz --markdown 20230414/y/yotpy/0.0.62-0.0.7/diff.md --exclude *.pyd
+[2023-04-14 00:24:53] INFO root fetch - processPackages [grafana-api-sdk]: Downloading https://files.pythonhosted.org/packages/39/2d/6da1f4932ae54849f12273da3b60e6f935abbb266b3bb0361a2509573741/grafana-api-sdk-0.1.0.tar.gz
+[2023-04-14 00:24:53] INFO root fetch - processPackages [grafana-api-sdk]: executing diffoscope
+[2023-04-14 00:24:53] INFO root fetch - processPackages [grafana-api-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grafana-api-sdk-0.0.9.tar.gz tmp/grafana-api-sdk-0.1.0.tar.gz --markdown 20230414/g/grafana-api-sdk/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-14 00:24:53] INFO root fetch - processPackages [tdfpy]: executing diffoscope
+[2023-04-14 00:24:53] INFO root fetch - processPackages [tdfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdfpy-0.1.3.tar.gz tmp/tdfpy-0.1.4.tar.gz --markdown 20230414/t/tdfpy/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-14 00:24:54] INFO root fetch - processPackages [micromechanics-indentationGUI]: Start processing: asrl-pyboreas
+[2023-04-14 00:24:54] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-14 00:24:54] INFO root fetch - processPackages [asrl-pyboreas]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-14 00:24:54] INFO root fetch - processPackages [asrl-pyboreas]: Downloading https://files.pythonhosted.org/packages/0c/09/b6121b486871fd7fd16ff74f7b3378d45f82050c442d514df5bd447fac74/asrl-pyboreas-1.0.4.tar.gz
+[2023-04-14 00:24:54] INFO root fetch - processPackages [asrl-pyboreas]: Downloading https://files.pythonhosted.org/packages/8b/f9/f2d2f9295d849a0011073f0311fe0b70cad7bd5ac2868256f4ff30c77e39/asrl-pyboreas-1.0.5.tar.gz
+[2023-04-14 00:24:54] INFO root fetch - processPackages [yotpy]: Start processing: terka
+[2023-04-14 00:24:54] INFO root fetch - main [MainThread]: End processing [yotpy]: success
+[2023-04-14 00:24:54] INFO root fetch - processPackages [terka]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-14 00:24:54] INFO root fetch - processPackages [asrl-pyboreas]: executing diffoscope
+[2023-04-14 00:24:54] INFO root fetch - processPackages [asrl-pyboreas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asrl-pyboreas-1.0.4.tar.gz tmp/asrl-pyboreas-1.0.5.tar.gz --markdown 20230414/a/asrl-pyboreas/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-14 00:24:54] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/73/8c/e37abcd40481820cc723c7505db001f9b4accdbf4b1af56af8934dadcf5b/terka-1.5.2.tar.gz
+[2023-04-14 00:24:55] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-14 00:24:55] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.5.1.tar.gz tmp/terka-1.5.2.tar.gz --markdown 20230414/t/terka/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-14 00:24:55] INFO root fetch - processPackages [ape-foundry]: Start processing: evals
+[2023-04-14 00:24:55] INFO root fetch - main [MainThread]: End processing [ape-foundry]: success
+[2023-04-14 00:24:55] INFO root fetch - processPackages [evals]: New version: [1.0.2.post1] Old Version: [1.0.2]
+[2023-04-14 00:24:55] INFO root fetch - processPackages [evals]: Downloading https://files.pythonhosted.org/packages/9f/62/e3a9f7477abfd4afba81f998e8a887c01fbd4d7604d6ed47e04d012f9fe4/evals-1.0.2.tar.gz
+[2023-04-14 00:24:55] INFO root fetch - processPackages [evals]: Downloading https://files.pythonhosted.org/packages/e6/b6/c3598a757bd6cdd1328b4d37e91ce21782d10d57e621741754690ebfd268/evals-1.0.2.post1.tar.gz
+[2023-04-14 00:24:55] INFO root fetch - processPackages [tdfpy]: Start processing: superpowered-sdk
+[2023-04-14 00:24:55] INFO root fetch - main [MainThread]: End processing [tdfpy]: success
+[2023-04-14 00:24:55] INFO root fetch - processPackages [superpowered-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 00:24:55] INFO root fetch - processPackages [superpowered-sdk]: executing diffoscope
+[2023-04-14 00:24:55] INFO root fetch - processPackages [superpowered-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superpowered-sdk-0.0.8.tar.gz tmp/superpowered-sdk-0.0.9.tar.gz --markdown 20230414/s/superpowered-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 00:24:55] INFO root fetch - processPackages [asrl-pyboreas]: Start processing: evals
+[2023-04-14 00:24:55] INFO root fetch - main [MainThread]: End processing [asrl-pyboreas]: success
+[2023-04-14 00:24:55] INFO root fetch - processPackages [evals]: New version: [1.0.2.post1] Old Version: [1.0.2]
+[2023-04-14 00:24:56] INFO root fetch - processPackages [grafana-api-sdk]: Start processing: tdfpy
+[2023-04-14 00:24:56] INFO root fetch - main [MainThread]: End processing [grafana-api-sdk]: success
+[2023-04-14 00:24:56] INFO root fetch - processPackages [evals]: Downloading https://files.pythonhosted.org/packages/e6/b6/c3598a757bd6cdd1328b4d37e91ce21782d10d57e621741754690ebfd268/evals-1.0.2.post1.tar.gz
+[2023-04-14 00:24:56] INFO root fetch - processPackages [tdfpy]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-14 00:24:56] INFO root fetch - processPackages [terka]: Start processing: deterrers-api
+[2023-04-14 00:24:56] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-14 00:24:56] INFO root fetch - processPackages [deterrers-api]: New version: [0.2] Old Version: [0.1]
+[2023-04-14 00:24:56] INFO root fetch - processPackages [tdfpy]: Downloading https://files.pythonhosted.org/packages/1d/db/a71b8f1ca10f713b7514fa97eaa412ad6ce2948137f3372c4db408486f08/tdfpy-0.1.5.tar.gz
+[2023-04-14 00:24:56] INFO root fetch - processPackages [deterrers-api]: Downloading https://files.pythonhosted.org/packages/6f/80/1e027edde19b3d4b78fcb74f8b2afee472ee4755a50a2ef50a9034f824b8/deterrers-api-0.1.tar.gz
+[2023-04-14 00:24:56] INFO root fetch - processPackages [evals]: executing diffoscope
+[2023-04-14 00:24:56] INFO root fetch - processPackages [evals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evals-1.0.2.tar.gz tmp/evals-1.0.2.post1.tar.gz --markdown 20230414/e/evals/1.0.2-1.0.2.post1/diff.md --exclude *.pyd
+[2023-04-14 00:24:56] INFO root fetch - processPackages [evals]: executing diffoscope
+[2023-04-14 00:24:56] INFO root fetch - processPackages [evals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evals-1.0.2.tar.gz tmp/evals-1.0.2.post1.tar.gz --markdown 20230414/e/evals/1.0.2-1.0.2.post1/diff.md --exclude *.pyd
+[2023-04-14 00:24:56] INFO root fetch - processPackages [deterrers-api]: Downloading https://files.pythonhosted.org/packages/ef/ef/9678077887b07713540a3e486dded4492edbbf61584562eed7a1baf20ca4/deterrers-api-0.2.tar.gz
+[2023-04-14 00:24:56] INFO root fetch - processPackages [deterrers-api]: executing diffoscope
+[2023-04-14 00:24:56] INFO root fetch - processPackages [deterrers-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deterrers-api-0.1.tar.gz tmp/deterrers-api-0.2.tar.gz --markdown 20230414/d/deterrers-api/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-14 00:24:56] INFO root fetch - processPackages [superpowered-sdk]: Start processing: yotpy
+[2023-04-14 00:24:56] INFO root fetch - main [MainThread]: End processing [superpowered-sdk]: success
+[2023-04-14 00:24:56] INFO root fetch - processPackages [yotpy]: New version: [0.0.71] Old Version: [0.0.7]
+[2023-04-14 00:24:57] INFO root fetch - processPackages [tdfpy]: executing diffoscope
+[2023-04-14 00:24:57] INFO root fetch - processPackages [tdfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdfpy-0.1.4.tar.gz tmp/tdfpy-0.1.5.tar.gz --markdown 20230414/t/tdfpy/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-14 00:24:57] INFO root fetch - processPackages [yotpy]: Downloading https://files.pythonhosted.org/packages/af/56/6f2a97021b1241c74ea306c3bfa0ef395b9cfddfc869f47facfaec2b4c98/yotpy-0.0.71.tar.gz
+[2023-04-14 00:24:57] INFO root fetch - processPackages [yotpy]: executing diffoscope
+[2023-04-14 00:24:57] INFO root fetch - processPackages [yotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yotpy-0.0.7.tar.gz tmp/yotpy-0.0.71.tar.gz --markdown 20230414/y/yotpy/0.0.7-0.0.71/diff.md --exclude *.pyd
+[2023-04-14 00:24:58] INFO root fetch - main [MainThread]: End processing [deterrers-api]: success
+[2023-04-14 00:24:59] INFO root fetch - main [MainThread]: End processing [yotpy]: success
+[2023-04-14 00:24:59] INFO root fetch - main [MainThread]: End processing [tdfpy]: success
+[2023-04-14 00:25:01] INFO root fetch - main [MainThread]: End processing [evals]: success
+[2023-04-14 00:25:02] INFO root fetch - main [MainThread]: End processing [evals]: success
+[2023-04-14 00:25:02] INFO root fetch - main [MainThread]: Store serial: [17699273]
