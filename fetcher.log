@@ -445,3 +445,61 @@
 [2023-04-14 00:35:24] INFO root fetch - main [MainThread]: End processing [tdfpy]: success
 [2023-04-14 00:35:25] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
 [2023-04-14 00:35:25] INFO root fetch - main [MainThread]: Store serial: [17699346]
+[2023-04-14 00:40:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699346]
+[2023-04-14 00:40:32] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 00:40:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-cloudflare
+[2023-04-14 00:40:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rucio-consistency
+[2023-04-14 00:40:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: djangoldp-needle
+[2023-04-14 00:40:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: headless
+[2023-04-14 00:40:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: headscale-api
+[2023-04-14 00:40:32] INFO root fetch - processPackages [pulumi-cloudflare]: New version: [5.1.0a1681424405] Old Version: [5.1.0a1680908118]
+[2023-04-14 00:40:32] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 00:40:32] INFO root fetch - processPackages [headscale-api]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 00:40:32] INFO root fetch - processPackages [rucio-consistency]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-04-14 00:40:32] INFO root fetch - processPackages [headless]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-04-14 00:40:32] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-14 00:40:32] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230414/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 00:40:32] INFO root fetch - processPackages [rucio-consistency]: executing diffoscope
+[2023-04-14 00:40:32] INFO root fetch - processPackages [rucio-consistency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rucio-consistency-1.0.7.tar.gz tmp/rucio-consistency-1.0.9.tar.gz --markdown 20230414/r/rucio-consistency/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 00:40:32] INFO root fetch - processPackages [headless]: executing diffoscope
+[2023-04-14 00:40:32] INFO root fetch - processPackages [headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-2.0.0a8.tar.gz tmp/headless-2.0.0a9.tar.gz --markdown 20230414/h/headless/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-04-14 00:40:33] INFO root fetch - processPackages [pulumi-cloudflare]: Downloading https://files.pythonhosted.org/packages/a2/6a/44a9c7262c952aad53b2e4bed5c77609d4eb046d9e716d39a320a9feecc8/pulumi_cloudflare-5.1.0a1681424405.tar.gz
+[2023-04-14 00:40:33] INFO root fetch - processPackages [pulumi-cloudflare]: executing diffoscope
+[2023-04-14 00:40:33] INFO root fetch - processPackages [pulumi-cloudflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudflare-5.1.0a1680908118.tar.gz tmp/pulumi_cloudflare-5.1.0a1681424405.tar.gz --markdown 20230414/p/pulumi-cloudflare/5.1.0a1680908118-5.1.0a1681424405/diff.md --exclude *.pyd
+[2023-04-14 00:40:33] INFO root fetch - processPackages [djangoldp-needle]: Start processing: djangoldp-needle
+[2023-04-14 00:40:33] INFO root fetch - main [MainThread]: End processing [djangoldp-needle]: success
+[2023-04-14 00:40:33] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 00:40:33] INFO root fetch - processPackages [rucio-consistency]: Start processing: kaslcred
+[2023-04-14 00:40:33] INFO root fetch - main [MainThread]: End processing [rucio-consistency]: success
+[2023-04-14 00:40:33] INFO root fetch - processPackages [kaslcred]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-04-14 00:40:33] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-14 00:40:33] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230414/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 00:40:33] INFO root fetch - processPackages [kaslcred]: Downloading https://files.pythonhosted.org/packages/2a/5e/0a032ff6364d1b4d6d67df81756881950f552f85f16fa91a03e7ffcc21bd/kaslcred-0.0.8.tar.gz
+[2023-04-14 00:40:34] INFO root fetch - processPackages [headless]: Start processing: dateparse
+[2023-04-14 00:40:34] INFO root fetch - main [MainThread]: End processing [headless]: success
+[2023-04-14 00:40:34] INFO root fetch - processPackages [kaslcred]: Downloading https://files.pythonhosted.org/packages/40/66/223d6aeaaf0bf12700e11f4b36865df4cfd2af179733153cb7d5befade32/kaslcred-0.1.0.tar.gz
+[2023-04-14 00:40:34] INFO root fetch - processPackages [dateparse]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-14 00:40:34] INFO root fetch - processPackages [dateparse]: Downloading https://files.pythonhosted.org/packages/c7/4f/f9830c99d82f3ad175cf116d26dea6879cae1267261a20944344ec513cef/dateparse-1.3.0.tar.gz
+[2023-04-14 00:40:34] INFO root fetch - processPackages [kaslcred]: executing diffoscope
+[2023-04-14 00:40:34] INFO root fetch - processPackages [kaslcred]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaslcred-0.0.8.tar.gz tmp/kaslcred-0.1.0.tar.gz --markdown 20230414/k/kaslcred/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-04-14 00:40:34] INFO root fetch - processPackages [headscale-api]: Downloading https://files.pythonhosted.org/packages/69/2e/4631d106530779f0517cc2577a4f9f416be1148b71a140016fd089b4c3aa/headscale_api-0.1.0.tar.gz
+[2023-04-14 00:40:34] INFO root fetch - processPackages [dateparse]: Downloading https://files.pythonhosted.org/packages/32/d9/1ff199a07d64068db3a051720ab87cf0dd016ab70195bdbddc24f62276b2/dateparse-1.3.1.tar.gz
+[2023-04-14 00:40:34] INFO root fetch - processPackages [djangoldp-needle]: Start processing: django-vendor
+[2023-04-14 00:40:34] INFO root fetch - main [MainThread]: End processing [djangoldp-needle]: success
+[2023-04-14 00:40:34] INFO root fetch - processPackages [django-vendor]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 00:40:34] INFO root fetch - processPackages [dateparse]: executing diffoscope
+[2023-04-14 00:40:34] INFO root fetch - processPackages [dateparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dateparse-1.3.0.tar.gz tmp/dateparse-1.3.1.tar.gz --markdown 20230414/d/dateparse/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 00:40:34] INFO root fetch - processPackages [headscale-api]: Downloading https://files.pythonhosted.org/packages/27/6c/d54d55ea8508b7c17d12317d4a73b7a5226a224e0dc53a7f1ae2c6571488/headscale_api-0.1.1.tar.gz
+[2023-04-14 00:40:35] INFO root fetch - processPackages [headscale-api]: executing diffoscope
+[2023-04-14 00:40:35] INFO root fetch - processPackages [headscale-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headscale_api-0.1.0.tar.gz tmp/headscale_api-0.1.1.tar.gz --markdown 20230414/h/headscale-api/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 00:40:35] INFO root fetch - processPackages [pulumi-cloudflare]: Start processing: apache-airflow-providers-fastetl
+[2023-04-14 00:40:35] INFO root fetch - main [MainThread]: End processing [pulumi-cloudflare]: success
+[2023-04-14 00:40:35] INFO root fetch - main [MainThread]: End processing [kaslcred]: success
+[2023-04-14 00:40:35] INFO root fetch - main [MainThread]: End processing [dateparse]: success
+[2023-04-14 00:40:36] INFO root fetch - main [MainThread]: End processing [headscale-api]: success
+[2023-04-14 00:40:36] WARNING root fetch - processPackages [apache-airflow-providers-fastetl]: Skipping, unable to determine old version
+[2023-04-14 00:40:36] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-fastetl] error
+[2023-04-14 00:40:37] INFO root fetch - processPackages [django-vendor]: executing diffoscope
+[2023-04-14 00:40:37] INFO root fetch - processPackages [django-vendor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-vendor-0.3.8.tar.gz tmp/django-vendor-0.3.9.tar.gz --markdown 20230414/d/django-vendor/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 00:40:39] INFO root fetch - main [MainThread]: End processing [django-vendor]: success
+[2023-04-14 00:40:39] INFO root fetch - main [MainThread]: Store serial: [17699374]
