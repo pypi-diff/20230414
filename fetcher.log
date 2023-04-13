@@ -1008,3 +1008,43 @@
 [2023-04-14 01:15:15] INFO root fetch - main [MainThread]: End processing [llvm-installer]: success
 [2023-04-14 01:15:15] INFO root fetch - main [MainThread]: End processing [pytrends]: success
 [2023-04-14 01:15:15] INFO root fetch - main [MainThread]: Store serial: [17699602]
+[2023-04-14 01:20:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699602]
+[2023-04-14 01:20:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-14 01:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spatialcsv
+[2023-04-14 01:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otoe
+[2023-04-14 01:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: micromechanics-indentationGUI
+[2023-04-14 01:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bingbong
+[2023-04-14 01:20:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bhv
+[2023-04-14 01:20:23] INFO root fetch - processPackages [spatialcsv]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-14 01:20:23] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 01:20:23] INFO root fetch - processPackages [otoe]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 01:20:23] INFO root fetch - processPackages [bhv]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 01:20:23] INFO root fetch - processPackages [bingbong]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-14 01:20:23] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-14 01:20:23] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230414/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 01:20:23] INFO root fetch - processPackages [otoe]: Downloading https://files.pythonhosted.org/packages/f2/39/985af6074215e9f48d9eb546351bc9e6b082895203e7a4b336fdcbeefe65/otoe-0.0.2.tar.gz
+[2023-04-14 01:20:23] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/b9/fe/7b61476e815742ec336251ba7906a3b89fda936df47ed470ff0046a4de99/bingbong-0.1.5-py3-none-any.whl
+[2023-04-14 01:20:23] INFO root fetch - processPackages [otoe]: Downloading https://files.pythonhosted.org/packages/d5/b2/e8813a83f8e612124f3cac17237f55c403c8dba242ca2348436b42d2d67c/otoe-0.0.3.tar.gz
+[2023-04-14 01:20:23] INFO root fetch - processPackages [bhv]: Downloading https://files.pythonhosted.org/packages/0c/92/ab58adcd0ef0d114215373814989054d9a25f062ccf6cb4f1f86051018c1/bhv-0.2.2.tar.gz
+[2023-04-14 01:20:23] INFO root fetch - processPackages [spatialcsv]: Downloading https://files.pythonhosted.org/packages/86/f7/cb6527e4eabdd1024bb4c38717262235133e213f862f1910ef4e1a6fa1a9/spatialcsv-0.0.8.tar.gz
+[2023-04-14 01:20:23] INFO root fetch - processPackages [otoe]: executing diffoscope
+[2023-04-14 01:20:23] INFO root fetch - processPackages [otoe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otoe-0.0.2.tar.gz tmp/otoe-0.0.3.tar.gz --markdown 20230414/o/otoe/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 01:20:23] INFO root fetch - processPackages [bingbong]: executing diffoscope
+[2023-04-14 01:20:23] INFO root fetch - processPackages [bingbong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingbong-0.1.4.tar.gz tmp/bingbong-0.1.5-py3-none-any.whl.zip --markdown 20230414/b/bingbong/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-14 01:20:23] INFO root fetch - processPackages [spatialcsv]: executing diffoscope
+[2023-04-14 01:20:23] INFO root fetch - processPackages [spatialcsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatialcsv-0.0.7.tar.gz tmp/spatialcsv-0.0.8.tar.gz --markdown 20230414/s/spatialcsv/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 01:20:23] INFO root fetch - processPackages [bhv]: executing diffoscope
+[2023-04-14 01:20:23] INFO root fetch - processPackages [bhv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bhv-0.2.1.tar.gz tmp/bhv-0.2.2.tar.gz --markdown 20230414/b/bhv/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 01:20:24] INFO root fetch - processPackages [micromechanics-indentationGUI]: Start processing: warn-scraper
+[2023-04-14 01:20:24] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-14 01:20:24] INFO root fetch - main [MainThread]: End processing [bingbong]: success
+[2023-04-14 01:20:24] INFO root fetch - processPackages [warn-scraper]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-14 01:20:24] INFO root fetch - main [MainThread]: End processing [otoe]: success
+[2023-04-14 01:20:24] INFO root fetch - main [MainThread]: End processing [spatialcsv]: success
+[2023-04-14 01:20:24] INFO root fetch - processPackages [warn-scraper]: Downloading https://files.pythonhosted.org/packages/e0/c6/78082c84fe2db93b0ed39a71343d447443d561043cf2679e57e033dd1461/warn-scraper-1.2.8.tar.gz
+[2023-04-14 01:20:24] INFO root fetch - main [MainThread]: End processing [bhv]: success
+[2023-04-14 01:20:26] INFO root fetch - processPackages [warn-scraper]: Downloading https://files.pythonhosted.org/packages/cd/7a/bb6f3b58470f7b98476c55086b15f7e210c85f4deeb183d40b74f760c779/warn-scraper-1.2.9.tar.gz
+[2023-04-14 01:20:27] INFO root fetch - processPackages [warn-scraper]: executing diffoscope
+[2023-04-14 01:20:27] INFO root fetch - processPackages [warn-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warn-scraper-1.2.8.tar.gz tmp/warn-scraper-1.2.9.tar.gz --markdown 20230414/w/warn-scraper/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-14 01:20:29] INFO root fetch - main [MainThread]: End processing [warn-scraper]: success
+[2023-04-14 01:20:29] INFO root fetch - main [MainThread]: Store serial: [17699617]
