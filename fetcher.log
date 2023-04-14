@@ -16481,3 +16481,107 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 17:12:43] INFO root fetch - main [MainThread]: End processing [tapipy]: success
 [2023-04-14 17:12:47] INFO root fetch - main [MainThread]: End processing [osl-dynamics]: success
 [2023-04-14 17:12:47] INFO root fetch - main [MainThread]: Store serial: [17708957]
+[2023-04-14 17:17:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17708957]
+[2023-04-14 17:17:55] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-14 17:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: funasr-onnx
+[2023-04-14 17:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magyar
+[2023-04-14 17:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: setfit
+[2023-04-14 17:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: taigapy
+[2023-04-14 17:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tibanna-ff
+[2023-04-14 17:17:55] INFO root fetch - processPackages [setfit]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-14 17:17:55] INFO root fetch - processPackages [magyar]: New version: [2.6.2] Old Version: [2.6.1]
+[2023-04-14 17:17:55] INFO root fetch - processPackages [funasr-onnx]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 17:17:55] INFO root fetch - processPackages [taigapy]: New version: [3.3.5] Old Version: [3.3.4]
+[2023-04-14 17:17:55] INFO root fetch - processPackages [tibanna-ff]: New version: [1.3.3] Old Version: [1.3.0b1]
+[2023-04-14 17:17:55] INFO root fetch - processPackages [setfit]: Downloading https://files.pythonhosted.org/packages/4b/5f/15e95f2cb864d412cd2c7b4b4fd6152baa6802b2c87d69dfed06f684112f/setfit-0.6.0.tar.gz
+[2023-04-14 17:17:55] INFO root fetch - processPackages [taigapy]: Downloading https://files.pythonhosted.org/packages/4c/e1/d70b44e20baa15f333674b4433872b8df55119299f537e98ee0a3af25f0d/taigapy-3.3.4-py2.py3-none-any.whl
+[2023-04-14 17:17:55] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/53/b8/0e2d96d2e3cfec0c55468da87d8e612a0c165b07cda680d2cf931d2b4089/magyar-2.6.2.tar.gz
+[2023-04-14 17:17:55] INFO root fetch - processPackages [funasr-onnx]: Downloading https://files.pythonhosted.org/packages/aa/5d/4570a3f73c12007166e109d737268a59f019a95015d18dee2da304e69b51/funasr_onnx-0.0.5.tar.gz
+[2023-04-14 17:17:55] INFO root fetch - processPackages [tibanna-ff]: Downloading https://files.pythonhosted.org/packages/f3/86/b5a704435241ac8b5209aed14f21bbf50d8b83b7098235640951130e5b21/tibanna_ff-1.3.0b1.tar.gz
+[2023-04-14 17:17:55] INFO root fetch - processPackages [setfit]: Downloading https://files.pythonhosted.org/packages/f8/6c/c1fbddecddcb837c353831af3de3e266fb4dad68ec54262d01c40224f5f2/setfit-0.7.0.tar.gz
+[2023-04-14 17:17:55] INFO root fetch - processPackages [funasr-onnx]: executing diffoscope
+[2023-04-14 17:17:55] INFO root fetch - processPackages [funasr-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funasr_onnx-0.0.4.tar.gz tmp/funasr_onnx-0.0.5.tar.gz --markdown 20230414/f/funasr-onnx/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 17:17:55] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2023-04-14 17:17:55] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-2.6.1.tar.gz tmp/magyar-2.6.2.tar.gz --markdown 20230414/m/magyar/2.6.1-2.6.2/diff.md --exclude *.pyd
+[2023-04-14 17:17:56] INFO root fetch - processPackages [taigapy]: Downloading https://files.pythonhosted.org/packages/c3/0c/d871ffd94fbf716f18e327f1ea3ea7e2842febff9efcb269abc68b0b1d50/taigapy-3.3.5-py2.py3-none-any.whl
+[2023-04-14 17:17:56] INFO root fetch - processPackages [tibanna-ff]: Downloading https://files.pythonhosted.org/packages/83/c1/5d6411066c7b1c2304b96ba81f6ef65bdb80b9ba9a05bdff2f50d5fa6828/tibanna_ff-1.3.3.tar.gz
+[2023-04-14 17:17:56] INFO root fetch - processPackages [setfit]: executing diffoscope
+[2023-04-14 17:17:56] INFO root fetch - processPackages [setfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setfit-0.6.0.tar.gz tmp/setfit-0.7.0.tar.gz --markdown 20230414/s/setfit/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-14 17:17:56] INFO root fetch - processPackages [taigapy]: executing diffoscope
+[2023-04-14 17:17:56] INFO root fetch - processPackages [taigapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taigapy-3.3.4-py2.py3-none-any.whl.zip tmp/taigapy-3.3.5-py2.py3-none-any.whl.zip --markdown 20230414/t/taigapy/3.3.4-3.3.5/diff.md --exclude *.pyd
+[2023-04-14 17:17:56] INFO root fetch - processPackages [tibanna-ff]: executing diffoscope
+[2023-04-14 17:17:56] INFO root fetch - processPackages [tibanna-ff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tibanna_ff-1.3.0b1.tar.gz tmp/tibanna_ff-1.3.3.tar.gz --markdown 20230414/t/tibanna-ff/1.3.0b1-1.3.3/diff.md --exclude *.pyd
+[2023-04-14 17:17:57] INFO root fetch - processPackages [magyar]: Start processing: whisper-ctranslate2
+[2023-04-14 17:17:57] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2023-04-14 17:17:57] INFO root fetch - processPackages [whisper-ctranslate2]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-14 17:17:57] INFO root fetch - processPackages [funasr-onnx]: Start processing: pyroscopegridding
+[2023-04-14 17:17:57] INFO root fetch - main [MainThread]: End processing [funasr-onnx]: success
+[2023-04-14 17:17:57] INFO root fetch - processPackages [pyroscopegridding]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 17:17:57] INFO root fetch - processPackages [taigapy]: Start processing: orso
+[2023-04-14 17:17:57] INFO root fetch - main [MainThread]: End processing [taigapy]: success
+[2023-04-14 17:17:57] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/fe/06/eb238ac530b071f4b422aecc0f178373f3138733dddebe6eb1f57f0bd661/pyroscopegridding-0.0.1.tar.gz
+[2023-04-14 17:17:57] INFO root fetch - processPackages [orso]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 17:17:57] INFO root fetch - processPackages [whisper-ctranslate2]: Downloading https://files.pythonhosted.org/packages/fb/ac/ab2e1735fcfbdccb3de9f0531d79469cfb32ffececac0e07c6a93ba68012/whisper-ctranslate2-0.1.8.tar.gz
+[2023-04-14 17:17:57] INFO root fetch - processPackages [setfit]: Start processing: strkit
+[2023-04-14 17:17:57] INFO root fetch - main [MainThread]: End processing [setfit]: success
+[2023-04-14 17:17:57] INFO root fetch - processPackages [strkit]: New version: [0.8.0a9] Old Version: [0.8.0a8]
+[2023-04-14 17:17:57] INFO root fetch - processPackages [orso]: Downloading https://files.pythonhosted.org/packages/1c/66/5aad0089df0da0e221630da2c585677459a251fa6db22921c5846de42924/orso-0.0.8.tar.gz
+[2023-04-14 17:17:57] INFO root fetch - processPackages [strkit]: executing diffoscope
+[2023-04-14 17:17:57] INFO root fetch - processPackages [strkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strkit-0.8.0a8.tar.gz tmp/strkit-0.8.0a9.tar.gz --markdown 20230414/s/strkit/0.8.0a8-0.8.0a9/diff.md --exclude *.pyd
+[2023-04-14 17:17:57] INFO root fetch - processPackages [whisper-ctranslate2]: executing diffoscope
+[2023-04-14 17:17:57] INFO root fetch - processPackages [whisper-ctranslate2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper-ctranslate2-0.1.7.tar.gz tmp/whisper-ctranslate2-0.1.8.tar.gz --markdown 20230414/w/whisper-ctranslate2/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-14 17:17:57] INFO root fetch - processPackages [tibanna-ff]: Start processing: NREL-farms
+[2023-04-14 17:17:57] INFO root fetch - main [MainThread]: End processing [tibanna-ff]: success
+[2023-04-14 17:17:57] INFO root fetch - processPackages [NREL-farms]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-14 17:17:57] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/4a/c4/6f048ea8ee8d2eaf7e6f96cbfca3aa3ea39438bac818df13b2de93c625d2/pyroscopegridding-0.0.2.tar.gz
+[2023-04-14 17:17:57] INFO root fetch - processPackages [orso]: Downloading https://files.pythonhosted.org/packages/d0/a6/e427d299b4d15d22164372c94c2665865951bb26973a967eca19d3d2493c/orso-0.0.9.tar.gz
+[2023-04-14 17:17:57] INFO root fetch - processPackages [pyroscopegridding]: executing diffoscope
+[2023-04-14 17:17:57] INFO root fetch - processPackages [pyroscopegridding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroscopegridding-0.0.1.tar.gz tmp/pyroscopegridding-0.0.2.tar.gz --markdown 20230414/p/pyroscopegridding/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 17:17:57] INFO root fetch - processPackages [NREL-farms]: Downloading https://files.pythonhosted.org/packages/6b/c3/df3f3e1dfd3f07f7876e28b40074340f682023e73672114a0bc187add1de/NREL-farms-1.0.4.tar.gz
+[2023-04-14 17:17:57] INFO root fetch - processPackages [orso]: executing diffoscope
+[2023-04-14 17:17:57] INFO root fetch - processPackages [orso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orso-0.0.8.tar.gz tmp/orso-0.0.9.tar.gz --markdown 20230414/o/orso/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 17:17:58] INFO root fetch - processPackages [NREL-farms]: Downloading https://files.pythonhosted.org/packages/ac/c3/4527c4caaa2431252459c4d6c46cd94804779b2d8f419ea963e694500338/NREL-farms-1.0.5.tar.gz
+[2023-04-14 17:17:58] INFO root fetch - processPackages [NREL-farms]: executing diffoscope
+[2023-04-14 17:17:58] INFO root fetch - processPackages [NREL-farms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NREL-farms-1.0.4.tar.gz tmp/NREL-farms-1.0.5.tar.gz --markdown 20230414/N/NREL-farms/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-14 17:17:58] INFO root fetch - processPackages [whisper-ctranslate2]: Start processing: dyagram
+[2023-04-14 17:17:58] INFO root fetch - main [MainThread]: End processing [whisper-ctranslate2]: success
+[2023-04-14 17:17:58] INFO root fetch - processPackages [dyagram]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 17:17:58] INFO root fetch - processPackages [dyagram]: executing diffoscope
+[2023-04-14 17:17:58] INFO root fetch - processPackages [dyagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DyaGram-0.0.98.tar.gz tmp/DyaGram-0.0.99.tar.gz --markdown 20230414/d/dyagram/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 17:17:58] INFO root fetch - processPackages [strkit]: Start processing: pyroscopegridding
+[2023-04-14 17:17:58] INFO root fetch - main [MainThread]: End processing [strkit]: success
+[2023-04-14 17:17:58] INFO root fetch - processPackages [pyroscopegridding]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 17:17:58] INFO root fetch - processPackages [pyroscopegridding]: executing diffoscope
+[2023-04-14 17:17:58] INFO root fetch - processPackages [pyroscopegridding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroscopegridding-0.0.1.tar.gz tmp/pyroscopegridding-0.0.2.tar.gz --markdown 20230414/p/pyroscopegridding/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 17:17:59] INFO root fetch - processPackages [pyroscopegridding]: Start processing: nextcloudtalkbot
+[2023-04-14 17:17:59] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
+[2023-04-14 17:17:59] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 17:17:59] INFO root fetch - processPackages [orso]: Start processing: FnLobbyBot
+[2023-04-14 17:17:59] INFO root fetch - main [MainThread]: End processing [orso]: success
+[2023-04-14 17:17:59] INFO root fetch - processPackages [FnLobbyBot]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-14 17:17:59] INFO root fetch - processPackages [NREL-farms]: Start processing: lambeq
+[2023-04-14 17:17:59] INFO root fetch - main [MainThread]: End processing [NREL-farms]: success
+[2023-04-14 17:17:59] INFO root fetch - processPackages [lambeq]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-14 17:17:59] INFO root fetch - processPackages [FnLobbyBot]: Downloading https://files.pythonhosted.org/packages/c4/4e/194daf51f944ef7ed1e19680c73ff2182fb929a6b2f19688f33c37146c2c/fnlobbybot-0.0.0.tar.gz
+[2023-04-14 17:17:59] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-14 17:17:59] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.8.tar.gz tmp/nextcloudtalkbot-0.0.9.tar.gz --markdown 20230414/n/nextcloudtalkbot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 17:17:59] INFO root fetch - processPackages [lambeq]: Downloading https://files.pythonhosted.org/packages/9f/d1/681444c16217b8e854eafd48fcbda58dd35d3337d0116de5ef39aeced503/lambeq-0.3.0.tar.gz
+[2023-04-14 17:17:59] INFO root fetch - processPackages [FnLobbyBot]: Downloading https://files.pythonhosted.org/packages/ef/80/6b195919b91e44cc791927454c00c194c78ef9b1bcd743cfe240ef16c9a5/fnlobbybot-0.0.1.tar.gz
+[2023-04-14 17:17:59] INFO root fetch - processPackages [dyagram]: Start processing: funasr-torch
+[2023-04-14 17:17:59] INFO root fetch - main [MainThread]: End processing [dyagram]: success
+[2023-04-14 17:17:59] INFO root fetch - processPackages [funasr-torch]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 17:17:59] INFO root fetch - processPackages [FnLobbyBot]: executing diffoscope
+[2023-04-14 17:17:59] INFO root fetch - processPackages [FnLobbyBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fnlobbybot-0.0.0.tar.gz tmp/fnlobbybot-0.0.1.tar.gz --markdown 20230414/F/FnLobbyBot/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-14 17:17:59] INFO root fetch - processPackages [lambeq]: Downloading https://files.pythonhosted.org/packages/bb/14/cfc37a95ec36308f9f2d135a159532c76ebf42cc79499949fbe82823239b/lambeq-0.3.1.tar.gz
+[2023-04-14 17:18:00] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
+[2023-04-14 17:18:00] INFO root fetch - processPackages [funasr-torch]: Downloading https://files.pythonhosted.org/packages/2f/6a/c4aa7c5b02435fafcfa5b2dc98ed95b39da561628af9dc827b6691496c3e/funasr_torch-0.0.3.tar.gz
+[2023-04-14 17:18:00] INFO root fetch - processPackages [funasr-torch]: Downloading https://files.pythonhosted.org/packages/a3/c8/6c21fe6dfa610990d05a71ee759d19960e6be4675c12403f9e5e955caafb/funasr_torch-0.0.4.tar.gz
+[2023-04-14 17:18:00] INFO root fetch - processPackages [funasr-torch]: executing diffoscope
+[2023-04-14 17:18:00] INFO root fetch - processPackages [funasr-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funasr_torch-0.0.3.tar.gz tmp/funasr_torch-0.0.4.tar.gz --markdown 20230414/f/funasr-torch/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 17:18:00] INFO root fetch - processPackages [lambeq]: executing diffoscope
+[2023-04-14 17:18:00] INFO root fetch - processPackages [lambeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambeq-0.3.0.tar.gz tmp/lambeq-0.3.1.tar.gz --markdown 20230414/l/lambeq/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-14 17:18:00] INFO root fetch - main [MainThread]: End processing [FnLobbyBot]: success
+[2023-04-14 17:18:00] INFO root fetch - main [MainThread]: End processing [nextcloudtalkbot]: success
+[2023-04-14 17:18:01] INFO root fetch - main [MainThread]: End processing [funasr-torch]: success
+[2023-04-14 17:18:04] INFO root fetch - main [MainThread]: End processing [lambeq]: success
+[2023-04-14 17:18:04] INFO root fetch - main [MainThread]: Store serial: [17709021]
