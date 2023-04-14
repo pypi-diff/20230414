@@ -14785,3 +14785,129 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 15:48:08] INFO root fetch - main [MainThread]: End processing [drakaina]: success
 [2023-04-14 15:48:09] INFO root fetch - main [MainThread]: End processing [pylife]: success
 [2023-04-14 15:48:09] INFO root fetch - main [MainThread]: Store serial: [17707916]
+[2023-04-14 15:53:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17707916]
+[2023-04-14 15:53:16] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-14 15:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fleter
+[2023-04-14 15:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: usdm
+[2023-04-14 15:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: htrvx
+[2023-04-14 15:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysolarfocus
+[2023-04-14 15:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nucliadb-telemetry
+[2023-04-14 15:53:16] INFO root fetch - processPackages [htrvx]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 15:53:16] INFO root fetch - processPackages [pysolarfocus]: New version: [3.6.2] Old Version: [3.6.1]
+[2023-04-14 15:53:16] INFO root fetch - processPackages [nucliadb-telemetry]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-14 15:53:16] INFO root fetch - processPackages [usdm]: New version: [0.25.0] Old Version: [0.24.0]
+[2023-04-14 15:53:16] INFO root fetch - processPackages [fleter]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-14 15:53:16] INFO root fetch - processPackages [htrvx]: Downloading https://files.pythonhosted.org/packages/75/72/bf5ee18db1ba18e6bb250cdac49dacbfdfba7b36c5d1194a5ce9769abf10/htrvx-0.0.8.tar.gz
+[2023-04-14 15:53:16] INFO root fetch - processPackages [pysolarfocus]: Downloading https://files.pythonhosted.org/packages/f7/02/b57c13099345a7544784498abc79ea1da5a9eaac49d0fa02c4f7ef5cf570/pysolarfocus-3.6.1.tar.gz
+[2023-04-14 15:53:16] INFO root fetch - processPackages [fleter]: Downloading https://files.pythonhosted.org/packages/9c/9c/f243538eb71fd593f744c2754cc424b5ddea36fea30b9b05da592cf516d0/fleter-0.2.0.tar.gz
+[2023-04-14 15:53:17] INFO root fetch - processPackages [nucliadb-telemetry]: Downloading https://files.pythonhosted.org/packages/00/8f/d3d028c5d3d77526724f3cff7e5959d6b4fa8aab3e3201b57f40b74f519e/nucliadb_telemetry-1.9.0-py3-none-any.whl
+[2023-04-14 15:53:17] INFO root fetch - processPackages [usdm]: Downloading https://files.pythonhosted.org/packages/e5/06/b5cdca0368c5149461c0a22a8ca8cb27346b439f59c4941aa668b5ab50f7/usdm-0.25.0.tar.gz
+[2023-04-14 15:53:17] INFO root fetch - processPackages [htrvx]: Downloading https://files.pythonhosted.org/packages/69/2d/c1fa734c4b0a0ca71388b724a8f2545f84eb68e8c4478d7ae9256a882898/htrvx-0.0.9.tar.gz
+[2023-04-14 15:53:17] INFO root fetch - processPackages [nucliadb-telemetry]: executing diffoscope
+[2023-04-14 15:53:17] INFO root fetch - processPackages [nucliadb-telemetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_telemetry-1.8.0-py3-none-any.whl.zip tmp/nucliadb_telemetry-1.9.0-py3-none-any.whl.zip --markdown 20230414/n/nucliadb-telemetry/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-14 15:53:17] INFO root fetch - processPackages [pysolarfocus]: Downloading https://files.pythonhosted.org/packages/0d/f5/e5a7df0e4f17be7eadf82cb85550d38dfaa007967d19e72b65be3dd66772/pysolarfocus-3.6.2.tar.gz
+[2023-04-14 15:53:17] INFO root fetch - processPackages [fleter]: Downloading https://files.pythonhosted.org/packages/0c/e0/a8dcf96096628157c63980f1e40d0916b60184f88706bd3d66c0dece4f80/fleter-0.3.0.tar.gz
+[2023-04-14 15:53:17] INFO root fetch - processPackages [usdm]: executing diffoscope
+[2023-04-14 15:53:17] INFO root fetch - processPackages [usdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usdm-0.24.0.tar.gz tmp/usdm-0.25.0.tar.gz --markdown 20230414/u/usdm/0.24.0-0.25.0/diff.md --exclude *.pyd
+[2023-04-14 15:53:17] INFO root fetch - processPackages [htrvx]: executing diffoscope
+[2023-04-14 15:53:17] INFO root fetch - processPackages [htrvx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htrvx-0.0.8.tar.gz tmp/htrvx-0.0.9.tar.gz --markdown 20230414/h/htrvx/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 15:53:17] INFO root fetch - processPackages [pysolarfocus]: executing diffoscope
+[2023-04-14 15:53:17] INFO root fetch - processPackages [pysolarfocus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysolarfocus-3.6.1.tar.gz tmp/pysolarfocus-3.6.2.tar.gz --markdown 20230414/p/pysolarfocus/3.6.1-3.6.2/diff.md --exclude *.pyd
+[2023-04-14 15:53:17] INFO root fetch - processPackages [fleter]: executing diffoscope
+[2023-04-14 15:53:17] INFO root fetch - processPackages [fleter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleter-0.2.0.tar.gz tmp/fleter-0.3.0.tar.gz --markdown 20230414/f/fleter/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 15:53:18] INFO root fetch - processPackages [nucliadb-telemetry]: Start processing: protofcp
+[2023-04-14 15:53:18] INFO root fetch - main [MainThread]: End processing [nucliadb-telemetry]: success
+[2023-04-14 15:53:18] ERROR root fetch - processPackages [protofcp]: Unable to get metadata: No such project 'protofcp'
+[2023-04-14 15:53:18] INFO root fetch - processPackages [protofcp]: Start processing: mythic-container
+[2023-04-14 15:53:18] INFO root fetch - main [MainThread]: End processing [protofcp] error
+[2023-04-14 15:53:18] INFO root fetch - processPackages [mythic-container]: New version: [0.2.0rc9] Old Version: [0.2.0rc8]
+[2023-04-14 15:53:18] INFO root fetch - processPackages [pysolarfocus]: Start processing: mechanical-bull
+[2023-04-14 15:53:18] INFO root fetch - main [MainThread]: End processing [pysolarfocus]: success
+[2023-04-14 15:53:18] INFO root fetch - processPackages [mythic-container]: executing diffoscope
+[2023-04-14 15:53:18] INFO root fetch - processPackages [mythic-container]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mythic_container-0.2.0rc8.tar.gz tmp/mythic_container-0.2.0rc9.tar.gz --markdown 20230414/m/mythic-container/0.2.0rc8-0.2.0rc9/diff.md --exclude *.pyd
+[2023-04-14 15:53:18] INFO root fetch - processPackages [mechanical-bull]: New version: [0.0.2.1] Old Version: [0.0.2]
+[2023-04-14 15:53:18] INFO root fetch - processPackages [htrvx]: Start processing: fastapi-users
+[2023-04-14 15:53:18] INFO root fetch - main [MainThread]: End processing [htrvx]: success
+[2023-04-14 15:53:18] INFO root fetch - processPackages [fastapi-users]: New version: [9.3.2] Old Version: [9.3.1]
+[2023-04-14 15:53:18] INFO root fetch - processPackages [mechanical-bull]: Downloading https://files.pythonhosted.org/packages/1b/2c/1e1d4c9ca8cb170002a1f1bd00523b61134ec14757556f9b47a0a8e7dd8d/mechanical_bull-0.0.2.tar.gz
+[2023-04-14 15:53:18] INFO root fetch - processPackages [fleter]: Start processing: FnLobbyBot
+[2023-04-14 15:53:18] INFO root fetch - main [MainThread]: End processing [fleter]: success
+[2023-04-14 15:53:18] WARNING root fetch - processPackages [FnLobbyBot]: Skipping, unable to determine old version
+[2023-04-14 15:53:18] INFO root fetch - processPackages [FnLobbyBot]: Start processing: pyGuardPoint
+[2023-04-14 15:53:18] INFO root fetch - main [MainThread]: End processing [FnLobbyBot] error
+[2023-04-14 15:53:18] INFO root fetch - processPackages [pyGuardPoint]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-04-14 15:53:18] INFO root fetch - processPackages [fastapi-users]: Downloading https://files.pythonhosted.org/packages/30/79/8ce8a86bb910bae7df60af339cd1dcea553b7cd7963b2e0ebb1682348808/fastapi-users-9.3.1.tar.gz
+[2023-04-14 15:53:19] INFO root fetch - processPackages [usdm]: Start processing: bsb-hdf5
+[2023-04-14 15:53:19] INFO root fetch - main [MainThread]: End processing [usdm]: success
+[2023-04-14 15:53:19] INFO root fetch - processPackages [bsb-hdf5]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-14 15:53:19] INFO root fetch - processPackages [mechanical-bull]: Downloading https://files.pythonhosted.org/packages/8d/6d/9b8d3b95f5695c92dc52163163e8627e39eb14359348642d05cd1f2c99a4/mechanical_bull-0.0.2.1.tar.gz
+[2023-04-14 15:53:19] INFO root fetch - processPackages [pyGuardPoint]: Downloading https://files.pythonhosted.org/packages/e2/9e/6859c8ab57b93d43165be6db4a6b36f595e044e2ce966893a8f67b4b46df/pyGuardPoint-0.8.4.tar.gz
+[2023-04-14 15:53:19] INFO root fetch - processPackages [bsb-hdf5]: Downloading https://files.pythonhosted.org/packages/0c/a3/17420fcd257efd755402dae47e32ac7f12a99a0e4997007b7bd83f2daa2a/bsb-hdf5-0.7.2.tar.gz
+[2023-04-14 15:53:19] INFO root fetch - processPackages [mechanical-bull]: executing diffoscope
+[2023-04-14 15:53:19] INFO root fetch - processPackages [mechanical-bull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mechanical_bull-0.0.2.tar.gz tmp/mechanical_bull-0.0.2.1.tar.gz --markdown 20230414/m/mechanical-bull/0.0.2-0.0.2.1/diff.md --exclude *.pyd
+[2023-04-14 15:53:19] INFO root fetch - processPackages [pyGuardPoint]: executing diffoscope
+[2023-04-14 15:53:19] INFO root fetch - processPackages [pyGuardPoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGuardPoint-0.8.3.tar.gz tmp/pyGuardPoint-0.8.4.tar.gz --markdown 20230414/p/pyGuardPoint/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-04-14 15:53:19] INFO root fetch - processPackages [fastapi-users]: Downloading https://files.pythonhosted.org/packages/c7/49/f4c3b8ea528a686b4eed537634d2b96190bcebe9df019dbf90b820f9cdcd/fastapi-users-9.3.2.tar.gz
+[2023-04-14 15:53:19] INFO root fetch - processPackages [bsb-hdf5]: Downloading https://files.pythonhosted.org/packages/de/db/6c9cbe1fafaf7ec63a38422a65e447931a0ef6b96ae9379cb2444be1b230/bsb-hdf5-0.7.3.tar.gz
+[2023-04-14 15:53:19] INFO root fetch - processPackages [bsb-hdf5]: executing diffoscope
+[2023-04-14 15:53:19] INFO root fetch - processPackages [bsb-hdf5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bsb-hdf5-0.7.2.tar.gz tmp/bsb-hdf5-0.7.3.tar.gz --markdown 20230414/b/bsb-hdf5/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-14 15:53:19] INFO root fetch - processPackages [fastapi-users]: executing diffoscope
+[2023-04-14 15:53:19] INFO root fetch - processPackages [fastapi-users]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-users-9.3.1.tar.gz tmp/fastapi-users-9.3.2.tar.gz --markdown 20230414/f/fastapi-users/9.3.1-9.3.2/diff.md --exclude *.pyd
+[2023-04-14 15:53:19] INFO root fetch - processPackages [mythic-container]: Start processing: spinta
+[2023-04-14 15:53:19] INFO root fetch - main [MainThread]: End processing [mythic-container]: success
+[2023-04-14 15:53:19] INFO root fetch - processPackages [spinta]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 15:53:20] INFO root fetch - processPackages [spinta]: Downloading https://files.pythonhosted.org/packages/d6/18/9ed12f374957e944902814718feaf5b54bfd3c4d67635d80a745af0a9164/spinta-0.1.8.tar.gz
+[2023-04-14 15:53:20] INFO root fetch - processPackages [mechanical-bull]: Start processing: connect-eaas-core
+[2023-04-14 15:53:20] INFO root fetch - main [MainThread]: End processing [mechanical-bull]: success
+[2023-04-14 15:53:20] INFO root fetch - processPackages [connect-eaas-core]: New version: [4.1.0] Old Version: [4.0.0]
+[2023-04-14 15:53:20] INFO root fetch - processPackages [pyGuardPoint]: Start processing: abstra-runtimes
+[2023-04-14 15:53:20] INFO root fetch - main [MainThread]: End processing [pyGuardPoint]: success
+[2023-04-14 15:53:20] INFO root fetch - processPackages [abstra-runtimes]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 15:53:20] INFO root fetch - processPackages [connect-eaas-core]: Downloading https://files.pythonhosted.org/packages/cc/2b/dea815280942b1c045ca9eecfafffe56712d2b8c5e293241f99caf0d825c/connect-eaas-core-4.0.0.tar.gz
+[2023-04-14 15:53:20] INFO root fetch - processPackages [abstra-runtimes]: Downloading https://files.pythonhosted.org/packages/84/cf/80c651e66fc4074dc94f42d7665e55830d01dc09ef938b319f16cb20f192/abstra-runtimes-0.9.0.tar.gz
+[2023-04-14 15:53:20] INFO root fetch - processPackages [spinta]: Downloading https://files.pythonhosted.org/packages/5a/9c/8d278829c1decafc04da79fe89230199cc6c397169ee377f8eab760997a9/spinta-0.1.9.tar.gz
+[2023-04-14 15:53:20] INFO root fetch - processPackages [bsb-hdf5]: Start processing: nalyst
+[2023-04-14 15:53:20] INFO root fetch - main [MainThread]: End processing [bsb-hdf5]: success
+[2023-04-14 15:53:20] INFO root fetch - processPackages [nalyst]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 15:53:20] INFO root fetch - processPackages [connect-eaas-core]: Downloading https://files.pythonhosted.org/packages/b8/0e/223cf7857305fa1f3a5dd5f98ef3ffefc0eabf78b1d8512dc021aac41705/connect-eaas-core-4.1.0.tar.gz
+[2023-04-14 15:53:20] INFO root fetch - processPackages [abstra-runtimes]: Downloading https://files.pythonhosted.org/packages/29/82/f0c46a182c84a44eb4ec38208fb326eb77381f58aa5ceffecfc1a7463ceb/abstra-runtimes-0.9.1.tar.gz
+[2023-04-14 15:53:21] INFO root fetch - processPackages [nalyst]: Downloading https://files.pythonhosted.org/packages/0b/eb/a28290074eff79dbf9af7b1dda6391de568f38fdaec36ca3be99d7fe5c2d/nalyst-0.0.5.tar.gz
+[2023-04-14 15:53:21] INFO root fetch - processPackages [connect-eaas-core]: executing diffoscope
+[2023-04-14 15:53:21] INFO root fetch - processPackages [connect-eaas-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connect-eaas-core-4.0.0.tar.gz tmp/connect-eaas-core-4.1.0.tar.gz --markdown 20230414/c/connect-eaas-core/4.0.0-4.1.0/diff.md --exclude *.pyd
+[2023-04-14 15:53:21] INFO root fetch - processPackages [abstra-runtimes]: executing diffoscope
+[2023-04-14 15:53:21] INFO root fetch - processPackages [abstra-runtimes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstra-runtimes-0.9.0.tar.gz tmp/abstra-runtimes-0.9.1.tar.gz --markdown 20230414/a/abstra-runtimes/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 15:53:21] INFO root fetch - processPackages [nalyst]: executing diffoscope
+[2023-04-14 15:53:21] INFO root fetch - processPackages [nalyst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nalyst-0.0.4.tar.gz tmp/nalyst-0.0.5.tar.gz --markdown 20230414/n/nalyst/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 15:53:21] INFO root fetch - processPackages [fastapi-users]: Start processing: gentrace-py
+[2023-04-14 15:53:21] INFO root fetch - main [MainThread]: End processing [fastapi-users]: success
+[2023-04-14 15:53:21] INFO root fetch - processPackages [gentrace-py]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-14 15:53:21] INFO root fetch - processPackages [spinta]: executing diffoscope
+[2023-04-14 15:53:21] INFO root fetch - processPackages [spinta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spinta-0.1.8.tar.gz tmp/spinta-0.1.9.tar.gz --markdown 20230414/s/spinta/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 15:53:21] INFO root fetch - processPackages [gentrace-py]: Downloading https://files.pythonhosted.org/packages/79/6d/88ba50d9e907a135d4ef75151bc3bb9954411a0d1b2422d7c662099e483f/gentrace_py-0.1.7.tar.gz
+[2023-04-14 15:53:22] INFO root fetch - processPackages [gentrace-py]: executing diffoscope
+[2023-04-14 15:53:22] INFO root fetch - processPackages [gentrace-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gentrace_py-0.1.6.tar.gz tmp/gentrace_py-0.1.7.tar.gz --markdown 20230414/g/gentrace-py/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-14 15:53:22] INFO root fetch - processPackages [abstra-runtimes]: Start processing: mechanical-bull
+[2023-04-14 15:53:22] INFO root fetch - main [MainThread]: End processing [abstra-runtimes]: success
+[2023-04-14 15:53:22] INFO root fetch - processPackages [mechanical-bull]: New version: [0.0.2.1] Old Version: [0.0.2]
+[2023-04-14 15:53:22] INFO root fetch - processPackages [connect-eaas-core]: Start processing: cfdonnx
+[2023-04-14 15:53:22] INFO root fetch - main [MainThread]: End processing [connect-eaas-core]: success
+[2023-04-14 15:53:22] INFO root fetch - processPackages [cfdonnx]: New version: [2.0.0] Old Version: [0.1.0]
+[2023-04-14 15:53:22] INFO root fetch - processPackages [mechanical-bull]: executing diffoscope
+[2023-04-14 15:53:22] INFO root fetch - processPackages [mechanical-bull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mechanical_bull-0.0.2.tar.gz tmp/mechanical_bull-0.0.2.1.tar.gz --markdown 20230414/m/mechanical-bull/0.0.2-0.0.2.1/diff.md --exclude *.pyd
+[2023-04-14 15:53:22] INFO root fetch - processPackages [cfdonnx]: Downloading https://files.pythonhosted.org/packages/44/13/9a04099aa0fac07acf0f96cf1845745378fa1cfbe5b637e5222fb018d0ad/cfdonnx-0.1.0.tar.gz
+[2023-04-14 15:53:22] INFO root fetch - processPackages [nalyst]: Start processing: bcos
+[2023-04-14 15:53:22] INFO root fetch - main [MainThread]: End processing [nalyst]: success
+[2023-04-14 15:53:22] INFO root fetch - processPackages [bcos]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 15:53:22] INFO root fetch - processPackages [cfdonnx]: Downloading https://files.pythonhosted.org/packages/60/5b/f1b770e515d9209c4904821eb3d9eb9ef6cb092c9c46f9a6006dbb7c10b1/cfdonnx-2.0.0.tar.gz
+[2023-04-14 15:53:22] INFO root fetch - processPackages [bcos]: Downloading https://files.pythonhosted.org/packages/ca/fa/55e1d0006ff79b56d75e670527b16eabf9021170a09c9b8ed84540d2064f/bcos-0.0.2.tar.gz
+[2023-04-14 15:53:22] INFO root fetch - processPackages [cfdonnx]: executing diffoscope
+[2023-04-14 15:53:22] INFO root fetch - processPackages [cfdonnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfdonnx-0.1.0.tar.gz tmp/cfdonnx-2.0.0.tar.gz --markdown 20230414/c/cfdonnx/0.1.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-14 15:53:23] INFO root fetch - processPackages [bcos]: Downloading https://files.pythonhosted.org/packages/1e/98/074ea7b27f5d4265603cc97e0cef2d67e3b3bfdcc440c4fd8484ad093d58/bcos-0.0.3.tar.gz
+[2023-04-14 15:53:23] INFO root fetch - main [MainThread]: End processing [gentrace-py]: success
+[2023-04-14 15:53:23] INFO root fetch - processPackages [bcos]: executing diffoscope
+[2023-04-14 15:53:23] INFO root fetch - processPackages [bcos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcos-0.0.2.tar.gz tmp/bcos-0.0.3.tar.gz --markdown 20230414/b/bcos/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 15:53:23] INFO root fetch - main [MainThread]: End processing [mechanical-bull]: success
+[2023-04-14 15:53:23] INFO root fetch - main [MainThread]: End processing [cfdonnx]: success
+[2023-04-14 15:53:24] INFO root fetch - main [MainThread]: End processing [spinta]: success
+[2023-04-14 15:53:24] INFO root fetch - main [MainThread]: End processing [bcos]: success
+[2023-04-14 15:53:24] INFO root fetch - main [MainThread]: Store serial: [17707990]
