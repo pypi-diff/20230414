@@ -8956,3 +8956,128 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 09:51:11] INFO root fetch - main [MainThread]: End processing [vicedtools]: success
 [2023-04-14 09:51:24] INFO root fetch - main [MainThread]: End processing [udata-front]: success
 [2023-04-14 09:51:24] INFO root fetch - main [MainThread]: Store serial: [17704223]
+[2023-04-14 09:56:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704223]
+[2023-04-14 09:56:32] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-14 09:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oc-connections
+[2023-04-14 09:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vicedtools
+[2023-04-14 09:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: imio.migrator
+[2023-04-14 09:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hugegraph-python
+[2023-04-14 09:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: compilecls
+[2023-04-14 09:56:32] INFO root fetch - processPackages [imio.migrator]: New version: [1.9] Old Version: [1.8]
+[2023-04-14 09:56:32] INFO root fetch - processPackages [compilecls]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-14 09:56:32] INFO root fetch - processPackages [hugegraph-python]: New version: [1.0.0.3] Old Version: [1.0.0.2]
+[2023-04-14 09:56:32] WARNING root fetch - processPackages [oc-connections]: Skipping, unable to determine old version
+[2023-04-14 09:56:32] INFO root fetch - processPackages [oc-connections]: Start processing: django-weasypdf
+[2023-04-14 09:56:32] INFO root fetch - main [MainThread]: End processing [oc-connections] error
+[2023-04-14 09:56:32] INFO root fetch - processPackages [vicedtools]: New version: [0.0.8] Old Version: [0.0.7.1]
+[2023-04-14 09:56:32] WARNING root fetch - processPackages [django-weasypdf]: Skipping, unable to determine old version
+[2023-04-14 09:56:32] INFO root fetch - processPackages [django-weasypdf]: Start processing: liiatools
+[2023-04-14 09:56:32] INFO root fetch - main [MainThread]: End processing [django-weasypdf] error
+[2023-04-14 09:56:32] INFO root fetch - processPackages [liiatools]: New version: [0.1.5.0] Old Version: [0.1.4.9]
+[2023-04-14 09:56:32] INFO root fetch - processPackages [imio.migrator]: Downloading https://files.pythonhosted.org/packages/db/da/1b4a019bb9c1845893e0d9fd12601091f60ebbd31e00832ca631bb2caad5/imio.migrator-1.8.tar.gz
+[2023-04-14 09:56:32] INFO root fetch - processPackages [hugegraph-python]: Downloading https://files.pythonhosted.org/packages/27/36/6117663ecebe9191c78f770e1d601e67ad325efad296b5aeb28314db0250/hugegraph-python-1.0.0.2.tar.gz
+[2023-04-14 09:56:32] INFO root fetch - processPackages [liiatools]: Downloading https://files.pythonhosted.org/packages/9e/07/0cb57016a518135bef3535f3a2f52b6cb6e432138f72fb0c7839b676bb2f/liiatools-0.1.4.9.tar.gz
+[2023-04-14 09:56:32] INFO root fetch - processPackages [vicedtools]: Downloading https://files.pythonhosted.org/packages/10/17/00f1c6757925e23a2c4d2ff6842a67e5591e4e268a7a8d01d131e4902f09/vicedtools-0.0.8.tar.gz
+[2023-04-14 09:56:32] INFO root fetch - processPackages [compilecls]: Downloading https://files.pythonhosted.org/packages/9c/f2/bc853ba11961f83dafd42676a7ac5d173c3c6a7e716a288fa5b3ab86b862/compilecls-1.0.4.tar.gz
+[2023-04-14 09:56:32] INFO root fetch - processPackages [imio.migrator]: Downloading https://files.pythonhosted.org/packages/da/ae/2eaa28707e5298af8e7205d2b9b9e6f754255df4882bc966e801bf18c79b/imio.migrator-1.9.tar.gz
+[2023-04-14 09:56:32] INFO root fetch - processPackages [liiatools]: Downloading https://files.pythonhosted.org/packages/b7/4d/2278a82ce8877bb35d22d75fa7b4a26908bbe222e1fc637bcd556bfe8bf0/liiatools-0.1.5.0.tar.gz
+[2023-04-14 09:56:32] INFO root fetch - processPackages [hugegraph-python]: Downloading https://files.pythonhosted.org/packages/b1/38/204e1733483bd6afa79c7f10c6c6b8f854c3662f537fb1301f1dc1ee7ab2/hugegraph-python-1.0.0.3.tar.gz
+[2023-04-14 09:56:32] INFO root fetch - processPackages [compilecls]: executing diffoscope
+[2023-04-14 09:56:32] INFO root fetch - processPackages [compilecls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compilecls-1.0.3.tar.gz tmp/compilecls-1.0.4.tar.gz --markdown 20230414/c/compilecls/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-14 09:56:33] INFO root fetch - processPackages [vicedtools]: executing diffoscope
+[2023-04-14 09:56:33] INFO root fetch - processPackages [vicedtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vicedtools-0.0.7.1.tar.gz tmp/vicedtools-0.0.8.tar.gz --markdown 20230414/v/vicedtools/0.0.7.1-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 09:56:33] INFO root fetch - processPackages [imio.migrator]: executing diffoscope
+[2023-04-14 09:56:33] INFO root fetch - processPackages [imio.migrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imio.migrator-1.8.tar.gz tmp/imio.migrator-1.9.tar.gz --markdown 20230414/i/imio.migrator/1.8-1.9/diff.md --exclude *.pyd
+[2023-04-14 09:56:33] INFO root fetch - processPackages [liiatools]: executing diffoscope
+[2023-04-14 09:56:33] INFO root fetch - processPackages [liiatools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liiatools-0.1.4.9.tar.gz tmp/liiatools-0.1.5.0.tar.gz --markdown 20230414/l/liiatools/0.1.4.9-0.1.5.0/diff.md --exclude *.pyd
+[2023-04-14 09:56:33] INFO root fetch - processPackages [hugegraph-python]: executing diffoscope
+[2023-04-14 09:56:33] INFO root fetch - processPackages [hugegraph-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugegraph-python-1.0.0.2.tar.gz tmp/hugegraph-python-1.0.0.3.tar.gz --markdown 20230414/h/hugegraph-python/1.0.0.2-1.0.0.3/diff.md --exclude *.pyd
+[2023-04-14 09:56:34] INFO root fetch - processPackages [compilecls]: Start processing: cognite-extractor-utils
+[2023-04-14 09:56:34] INFO root fetch - main [MainThread]: End processing [compilecls]: success
+[2023-04-14 09:56:34] INFO root fetch - processPackages [cognite-extractor-utils]: New version: [4.3.0] Old Version: [4.2.1]
+[2023-04-14 09:56:34] INFO root fetch - processPackages [hugegraph-python]: Start processing: MyJpHolidays
+[2023-04-14 09:56:34] INFO root fetch - main [MainThread]: End processing [hugegraph-python]: success
+[2023-04-14 09:56:34] INFO root fetch - processPackages [MyJpHolidays]: New version: [0.8.5] Old Version: [0.8.3]
+[2023-04-14 09:56:34] INFO root fetch - processPackages [cognite-extractor-utils]: Downloading https://files.pythonhosted.org/packages/53/59/458f6dcc7447f628924ebd3c4d11dc9d64042eb33deb8b9f6930501450c5/cognite_extractor_utils-4.2.1.tar.gz
+[2023-04-14 09:56:34] INFO root fetch - processPackages [vicedtools]: Start processing: ecodata
+[2023-04-14 09:56:34] INFO root fetch - main [MainThread]: End processing [vicedtools]: success
+[2023-04-14 09:56:34] INFO root fetch - processPackages [imio.migrator]: Start processing: cccrontab
+[2023-04-14 09:56:34] INFO root fetch - main [MainThread]: End processing [imio.migrator]: success
+[2023-04-14 09:56:34] WARNING root fetch - processPackages [ecodata]: Skipping, unable to determine old version
+[2023-04-14 09:56:34] INFO root fetch - processPackages [ecodata]: Start processing: speconed
+[2023-04-14 09:56:34] INFO root fetch - main [MainThread]: End processing [ecodata] error
+[2023-04-14 09:56:34] WARNING root fetch - processPackages [cccrontab]: Skipping, unable to determine old version
+[2023-04-14 09:56:34] INFO root fetch - processPackages [cccrontab]: Start processing: speconed
+[2023-04-14 09:56:34] INFO root fetch - main [MainThread]: End processing [cccrontab] error
+[2023-04-14 09:56:34] INFO root fetch - processPackages [speconed]: New version: [1.0.0] Old Version: [0.0.dev0]
+[2023-04-14 09:56:34] INFO root fetch - processPackages [speconed]: New version: [1.0.0] Old Version: [0.0.dev0]
+[2023-04-14 09:56:34] INFO root fetch - processPackages [speconed]: Downloading https://files.pythonhosted.org/packages/1d/c5/d43b7dd965954ee56dffef12a9b20f5791a5703bde607e6aaf65b165e816/speconed-0.0.dev0.tar.gz
+[2023-04-14 09:56:34] INFO root fetch - processPackages [speconed]: Downloading https://files.pythonhosted.org/packages/1d/c5/d43b7dd965954ee56dffef12a9b20f5791a5703bde607e6aaf65b165e816/speconed-0.0.dev0.tar.gz
+[2023-04-14 09:56:34] INFO root fetch - processPackages [MyJpHolidays]: Downloading https://files.pythonhosted.org/packages/60/9b/2050d51d0559dcf4c3560f7c1827e5f72849c4818ecb724ae9e323d12fa1/MyJpHolidays-0.8.5.tar.gz
+[2023-04-14 09:56:34] INFO root fetch - processPackages [liiatools]: Start processing: gmltools
+[2023-04-14 09:56:34] INFO root fetch - main [MainThread]: End processing [liiatools]: success
+[2023-04-14 09:56:34] INFO root fetch - processPackages [cognite-extractor-utils]: Downloading https://files.pythonhosted.org/packages/fb/39/fcac2b4c8fd48969cfcf7b0c293b05f443dc325846eb82d058213ae8a167/cognite_extractor_utils-4.3.0.tar.gz
+[2023-04-14 09:56:34] INFO root fetch - processPackages [gmltools]: New version: [0.0.53] Old Version: [0.0.52]
+[2023-04-14 09:56:34] INFO root fetch - processPackages [MyJpHolidays]: executing diffoscope
+[2023-04-14 09:56:34] INFO root fetch - processPackages [MyJpHolidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyJpHolidays-0.8.3.tar.gz tmp/MyJpHolidays-0.8.5.tar.gz --markdown 20230414/M/MyJpHolidays/0.8.3-0.8.5/diff.md --exclude *.pyd
+[2023-04-14 09:56:34] INFO root fetch - processPackages [cognite-extractor-utils]: executing diffoscope
+[2023-04-14 09:56:34] INFO root fetch - processPackages [cognite-extractor-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_extractor_utils-4.2.1.tar.gz tmp/cognite_extractor_utils-4.3.0.tar.gz --markdown 20230414/c/cognite-extractor-utils/4.2.1-4.3.0/diff.md --exclude *.pyd
+[2023-04-14 09:56:34] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/2b/36/a892588040415c0fd44daaf5b7f2d61f106d45053ffe82b4359c409d6e92/gmltools-0.0.53.tar.gz
+[2023-04-14 09:56:34] INFO root fetch - processPackages [speconed]: Downloading https://files.pythonhosted.org/packages/bf/45/ede6a0d666b2177a5bb73839760d49bff0ea9812480908e81c35610c3f05/speconed-1.0.0.tar.gz
+[2023-04-14 09:56:34] INFO root fetch - processPackages [speconed]: Downloading https://files.pythonhosted.org/packages/bf/45/ede6a0d666b2177a5bb73839760d49bff0ea9812480908e81c35610c3f05/speconed-1.0.0.tar.gz
+[2023-04-14 09:56:35] INFO root fetch - processPackages [speconed]: executing diffoscope
+[2023-04-14 09:56:35] INFO root fetch - processPackages [speconed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speconed-0.0.dev0.tar.gz tmp/speconed-1.0.0.tar.gz --markdown 20230414/s/speconed/0.0.dev0-1.0.0/diff.md --exclude *.pyd
+[2023-04-14 09:56:35] INFO root fetch - processPackages [speconed]: executing diffoscope
+[2023-04-14 09:56:35] INFO root fetch - processPackages [speconed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speconed-0.0.dev0.tar.gz tmp/speconed-1.0.0.tar.gz --markdown 20230414/s/speconed/0.0.dev0-1.0.0/diff.md --exclude *.pyd
+[2023-04-14 09:56:35] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-04-14 09:56:35] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.52.tar.gz tmp/gmltools-0.0.53.tar.gz --markdown 20230414/g/gmltools/0.0.52-0.0.53/diff.md --exclude *.pyd
+[2023-04-14 09:56:35] INFO root fetch - processPackages [MyJpHolidays]: Start processing: aspose-diagram
+[2023-04-14 09:56:35] INFO root fetch - main [MainThread]: End processing [MyJpHolidays]: success
+[2023-04-14 09:56:35] INFO root fetch - processPackages [aspose-diagram]: New version: [23.4.0] Old Version: [23.3.0]
+[2023-04-14 09:56:35] INFO root fetch - processPackages [cognite-extractor-utils]: Start processing: melkit
+[2023-04-14 09:56:35] INFO root fetch - main [MainThread]: End processing [cognite-extractor-utils]: success
+[2023-04-14 09:56:35] INFO root fetch - processPackages [melkit]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-14 09:56:36] INFO root fetch - processPackages [aspose-diagram]: Downloading https://files.pythonhosted.org/packages/2e/eb/068d82e2fb40788170d3c0f1ebd374b71306958587d5c0c31b250e9bbd84/aspose-diagram-23.3.0.tar.gz
+[2023-04-14 09:56:36] INFO root fetch - processPackages [melkit]: Downloading https://files.pythonhosted.org/packages/24/bc/23e3499deb25dfa3206e9fd75cd450a063ae2736208aa3cd32d34742a4e6/melkit-0.1.7.tar.gz
+[2023-04-14 09:56:36] INFO root fetch - processPackages [melkit]: executing diffoscope
+[2023-04-14 09:56:36] INFO root fetch - processPackages [melkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melkit-0.1.6.tar.gz tmp/melkit-0.1.7.tar.gz --markdown 20230414/m/melkit/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-14 09:56:36] INFO root fetch - processPackages [aspose-diagram]: Downloading https://files.pythonhosted.org/packages/0a/ed/e36120578d44cca86e6db7e88da21c2f819a8d1c1adc2cf7c6c6429cd6bc/aspose-diagram-23.4.0.tar.gz
+[2023-04-14 09:56:36] INFO root fetch - processPackages [speconed]: Start processing: arsalan-khaleel-338package
+[2023-04-14 09:56:36] INFO root fetch - main [MainThread]: End processing [speconed]: success
+[2023-04-14 09:56:36] WARNING root fetch - processPackages [arsalan-khaleel-338package]: Skipping, unable to determine old version
+[2023-04-14 09:56:36] INFO root fetch - processPackages [arsalan-khaleel-338package]: Start processing: calibrating
+[2023-04-14 09:56:36] INFO root fetch - main [MainThread]: End processing [arsalan-khaleel-338package] error
+[2023-04-14 09:56:36] INFO root fetch - processPackages [calibrating]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-14 09:56:37] INFO root fetch - processPackages [speconed]: Start processing: django-custom-modal-admin
+[2023-04-14 09:56:37] INFO root fetch - main [MainThread]: End processing [speconed]: success
+[2023-04-14 09:56:37] INFO root fetch - processPackages [django-custom-modal-admin]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-14 09:56:37] INFO root fetch - processPackages [calibrating]: Downloading https://files.pythonhosted.org/packages/77/ee/c4d6e8b874e1d51595acb88b6fbe4bce035d093cb86ea68118924793cb06/calibrating-0.6.3.tar.gz
+[2023-04-14 09:56:37] INFO root fetch - processPackages [django-custom-modal-admin]: Downloading https://files.pythonhosted.org/packages/1e/20/f30b0cfd2e7398145693d05b82d864d76fad4d1c2325068036c4050f2cf1/django-custom-modal-admin-0.2.0.tar.gz
+[2023-04-14 09:56:37] INFO root fetch - processPackages [aspose-diagram]: executing diffoscope
+[2023-04-14 09:56:37] INFO root fetch - processPackages [aspose-diagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aspose-diagram-23.3.0.tar.gz tmp/aspose-diagram-23.4.0.tar.gz --markdown 20230414/a/aspose-diagram/23.3.0-23.4.0/diff.md --exclude *.pyd
+[2023-04-14 09:56:37] INFO root fetch - processPackages [calibrating]: Downloading https://files.pythonhosted.org/packages/a2/f1/af477a2efb9ca65b08c23faf9c131709ff779d11a08b2e2511504937bc7a/calibrating-0.6.4.tar.gz
+[2023-04-14 09:56:37] INFO root fetch - processPackages [django-custom-modal-admin]: Downloading https://files.pythonhosted.org/packages/5c/ec/2f49e53c8276eda35d18f3b6f7969b41d077fd56bb8a97e847e91239fc42/django-custom-modal-admin-0.2.1.tar.gz
+[2023-04-14 09:56:37] INFO root fetch - processPackages [melkit]: Start processing: simple-export
+[2023-04-14 09:56:37] INFO root fetch - main [MainThread]: End processing [melkit]: success
+[2023-04-14 09:56:37] INFO root fetch - processPackages [calibrating]: executing diffoscope
+[2023-04-14 09:56:37] INFO root fetch - processPackages [calibrating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calibrating-0.6.3.tar.gz tmp/calibrating-0.6.4.tar.gz --markdown 20230414/c/calibrating/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-14 09:56:37] INFO root fetch - processPackages [simple-export]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-14 09:56:37] INFO root fetch - processPackages [django-custom-modal-admin]: executing diffoscope
+[2023-04-14 09:56:37] INFO root fetch - processPackages [django-custom-modal-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-custom-modal-admin-0.2.0.tar.gz tmp/django-custom-modal-admin-0.2.1.tar.gz --markdown 20230414/d/django-custom-modal-admin/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 09:56:37] INFO root fetch - processPackages [simple-export]: Downloading https://files.pythonhosted.org/packages/cd/0c/1bb9a93494f67ec3e5a0f2a0aa08a80471f10c0ec4ab6c967d2ac0f07913/simple_export-0.3.5.tar.gz
+[2023-04-14 09:56:38] INFO root fetch - processPackages [simple-export]: Downloading https://files.pythonhosted.org/packages/1b/00/0bf1fa3cf9a2afe54baa32ad155c21d2177b9d7772ecfbda7cc87650aca8/simple_export-0.3.6.tar.gz
+[2023-04-14 09:56:38] INFO root fetch - processPackages [simple-export]: executing diffoscope
+[2023-04-14 09:56:38] INFO root fetch - processPackages [simple-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_export-0.3.5.tar.gz tmp/simple_export-0.3.6.tar.gz --markdown 20230414/s/simple-export/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-14 09:56:39] INFO root fetch - processPackages [calibrating]: Start processing: hugegraph-python
+[2023-04-14 09:56:39] INFO root fetch - main [MainThread]: End processing [calibrating]: success
+[2023-04-14 09:56:39] INFO root fetch - processPackages [hugegraph-python]: New version: [1.0.0.4] Old Version: [1.0.0.3]
+[2023-04-14 09:56:39] INFO root fetch - processPackages [hugegraph-python]: Downloading https://files.pythonhosted.org/packages/59/82/7530880e1442ea148b463299746418bcfed776f53ada7efbbd44d66ac79f/hugegraph-python-1.0.0.4.tar.gz
+[2023-04-14 09:56:39] INFO root fetch - main [MainThread]: End processing [simple-export]: success
+[2023-04-14 09:56:39] INFO root fetch - processPackages [hugegraph-python]: executing diffoscope
+[2023-04-14 09:56:39] INFO root fetch - processPackages [hugegraph-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugegraph-python-1.0.0.3.tar.gz tmp/hugegraph-python-1.0.0.4.tar.gz --markdown 20230414/h/hugegraph-python/1.0.0.3-1.0.0.4/diff.md --exclude *.pyd
+[2023-04-14 09:56:39] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-04-14 09:56:40] INFO root fetch - main [MainThread]: End processing [django-custom-modal-admin]: success
+[2023-04-14 09:56:40] INFO root fetch - main [MainThread]: End processing [hugegraph-python]: success
+[2023-04-14 09:59:37] ERROR root fetch - processPackages [aspose-diagram]: Timeout during execution of pkgdiff
+[2023-04-14 09:59:37] INFO root fetch - main [MainThread]: End processing [aspose-diagram] error
+[2023-04-14 09:59:37] INFO root fetch - main [MainThread]: Store serial: [17704294]
