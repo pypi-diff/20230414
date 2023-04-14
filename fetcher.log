@@ -11561,3 +11561,82 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 12:16:14] INFO root fetch - main [MainThread]: End processing [wodoo]: success
 [2023-04-14 12:16:14] INFO root fetch - main [MainThread]: End processing [datumaro]: success
 [2023-04-14 12:16:14] INFO root fetch - main [MainThread]: Store serial: [17705746]
+[2023-04-14 12:21:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705746]
+[2023-04-14 12:21:22] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 12:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arcanum-newspaper-segmentation-client
+[2023-04-14 12:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inpost
+[2023-04-14 12:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-parsing
+[2023-04-14 12:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ppa-api
+[2023-04-14 12:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nessai
+[2023-04-14 12:21:22] INFO root fetch - processPackages [ppa-api]: New version: [2.6.1] Old Version: [2.6.0]
+[2023-04-14 12:21:22] INFO root fetch - processPackages [arcanum-newspaper-segmentation-client]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-04-14 12:21:22] INFO root fetch - processPackages [mo-parsing]: New version: [8.6.21337] Old Version: [8.4.21326]
+[2023-04-14 12:21:22] INFO root fetch - processPackages [nessai]: New version: [0.8.1] Old Version: [0.8.0b1]
+[2023-04-14 12:21:22] INFO root fetch - processPackages [inpost]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 12:21:22] INFO root fetch - processPackages [ppa-api]: Downloading https://files.pythonhosted.org/packages/18/93/04f21eab099caed58ea88aa5b011387430f0be47d71f84204717781478f4/ppa_api-2.6.0-py3-none-any.whl
+[2023-04-14 12:21:22] INFO root fetch - processPackages [mo-parsing]: Downloading https://files.pythonhosted.org/packages/9d/a4/9961d49f979aec0dc7bcd90c693b5c03e598f0a416d578a8ff7c588ee37f/mo-parsing-8.4.21326.tar.gz
+[2023-04-14 12:21:22] INFO root fetch - processPackages [arcanum-newspaper-segmentation-client]: Downloading https://files.pythonhosted.org/packages/67/84/fad2c5fc72714808c7d7cb1443f3b63709647e9911278ce361ba7d9d3d35/arcanum-newspaper-segmentation-client-1.6.4.tar.gz
+[2023-04-14 12:21:22] INFO root fetch - processPackages [nessai]: Downloading https://files.pythonhosted.org/packages/9f/0d/d5bcd4e2434295ce6c13cbb1a4a8e656bd7ac663c9c910664f89fc46f110/nessai-0.8.0b1.tar.gz
+[2023-04-14 12:21:22] INFO root fetch - processPackages [inpost]: Downloading https://files.pythonhosted.org/packages/f8/32/9ddbd6f490039b3bd055bbe1e925ca9a680aadbc274c0127f782b6e993c5/inpost-0.0.9.tar.gz
+[2023-04-14 12:21:22] INFO root fetch - processPackages [arcanum-newspaper-segmentation-client]: executing diffoscope
+[2023-04-14 12:21:22] INFO root fetch - processPackages [arcanum-newspaper-segmentation-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcanum-newspaper-segmentation-client-1.6.3.tar.gz tmp/arcanum-newspaper-segmentation-client-1.6.4.tar.gz --markdown 20230414/a/arcanum-newspaper-segmentation-client/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-04-14 12:21:22] INFO root fetch - processPackages [inpost]: executing diffoscope
+[2023-04-14 12:21:22] INFO root fetch - processPackages [inpost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inpost-0.0.8.tar.gz tmp/inpost-0.0.9.tar.gz --markdown 20230414/i/inpost/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 12:21:22] INFO root fetch - processPackages [ppa-api]: Downloading https://files.pythonhosted.org/packages/1f/02/80ffcb2a3d2b735bd399f71311b5845be202fbe009987c32d898e0132936/ppa_api-2.6.1-py3-none-any.whl
+[2023-04-14 12:21:22] INFO root fetch - processPackages [nessai]: Downloading https://files.pythonhosted.org/packages/9b/0d/ca46e471480ba7854ec929e8dbfb3d0724239c2ca46574c712ba866519a1/nessai-0.8.1.tar.gz
+[2023-04-14 12:21:22] INFO root fetch - processPackages [ppa-api]: executing diffoscope
+[2023-04-14 12:21:22] INFO root fetch - processPackages [ppa-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ppa_api-2.6.0-py3-none-any.whl.zip tmp/ppa_api-2.6.1-py3-none-any.whl.zip --markdown 20230414/p/ppa-api/2.6.0-2.6.1/diff.md --exclude *.pyd
+[2023-04-14 12:21:22] INFO root fetch - processPackages [nessai]: executing diffoscope
+[2023-04-14 12:21:22] INFO root fetch - processPackages [nessai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nessai-0.8.0b1.tar.gz tmp/nessai-0.8.1.tar.gz --markdown 20230414/n/nessai/0.8.0b1-0.8.1/diff.md --exclude *.pyd
+[2023-04-14 12:21:22] INFO root fetch - processPackages [mo-parsing]: Downloading https://files.pythonhosted.org/packages/f5/1a/82201993fe48978b96bd30729e1d7c8097d4513168689bc51790c6a20d90/mo-parsing-8.6.21337.tar.gz
+[2023-04-14 12:21:23] INFO root fetch - processPackages [mo-parsing]: executing diffoscope
+[2023-04-14 12:21:23] INFO root fetch - processPackages [mo-parsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo-parsing-8.4.21326.tar.gz tmp/mo-parsing-8.6.21337.tar.gz --markdown 20230414/m/mo-parsing/8.4.21326-8.6.21337/diff.md --exclude *.pyd
+[2023-04-14 12:21:23] INFO root fetch - processPackages [arcanum-newspaper-segmentation-client]: Start processing: mo-sql-parsing
+[2023-04-14 12:21:23] INFO root fetch - main [MainThread]: End processing [arcanum-newspaper-segmentation-client]: success
+[2023-04-14 12:21:23] INFO root fetch - processPackages [mo-sql-parsing]: New version: [9.369.23104] Old Version: [9.367.23090]
+[2023-04-14 12:21:23] INFO root fetch - processPackages [inpost]: Start processing: c2cciutils
+[2023-04-14 12:21:23] INFO root fetch - main [MainThread]: End processing [inpost]: success
+[2023-04-14 12:21:23] INFO root fetch - processPackages [c2cciutils]: New version: [1.6.0.dev8] Old Version: [1.6.0.dev78]
+[2023-04-14 12:21:23] INFO root fetch - processPackages [ppa-api]: Start processing: PyRobi
+[2023-04-14 12:21:23] INFO root fetch - main [MainThread]: End processing [ppa-api]: success
+[2023-04-14 12:21:23] INFO root fetch - processPackages [mo-sql-parsing]: Downloading https://files.pythonhosted.org/packages/19/d0/39edc68935baddbbcc99bb7021f8cd97509f104a4d3136a6eebf6087a591/mo_sql_parsing-9.367.23090-py2.py3-none-any.whl
+[2023-04-14 12:21:23] WARNING root fetch - processPackages [PyRobi]: Skipping, unable to determine old version
+[2023-04-14 12:21:23] INFO root fetch - processPackages [PyRobi]: Start processing: swiftshadow
+[2023-04-14 12:21:23] INFO root fetch - main [MainThread]: End processing [PyRobi] error
+[2023-04-14 12:21:23] INFO root fetch - processPackages [c2cciutils]: Downloading https://files.pythonhosted.org/packages/e9/4e/30ff6056e9dd52e3eddf2070e6da1282ee476bfb6d259f219daf4db7c749/c2cciutils-1.6.0.dev78.tar.gz
+[2023-04-14 12:21:23] WARNING root fetch - processPackages [swiftshadow]: Skipping, unable to determine old version
+[2023-04-14 12:21:23] INFO root fetch - processPackages [swiftshadow]: Start processing: Architectural-Lens
+[2023-04-14 12:21:23] INFO root fetch - main [MainThread]: End processing [swiftshadow] error
+[2023-04-14 12:21:23] INFO root fetch - processPackages [Architectural-Lens]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 12:21:24] INFO root fetch - processPackages [mo-sql-parsing]: Downloading https://files.pythonhosted.org/packages/b7/1a/76e4d1bc609dfb8ffedd09563699ce89bdd4e2fba9a851fa454be7f44aa8/mo_sql_parsing-9.369.23104-py2.py3-none-any.whl
+[2023-04-14 12:21:24] INFO root fetch - processPackages [mo-sql-parsing]: executing diffoscope
+[2023-04-14 12:21:24] INFO root fetch - processPackages [mo-sql-parsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_sql_parsing-9.367.23090-py2.py3-none-any.whl.zip tmp/mo_sql_parsing-9.369.23104-py2.py3-none-any.whl.zip --markdown 20230414/m/mo-sql-parsing/9.367.23090-9.369.23104/diff.md --exclude *.pyd
+[2023-04-14 12:21:24] INFO root fetch - processPackages [Architectural-Lens]: Downloading https://files.pythonhosted.org/packages/4d/12/7cff4441109d084be1f7b1049cf8eb1b08932cacce6ce76b4a8463730ea0/Architectural%20Lens-0.0.3.tar.gz
+[2023-04-14 12:21:24] INFO root fetch - processPackages [mo-parsing]: Start processing: kkpyutil
+[2023-04-14 12:21:24] INFO root fetch - main [MainThread]: End processing [mo-parsing]: success
+[2023-04-14 12:21:24] INFO root fetch - processPackages [kkpyutil]: New version: [0.99.1] Old Version: [0.99.0]
+[2023-04-14 12:21:24] INFO root fetch - processPackages [kkpyutil]: executing diffoscope
+[2023-04-14 12:21:24] INFO root fetch - processPackages [kkpyutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyutil-0.99.0.tar.gz tmp/kkpyutil-0.99.1.tar.gz --markdown 20230414/k/kkpyutil/0.99.0-0.99.1/diff.md --exclude *.pyd
+[2023-04-14 12:21:24] INFO root fetch - processPackages [Architectural-Lens]: Downloading https://files.pythonhosted.org/packages/0d/57/233243555fe413e5057de27d544bd060f93a6e3e1be56f42c7631be21931/Architectural%20Lens-0.0.4.tar.gz
+[2023-04-14 12:21:24] INFO root fetch - processPackages [Architectural-Lens]: executing diffoscope
+[2023-04-14 12:21:24] INFO root fetch - processPackages [Architectural-Lens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Architectural Lens-0.0.3.tar.gz tmp/Architectural Lens-0.0.4.tar.gz --markdown 20230414/A/Architectural-Lens/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 12:21:24] INFO root fetch - processPackages [c2cciutils]: Downloading https://files.pythonhosted.org/packages/85/ac/438a8d47b9773c665dfa7ed618436075e474a44520762bf53561424ea021/c2cciutils-1.6.0.dev8.tar.gz
+[2023-04-14 12:21:24] WARNING root fetch - processPackages [c2cciutils]: Skipping package: exceeds size limit 12821161>=10485760
+[2023-04-14 12:21:24] INFO root fetch - processPackages [c2cciutils]: Start processing: cronuseosdk
+[2023-04-14 12:21:24] INFO root fetch - main [MainThread]: End processing [c2cciutils] error
+[2023-04-14 12:21:24] INFO root fetch - processPackages [cronuseosdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 12:21:25] INFO root fetch - processPackages [cronuseosdk]: Downloading https://files.pythonhosted.org/packages/17/0c/b3f6504671a1214814fc4405ffd47489c8a3792d81bd36bda22253fe9b6a/cronuseosdk-0.0.1.tar.gz
+[2023-04-14 12:21:25] INFO root fetch - processPackages [mo-sql-parsing]: Start processing: pyveb
+[2023-04-14 12:21:25] INFO root fetch - main [MainThread]: End processing [mo-sql-parsing]: success
+[2023-04-14 12:21:25] INFO root fetch - processPackages [pyveb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-14 12:21:25] INFO root fetch - processPackages [pyveb]: executing diffoscope
+[2023-04-14 12:21:25] INFO root fetch - processPackages [pyveb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyveb-0.2.8.tar.gz tmp/pyveb-0.2.9.tar.gz --markdown 20230414/p/pyveb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-14 12:21:25] INFO root fetch - main [MainThread]: End processing [kkpyutil]: success
+[2023-04-14 12:21:25] INFO root fetch - processPackages [cronuseosdk]: Downloading https://files.pythonhosted.org/packages/cc/0d/a98b19e79d5c3d784751d52ebcc80ab4cd3074251ead2aa67fa9519574e3/cronuseosdk-0.0.2.tar.gz
+[2023-04-14 12:21:25] INFO root fetch - main [MainThread]: End processing [Architectural-Lens]: success
+[2023-04-14 12:21:25] INFO root fetch - processPackages [cronuseosdk]: executing diffoscope
+[2023-04-14 12:21:25] INFO root fetch - processPackages [cronuseosdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cronuseosdk-0.0.1.tar.gz tmp/cronuseosdk-0.0.2.tar.gz --markdown 20230414/c/cronuseosdk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 12:21:26] INFO root fetch - main [MainThread]: End processing [pyveb]: success
+[2023-04-14 12:21:27] INFO root fetch - main [MainThread]: End processing [nessai]: success
+[2023-04-14 12:21:34] INFO root fetch - main [MainThread]: End processing [cronuseosdk]: success
+[2023-04-14 12:21:34] INFO root fetch - main [MainThread]: Store serial: [17705788]
