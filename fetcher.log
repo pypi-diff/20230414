@@ -22169,3 +22169,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 22:46:21] INFO root fetch - main [MainThread]: End processing [linear-operator]: success
 [2023-04-14 22:46:29] INFO root fetch - main [MainThread]: End processing [boilercv]: success
 [2023-04-14 22:46:29] INFO root fetch - main [MainThread]: Store serial: [17712792]
+[2023-04-14 22:51:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712792]
+[2023-04-14 22:51:39] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 22:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rocm-docs-core
+[2023-04-14 22:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xia-api-flask
+[2023-04-14 22:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: promptquality
+[2023-04-14 22:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alnoda-wrk
+[2023-04-14 22:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: splight-lib
+[2023-04-14 22:51:39] INFO root fetch - processPackages [rocm-docs-core]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-14 22:51:39] WARNING root fetch - processPackages [promptquality]: Skipping, unable to determine old version
+[2023-04-14 22:51:39] INFO root fetch - processPackages [promptquality]: Start processing: searchlix
+[2023-04-14 22:51:39] INFO root fetch - main [MainThread]: End processing [promptquality] error
+[2023-04-14 22:51:39] INFO root fetch - processPackages [splight-lib]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-04-14 22:51:39] INFO root fetch - processPackages [xia-api-flask]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 22:51:39] INFO root fetch - processPackages [alnoda-wrk]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 22:51:39] INFO root fetch - processPackages [searchlix]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-14 22:51:39] INFO root fetch - processPackages [rocm-docs-core]: Downloading https://files.pythonhosted.org/packages/d8/46/da2f777afc148dfaf32a7f36e3372d665ea2d6a28cdf823f7cd0e45d80e7/rocm-docs-core-0.5.0.tar.gz
+[2023-04-14 22:51:39] INFO root fetch - processPackages [searchlix]: Downloading https://files.pythonhosted.org/packages/b3/d4/77b7a2273034cefe5c15a24e9ce8d512eda014d22e7ba9738a7c80ada8d9/searchlix-1.0.4.tar.gz
+[2023-04-14 22:51:39] INFO root fetch - processPackages [splight-lib]: Downloading https://files.pythonhosted.org/packages/ac/ea/d5f1e5d3003f073e9d1a63bb968564e41f253eb03a2f1e2e305d91aff5d9/splight-lib-2.2.9.tar.gz
+[2023-04-14 22:51:39] INFO root fetch - processPackages [rocm-docs-core]: executing diffoscope
+[2023-04-14 22:51:39] INFO root fetch - processPackages [rocm-docs-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocm-docs-core-0.4.0.tar.gz tmp/rocm-docs-core-0.5.0.tar.gz --markdown 20230414/r/rocm-docs-core/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-14 22:51:39] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-04-14 22:51:39] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.2.8.tar.gz tmp/splight-lib-2.2.9.tar.gz --markdown 20230414/s/splight-lib/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-04-14 22:51:39] INFO root fetch - processPackages [searchlix]: executing diffoscope
+[2023-04-14 22:51:39] INFO root fetch - processPackages [searchlix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlix-1.0.3.tar.gz tmp/searchlix-1.0.4.tar.gz --markdown 20230414/s/searchlix/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-14 22:51:39] INFO root fetch - processPackages [xia-api-flask]: Downloading https://files.pythonhosted.org/packages/af/bb/b81dc16e02ddd94f97a88440631f1f286e9419391fcf97727d2afecde8da/xia_api_flask-0.1.9-cp39-none-win_amd64.whl
+[2023-04-14 22:51:39] INFO root fetch - processPackages [alnoda-wrk]: executing diffoscope
+[2023-04-14 22:51:39] INFO root fetch - processPackages [alnoda-wrk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alnoda_wrk-0.3.8.tar.gz tmp/alnoda_wrk-0.3.9.tar.gz --markdown 20230414/a/alnoda-wrk/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 22:51:39] INFO root fetch - processPackages [xia-api-flask]: executing diffoscope
+[2023-04-14 22:51:39] INFO root fetch - processPackages [xia-api-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_api_flask-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_api_flask-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230414/x/xia-api-flask/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 22:51:40] INFO root fetch - processPackages [searchlix]: Start processing: astronomer-cosmos
+[2023-04-14 22:51:40] INFO root fetch - main [MainThread]: End processing [searchlix]: success
+[2023-04-14 22:51:41] INFO root fetch - processPackages [xia-api-flask]: Start processing: dxsp
+[2023-04-14 22:51:41] INFO root fetch - main [MainThread]: End processing [xia-api-flask]: success
+[2023-04-14 22:51:41] INFO root fetch - processPackages [astronomer-cosmos]: New version: [0.6.0.dev0] Old Version: [0.5.2]
+[2023-04-14 22:51:41] INFO root fetch - processPackages [dxsp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 22:51:41] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-14 22:51:41] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.8.tar.gz tmp/dxsp-1.0.9.tar.gz --markdown 20230414/d/dxsp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 22:51:41] INFO root fetch - processPackages [astronomer-cosmos]: Downloading https://files.pythonhosted.org/packages/98/8b/50f0bb3d7ce0c09302ac6f3258446e962fd7c08ba3eadc04d9b78df005b4/astronomer_cosmos-0.5.2.tar.gz
+[2023-04-14 22:51:41] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
+[2023-04-14 22:51:41] INFO root fetch - processPackages [astronomer-cosmos]: Downloading https://files.pythonhosted.org/packages/2a/9d/30a0e343c9420ded3ec9acdb76f69f5d9dc5613d05039d4522763f3a0903/astronomer_cosmos-0.6.0.dev0.tar.gz
+[2023-04-14 22:51:41] INFO root fetch - main [MainThread]: End processing [alnoda-wrk]: success
+[2023-04-14 22:51:41] INFO root fetch - processPackages [astronomer-cosmos]: executing diffoscope
+[2023-04-14 22:51:41] INFO root fetch - processPackages [astronomer-cosmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astronomer_cosmos-0.5.2.tar.gz tmp/astronomer_cosmos-0.6.0.dev0.tar.gz --markdown 20230414/a/astronomer-cosmos/0.5.2-0.6.0.dev0/diff.md --exclude *.pyd
+[2023-04-14 22:51:41] INFO root fetch - main [MainThread]: End processing [rocm-docs-core]: success
+[2023-04-14 22:51:42] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-14 22:51:42] INFO root fetch - main [MainThread]: End processing [astronomer-cosmos]: success
+[2023-04-14 22:51:42] INFO root fetch - main [MainThread]: Store serial: [17712821]
