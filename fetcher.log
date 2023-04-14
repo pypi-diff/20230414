@@ -21411,3 +21411,127 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 21:58:58] INFO root fetch - main [MainThread]: End processing [scrnatools]: success
 [2023-04-14 21:59:03] INFO root fetch - main [MainThread]: End processing [ckanext-datagovtheme]: success
 [2023-04-14 21:59:03] INFO root fetch - main [MainThread]: Store serial: [17712358]
+[2023-04-14 22:04:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712358]
+[2023-04-14 22:04:11] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 22:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antsibull-docs-parser
+[2023-04-14 22:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lmao-nlp
+[2023-04-14 22:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: brewtils
+[2023-04-14 22:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Telethon
+[2023-04-14 22:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: butterneck-projen
+[2023-04-14 22:04:11] INFO root fetch - processPackages [antsibull-docs-parser]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-14 22:04:11] INFO root fetch - processPackages [brewtils]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-04-14 22:04:11] INFO root fetch - processPackages [lmao-nlp]: New version: [0.0.1b7] Old Version: [0.0.1b6]
+[2023-04-14 22:04:11] INFO root fetch - processPackages [butterneck-projen]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 22:04:11] INFO root fetch - processPackages [Telethon]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-14 22:04:11] INFO root fetch - processPackages [butterneck-projen]: Downloading https://files.pythonhosted.org/packages/51/fb/585c5bc1a8b886de62d7843b107076e0d75be0788955fd907493add57a75/butterneck-projen-0.0.6.tar.gz
+[2023-04-14 22:04:11] INFO root fetch - processPackages [antsibull-docs-parser]: Downloading https://files.pythonhosted.org/packages/61/bb/3154e3ca254d2fec27b29dfda97903e07813f2f6cef544223f9eee6001b1/antsibull_docs_parser-0.2.0.tar.gz
+[2023-04-14 22:04:11] INFO root fetch - processPackages [Telethon]: Downloading https://files.pythonhosted.org/packages/16/d8/92e73957a71aeb79623aa820709d79e5c3681881c7f26dafaff7bb01bc41/Telethon-1.8.0.tar.gz
+[2023-04-14 22:04:11] INFO root fetch - processPackages [brewtils]: Downloading https://files.pythonhosted.org/packages/0a/3c/ede786dbe3f921c22f7d6752d811cb76904f2b448c602d76c47ad0939032/brewtils-3.8.0.tar.gz
+[2023-04-14 22:04:11] INFO root fetch - processPackages [butterneck-projen]: executing diffoscope
+[2023-04-14 22:04:11] INFO root fetch - processPackages [butterneck-projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/butterneck-projen-0.0.5.tar.gz tmp/butterneck-projen-0.0.6.tar.gz --markdown 20230414/b/butterneck-projen/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 22:04:11] INFO root fetch - processPackages [lmao-nlp]: Downloading https://files.pythonhosted.org/packages/c2/78/c13c41661b629c4b873672831d6b1602b53f4612edf4189e6b107fc966c4/lmao-nlp-0.0.1b7.tar.gz
+[2023-04-14 22:04:11] INFO root fetch - processPackages [antsibull-docs-parser]: Downloading https://files.pythonhosted.org/packages/ae/0e/081b95b7d13743532c8ea95adbdf440b2e52b188614a3dc04c7a8e5264bc/antsibull_docs_parser-0.3.0.tar.gz
+[2023-04-14 22:04:11] INFO root fetch - processPackages [antsibull-docs-parser]: executing diffoscope
+[2023-04-14 22:04:11] INFO root fetch - processPackages [antsibull-docs-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antsibull_docs_parser-0.2.0.tar.gz tmp/antsibull_docs_parser-0.3.0.tar.gz --markdown 20230414/a/antsibull-docs-parser/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 22:04:11] INFO root fetch - processPackages [lmao-nlp]: executing diffoscope
+[2023-04-14 22:04:11] INFO root fetch - processPackages [lmao-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmao-nlp-0.0.1b6.tar.gz tmp/lmao-nlp-0.0.1b7.tar.gz --markdown 20230414/l/lmao-nlp/0.0.1b6-0.0.1b7/diff.md --exclude *.pyd
+[2023-04-14 22:04:11] INFO root fetch - processPackages [brewtils]: Downloading https://files.pythonhosted.org/packages/b5/0d/84f972a639001e3f71be5b6fb8a77e7b661435e45f0e0468079119215255/brewtils-3.9.0.tar.gz
+[2023-04-14 22:04:12] INFO root fetch - processPackages [brewtils]: executing diffoscope
+[2023-04-14 22:04:12] INFO root fetch - processPackages [brewtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brewtils-3.8.0.tar.gz tmp/brewtils-3.9.0.tar.gz --markdown 20230414/b/brewtils/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-04-14 22:04:12] INFO root fetch - processPackages [Telethon]: Downloading https://files.pythonhosted.org/packages/6c/9b/8668c74decf4c5e8cec3d73794f89947842a39b9e127bf7e7dfeddd8ca5b/Telethon-1.9.0.tar.gz
+[2023-04-14 22:04:12] INFO root fetch - processPackages [Telethon]: executing diffoscope
+[2023-04-14 22:04:12] INFO root fetch - processPackages [Telethon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Telethon-1.8.0.tar.gz tmp/Telethon-1.9.0.tar.gz --markdown 20230414/T/Telethon/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-14 22:04:12] INFO root fetch - processPackages [butterneck-projen]: Start processing: binance-historical-data
+[2023-04-14 22:04:12] INFO root fetch - main [MainThread]: End processing [butterneck-projen]: success
+[2023-04-14 22:04:12] INFO root fetch - processPackages [binance-historical-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 22:04:13] INFO root fetch - processPackages [binance-historical-data]: Downloading https://files.pythonhosted.org/packages/4e/d6/9bdf02fec95a5a73ccc2a4a0dee9f50a5c3db017376b4282fa20de4f96e5/binance_historical_data-0.1.8.tar.gz
+[2023-04-14 22:04:13] INFO root fetch - processPackages [lmao-nlp]: Start processing: linkml-runtime
+[2023-04-14 22:04:13] INFO root fetch - main [MainThread]: End processing [lmao-nlp]: success
+[2023-04-14 22:04:13] INFO root fetch - processPackages [linkml-runtime]: New version: [1.5.1] Old Version: [1.5.0rc2]
+[2023-04-14 22:04:13] INFO root fetch - processPackages [antsibull-docs-parser]: Start processing: searchlix
+[2023-04-14 22:04:13] INFO root fetch - main [MainThread]: End processing [antsibull-docs-parser]: success
+[2023-04-14 22:04:13] WARNING root fetch - processPackages [searchlix]: Skipping, unable to determine old version
+[2023-04-14 22:04:13] INFO root fetch - processPackages [searchlix]: Start processing: portbt
+[2023-04-14 22:04:13] INFO root fetch - main [MainThread]: End processing [searchlix] error
+[2023-04-14 22:04:13] INFO root fetch - processPackages [portbt]: New version: [0.1.6] Old Version: [0.1.4]
+[2023-04-14 22:04:13] INFO root fetch - processPackages [binance-historical-data]: Downloading https://files.pythonhosted.org/packages/7a/09/f0edb3b7077a8ee6a4830e5304683ce0a72d76832c48ac6fe7a2e7a13c7c/binance_historical_data-0.1.9.tar.gz
+[2023-04-14 22:04:13] INFO root fetch - processPackages [linkml-runtime]: Downloading https://files.pythonhosted.org/packages/de/c9/207d1943f23a24f8ffc8d617d8564fc7effcf9d1810b8fa5e00b514d8435/linkml_runtime-1.5.0rc2.tar.gz
+[2023-04-14 22:04:13] INFO root fetch - processPackages [brewtils]: Start processing: invokify
+[2023-04-14 22:04:13] INFO root fetch - main [MainThread]: End processing [brewtils]: success
+[2023-04-14 22:04:13] WARNING root fetch - processPackages [invokify]: Skipping, unable to determine old version
+[2023-04-14 22:04:13] INFO root fetch - processPackages [invokify]: Start processing: economic-complexity
+[2023-04-14 22:04:13] INFO root fetch - main [MainThread]: End processing [invokify] error
+[2023-04-14 22:04:13] INFO root fetch - processPackages [binance-historical-data]: executing diffoscope
+[2023-04-14 22:04:13] INFO root fetch - processPackages [binance-historical-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance_historical_data-0.1.8.tar.gz tmp/binance_historical_data-0.1.9.tar.gz --markdown 20230414/b/binance-historical-data/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 22:04:13] INFO root fetch - processPackages [economic-complexity]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 22:04:13] INFO root fetch - processPackages [portbt]: Downloading https://files.pythonhosted.org/packages/30/64/574ed6555fc837d33a26a5d7609de825ddbf2983660294ea6cefc8ad57fd/portbt-0.1.6.tar.gz
+[2023-04-14 22:04:13] INFO root fetch - processPackages [linkml-runtime]: Downloading https://files.pythonhosted.org/packages/aa/66/50fe81265bdb67a17501b61aed674fd2e5e8c08128a1225694eda73a4572/linkml_runtime-1.5.1.tar.gz
+[2023-04-14 22:04:13] INFO root fetch - processPackages [portbt]: executing diffoscope
+[2023-04-14 22:04:13] INFO root fetch - processPackages [portbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portbt-0.1.4.tar.gz tmp/portbt-0.1.6.tar.gz --markdown 20230414/p/portbt/0.1.4-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 22:04:13] INFO root fetch - processPackages [economic-complexity]: Downloading https://files.pythonhosted.org/packages/e9/06/86de6ea09f642c8244afab949940999b58bd835ccdce370808eabefb93b1/economic-complexity-0.1.2.tar.gz
+[2023-04-14 22:04:13] INFO root fetch - processPackages [linkml-runtime]: executing diffoscope
+[2023-04-14 22:04:13] INFO root fetch - processPackages [linkml-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkml_runtime-1.5.0rc2.tar.gz tmp/linkml_runtime-1.5.1.tar.gz --markdown 20230414/l/linkml-runtime/1.5.0rc2-1.5.1/diff.md --exclude *.pyd
+[2023-04-14 22:04:14] INFO root fetch - processPackages [economic-complexity]: Downloading https://files.pythonhosted.org/packages/93/2c/7a2d40448406b8896e66ccd4ec4e8928e8b03ec7b611ba994bbac1b30580/economic_complexity-0.1.3.tar.gz
+[2023-04-14 22:04:14] INFO root fetch - processPackages [economic-complexity]: executing diffoscope
+[2023-04-14 22:04:14] INFO root fetch - processPackages [economic-complexity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/economic-complexity-0.1.2.tar.gz tmp/economic_complexity-0.1.3.tar.gz --markdown 20230414/e/economic-complexity/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 22:04:14] INFO root fetch - processPackages [binance-historical-data]: Start processing: pipcryptographylibaryV2
+[2023-04-14 22:04:14] INFO root fetch - main [MainThread]: End processing [binance-historical-data]: success
+[2023-04-14 22:04:14] ERROR root fetch - processPackages [pipcryptographylibaryV2]: Unable to get metadata: No such project 'pipcryptographylibaryV2'
+[2023-04-14 22:04:14] INFO root fetch - main [MainThread]: End processing [pipcryptographylibaryV2] error
+[2023-04-14 22:04:14] INFO root fetch - main [MainThread]: End processing [portbt]: success
+[2023-04-14 22:04:15] INFO root fetch - main [MainThread]: End processing [economic-complexity]: success
+[2023-04-14 22:04:15] INFO root fetch - main [MainThread]: End processing [linkml-runtime]: success
+[2023-04-14 22:04:21] ERROR root fetch - processPackages [Telethon]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-04-14 22:04:21] INFO root fetch - main [MainThread]: End processing [Telethon] error
+[2023-04-14 22:04:21] INFO root fetch - main [MainThread]: Store serial: [17712406]
