@@ -9501,3 +9501,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 10:26:01] INFO root fetch - main [MainThread]: End processing [finbourne-insights-sdk-preview]: success
 [2023-04-14 10:26:24] INFO root fetch - main [MainThread]: End processing [Geode-Simplex]: success
 [2023-04-14 10:26:24] INFO root fetch - main [MainThread]: Store serial: [17704507]
+[2023-04-14 10:31:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704507]
+[2023-04-14 10:31:31] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 10:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: speconed
+[2023-04-14 10:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: micromechanics-indentationGUI
+[2023-04-14 10:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OpenGeode-Inspector
+[2023-04-14 10:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-exasol
+[2023-04-14 10:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: router-log-preprocessor
+[2023-04-14 10:31:32] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 10:31:32] INFO root fetch - processPackages [speconed]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 10:31:32] INFO root fetch - processPackages [dbt-exasol]: New version: [1.3.0] Old Version: [1.2.2]
+[2023-04-14 10:31:32] INFO root fetch - processPackages [OpenGeode-Inspector]: New version: [3.0.0] Old Version: [2.9.2]
+[2023-04-14 10:31:32] INFO root fetch - processPackages [router-log-preprocessor]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 10:31:32] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-14 10:31:32] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230414/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 10:31:32] INFO root fetch - processPackages [dbt-exasol]: Downloading https://files.pythonhosted.org/packages/80/75/3a84fc9817e400dabf477fe6f121ca4ea4ecbd3cb0b24fd6790bc5adda5e/dbt-exasol-1.2.2.tar.gz
+[2023-04-14 10:31:32] INFO root fetch - processPackages [OpenGeode-Inspector]: Downloading https://files.pythonhosted.org/packages/ef/73/6b134f341c24e969b5e74edf8be855413fe9ee97728da1fd1409a507c7c1/OpenGeode_Inspector-2.9.2-cp39-cp39-win_amd64.whl
+[2023-04-14 10:31:32] INFO root fetch - processPackages [router-log-preprocessor]: Downloading https://files.pythonhosted.org/packages/7a/25/1c328c14477499ecfe561bdb23ab7f84a6684fd6041ecb843fb9d0c4bebd/router_log_preprocessor-0.1.3.tar.gz
+[2023-04-14 10:31:32] INFO root fetch - processPackages [speconed]: Downloading https://files.pythonhosted.org/packages/01/16/583e62c75aa68e671e9985b6fa56628e485fddcebb8bc78822af57e3da6a/speconed-1.0.1.tar.gz
+[2023-04-14 10:31:32] INFO root fetch - processPackages [router-log-preprocessor]: executing diffoscope
+[2023-04-14 10:31:32] INFO root fetch - processPackages [router-log-preprocessor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/router_log_preprocessor-0.1.2.tar.gz tmp/router_log_preprocessor-0.1.3.tar.gz --markdown 20230414/r/router-log-preprocessor/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 10:31:32] INFO root fetch - processPackages [speconed]: executing diffoscope
+[2023-04-14 10:31:32] INFO root fetch - processPackages [speconed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speconed-1.0.0.tar.gz tmp/speconed-1.0.1.tar.gz --markdown 20230414/s/speconed/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 10:31:32] INFO root fetch - processPackages [dbt-exasol]: Downloading https://files.pythonhosted.org/packages/96/c1/c1e6b6d29e1783e9003d4dac5174acd949ec17c0f70d7f86af664f142b55/dbt_exasol-1.3.0.tar.gz
+[2023-04-14 10:31:32] INFO root fetch - processPackages [dbt-exasol]: executing diffoscope
+[2023-04-14 10:31:32] INFO root fetch - processPackages [dbt-exasol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-exasol-1.2.2.tar.gz tmp/dbt_exasol-1.3.0.tar.gz --markdown 20230414/d/dbt-exasol/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2023-04-14 10:31:32] INFO root fetch - processPackages [OpenGeode-Inspector]: Downloading https://files.pythonhosted.org/packages/4d/ac/73f394a7b9fb35a8fa6b39020ff915c536c45db27fa9bb95e5f5eff7f479/OpenGeode_Inspector-3.0.0-cp39-cp39-win_amd64.whl
+[2023-04-14 10:31:32] INFO root fetch - processPackages [OpenGeode-Inspector]: executing diffoscope
+[2023-04-14 10:31:32] INFO root fetch - processPackages [OpenGeode-Inspector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_Inspector-2.9.2-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_Inspector-3.0.0-cp39-cp39-win_amd64.whl.zip --markdown 20230414/O/OpenGeode-Inspector/2.9.2-3.0.0/diff.md --exclude *.pyd
+[2023-04-14 10:31:33] INFO root fetch - processPackages [micromechanics-indentationGUI]: Start processing: garpix-user
+[2023-04-14 10:31:33] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-14 10:31:33] INFO root fetch - processPackages [garpix-user]: New version: [3.5.0rc6] Old Version: [3.5.0rc5]
+[2023-04-14 10:31:33] INFO root fetch - processPackages [garpix-user]: Downloading https://files.pythonhosted.org/packages/1f/6e/54adabe22aca7c393e026095e296f107d7d01908f8be4977fd626a494d8e/garpix_user-3.5.0rc5.tar.gz
+[2023-04-14 10:31:33] INFO root fetch - processPackages [router-log-preprocessor]: Start processing: holoviews
+[2023-04-14 10:31:33] INFO root fetch - main [MainThread]: End processing [router-log-preprocessor]: success
+[2023-04-14 10:31:33] INFO root fetch - processPackages [holoviews]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-04-14 10:31:33] INFO root fetch - processPackages [OpenGeode-Inspector]: Start processing: rctoolf
+[2023-04-14 10:31:33] INFO root fetch - main [MainThread]: End processing [OpenGeode-Inspector]: success
+[2023-04-14 10:31:33] WARNING root fetch - processPackages [rctoolf]: Skipping, unable to determine old version
+[2023-04-14 10:31:33] INFO root fetch - processPackages [rctoolf]: Start processing: finbourne-access-sdk
+[2023-04-14 10:31:33] INFO root fetch - main [MainThread]: End processing [rctoolf] error
+[2023-04-14 10:31:33] INFO root fetch - processPackages [finbourne-access-sdk]: New version: [0.0.815] Old Version: [0.0.616]
+[2023-04-14 10:31:33] INFO root fetch - processPackages [garpix-user]: Downloading https://files.pythonhosted.org/packages/91/57/e499b2db6eada15bf0a636f66cdbd4cd990d54014ffc2fa13430caed838d/garpix_user-3.5.0rc6.tar.gz
+[2023-04-14 10:31:33] INFO root fetch - processPackages [holoviews]: Downloading https://files.pythonhosted.org/packages/59/1c/f3bab15afa70d6424f04ba98eacf877b469d4196177d1fda90c0870823d6/holoviews-1.9.4.tar.gz
+[2023-04-14 10:31:33] INFO root fetch - processPackages [finbourne-access-sdk]: executing diffoscope
+[2023-04-14 10:31:33] INFO root fetch - processPackages [finbourne-access-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-access-sdk-0.0.616.tar.gz tmp/finbourne-access-sdk-0.0.815.tar.gz --markdown 20230414/f/finbourne-access-sdk/0.0.616-0.0.815/diff.md --exclude *.pyd
+[2023-04-14 10:31:33] INFO root fetch - processPackages [garpix-user]: executing diffoscope
+[2023-04-14 10:31:33] INFO root fetch - processPackages [garpix-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garpix_user-3.5.0rc5.tar.gz tmp/garpix_user-3.5.0rc6.tar.gz --markdown 20230414/g/garpix-user/3.5.0rc5-3.5.0rc6/diff.md --exclude *.pyd
+[2023-04-14 10:31:34] INFO root fetch - processPackages [speconed]: Start processing: OmniBridge
+[2023-04-14 10:31:34] INFO root fetch - main [MainThread]: End processing [speconed]: success
+[2023-04-14 10:31:34] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 10:31:34] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-14 10:31:34] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230414/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 10:31:35] INFO root fetch - processPackages [OmniBridge]: Start processing: plone.app.locales
+[2023-04-14 10:31:35] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-14 10:31:35] INFO root fetch - processPackages [plone.app.locales]: New version: [6.0.9] Old Version: [6.0.8]
+[2023-04-14 10:31:35] INFO root fetch - processPackages [plone.app.locales]: Downloading https://files.pythonhosted.org/packages/07/57/7616573ed7e1e4246344ae71d2964888db7ce02be744df3f588daa4f8ba5/plone.app.locales-6.0.8.tar.gz
+[2023-04-14 10:31:35] INFO root fetch - processPackages [holoviews]: Downloading https://files.pythonhosted.org/packages/ef/d1/fbb719d25a5118f76229625ecbbf1505259ad1c95a309fdd184fcfbce7ef/holoviews-1.9.5.tar.gz
+[2023-04-14 10:31:36] INFO root fetch - processPackages [garpix-user]: Start processing: metdig
+[2023-04-14 10:31:36] INFO root fetch - main [MainThread]: End processing [garpix-user]: success
+[2023-04-14 10:31:36] INFO root fetch - processPackages [metdig]: New version: [0.1.9.9.9] Old Version: [0.1.9.9.8]
+[2023-04-14 10:31:36] WARNING root fetch - processPackages [plone.app.locales]: Skipping package: exceeds size limit 10880771>=10485760
+[2023-04-14 10:31:36] INFO root fetch - processPackages [plone.app.locales]: Start processing: viur-datastore
+[2023-04-14 10:31:36] INFO root fetch - main [MainThread]: End processing [plone.app.locales] error
+[2023-04-14 10:31:36] INFO root fetch - processPackages [viur-datastore]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-04-14 10:31:36] INFO root fetch - processPackages [metdig]: executing diffoscope
+[2023-04-14 10:31:36] INFO root fetch - processPackages [metdig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metdig-0.1.9.9.8-py3-none-any.whl.zip tmp/metdig-0.1.9.9.9-py3-none-any.whl.zip --markdown 20230414/m/metdig/0.1.9.9.8-0.1.9.9.9/diff.md --exclude *.pyd
+[2023-04-14 10:31:36] INFO root fetch - processPackages [viur-datastore]: Downloading https://files.pythonhosted.org/packages/9c/4d/9d08ffdca3a698eecf7c80bf7f6a74199185bd0c31b8057f2cf629241e54/viur-datastore-1.3.8.tar.gz
+[2023-04-14 10:31:36] INFO root fetch - processPackages [viur-datastore]: Downloading https://files.pythonhosted.org/packages/22/73/61f380e255173cdd3739deee47013cc1e79d260bd5364fb1b912f95cb4f3/viur-datastore-1.3.9.tar.gz
+[2023-04-14 10:31:37] INFO root fetch - processPackages [viur-datastore]: executing diffoscope
+[2023-04-14 10:31:37] INFO root fetch - processPackages [viur-datastore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viur-datastore-1.3.8.tar.gz tmp/viur-datastore-1.3.9.tar.gz --markdown 20230414/v/viur-datastore/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-04-14 10:31:37] INFO root fetch - main [MainThread]: End processing [finbourne-access-sdk]: success
+[2023-04-14 10:31:37] INFO root fetch - processPackages [holoviews]: executing diffoscope
+[2023-04-14 10:31:37] INFO root fetch - processPackages [holoviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/holoviews-1.9.4.tar.gz tmp/holoviews-1.9.5.tar.gz --markdown 20230414/h/holoviews/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-04-14 10:31:37] INFO root fetch - main [MainThread]: End processing [dbt-exasol]: success
+[2023-04-14 10:31:38] INFO root fetch - main [MainThread]: End processing [viur-datastore]: success
+[2023-04-14 10:31:45] INFO root fetch - main [MainThread]: End processing [holoviews]: success
+[2023-04-14 10:31:46] INFO root fetch - main [MainThread]: End processing [metdig]: success
+[2023-04-14 10:31:46] INFO root fetch - main [MainThread]: Store serial: [17704551]
