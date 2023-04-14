@@ -6828,3 +6828,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 05:47:47] INFO root fetch - processPackages [windows-dscp-fix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windows_dscp_fix-0.2.0.tar.gz tmp/windows_dscp_fix-0.2.1.tar.gz --markdown 20230414/w/windows-dscp-fix/0.2.0-0.2.1/diff.md --exclude *.pyd
 [2023-04-14 05:47:48] INFO root fetch - main [MainThread]: End processing [windows-dscp-fix]: success
 [2023-04-14 05:47:48] INFO root fetch - main [MainThread]: Store serial: [17703004]
+[2023-04-14 05:52:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703004]
+[2023-04-14 05:52:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 05:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devoud
+[2023-04-14 05:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auto-editor
+[2023-04-14 05:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seven-cloudapp-frame
+[2023-04-14 05:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slate-nlp
+[2023-04-14 05:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: insights-extractior
+[2023-04-14 05:52:56] INFO root fetch - processPackages [devoud]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-04-14 05:52:56] INFO root fetch - processPackages [slate-nlp]: New version: [1.1.1] Old Version: [1.0.3]
+[2023-04-14 05:52:56] WARNING root fetch - processPackages [insights-extractior]: Skipping, unable to determine old version
+[2023-04-14 05:52:56] INFO root fetch - processPackages [auto-editor]: New version: [23.8.1] Old Version: [23.4.1]
+[2023-04-14 05:52:56] INFO root fetch - processPackages [insights-extractior]: Start processing: console-timer
+[2023-04-14 05:52:56] INFO root fetch - main [MainThread]: End processing [insights-extractior] error
+[2023-04-14 05:52:56] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-04-14 05:52:56] WARNING root fetch - processPackages [console-timer]: Skipping, unable to determine old version
+[2023-04-14 05:52:56] INFO root fetch - processPackages [console-timer]: Start processing: mkdocs-categories-plugin
+[2023-04-14 05:52:56] INFO root fetch - main [MainThread]: End processing [console-timer] error
+[2023-04-14 05:52:56] INFO root fetch - processPackages [mkdocs-categories-plugin]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-14 05:52:56] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-04-14 05:52:56] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230414/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-04-14 05:52:56] INFO root fetch - processPackages [devoud]: Downloading https://files.pythonhosted.org/packages/40/0d/cc1cea95301d6347c133f8a6bd54fd1141de1411732be0e2ae3c32618204/devoud-1.1.2.tar.gz
+[2023-04-14 05:52:56] INFO root fetch - processPackages [slate-nlp]: Downloading https://files.pythonhosted.org/packages/0e/b0/df4551a207b7e7e19ca8fa81c7bfc2b7448ffccae000dd0357fca1a44bfe/slate-nlp-1.0.3.tar.gz
+[2023-04-14 05:52:56] INFO root fetch - processPackages [auto-editor]: Downloading https://files.pythonhosted.org/packages/61/ce/f2339cfa4e5ff5ec776a3121d3f99050c6d45ec0efa54bdc458fefb12d96/auto-editor-23.4.1.tar.gz
+[2023-04-14 05:52:56] INFO root fetch - processPackages [mkdocs-categories-plugin]: Downloading https://files.pythonhosted.org/packages/78/1c/394d5dacf4e250003f054d29e701bcc0ae83fb03052ef92b4ffdf2aabe47/mkdocs-categories-plugin-0.2.1.tar.gz
+[2023-04-14 05:52:56] INFO root fetch - processPackages [slate-nlp]: Downloading https://files.pythonhosted.org/packages/d1/b8/79e27b4ca00c8d332803c49752b294196fb3075833b2e3aceb2fc5c5dcd5/slate-nlp-1.1.1.tar.gz
+[2023-04-14 05:52:57] INFO root fetch - processPackages [devoud]: Downloading https://files.pythonhosted.org/packages/87/f1/a4a9333c709eef707fdc93fe4a6d0f2a0ce1557f7bb573363532e3fabb78/devoud-1.2.0.tar.gz
+[2023-04-14 05:52:57] INFO root fetch - processPackages [auto-editor]: Downloading https://files.pythonhosted.org/packages/81/fb/7d378ea008a385ac90effc7ebdc31a455182328179d84fe7b53a563ef973/auto-editor-23.8.1.tar.gz
+[2023-04-14 05:52:57] INFO root fetch - processPackages [slate-nlp]: executing diffoscope
+[2023-04-14 05:52:57] INFO root fetch - processPackages [slate-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slate-nlp-1.0.3.tar.gz tmp/slate-nlp-1.1.1.tar.gz --markdown 20230414/s/slate-nlp/1.0.3-1.1.1/diff.md --exclude *.pyd
+[2023-04-14 05:52:57] INFO root fetch - processPackages [mkdocs-categories-plugin]: Downloading https://files.pythonhosted.org/packages/cf/18/e181f587e41a8be2ea656f73e3bc8812fab81938b987c54e4628422eb3af/mkdocs-categories-plugin-0.3.0.tar.gz
+[2023-04-14 05:52:57] INFO root fetch - processPackages [devoud]: executing diffoscope
+[2023-04-14 05:52:57] INFO root fetch - processPackages [devoud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devoud-1.1.2.tar.gz tmp/devoud-1.2.0.tar.gz --markdown 20230414/d/devoud/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-04-14 05:52:57] INFO root fetch - processPackages [mkdocs-categories-plugin]: executing diffoscope
+[2023-04-14 05:52:57] INFO root fetch - processPackages [mkdocs-categories-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-categories-plugin-0.2.1.tar.gz tmp/mkdocs-categories-plugin-0.3.0.tar.gz --markdown 20230414/m/mkdocs-categories-plugin/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 05:52:57] INFO root fetch - processPackages [auto-editor]: executing diffoscope
+[2023-04-14 05:52:57] INFO root fetch - processPackages [auto-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-editor-23.4.1.tar.gz tmp/auto-editor-23.8.1.tar.gz --markdown 20230414/a/auto-editor/23.4.1-23.8.1/diff.md --exclude *.pyd
+[2023-04-14 05:52:58] INFO root fetch - main [MainThread]: End processing [slate-nlp]: success
+[2023-04-14 05:52:58] INFO root fetch - main [MainThread]: End processing [mkdocs-categories-plugin]: success
+[2023-04-14 05:52:58] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-04-14 05:52:58] INFO root fetch - main [MainThread]: End processing [auto-editor]: success
+[2023-04-14 05:53:00] INFO root fetch - main [MainThread]: End processing [devoud]: success
+[2023-04-14 05:53:00] INFO root fetch - main [MainThread]: Store serial: [17703030]
