@@ -19463,3 +19463,151 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 19:49:06] INFO root fetch - main [MainThread]: End processing [pic-rucio]: success
 [2023-04-14 19:49:08] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
 [2023-04-14 19:49:08] INFO root fetch - main [MainThread]: Store serial: [17710989]
+[2023-04-14 19:54:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17710989]
+[2023-04-14 19:54:16] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-04-14 19:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: statistics-core
+[2023-04-14 19:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dnplab
+[2023-04-14 19:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pynumaflow
+[2023-04-14 19:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odetam
+[2023-04-14 19:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyabsa
+[2023-04-14 19:54:16] INFO root fetch - processPackages [odetam]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-04-14 19:54:16] INFO root fetch - processPackages [statistics-core]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 19:54:16] INFO root fetch - processPackages [dnplab]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-14 19:54:16] INFO root fetch - processPackages [pynumaflow]: New version: [0.4.0] Old Version: [0.3.3]
+[2023-04-14 19:54:16] INFO root fetch - processPackages [pyabsa]: New version: [2.3.0] Old Version: [2.2.3]
+[2023-04-14 19:54:16] INFO root fetch - processPackages [odetam]: Downloading https://files.pythonhosted.org/packages/b6/99/c5541af81072f57b5184e23faca75693ed012065ec88319c2e56c9de31e3/ODetaM-1.4.0.tar.gz
+[2023-04-14 19:54:16] INFO root fetch - processPackages [statistics-core]: Downloading https://files.pythonhosted.org/packages/22/ae/87f517da7bdb83c6f5b0940aa19bb9669bdb6f3d9e74590adf97d8aa5499/statistics_core-0.0.2.tar.gz
+[2023-04-14 19:54:17] INFO root fetch - processPackages [pynumaflow]: Downloading https://files.pythonhosted.org/packages/04/4c/70c1692366d4fa14d84ee7e184e38f987d393c7ca160f6bd3aa5cd69cd70/pynumaflow-0.3.3.tar.gz
+[2023-04-14 19:54:17] INFO root fetch - processPackages [pyabsa]: Downloading https://files.pythonhosted.org/packages/b2/89/1d9ba3e3d53819719ed8c976b0fed8a51f4b499c9424f6500f98cdd70d0f/pyabsa-2.3.0-py3-none-any.whl
+[2023-04-14 19:54:17] INFO root fetch - processPackages [dnplab]: Downloading https://files.pythonhosted.org/packages/a6/87/42ef2b2a7529788b082eccad1344525d6d14076e8254746662e89f1cff38/dnplab-2.1.1.tar.gz
+[2023-04-14 19:54:17] INFO root fetch - processPackages [pyabsa]: executing diffoscope
+[2023-04-14 19:54:17] INFO root fetch - processPackages [pyabsa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyabsa-2.2.3-py3-none-any.whl.zip tmp/pyabsa-2.3.0-py3-none-any.whl.zip --markdown 20230414/p/pyabsa/2.2.3-2.3.0/diff.md --exclude *.pyd
+[2023-04-14 19:54:17] INFO root fetch - processPackages [odetam]: Downloading https://files.pythonhosted.org/packages/7c/d2/3552b3b04bc55aa5d1c70e60ee5644a86e115dc855c8b2781960bcfc483b/ODetaM-1.5.0.tar.gz
+[2023-04-14 19:54:17] INFO root fetch - processPackages [statistics-core]: Downloading https://files.pythonhosted.org/packages/57/c8/17405589e93731abfb44343cce93d5c3ab496b1489bb29c9e4f1fd928e10/statistics_core-0.0.3.tar.gz
+[2023-04-14 19:54:17] INFO root fetch - processPackages [odetam]: executing diffoscope
+[2023-04-14 19:54:17] INFO root fetch - processPackages [odetam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ODetaM-1.4.0.tar.gz tmp/ODetaM-1.5.0.tar.gz --markdown 20230414/o/odetam/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-04-14 19:54:17] INFO root fetch - processPackages [statistics-core]: executing diffoscope
+[2023-04-14 19:54:17] INFO root fetch - processPackages [statistics-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statistics_core-0.0.2.tar.gz tmp/statistics_core-0.0.3.tar.gz --markdown 20230414/s/statistics-core/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 19:54:17] INFO root fetch - processPackages [pynumaflow]: Downloading https://files.pythonhosted.org/packages/a4/7c/e0823b5fbe95db833689de3ea0cbe97f8db20b5273e5f0a8965c7aa15db8/pynumaflow-0.4.0.tar.gz
+[2023-04-14 19:54:17] INFO root fetch - processPackages [dnplab]: Downloading https://files.pythonhosted.org/packages/bc/ce/ca4ba97969ec494042ef713bd6529780e9219a676d5c03af8726e22a2240/dnplab-2.1.2.tar.gz
+[2023-04-14 19:54:17] INFO root fetch - processPackages [pynumaflow]: executing diffoscope
+[2023-04-14 19:54:17] INFO root fetch - processPackages [pynumaflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynumaflow-0.3.3.tar.gz tmp/pynumaflow-0.4.0.tar.gz --markdown 20230414/p/pynumaflow/0.3.3-0.4.0/diff.md --exclude *.pyd
+[2023-04-14 19:54:17] INFO root fetch - processPackages [dnplab]: executing diffoscope
+[2023-04-14 19:54:17] INFO root fetch - processPackages [dnplab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnplab-2.1.1.tar.gz tmp/dnplab-2.1.2.tar.gz --markdown 20230414/d/dnplab/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-14 19:54:18] INFO root fetch - processPackages [odetam]: Start processing: abstra
+[2023-04-14 19:54:18] INFO root fetch - main [MainThread]: End processing [odetam]: success
+[2023-04-14 19:54:18] INFO root fetch - processPackages [abstra]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 19:54:18] INFO root fetch - processPackages [statistics-core]: Start processing: cursesplus
+[2023-04-14 19:54:18] INFO root fetch - main [MainThread]: End processing [statistics-core]: success
+[2023-04-14 19:54:18] INFO root fetch - processPackages [cursesplus]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-14 19:54:18] INFO root fetch - processPackages [cursesplus]: Downloading https://files.pythonhosted.org/packages/64/f9/cc767e911c86064d64a4d130d5b3f4eadade88ed8ad1bd7002a7a75a1881/cursesplus-2.0.2.tar.gz
+[2023-04-14 19:54:18] INFO root fetch - processPackages [cursesplus]: executing diffoscope
+[2023-04-14 19:54:18] INFO root fetch - processPackages [cursesplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cursesplus-2.0.1.tar.gz tmp/cursesplus-2.0.2.tar.gz --markdown 20230414/c/cursesplus/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-14 19:54:18] INFO root fetch - processPackages [pynumaflow]: Start processing: coredb-pgmq-python
+[2023-04-14 19:54:18] INFO root fetch - main [MainThread]: End processing [pynumaflow]: success
+[2023-04-14 19:54:18] INFO root fetch - processPackages [abstra]: executing diffoscope
+[2023-04-14 19:54:18] INFO root fetch - processPackages [abstra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstra-0.8.0.tar.gz tmp/abstra-0.9.0.tar.gz --markdown 20230414/a/abstra/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 19:54:18] WARNING root fetch - processPackages [coredb-pgmq-python]: Skipping, unable to determine old version
+[2023-04-14 19:54:18] INFO root fetch - processPackages [coredb-pgmq-python]: Start processing: buteo
+[2023-04-14 19:54:18] INFO root fetch - main [MainThread]: End processing [coredb-pgmq-python] error
+[2023-04-14 19:54:18] INFO root fetch - processPackages [buteo]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-14 19:54:19] INFO root fetch - processPackages [dnplab]: Start processing: cirq-google
+[2023-04-14 19:54:19] INFO root fetch - main [MainThread]: End processing [dnplab]: success
+[2023-04-14 19:54:19] INFO root fetch - processPackages [cirq-google]: New version: [1.2.0.dev20230414175611] Old Version: [1.2.0.dev20230413214151]
+[2023-04-14 19:54:19] INFO root fetch - processPackages [buteo]: executing diffoscope
+[2023-04-14 19:54:19] INFO root fetch - processPackages [buteo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buteo-0.8.8.tar.gz tmp/buteo-0.8.9.tar.gz --markdown 20230414/b/buteo/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-14 19:54:19] INFO root fetch - processPackages [cirq-google]: Downloading https://files.pythonhosted.org/packages/ff/6a/97fce3395bb44487f5d80f0ef549fb1285fd6b7497c264f88016d0bee4c3/cirq_google-1.2.0.dev20230414175611-py3-none-any.whl
+[2023-04-14 19:54:19] INFO root fetch - processPackages [cirq-google]: executing diffoscope
+[2023-04-14 19:54:19] INFO root fetch - processPackages [cirq-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_google-1.2.0.dev20230413214151-py3-none-any.whl.zip tmp/cirq_google-1.2.0.dev20230414175611-py3-none-any.whl.zip --markdown 20230414/c/cirq-google/1.2.0.dev20230413214151-1.2.0.dev20230414175611/diff.md --exclude *.pyd
+[2023-04-14 19:54:19] INFO root fetch - processPackages [cursesplus]: Start processing: cirq-aqt
+[2023-04-14 19:54:19] INFO root fetch - main [MainThread]: End processing [cursesplus]: success
+[2023-04-14 19:54:20] INFO root fetch - processPackages [cirq-aqt]: New version: [1.2.0.dev20230414175611] Old Version: [1.2.0.dev20230413214151]
+[2023-04-14 19:54:20] INFO root fetch - processPackages [cirq-aqt]: Downloading https://files.pythonhosted.org/packages/2c/fe/aae96f5a861f2dcc66e01aec0e154f55810ee8f51c08b164f39a16148697/cirq_aqt-1.2.0.dev20230414175611-py3-none-any.whl
+[2023-04-14 19:54:20] INFO root fetch - processPackages [abstra]: Start processing: flet-core
+[2023-04-14 19:54:20] INFO root fetch - main [MainThread]: End processing [abstra]: success
+[2023-04-14 19:54:20] INFO root fetch - processPackages [flet-core]: New version: [0.6.0.dev1312] Old Version: [0.6.0.dev1310]
+[2023-04-14 19:54:20] INFO root fetch - processPackages [cirq-aqt]: executing diffoscope
+[2023-04-14 19:54:20] INFO root fetch - processPackages [cirq-aqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_aqt-1.2.0.dev20230413214151-py3-none-any.whl.zip tmp/cirq_aqt-1.2.0.dev20230414175611-py3-none-any.whl.zip --markdown 20230414/c/cirq-aqt/1.2.0.dev20230413214151-1.2.0.dev20230414175611/diff.md --exclude *.pyd
+[2023-04-14 19:54:20] INFO root fetch - processPackages [flet-core]: Downloading https://files.pythonhosted.org/packages/98/42/d17af19c443ace53b6345dbe73facd62b3cf0f34745afb041a00ca50376f/flet_core-0.6.0.dev1312.tar.gz
+[2023-04-14 19:54:20] INFO root fetch - processPackages [flet-core]: executing diffoscope
+[2023-04-14 19:54:20] INFO root fetch - processPackages [flet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_core-0.6.0.dev1310.tar.gz tmp/flet_core-0.6.0.dev1312.tar.gz --markdown 20230414/f/flet-core/0.6.0.dev1310-0.6.0.dev1312/diff.md --exclude *.pyd
+[2023-04-14 19:54:21] INFO root fetch - processPackages [pyabsa]: Start processing: cirq
+[2023-04-14 19:54:21] INFO root fetch - main [MainThread]: End processing [pyabsa]: success
+[2023-04-14 19:54:21] INFO root fetch - processPackages [cirq]: New version: [1.2.0.dev20230414175611] Old Version: [1.2.0.dev20230413214151]
+[2023-04-14 19:54:21] INFO root fetch - processPackages [cirq-aqt]: Start processing: flet
+[2023-04-14 19:54:21] INFO root fetch - main [MainThread]: End processing [cirq-aqt]: success
+[2023-04-14 19:54:21] INFO root fetch - processPackages [flet]: New version: [0.6.0.dev1312] Old Version: [0.6.0.dev1310]
+[2023-04-14 19:54:21] INFO root fetch - processPackages [cirq]: Downloading https://files.pythonhosted.org/packages/49/d7/daefc763bc59c0890f53fccb29ea21dcca0d176ddf822e1e4935f5afca2c/cirq-1.2.0.dev20230414175611-py3-none-any.whl
+[2023-04-14 19:54:21] INFO root fetch - processPackages [buteo]: Start processing: cirq-rigetti
+[2023-04-14 19:54:21] INFO root fetch - main [MainThread]: End processing [buteo]: success
+[2023-04-14 19:54:21] INFO root fetch - processPackages [cirq-rigetti]: New version: [1.2.0.dev20230414175611] Old Version: [1.2.0.dev20230413214151]
+[2023-04-14 19:54:21] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/6a/5b/bc5b8a507be57f14e12d985c55a0391bc01f297c3a19e0705f11a4986510/flet-0.6.0.dev1312.tar.gz
+[2023-04-14 19:54:21] INFO root fetch - processPackages [cirq]: executing diffoscope
+[2023-04-14 19:54:21] INFO root fetch - processPackages [cirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq-1.2.0.dev20230413214151-py3-none-any.whl.zip tmp/cirq-1.2.0.dev20230414175611-py3-none-any.whl.zip --markdown 20230414/c/cirq/1.2.0.dev20230413214151-1.2.0.dev20230414175611/diff.md --exclude *.pyd
+[2023-04-14 19:54:21] INFO root fetch - processPackages [cirq-rigetti]: Downloading https://files.pythonhosted.org/packages/20/dd/8b2880efeeb291ab63a7965d038a457abf3643d11f26be899bbf01c48aea/cirq_rigetti-1.2.0.dev20230414175611-py3-none-any.whl
+[2023-04-14 19:54:22] INFO root fetch - processPackages [cirq-rigetti]: executing diffoscope
+[2023-04-14 19:54:22] INFO root fetch - processPackages [cirq-rigetti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_rigetti-1.2.0.dev20230413214151-py3-none-any.whl.zip tmp/cirq_rigetti-1.2.0.dev20230414175611-py3-none-any.whl.zip --markdown 20230414/c/cirq-rigetti/1.2.0.dev20230413214151-1.2.0.dev20230414175611/diff.md --exclude *.pyd
+[2023-04-14 19:54:22] INFO root fetch - processPackages [flet]: executing diffoscope
+[2023-04-14 19:54:22] INFO root fetch - processPackages [flet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-0.6.0.dev1310.tar.gz tmp/flet-0.6.0.dev1312.tar.gz --markdown 20230414/f/flet/0.6.0.dev1310-0.6.0.dev1312/diff.md --exclude *.pyd
+[2023-04-14 19:54:22] INFO root fetch - processPackages [flet-core]: Start processing: cirq-pasqal
+[2023-04-14 19:54:22] INFO root fetch - main [MainThread]: End processing [flet-core]: success
+[2023-04-14 19:54:22] INFO root fetch - processPackages [cirq-pasqal]: New version: [1.2.0.dev20230414175611] Old Version: [1.2.0.dev20230413214151]
+[2023-04-14 19:54:22] INFO root fetch - processPackages [cirq-pasqal]: Downloading https://files.pythonhosted.org/packages/8c/7e/ccb4af771d3da134677553b8a0fc1b0d163c0680bf68ca687e1c9ebb64be/cirq_pasqal-1.2.0.dev20230414175611-py3-none-any.whl
+[2023-04-14 19:54:22] INFO root fetch - processPackages [cirq-pasqal]: executing diffoscope
+[2023-04-14 19:54:22] INFO root fetch - processPackages [cirq-pasqal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_pasqal-1.2.0.dev20230413214151-py3-none-any.whl.zip tmp/cirq_pasqal-1.2.0.dev20230414175611-py3-none-any.whl.zip --markdown 20230414/c/cirq-pasqal/1.2.0.dev20230413214151-1.2.0.dev20230414175611/diff.md --exclude *.pyd
+[2023-04-14 19:54:22] INFO root fetch - processPackages [cirq]: Start processing: cirq-web
+[2023-04-14 19:54:22] INFO root fetch - main [MainThread]: End processing [cirq]: success
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-web]: New version: [1.2.0.dev20230414175611] Old Version: [1.2.0.dev20230413214151]
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-google]: Start processing: cirq-ionq
+[2023-04-14 19:54:23] INFO root fetch - main [MainThread]: End processing [cirq-google]: success
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-ionq]: New version: [1.2.0.dev20230414175611] Old Version: [1.2.0.dev20230413214151]
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-web]: Downloading https://files.pythonhosted.org/packages/b9/50/e3024c0a918a5e061caa8855cac7432e492960e8a37e4547e0dd121c0a30/cirq_web-1.2.0.dev20230414175611-py3-none-any.whl
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-rigetti]: Start processing: cirq-core
+[2023-04-14 19:54:23] INFO root fetch - main [MainThread]: End processing [cirq-rigetti]: success
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-core]: New version: [1.2.0.dev20230414175611] Old Version: [1.2.0.dev20230413214151]
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-ionq]: Downloading https://files.pythonhosted.org/packages/b8/9e/748ccf2d0a865deb78f72eb0d1bb2548127ec3af93fafb5889a89b414215/cirq_ionq-1.2.0.dev20230414175611-py3-none-any.whl
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-web]: executing diffoscope
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_web-1.2.0.dev20230413214151-py3-none-any.whl.zip tmp/cirq_web-1.2.0.dev20230414175611-py3-none-any.whl.zip --markdown 20230414/c/cirq-web/1.2.0.dev20230413214151-1.2.0.dev20230414175611/diff.md --exclude *.pyd
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-ionq]: executing diffoscope
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-ionq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_ionq-1.2.0.dev20230413214151-py3-none-any.whl.zip tmp/cirq_ionq-1.2.0.dev20230414175611-py3-none-any.whl.zip --markdown 20230414/c/cirq-ionq/1.2.0.dev20230413214151-1.2.0.dev20230414175611/diff.md --exclude *.pyd
+[2023-04-14 19:54:23] INFO root fetch - processPackages [cirq-core]: Downloading https://files.pythonhosted.org/packages/51/ce/6587ab7082858ec27cf6217ec7a06f7f4e3e06d97f9b3b2b8b37f33bc310/cirq_core-1.2.0.dev20230414175611-py3-none-any.whl
+[2023-04-14 19:54:24] INFO root fetch - processPackages [cirq-pasqal]: Start processing: flet-pyodide
+[2023-04-14 19:54:24] INFO root fetch - main [MainThread]: End processing [cirq-pasqal]: success
+[2023-04-14 19:54:24] INFO root fetch - processPackages [flet-pyodide]: New version: [0.6.0.dev1312] Old Version: [0.6.0.dev1310]
+[2023-04-14 19:54:24] INFO root fetch - processPackages [flet-pyodide]: Downloading https://files.pythonhosted.org/packages/55/d8/0466cd704468fbe3041574998f5619c4503d6cb442751c83b63ad4751946/flet_pyodide-0.6.0.dev1312.tar.gz
+[2023-04-14 19:54:24] INFO root fetch - processPackages [cirq-core]: executing diffoscope
+[2023-04-14 19:54:24] INFO root fetch - processPackages [cirq-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_core-1.2.0.dev20230413214151-py3-none-any.whl.zip tmp/cirq_core-1.2.0.dev20230414175611-py3-none-any.whl.zip --markdown 20230414/c/cirq-core/1.2.0.dev20230413214151-1.2.0.dev20230414175611/diff.md --exclude *.pyd
+[2023-04-14 19:54:24] INFO root fetch - processPackages [flet-pyodide]: executing diffoscope
+[2023-04-14 19:54:24] INFO root fetch - processPackages [flet-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_pyodide-0.6.0.dev1310.tar.gz tmp/flet_pyodide-0.6.0.dev1312.tar.gz --markdown 20230414/f/flet-pyodide/0.6.0.dev1310-0.6.0.dev1312/diff.md --exclude *.pyd
+[2023-04-14 19:54:24] INFO root fetch - processPackages [cirq-web]: Start processing: ariston
+[2023-04-14 19:54:24] INFO root fetch - main [MainThread]: End processing [cirq-web]: success
+[2023-04-14 19:54:24] INFO root fetch - processPackages [ariston]: New version: [0.13.1] Old Version: [0.13.0]
+[2023-04-14 19:54:24] INFO root fetch - processPackages [cirq-ionq]: Start processing: secapi-tl
+[2023-04-14 19:54:24] INFO root fetch - main [MainThread]: End processing [cirq-ionq]: success
+[2023-04-14 19:54:24] INFO root fetch - processPackages [secapi-tl]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-14 19:54:24] INFO root fetch - processPackages [ariston]: Downloading https://files.pythonhosted.org/packages/75/0b/4027cece201f21204e5e7cef1576e85a478f5eadf707517fecd847ae4c6a/ariston-0.13.0.tar.gz
+[2023-04-14 19:54:24] INFO root fetch - processPackages [secapi-tl]: Downloading https://files.pythonhosted.org/packages/85/1e/73c6f742d17fe7cd7132fd7d685de04ba1c34f05d23dea02e76233ec66cc/secapi-tl-1.1.3.tar.gz
+[2023-04-14 19:54:25] INFO root fetch - processPackages [secapi-tl]: executing diffoscope
+[2023-04-14 19:54:25] INFO root fetch - processPackages [secapi-tl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secapi-tl-1.1.2.tar.gz tmp/secapi-tl-1.1.3.tar.gz --markdown 20230414/s/secapi-tl/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-14 19:54:25] INFO root fetch - processPackages [ariston]: Downloading https://files.pythonhosted.org/packages/3d/f7/b81cf008bbf8757e522f7f6406e8c0d1c9a2e7be842842b142c3428856b7/ariston-0.13.1.tar.gz
+[2023-04-14 19:54:25] INFO root fetch - processPackages [ariston]: executing diffoscope
+[2023-04-14 19:54:25] INFO root fetch - processPackages [ariston]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ariston-0.13.0.tar.gz tmp/ariston-0.13.1.tar.gz --markdown 20230414/a/ariston/0.13.0-0.13.1/diff.md --exclude *.pyd
+[2023-04-14 19:54:25] INFO root fetch - processPackages [flet-pyodide]: Start processing: statistics-core
+[2023-04-14 19:54:25] INFO root fetch - main [MainThread]: End processing [flet-pyodide]: success
+[2023-04-14 19:54:25] INFO root fetch - processPackages [statistics-core]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 19:54:25] INFO root fetch - processPackages [statistics-core]: executing diffoscope
+[2023-04-14 19:54:25] INFO root fetch - processPackages [statistics-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statistics_core-0.0.2.tar.gz tmp/statistics_core-0.0.3.tar.gz --markdown 20230414/s/statistics-core/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 19:54:26] INFO root fetch - processPackages [secapi-tl]: Start processing: kevlar-system-inspector
+[2023-04-14 19:54:26] INFO root fetch - main [MainThread]: End processing [secapi-tl]: success
+[2023-04-14 19:54:26] WARNING root fetch - processPackages [kevlar-system-inspector]: Skipping, unable to determine old version
+[2023-04-14 19:54:26] INFO root fetch - processPackages [kevlar-system-inspector]: Start processing: pylance
+[2023-04-14 19:54:26] INFO root fetch - main [MainThread]: End processing [kevlar-system-inspector] error
+[2023-04-14 19:54:26] INFO root fetch - processPackages [pylance]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-14 19:54:26] INFO root fetch - main [MainThread]: End processing [ariston]: success
+[2023-04-14 19:54:26] INFO root fetch - processPackages [pylance]: Downloading https://files.pythonhosted.org/packages/7d/8c/6d31685b7b74c94427be15ba45382170842048f357ae5dd1c70fdde05a6a/pylance-0.4.1-cp38-abi3-win_amd64.whl
+[2023-04-14 19:54:26] INFO root fetch - main [MainThread]: End processing [statistics-core]: success
+[2023-04-14 19:54:26] WARNING root fetch - processPackages [pylance]: Skipping package: exceeds size limit 19281647>=10485760
+[2023-04-14 19:54:26] INFO root fetch - main [MainThread]: End processing [pylance] error
+[2023-04-14 19:54:39] INFO root fetch - main [MainThread]: End processing [cirq-core]: success
+[2023-04-14 19:55:12] INFO root fetch - main [MainThread]: End processing [flet]: success
+[2023-04-14 19:55:12] INFO root fetch - main [MainThread]: Store serial: [17711067]
