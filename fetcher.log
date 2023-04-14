@@ -8678,3 +8678,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 09:30:07] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
 [2023-04-14 09:30:08] INFO root fetch - main [MainThread]: End processing [django-webdav-ui]: success
 [2023-04-14 09:30:08] INFO root fetch - main [MainThread]: Store serial: [17704085]
+[2023-04-14 09:35:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704085]
+[2023-04-14 09:35:16] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 09:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysem
+[2023-04-14 09:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jumpthegun
+[2023-04-14 09:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strplus
+[2023-04-14 09:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SciAssist
+[2023-04-14 09:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: strplus
+[2023-04-14 09:35:16] INFO root fetch - processPackages [SciAssist]: New version: [0.0.29] Old Version: [0.0.28]
+[2023-04-14 09:35:16] INFO root fetch - processPackages [jumpthegun]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 09:35:16] INFO root fetch - processPackages [pysem]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-14 09:35:16] INFO root fetch - processPackages [strplus]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 09:35:16] INFO root fetch - processPackages [strplus]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 09:35:16] INFO root fetch - processPackages [SciAssist]: Downloading https://files.pythonhosted.org/packages/7c/0d/aee167ea0c458e714149491cca7104193c86dc2acddef74d88e0cc8b635d/SciAssist-0.0.28.tar.gz
+[2023-04-14 09:35:16] INFO root fetch - processPackages [strplus]: Downloading https://files.pythonhosted.org/packages/01/f8/80c8f389137560554fcb0d5304c3fae07d091f639385533880b239b702b6/strplus-0.0.2.tar.gz
+[2023-04-14 09:35:16] INFO root fetch - processPackages [strplus]: Downloading https://files.pythonhosted.org/packages/01/f8/80c8f389137560554fcb0d5304c3fae07d091f639385533880b239b702b6/strplus-0.0.2.tar.gz
+[2023-04-14 09:35:16] INFO root fetch - processPackages [jumpthegun]: Downloading https://files.pythonhosted.org/packages/5d/d8/54c05bde4f1b9ad79f300363a6cd608a794f4baeeed6b2b4c01dfb6e0059/jumpthegun-0.0.1.tar.gz
+[2023-04-14 09:35:16] INFO root fetch - processPackages [pysem]: Downloading https://files.pythonhosted.org/packages/4b/07/be2a728d2cd9506e268e8db3cb64b2315e972f15fdc093f27744f58b40ae/pysem-0.6.0.tar.gz
+[2023-04-14 09:35:16] INFO root fetch - processPackages [pysem]: Downloading https://files.pythonhosted.org/packages/5f/33/e3c241f559b75d4be034f10137e730b1e7383eba6023c43f7e54d345eba0/pysem-0.7.0.tar.gz
+[2023-04-14 09:35:16] INFO root fetch - processPackages [strplus]: Downloading https://files.pythonhosted.org/packages/ca/49/21b8494295f2c74e7b2de29643bf0a4d334e422f9a9e13b50e359ce39566/strplus-0.0.3.tar.gz
+[2023-04-14 09:35:16] INFO root fetch - processPackages [strplus]: Downloading https://files.pythonhosted.org/packages/ca/49/21b8494295f2c74e7b2de29643bf0a4d334e422f9a9e13b50e359ce39566/strplus-0.0.3.tar.gz
+[2023-04-14 09:35:16] INFO root fetch - processPackages [jumpthegun]: Downloading https://files.pythonhosted.org/packages/65/e6/00844d3af631275dca74bb224c6e2170454ec65976a7f20f4d5bc0659d17/jumpthegun-0.0.2.tar.gz
+[2023-04-14 09:35:16] INFO root fetch - processPackages [SciAssist]: Downloading https://files.pythonhosted.org/packages/e6/61/314619e74220751a1c31b853940414ab9d1a4db20af57a0dc0a875ab858b/SciAssist-0.0.29.tar.gz
+[2023-04-14 09:35:17] INFO root fetch - processPackages [strplus]: executing diffoscope
+[2023-04-14 09:35:17] INFO root fetch - processPackages [strplus]: executing diffoscope
+[2023-04-14 09:35:17] INFO root fetch - processPackages [strplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strplus-0.0.2.tar.gz tmp/strplus-0.0.3.tar.gz --markdown 20230414/s/strplus/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 09:35:17] INFO root fetch - processPackages [strplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strplus-0.0.2.tar.gz tmp/strplus-0.0.3.tar.gz --markdown 20230414/s/strplus/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 09:35:17] INFO root fetch - processPackages [jumpthegun]: executing diffoscope
+[2023-04-14 09:35:17] INFO root fetch - processPackages [jumpthegun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jumpthegun-0.0.1.tar.gz tmp/jumpthegun-0.0.2.tar.gz --markdown 20230414/j/jumpthegun/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 09:35:17] INFO root fetch - processPackages [pysem]: executing diffoscope
+[2023-04-14 09:35:17] INFO root fetch - processPackages [pysem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysem-0.6.0.tar.gz tmp/pysem-0.7.0.tar.gz --markdown 20230414/p/pysem/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-14 09:35:17] INFO root fetch - processPackages [SciAssist]: executing diffoscope
+[2023-04-14 09:35:17] INFO root fetch - processPackages [SciAssist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SciAssist-0.0.28.tar.gz tmp/SciAssist-0.0.29.tar.gz --markdown 20230414/S/SciAssist/0.0.28-0.0.29/diff.md --exclude *.pyd
+[2023-04-14 09:35:18] INFO root fetch - processPackages [strplus]: Start processing: cacholote
+[2023-04-14 09:35:18] INFO root fetch - main [MainThread]: End processing [strplus]: success
+[2023-04-14 09:35:18] INFO root fetch - processPackages [cacholote]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-14 09:35:18] INFO root fetch - processPackages [strplus]: Start processing: dialogy
+[2023-04-14 09:35:18] INFO root fetch - main [MainThread]: End processing [strplus]: success
+[2023-04-14 09:35:18] INFO root fetch - processPackages [jumpthegun]: Start processing: openscad-docsgen
+[2023-04-14 09:35:18] INFO root fetch - main [MainThread]: End processing [jumpthegun]: success
+[2023-04-14 09:35:18] INFO root fetch - processPackages [openscad-docsgen]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-14 09:35:18] INFO root fetch - processPackages [pysem]: Start processing: pyprocessors-afp_entities
+[2023-04-14 09:35:18] INFO root fetch - main [MainThread]: End processing [pysem]: success
+[2023-04-14 09:35:18] INFO root fetch - processPackages [cacholote]: Downloading https://files.pythonhosted.org/packages/8f/51/62ccaf507c63c5908f946d95dfd329439d6e964839020f151525f48f1263/cacholote-0.2.2.tar.gz
+[2023-04-14 09:35:18] INFO root fetch - processPackages [dialogy]: New version: [1.4.0] Old Version: [1.3.2]
+[2023-04-14 09:35:18] INFO root fetch - processPackages [openscad-docsgen]: executing diffoscope
+[2023-04-14 09:35:18] INFO root fetch - processPackages [openscad-docsgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openscad_docsgen-2.0.8-py2.py3-none-any.whl.zip tmp/openscad_docsgen-2.0.9-py2.py3-none-any.whl.zip --markdown 20230414/o/openscad-docsgen/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-14 09:35:18] INFO root fetch - processPackages [pyprocessors-afp_entities]: New version: [0.5.98] Old Version: [0.5.92]
+[2023-04-14 09:35:18] INFO root fetch - processPackages [pyprocessors-afp_entities]: executing diffoscope
+[2023-04-14 09:35:18] INFO root fetch - processPackages [pyprocessors-afp_entities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprocessors-afp_entities-0.5.92.tar.gz tmp/pyprocessors-afp_entities-0.5.98.tar.gz --markdown 20230414/p/pyprocessors-afp_entities/0.5.92-0.5.98/diff.md --exclude *.pyd
+[2023-04-14 09:35:18] INFO root fetch - processPackages [cacholote]: Downloading https://files.pythonhosted.org/packages/f1/92/52ed53becdedabc1cc9eea377d27c2df826a144f3748c3fb87c428e57df4/cacholote-0.3.0.tar.gz
+[2023-04-14 09:35:18] INFO root fetch - processPackages [dialogy]: Downloading https://files.pythonhosted.org/packages/03/1b/2a33c72dbea8926ade95f79bdb6a3ff8f07016a0f09afe674ec0a210862c/dialogy-1.4.0.tar.gz
+[2023-04-14 09:35:18] INFO root fetch - processPackages [cacholote]: executing diffoscope
+[2023-04-14 09:35:18] INFO root fetch - processPackages [cacholote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cacholote-0.2.2.tar.gz tmp/cacholote-0.3.0.tar.gz --markdown 20230414/c/cacholote/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 09:35:18] INFO root fetch - processPackages [dialogy]: executing diffoscope
+[2023-04-14 09:35:18] INFO root fetch - processPackages [dialogy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialogy-1.3.2.tar.gz tmp/dialogy-1.4.0.tar.gz --markdown 20230414/d/dialogy/1.3.2-1.4.0/diff.md --exclude *.pyd
+[2023-04-14 09:35:18] INFO root fetch - processPackages [SciAssist]: Start processing: seven-cloudapp-frame
+[2023-04-14 09:35:18] INFO root fetch - main [MainThread]: End processing [SciAssist]: success
+[2023-04-14 09:35:19] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-04-14 09:35:19] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-04-14 09:35:19] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230414/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-04-14 09:35:19] INFO root fetch - main [MainThread]: End processing [openscad-docsgen]: success
+[2023-04-14 09:35:20] INFO root fetch - main [MainThread]: End processing [cacholote]: success
+[2023-04-14 09:35:20] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-04-14 09:35:21] INFO root fetch - main [MainThread]: End processing [pyprocessors-afp_entities]: success
+[2023-04-14 09:35:21] INFO root fetch - main [MainThread]: End processing [dialogy]: success
+[2023-04-14 09:35:21] INFO root fetch - main [MainThread]: Store serial: [17704125]
