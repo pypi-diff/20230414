@@ -21716,3 +21716,84 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 22:14:52] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-04-14 22:14:52] INFO root fetch - main [MainThread]: End processing [portbt]: success
 [2023-04-14 22:14:52] INFO root fetch - main [MainThread]: Store serial: [17712506]
+[2023-04-14 22:19:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712506]
+[2023-04-14 22:20:00] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-14 22:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codex
+[2023-04-14 22:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shell-tools
+[2023-04-14 22:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TGDbot
+[2023-04-14 22:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simple-hierarchical-transformer
+[2023-04-14 22:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stactools-cop-dem
+[2023-04-14 22:20:00] INFO root fetch - processPackages [TGDbot]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-14 22:20:00] INFO root fetch - processPackages [shell-tools]: New version: [1.1.7] Old Version: [1.0.2]
+[2023-04-14 22:20:00] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 22:20:00] INFO root fetch - processPackages [stactools-cop-dem]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-14 22:20:00] INFO root fetch - processPackages [codex]: New version: [1.3.8a0] Old Version: [1.3.7a2]
+[2023-04-14 22:20:00] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-14 22:20:00] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.8.tar.gz tmp/simple-hierarchical-transformer-0.0.9.tar.gz --markdown 20230414/s/simple-hierarchical-transformer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 22:20:00] INFO root fetch - processPackages [TGDbot]: Downloading https://files.pythonhosted.org/packages/f0/81/095226c10ac3082e8ed02b6afe46d8f98dc3333467ccd7377ee7a6545af2/TGDbot-0.3.3-py3-none-any.whl
+[2023-04-14 22:20:00] INFO root fetch - processPackages [shell-tools]: Downloading https://files.pythonhosted.org/packages/2a/08/7c332b946aaa12b5f222169b703a3c0a1cf898085d26c0cfdbc2d7bdbefc/shell-tools-1.0.2.tar.gz
+[2023-04-14 22:20:00] INFO root fetch - processPackages [codex]: Downloading https://files.pythonhosted.org/packages/e2/c0/93d183a0cb733d8a7bfb215350caa6f2a3a4a9143afec2510cfea26e7fe3/codex-1.3.7a2.tar.gz
+[2023-04-14 22:20:00] INFO root fetch - processPackages [stactools-cop-dem]: Downloading https://files.pythonhosted.org/packages/ee/38/a5611cb3add9ecafd00240b40d2b28377e1a1b17f9c8e690e7cd2261dc90/stactools-cop-dem-0.4.1.tar.gz
+[2023-04-14 22:20:00] WARNING root fetch - processPackages [codex]: Skipping package: exceeds size limit 16119124>=10485760
+[2023-04-14 22:20:00] INFO root fetch - processPackages [codex]: Start processing: helpers-mbk
+[2023-04-14 22:20:00] INFO root fetch - main [MainThread]: End processing [codex] error
+[2023-04-14 22:20:00] WARNING root fetch - processPackages [helpers-mbk]: Skipping, unable to determine old version
+[2023-04-14 22:20:00] INFO root fetch - processPackages [helpers-mbk]: Start processing: nlabot
+[2023-04-14 22:20:00] INFO root fetch - main [MainThread]: End processing [helpers-mbk] error
+[2023-04-14 22:20:00] WARNING root fetch - processPackages [nlabot]: Skipping, unable to determine old version
+[2023-04-14 22:20:00] INFO root fetch - processPackages [nlabot]: Start processing: libsigopt
+[2023-04-14 22:20:00] INFO root fetch - main [MainThread]: End processing [nlabot] error
+[2023-04-14 22:20:00] INFO root fetch - processPackages [TGDbot]: Downloading https://files.pythonhosted.org/packages/34/cc/ea46873c01e3e6314af2eafb807cd52e6653373ab82fcf1faad37f043fc4/TGDbot-0.3.4-py3-none-any.whl
+[2023-04-14 22:20:00] INFO root fetch - processPackages [stactools-cop-dem]: executing diffoscope
+[2023-04-14 22:20:00] INFO root fetch - processPackages [stactools-cop-dem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stactools-cop-dem-0.4.0.tar.gz tmp/stactools-cop-dem-0.4.1.tar.gz --markdown 20230414/s/stactools-cop-dem/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-14 22:20:00] WARNING root fetch - processPackages [libsigopt]: Skipping, unable to determine old version
+[2023-04-14 22:20:00] INFO root fetch - processPackages [libsigopt]: Start processing: surveyequivalence
+[2023-04-14 22:20:00] INFO root fetch - main [MainThread]: End processing [libsigopt] error
+[2023-04-14 22:20:00] INFO root fetch - processPackages [surveyequivalence]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 22:20:00] INFO root fetch - processPackages [shell-tools]: Downloading https://files.pythonhosted.org/packages/0e/02/2f44529862a38242578032c470b39d91cb229a5f83280f9c33cbd468026b/shell-tools-1.1.7.tar.gz
+[2023-04-14 22:20:00] INFO root fetch - processPackages [TGDbot]: executing diffoscope
+[2023-04-14 22:20:00] INFO root fetch - processPackages [TGDbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TGDbot-0.3.3-py3-none-any.whl.zip tmp/TGDbot-0.3.4-py3-none-any.whl.zip --markdown 20230414/T/TGDbot/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-14 22:20:00] INFO root fetch - processPackages [shell-tools]: executing diffoscope
+[2023-04-14 22:20:00] INFO root fetch - processPackages [shell-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shell-tools-1.0.2.tar.gz tmp/shell-tools-1.1.7.tar.gz --markdown 20230414/s/shell-tools/1.0.2-1.1.7/diff.md --exclude *.pyd
+[2023-04-14 22:20:00] INFO root fetch - processPackages [surveyequivalence]: Downloading https://files.pythonhosted.org/packages/69/0a/1d7a0f63ceedbe973981e8692d988a16721ef8e5f42706fc712b6c447e73/surveyequivalence-0.1.3.tar.gz
+[2023-04-14 22:20:01] INFO root fetch - processPackages [simple-hierarchical-transformer]: Start processing: spanishconjugator
+[2023-04-14 22:20:01] INFO root fetch - main [MainThread]: End processing [simple-hierarchical-transformer]: success
+[2023-04-14 22:20:01] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-14 22:20:01] INFO root fetch - processPackages [stactools-cop-dem]: Start processing: spanishconjugator
+[2023-04-14 22:20:01] INFO root fetch - main [MainThread]: End processing [stactools-cop-dem]: success
+[2023-04-14 22:20:01] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-14 22:20:01] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-14 22:20:01] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230414/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-14 22:20:01] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-14 22:20:01] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230414/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-14 22:20:02] INFO root fetch - processPackages [surveyequivalence]: executing diffoscope
+[2023-04-14 22:20:02] INFO root fetch - processPackages [surveyequivalence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surveyequivalence-0.1.2.tar.gz tmp/surveyequivalence-0.1.3.tar.gz --markdown 20230414/s/surveyequivalence/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 22:20:02] INFO root fetch - processPackages [TGDbot]: Start processing: datadog-checks-base
+[2023-04-14 22:20:02] INFO root fetch - main [MainThread]: End processing [TGDbot]: success
+[2023-04-14 22:20:02] INFO root fetch - processPackages [shell-tools]: Start processing: istec-p4-rafaelbile
+[2023-04-14 22:20:02] INFO root fetch - main [MainThread]: End processing [shell-tools]: success
+[2023-04-14 22:20:02] INFO root fetch - processPackages [datadog-checks-base]: New version: [9.6.0] Old Version: [9.5.0]
+[2023-04-14 22:20:02] WARNING root fetch - processPackages [istec-p4-rafaelbile]: Skipping, unable to determine old version
+[2023-04-14 22:20:02] INFO root fetch - processPackages [istec-p4-rafaelbile]: Start processing: doe-dap-dl
+[2023-04-14 22:20:02] INFO root fetch - main [MainThread]: End processing [istec-p4-rafaelbile] error
+[2023-04-14 22:20:02] ERROR root fetch - processPackages [doe-dap-dl]: Unable to get metadata: No such project 'doe-dap-dl'
+[2023-04-14 22:20:02] INFO root fetch - processPackages [doe-dap-dl]: Start processing: langcorn
+[2023-04-14 22:20:02] INFO root fetch - main [MainThread]: End processing [doe-dap-dl] error
+[2023-04-14 22:20:02] INFO root fetch - processPackages [langcorn]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 22:20:02] INFO root fetch - processPackages [datadog-checks-base]: Downloading https://files.pythonhosted.org/packages/43/33/0058df29cd2f889d75fd3b628c22d38554e17b2fe2867f0de729b045318d/datadog_checks_base-9.5.0-py2.py3-none-any.whl
+[2023-04-14 22:20:02] INFO root fetch - processPackages [langcorn]: executing diffoscope
+[2023-04-14 22:20:02] INFO root fetch - processPackages [langcorn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langcorn-0.0.1.tar.gz tmp/langcorn-0.0.2.tar.gz --markdown 20230414/l/langcorn/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 22:20:02] INFO root fetch - processPackages [datadog-checks-base]: Downloading https://files.pythonhosted.org/packages/85/a5/da8ded74bcfc838d21b13ba266ea5256690703a778c52ecefea6536ae83e/datadog_checks_base-9.6.0-py2.py3-none-any.whl
+[2023-04-14 22:20:02] INFO root fetch - processPackages [datadog-checks-base]: executing diffoscope
+[2023-04-14 22:20:02] INFO root fetch - processPackages [datadog-checks-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datadog_checks_base-9.5.0-py2.py3-none-any.whl.zip tmp/datadog_checks_base-9.6.0-py2.py3-none-any.whl.zip --markdown 20230414/d/datadog-checks-base/9.5.0-9.6.0/diff.md --exclude *.pyd
+[2023-04-14 22:20:03] INFO root fetch - processPackages [spanishconjugator]: Start processing: gentrace-py
+[2023-04-14 22:20:03] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-14 22:20:03] INFO root fetch - processPackages [gentrace-py]: New version: [0.2.0] Old Version: [0.1.7]
+[2023-04-14 22:20:03] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-14 22:20:03] INFO root fetch - processPackages [gentrace-py]: executing diffoscope
+[2023-04-14 22:20:03] INFO root fetch - processPackages [gentrace-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gentrace_py-0.1.7.tar.gz tmp/gentrace_py-0.2.0.tar.gz --markdown 20230414/g/gentrace-py/0.1.7-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 22:20:03] INFO root fetch - main [MainThread]: End processing [langcorn]: success
+[2023-04-14 22:20:04] INFO root fetch - main [MainThread]: End processing [gentrace-py]: success
+[2023-04-14 22:20:04] INFO root fetch - main [MainThread]: End processing [datadog-checks-base]: success
+[2023-04-14 22:20:06] INFO root fetch - main [MainThread]: End processing [surveyequivalence]: success
+[2023-04-14 22:20:06] INFO root fetch - main [MainThread]: Store serial: [17712576]
