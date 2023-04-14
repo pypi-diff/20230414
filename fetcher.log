@@ -8576,3 +8576,105 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 09:24:52] INFO root fetch - main [MainThread]: End processing [katalytic-images]: success
 [2023-04-14 09:24:53] INFO root fetch - main [MainThread]: End processing [pyprocessors-afp_entities]: success
 [2023-04-14 09:24:53] INFO root fetch - main [MainThread]: Store serial: [17704030]
+[2023-04-14 09:29:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704030]
+[2023-04-14 09:30:01] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-14 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: boris-behav-obs
+[2023-04-14 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vcr-langchain
+[2023-04-14 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xj-user
+[2023-04-14 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thinks-dash-components
+[2023-04-14 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlserver-alibi-explain
+[2023-04-14 09:30:01] INFO root fetch - processPackages [thinks-dash-components]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-14 09:30:01] INFO root fetch - processPackages [mlserver-alibi-explain]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-14 09:30:01] INFO root fetch - processPackages [boris-behav-obs]: New version: [8.9.8] Old Version: [8.9.6]
+[2023-04-14 09:30:01] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-14 09:30:01] INFO root fetch - processPackages [vcr-langchain]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 09:30:01] INFO root fetch - processPackages [mlserver-alibi-explain]: executing diffoscope
+[2023-04-14 09:30:01] INFO root fetch - processPackages [mlserver-alibi-explain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-explain-1.3.0rc1.tar.gz tmp/mlserver-alibi-explain-1.3.0rc2.tar.gz --markdown 20230414/m/mlserver-alibi-explain/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-14 09:30:01] INFO root fetch - processPackages [vcr-langchain]: Downloading https://files.pythonhosted.org/packages/5f/21/7e537b7c4bd9033bb7d2e64c9b1fa8441737278706c814c0efff22c2cf5a/vcr_langchain-0.0.8.tar.gz
+[2023-04-14 09:30:02] INFO root fetch - processPackages [boris-behav-obs]: Downloading https://files.pythonhosted.org/packages/2d/3e/6f6c330e82f398b4100063d33d9c4466e119c98f185886c388e40cbf3183/boris-behav-obs-8.9.6.tar.gz
+[2023-04-14 09:30:02] INFO root fetch - processPackages [thinks-dash-components]: Downloading https://files.pythonhosted.org/packages/1f/eb/2fd6c5a1cebd43e72b7a103356a4ff60cba65a4602845a5b6956e94cbfc9/thinks_dash_components-0.3.3.tar.gz
+[2023-04-14 09:30:02] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-14 09:30:02] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230414/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-14 09:30:02] INFO root fetch - processPackages [thinks-dash-components]: executing diffoscope
+[2023-04-14 09:30:02] INFO root fetch - processPackages [thinks-dash-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thinks_dash_components-0.3.2.tar.gz tmp/thinks_dash_components-0.3.3.tar.gz --markdown 20230414/t/thinks-dash-components/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-14 09:30:02] INFO root fetch - processPackages [vcr-langchain]: Downloading https://files.pythonhosted.org/packages/97/8f/f07337a3f46ccc9c3e3142a0c4a5070d5315476f1894d5a7003418d29249/vcr_langchain-0.0.9.tar.gz
+[2023-04-14 09:30:02] INFO root fetch - processPackages [boris-behav-obs]: Downloading https://files.pythonhosted.org/packages/bf/55/6955e9da039eb026b773b540596c8bc85b790aeea5a08d162704522d2174/boris-behav-obs-8.9.8.tar.gz
+[2023-04-14 09:30:02] INFO root fetch - processPackages [vcr-langchain]: executing diffoscope
+[2023-04-14 09:30:02] INFO root fetch - processPackages [vcr-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcr_langchain-0.0.8.tar.gz tmp/vcr_langchain-0.0.9.tar.gz --markdown 20230414/v/vcr-langchain/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 09:30:02] INFO root fetch - processPackages [boris-behav-obs]: executing diffoscope
+[2023-04-14 09:30:02] INFO root fetch - processPackages [boris-behav-obs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boris-behav-obs-8.9.6.tar.gz tmp/boris-behav-obs-8.9.8.tar.gz --markdown 20230414/b/boris-behav-obs/8.9.6-8.9.8/diff.md --exclude *.pyd
+[2023-04-14 09:30:03] INFO root fetch - processPackages [mlserver-alibi-explain]: Start processing: mlserver-alibi-detect
+[2023-04-14 09:30:03] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-explain]: success
+[2023-04-14 09:30:03] INFO root fetch - processPackages [mlserver-alibi-detect]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-14 09:30:03] INFO root fetch - processPackages [mlserver-alibi-detect]: executing diffoscope
+[2023-04-14 09:30:03] INFO root fetch - processPackages [mlserver-alibi-detect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-detect-1.3.0rc1.tar.gz tmp/mlserver-alibi-detect-1.3.0rc2.tar.gz --markdown 20230414/m/mlserver-alibi-detect/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-14 09:30:03] INFO root fetch - processPackages [xj-user]: Start processing: mlserver-huggingface
+[2023-04-14 09:30:03] INFO root fetch - main [MainThread]: End processing [xj-user]: success
+[2023-04-14 09:30:03] INFO root fetch - processPackages [mlserver-huggingface]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-14 09:30:03] INFO root fetch - processPackages [vcr-langchain]: Start processing: mlserver
+[2023-04-14 09:30:03] INFO root fetch - main [MainThread]: End processing [vcr-langchain]: success
+[2023-04-14 09:30:03] INFO root fetch - processPackages [mlserver]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-14 09:30:03] INFO root fetch - processPackages [mlserver]: executing diffoscope
+[2023-04-14 09:30:03] INFO root fetch - processPackages [mlserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-1.3.0rc1.tar.gz tmp/mlserver-1.3.0rc2.tar.gz --markdown 20230414/m/mlserver/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-huggingface]: executing diffoscope
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-huggingface-1.3.0rc1.tar.gz tmp/mlserver-huggingface-1.3.0rc2.tar.gz --markdown 20230414/m/mlserver-huggingface/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-alibi-detect]: Start processing: mlserver-mlflow
+[2023-04-14 09:30:04] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-detect]: success
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-mlflow]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-mlflow]: executing diffoscope
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mlflow-1.3.0rc1.tar.gz tmp/mlserver-mlflow-1.3.0rc2.tar.gz --markdown 20230414/m/mlserver-mlflow/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-14 09:30:04] INFO root fetch - processPackages [boris-behav-obs]: Start processing: mlserver-lightgbm
+[2023-04-14 09:30:04] INFO root fetch - main [MainThread]: End processing [boris-behav-obs]: success
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-lightgbm]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-lightgbm]: executing diffoscope
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-lightgbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-lightgbm-1.3.0rc1.tar.gz tmp/mlserver-lightgbm-1.3.0rc2.tar.gz --markdown 20230414/m/mlserver-lightgbm/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-14 09:30:04] INFO root fetch - processPackages [thinks-dash-components]: Start processing: mlserver-mllib
+[2023-04-14 09:30:04] INFO root fetch - main [MainThread]: End processing [thinks-dash-components]: success
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-mllib]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-mllib]: executing diffoscope
+[2023-04-14 09:30:04] INFO root fetch - processPackages [mlserver-mllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mllib-1.3.0rc1.tar.gz tmp/mlserver-mllib-1.3.0rc2.tar.gz --markdown 20230414/m/mlserver-mllib/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver]: Start processing: vnpy-binance-pro
+[2023-04-14 09:30:05] INFO root fetch - main [MainThread]: End processing [mlserver]: success
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver-mlflow]: Start processing: mlserver-sklearn
+[2023-04-14 09:30:05] INFO root fetch - main [MainThread]: End processing [mlserver-mlflow]: success
+[2023-04-14 09:30:05] INFO root fetch - processPackages [vnpy-binance-pro]: New version: [2023.4.14.1] Old Version: [2023.4.13.1]
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver-sklearn]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver-sklearn]: executing diffoscope
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver-sklearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-sklearn-1.3.0rc1.tar.gz tmp/mlserver-sklearn-1.3.0rc2.tar.gz --markdown 20230414/m/mlserver-sklearn/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-14 09:30:05] INFO root fetch - processPackages [vnpy-binance-pro]: Downloading https://files.pythonhosted.org/packages/f6/f5/45795d5f38e478ca7d57b9f8787a7efcaba04ebfc32fd72ff97845847e0d/vnpy_binance_pro-2023.4.13.1.tar.gz
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver-huggingface]: Start processing: mlserver-xgboost
+[2023-04-14 09:30:05] INFO root fetch - main [MainThread]: End processing [mlserver-huggingface]: success
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver-xgboost]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver-xgboost]: executing diffoscope
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver-xgboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-xgboost-1.3.0rc1.tar.gz tmp/mlserver-xgboost-1.3.0rc2.tar.gz --markdown 20230414/m/mlserver-xgboost/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-14 09:30:05] INFO root fetch - processPackages [vnpy-binance-pro]: Downloading https://files.pythonhosted.org/packages/ff/b4/cab5e08fba1ce5326259e9ccddd949c55e101b8702529e70f80e8070432f/vnpy_binance_pro-2023.4.14.1.tar.gz
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver-lightgbm]: Start processing: preprocessing-pgp
+[2023-04-14 09:30:05] INFO root fetch - main [MainThread]: End processing [mlserver-lightgbm]: success
+[2023-04-14 09:30:05] INFO root fetch - processPackages [preprocessing-pgp]: New version: [0.2.9.dev1] Old Version: [0.2.9]
+[2023-04-14 09:30:05] INFO root fetch - processPackages [preprocessing-pgp]: Downloading https://files.pythonhosted.org/packages/6f/ff/7ae6def7e01f6a96f6d02ebfbc003cf93de4820f8b374f0dea2319178588/preprocessing-pgp-0.2.9.tar.gz
+[2023-04-14 09:30:05] INFO root fetch - processPackages [vnpy-binance-pro]: executing diffoscope
+[2023-04-14 09:30:05] INFO root fetch - processPackages [vnpy-binance-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_binance_pro-2023.4.13.1.tar.gz tmp/vnpy_binance_pro-2023.4.14.1.tar.gz --markdown 20230414/v/vnpy-binance-pro/2023.4.13.1-2023.4.14.1/diff.md --exclude *.pyd
+[2023-04-14 09:30:05] INFO root fetch - processPackages [mlserver-mllib]: Start processing: micromechanics-indentationGUI
+[2023-04-14 09:30:05] INFO root fetch - main [MainThread]: End processing [mlserver-mllib]: success
+[2023-04-14 09:30:05] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 09:30:06] WARNING root fetch - processPackages [preprocessing-pgp]: Skipping package: exceeds size limit 53984527>=10485760
+[2023-04-14 09:30:06] INFO root fetch - processPackages [preprocessing-pgp]: Start processing: django-webdav-ui
+[2023-04-14 09:30:06] INFO root fetch - main [MainThread]: End processing [preprocessing-pgp] error
+[2023-04-14 09:30:06] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-14 09:30:06] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230414/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 09:30:06] INFO root fetch - processPackages [django-webdav-ui]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 09:30:06] INFO root fetch - processPackages [django-webdav-ui]: Downloading https://files.pythonhosted.org/packages/f7/db/52125b0e65eed4de71ac0ec7e08694306467fed0a7a88ca83e3e7f175909/django-webdav-ui-0.0.1.tar.gz
+[2023-04-14 09:30:06] INFO root fetch - processPackages [mlserver-sklearn]: Start processing: lalsuite
+[2023-04-14 09:30:06] INFO root fetch - main [MainThread]: End processing [mlserver-sklearn]: success
+[2023-04-14 09:30:06] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-04-14 09:30:06] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-14 09:30:06] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-04-14 09:30:06] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-04-14 09:30:06] INFO root fetch - main [MainThread]: End processing [mlserver-xgboost]: success
+[2023-04-14 09:30:06] INFO root fetch - processPackages [django-webdav-ui]: Downloading https://files.pythonhosted.org/packages/6c/06/a6bd6d81123acb3c0c5d0871ede446ad6a06fa88cba587a7faf54eb85f54/django-webdav-ui-0.0.2.tar.gz
+[2023-04-14 09:30:06] INFO root fetch - processPackages [django-webdav-ui]: executing diffoscope
+[2023-04-14 09:30:06] INFO root fetch - processPackages [django-webdav-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-webdav-ui-0.0.1.tar.gz tmp/django-webdav-ui-0.0.2.tar.gz --markdown 20230414/d/django-webdav-ui/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 09:30:06] INFO root fetch - main [MainThread]: End processing [vnpy-binance-pro]: success
+[2023-04-14 09:30:07] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-14 09:30:08] INFO root fetch - main [MainThread]: End processing [django-webdav-ui]: success
+[2023-04-14 09:30:08] INFO root fetch - main [MainThread]: Store serial: [17704085]
