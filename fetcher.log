@@ -7677,3 +7677,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 07:57:40] INFO root fetch - main [MainThread]: End processing [p-ttauto-crawler]: success
 [2023-04-14 07:57:40] INFO root fetch - main [MainThread]: End processing [ai-transform]: success
 [2023-04-14 07:57:40] INFO root fetch - main [MainThread]: Store serial: [17703531]
+[2023-04-14 08:02:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703531]
+[2023-04-14 08:02:47] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 08:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyProcessAutom
+[2023-04-14 08:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zope.component
+[2023-04-14 08:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: youte
+[2023-04-14 08:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-sdgpt
+[2023-04-14 08:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-yettagam
+[2023-04-14 08:02:47] INFO root fetch - processPackages [youte]: New version: [2.1.0] Old Version: [2.0.2]
+[2023-04-14 08:02:47] INFO root fetch - processPackages [pyProcessAutom]: New version: [1.4.6] Old Version: [1.4.5]
+[2023-04-14 08:02:47] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 08:02:47] INFO root fetch - processPackages [py-yettagam]: New version: [0.0.2.9] Old Version: [0.0.2.8]
+[2023-04-14 08:02:47] INFO root fetch - processPackages [zope.component]: New version: [6.0] Old Version: [5.1.0]
+[2023-04-14 08:02:48] INFO root fetch - processPackages [py-yettagam]: executing diffoscope
+[2023-04-14 08:02:48] INFO root fetch - processPackages [py-yettagam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_yettagam-0.0.2.8.tar.gz tmp/py_yettagam-0.0.2.9.tar.gz --markdown 20230414/p/py-yettagam/0.0.2.8-0.0.2.9/diff.md --exclude *.pyd
+[2023-04-14 08:02:48] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: Downloading https://files.pythonhosted.org/packages/c8/41/df342fafaa75178a7260513597acd6ed8723d1ac3d159109f09a71b94933/nonebot_plugin_sdgpt-0.2.2.tar.gz
+[2023-04-14 08:02:48] INFO root fetch - processPackages [zope.component]: Downloading https://files.pythonhosted.org/packages/49/fe/f25e3f2db6da4164b030d9897c1370ca289be0219792041456c42726d01a/zope.component-5.1.0.tar.gz
+[2023-04-14 08:02:48] INFO root fetch - processPackages [youte]: Downloading https://files.pythonhosted.org/packages/3c/c6/c6d24506b121ab46ead773b682b3b3a715e4e3fc0d2b4513cc22eec10892/youte-2.0.2.tar.gz
+[2023-04-14 08:02:48] INFO root fetch - processPackages [pyProcessAutom]: Downloading https://files.pythonhosted.org/packages/f3/9e/04d64abd3d23ab300470835a62bac5c2fdd7f8b98080c0ab7446a3272874/pyProcessAutom-1.4.6.tar.gz
+[2023-04-14 08:02:48] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: executing diffoscope
+[2023-04-14 08:02:48] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sdgpt-0.2.1.tar.gz tmp/nonebot_plugin_sdgpt-0.2.2.tar.gz --markdown 20230414/n/nonebot-plugin-sdgpt/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 08:02:48] INFO root fetch - processPackages [zope.component]: Downloading https://files.pythonhosted.org/packages/53/32/87db95f4a5f097aa837dcb951f5a4754e2e8d3ac70160a6c2df7bd215956/zope.component-6.0.tar.gz
+[2023-04-14 08:02:48] INFO root fetch - processPackages [pyProcessAutom]: executing diffoscope
+[2023-04-14 08:02:48] INFO root fetch - processPackages [pyProcessAutom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyProcessAutom-1.4.5.tar.gz tmp/pyProcessAutom-1.4.6.tar.gz --markdown 20230414/p/pyProcessAutom/1.4.5-1.4.6/diff.md --exclude *.pyd
+[2023-04-14 08:02:48] INFO root fetch - processPackages [zope.component]: executing diffoscope
+[2023-04-14 08:02:48] INFO root fetch - processPackages [zope.component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zope.component-5.1.0.tar.gz tmp/zope.component-6.0.tar.gz --markdown 20230414/z/zope.component/5.1.0-6.0/diff.md --exclude *.pyd
+[2023-04-14 08:02:48] INFO root fetch - processPackages [youte]: Downloading https://files.pythonhosted.org/packages/54/ff/dbdda9a1102ec3d6a10bf3594d2ea276e172319bbac643eb0191f0505b8f/youte-2.1.0.tar.gz
+[2023-04-14 08:02:48] INFO root fetch - processPackages [youte]: executing diffoscope
+[2023-04-14 08:02:48] INFO root fetch - processPackages [youte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youte-2.0.2.tar.gz tmp/youte-2.1.0.tar.gz --markdown 20230414/y/youte/2.0.2-2.1.0/diff.md --exclude *.pyd
+[2023-04-14 08:02:49] INFO root fetch - processPackages [py-yettagam]: Start processing: plonetheme.barceloneta
+[2023-04-14 08:02:49] INFO root fetch - main [MainThread]: End processing [py-yettagam]: success
+[2023-04-14 08:02:49] INFO root fetch - processPackages [plonetheme.barceloneta]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-14 08:02:49] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: Start processing: lanfacesdk
+[2023-04-14 08:02:49] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sdgpt]: success
+[2023-04-14 08:02:49] INFO root fetch - processPackages [lanfacesdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 08:02:49] INFO root fetch - processPackages [plonetheme.barceloneta]: Downloading https://files.pythonhosted.org/packages/ee/62/26a1dd8c82e17e66f5bef7c18f1da716ceb232e8ec27567bab3f89963524/plonetheme.barceloneta-3.1.0.tar.gz
+[2023-04-14 08:02:49] INFO root fetch - processPackages [pyProcessAutom]: Start processing: pyg-nightly
+[2023-04-14 08:02:49] INFO root fetch - main [MainThread]: End processing [pyProcessAutom]: success
+[2023-04-14 08:02:49] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230413] Old Version: [2.4.0.dev20230412]
+[2023-04-14 08:02:49] INFO root fetch - processPackages [lanfacesdk]: Downloading https://files.pythonhosted.org/packages/d2/af/8a48bfac1a824fbc3a698f2b62e746df325fc5398ba93e415632e6016e79/lanfacesdk-0.0.8.tar.gz
+[2023-04-14 08:02:49] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-04-14 08:02:49] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230412.tar.gz tmp/pyg-nightly-2.4.0.dev20230413.tar.gz --markdown 20230414/p/pyg-nightly/2.4.0.dev20230412-2.4.0.dev20230413/diff.md --exclude *.pyd
+[2023-04-14 08:02:50] INFO root fetch - processPackages [lanfacesdk]: Downloading https://files.pythonhosted.org/packages/97/a2/038eaf0bf025dfcf22ba9ee7cb8e66aecd807f40297ce32693c90f350635/lanfacesdk-0.0.9.tar.gz
+[2023-04-14 08:02:50] INFO root fetch - processPackages [lanfacesdk]: executing diffoscope
+[2023-04-14 08:02:50] INFO root fetch - processPackages [lanfacesdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lanfacesdk-0.0.8.tar.gz tmp/lanfacesdk-0.0.9.tar.gz --markdown 20230414/l/lanfacesdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 08:02:50] INFO root fetch - main [MainThread]: End processing [zope.component]: success
+[2023-04-14 08:02:50] INFO root fetch - main [MainThread]: End processing [youte]: success
+[2023-04-14 08:02:50] INFO root fetch - processPackages [plonetheme.barceloneta]: Downloading https://files.pythonhosted.org/packages/ec/c8/edaa43845c3d59805bdf2e7b025047b49a6dc3a29407d718d38e9f6e3f11/plonetheme.barceloneta-3.1.1.tar.gz
+[2023-04-14 08:02:51] INFO root fetch - main [MainThread]: End processing [lanfacesdk]: success
+[2023-04-14 08:02:51] INFO root fetch - processPackages [plonetheme.barceloneta]: executing diffoscope
+[2023-04-14 08:02:51] INFO root fetch - processPackages [plonetheme.barceloneta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plonetheme.barceloneta-3.1.0.tar.gz tmp/plonetheme.barceloneta-3.1.1.tar.gz --markdown 20230414/p/plonetheme.barceloneta/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-14 08:02:54] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-04-14 08:02:55] INFO root fetch - main [MainThread]: End processing [plonetheme.barceloneta]: success
+[2023-04-14 08:02:55] INFO root fetch - main [MainThread]: Store serial: [17703556]
