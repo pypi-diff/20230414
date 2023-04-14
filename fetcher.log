@@ -15668,3 +15668,64 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 16:35:44] INFO root fetch - main [MainThread]: End processing [qilib]: success
 [2023-04-14 16:35:49] INFO root fetch - main [MainThread]: End processing [flavio]: success
 [2023-04-14 16:35:49] INFO root fetch - main [MainThread]: Store serial: [17708486]
+[2023-04-14 16:40:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17708486]
+[2023-04-14 16:40:56] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 16:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qilib
+[2023-04-14 16:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: symbolic-learn
+[2023-04-14 16:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sdnist
+[2023-04-14 16:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-iris
+[2023-04-14 16:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: metobs-toolkit
+[2023-04-14 16:40:56] INFO root fetch - processPackages [qilib]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 16:40:57] WARNING root fetch - processPackages [symbolic-learn]: Skipping, unable to determine old version
+[2023-04-14 16:40:57] INFO root fetch - processPackages [symbolic-learn]: Start processing: stretchy
+[2023-04-14 16:40:57] INFO root fetch - processPackages [dbt-iris]: New version: [1.3.3] Old Version: [1.3.2b3]
+[2023-04-14 16:40:57] INFO root fetch - processPackages [metobs-toolkit]: New version: [0.0.2a1] Old Version: [0.0.1]
+[2023-04-14 16:40:57] INFO root fetch - main [MainThread]: End processing [symbolic-learn] error
+[2023-04-14 16:40:57] INFO root fetch - processPackages [sdnist]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-04-14 16:40:57] INFO root fetch - processPackages [stretchy]: New version: [1.1b1] Old Version: [1.0b3]
+[2023-04-14 16:40:57] INFO root fetch - processPackages [qilib]: executing diffoscope
+[2023-04-14 16:40:57] INFO root fetch - processPackages [qilib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qilib-0.3.8.tar.gz tmp/qilib-0.3.9.tar.gz --markdown 20230414/q/qilib/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 16:40:57] INFO root fetch - processPackages [sdnist]: Downloading https://files.pythonhosted.org/packages/45/0d/52fe9c49bf07f47c166767c2fe54b6de142cf65223c8cb7ffbfff35339af/sdnist-2.1.1-2.tar.gz
+[2023-04-14 16:40:57] INFO root fetch - processPackages [metobs-toolkit]: Downloading https://files.pythonhosted.org/packages/8c/ba/669546e33748234e0d32a758673c56afea615e73393ea9f18e60542e9eb1/metobs_toolkit-0.0.1.tar.gz
+[2023-04-14 16:40:57] INFO root fetch - processPackages [stretchy]: Downloading https://files.pythonhosted.org/packages/1e/a9/365d4447651ac8d3d4f7f894784bc9c4a9da6addcaccfc9622ff9e7a8673/stretchy-1.0b3.tar.gz
+[2023-04-14 16:40:57] INFO root fetch - processPackages [dbt-iris]: Downloading https://files.pythonhosted.org/packages/cb/ba/5215431b062e1dd6ec08e372b33457de6ac7b95498f4e09e987860831d2e/dbt-iris-1.3.3.tar.gz
+[2023-04-14 16:40:57] INFO root fetch - processPackages [dbt-iris]: executing diffoscope
+[2023-04-14 16:40:57] INFO root fetch - processPackages [dbt-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-iris-1.3.2b3.tar.gz tmp/dbt-iris-1.3.3.tar.gz --markdown 20230414/d/dbt-iris/1.3.2b3-1.3.3/diff.md --exclude *.pyd
+[2023-04-14 16:40:57] INFO root fetch - processPackages [stretchy]: Downloading https://files.pythonhosted.org/packages/49/44/ef5b87731afb4a2fdd5f72c95c10a307760a2914a72345014e1cd47bae6d/stretchy-1.1b1.tar.gz
+[2023-04-14 16:40:57] INFO root fetch - processPackages [metobs-toolkit]: Downloading https://files.pythonhosted.org/packages/7a/be/e8a938dbc95d66fcfb800c403c01e450d7bfb1d3e9749820c97d0bd55150/metobs_toolkit-0.0.2a1.tar.gz
+[2023-04-14 16:40:57] INFO root fetch - processPackages [sdnist]: Downloading https://files.pythonhosted.org/packages/8f/2f/31a44dc55def205d1209713fdd21fc8066d2d9428a04489bf207870052c4/sdnist-2.2.0.tar.gz
+[2023-04-14 16:40:57] INFO root fetch - processPackages [sdnist]: executing diffoscope
+[2023-04-14 16:40:57] INFO root fetch - processPackages [sdnist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdnist-2.1.1-2.tar.gz tmp/sdnist-2.2.0.tar.gz --markdown 20230414/s/sdnist/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-04-14 16:40:57] INFO root fetch - processPackages [stretchy]: executing diffoscope
+[2023-04-14 16:40:57] INFO root fetch - processPackages [stretchy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stretchy-1.0b3.tar.gz tmp/stretchy-1.1b1.tar.gz --markdown 20230414/s/stretchy/1.0b3-1.1b1/diff.md --exclude *.pyd
+[2023-04-14 16:40:58] INFO root fetch - processPackages [qilib]: Start processing: loky
+[2023-04-14 16:40:58] INFO root fetch - main [MainThread]: End processing [qilib]: success
+[2023-04-14 16:40:58] INFO root fetch - processPackages [loky]: New version: [3.4.0] Old Version: [3.3.0]
+[2023-04-14 16:40:58] INFO root fetch - processPackages [metobs-toolkit]: executing diffoscope
+[2023-04-14 16:40:58] INFO root fetch - processPackages [metobs-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metobs_toolkit-0.0.1.tar.gz tmp/metobs_toolkit-0.0.2a1.tar.gz --markdown 20230414/m/metobs-toolkit/0.0.1-0.0.2a1/diff.md --exclude *.pyd
+[2023-04-14 16:40:58] INFO root fetch - processPackages [loky]: Downloading https://files.pythonhosted.org/packages/35/0e/97520e1a9317637727fd05d00ae4d834eaf82b19ca7ef3e2dcedf4446656/loky-3.3.0.tar.gz
+[2023-04-14 16:40:58] INFO root fetch - processPackages [dbt-iris]: Start processing: SCALECAST
+[2023-04-14 16:40:58] INFO root fetch - main [MainThread]: End processing [dbt-iris]: success
+[2023-04-14 16:40:58] INFO root fetch - processPackages [SCALECAST]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 16:40:58] INFO root fetch - processPackages [loky]: Downloading https://files.pythonhosted.org/packages/28/50/004c379647db9c9c5751c10a633dac68c6f5b448d12975ac7d1cef9cefa8/loky-3.4.0-py3-none-any.whl
+[2023-04-14 16:40:58] INFO root fetch - processPackages [SCALECAST]: executing diffoscope
+[2023-04-14 16:40:58] INFO root fetch - processPackages [SCALECAST]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SCALECAST-0.9.8.tar.gz tmp/SCALECAST-0.9.9.tar.gz --markdown 20230414/S/SCALECAST/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 16:40:58] INFO root fetch - processPackages [loky]: executing diffoscope
+[2023-04-14 16:40:58] INFO root fetch - processPackages [loky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loky-3.3.0.tar.gz tmp/loky-3.4.0-py3-none-any.whl.zip --markdown 20230414/l/loky/3.3.0-3.4.0/diff.md --exclude *.pyd
+[2023-04-14 16:40:58] INFO root fetch - processPackages [stretchy]: Start processing: vollseg
+[2023-04-14 16:40:58] INFO root fetch - main [MainThread]: End processing [stretchy]: success
+[2023-04-14 16:40:58] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-14 16:40:59] INFO root fetch - processPackages [sdnist]: Start processing: pandantic
+[2023-04-14 16:40:59] INFO root fetch - main [MainThread]: End processing [sdnist]: success
+[2023-04-14 16:40:59] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-14 16:40:59] WARNING root fetch - processPackages [pandantic]: Skipping, unable to determine old version
+[2023-04-14 16:40:59] INFO root fetch - processPackages [pandantic]: Start processing: tortuemobile
+[2023-04-14 16:40:59] INFO root fetch - main [MainThread]: End processing [pandantic] error
+[2023-04-14 16:40:59] WARNING root fetch - processPackages [tortuemobile]: Skipping, unable to determine old version
+[2023-04-14 16:40:59] INFO root fetch - main [MainThread]: End processing [tortuemobile] error
+[2023-04-14 16:40:59] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-14 16:40:59] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-14 16:40:59] INFO root fetch - main [MainThread]: End processing [loky]: success
+[2023-04-14 16:41:00] INFO root fetch - main [MainThread]: End processing [metobs-toolkit]: success
+[2023-04-14 16:41:00] INFO root fetch - main [MainThread]: End processing [SCALECAST]: success
+[2023-04-14 16:41:00] INFO root fetch - main [MainThread]: Store serial: [17708525]
