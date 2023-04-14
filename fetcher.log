@@ -22664,3 +22664,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 23:28:22] INFO root fetch - main [MainThread]: End processing [ocrmypdf]: success
 [2023-04-14 23:28:28] INFO root fetch - main [MainThread]: End processing [pyqtgraph]: success
 [2023-04-14 23:28:28] INFO root fetch - main [MainThread]: Store serial: [17713084]
+[2023-04-14 23:33:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713084]
+[2023-04-14 23:33:37] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 23:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gasmanez
+[2023-04-14 23:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: connpy
+[2023-04-14 23:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tautulli
+[2023-04-14 23:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flexsea
+[2023-04-14 23:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shreycricmac
+[2023-04-14 23:33:37] WARNING root fetch - processPackages [gasmanez]: Skipping, unable to determine old version
+[2023-04-14 23:33:37] INFO root fetch - processPackages [tautulli]: New version: [3.2.1.2120] Old Version: [3.2.0.2120]
+[2023-04-14 23:33:37] INFO root fetch - processPackages [gasmanez]: Start processing: mount
+[2023-04-14 23:33:37] INFO root fetch - main [MainThread]: End processing [gasmanez] error
+[2023-04-14 23:33:37] INFO root fetch - processPackages [flexsea]: New version: [9.1.1] Old Version: [9.1.0]
+[2023-04-14 23:33:37] WARNING root fetch - processPackages [shreycricmac]: Skipping, unable to determine old version
+[2023-04-14 23:33:37] INFO root fetch - processPackages [shreycricmac]: Start processing: vesselapi
+[2023-04-14 23:33:37] INFO root fetch - main [MainThread]: End processing [shreycricmac] error
+[2023-04-14 23:33:37] INFO root fetch - processPackages [connpy]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-14 23:33:37] INFO root fetch - processPackages [vesselapi]: New version: [3.5.2] Old Version: [3.2.2]
+[2023-04-14 23:33:38] WARNING root fetch - processPackages [mount]: Skipping, unable to determine old version
+[2023-04-14 23:33:38] INFO root fetch - processPackages [mount]: Start processing: sd-parsers
+[2023-04-14 23:33:38] INFO root fetch - main [MainThread]: End processing [mount] error
+[2023-04-14 23:33:38] WARNING root fetch - processPackages [sd-parsers]: Skipping, unable to determine old version
+[2023-04-14 23:33:38] INFO root fetch - processPackages [sd-parsers]: Start processing: astronomer-cosmos
+[2023-04-14 23:33:38] INFO root fetch - main [MainThread]: End processing [sd-parsers] error
+[2023-04-14 23:33:38] INFO root fetch - processPackages [astronomer-cosmos]: New version: [0.6.0.dev0] Old Version: [0.6.0]
+[2023-04-14 23:33:38] INFO root fetch - processPackages [tautulli]: Downloading https://files.pythonhosted.org/packages/eb/41/ca0968959ce753a6b15c2dc26c81f53c984ceee196abf1f0a88f5aad0423/tautulli-3.2.0.2120.tar.gz
+[2023-04-14 23:33:38] INFO root fetch - processPackages [vesselapi]: Downloading https://files.pythonhosted.org/packages/a6/2f/3e38048f42e00e47f8535d2dede8fb35ec95abf9a10d8b7a3d153a3b8cc2/vesselapi-3.2.2.tar.gz
+[2023-04-14 23:33:38] INFO root fetch - processPackages [flexsea]: Downloading https://files.pythonhosted.org/packages/73/13/5e6a24eca54dfb5d33c482a558ba5eec2335484350b7b286b306d01712b9/flexsea-9.1.0-py3-none-any.whl
+[2023-04-14 23:33:38] INFO root fetch - processPackages [connpy]: Downloading https://files.pythonhosted.org/packages/ed/cf/ff188f7d071712b102b260420d3298cb139e4fab427fb112bc55780a08af/connpy-3.0.5.tar.gz
+[2023-04-14 23:33:38] WARNING root fetch - processPackages [flexsea]: Skipping package: exceeds size limit 13968448>=10485760
+[2023-04-14 23:33:38] INFO root fetch - processPackages [flexsea]: Start processing: unstructured-inference
+[2023-04-14 23:33:38] INFO root fetch - main [MainThread]: End processing [flexsea] error
+[2023-04-14 23:33:38] INFO root fetch - processPackages [astronomer-cosmos]: Downloading https://files.pythonhosted.org/packages/b1/dc/ab67aa6e19d937e00571ead9cc3f6e09dbe0cb29656fa47552ad66a1d8e0/astronomer_cosmos-0.6.0.tar.gz
+[2023-04-14 23:33:38] INFO root fetch - processPackages [connpy]: executing diffoscope
+[2023-04-14 23:33:38] INFO root fetch - processPackages [connpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connpy-3.0.4.tar.gz tmp/connpy-3.0.5.tar.gz --markdown 20230414/c/connpy/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-14 23:33:38] INFO root fetch - processPackages [unstructured-inference]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-04-14 23:33:38] INFO root fetch - processPackages [tautulli]: Downloading https://files.pythonhosted.org/packages/b5/c0/ec48eba9833531511ebb4f663d12526ec935d26597082b9a13b7510fefa0/tautulli-3.2.1.2120.tar.gz
+[2023-04-14 23:33:38] INFO root fetch - processPackages [astronomer-cosmos]: executing diffoscope
+[2023-04-14 23:33:38] INFO root fetch - processPackages [astronomer-cosmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astronomer_cosmos-0.6.0.tar.gz tmp/astronomer_cosmos-0.6.0.dev0.tar.gz --markdown 20230414/a/astronomer-cosmos/0.6.0-0.6.0.dev0/diff.md --exclude *.pyd
+[2023-04-14 23:33:38] INFO root fetch - processPackages [vesselapi]: Downloading https://files.pythonhosted.org/packages/82/f2/105170d36bec43bbe554de48bf20f0f1727c0db0e62b44a2412f0e180fa6/vesselapi-3.5.2.tar.gz
+[2023-04-14 23:33:38] INFO root fetch - processPackages [tautulli]: executing diffoscope
+[2023-04-14 23:33:38] INFO root fetch - processPackages [tautulli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tautulli-3.2.0.2120.tar.gz tmp/tautulli-3.2.1.2120.tar.gz --markdown 20230414/t/tautulli/3.2.0.2120-3.2.1.2120/diff.md --exclude *.pyd
+[2023-04-14 23:33:38] INFO root fetch - processPackages [vesselapi]: executing diffoscope
+[2023-04-14 23:33:38] INFO root fetch - processPackages [vesselapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vesselapi-3.2.2.tar.gz tmp/vesselapi-3.5.2.tar.gz --markdown 20230414/v/vesselapi/3.2.2-3.5.2/diff.md --exclude *.pyd
+[2023-04-14 23:33:38] INFO root fetch - processPackages [unstructured-inference]: Downloading https://files.pythonhosted.org/packages/88/a8/9f758795c81fbe1e75d24df18b807765bec73b44c744ec4d252ce589294c/unstructured_inference-0.3.2.tar.gz
+[2023-04-14 23:33:38] INFO root fetch - processPackages [unstructured-inference]: Downloading https://files.pythonhosted.org/packages/c9/01/039cec17c7163139a298b6bb7c99264baf3e5e296f903449ee206f0ceb3e/unstructured_inference-0.4.0.tar.gz
+[2023-04-14 23:33:38] INFO root fetch - processPackages [unstructured-inference]: executing diffoscope
+[2023-04-14 23:33:38] INFO root fetch - processPackages [unstructured-inference]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unstructured_inference-0.3.2.tar.gz tmp/unstructured_inference-0.4.0.tar.gz --markdown 20230414/u/unstructured-inference/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-04-14 23:33:39] INFO root fetch - main [MainThread]: End processing [connpy]: success
+[2023-04-14 23:33:40] INFO root fetch - main [MainThread]: End processing [tautulli]: success
+[2023-04-14 23:33:40] INFO root fetch - main [MainThread]: End processing [unstructured-inference]: success
+[2023-04-14 23:33:41] INFO root fetch - main [MainThread]: End processing [vesselapi]: success
+[2023-04-14 23:33:46] INFO root fetch - main [MainThread]: End processing [astronomer-cosmos]: success
+[2023-04-14 23:33:46] INFO root fetch - main [MainThread]: Store serial: [17713118]
