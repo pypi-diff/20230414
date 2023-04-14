@@ -20563,3 +20563,59 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:55:23] INFO root fetch - main [MainThread]: End processing [point-cloud-utils]: success
 [2023-04-14 20:55:26] INFO root fetch - main [MainThread]: End processing [bodo-jupyterlab]: success
 [2023-04-14 20:55:26] INFO root fetch - main [MainThread]: Store serial: [17711899]
+[2023-04-14 21:00:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711899]
+[2023-04-14 21:00:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 21:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ynca
+[2023-04-14 21:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: osmrx
+[2023-04-14 21:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytechnicolor
+[2023-04-14 21:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wodoo
+[2023-04-14 21:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: antimeridian
+[2023-04-14 21:00:34] INFO root fetch - processPackages [pytechnicolor]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-14 21:00:34] INFO root fetch - processPackages [antimeridian]: New version: [0.0.2] Old Version: [0.0.1.post1]
+[2023-04-14 21:00:34] INFO root fetch - processPackages [osmrx]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-04-14 21:00:34] INFO root fetch - processPackages [ynca]: New version: [5.5.0] Old Version: [5.4.0]
+[2023-04-14 21:00:34] INFO root fetch - processPackages [wodoo]: New version: [0.3.99] Old Version: [0.3.96]
+[2023-04-14 21:00:34] INFO root fetch - processPackages [antimeridian]: Downloading https://files.pythonhosted.org/packages/c9/c8/3576e15fa5cdce5bcd3efd782c942170334e4679cf3e2aae5b8b175c86b6/antimeridian-0.0.1.post1.tar.gz
+[2023-04-14 21:00:34] INFO root fetch - processPackages [ynca]: Downloading https://files.pythonhosted.org/packages/ab/01/e7551775d3481be750906e456cafac5c1f821a7119614b050809d1d69801/ynca-5.4.0.tar.gz
+[2023-04-14 21:00:34] INFO root fetch - processPackages [wodoo]: executing diffoscope
+[2023-04-14 21:00:34] INFO root fetch - processPackages [wodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wodoo-0.3.96.tar.gz tmp/wodoo-0.3.99.tar.gz --markdown 20230414/w/wodoo/0.3.96-0.3.99/diff.md --exclude *.pyd
+[2023-04-14 21:00:34] INFO root fetch - processPackages [pytechnicolor]: Downloading https://files.pythonhosted.org/packages/c5/5a/1b2329440112566b2fda67b88c9e3e2fba25cc894ea266a51e3190688d71/pytechnicolor-1.1.8.tar.gz
+[2023-04-14 21:00:34] INFO root fetch - processPackages [osmrx]: Downloading https://files.pythonhosted.org/packages/1e/cd/a5d9632f959e3f625f49b3434a636ab12fe015a7c9a44c45e64fb6916b4f/osmrx-0.0.6.tar.gz
+[2023-04-14 21:00:34] INFO root fetch - processPackages [pytechnicolor]: Downloading https://files.pythonhosted.org/packages/8a/9f/2a93f42d4142f60d6eae1f4a06c5a8de65cf58c5788db7de2bb6709dfe00/pytechnicolor-1.1.9.tar.gz
+[2023-04-14 21:00:34] INFO root fetch - processPackages [ynca]: Downloading https://files.pythonhosted.org/packages/92/0c/d737a36c96fae62de650cd293ae3c21805fec19f770e96b2c760b4ce468e/ynca-5.5.0.tar.gz
+[2023-04-14 21:00:34] INFO root fetch - processPackages [osmrx]: Downloading https://files.pythonhosted.org/packages/6c/e5/adf1e2d7637a653df7e536ca4413e927a9bbdb21cf0f59c4083c1583fa9c/osmrx-0.0.8.tar.gz
+[2023-04-14 21:00:35] INFO root fetch - processPackages [pytechnicolor]: executing diffoscope
+[2023-04-14 21:00:35] INFO root fetch - processPackages [pytechnicolor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytechnicolor-1.1.8.tar.gz tmp/pytechnicolor-1.1.9.tar.gz --markdown 20230414/p/pytechnicolor/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-14 21:00:35] INFO root fetch - processPackages [ynca]: executing diffoscope
+[2023-04-14 21:00:35] INFO root fetch - processPackages [ynca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ynca-5.4.0.tar.gz tmp/ynca-5.5.0.tar.gz --markdown 20230414/y/ynca/5.4.0-5.5.0/diff.md --exclude *.pyd
+[2023-04-14 21:00:35] WARNING root fetch - processPackages [antimeridian]: Skipping package: exceeds size limit 10974238>=10485760
+[2023-04-14 21:00:35] INFO root fetch - processPackages [antimeridian]: Start processing: antimeridian
+[2023-04-14 21:00:35] INFO root fetch - main [MainThread]: End processing [antimeridian] error
+[2023-04-14 21:00:35] INFO root fetch - processPackages [osmrx]: executing diffoscope
+[2023-04-14 21:00:35] INFO root fetch - processPackages [osmrx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osmrx-0.0.6.tar.gz tmp/osmrx-0.0.8.tar.gz --markdown 20230414/o/osmrx/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 21:00:35] INFO root fetch - processPackages [antimeridian]: New version: [0.0.2] Old Version: [0.0.1.post1]
+[2023-04-14 21:00:35] INFO root fetch - processPackages [antimeridian]: Downloading https://files.pythonhosted.org/packages/c9/c8/3576e15fa5cdce5bcd3efd782c942170334e4679cf3e2aae5b8b175c86b6/antimeridian-0.0.1.post1.tar.gz
+[2023-04-14 21:00:35] WARNING root fetch - processPackages [antimeridian]: Skipping package: exceeds size limit 10974238>=10485760
+[2023-04-14 21:00:35] INFO root fetch - processPackages [antimeridian]: Start processing: vollseg
+[2023-04-14 21:00:35] INFO root fetch - main [MainThread]: End processing [antimeridian] error
+[2023-04-14 21:00:35] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-14 21:00:35] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-14 21:00:35] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-14 21:00:35] INFO root fetch - processPackages [vollseg]: Start processing: artemis-common
+[2023-04-14 21:00:35] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-14 21:00:35] INFO root fetch - processPackages [artemis-common]: New version: [0.2.5b0] Old Version: [0.2.4b0]
+[2023-04-14 21:00:36] INFO root fetch - processPackages [pytechnicolor]: Start processing: jumpthegun
+[2023-04-14 21:00:36] INFO root fetch - main [MainThread]: End processing [pytechnicolor]: success
+[2023-04-14 21:00:36] INFO root fetch - processPackages [jumpthegun]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 21:00:36] INFO root fetch - processPackages [artemis-common]: Downloading https://files.pythonhosted.org/packages/2d/7a/14120979461057346a3021a699aa761a21d0cb23308ee20face2bcbb28be/artemis-common-0.2.5b0.tar.gz
+[2023-04-14 21:00:36] INFO root fetch - processPackages [jumpthegun]: Downloading https://files.pythonhosted.org/packages/0f/f9/14f81005bba448c664d61cc91588e939d14dfd661bc02af1eba7a5e7e140/jumpthegun-0.0.4.tar.gz
+[2023-04-14 21:00:36] INFO root fetch - main [MainThread]: End processing [ynca]: success
+[2023-04-14 21:00:36] INFO root fetch - main [MainThread]: End processing [osmrx]: success
+[2023-04-14 21:00:36] INFO root fetch - processPackages [artemis-common]: executing diffoscope
+[2023-04-14 21:00:36] INFO root fetch - processPackages [artemis-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artemis-common-0.2.4b0.tar.gz tmp/artemis-common-0.2.5b0.tar.gz --markdown 20230414/a/artemis-common/0.2.4b0-0.2.5b0/diff.md --exclude *.pyd
+[2023-04-14 21:00:36] INFO root fetch - processPackages [jumpthegun]: executing diffoscope
+[2023-04-14 21:00:36] INFO root fetch - processPackages [jumpthegun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jumpthegun-0.0.3.tar.gz tmp/jumpthegun-0.0.4.tar.gz --markdown 20230414/j/jumpthegun/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 21:00:37] INFO root fetch - main [MainThread]: End processing [artemis-common]: success
+[2023-04-14 21:00:37] INFO root fetch - main [MainThread]: End processing [jumpthegun]: success
+[2023-04-14 21:00:37] INFO root fetch - main [MainThread]: End processing [wodoo]: success
+[2023-04-14 21:00:37] INFO root fetch - main [MainThread]: Store serial: [17711949]
