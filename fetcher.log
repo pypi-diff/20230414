@@ -5881,3 +5881,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 04:00:12] INFO root fetch - main [MainThread]: End processing [qingqiu]: success
 [2023-04-14 04:00:14] INFO root fetch - main [MainThread]: End processing [alibabacloud-dingtalk]: success
 [2023-04-14 04:00:14] INFO root fetch - main [MainThread]: Store serial: [17702415]
+[2023-04-14 04:05:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702415]
+[2023-04-14 04:05:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 04:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alibabacloud-cams20200606-py2
+[2023-04-14 04:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datacula
+[2023-04-14 04:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbt-bigquery
+[2023-04-14 04:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alibabacloud-cams20200606
+[2023-04-14 04:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: htutil
+[2023-04-14 04:05:21] INFO root fetch - processPackages [alibabacloud-cams20200606-py2]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 04:05:21] WARNING root fetch - processPackages [datacula]: Skipping, unable to determine old version
+[2023-04-14 04:05:21] INFO root fetch - processPackages [datacula]: Start processing: headless
+[2023-04-14 04:05:21] INFO root fetch - main [MainThread]: End processing [datacula] error
+[2023-04-14 04:05:21] INFO root fetch - processPackages [alibabacloud-cams20200606]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 04:05:21] INFO root fetch - processPackages [dbt-bigquery]: New version: [1.5.0rc1] Old Version: [1.5.0b4]
+[2023-04-14 04:05:21] INFO root fetch - processPackages [htutil]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-04-14 04:05:21] INFO root fetch - processPackages [headless]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-04-14 04:05:21] INFO root fetch - processPackages [headless]: executing diffoscope
+[2023-04-14 04:05:21] INFO root fetch - processPackages [headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-2.0.0a8.tar.gz tmp/headless-2.0.0a9.tar.gz --markdown 20230414/h/headless/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-04-14 04:05:22] INFO root fetch - processPackages [alibabacloud-cams20200606-py2]: Downloading https://files.pythonhosted.org/packages/25/bd/26318eb6a890bf84438d72e9ca8c848029f9c423a7da0ca236d4f9b4182c/alibabacloud_cams20200606_py2-1.0.8.tar.gz
+[2023-04-14 04:05:22] INFO root fetch - processPackages [alibabacloud-cams20200606]: Downloading https://files.pythonhosted.org/packages/a0/b4/ed840bee76fd6d73392944574b34aa8b25bf3f80947bbd96ab1595c974ef/alibabacloud_cams20200606-1.0.8.tar.gz
+[2023-04-14 04:05:22] INFO root fetch - processPackages [htutil]: Downloading https://files.pythonhosted.org/packages/7d/eb/3445419cd386ba6f534cde5bc730b3671629bdeeaa9667fb362f514bf151/htutil-2.0.0.tar.gz
+[2023-04-14 04:05:22] INFO root fetch - processPackages [dbt-bigquery]: Downloading https://files.pythonhosted.org/packages/aa/ba/422136fc6a56ba669a0a3a721654b3b7ae8abeb37c3e9eb74574b0ea5150/dbt-bigquery-1.5.0b4.tar.gz
+[2023-04-14 04:05:22] INFO root fetch - processPackages [htutil]: Downloading https://files.pythonhosted.org/packages/e5/d9/88bd49ad63595273194f5c038dd212ca2f79291abc481f2ad6877a06b424/htutil-3.0.0.tar.gz
+[2023-04-14 04:05:22] INFO root fetch - processPackages [dbt-bigquery]: Downloading https://files.pythonhosted.org/packages/a9/81/9c0ab4065b1dd17edbf00abc6c528b93da6fbe3a9b9d789bc2af72400e14/dbt-bigquery-1.5.0rc1.tar.gz
+[2023-04-14 04:05:22] INFO root fetch - processPackages [alibabacloud-cams20200606-py2]: Downloading https://files.pythonhosted.org/packages/ba/c2/4dd757284b4ef36279913e9b210bacd5b0d709829e1cfad89cab6abd9fed/alibabacloud_cams20200606_py2-1.0.9.tar.gz
+[2023-04-14 04:05:22] INFO root fetch - processPackages [htutil]: executing diffoscope
+[2023-04-14 04:05:22] INFO root fetch - processPackages [htutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htutil-2.0.0.tar.gz tmp/htutil-3.0.0.tar.gz --markdown 20230414/h/htutil/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-14 04:05:22] INFO root fetch - processPackages [alibabacloud-cams20200606]: Downloading https://files.pythonhosted.org/packages/7f/4b/9e3233a55504d9d86f1667a3df304c163a76ecdf9f7f4500d1d9b7965140/alibabacloud_cams20200606-1.0.9.tar.gz
+[2023-04-14 04:05:22] INFO root fetch - processPackages [dbt-bigquery]: executing diffoscope
+[2023-04-14 04:05:22] INFO root fetch - processPackages [dbt-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-bigquery-1.5.0b4.tar.gz tmp/dbt-bigquery-1.5.0rc1.tar.gz --markdown 20230414/d/dbt-bigquery/1.5.0b4-1.5.0rc1/diff.md --exclude *.pyd
+[2023-04-14 04:05:22] INFO root fetch - processPackages [alibabacloud-cams20200606-py2]: executing diffoscope
+[2023-04-14 04:05:22] INFO root fetch - processPackages [alibabacloud-cams20200606-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_cams20200606_py2-1.0.8.tar.gz tmp/alibabacloud_cams20200606_py2-1.0.9.tar.gz --markdown 20230414/a/alibabacloud-cams20200606-py2/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 04:05:22] INFO root fetch - processPackages [alibabacloud-cams20200606]: executing diffoscope
+[2023-04-14 04:05:22] INFO root fetch - processPackages [alibabacloud-cams20200606]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_cams20200606-1.0.8.tar.gz tmp/alibabacloud_cams20200606-1.0.9.tar.gz --markdown 20230414/a/alibabacloud-cams20200606/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 04:05:23] INFO root fetch - processPackages [htutil]: Start processing: MeUtils
+[2023-04-14 04:05:23] INFO root fetch - main [MainThread]: End processing [htutil]: success
+[2023-04-14 04:05:23] INFO root fetch - processPackages [MeUtils]: New version: [2023.4.6.14.28.33] Old Version: [2023.4.6.14.19.58]
+[2023-04-14 04:05:23] INFO root fetch - main [MainThread]: End processing [alibabacloud-cams20200606-py2]: success
+[2023-04-14 04:05:23] INFO root fetch - main [MainThread]: End processing [headless]: success
+[2023-04-14 04:05:23] INFO root fetch - main [MainThread]: End processing [alibabacloud-cams20200606]: success
+[2023-04-14 04:05:24] INFO root fetch - processPackages [MeUtils]: executing diffoscope
+[2023-04-14 04:05:24] INFO root fetch - processPackages [MeUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeUtils-2023.4.6.14.19.58.tar.gz tmp/MeUtils-2023.4.6.14.28.33.tar.gz --markdown 20230414/M/MeUtils/2023.4.6.14.19.58-2023.4.6.14.28.33/diff.md --exclude *.pyd
+[2023-04-14 04:05:26] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
+[2023-04-14 04:05:30] INFO root fetch - main [MainThread]: End processing [dbt-bigquery]: success
+[2023-04-14 04:05:30] INFO root fetch - main [MainThread]: Store serial: [17702437]
