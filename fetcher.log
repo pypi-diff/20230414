@@ -11184,3 +11184,168 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 11:54:05] INFO root fetch - main [MainThread]: End processing [sqlfluff]: success
 [2023-04-14 11:54:08] INFO root fetch - main [MainThread]: End processing [satnogs-network]: success
 [2023-04-14 11:54:08] INFO root fetch - main [MainThread]: Store serial: [17705591]
+[2023-04-14 11:59:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705591]
+[2023-04-14 11:59:16] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-14 11:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dramatiq-crontab
+[2023-04-14 11:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pandamesh
+[2023-04-14 11:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phpdoc-trans
+[2023-04-14 11:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-l10n-fr-cog
+[2023-04-14 11:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-l10n-fr-das2
+[2023-04-14 11:59:16] WARNING root fetch - processPackages [dramatiq-crontab]: Skipping, unable to determine old version
+[2023-04-14 11:59:16] INFO root fetch - processPackages [dramatiq-crontab]: Start processing: pheno-utils
+[2023-04-14 11:59:16] INFO root fetch - main [MainThread]: End processing [dramatiq-crontab] error
+[2023-04-14 11:59:16] WARNING root fetch - processPackages [odoo-addon-l10n-fr-cog]: Skipping, unable to determine old version
+[2023-04-14 11:59:16] INFO root fetch - processPackages [odoo-addon-l10n-fr-cog]: Start processing: triangularmap
+[2023-04-14 11:59:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-fr-cog] error
+[2023-04-14 11:59:17] INFO root fetch - processPackages [pandamesh]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 11:59:17] INFO root fetch - processPackages [phpdoc-trans]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 11:59:17] WARNING root fetch - processPackages [odoo-addon-l10n-fr-das2]: Skipping, unable to determine old version
+[2023-04-14 11:59:17] INFO root fetch - processPackages [odoo-addon-l10n-fr-das2]: Start processing: statsbombpy
+[2023-04-14 11:59:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-fr-das2] error
+[2023-04-14 11:59:17] INFO root fetch - processPackages [pheno-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 11:59:17] INFO root fetch - processPackages [triangularmap]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-04-14 11:59:17] INFO root fetch - processPackages [statsbombpy]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-14 11:59:17] INFO root fetch - processPackages [pheno-utils]: executing diffoscope
+[2023-04-14 11:59:17] INFO root fetch - processPackages [pheno-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheno-utils-0.0.8.tar.gz tmp/pheno-utils-0.0.9.tar.gz --markdown 20230414/p/pheno-utils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 11:59:17] INFO root fetch - processPackages [pandamesh]: Downloading https://files.pythonhosted.org/packages/c4/82/c41a10c227cce80b4aefb91bed07a774650cf785032ed3b989dc27672297/pandamesh-0.1.1.tar.gz
+[2023-04-14 11:59:17] INFO root fetch - processPackages [phpdoc-trans]: Downloading https://files.pythonhosted.org/packages/cb/93/c080e47885a359f6dea257af6c80a62897044b9828ca9ec8dd997e955a61/phpdoc-trans-0.0.3.tar.gz
+[2023-04-14 11:59:17] INFO root fetch - processPackages [triangularmap]: Downloading https://files.pythonhosted.org/packages/ef/8c/02c212c2f78a63004e5939bd33135142b37981eb1c245a684480367712fa/triangularmap-0.0.3.tar.gz
+[2023-04-14 11:59:17] INFO root fetch - processPackages [statsbombpy]: Downloading https://files.pythonhosted.org/packages/6f/01/f3573654d70f074f270a44a9f0a90fa45cfbef7e50bc97a82d799b2c288f/statsbombpy-1.8.1.tar.gz
+[2023-04-14 11:59:17] INFO root fetch - processPackages [phpdoc-trans]: Downloading https://files.pythonhosted.org/packages/4b/73/abd224750588bf85da94ff119188b273f2f1c92792dd1e1d4cfc519d6bb1/phpdoc-trans-0.0.4.tar.gz
+[2023-04-14 11:59:17] INFO root fetch - processPackages [phpdoc-trans]: executing diffoscope
+[2023-04-14 11:59:17] INFO root fetch - processPackages [phpdoc-trans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phpdoc-trans-0.0.3.tar.gz tmp/phpdoc-trans-0.0.4.tar.gz --markdown 20230414/p/phpdoc-trans/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 11:59:17] INFO root fetch - processPackages [pandamesh]: Downloading https://files.pythonhosted.org/packages/df/d2/46c8fb15a74e3b91d8e8f347201bea519b07c1cc8dc3e77fb7b7ec3fa6b6/pandamesh-0.1.2.tar.gz
+[2023-04-14 11:59:17] INFO root fetch - processPackages [triangularmap]: Downloading https://files.pythonhosted.org/packages/87/f9/6afa203796b2d2c049c529098df6e251438709b18c1b50a9e14d51cec3c9/triangularmap-0.1.0.tar.gz
+[2023-04-14 11:59:17] INFO root fetch - processPackages [pandamesh]: executing diffoscope
+[2023-04-14 11:59:17] INFO root fetch - processPackages [pandamesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandamesh-0.1.1.tar.gz tmp/pandamesh-0.1.2.tar.gz --markdown 20230414/p/pandamesh/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 11:59:17] INFO root fetch - processPackages [statsbombpy]: Downloading https://files.pythonhosted.org/packages/d7/73/b5fdd00854493d7f225d5f24d4648f94f3cad77ddc8d27fe47ac6145dc45/statsbombpy-1.9.0.tar.gz
+[2023-04-14 11:59:17] INFO root fetch - processPackages [triangularmap]: executing diffoscope
+[2023-04-14 11:59:17] INFO root fetch - processPackages [triangularmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triangularmap-0.0.3.tar.gz tmp/triangularmap-0.1.0.tar.gz --markdown 20230414/t/triangularmap/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-04-14 11:59:17] INFO root fetch - processPackages [statsbombpy]: executing diffoscope
+[2023-04-14 11:59:17] INFO root fetch - processPackages [statsbombpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statsbombpy-1.8.1.tar.gz tmp/statsbombpy-1.9.0.tar.gz --markdown 20230414/s/statsbombpy/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-14 11:59:18] INFO root fetch - processPackages [pheno-utils]: Start processing: asimov-gwdata
+[2023-04-14 11:59:18] INFO root fetch - main [MainThread]: End processing [pheno-utils]: success
+[2023-04-14 11:59:18] WARNING root fetch - processPackages [asimov-gwdata]: Skipping, unable to determine old version
+[2023-04-14 11:59:18] INFO root fetch - processPackages [asimov-gwdata]: Start processing: nucleus-driver
+[2023-04-14 11:59:18] INFO root fetch - main [MainThread]: End processing [asimov-gwdata] error
+[2023-04-14 11:59:18] INFO root fetch - processPackages [nucleus-driver]: New version: [1.4.7] Old Version: [1.4.6]
+[2023-04-14 11:59:18] INFO root fetch - processPackages [phpdoc-trans]: Start processing: icetcore
+[2023-04-14 11:59:18] INFO root fetch - main [MainThread]: End processing [phpdoc-trans]: success
+[2023-04-14 11:59:18] INFO root fetch - processPackages [icetcore]: New version: [6.2.9] Old Version: [6.2.8]
+[2023-04-14 11:59:18] INFO root fetch - processPackages [nucleus-driver]: Downloading https://files.pythonhosted.org/packages/78/a0/7fde1af9e0a191754cf78e84e5cfde96a5fce97984a8a54c1189a2783b5c/nucleus_driver-1.4.6.tar.gz
+[2023-04-14 11:59:18] INFO root fetch - processPackages [pandamesh]: Start processing: zninit
+[2023-04-14 11:59:18] INFO root fetch - main [MainThread]: End processing [pandamesh]: success
+[2023-04-14 11:59:18] INFO root fetch - processPackages [zninit]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 11:59:18] INFO root fetch - processPackages [triangularmap]: Start processing: Pyomic
+[2023-04-14 11:59:18] INFO root fetch - main [MainThread]: End processing [triangularmap]: success
+[2023-04-14 11:59:18] INFO root fetch - processPackages [nucleus-driver]: Downloading https://files.pythonhosted.org/packages/8e/75/2ff05ab3afe82467df5e91a757faec95f8bc8c1e79e1fb8c2594856bdf67/nucleus_driver-1.4.7.tar.gz
+[2023-04-14 11:59:18] INFO root fetch - processPackages [Pyomic]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-04-14 11:59:18] INFO root fetch - processPackages [icetcore]: executing diffoscope
+[2023-04-14 11:59:18] INFO root fetch - processPackages [icetcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icetcore-6.2.8-py3-none-any.whl.zip tmp/icetcore-6.2.9.tar.gz --markdown 20230414/i/icetcore/6.2.8-6.2.9/diff.md --exclude *.pyd
+[2023-04-14 11:59:18] INFO root fetch - processPackages [statsbombpy]: Start processing: databutton
+[2023-04-14 11:59:18] INFO root fetch - main [MainThread]: End processing [statsbombpy]: success
+[2023-04-14 11:59:18] INFO root fetch - processPackages [databutton]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-14 11:59:18] INFO root fetch - processPackages [zninit]: Downloading https://files.pythonhosted.org/packages/60/d2/cb892a657cec13b393037af02112edb956c15fa7905094b0384c389769cd/zninit-0.1.8.tar.gz
+[2023-04-14 11:59:18] INFO root fetch - processPackages [nucleus-driver]: executing diffoscope
+[2023-04-14 11:59:18] INFO root fetch - processPackages [nucleus-driver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucleus_driver-1.4.6.tar.gz tmp/nucleus_driver-1.4.7.tar.gz --markdown 20230414/n/nucleus-driver/1.4.6-1.4.7/diff.md --exclude *.pyd
+[2023-04-14 11:59:19] INFO root fetch - processPackages [Pyomic]: Downloading https://files.pythonhosted.org/packages/27/22/b979b98d58f506d1547344cd03a32f2cfde76496337b2c7a029bf7d64b41/Pyomic-1.2.7-py3-none-any.whl
+[2023-04-14 11:59:19] INFO root fetch - processPackages [databutton]: executing diffoscope
+[2023-04-14 11:59:19] INFO root fetch - processPackages [databutton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databutton-0.9.1.tar.gz tmp/databutton-0.9.2.tar.gz --markdown 20230414/d/databutton/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-14 11:59:19] WARNING root fetch - processPackages [Pyomic]: Skipping package: exceeds size limit 15963192>=10485760
+[2023-04-14 11:59:19] INFO root fetch - processPackages [Pyomic]: Start processing: mathtranslate
+[2023-04-14 11:59:19] INFO root fetch - main [MainThread]: End processing [Pyomic] error
+[2023-04-14 11:59:19] INFO root fetch - processPackages [mathtranslate]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-04-14 11:59:19] INFO root fetch - processPackages [zninit]: Downloading https://files.pythonhosted.org/packages/a2/f7/6b82fbf6a0d14cb09ffe3ab56b28e76112f42ca24c56ae90b0841e946667/zninit-0.1.9.tar.gz
+[2023-04-14 11:59:19] INFO root fetch - processPackages [mathtranslate]: executing diffoscope
+[2023-04-14 11:59:19] INFO root fetch - processPackages [mathtranslate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathtranslate-2.1.8.tar.gz tmp/mathtranslate-2.1.9.tar.gz --markdown 20230414/m/mathtranslate/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-04-14 11:59:19] INFO root fetch - processPackages [zninit]: executing diffoscope
+[2023-04-14 11:59:19] INFO root fetch - processPackages [zninit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zninit-0.1.8.tar.gz tmp/zninit-0.1.9.tar.gz --markdown 20230414/z/zninit/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 11:59:19] ERROR root fetch - processPackages [icetcore]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 138, in feeder
+    raise subprocess.CalledProcessError(
+subprocess.CalledProcessError: Command '['zipinfo {}']' returned non-zero exit status 9.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid start byte
+
+[2023-04-14 11:59:19] INFO root fetch - processPackages [icetcore]: Start processing: ocf-datapipes
+[2023-04-14 11:59:19] INFO root fetch - main [MainThread]: End processing [icetcore] error
+[2023-04-14 11:59:19] INFO root fetch - processPackages [ocf-datapipes]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-14 11:59:20] INFO root fetch - main [MainThread]: End processing [nucleus-driver]: success
+[2023-04-14 11:59:20] INFO root fetch - processPackages [ocf-datapipes]: Downloading https://files.pythonhosted.org/packages/a5/4f/6a285e7b9d9685d86c1ec5c435500687d7f2ce1fd46690ed8b614428180e/ocf_datapipes-1.2.8.tar.gz
+[2023-04-14 11:59:20] INFO root fetch - main [MainThread]: End processing [databutton]: success
+[2023-04-14 11:59:20] INFO root fetch - processPackages [ocf-datapipes]: Downloading https://files.pythonhosted.org/packages/5d/e0/2adf28d0e27bcb08200c48623b22c837073925a5635322cdfeb6d4a57358/ocf_datapipes-1.2.9.tar.gz
+[2023-04-14 11:59:20] INFO root fetch - processPackages [ocf-datapipes]: executing diffoscope
+[2023-04-14 11:59:20] INFO root fetch - processPackages [ocf-datapipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocf_datapipes-1.2.8.tar.gz tmp/ocf_datapipes-1.2.9.tar.gz --markdown 20230414/o/ocf-datapipes/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-14 11:59:20] INFO root fetch - main [MainThread]: End processing [zninit]: success
+[2023-04-14 11:59:20] INFO root fetch - main [MainThread]: End processing [mathtranslate]: success
+[2023-04-14 11:59:22] INFO root fetch - main [MainThread]: End processing [ocf-datapipes]: success
+[2023-04-14 11:59:22] INFO root fetch - main [MainThread]: Store serial: [17705648]
