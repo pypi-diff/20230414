@@ -12953,3 +12953,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 14:04:32] INFO root fetch - main [MainThread]: End processing [ert]: success
 [2023-04-14 14:04:33] INFO root fetch - main [MainThread]: End processing [mixturemapping]: success
 [2023-04-14 14:04:33] INFO root fetch - main [MainThread]: Store serial: [17706765]
+[2023-04-14 14:09:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706765]
+[2023-04-14 14:09:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 14:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mac-cleanup
+[2023-04-14 14:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wwpdb.io
+[2023-04-14 14:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ifd-python
+[2023-04-14 14:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gptwrite
+[2023-04-14 14:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hb-test-generator
+[2023-04-14 14:09:43] INFO root fetch - processPackages [mac-cleanup]: New version: [3.0.0] Old Version: [2.2.5]
+[2023-04-14 14:09:43] INFO root fetch - processPackages [ifd-python]: New version: [7.4] Old Version: [7.3]
+[2023-04-14 14:09:43] INFO root fetch - processPackages [hb-test-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 14:09:43] WARNING root fetch - processPackages [gptwrite]: Skipping, unable to determine old version
+[2023-04-14 14:09:43] INFO root fetch - processPackages [gptwrite]: Start processing: test-23234231
+[2023-04-14 14:09:43] INFO root fetch - main [MainThread]: End processing [gptwrite] error
+[2023-04-14 14:09:43] INFO root fetch - processPackages [wwpdb.io]: New version: [0.28] Old Version: [0.27]
+[2023-04-14 14:09:43] INFO root fetch - processPackages [test-23234231]: New version: [10] Old Version: [0.9]
+[2023-04-14 14:09:43] INFO root fetch - processPackages [mac-cleanup]: executing diffoscope
+[2023-04-14 14:09:43] INFO root fetch - processPackages [mac-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mac_cleanup-2.2.5.tar.gz tmp/mac_cleanup-3.0.0.tar.gz --markdown 20230414/m/mac-cleanup/2.2.5-3.0.0/diff.md --exclude *.pyd
+[2023-04-14 14:09:43] INFO root fetch - processPackages [hb-test-generator]: executing diffoscope
+[2023-04-14 14:09:43] INFO root fetch - processPackages [hb-test-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hb-test-generator-0.1.8.tar.gz tmp/hb-test-generator-0.1.9.tar.gz --markdown 20230414/h/hb-test-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 14:09:43] INFO root fetch - processPackages [test-23234231]: Downloading https://files.pythonhosted.org/packages/09/b8/dcb861c3cdf23572e606eb6595a65ebc11bfc11853b6fc5555d6a0518f39/test_23234231-0.9.tar.gz
+[2023-04-14 14:09:43] INFO root fetch - processPackages [wwpdb.io]: Downloading https://files.pythonhosted.org/packages/d0/eb/f3a9f16731e088a3c698cec7949c630a999accfc38e550dec9484b34d723/wwpdb.io-0.27.tar.gz
+[2023-04-14 14:09:43] INFO root fetch - processPackages [ifd-python]: Downloading https://files.pythonhosted.org/packages/0d/0c/43e7a1727b38e43080a75d0f96451306a166f026e27c932e77d8f848cf93/ifd_python-7.4.tar.gz
+[2023-04-14 14:09:43] INFO root fetch - processPackages [ifd-python]: executing diffoscope
+[2023-04-14 14:09:43] INFO root fetch - processPackages [ifd-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifd_python-7.3.tar.gz tmp/ifd_python-7.4.tar.gz --markdown 20230414/i/ifd-python/7.3-7.4/diff.md --exclude *.pyd
+[2023-04-14 14:09:44] INFO root fetch - processPackages [wwpdb.io]: Downloading https://files.pythonhosted.org/packages/ff/e8/60f006eb47c65fbad8100a1fe2afbc2212cefecdea3d994c63e8ac46329f/wwpdb.io-0.28.tar.gz
+[2023-04-14 14:09:44] INFO root fetch - processPackages [test-23234231]: Downloading https://files.pythonhosted.org/packages/58/4c/15419f4273636f1283612e18a4fd330a3fbdfd8519b83fcbcafb968ae7a7/test_23234231-10.tar.gz
+[2023-04-14 14:09:44] INFO root fetch - processPackages [wwpdb.io]: executing diffoscope
+[2023-04-14 14:09:44] INFO root fetch - processPackages [wwpdb.io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.io-0.27.tar.gz tmp/wwpdb.io-0.28.tar.gz --markdown 20230414/w/wwpdb.io/0.27-0.28/diff.md --exclude *.pyd
+[2023-04-14 14:09:44] INFO root fetch - processPackages [test-23234231]: executing diffoscope
+[2023-04-14 14:09:44] INFO root fetch - processPackages [test-23234231]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_23234231-0.9.tar.gz tmp/test_23234231-10.tar.gz --markdown 20230414/t/test-23234231/0.9-10/diff.md --exclude *.pyd
+[2023-04-14 14:09:44] INFO root fetch - processPackages [mac-cleanup]: Start processing: text2mapviewer
+[2023-04-14 14:09:44] INFO root fetch - main [MainThread]: End processing [mac-cleanup]: success
+[2023-04-14 14:09:44] INFO root fetch - processPackages [text2mapviewer]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 14:09:44] INFO root fetch - processPackages [hb-test-generator]: Start processing: test-23234231
+[2023-04-14 14:09:44] INFO root fetch - main [MainThread]: End processing [hb-test-generator]: success
+[2023-04-14 14:09:44] INFO root fetch - processPackages [test-23234231]: New version: [10] Old Version: [0.9]
+[2023-04-14 14:09:44] INFO root fetch - processPackages [test-23234231]: executing diffoscope
+[2023-04-14 14:09:44] INFO root fetch - processPackages [test-23234231]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_23234231-0.9.tar.gz tmp/test_23234231-10.tar.gz --markdown 20230414/t/test-23234231/0.9-10/diff.md --exclude *.pyd
+[2023-04-14 14:09:44] INFO root fetch - processPackages [text2mapviewer]: Downloading https://files.pythonhosted.org/packages/a4/b9/5899e4cc4db302f6f2f37d78694094753cfa212e136d86f18389403026c3/text2mapviewer-0.2.2.tar.gz
+[2023-04-14 14:09:45] INFO root fetch - main [MainThread]: End processing [ifd-python]: success
+[2023-04-14 14:09:45] INFO root fetch - processPackages [text2mapviewer]: executing diffoscope
+[2023-04-14 14:09:45] INFO root fetch - processPackages [text2mapviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2mapviewer-0.2.1.tar.gz tmp/text2mapviewer-0.2.2.tar.gz --markdown 20230414/t/text2mapviewer/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 14:09:45] INFO root fetch - main [MainThread]: End processing [wwpdb.io]: success
+[2023-04-14 14:09:46] INFO root fetch - main [MainThread]: End processing [text2mapviewer]: success
+[2023-04-14 14:09:46] INFO root fetch - main [MainThread]: End processing [test-23234231]: success
+[2023-04-14 14:09:52] INFO root fetch - main [MainThread]: End processing [test-23234231]: success
+[2023-04-14 14:09:52] INFO root fetch - main [MainThread]: Store serial: [17706788]
