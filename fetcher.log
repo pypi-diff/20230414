@@ -21249,3 +21249,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 21:43:12] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-04-14 21:43:12] INFO root fetch - main [MainThread]: End processing [bycon]: success
 [2023-04-14 21:43:12] INFO root fetch - main [MainThread]: Store serial: [17712264]
+[2023-04-14 21:48:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712264]
+[2023-04-14 21:48:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-14 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otree
+[2023-04-14 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: songbird-py
+[2023-04-14 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-confluentcloud
+[2023-04-14 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quantconnect-stubs
+[2023-04-14 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: np-workflows
+[2023-04-14 21:48:20] INFO root fetch - processPackages [np-workflows]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-14 21:48:20] INFO root fetch - processPackages [otree]: New version: [6.0.0a5] Old Version: [6.0.0a4]
+[2023-04-14 21:48:20] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2023-04-14 21:48:20] INFO root fetch - processPackages [songbird-py]: New version: [0.1.9] Old Version: [0.1.7]
+[2023-04-14 21:48:20] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-14 21:48:20] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-14 21:48:20] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230414/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-14 21:48:20] INFO root fetch - processPackages [songbird-py]: Downloading https://files.pythonhosted.org/packages/ac/89/f5fa9cd3644cdd9d889103d768a648e34c2507b76833f19939802896e068/songbird_py-0.1.7.tar.gz
+[2023-04-14 21:48:20] INFO root fetch - processPackages [otree]: Downloading https://files.pythonhosted.org/packages/0a/2f/4d27835b09abd1ede3f08939b564b0fddd2fce263cdeba08339979cacfae/otree-6.0.0a4.tar.gz
+[2023-04-14 21:48:21] INFO root fetch - processPackages [np-workflows]: executing diffoscope
+[2023-04-14 21:48:21] INFO root fetch - processPackages [np-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_workflows-1.4.8.tar.gz tmp/np_workflows-1.4.9.tar.gz --markdown 20230414/n/np-workflows/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-14 21:48:21] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2023-04-14 21:48:21] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20230414/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/diff.md --exclude *.pyd
+[2023-04-14 21:48:21] INFO root fetch - processPackages [otree]: Downloading https://files.pythonhosted.org/packages/84/67/5a8a75e2d1639bf8fad86f06add3328598a2b529fc4b8eda7b12cbcfe896/otree-6.0.0a5.tar.gz
+[2023-04-14 21:48:21] INFO root fetch - processPackages [songbird-py]: Downloading https://files.pythonhosted.org/packages/e9/d9/7ff3fada06c4f73e32ceb1aa6d7cb7b890691fb495316a7449b6bdf8e21b/songbird_py-0.1.9.tar.gz
+[2023-04-14 21:48:21] INFO root fetch - processPackages [otree]: executing diffoscope
+[2023-04-14 21:48:21] INFO root fetch - processPackages [otree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otree-6.0.0a4.tar.gz tmp/otree-6.0.0a5.tar.gz --markdown 20230414/o/otree/6.0.0a4-6.0.0a5/diff.md --exclude *.pyd
+[2023-04-14 21:48:21] INFO root fetch - processPackages [songbird-py]: executing diffoscope
+[2023-04-14 21:48:21] INFO root fetch - processPackages [songbird-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/songbird_py-0.1.7.tar.gz tmp/songbird_py-0.1.9.tar.gz --markdown 20230414/s/songbird-py/0.1.7-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 21:48:22] INFO root fetch - processPackages [np-workflows]: Start processing: sphinx-gallery
+[2023-04-14 21:48:22] INFO root fetch - main [MainThread]: End processing [np-workflows]: success
+[2023-04-14 21:48:22] INFO root fetch - processPackages [sphinx-gallery]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-14 21:48:22] INFO root fetch - processPackages [sphinx-gallery]: Downloading https://files.pythonhosted.org/packages/fd/34/b1af6e736c7660792d1a9064696a7bb2c606c58ed122c5d00a6bce765d33/sphinx-gallery-0.8.2.tar.gz
+[2023-04-14 21:48:22] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2023-04-14 21:48:22] INFO root fetch - main [MainThread]: End processing [songbird-py]: success
+[2023-04-14 21:48:23] INFO root fetch - main [MainThread]: End processing [otree]: success
+[2023-04-14 21:48:23] INFO root fetch - processPackages [sphinx-gallery]: Downloading https://files.pythonhosted.org/packages/40/6e/c494d573669eb6a581d7c270b7efd9c1244086f818b9a6e767d6a2adfeda/sphinx-gallery-0.9.0.tar.gz
+[2023-04-14 21:48:25] INFO root fetch - processPackages [sphinx-gallery]: executing diffoscope
+[2023-04-14 21:48:25] INFO root fetch - processPackages [sphinx-gallery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-gallery-0.8.2.tar.gz tmp/sphinx-gallery-0.9.0.tar.gz --markdown 20230414/s/sphinx-gallery/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 21:48:27] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-04-14 21:48:30] INFO root fetch - main [MainThread]: End processing [sphinx-gallery]: success
+[2023-04-14 21:48:30] INFO root fetch - main [MainThread]: Store serial: [17712294]
