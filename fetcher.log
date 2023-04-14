@@ -10653,3 +10653,113 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 11:27:15] INFO root fetch - main [MainThread]: End processing [openscap-report]: success
 [2023-04-14 11:27:37] INFO root fetch - main [MainThread]: End processing [scitools-iris]: success
 [2023-04-14 11:27:37] INFO root fetch - main [MainThread]: Store serial: [17705256]
+[2023-04-14 11:32:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705256]
+[2023-04-14 11:32:45] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-14 11:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uygavazifa123
+[2023-04-14 11:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slurm-mongo
+[2023-04-14 11:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: preprocessing-pgp
+[2023-04-14 11:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yourtools
+[2023-04-14 11:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: catprompt
+[2023-04-14 11:32:45] INFO root fetch - processPackages [catprompt]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 11:32:45] WARNING root fetch - processPackages [slurm-mongo]: Skipping, unable to determine old version
+[2023-04-14 11:32:45] INFO root fetch - processPackages [slurm-mongo]: Start processing: fake-bge-module-latest
+[2023-04-14 11:32:45] INFO root fetch - main [MainThread]: End processing [slurm-mongo] error
+[2023-04-14 11:32:45] INFO root fetch - processPackages [yourtools]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-14 11:32:45] WARNING root fetch - processPackages [uygavazifa123]: Skipping, unable to determine old version
+[2023-04-14 11:32:45] INFO root fetch - processPackages [uygavazifa123]: Start processing: nkdv
+[2023-04-14 11:32:45] INFO root fetch - main [MainThread]: End processing [uygavazifa123] error
+[2023-04-14 11:32:45] INFO root fetch - processPackages [preprocessing-pgp]: New version: [0.2.9.dev4] Old Version: [0.2.9.dev3]
+[2023-04-14 11:32:45] INFO root fetch - processPackages [fake-bge-module-latest]: New version: [20230414] Old Version: [20230413]
+[2023-04-14 11:32:45] INFO root fetch - processPackages [nkdv]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 11:32:46] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/dc/48/a0996beff858f218a424787d48c5a504a9dc1e9fc9d9d1cdf27fa1a50170/yourtools-0.4.6.tar.gz
+[2023-04-14 11:32:46] INFO root fetch - processPackages [catprompt]: Downloading https://files.pythonhosted.org/packages/59/f9/9178cb11707de0d851f5a9f1018ccceb7d7009f8667b89cc4b77d8f2d434/catprompt-0.0.1.tar.gz
+[2023-04-14 11:32:46] INFO root fetch - processPackages [preprocessing-pgp]: Downloading https://files.pythonhosted.org/packages/0a/3a/a18bfe4b7c2ea52efb3e5350ce00fab2e86b2d7b9c2e9bcfef906abcb608/preprocessing-pgp-0.2.9.dev3.tar.gz
+[2023-04-14 11:32:46] INFO root fetch - processPackages [nkdv]: Downloading https://files.pythonhosted.org/packages/59/60/50ffff7e99b926fd6a8726dda599673fd114c4cec38dc979669de5dccd57/nkdv-0.0.5.tar.gz
+[2023-04-14 11:32:46] INFO root fetch - processPackages [fake-bge-module-latest]: Downloading https://files.pythonhosted.org/packages/8e/b6/d95316e21bbdfa4980fdc44561de3dd06a2054867c2a7f6c55f6bf0bedb2/fake-bge-module-latest-20230414.tar.gz
+[2023-04-14 11:32:46] WARNING root fetch - processPackages [preprocessing-pgp]: Skipping package: exceeds size limit 78856708>=10485760
+[2023-04-14 11:32:46] INFO root fetch - processPackages [preprocessing-pgp]: Start processing: mage-ai
+[2023-04-14 11:32:46] INFO root fetch - main [MainThread]: End processing [preprocessing-pgp] error
+[2023-04-14 11:32:46] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-14 11:32:46] INFO root fetch - processPackages [catprompt]: Downloading https://files.pythonhosted.org/packages/41/cd/01185f95e82a0a42d272abd5205685c1bb17f31c5eaa343a72b7a088ff5b/catprompt-0.0.2.tar.gz
+[2023-04-14 11:32:46] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/ea/39/969160667b3f89522c9cf1d61526a2a9fafb0b8d17e6878b13d090732e74/yourtools-0.4.7.tar.gz
+[2023-04-14 11:32:46] INFO root fetch - processPackages [fake-bge-module-latest]: executing diffoscope
+[2023-04-14 11:32:46] INFO root fetch - processPackages [fake-bge-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bge-module-latest-20230413.tar.gz tmp/fake-bge-module-latest-20230414.tar.gz --markdown 20230414/f/fake-bge-module-latest/20230413-20230414/diff.md --exclude *.pyd
+[2023-04-14 11:32:46] INFO root fetch - processPackages [nkdv]: Downloading https://files.pythonhosted.org/packages/8f/fd/d8c24fd0aa16f9d638866c21e4efd2d4d99fc7aa1ee6fc9119151223a32f/nkdv-0.0.6.tar.gz
+[2023-04-14 11:32:46] INFO root fetch - processPackages [catprompt]: executing diffoscope
+[2023-04-14 11:32:46] INFO root fetch - processPackages [catprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/catprompt-0.0.1.tar.gz tmp/catprompt-0.0.2.tar.gz --markdown 20230414/c/catprompt/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 11:32:46] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-14 11:32:46] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.4.6.tar.gz tmp/yourtools-0.4.7.tar.gz --markdown 20230414/y/yourtools/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-14 11:32:46] INFO root fetch - processPackages [nkdv]: executing diffoscope
+[2023-04-14 11:32:46] INFO root fetch - processPackages [nkdv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkdv-0.0.5.tar.gz tmp/nkdv-0.0.6.tar.gz --markdown 20230414/n/nkdv/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 11:32:46] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-04-14 11:32:46] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230414/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-14 11:32:47] INFO root fetch - processPackages [catprompt]: Start processing: claspy
+[2023-04-14 11:32:47] INFO root fetch - main [MainThread]: End processing [catprompt]: success
+[2023-04-14 11:32:47] INFO root fetch - processPackages [claspy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 11:32:47] INFO root fetch - processPackages [yourtools]: Start processing: collective.mailchimp
+[2023-04-14 11:32:47] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-14 11:32:47] INFO root fetch - processPackages [collective.mailchimp]: New version: [4.0.0a1] Old Version: [3.1.1]
+[2023-04-14 11:32:48] INFO root fetch - processPackages [collective.mailchimp]: Downloading https://files.pythonhosted.org/packages/b7/9b/5ccef686863a837035e8bd6b2a7bbb5c498e937a6cd88d47d7b3290e13a2/collective.mailchimp-4.0.0a1.tar.gz
+[2023-04-14 11:32:48] INFO root fetch - processPackages [claspy]: Downloading https://files.pythonhosted.org/packages/e1/ca/0ae36ba3639278a15db223747a25d187cea6e1f1af40ae868bc368dac27f/claspy-0.1.9.tar.gz
+[2023-04-14 11:32:48] INFO root fetch - processPackages [collective.mailchimp]: executing diffoscope
+[2023-04-14 11:32:48] INFO root fetch - processPackages [collective.mailchimp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/collective.mailchimp-3.1.1.tar.gz tmp/collective.mailchimp-4.0.0a1.tar.gz --markdown 20230414/c/collective.mailchimp/3.1.1-4.0.0a1/diff.md --exclude *.pyd
+[2023-04-14 11:32:48] INFO root fetch - processPackages [claspy]: executing diffoscope
+[2023-04-14 11:32:48] INFO root fetch - processPackages [claspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/claspy-0.1.8.tar.gz tmp/claspy-0.1.9.tar.gz --markdown 20230414/c/claspy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 11:32:49] INFO root fetch - processPackages [claspy]: Start processing: jupyterlab-nbgallery
+[2023-04-14 11:32:49] INFO root fetch - main [MainThread]: End processing [claspy]: success
+[2023-04-14 11:32:49] INFO root fetch - processPackages [jupyterlab-nbgallery]: New version: [2.0.0a4] Old Version: [2.0.0a3]
+[2023-04-14 11:32:49] INFO root fetch - processPackages [jupyterlab-nbgallery]: Downloading https://files.pythonhosted.org/packages/4a/f7/0783bc9d2146a6306f1b9e25b2ad0fd2d64bd7b545e0567877851abf4f05/jupyterlab_nbgallery-2.0.0a3.tar.gz
+[2023-04-14 11:32:49] INFO root fetch - processPackages [collective.mailchimp]: Start processing: pymeos
+[2023-04-14 11:32:49] INFO root fetch - main [MainThread]: End processing [collective.mailchimp]: success
+[2023-04-14 11:32:49] INFO root fetch - processPackages [pymeos]: New version: [1.2.0a1] Old Version: [1.2.0a0]
+[2023-04-14 11:32:49] INFO root fetch - processPackages [pymeos]: Downloading https://files.pythonhosted.org/packages/24/de/4e5e38562bc48229892f41ad7f2e561e10c08195b63c5b8aca05afbaa26b/pymeos-1.2.0a0.tar.gz
+[2023-04-14 11:32:49] INFO root fetch - processPackages [jupyterlab-nbgallery]: Downloading https://files.pythonhosted.org/packages/b7/26/3d9a4414fc5107469991d423ff006d4a84a6ad9aacb95a092d93be93bfe6/jupyterlab_nbgallery-2.0.0a4.tar.gz
+[2023-04-14 11:32:50] INFO root fetch - processPackages [jupyterlab-nbgallery]: executing diffoscope
+[2023-04-14 11:32:50] INFO root fetch - processPackages [jupyterlab-nbgallery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_nbgallery-2.0.0a3.tar.gz tmp/jupyterlab_nbgallery-2.0.0a4.tar.gz --markdown 20230414/j/jupyterlab-nbgallery/2.0.0a3-2.0.0a4/diff.md --exclude *.pyd
+[2023-04-14 11:32:50] INFO root fetch - processPackages [pymeos]: Downloading https://files.pythonhosted.org/packages/5f/3a/ad05aff7e68911ae7c73edb9a93f86ee12262687095269e473ff74cbad72/pymeos-1.2.0a1.tar.gz
+[2023-04-14 11:32:50] INFO root fetch - processPackages [pymeos]: executing diffoscope
+[2023-04-14 11:32:50] INFO root fetch - processPackages [pymeos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymeos-1.2.0a0.tar.gz tmp/pymeos-1.2.0a1.tar.gz --markdown 20230414/p/pymeos/1.2.0a0-1.2.0a1/diff.md --exclude *.pyd
+[2023-04-14 11:32:51] INFO root fetch - processPackages [pymeos]: Start processing: yourtools
+[2023-04-14 11:32:51] INFO root fetch - main [MainThread]: End processing [pymeos]: success
+[2023-04-14 11:32:51] INFO root fetch - processPackages [yourtools]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-14 11:32:51] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-14 11:32:51] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.4.6.tar.gz tmp/yourtools-0.4.7.tar.gz --markdown 20230414/y/yourtools/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-14 11:32:52] INFO root fetch - processPackages [yourtools]: Start processing: allianceauth-corptools
+[2023-04-14 11:32:52] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-14 11:32:52] INFO root fetch - processPackages [allianceauth-corptools]: New version: [2.5.4] Old Version: [2.5.3]
+[2023-04-14 11:32:52] INFO root fetch - processPackages [allianceauth-corptools]: Downloading https://files.pythonhosted.org/packages/ce/ea/b8adc3e353a1b91d63736810eb3a4318723046477c2f70ebac9a44397716/allianceauth-corptools-2.5.3.tar.gz
+[2023-04-14 11:32:53] INFO root fetch - processPackages [allianceauth-corptools]: Downloading https://files.pythonhosted.org/packages/83/e5/98d982c0b116ceca6d4e245f12dab453b4e251c0bd5dcca0096e6dbd93a6/allianceauth-corptools-2.5.4.tar.gz
+[2023-04-14 11:32:53] INFO root fetch - processPackages [allianceauth-corptools]: executing diffoscope
+[2023-04-14 11:32:53] INFO root fetch - processPackages [allianceauth-corptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allianceauth-corptools-2.5.3.tar.gz tmp/allianceauth-corptools-2.5.4.tar.gz --markdown 20230414/a/allianceauth-corptools/2.5.3-2.5.4/diff.md --exclude *.pyd
+[2023-04-14 11:32:54] INFO root fetch - processPackages [fake-bge-module-latest]: Start processing: webshoter
+[2023-04-14 11:32:54] INFO root fetch - main [MainThread]: End processing [fake-bge-module-latest]: success
+[2023-04-14 11:32:54] INFO root fetch - processPackages [webshoter]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 11:32:55] INFO root fetch - processPackages [webshoter]: Downloading https://files.pythonhosted.org/packages/25/d7/d4b5419ee00b3275959a29e9ed2b7f1028e5cf7eafd3b51dbe185e897fcb/webshoter-1.0.2.tar.gz
+[2023-04-14 11:32:55] INFO root fetch - processPackages [webshoter]: executing diffoscope
+[2023-04-14 11:32:55] INFO root fetch - processPackages [webshoter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webshoter-1.0.1.tar.gz tmp/webshoter-1.0.2.tar.gz --markdown 20230414/w/webshoter/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 11:32:56] INFO root fetch - processPackages [allianceauth-corptools]: Start processing: wizata-dsapi
+[2023-04-14 11:32:56] INFO root fetch - main [MainThread]: End processing [allianceauth-corptools]: success
+[2023-04-14 11:32:56] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 11:32:56] INFO root fetch - processPackages [webshoter]: Start processing: pyxllib
+[2023-04-14 11:32:56] INFO root fetch - main [MainThread]: End processing [webshoter]: success
+[2023-04-14 11:32:56] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-14 11:32:56] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230414/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 11:32:56] INFO root fetch - processPackages [pyxllib]: New version: [0.3.9] Old Version: [0.3.8.1]
+[2023-04-14 11:32:56] INFO root fetch - processPackages [pyxllib]: executing diffoscope
+[2023-04-14 11:32:56] INFO root fetch - processPackages [pyxllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxllib-0.3.8.1.tar.gz tmp/pyxllib-0.3.9.tar.gz --markdown 20230414/p/pyxllib/0.3.8.1-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 11:32:56] INFO root fetch - processPackages [jupyterlab-nbgallery]: Start processing: kupala
+[2023-04-14 11:32:56] INFO root fetch - main [MainThread]: End processing [jupyterlab-nbgallery]: success
+[2023-04-14 11:32:56] INFO root fetch - processPackages [kupala]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-14 11:32:57] INFO root fetch - processPackages [kupala]: Downloading https://files.pythonhosted.org/packages/87/2d/58627c5e7d61b26e945da790c934023755d3cfb7a262aa32c527d85b7791/kupala-0.9.7.tar.gz
+[2023-04-14 11:32:57] INFO root fetch - processPackages [wizata-dsapi]: Start processing: cmip
+[2023-04-14 11:32:57] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-04-14 11:32:57] WARNING root fetch - processPackages [cmip]: Skipping, unable to determine old version
+[2023-04-14 11:32:57] INFO root fetch - main [MainThread]: End processing [cmip] error
+[2023-04-14 11:32:57] INFO root fetch - processPackages [kupala]: Downloading https://files.pythonhosted.org/packages/2b/ff/71f5fe012d28288b25985925aa86802592d3336db060a512e9f34a81561d/kupala-0.9.8.tar.gz
+[2023-04-14 11:32:58] INFO root fetch - processPackages [kupala]: executing diffoscope
+[2023-04-14 11:32:58] INFO root fetch - processPackages [kupala]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kupala-0.9.7.tar.gz tmp/kupala-0.9.8.tar.gz --markdown 20230414/k/kupala/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-14 11:32:58] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-04-14 11:32:58] INFO root fetch - main [MainThread]: End processing [nkdv]: success
+[2023-04-14 11:32:59] INFO root fetch - main [MainThread]: End processing [kupala]: success
+[2023-04-14 11:32:59] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
+[2023-04-14 11:32:59] INFO root fetch - main [MainThread]: Store serial: [17705315]
