@@ -6696,3 +6696,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 05:26:51] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
 [2023-04-14 05:27:05] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
 [2023-04-14 05:27:05] INFO root fetch - main [MainThread]: Store serial: [17702903]
+[2023-04-14 05:32:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702903]
+[2023-04-14 05:32:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 05:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adsb-tools
+[2023-04-14 05:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: systems-manager
+[2023-04-14 05:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: azure-mgmt-eventhub
+[2023-04-14 05:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastdup
+[2023-04-14 05:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pmcx
+[2023-04-14 05:32:13] INFO root fetch - processPackages [azure-mgmt-eventhub]: New version: [9.1.0] Old Version: [9.0.0]
+[2023-04-14 05:32:13] INFO root fetch - processPackages [adsb-tools]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 05:32:13] INFO root fetch - processPackages [fastdup]: New version: [0.917] Old Version: [0.916]
+[2023-04-14 05:32:13] INFO root fetch - processPackages [pmcx]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 05:32:13] INFO root fetch - processPackages [systems-manager]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-14 05:32:13] INFO root fetch - processPackages [systems-manager]: Downloading https://files.pythonhosted.org/packages/0d/55/defce0f004e3f87a54775d51275414acce58520b9cbcca6900a2244e0ab8/systems_manager-0.7.0-py2.py3-none-any.whl
+[2023-04-14 05:32:13] INFO root fetch - processPackages [azure-mgmt-eventhub]: Downloading https://files.pythonhosted.org/packages/a2/08/cc881cb05f016bcf0326f71eeefa0a94fa3e37f2f90182428d764c2ef7e2/azure-mgmt-eventhub-9.0.0.zip
+[2023-04-14 05:32:14] INFO root fetch - processPackages [fastdup]: Downloading https://files.pythonhosted.org/packages/4d/0b/4737df981694f3715653f88a3332bd34f69811ad4d2536e16fb1113670ea/fastdup-0.916-cp39-cp39-macosx_11_0_arm64.whl
+[2023-04-14 05:32:14] INFO root fetch - processPackages [pmcx]: Downloading https://files.pythonhosted.org/packages/cd/d1/294927be534ca277a9eccdae0028a58c44a7a10476d8e5f19f094243346e/pmcx-0.0.8-pp39-pypy39_pp73-win_amd64.whl
+[2023-04-14 05:32:14] WARNING root fetch - processPackages [fastdup]: Skipping package: exceeds size limit 32808048>=10485760
+[2023-04-14 05:32:14] INFO root fetch - processPackages [fastdup]: Start processing: odoo12-addon-product-contract
+[2023-04-14 05:32:14] INFO root fetch - main [MainThread]: End processing [fastdup] error
+[2023-04-14 05:32:14] INFO root fetch - processPackages [odoo12-addon-product-contract]: New version: [12.0.5.3.1.99.dev2] Old Version: [12.0.5.3.1.99.dev1]
+[2023-04-14 05:32:14] INFO root fetch - processPackages [adsb-tools]: executing diffoscope
+[2023-04-14 05:32:14] INFO root fetch - processPackages [adsb-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adsb_tools-0.1.8.tar.gz tmp/adsb_tools-0.1.9.tar.gz --markdown 20230414/a/adsb-tools/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 05:32:14] INFO root fetch - processPackages [systems-manager]: Downloading https://files.pythonhosted.org/packages/0a/9f/637250b3c42b63a59c45de07eb90853ea0958cb78d0d043b573838e73584/systems_manager-0.8.0-py2.py3-none-any.whl
+[2023-04-14 05:32:14] INFO root fetch - processPackages [odoo12-addon-product-contract]: Downloading https://files.pythonhosted.org/packages/74/1e/25f5da725052d5446d99ead388e784401d50ec6a7ef0e1f9c709095bc766/odoo12_addon_product_contract-12.0.5.3.1.99.dev1-py3-none-any.whl
+[2023-04-14 05:32:14] INFO root fetch - processPackages [azure-mgmt-eventhub]: Downloading https://files.pythonhosted.org/packages/54/b4/08f5234f7453e3671ba8005d4aa36cf9aac34b16c82ad477194424dac628/azure-mgmt-eventhub-9.1.0.zip
+[2023-04-14 05:32:14] INFO root fetch - processPackages [systems-manager]: executing diffoscope
+[2023-04-14 05:32:14] INFO root fetch - processPackages [systems-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systems_manager-0.7.0-py2.py3-none-any.whl.zip tmp/systems_manager-0.8.0-py2.py3-none-any.whl.zip --markdown 20230414/s/systems-manager/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-14 05:32:14] INFO root fetch - processPackages [azure-mgmt-eventhub]: executing diffoscope
+[2023-04-14 05:32:14] INFO root fetch - processPackages [azure-mgmt-eventhub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-mgmt-eventhub-9.0.0.zip tmp/azure-mgmt-eventhub-9.1.0.zip --markdown 20230414/a/azure-mgmt-eventhub/9.0.0-9.1.0/diff.md --exclude *.pyd
+[2023-04-14 05:32:14] INFO root fetch - processPackages [odoo12-addon-product-contract]: Downloading https://files.pythonhosted.org/packages/b7/4c/433b5976318a76960059eb05d1208e07f4f0ff36c1ffc392756d7c555388/odoo12_addon_product_contract-12.0.5.3.1.99.dev2-py3-none-any.whl
+[2023-04-14 05:32:14] INFO root fetch - processPackages [odoo12-addon-product-contract]: executing diffoscope
+[2023-04-14 05:32:14] INFO root fetch - processPackages [odoo12-addon-product-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_product_contract-12.0.5.3.1.99.dev1-py3-none-any.whl.zip tmp/odoo12_addon_product_contract-12.0.5.3.1.99.dev2-py3-none-any.whl.zip --markdown 20230414/o/odoo12-addon-product-contract/12.0.5.3.1.99.dev1-12.0.5.3.1.99.dev2/diff.md --exclude *.pyd
+[2023-04-14 05:32:15] INFO root fetch - processPackages [pmcx]: Downloading https://files.pythonhosted.org/packages/de/b9/e06c4e88e30710ffb8b086a27887b4ff822c9aaab9b97c97d815ed8be511/pmcx-0.0.9-pp39-pypy39_pp73-win_amd64.whl
+[2023-04-14 05:32:15] INFO root fetch - processPackages [adsb-tools]: Start processing: systems-manager
+[2023-04-14 05:32:15] INFO root fetch - main [MainThread]: End processing [adsb-tools]: success
+[2023-04-14 05:32:15] INFO root fetch - processPackages [systems-manager]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-14 05:32:15] INFO root fetch - processPackages [systems-manager]: executing diffoscope
+[2023-04-14 05:32:15] INFO root fetch - processPackages [systems-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systems_manager-0.7.0-py2.py3-none-any.whl.zip tmp/systems_manager-0.8.0-py2.py3-none-any.whl.zip --markdown 20230414/s/systems-manager/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-14 05:32:15] INFO root fetch - processPackages [systems-manager]: Start processing: odoo14-addon-product-contract
+[2023-04-14 05:32:15] INFO root fetch - main [MainThread]: End processing [systems-manager]: success
+[2023-04-14 05:32:15] INFO root fetch - processPackages [odoo14-addon-product-contract]: New version: [14.0.1.0.2.dev1] Old Version: [14.0.1.0.1]
+[2023-04-14 05:32:15] INFO root fetch - processPackages [odoo14-addon-product-contract]: Downloading https://files.pythonhosted.org/packages/63/25/6986b7a31bcbf90adc94a7ace61cb23019606a9eb8eedba65f5acc966dd1/odoo14_addon_product_contract-14.0.1.0.1-py3-none-any.whl
+[2023-04-14 05:32:16] INFO root fetch - main [MainThread]: End processing [odoo12-addon-product-contract]: success
+[2023-04-14 05:32:16] INFO root fetch - processPackages [odoo14-addon-product-contract]: Downloading https://files.pythonhosted.org/packages/0d/6f/d49a7363a1abf9f7961bd4e0dd049ed03c74433debc9e22a731983724ffa/odoo14_addon_product_contract-14.0.1.0.2.dev1-py3-none-any.whl
+[2023-04-14 05:32:16] INFO root fetch - processPackages [odoo14-addon-product-contract]: executing diffoscope
+[2023-04-14 05:32:16] INFO root fetch - processPackages [odoo14-addon-product-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_product_contract-14.0.1.0.1-py3-none-any.whl.zip tmp/odoo14_addon_product_contract-14.0.1.0.2.dev1-py3-none-any.whl.zip --markdown 20230414/o/odoo14-addon-product-contract/14.0.1.0.1-14.0.1.0.2.dev1/diff.md --exclude *.pyd
+[2023-04-14 05:32:16] INFO root fetch - main [MainThread]: End processing [systems-manager]: success
+[2023-04-14 05:32:16] INFO root fetch - processPackages [pmcx]: executing diffoscope
+[2023-04-14 05:32:16] INFO root fetch - processPackages [pmcx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmcx-0.0.8-pp39-pypy39_pp73-win_amd64.whl.zip tmp/pmcx-0.0.9-pp39-pypy39_pp73-win_amd64.whl.zip --markdown 20230414/p/pmcx/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 05:32:16] INFO root fetch - main [MainThread]: End processing [azure-mgmt-eventhub]: success
+[2023-04-14 05:32:17] INFO root fetch - main [MainThread]: End processing [pmcx]: success
+[2023-04-14 05:32:17] INFO root fetch - main [MainThread]: End processing [odoo14-addon-product-contract]: success
+[2023-04-14 05:32:17] INFO root fetch - main [MainThread]: Store serial: [17702951]
