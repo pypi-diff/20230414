@@ -12727,3 +12727,92 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 13:48:31] INFO root fetch - processPackages [documentdataextraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/documentdataextraction-0.0.8-py3-none-any.whl.zip tmp/documentdataextraction-0.0.9-py3-none-any.whl.zip --markdown 20230414/d/documentdataextraction/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-04-14 13:48:32] INFO root fetch - main [MainThread]: End processing [documentdataextraction]: success
 [2023-04-14 13:48:32] INFO root fetch - main [MainThread]: Store serial: [17706544]
+[2023-04-14 13:53:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706544]
+[2023-04-14 13:53:40] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 13:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eth-py
+[2023-04-14 13:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: akerbp.mlops
+[2023-04-14 13:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sabreMapper
+[2023-04-14 13:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tcw
+[2023-04-14 13:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cobra-db
+[2023-04-14 13:53:40] WARNING root fetch - processPackages [eth-py]: Skipping, unable to determine old version
+[2023-04-14 13:53:40] INFO root fetch - processPackages [eth-py]: Start processing: hb-test-generator
+[2023-04-14 13:53:40] WARNING root fetch - processPackages [sabreMapper]: Skipping, unable to determine old version
+[2023-04-14 13:53:40] INFO root fetch - main [MainThread]: End processing [eth-py] error
+[2023-04-14 13:53:40] INFO root fetch - processPackages [sabreMapper]: Start processing: cushy-storage
+[2023-04-14 13:53:40] INFO root fetch - main [MainThread]: End processing [sabreMapper] error
+[2023-04-14 13:53:40] INFO root fetch - processPackages [cobra-db]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-14 13:53:40] INFO root fetch - processPackages [cushy-storage]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 13:53:40] INFO root fetch - processPackages [hb-test-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 13:53:40] INFO root fetch - processPackages [akerbp.mlops]: New version: [3.0.1a8] Old Version: [3.0.1a7]
+[2023-04-14 13:53:40] INFO root fetch - processPackages [tcw]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 13:53:40] INFO root fetch - processPackages [cobra-db]: Downloading https://files.pythonhosted.org/packages/a4/88/6dfb24a2cf4cf817f2324d9ee24cf1ee13baaab2c563a5751fc150684249/cobra_db-0.2.3.tar.gz
+[2023-04-14 13:53:40] INFO root fetch - processPackages [cushy-storage]: Downloading https://files.pythonhosted.org/packages/12/81/cccc661d692659eb1710d8482610c797eee00b071e0cb15cdd7f3e43c773/cushy-storage-1.0.0.tar.gz
+[2023-04-14 13:53:40] INFO root fetch - processPackages [hb-test-generator]: Downloading https://files.pythonhosted.org/packages/20/7a/44ccbcc9af09f55c848a045c0089fd277bf6adbf85eccddb9c4bb900d744/hb-test-generator-0.1.9.tar.gz
+[2023-04-14 13:53:40] INFO root fetch - processPackages [akerbp.mlops]: Downloading https://files.pythonhosted.org/packages/3f/b7/779168bfdebc3910e423ef34e46e430eb33313569db09b953693cc30a529/akerbp.mlops-3.0.1a7.tar.gz
+[2023-04-14 13:53:40] INFO root fetch - processPackages [hb-test-generator]: executing diffoscope
+[2023-04-14 13:53:40] INFO root fetch - processPackages [hb-test-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hb-test-generator-0.1.8.tar.gz tmp/hb-test-generator-0.1.9.tar.gz --markdown 20230414/h/hb-test-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 13:53:40] INFO root fetch - processPackages [tcw]: Downloading https://files.pythonhosted.org/packages/86/f4/d54101c3b9c6f1c0e52aac3c40faab99beb7571b07eedfb227b6c1c675e1/tcw-0.1.1.tar.gz
+[2023-04-14 13:53:40] INFO root fetch - processPackages [cobra-db]: Downloading https://files.pythonhosted.org/packages/2c/51/cff94b6711b83d55e37688312dc1c64a4da4b59520050d5dcee40ee9ba49/cobra_db-0.2.4.tar.gz
+[2023-04-14 13:53:40] INFO root fetch - processPackages [cushy-storage]: Downloading https://files.pythonhosted.org/packages/4c/72/1f180a9ed1fe61df665b8df731621afc9a6b10ecabc236988b22b12613a8/cushy-storage-1.0.1.tar.gz
+[2023-04-14 13:53:41] INFO root fetch - processPackages [akerbp.mlops]: Downloading https://files.pythonhosted.org/packages/c3/37/e06d79a9a38bd9b2b9a1dfd38398d99b40e637dbff6b4f598f43d7355f83/akerbp.mlops-3.0.1a8.tar.gz
+[2023-04-14 13:53:41] INFO root fetch - processPackages [tcw]: executing diffoscope
+[2023-04-14 13:53:41] INFO root fetch - processPackages [tcw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcw-0.1.0.tar.gz tmp/tcw-0.1.1.tar.gz --markdown 20230414/t/tcw/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 13:53:41] INFO root fetch - processPackages [cushy-storage]: executing diffoscope
+[2023-04-14 13:53:41] INFO root fetch - processPackages [cushy-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cushy-storage-1.0.0.tar.gz tmp/cushy-storage-1.0.1.tar.gz --markdown 20230414/c/cushy-storage/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 13:53:41] INFO root fetch - processPackages [cobra-db]: executing diffoscope
+[2023-04-14 13:53:41] INFO root fetch - processPackages [cobra-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cobra_db-0.2.3.tar.gz tmp/cobra_db-0.2.4.tar.gz --markdown 20230414/c/cobra-db/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-14 13:53:41] INFO root fetch - processPackages [akerbp.mlops]: executing diffoscope
+[2023-04-14 13:53:41] INFO root fetch - processPackages [akerbp.mlops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akerbp.mlops-3.0.1a7.tar.gz tmp/akerbp.mlops-3.0.1a8.tar.gz --markdown 20230414/a/akerbp.mlops/3.0.1a7-3.0.1a8/diff.md --exclude *.pyd
+[2023-04-14 13:53:41] INFO root fetch - processPackages [hb-test-generator]: Start processing: torcheval-nightly
+[2023-04-14 13:53:41] INFO root fetch - main [MainThread]: End processing [hb-test-generator]: success
+[2023-04-14 13:53:41] INFO root fetch - processPackages [torcheval-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-14 13:53:42] INFO root fetch - processPackages [tcw]: Start processing: signialib
+[2023-04-14 13:53:42] INFO root fetch - main [MainThread]: End processing [tcw]: success
+[2023-04-14 13:53:42] INFO root fetch - processPackages [signialib]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-04-14 13:53:42] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2023-04-14 13:53:42] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2023.4.8.tar.gz tmp/torcheval-nightly-2023.4.9.tar.gz --markdown 20230414/t/torcheval-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-14 13:53:42] INFO root fetch - processPackages [cushy-storage]: Start processing: unified-planning
+[2023-04-14 13:53:42] INFO root fetch - main [MainThread]: End processing [cushy-storage]: success
+[2023-04-14 13:53:42] INFO root fetch - processPackages [cobra-db]: Start processing: pyGuardPoint
+[2023-04-14 13:53:42] INFO root fetch - main [MainThread]: End processing [cobra-db]: success
+[2023-04-14 13:53:42] INFO root fetch - processPackages [unified-planning]: New version: [0.5.0.93.dev1] Old Version: [0.5.0.7.dev1]
+[2023-04-14 13:53:42] INFO root fetch - processPackages [pyGuardPoint]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-14 13:53:42] INFO root fetch - processPackages [signialib]: Downloading https://files.pythonhosted.org/packages/be/5e/4c53f05404684a7b65bad299a18b94b9dcf70cb901f3b3b71e33b08ce676/signialib-2.2.0.tar.gz
+[2023-04-14 13:53:42] INFO root fetch - processPackages [unified-planning]: executing diffoscope
+[2023-04-14 13:53:42] INFO root fetch - processPackages [unified-planning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unified_planning-0.5.0.7.dev1.tar.gz tmp/unified_planning-0.5.0.93.dev1.tar.gz --markdown 20230414/u/unified-planning/0.5.0.7.dev1-0.5.0.93.dev1/diff.md --exclude *.pyd
+[2023-04-14 13:53:42] INFO root fetch - processPackages [pyGuardPoint]: Downloading https://files.pythonhosted.org/packages/1b/9b/31fb6ec9caaf12b2540f413e000f8876438addf7b203bc99c80549619950/pyGuardPoint-0.8.3.tar.gz
+[2023-04-14 13:53:42] INFO root fetch - processPackages [signialib]: Downloading https://files.pythonhosted.org/packages/72/00/02529edc5ea9422ea726a141e1912f6375910fa03084aadd1c32650a8c79/signialib-2.3.0.tar.gz
+[2023-04-14 13:53:42] INFO root fetch - processPackages [pyGuardPoint]: executing diffoscope
+[2023-04-14 13:53:42] INFO root fetch - processPackages [akerbp.mlops]: Start processing: so-vits-svc-fork
+[2023-04-14 13:53:42] INFO root fetch - processPackages [pyGuardPoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGuardPoint-0.8.2.tar.gz tmp/pyGuardPoint-0.8.3.tar.gz --markdown 20230414/p/pyGuardPoint/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-14 13:53:42] INFO root fetch - main [MainThread]: End processing [akerbp.mlops]: success
+[2023-04-14 13:53:42] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.6.2] Old Version: [3.6.1]
+[2023-04-14 13:53:42] INFO root fetch - processPackages [signialib]: executing diffoscope
+[2023-04-14 13:53:42] INFO root fetch - processPackages [signialib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/signialib-2.2.0.tar.gz tmp/signialib-2.3.0.tar.gz --markdown 20230414/s/signialib/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-04-14 13:53:42] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/2e/64/f9523816ef57589537609c0a3f9833473d8bf4a9224a47473cf86ebf0f6a/so_vits_svc_fork-3.6.2.tar.gz
+[2023-04-14 13:53:43] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-14 13:53:43] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.6.1.tar.gz tmp/so_vits_svc_fork-3.6.2.tar.gz --markdown 20230414/s/so-vits-svc-fork/3.6.1-3.6.2/diff.md --exclude *.pyd
+[2023-04-14 13:53:43] INFO root fetch - processPackages [torcheval-nightly]: Start processing: gpu-utilities
+[2023-04-14 13:53:43] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2023-04-14 13:53:43] INFO root fetch - processPackages [gpu-utilities]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 13:53:43] INFO root fetch - processPackages [signialib]: Start processing: odoo12-addon-product-intercompany-account
+[2023-04-14 13:53:43] INFO root fetch - main [MainThread]: End processing [signialib]: success
+[2023-04-14 13:53:43] INFO root fetch - processPackages [odoo12-addon-product-intercompany-account]: New version: [12.0.1.0.4] Old Version: [12.0.1.0.3]
+[2023-04-14 13:53:43] INFO root fetch - processPackages [gpu-utilities]: Downloading https://files.pythonhosted.org/packages/8f/e6/bd7389bbc166a8fa77d65f4e4639ee1225ae8809db653bf05f05ce30088d/gpu_utilities-0.1.0.tar.gz
+[2023-04-14 13:53:44] INFO root fetch - processPackages [gpu-utilities]: Downloading https://files.pythonhosted.org/packages/fc/74/796793cca0a738702f80351b3497cdb0532f19b954bd780ac76ad8ef6db9/gpu_utilities-0.2.0.tar.gz
+[2023-04-14 13:53:44] INFO root fetch - processPackages [odoo12-addon-product-intercompany-account]: Downloading https://files.pythonhosted.org/packages/bd/48/083ed1208f38951fc194fea109f0b0888a960bbaf46d9a31b438bfe1276b/odoo12_addon_product_intercompany_account-12.0.1.0.4-py3-none-any.whl
+[2023-04-14 13:53:44] INFO root fetch - processPackages [pyGuardPoint]: Start processing: inels-mqtt-new
+[2023-04-14 13:53:44] INFO root fetch - main [MainThread]: End processing [pyGuardPoint]: success
+[2023-04-14 13:53:44] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-14 13:53:44] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-14 13:53:44] INFO root fetch - processPackages [gpu-utilities]: executing diffoscope
+[2023-04-14 13:53:44] INFO root fetch - processPackages [gpu-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpu_utilities-0.1.0.tar.gz tmp/gpu_utilities-0.2.0.tar.gz --markdown 20230414/g/gpu-utilities/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 13:53:44] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-14 13:53:44] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230414/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-14 13:53:44] INFO root fetch - processPackages [odoo12-addon-product-intercompany-account]: executing diffoscope
+[2023-04-14 13:53:44] INFO root fetch - processPackages [odoo12-addon-product-intercompany-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_product_intercompany_account-12.0.1.0.3-py3-none-any.whl.zip tmp/odoo12_addon_product_intercompany_account-12.0.1.0.4-py3-none-any.whl.zip --markdown 20230414/o/odoo12-addon-product-intercompany-account/12.0.1.0.3-12.0.1.0.4/diff.md --exclude *.pyd
+[2023-04-14 13:53:44] INFO root fetch - main [MainThread]: End processing [unified-planning]: success
+[2023-04-14 13:53:45] INFO root fetch - main [MainThread]: End processing [gpu-utilities]: success
+[2023-04-14 13:53:45] INFO root fetch - main [MainThread]: End processing [odoo12-addon-product-intercompany-account]: success
+[2023-04-14 13:53:45] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
+[2023-04-14 13:53:45] INFO root fetch - main [MainThread]: Store serial: [17706589]
