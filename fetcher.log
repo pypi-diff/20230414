@@ -8518,3 +8518,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 09:19:03] INFO root fetch - main [MainThread]: End processing [imio.smartweb.core]: success
 [2023-04-14 09:19:31] INFO root fetch - main [MainThread]: End processing [yoctopuce]: success
 [2023-04-14 09:19:31] INFO root fetch - main [MainThread]: Store serial: [17703993]
+[2023-04-14 09:24:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703993]
+[2023-04-14 09:24:48] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 09:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pheno-utils
+[2023-04-14 09:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Geode-Simplex
+[2023-04-14 09:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: promsoft-cdek-interface
+[2023-04-14 09:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tracebloc-package-dev
+[2023-04-14 09:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wizata-dsapi
+[2023-04-14 09:24:48] INFO root fetch - processPackages [pheno-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 09:24:48] INFO root fetch - processPackages [promsoft-cdek-interface]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 09:24:48] WARNING root fetch - processPackages [Geode-Simplex]: Skipping, unable to determine old version
+[2023-04-14 09:24:48] INFO root fetch - processPackages [Geode-Simplex]: Start processing: accuweather
+[2023-04-14 09:24:48] INFO root fetch - main [MainThread]: End processing [Geode-Simplex] error
+[2023-04-14 09:24:48] INFO root fetch - processPackages [tracebloc-package-dev]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-14 09:24:48] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 09:24:48] INFO root fetch - processPackages [accuweather]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-14 09:24:48] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-14 09:24:48] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230414/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 09:24:48] INFO root fetch - processPackages [tracebloc-package-dev]: Downloading https://files.pythonhosted.org/packages/49/33/547bea3c85c1091f762c085009ac37fb882603ba1655bb5d367453e89ab9/tracebloc_package-dev-0.3.5.tar.gz
+[2023-04-14 09:24:48] INFO root fetch - processPackages [accuweather]: Downloading https://files.pythonhosted.org/packages/66/6f/090f3b2063e44b2ed9eb4188d6b414dadb69fe0d64a1a349fa89e1775b93/accuweather-0.5.0.tar.gz
+[2023-04-14 09:24:49] INFO root fetch - processPackages [promsoft-cdek-interface]: Downloading https://files.pythonhosted.org/packages/34/60/7de365ffd85cd536dd45ed9141139d29a33cb50289d00e68fc494f832868/promsoft_cdek_interface-0.1.3.tar.gz
+[2023-04-14 09:24:49] INFO root fetch - processPackages [tracebloc-package-dev]: Downloading https://files.pythonhosted.org/packages/45/e9/f2fb866aaddb514b982984a745f5a2c145d627971fdcae2928c558022c60/tracebloc_package-dev-0.3.6.tar.gz
+[2023-04-14 09:24:49] INFO root fetch - processPackages [pheno-utils]: executing diffoscope
+[2023-04-14 09:24:49] INFO root fetch - processPackages [pheno-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheno-utils-0.0.8.tar.gz tmp/pheno-utils-0.0.9.tar.gz --markdown 20230414/p/pheno-utils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 09:24:49] INFO root fetch - processPackages [accuweather]: Downloading https://files.pythonhosted.org/packages/cc/76/b2336d769b48a9e19cba13a73469520cdb6789a2765a98e9beaf8aa7f647/accuweather-0.5.1.tar.gz
+[2023-04-14 09:24:49] INFO root fetch - processPackages [promsoft-cdek-interface]: executing diffoscope
+[2023-04-14 09:24:49] INFO root fetch - processPackages [promsoft-cdek-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promsoft_cdek_interface-0.1.2.tar.gz tmp/promsoft_cdek_interface-0.1.3.tar.gz --markdown 20230414/p/promsoft-cdek-interface/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 09:24:49] INFO root fetch - processPackages [tracebloc-package-dev]: executing diffoscope
+[2023-04-14 09:24:49] INFO root fetch - processPackages [tracebloc-package-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tracebloc_package-dev-0.3.5.tar.gz tmp/tracebloc_package-dev-0.3.6.tar.gz --markdown 20230414/t/tracebloc-package-dev/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-14 09:24:49] INFO root fetch - processPackages [accuweather]: executing diffoscope
+[2023-04-14 09:24:49] INFO root fetch - processPackages [accuweather]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accuweather-0.5.0.tar.gz tmp/accuweather-0.5.1.tar.gz --markdown 20230414/a/accuweather/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-14 09:24:50] INFO root fetch - processPackages [promsoft-cdek-interface]: Start processing: imscript
+[2023-04-14 09:24:50] INFO root fetch - main [MainThread]: End processing [promsoft-cdek-interface]: success
+[2023-04-14 09:24:50] INFO root fetch - processPackages [imscript]: New version: [0.2] Old Version: [0.1]
+[2023-04-14 09:24:50] INFO root fetch - processPackages [pheno-utils]: Start processing: strplus
+[2023-04-14 09:24:50] INFO root fetch - main [MainThread]: End processing [pheno-utils]: success
+[2023-04-14 09:24:50] WARNING root fetch - processPackages [strplus]: Skipping, unable to determine old version
+[2023-04-14 09:24:50] INFO root fetch - processPackages [strplus]: Start processing: pyprocessors-afp_entities
+[2023-04-14 09:24:50] INFO root fetch - main [MainThread]: End processing [strplus] error
+[2023-04-14 09:24:50] INFO root fetch - processPackages [imscript]: Downloading https://files.pythonhosted.org/packages/fe/db/3dd5ed1a8915b0e2c5705f865e9e87d73113a5fb6c2c6418bb70873fcd48/imscript-0.1.tar.gz
+[2023-04-14 09:24:50] INFO root fetch - processPackages [tracebloc-package-dev]: Start processing: katalytic-images
+[2023-04-14 09:24:50] INFO root fetch - main [MainThread]: End processing [tracebloc-package-dev]: success
+[2023-04-14 09:24:50] INFO root fetch - processPackages [pyprocessors-afp_entities]: New version: [0.5.98] Old Version: [0.5.92]
+[2023-04-14 09:24:50] INFO root fetch - processPackages [katalytic-images]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-14 09:24:50] INFO root fetch - main [MainThread]: End processing [accuweather]: success
+[2023-04-14 09:24:50] INFO root fetch - processPackages [imscript]: Downloading https://files.pythonhosted.org/packages/22/28/33eaaf842c1e413f7a406ca1da26815f57c77a5412d4b58d7fd461b43162/imscript-0.2.tar.gz
+[2023-04-14 09:24:50] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-04-14 09:24:50] INFO root fetch - processPackages [katalytic-images]: Downloading https://files.pythonhosted.org/packages/a2/1f/452d483d2b738e7eaa48a63c8fb9cae31fc382c7df7a82641f70b176b746/katalytic-images-0.1.0.tar.gz
+[2023-04-14 09:24:50] INFO root fetch - processPackages [pyprocessors-afp_entities]: executing diffoscope
+[2023-04-14 09:24:50] INFO root fetch - processPackages [pyprocessors-afp_entities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprocessors-afp_entities-0.5.92.tar.gz tmp/pyprocessors-afp_entities-0.5.98.tar.gz --markdown 20230414/p/pyprocessors-afp_entities/0.5.92-0.5.98/diff.md --exclude *.pyd
+[2023-04-14 09:24:50] INFO root fetch - processPackages [imscript]: executing diffoscope
+[2023-04-14 09:24:50] INFO root fetch - processPackages [imscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imscript-0.1.tar.gz tmp/imscript-0.2.tar.gz --markdown 20230414/i/imscript/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-14 09:24:51] INFO root fetch - processPackages [katalytic-images]: Downloading https://files.pythonhosted.org/packages/05/68/cf3ce48331ecc9fe96745777890240587334f4efeeb6225c6cda3c4f45ac/katalytic-images-0.1.2.tar.gz
+[2023-04-14 09:24:51] INFO root fetch - processPackages [katalytic-images]: executing diffoscope
+[2023-04-14 09:24:51] INFO root fetch - processPackages [katalytic-images]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-images-0.1.0.tar.gz tmp/katalytic-images-0.1.2.tar.gz --markdown 20230414/k/katalytic-images/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 09:24:51] INFO root fetch - main [MainThread]: End processing [imscript]: success
+[2023-04-14 09:24:52] INFO root fetch - main [MainThread]: End processing [katalytic-images]: success
+[2023-04-14 09:24:53] INFO root fetch - main [MainThread]: End processing [pyprocessors-afp_entities]: success
+[2023-04-14 09:24:53] INFO root fetch - main [MainThread]: Store serial: [17704030]
