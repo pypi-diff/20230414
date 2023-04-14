@@ -16760,3 +16760,80 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 17:23:25] INFO root fetch - main [MainThread]: End processing [energyplus-regressions]: success
 [2023-04-14 17:23:28] INFO root fetch - main [MainThread]: End processing [metdig]: success
 [2023-04-14 17:23:28] INFO root fetch - main [MainThread]: Store serial: [17709106]
+[2023-04-14 17:28:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17709106]
+[2023-04-14 17:28:37] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 17:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: weni-rp-apps
+[2023-04-14 17:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastkafka
+[2023-04-14 17:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flojoy
+[2023-04-14 17:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyautosrt
+[2023-04-14 17:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hapROH
+[2023-04-14 17:28:37] INFO root fetch - processPackages [flojoy]: New version: [0.2.2.dev6] Old Version: [0.2.2.dev5]
+[2023-04-14 17:28:37] INFO root fetch - processPackages [fastkafka]: New version: [0.5.0rc0] Old Version: [0.5.0]
+[2023-04-14 17:28:37] INFO root fetch - processPackages [hapROH]: New version: [0.64] Old Version: [0.63]
+[2023-04-14 17:28:37] INFO root fetch - processPackages [pyautosrt]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-14 17:28:37] INFO root fetch - processPackages [weni-rp-apps]: New version: [2.3.1] Old Version: [2.3.0a0]
+[2023-04-14 17:28:37] INFO root fetch - processPackages [fastkafka]: Downloading https://files.pythonhosted.org/packages/2b/fd/7a20daef9d605d3366761e6a4c589aa508cbbe6289aeb73b2e5cc769150c/fastkafka-0.5.0.tar.gz
+[2023-04-14 17:28:37] INFO root fetch - processPackages [pyautosrt]: Downloading https://files.pythonhosted.org/packages/e9/cf/c3b79fe083a49b26049eaeccd94ad950b95703e71c3354d49c17ea55670b/pyautosrt-0.1.4.tar.gz
+[2023-04-14 17:28:37] INFO root fetch - processPackages [hapROH]: Downloading https://files.pythonhosted.org/packages/30/bd/4c4fae117c765b3166ebcd7a67e9610c722c7720313579a3eaa3b029431f/hapROH-0.63.tar.gz
+[2023-04-14 17:28:37] INFO root fetch - processPackages [flojoy]: Downloading https://files.pythonhosted.org/packages/5c/c4/52a443af76b928574516ef5e620cf973673a5b93167759c3e5919797a774/flojoy-0.2.2.dev6.tar.gz
+[2023-04-14 17:28:37] INFO root fetch - processPackages [weni-rp-apps]: Downloading https://files.pythonhosted.org/packages/31/7b/a8b6cb45646d53d86569dc87eeb865a545f3868c48c21cfb55bac0039955/weni_rp_apps-2.3.0a0.tar.gz
+[2023-04-14 17:28:37] INFO root fetch - processPackages [fastkafka]: executing diffoscope
+[2023-04-14 17:28:37] INFO root fetch - processPackages [fastkafka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastkafka-0.5.0.tar.gz tmp/fastkafka-0.5.0rc0.tar.gz --markdown 20230414/f/fastkafka/0.5.0-0.5.0rc0/diff.md --exclude *.pyd
+[2023-04-14 17:28:37] INFO root fetch - processPackages [flojoy]: executing diffoscope
+[2023-04-14 17:28:37] INFO root fetch - processPackages [flojoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flojoy-0.2.2.dev5.tar.gz tmp/flojoy-0.2.2.dev6.tar.gz --markdown 20230414/f/flojoy/0.2.2.dev5-0.2.2.dev6/diff.md --exclude *.pyd
+[2023-04-14 17:28:38] INFO root fetch - processPackages [pyautosrt]: Downloading https://files.pythonhosted.org/packages/04/19/e6320fcdf67ef2d345abec42eb5d9acacb6afe052eb256ea18bf8dace7cb/pyautosrt-0.1.5.tar.gz
+[2023-04-14 17:28:38] INFO root fetch - processPackages [hapROH]: Downloading https://files.pythonhosted.org/packages/55/5a/fbce71c4dc0979387783721cac3f30418e88570c19036f0947e2df25b080/hapROH-0.64.tar.gz
+[2023-04-14 17:28:38] INFO root fetch - processPackages [pyautosrt]: executing diffoscope
+[2023-04-14 17:28:38] INFO root fetch - processPackages [pyautosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyautosrt-0.1.4.tar.gz tmp/pyautosrt-0.1.5.tar.gz --markdown 20230414/p/pyautosrt/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-14 17:28:38] INFO root fetch - processPackages [weni-rp-apps]: Downloading https://files.pythonhosted.org/packages/81/cd/7c42e4a6a7526ecb10daa9e68c0e3c758450b76d1508a8edbe148e26e649/weni_rp_apps-2.3.1.tar.gz
+[2023-04-14 17:28:38] INFO root fetch - processPackages [hapROH]: executing diffoscope
+[2023-04-14 17:28:38] INFO root fetch - processPackages [hapROH]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapROH-0.63.tar.gz tmp/hapROH-0.64.tar.gz --markdown 20230414/h/hapROH/0.63-0.64/diff.md --exclude *.pyd
+[2023-04-14 17:28:38] INFO root fetch - processPackages [weni-rp-apps]: executing diffoscope
+[2023-04-14 17:28:38] INFO root fetch - processPackages [weni-rp-apps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weni_rp_apps-2.3.0a0.tar.gz tmp/weni_rp_apps-2.3.1.tar.gz --markdown 20230414/w/weni-rp-apps/2.3.0a0-2.3.1/diff.md --exclude *.pyd
+[2023-04-14 17:28:38] INFO root fetch - processPackages [flojoy]: Start processing: oarepo-vocabularies
+[2023-04-14 17:28:38] INFO root fetch - main [MainThread]: End processing [flojoy]: success
+[2023-04-14 17:28:39] INFO root fetch - processPackages [oarepo-vocabularies]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 17:28:39] INFO root fetch - processPackages [fastkafka]: Start processing: visiongraph
+[2023-04-14 17:28:39] INFO root fetch - main [MainThread]: End processing [fastkafka]: success
+[2023-04-14 17:28:39] INFO root fetch - processPackages [pyautosrt]: Start processing: schematic-db
+[2023-04-14 17:28:39] INFO root fetch - main [MainThread]: End processing [pyautosrt]: success
+[2023-04-14 17:28:39] INFO root fetch - processPackages [visiongraph]: New version: [0.1.44] Old Version: [0.1.43]
+[2023-04-14 17:28:39] INFO root fetch - processPackages [schematic-db]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 17:28:39] INFO root fetch - processPackages [oarepo-vocabularies]: Downloading https://files.pythonhosted.org/packages/de/b6/d05885657464b2919dd335fe3dd582f818b7ee029d856c508b3613bd68ef/oarepo-vocabularies-1.0.8.tar.gz
+[2023-04-14 17:28:39] INFO root fetch - processPackages [schematic-db]: executing diffoscope
+[2023-04-14 17:28:39] INFO root fetch - processPackages [schematic-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schematic_db-0.0.8.tar.gz tmp/schematic_db-0.0.9.tar.gz --markdown 20230414/s/schematic-db/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 17:28:39] INFO root fetch - processPackages [visiongraph]: Downloading https://files.pythonhosted.org/packages/ab/2f/c4799ff696379f615f75b6e2d69e7de14a135230f2b87072886f3e0c3ebe/visiongraph-0.1.43-py3-none-any.whl
+[2023-04-14 17:28:39] INFO root fetch - processPackages [oarepo-vocabularies]: Downloading https://files.pythonhosted.org/packages/f1/38/09e90ed072c096732d17e9594c949e17c24911c304fd2be572bf4f67f973/oarepo-vocabularies-1.0.9.tar.gz
+[2023-04-14 17:28:39] INFO root fetch - processPackages [visiongraph]: Downloading https://files.pythonhosted.org/packages/52/f6/a8626d07efef35be71a9cba0558ccd423aa274e0592617c1b7c608e50e51/visiongraph-0.1.44-py3-none-any.whl
+[2023-04-14 17:28:39] INFO root fetch - processPackages [visiongraph]: executing diffoscope
+[2023-04-14 17:28:39] INFO root fetch - processPackages [visiongraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visiongraph-0.1.43-py3-none-any.whl.zip tmp/visiongraph-0.1.44-py3-none-any.whl.zip --markdown 20230414/v/visiongraph/0.1.43-0.1.44/diff.md --exclude *.pyd
+[2023-04-14 17:28:39] INFO root fetch - processPackages [oarepo-vocabularies]: executing diffoscope
+[2023-04-14 17:28:39] INFO root fetch - processPackages [oarepo-vocabularies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-vocabularies-1.0.8.tar.gz tmp/oarepo-vocabularies-1.0.9.tar.gz --markdown 20230414/o/oarepo-vocabularies/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 17:28:39] INFO root fetch - processPackages [weni-rp-apps]: Start processing: energyplus-launch
+[2023-04-14 17:28:39] INFO root fetch - main [MainThread]: End processing [weni-rp-apps]: success
+[2023-04-14 17:28:39] INFO root fetch - processPackages [energyplus-launch]: New version: [3.6.3] Old Version: [3.6.2]
+[2023-04-14 17:28:39] INFO root fetch - processPackages [energyplus-launch]: Downloading https://files.pythonhosted.org/packages/91/fc/b5359d5c1847860861b8f33e275a30bb1c36b569e0cb9d6487a25e669322/energyplus_launch-3.6.2.tar.gz
+[2023-04-14 17:28:39] INFO root fetch - processPackages [hapROH]: Start processing: xpip-python
+[2023-04-14 17:28:39] INFO root fetch - main [MainThread]: End processing [hapROH]: success
+[2023-04-14 17:28:39] INFO root fetch - processPackages [xpip-python]: New version: [0.3] Old Version: [0.2]
+[2023-04-14 17:28:40] INFO root fetch - processPackages [energyplus-launch]: Downloading https://files.pythonhosted.org/packages/08/0a/32c4316b7c3a298564bde0c2453fb3fbf5a062f9569ef4ea42f451783246/energyplus_launch-3.6.3.tar.gz
+[2023-04-14 17:28:40] INFO root fetch - processPackages [xpip-python]: Downloading https://files.pythonhosted.org/packages/04/bd/64853d086c1cee3a67a8995b058f347dc7ef83fdc9d86557b557a98e0b2f/xpip-python-0.2.tar.gz
+[2023-04-14 17:28:40] INFO root fetch - processPackages [energyplus-launch]: executing diffoscope
+[2023-04-14 17:28:40] INFO root fetch - processPackages [energyplus-launch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energyplus_launch-3.6.2.tar.gz tmp/energyplus_launch-3.6.3.tar.gz --markdown 20230414/e/energyplus-launch/3.6.2-3.6.3/diff.md --exclude *.pyd
+[2023-04-14 17:28:40] INFO root fetch - processPackages [schematic-db]: Start processing: oai-tools
+[2023-04-14 17:28:40] INFO root fetch - main [MainThread]: End processing [schematic-db]: success
+[2023-04-14 17:28:40] WARNING root fetch - processPackages [oai-tools]: Skipping, unable to determine old version
+[2023-04-14 17:28:40] INFO root fetch - processPackages [oai-tools]: Start processing: chat-spiral
+[2023-04-14 17:28:40] INFO root fetch - main [MainThread]: End processing [oai-tools] error
+[2023-04-14 17:28:40] INFO root fetch - processPackages [chat-spiral]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 17:28:40] INFO root fetch - processPackages [xpip-python]: Downloading https://files.pythonhosted.org/packages/9a/f1/0c25f6e985a436cd7966e90a73606df7034994e07893f90fa7938070867f/xpip-python-0.3.tar.gz
+[2023-04-14 17:28:40] INFO root fetch - processPackages [xpip-python]: executing diffoscope
+[2023-04-14 17:28:40] INFO root fetch - processPackages [xpip-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpip-python-0.2.tar.gz tmp/xpip-python-0.3.tar.gz --markdown 20230414/x/xpip-python/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-14 17:28:40] INFO root fetch - processPackages [chat-spiral]: executing diffoscope
+[2023-04-14 17:28:40] INFO root fetch - processPackages [chat-spiral]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat-spiral-0.0.1.tar.gz tmp/chat-spiral-0.0.2.tar.gz --markdown 20230414/c/chat-spiral/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 17:28:41] INFO root fetch - main [MainThread]: End processing [oarepo-vocabularies]: success
+[2023-04-14 17:28:41] INFO root fetch - main [MainThread]: End processing [xpip-python]: success
+[2023-04-14 17:28:41] INFO root fetch - main [MainThread]: End processing [chat-spiral]: success
+[2023-04-14 17:28:41] INFO root fetch - main [MainThread]: End processing [energyplus-launch]: success
+[2023-04-14 17:28:42] INFO root fetch - main [MainThread]: End processing [visiongraph]: success
+[2023-04-14 17:28:42] INFO root fetch - main [MainThread]: Store serial: [17709141]
