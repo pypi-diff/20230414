@@ -6978,3 +6978,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 06:14:52] INFO root fetch - main [MainThread]: End processing [cfg-argparser]: success
 [2023-04-14 06:14:56] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-04-14 06:14:56] INFO root fetch - main [MainThread]: Store serial: [17703094]
+[2023-04-14 06:19:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703094]
+[2023-04-14 06:20:03] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 06:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: carrier-api
+[2023-04-14 06:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: console-timer
+[2023-04-14 06:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: favicons
+[2023-04-14 06:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clip-client
+[2023-04-14 06:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clip-server
+[2023-04-14 06:20:03] INFO root fetch - processPackages [favicons]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-14 06:20:03] INFO root fetch - processPackages [console-timer]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 06:20:03] INFO root fetch - processPackages [carrier-api]: New version: [1.9.2] Old Version: [1.9.0]
+[2023-04-14 06:20:03] INFO root fetch - processPackages [clip-client]: New version: [0.8.2.dev9] Old Version: [0.8.2.dev6]
+[2023-04-14 06:20:03] INFO root fetch - processPackages [clip-server]: New version: [0.8.2.dev9] Old Version: [0.8.2.dev6]
+[2023-04-14 06:20:03] INFO root fetch - processPackages [favicons]: Downloading https://files.pythonhosted.org/packages/d8/88/91d7adcbcb9b7c7ffb1d8a676d1623ea0e22662ae76a67830f09f6f9442b/favicons-0.1.1.tar.gz
+[2023-04-14 06:20:03] INFO root fetch - processPackages [console-timer]: Downloading https://files.pythonhosted.org/packages/77/73/6c0aed2a67fded5aaf2dc8a75cd8d2dda4b2b0f50d12c05f9afc9fc1b7a8/console_timer-0.1.2.tar.gz
+[2023-04-14 06:20:03] INFO root fetch - processPackages [carrier-api]: Downloading https://files.pythonhosted.org/packages/a5/ab/d2ced7c9968193589fb53a245a9864ab611e6f6d20afa5ad22de577350e0/carrier_api-1.9.2.tar.gz
+[2023-04-14 06:20:03] INFO root fetch - processPackages [console-timer]: executing diffoscope
+[2023-04-14 06:20:03] INFO root fetch - processPackages [console-timer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/console_timer-0.1.1.tar.gz tmp/console_timer-0.1.2.tar.gz --markdown 20230414/c/console-timer/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 06:20:04] INFO root fetch - processPackages [clip-client]: executing diffoscope
+[2023-04-14 06:20:04] INFO root fetch - processPackages [clip-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clip-client-0.8.2.dev6.tar.gz tmp/clip-client-0.8.2.dev9.tar.gz --markdown 20230414/c/clip-client/0.8.2.dev6-0.8.2.dev9/diff.md --exclude *.pyd
+[2023-04-14 06:20:04] INFO root fetch - processPackages [favicons]: Downloading https://files.pythonhosted.org/packages/70/2a/51b7da9551beb7e984d628f80d9d92f227e7f7b9ca1eb4c8c50f461beefd/favicons-0.2.0.tar.gz
+[2023-04-14 06:20:04] INFO root fetch - processPackages [carrier-api]: executing diffoscope
+[2023-04-14 06:20:04] INFO root fetch - processPackages [carrier-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carrier_api-1.9.0.tar.gz tmp/carrier_api-1.9.2.tar.gz --markdown 20230414/c/carrier-api/1.9.0-1.9.2/diff.md --exclude *.pyd
+[2023-04-14 06:20:04] INFO root fetch - processPackages [clip-server]: executing diffoscope
+[2023-04-14 06:20:04] INFO root fetch - processPackages [clip-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clip-server-0.8.2.dev6.tar.gz tmp/clip-server-0.8.2.dev9.tar.gz --markdown 20230414/c/clip-server/0.8.2.dev6-0.8.2.dev9/diff.md --exclude *.pyd
+[2023-04-14 06:20:04] INFO root fetch - processPackages [favicons]: executing diffoscope
+[2023-04-14 06:20:04] INFO root fetch - processPackages [favicons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/favicons-0.1.1.tar.gz tmp/favicons-0.2.0.tar.gz --markdown 20230414/f/favicons/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 06:20:05] INFO root fetch - processPackages [console-timer]: Start processing: clip-as-service
+[2023-04-14 06:20:05] INFO root fetch - main [MainThread]: End processing [console-timer]: success
+[2023-04-14 06:20:05] INFO root fetch - processPackages [clip-as-service]: New version: [0.8.2.dev9] Old Version: [0.8.2.dev6]
+[2023-04-14 06:20:05] INFO root fetch - processPackages [carrier-api]: Start processing: stability-sdk
+[2023-04-14 06:20:05] INFO root fetch - main [MainThread]: End processing [carrier-api]: success
+[2023-04-14 06:20:05] INFO root fetch - processPackages [clip-client]: Start processing: zwkit
+[2023-04-14 06:20:05] INFO root fetch - main [MainThread]: End processing [clip-client]: success
+[2023-04-14 06:20:05] INFO root fetch - processPackages [stability-sdk]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-14 06:20:05] INFO root fetch - processPackages [zwkit]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 06:20:05] INFO root fetch - processPackages [clip-as-service]: executing diffoscope
+[2023-04-14 06:20:05] INFO root fetch - processPackages [clip-as-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clip-as-service-0.8.2.dev6.tar.gz tmp/clip-as-service-0.8.2.dev9.tar.gz --markdown 20230414/c/clip-as-service/0.8.2.dev6-0.8.2.dev9/diff.md --exclude *.pyd
+[2023-04-14 06:20:05] INFO root fetch - processPackages [zwkit]: Downloading https://files.pythonhosted.org/packages/0d/73/8d80546fa4d9e78bee5c3de435d1aa9eb1f51aaa0fe5f15c57f610552c77/zwkit-0.4.8.tar.gz
+[2023-04-14 06:20:05] INFO root fetch - processPackages [clip-server]: Start processing: ovos-workshop
+[2023-04-14 06:20:05] INFO root fetch - main [MainThread]: End processing [clip-server]: success
+[2023-04-14 06:20:05] INFO root fetch - processPackages [stability-sdk]: Downloading https://files.pythonhosted.org/packages/7e/22/f44832a21300556b85eeaa6c019760b2ac0ab375bf6b66cd481253e58dc4/stability-sdk-0.4.0.tar.gz
+[2023-04-14 06:20:05] INFO root fetch - processPackages [ovos-workshop]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-14 06:20:05] INFO root fetch - processPackages [ovos-workshop]: Downloading https://files.pythonhosted.org/packages/b6/ab/62ae7616b83875d5219bb580c1e6a2ff0fdbdc91c8a9b55495dd60066611/ovos_workshop-0.0.9-py3-none-any.whl
+[2023-04-14 06:20:05] INFO root fetch - processPackages [stability-sdk]: Downloading https://files.pythonhosted.org/packages/d9/a6/b3fd40377637d3e07f04f7b72d9839611ef6bf9f28ed689c92f3acb80f27/stability-sdk-0.5.0.tar.gz
+[2023-04-14 06:20:05] INFO root fetch - processPackages [zwkit]: Downloading https://files.pythonhosted.org/packages/aa/88/5b45ace5e9ba0b3218d3a90d9666e2b36f097ec6fef13233ec5c10b3ff0b/zwkit-0.4.9.tar.gz
+[2023-04-14 06:20:06] INFO root fetch - processPackages [stability-sdk]: executing diffoscope
+[2023-04-14 06:20:06] INFO root fetch - processPackages [stability-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stability-sdk-0.4.0.tar.gz tmp/stability-sdk-0.5.0.tar.gz --markdown 20230414/s/stability-sdk/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-14 06:20:06] INFO root fetch - processPackages [zwkit]: executing diffoscope
+[2023-04-14 06:20:06] INFO root fetch - processPackages [zwkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zwkit-0.4.8.tar.gz tmp/zwkit-0.4.9.tar.gz --markdown 20230414/z/zwkit/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 06:20:06] INFO root fetch - processPackages [ovos-workshop]: Downloading https://files.pythonhosted.org/packages/78/03/4b813a66c30f57b7c996eda91cf259cb974ad9186f3ae1762c9384e34fc7/ovos_workshop-0.0.9a1-py3-none-any.whl
+[2023-04-14 06:20:06] INFO root fetch - processPackages [ovos-workshop]: executing diffoscope
+[2023-04-14 06:20:06] INFO root fetch - processPackages [ovos-workshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip --markdown 20230414/o/ovos-workshop/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-14 06:20:06] INFO root fetch - main [MainThread]: End processing [clip-as-service]: success
+[2023-04-14 06:20:07] INFO root fetch - main [MainThread]: End processing [zwkit]: success
+[2023-04-14 06:20:07] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
+[2023-04-14 06:20:08] INFO root fetch - main [MainThread]: End processing [stability-sdk]: success
+[2023-04-14 06:20:10] INFO root fetch - main [MainThread]: End processing [favicons]: success
+[2023-04-14 06:20:10] INFO root fetch - main [MainThread]: Store serial: [17703119]
