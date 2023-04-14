@@ -18880,3 +18880,86 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 19:11:13] INFO root fetch - main [MainThread]: End processing [taipy-core]: success
 [2023-04-14 19:11:58] INFO root fetch - main [MainThread]: End processing [flet]: success
 [2023-04-14 19:11:58] INFO root fetch - main [MainThread]: Store serial: [17710545]
+[2023-04-14 19:17:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17710545]
+[2023-04-14 19:17:06] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 19:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dank-mids
+[2023-04-14 19:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cbstorage
+[2023-04-14 19:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: konsepy
+[2023-04-14 19:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: splight-lib
+[2023-04-14 19:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simple-hierarchical-transformer
+[2023-04-14 19:17:06] INFO root fetch - processPackages [cbstorage]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 19:17:06] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-04-14 19:17:06] INFO root fetch - processPackages [konsepy]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 19:17:06] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 19:17:06] INFO root fetch - processPackages [splight-lib]: New version: [2.2.7] Old Version: [2.2.6]
+[2023-04-14 19:17:06] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-14 19:17:06] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.8.tar.gz tmp/simple-hierarchical-transformer-0.0.9.tar.gz --markdown 20230414/s/simple-hierarchical-transformer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 19:17:06] INFO root fetch - processPackages [konsepy]: Downloading https://files.pythonhosted.org/packages/a1/17/7e7aac40cfebaa2129f56cbb18bd74baf3442e1b2cc1805e10a8f9abf96b/konsepy-0.0.3.tar.gz
+[2023-04-14 19:17:06] INFO root fetch - processPackages [cbstorage]: Downloading https://files.pythonhosted.org/packages/03/fa/402a294099a83fc4d146d322eb348024f1b76c692e740cacc54f52bd84bd/cbstorage-0.1.6.tar.gz
+[2023-04-14 19:17:06] INFO root fetch - processPackages [splight-lib]: Downloading https://files.pythonhosted.org/packages/74/f0/9ddec34bfe464c11540c326e6e2f1b9dbf0ef4d6d0fd2c361eccb447d8ff/splight-lib-2.2.7.tar.gz
+[2023-04-14 19:17:06] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-04-14 19:17:06] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230414/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-04-14 19:17:06] INFO root fetch - processPackages [konsepy]: executing diffoscope
+[2023-04-14 19:17:06] INFO root fetch - processPackages [konsepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konsepy-0.0.2.tar.gz tmp/konsepy-0.0.3.tar.gz --markdown 20230414/k/konsepy/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 19:17:06] INFO root fetch - processPackages [cbstorage]: executing diffoscope
+[2023-04-14 19:17:06] INFO root fetch - processPackages [cbstorage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbstorage-0.1.5.tar.gz tmp/cbstorage-0.1.6.tar.gz --markdown 20230414/c/cbstorage/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 19:17:06] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-04-14 19:17:06] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.2.6.tar.gz tmp/splight-lib-2.2.7.tar.gz --markdown 20230414/s/splight-lib/2.2.6-2.2.7/diff.md --exclude *.pyd
+[2023-04-14 19:17:07] INFO root fetch - processPackages [cbstorage]: Start processing: anipy-cli
+[2023-04-14 19:17:07] INFO root fetch - main [MainThread]: End processing [cbstorage]: success
+[2023-04-14 19:17:07] INFO root fetch - processPackages [anipy-cli]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-14 19:17:07] INFO root fetch - processPackages [simple-hierarchical-transformer]: Start processing: tkmilan
+[2023-04-14 19:17:07] INFO root fetch - main [MainThread]: End processing [simple-hierarchical-transformer]: success
+[2023-04-14 19:17:07] INFO root fetch - processPackages [tkmilan]: New version: [0.9] Old Version: [0.8]
+[2023-04-14 19:17:08] INFO root fetch - processPackages [dank-mids]: Start processing: acadia
+[2023-04-14 19:17:08] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-04-14 19:17:08] WARNING root fetch - processPackages [acadia]: Skipping, unable to determine old version
+[2023-04-14 19:17:08] INFO root fetch - processPackages [acadia]: Start processing: django-sqlite-backup
+[2023-04-14 19:17:08] INFO root fetch - main [MainThread]: End processing [acadia] error
+[2023-04-14 19:17:08] INFO root fetch - processPackages [tkmilan]: Downloading https://files.pythonhosted.org/packages/93/01/f5623f24ff225bb71aab5bb6bc9911818cb0b0e3f554efe31d89236fdb3b/tkmilan-0.8.tar.gz
+[2023-04-14 19:17:08] INFO root fetch - processPackages [konsepy]: Start processing: danling
+[2023-04-14 19:17:08] INFO root fetch - main [MainThread]: End processing [konsepy]: success
+[2023-04-14 19:17:08] WARNING root fetch - processPackages [django-sqlite-backup]: Skipping, unable to determine old version
+[2023-04-14 19:17:08] INFO root fetch - processPackages [django-sqlite-backup]: Start processing: anipy-cli
+[2023-04-14 19:17:08] INFO root fetch - main [MainThread]: End processing [django-sqlite-backup] error
+[2023-04-14 19:17:08] INFO root fetch - processPackages [danling]: New version: [0.2.3] Old Version: [0.2.1]
+[2023-04-14 19:17:08] INFO root fetch - processPackages [anipy-cli]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-14 19:17:08] INFO root fetch - processPackages [anipy-cli]: executing diffoscope
+[2023-04-14 19:17:08] INFO root fetch - processPackages [anipy-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anipy_cli-2.7.8.tar.gz tmp/anipy_cli-2.7.9.tar.gz --markdown 20230414/a/anipy-cli/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-14 19:17:08] INFO root fetch - processPackages [anipy-cli]: executing diffoscope
+[2023-04-14 19:17:08] INFO root fetch - processPackages [anipy-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anipy_cli-2.7.8.tar.gz tmp/anipy_cli-2.7.9.tar.gz --markdown 20230414/a/anipy-cli/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-14 19:17:08] INFO root fetch - processPackages [splight-lib]: Start processing: tmlt-core
+[2023-04-14 19:17:08] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
+[2023-04-14 19:17:08] INFO root fetch - processPackages [tmlt-core]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-14 19:17:08] INFO root fetch - processPackages [danling]: Downloading https://files.pythonhosted.org/packages/7f/08/ea5d52023431872a7fb1bd1595560599228cb92a8f07744ad2f505ac6f5f/danling-0.2.3.tar.gz
+[2023-04-14 19:17:08] INFO root fetch - processPackages [tmlt-core]: Downloading https://files.pythonhosted.org/packages/a3/77/2b6ae514051c2056871b7b46f1f2f8c92d20d02b3ac6ad30a19aaa489da1/tmlt_core-0.8.3.tar.gz
+[2023-04-14 19:17:08] INFO root fetch - processPackages [tkmilan]: Downloading https://files.pythonhosted.org/packages/70/21/636dc6b5746848fad3d891699437a1b2e0f60d118440791af68a531f53fd/tkmilan-0.9.tar.gz
+[2023-04-14 19:17:08] INFO root fetch - processPackages [tkmilan]: executing diffoscope
+[2023-04-14 19:17:08] INFO root fetch - processPackages [tkmilan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkmilan-0.8.tar.gz tmp/tkmilan-0.9.tar.gz --markdown 20230414/t/tkmilan/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-14 19:17:08] INFO root fetch - processPackages [tmlt-core]: Downloading https://files.pythonhosted.org/packages/f9/2a/a6df7a5f2a716610ee3190452d7b40158c67061a4414485911aca5fc370f/tmlt_core-0.9.0.tar.gz
+[2023-04-14 19:17:09] INFO root fetch - processPackages [tmlt-core]: executing diffoscope
+[2023-04-14 19:17:09] INFO root fetch - processPackages [tmlt-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmlt_core-0.8.3.tar.gz tmp/tmlt_core-0.9.0.tar.gz --markdown 20230414/t/tmlt-core/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 19:17:09] INFO root fetch - processPackages [danling]: executing diffoscope
+[2023-04-14 19:17:09] INFO root fetch - processPackages [danling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danling-0.2.1.tar.gz tmp/danling-0.2.3.tar.gz --markdown 20230414/d/danling/0.2.1-0.2.3/diff.md --exclude *.pyd
+[2023-04-14 19:17:09] INFO root fetch - processPackages [anipy-cli]: Start processing: spanishconjugator
+[2023-04-14 19:17:09] INFO root fetch - main [MainThread]: End processing [anipy-cli]: success
+[2023-04-14 19:17:09] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-14 19:17:09] INFO root fetch - processPackages [anipy-cli]: Start processing: spanishconjugator
+[2023-04-14 19:17:09] INFO root fetch - main [MainThread]: End processing [anipy-cli]: success
+[2023-04-14 19:17:09] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-14 19:17:09] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-14 19:17:09] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230414/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-14 19:17:09] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-14 19:17:09] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230414/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-14 19:17:10] INFO root fetch - processPackages [tkmilan]: Start processing: orbax-checkpoint
+[2023-04-14 19:17:10] INFO root fetch - main [MainThread]: End processing [tkmilan]: success
+[2023-04-14 19:17:10] INFO root fetch - processPackages [orbax-checkpoint]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-14 19:17:11] INFO root fetch - processPackages [orbax-checkpoint]: Downloading https://files.pythonhosted.org/packages/81/dd/ab0f35e716c3d46e0dd91d6c1b249871702a9ef240f0bc125d3ac235e16d/orbax-checkpoint-0.2.1.tar.gz
+[2023-04-14 19:17:11] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-14 19:17:11] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-14 19:17:11] INFO root fetch - processPackages [orbax-checkpoint]: executing diffoscope
+[2023-04-14 19:17:11] INFO root fetch - processPackages [orbax-checkpoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orbax-checkpoint-0.2.0.tar.gz tmp/orbax-checkpoint-0.2.1.tar.gz --markdown 20230414/o/orbax-checkpoint/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 19:17:11] INFO root fetch - main [MainThread]: End processing [danling]: success
+[2023-04-14 19:17:12] INFO root fetch - main [MainThread]: End processing [orbax-checkpoint]: success
+[2023-04-14 19:17:12] INFO root fetch - main [MainThread]: End processing [tmlt-core]: success
+[2023-04-14 19:17:12] INFO root fetch - main [MainThread]: Store serial: [17710606]
