@@ -7532,3 +7532,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 07:41:48] INFO root fetch - main [MainThread]: End processing [pyfaust-torch]: success
 [2023-04-14 07:41:59] INFO root fetch - main [MainThread]: End processing [pyfaust]: success
 [2023-04-14 07:41:59] INFO root fetch - main [MainThread]: Store serial: [17703445]
+[2023-04-14 07:47:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703445]
+[2023-04-14 07:47:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-14 07:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchaincli
+[2023-04-14 07:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datedays
+[2023-04-14 07:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-pos-pms-link
+[2023-04-14 07:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imaginaition
+[2023-04-14 07:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pixano
+[2023-04-14 07:47:16] WARNING root fetch - processPackages [langchaincli]: Skipping, unable to determine old version
+[2023-04-14 07:47:16] INFO root fetch - processPackages [langchaincli]: Start processing: ezQpy
+[2023-04-14 07:47:16] INFO root fetch - main [MainThread]: End processing [langchaincli] error
+[2023-04-14 07:47:16] INFO root fetch - processPackages [odoo14-addon-pos-pms-link]: New version: [14.0.1.0.1.dev7] Old Version: [14.0.1.0.1.dev6]
+[2023-04-14 07:47:16] INFO root fetch - processPackages [ezQpy]: New version: [0.2.0.1] Old Version: [0.2.0.0]
+[2023-04-14 07:47:16] INFO root fetch - processPackages [imaginaition]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-14 07:47:16] WARNING root fetch - processPackages [pixano]: Skipping, unable to determine old version
+[2023-04-14 07:47:16] INFO root fetch - processPackages [datedays]: New version: [2.2.4] Old Version: [2.2.3]
+[2023-04-14 07:47:16] INFO root fetch - main [MainThread]: End processing [pixano] error
+[2023-04-14 07:47:16] INFO root fetch - processPackages [ezQpy]: executing diffoscope
+[2023-04-14 07:47:16] INFO root fetch - processPackages [ezQpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezQpy-0.2.0.0.tar.gz tmp/ezQpy-0.2.0.1-py3-none-any.whl.zip --markdown 20230414/e/ezQpy/0.2.0.0-0.2.0.1/diff.md --exclude *.pyd
+[2023-04-14 07:47:16] INFO root fetch - processPackages [imaginaition]: Downloading https://files.pythonhosted.org/packages/95/ac/43c8317e33b31d47f84e29030d30efa15e48b625d26ccd23d25dff7b54db/imaginaition-0.1.0.tar.gz
+[2023-04-14 07:47:16] INFO root fetch - processPackages [odoo14-addon-pos-pms-link]: Downloading https://files.pythonhosted.org/packages/c1/ed/537ff1a656f2a8051626196d207eee14b3eb010543add3656ce61a9162be/odoo14_addon_pos_pms_link-14.0.1.0.1.dev6-py3-none-any.whl
+[2023-04-14 07:47:16] INFO root fetch - processPackages [datedays]: Downloading https://files.pythonhosted.org/packages/db/09/246613755eef7f67bb8238db6ce063209c9a9cf252e9f5f0f68d88943b2c/datedays-2.2.4.tar.gz
+[2023-04-14 07:47:16] INFO root fetch - processPackages [datedays]: executing diffoscope
+[2023-04-14 07:47:16] INFO root fetch - processPackages [datedays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datedays-2.2.3.tar.gz tmp/datedays-2.2.4.tar.gz --markdown 20230414/d/datedays/2.2.3-2.2.4/diff.md --exclude *.pyd
+[2023-04-14 07:47:17] INFO root fetch - processPackages [odoo14-addon-pos-pms-link]: Downloading https://files.pythonhosted.org/packages/10/bf/d7942ec600a38bbb39ac0464f942d9ceedafb4a9468c20273b8e13b5ae5b/odoo14_addon_pos_pms_link-14.0.1.0.1.dev7-py3-none-any.whl
+[2023-04-14 07:47:17] INFO root fetch - processPackages [imaginaition]: Downloading https://files.pythonhosted.org/packages/42/9f/447a9396043eb922f7ca94814fb0893ae492667d799b38391953faac5bc5/imaginaition-0.1.2.tar.gz
+[2023-04-14 07:47:17] INFO root fetch - processPackages [odoo14-addon-pos-pms-link]: executing diffoscope
+[2023-04-14 07:47:17] INFO root fetch - processPackages [odoo14-addon-pos-pms-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_pos_pms_link-14.0.1.0.1.dev6-py3-none-any.whl.zip tmp/odoo14_addon_pos_pms_link-14.0.1.0.1.dev7-py3-none-any.whl.zip --markdown 20230414/o/odoo14-addon-pos-pms-link/14.0.1.0.1.dev6-14.0.1.0.1.dev7/diff.md --exclude *.pyd
+[2023-04-14 07:47:17] INFO root fetch - processPackages [imaginaition]: executing diffoscope
+[2023-04-14 07:47:17] INFO root fetch - processPackages [imaginaition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imaginaition-0.1.0.tar.gz tmp/imaginaition-0.1.2.tar.gz --markdown 20230414/i/imaginaition/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 07:47:17] INFO root fetch - main [MainThread]: End processing [ezQpy]: success
+[2023-04-14 07:47:18] INFO root fetch - main [MainThread]: End processing [datedays]: success
+[2023-04-14 07:47:18] INFO root fetch - main [MainThread]: End processing [imaginaition]: success
+[2023-04-14 07:47:18] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pos-pms-link]: success
+[2023-04-14 07:47:18] INFO root fetch - main [MainThread]: Store serial: [17703465]
