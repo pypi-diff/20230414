@@ -13466,3 +13466,65 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 14:36:25] INFO root fetch - main [MainThread]: End processing [pyDataFitting]: success
 [2023-04-14 14:36:25] INFO root fetch - main [MainThread]: End processing [cir4mics]: success
 [2023-04-14 14:36:25] INFO root fetch - main [MainThread]: Store serial: [17707105]
+[2023-04-14 14:41:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17707105]
+[2023-04-14 14:41:33] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 14:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Products.MeetingLalouviere
+[2023-04-14 14:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyProcessAutom
+[2023-04-14 14:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: manticore
+[2023-04-14 14:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: daskcheck
+[2023-04-14 14:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oc-mailer
+[2023-04-14 14:41:33] INFO root fetch - processPackages [Products.MeetingLalouviere]: New version: [4.2.0rc1] Old Version: [4.2.0b3]
+[2023-04-14 14:41:33] INFO root fetch - processPackages [daskcheck]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 14:41:34] INFO root fetch - processPackages [pyProcessAutom]: New version: [1.4.8] Old Version: [1.4.7]
+[2023-04-14 14:41:34] WARNING root fetch - processPackages [oc-mailer]: Skipping, unable to determine old version
+[2023-04-14 14:41:34] INFO root fetch - processPackages [oc-mailer]: Start processing: robotmk
+[2023-04-14 14:41:34] INFO root fetch - main [MainThread]: End processing [oc-mailer] error
+[2023-04-14 14:41:34] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230414] Old Version: [0.3.8.dev230413]
+[2023-04-14 14:41:34] INFO root fetch - processPackages [robotmk]: New version: [0.0.54] Old Version: [0.0.53]
+[2023-04-14 14:41:34] INFO root fetch - processPackages [Products.MeetingLalouviere]: Downloading https://files.pythonhosted.org/packages/6f/e1/bceb0261f3f0b1ada2a06192b9ba57b3bbd56f3b3d21650a98b9cd4b0622/Products.MeetingLalouviere-4.2.0rc1.tar.gz
+[2023-04-14 14:41:34] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/ab/f3/8f73d5f31524ba7caf1e0dd11b1e8a54885d6c2ddf2384359594dafd1462/manticore-0.3.8.dev230414.tar.gz
+[2023-04-14 14:41:34] INFO root fetch - processPackages [daskcheck]: Downloading https://files.pythonhosted.org/packages/61/21/e725dfd2a1226d72b709ee0f324c4280dafe5787d2b4ccbaaf4d117eac46/daskcheck-0.0.3.tar.gz
+[2023-04-14 14:41:34] INFO root fetch - processPackages [robotmk]: Downloading https://files.pythonhosted.org/packages/1d/22/c205a4bee7bb9505a961eb989f147eb8b6ecbcf39caf4215694936913e17/robotmk-0.0.53.tar.gz
+[2023-04-14 14:41:34] INFO root fetch - processPackages [pyProcessAutom]: Downloading https://files.pythonhosted.org/packages/43/70/10946a7ef233aecd533048136dd32ad62b9c36bc913b1ba49bb7e2d2c1a9/pyProcessAutom-1.4.8.tar.gz
+[2023-04-14 14:41:34] INFO root fetch - processPackages [Products.MeetingLalouviere]: executing diffoscope
+[2023-04-14 14:41:34] INFO root fetch - processPackages [Products.MeetingLalouviere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Products.MeetingLalouviere-4.2.0b3.tar.gz tmp/Products.MeetingLalouviere-4.2.0rc1.tar.gz --markdown 20230414/P/Products.MeetingLalouviere/4.2.0b3-4.2.0rc1/diff.md --exclude *.pyd
+[2023-04-14 14:41:34] INFO root fetch - processPackages [daskcheck]: Downloading https://files.pythonhosted.org/packages/8a/5e/b0a195c138effdcfd390c52f2524ad38613df876fe3c74009313ef1c3420/daskcheck-0.0.4.tar.gz
+[2023-04-14 14:41:34] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-04-14 14:41:34] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230413.tar.gz tmp/manticore-0.3.8.dev230414.tar.gz --markdown 20230414/m/manticore/0.3.8.dev230413-0.3.8.dev230414/diff.md --exclude *.pyd
+[2023-04-14 14:41:34] INFO root fetch - processPackages [pyProcessAutom]: executing diffoscope
+[2023-04-14 14:41:34] INFO root fetch - processPackages [pyProcessAutom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyProcessAutom-1.4.7.tar.gz tmp/pyProcessAutom-1.4.8.tar.gz --markdown 20230414/p/pyProcessAutom/1.4.7-1.4.8/diff.md --exclude *.pyd
+[2023-04-14 14:41:34] INFO root fetch - processPackages [robotmk]: Downloading https://files.pythonhosted.org/packages/eb/28/083d6ae716bf9c77e1c6bbe636b567748b4352f67c91d77967b5c3e1f522/robotmk-0.0.54.tar.gz
+[2023-04-14 14:41:34] INFO root fetch - processPackages [daskcheck]: executing diffoscope
+[2023-04-14 14:41:34] INFO root fetch - processPackages [daskcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daskcheck-0.0.3.tar.gz tmp/daskcheck-0.0.4.tar.gz --markdown 20230414/d/daskcheck/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 14:41:34] INFO root fetch - processPackages [robotmk]: executing diffoscope
+[2023-04-14 14:41:34] INFO root fetch - processPackages [robotmk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotmk-0.0.53.tar.gz tmp/robotmk-0.0.54.tar.gz --markdown 20230414/r/robotmk/0.0.53-0.0.54/diff.md --exclude *.pyd
+[2023-04-14 14:41:35] INFO root fetch - processPackages [pyProcessAutom]: Start processing: EASYPLOT-TOOLBOX
+[2023-04-14 14:41:35] INFO root fetch - main [MainThread]: End processing [pyProcessAutom]: success
+[2023-04-14 14:41:35] INFO root fetch - processPackages [EASYPLOT-TOOLBOX]: New version: [2023.4] Old Version: [2023.3]
+[2023-04-14 14:41:35] INFO root fetch - processPackages [EASYPLOT-TOOLBOX]: Downloading https://files.pythonhosted.org/packages/e7/bc/0c8d01c47ebfc108801a7f31cbd8e6a855c59f90be62767f0ef4a7b87f64/EASYPLOT_TOOLBOX-2023.3.tar.gz
+[2023-04-14 14:41:36] INFO root fetch - processPackages [robotmk]: Start processing: hb-test-generator
+[2023-04-14 14:41:36] INFO root fetch - main [MainThread]: End processing [robotmk]: success
+[2023-04-14 14:41:36] INFO root fetch - processPackages [hb-test-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 14:41:36] INFO root fetch - processPackages [manticore]: Start processing: micromechanics-indentationGUI
+[2023-04-14 14:41:36] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-04-14 14:41:36] INFO root fetch - processPackages [EASYPLOT-TOOLBOX]: Downloading https://files.pythonhosted.org/packages/86/13/f3fe17ce4e2c5ec9b6dad5d9663e5dfdac7c4c80c7d67debbfa76ff52dcd/EASYPLOT_TOOLBOX-2023.4.tar.gz
+[2023-04-14 14:41:36] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 14:41:36] INFO root fetch - processPackages [hb-test-generator]: executing diffoscope
+[2023-04-14 14:41:36] INFO root fetch - processPackages [hb-test-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hb-test-generator-0.1.8.tar.gz tmp/hb-test-generator-0.1.9.tar.gz --markdown 20230414/h/hb-test-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 14:41:36] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-14 14:41:36] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230414/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 14:41:36] INFO root fetch - processPackages [EASYPLOT-TOOLBOX]: executing diffoscope
+[2023-04-14 14:41:36] INFO root fetch - processPackages [EASYPLOT-TOOLBOX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EASYPLOT_TOOLBOX-2023.3.tar.gz tmp/EASYPLOT_TOOLBOX-2023.4.tar.gz --markdown 20230414/E/EASYPLOT-TOOLBOX/2023.3-2023.4/diff.md --exclude *.pyd
+[2023-04-14 14:41:37] INFO root fetch - processPackages [hb-test-generator]: Start processing: gustaf
+[2023-04-14 14:41:37] INFO root fetch - main [MainThread]: End processing [hb-test-generator]: success
+[2023-04-14 14:41:37] INFO root fetch - processPackages [gustaf]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 14:41:37] INFO root fetch - main [MainThread]: End processing [EASYPLOT-TOOLBOX]: success
+[2023-04-14 14:41:37] INFO root fetch - processPackages [gustaf]: Downloading https://files.pythonhosted.org/packages/e0/23/236ead9189b8580affce8f81e0fd0486ce56358c10f2393d98cacb8c386a/gustaf-0.0.8.tar.gz
+[2023-04-14 14:41:37] INFO root fetch - processPackages [gustaf]: Downloading https://files.pythonhosted.org/packages/42/2c/f93542053ad74ad73eaa4106f276e9a512744cbfe493e9e9d636e78375de/gustaf-0.0.9.tar.gz
+[2023-04-14 14:41:37] INFO root fetch - processPackages [gustaf]: executing diffoscope
+[2023-04-14 14:41:37] INFO root fetch - processPackages [gustaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gustaf-0.0.8.tar.gz tmp/gustaf-0.0.9.tar.gz --markdown 20230414/g/gustaf/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 14:41:38] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-14 14:41:39] INFO root fetch - main [MainThread]: End processing [Products.MeetingLalouviere]: success
+[2023-04-14 14:41:39] INFO root fetch - main [MainThread]: End processing [daskcheck]: success
+[2023-04-14 14:41:40] INFO root fetch - main [MainThread]: End processing [gustaf]: success
+[2023-04-14 14:41:40] INFO root fetch - main [MainThread]: Store serial: [17707152]
