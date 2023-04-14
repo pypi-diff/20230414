@@ -10888,3 +10888,86 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 11:38:20] INFO root fetch - main [MainThread]: End processing [returnn]: success
 [2023-04-14 11:38:23] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-14 11:38:23] INFO root fetch - main [MainThread]: Store serial: [17705411]
+[2023-04-14 11:43:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705411]
+[2023-04-14 11:43:31] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-14 11:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: txt2tei
+[2023-04-14 11:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-soap
+[2023-04-14 11:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dataroid
+[2023-04-14 11:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slackflylog
+[2023-04-14 11:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: osais
+[2023-04-14 11:43:31] INFO root fetch - processPackages [txt2tei]: New version: [1.0.6.post2] Old Version: [1.0.6.post1]
+[2023-04-14 11:43:31] INFO root fetch - processPackages [slackflylog]: New version: [3.0.8] Old Version: [3.0.5]
+[2023-04-14 11:43:31] INFO root fetch - processPackages [osais]: New version: [1.0.36] Old Version: [1.0.35]
+[2023-04-14 11:43:31] INFO root fetch - processPackages [dataroid]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 11:43:31] WARNING root fetch - processPackages [fastapi-soap]: Skipping, unable to determine old version
+[2023-04-14 11:43:31] INFO root fetch - processPackages [fastapi-soap]: Start processing: veetility
+[2023-04-14 11:43:31] INFO root fetch - main [MainThread]: End processing [fastapi-soap] error
+[2023-04-14 11:43:31] INFO root fetch - processPackages [veetility]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 11:43:31] INFO root fetch - processPackages [slackflylog]: Downloading https://files.pythonhosted.org/packages/b5/01/d657f7f9baf44baf0412ddc428d869bdb347ae8174144b411ccdf5963ae1/slackflylog-3.0.8.tar.gz
+[2023-04-14 11:43:31] INFO root fetch - processPackages [veetility]: executing diffoscope
+[2023-04-14 11:43:31] INFO root fetch - processPackages [veetility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veetility-0.1.8.tar.gz tmp/veetility-0.1.9.tar.gz --markdown 20230414/v/veetility/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 11:43:31] INFO root fetch - processPackages [dataroid]: Downloading https://files.pythonhosted.org/packages/3a/82/3aa22d857ee97caf220b801d233ee22cb8c481e90c0200b50cd0bffe3081/dataroid-0.0.4.tar.gz
+[2023-04-14 11:43:31] INFO root fetch - processPackages [osais]: Downloading https://files.pythonhosted.org/packages/71/6c/cc0ae4f1c82a15452ef8a78135214ce2167a4d25dbe90e25944fae1478c6/osais-1.0.36.tar.gz
+[2023-04-14 11:43:31] INFO root fetch - processPackages [txt2tei]: Downloading https://files.pythonhosted.org/packages/11/5b/81cb37af7caee7bdd0ce9087c0997dc7594425152e2f5f0a2dd9dd39a1f8/txt2tei-1.0.6.post2-py3-none-any.whl
+[2023-04-14 11:43:32] INFO root fetch - processPackages [dataroid]: executing diffoscope
+[2023-04-14 11:43:32] INFO root fetch - processPackages [dataroid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataroid-0.0.3.tar.gz tmp/dataroid-0.0.4.tar.gz --markdown 20230414/d/dataroid/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 11:43:32] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-14 11:43:32] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-3.0.5.tar.gz tmp/slackflylog-3.0.8.tar.gz --markdown 20230414/s/slackflylog/3.0.5-3.0.8/diff.md --exclude *.pyd
+[2023-04-14 11:43:32] INFO root fetch - processPackages [osais]: executing diffoscope
+[2023-04-14 11:43:32] INFO root fetch - processPackages [osais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osais-1.0.35.tar.gz tmp/osais-1.0.36.tar.gz --markdown 20230414/o/osais/1.0.35-1.0.36/diff.md --exclude *.pyd
+[2023-04-14 11:43:32] INFO root fetch - processPackages [txt2tei]: executing diffoscope
+[2023-04-14 11:43:32] INFO root fetch - processPackages [txt2tei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2tei-1.0.6.post1-py3-none-any.whl.zip tmp/txt2tei-1.0.6.post2-py3-none-any.whl.zip --markdown 20230414/t/txt2tei/1.0.6.post1-1.0.6.post2/diff.md --exclude *.pyd
+[2023-04-14 11:43:32] INFO root fetch - processPackages [dataroid]: Start processing: qdrant-haystack
+[2023-04-14 11:43:32] INFO root fetch - main [MainThread]: End processing [dataroid]: success
+[2023-04-14 11:43:33] INFO root fetch - processPackages [qdrant-haystack]: New version: [1.0.0] Old Version: [0.0.5]
+[2023-04-14 11:43:33] INFO root fetch - processPackages [slackflylog]: Start processing: z4d-certified-devices
+[2023-04-14 11:43:33] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-14 11:43:33] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.42] Old Version: [2.41]
+[2023-04-14 11:43:33] INFO root fetch - processPackages [veetility]: Start processing: advanced-machine-learning-modules
+[2023-04-14 11:43:33] INFO root fetch - main [MainThread]: End processing [veetility]: success
+[2023-04-14 11:43:33] WARNING root fetch - processPackages [advanced-machine-learning-modules]: Skipping, unable to determine old version
+[2023-04-14 11:43:33] INFO root fetch - processPackages [advanced-machine-learning-modules]: Start processing: dipex
+[2023-04-14 11:43:33] INFO root fetch - main [MainThread]: End processing [advanced-machine-learning-modules] error
+[2023-04-14 11:43:33] INFO root fetch - processPackages [dipex]: New version: [4.9.2] Old Version: [4.9.1]
+[2023-04-14 11:43:33] INFO root fetch - processPackages [osais]: Start processing: steamship-langchain
+[2023-04-14 11:43:33] INFO root fetch - main [MainThread]: End processing [osais]: success
+[2023-04-14 11:43:33] INFO root fetch - processPackages [txt2tei]: Start processing: preprocessing-pgp
+[2023-04-14 11:43:33] INFO root fetch - main [MainThread]: End processing [txt2tei]: success
+[2023-04-14 11:43:33] INFO root fetch - processPackages [steamship-langchain]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 11:43:33] INFO root fetch - processPackages [preprocessing-pgp]: New version: [0.2.9.dev5] Old Version: [0.2.9.dev4]
+[2023-04-14 11:43:33] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/d9/46/cc92044b6e3650c106dfbb6fa0e5c27c30f2b4b9525b0a00fb232834d63b/z4d-certified-devices-2.42.tar.gz
+[2023-04-14 11:43:33] INFO root fetch - processPackages [qdrant-haystack]: Downloading https://files.pythonhosted.org/packages/93/11/94118e15ad49dc2225977b424f4b2eea16864ebac5d5902942b08cac4c3a/qdrant_haystack-1.0.0.tar.gz
+[2023-04-14 11:43:33] INFO root fetch - processPackages [preprocessing-pgp]: Downloading https://files.pythonhosted.org/packages/a0/75/602d01ed84c3de5f1285abaeedd5f9cd283ea96115cc890778091d760fa2/preprocessing-pgp-0.2.9.dev4.tar.gz
+[2023-04-14 11:43:33] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-04-14 11:43:33] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.41.tar.gz tmp/z4d-certified-devices-2.42.tar.gz --markdown 20230414/z/z4d-certified-devices/2.41-2.42/diff.md --exclude *.pyd
+[2023-04-14 11:43:33] INFO root fetch - processPackages [qdrant-haystack]: executing diffoscope
+[2023-04-14 11:43:33] INFO root fetch - processPackages [qdrant-haystack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qdrant_haystack-0.0.5.tar.gz tmp/qdrant_haystack-1.0.0.tar.gz --markdown 20230414/q/qdrant-haystack/0.0.5-1.0.0/diff.md --exclude *.pyd
+[2023-04-14 11:43:33] WARNING root fetch - processPackages [preprocessing-pgp]: Skipping package: exceeds size limit 78856770>=10485760
+[2023-04-14 11:43:33] INFO root fetch - processPackages [preprocessing-pgp]: Start processing: py-raycast-engine
+[2023-04-14 11:43:33] INFO root fetch - main [MainThread]: End processing [preprocessing-pgp] error
+[2023-04-14 11:43:33] INFO root fetch - processPackages [dipex]: executing diffoscope
+[2023-04-14 11:43:33] INFO root fetch - processPackages [dipex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dipex-4.9.1.tar.gz tmp/dipex-4.9.2.tar.gz --markdown 20230414/d/dipex/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2023-04-14 11:43:33] WARNING root fetch - processPackages [py-raycast-engine]: Skipping, unable to determine old version
+[2023-04-14 11:43:33] INFO root fetch - processPackages [py-raycast-engine]: Start processing: cmip
+[2023-04-14 11:43:33] INFO root fetch - main [MainThread]: End processing [py-raycast-engine] error
+[2023-04-14 11:43:33] INFO root fetch - processPackages [cmip]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 11:43:33] INFO root fetch - processPackages [steamship-langchain]: executing diffoscope
+[2023-04-14 11:43:33] INFO root fetch - processPackages [steamship-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamship-langchain-0.0.8.tar.gz tmp/steamship-langchain-0.0.9.tar.gz --markdown 20230414/s/steamship-langchain/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 11:43:33] INFO root fetch - processPackages [cmip]: Downloading https://files.pythonhosted.org/packages/c8/fc/8e0e369cd7eb6e0c5fb46952b4a32835ab61e6784cc4aa5ef48ae643b299/cmip-0.0.3.tar.gz
+[2023-04-14 11:43:34] INFO root fetch - processPackages [cmip]: executing diffoscope
+[2023-04-14 11:43:34] INFO root fetch - processPackages [cmip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmip-0.0.2.tar.gz tmp/cmip-0.0.3.tar.gz --markdown 20230414/c/cmip/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 11:43:34] INFO root fetch - processPackages [qdrant-haystack]: Start processing: zalo-sdk
+[2023-04-14 11:43:34] INFO root fetch - main [MainThread]: End processing [qdrant-haystack]: success
+[2023-04-14 11:43:34] WARNING root fetch - processPackages [zalo-sdk]: Skipping, unable to determine old version
+[2023-04-14 11:43:34] INFO root fetch - processPackages [zalo-sdk]: Start processing: yourtools
+[2023-04-14 11:43:34] INFO root fetch - main [MainThread]: End processing [zalo-sdk] error
+[2023-04-14 11:43:34] INFO root fetch - processPackages [yourtools]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-14 11:43:34] INFO root fetch - main [MainThread]: End processing [steamship-langchain]: success
+[2023-04-14 11:43:35] INFO root fetch - main [MainThread]: End processing [cmip]: success
+[2023-04-14 11:43:35] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/a3/59/1e9e54d13ef0f0af9e5ca36273a5e6caa9341916c332c248702059266622/yourtools-0.4.8.tar.gz
+[2023-04-14 11:43:35] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-14 11:43:35] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.4.7.tar.gz tmp/yourtools-0.4.8.tar.gz --markdown 20230414/y/yourtools/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-14 11:43:35] INFO root fetch - main [MainThread]: End processing [dipex]: success
+[2023-04-14 11:43:36] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-14 11:43:36] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-04-14 11:43:36] INFO root fetch - main [MainThread]: Store serial: [17705470]
