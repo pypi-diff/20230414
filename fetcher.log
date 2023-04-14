@@ -19917,3 +19917,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:11:18] INFO root fetch - main [MainThread]: End processing [githubkit]: success
 [2023-04-14 20:11:18] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
 [2023-04-14 20:11:18] INFO root fetch - main [MainThread]: Store serial: [17711339]
+[2023-04-14 20:16:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711339]
+[2023-04-14 20:16:28] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 20:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: katalytic-pkg
+[2023-04-14 20:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opender
+[2023-04-14 20:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whiskey-flask
+[2023-04-14 20:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: curl-arguments-url
+[2023-04-14 20:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-google-native
+[2023-04-14 20:16:28] INFO root fetch - processPackages [katalytic-pkg]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-14 20:16:28] INFO root fetch - processPackages [whiskey-flask]: New version: [0.8.1] Old Version: [0.8]
+[2023-04-14 20:16:28] INFO root fetch - processPackages [pulumi-google-native]: New version: [0.9.1a1638807539] Old Version: [0.9.1a1638555770]
+[2023-04-14 20:16:28] INFO root fetch - processPackages [opender]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-14 20:16:28] INFO root fetch - processPackages [curl-arguments-url]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 20:16:29] INFO root fetch - processPackages [pulumi-google-native]: executing diffoscope
+[2023-04-14 20:16:29] INFO root fetch - processPackages [pulumi-google-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_google_native-0.9.1a1638555770.tar.gz tmp/pulumi_google_native-0.9.1a1638807539.tar.gz --markdown 20230414/p/pulumi-google-native/0.9.1a1638555770-0.9.1a1638807539/diff.md --exclude *.pyd
+[2023-04-14 20:16:29] INFO root fetch - processPackages [katalytic-pkg]: Downloading https://files.pythonhosted.org/packages/74/a3/7216915180f0a8cb1f2122e2e1be693962b1cb276f7deef93d7ec483b5e0/katalytic-pkg-0.2.5.tar.gz
+[2023-04-14 20:16:29] INFO root fetch - processPackages [whiskey-flask]: Downloading https://files.pythonhosted.org/packages/1c/52/4c0f6c486d8138a6c5e2497f7b6d2c1817f7d35afd3b152e4a6dc83a4835/whiskey-flask-0.8.tar.gz
+[2023-04-14 20:16:29] INFO root fetch - processPackages [opender]: Downloading https://files.pythonhosted.org/packages/91/89/ebaef2347f67a707eeeee8bcfa8b71f57a7e447357a06d4a8de7eb1f039f/opender-2.0.2.tar.gz
+[2023-04-14 20:16:29] INFO root fetch - processPackages [curl-arguments-url]: Downloading https://files.pythonhosted.org/packages/10/d4/45ded41f684220bcc3063c0479a5015b7e82dab0f693799f76a4c30eea3f/curl_arguments_url-0.1.2.tar.gz
+[2023-04-14 20:16:29] INFO root fetch - processPackages [whiskey-flask]: Downloading https://files.pythonhosted.org/packages/a8/2c/e2987eabde31c1ed7358602a5ee08048060ba3dc70a13acbdc5865a5ff90/whiskey-flask-0.8.1.tar.gz
+[2023-04-14 20:16:29] INFO root fetch - processPackages [katalytic-pkg]: Downloading https://files.pythonhosted.org/packages/fc/37/88f32e11ff7088376d1c1e2030c732bef823fed151622cae88869a7b2d75/katalytic-pkg-0.2.6.tar.gz
+[2023-04-14 20:16:29] INFO root fetch - processPackages [curl-arguments-url]: executing diffoscope
+[2023-04-14 20:16:29] INFO root fetch - processPackages [curl-arguments-url]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curl_arguments_url-0.1.1.tar.gz tmp/curl_arguments_url-0.1.2.tar.gz --markdown 20230414/c/curl-arguments-url/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 20:16:29] INFO root fetch - processPackages [opender]: Downloading https://files.pythonhosted.org/packages/35/00/0a8851ef6b381658966e6d7980b0fc5179df645c8e64fbab580646a7fbca/opender-2.0.3.tar.gz
+[2023-04-14 20:16:29] INFO root fetch - processPackages [whiskey-flask]: executing diffoscope
+[2023-04-14 20:16:29] INFO root fetch - processPackages [whiskey-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whiskey-flask-0.8.tar.gz tmp/whiskey-flask-0.8.1.tar.gz --markdown 20230414/w/whiskey-flask/0.8-0.8.1/diff.md --exclude *.pyd
+[2023-04-14 20:16:29] INFO root fetch - processPackages [katalytic-pkg]: executing diffoscope
+[2023-04-14 20:16:29] INFO root fetch - processPackages [katalytic-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-pkg-0.2.5.tar.gz tmp/katalytic-pkg-0.2.6.tar.gz --markdown 20230414/k/katalytic-pkg/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-14 20:16:29] INFO root fetch - processPackages [opender]: executing diffoscope
+[2023-04-14 20:16:29] INFO root fetch - processPackages [opender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opender-2.0.2.tar.gz tmp/opender-2.0.3.tar.gz --markdown 20230414/o/opender/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-14 20:16:30] INFO root fetch - processPackages [whiskey-flask]: Start processing: living-figures
+[2023-04-14 20:16:30] INFO root fetch - main [MainThread]: End processing [whiskey-flask]: success
+[2023-04-14 20:16:30] INFO root fetch - processPackages [living-figures]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 20:16:30] INFO root fetch - processPackages [katalytic-pkg]: Start processing: ghid
+[2023-04-14 20:16:30] INFO root fetch - main [MainThread]: End processing [katalytic-pkg]: success
+[2023-04-14 20:16:30] INFO root fetch - processPackages [ghid]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 20:16:30] INFO root fetch - processPackages [curl-arguments-url]: Start processing: vollseg
+[2023-04-14 20:16:30] INFO root fetch - main [MainThread]: End processing [curl-arguments-url]: success
+[2023-04-14 20:16:30] INFO root fetch - processPackages [living-figures]: Downloading https://files.pythonhosted.org/packages/cc/6b/5e5244697560fd103a799cbc000f69bad8a4f25782e923e2f501cd753230/living-figures-0.1.1.tar.gz
+[2023-04-14 20:16:30] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-14 20:16:30] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-14 20:16:31] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-14 20:16:31] INFO root fetch - processPackages [vollseg]: Start processing: jal
+[2023-04-14 20:16:31] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-14 20:16:31] INFO root fetch - processPackages [ghid]: Downloading https://files.pythonhosted.org/packages/43/66/bcaef5d8fd70261f519a9bdcbc45f3c9f7400112455bc8ecf7166df2a129/ghid-0.0.1-cp311-cp311-win_amd64.whl
+[2023-04-14 20:16:31] INFO root fetch - processPackages [jal]: New version: [2023.4.5] Old Version: [2023.4.4]
+[2023-04-14 20:16:31] INFO root fetch - processPackages [living-figures]: executing diffoscope
+[2023-04-14 20:16:31] INFO root fetch - processPackages [living-figures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/living-figures-0.1.0.tar.gz tmp/living-figures-0.1.1.tar.gz --markdown 20230414/l/living-figures/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 20:16:31] INFO root fetch - processPackages [opender]: Start processing: anipy-cli
+[2023-04-14 20:16:31] INFO root fetch - main [MainThread]: End processing [opender]: success
+[2023-04-14 20:16:31] INFO root fetch - processPackages [anipy-cli]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-14 20:16:31] INFO root fetch - processPackages [anipy-cli]: executing diffoscope
+[2023-04-14 20:16:31] INFO root fetch - processPackages [anipy-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anipy_cli-2.7.8.tar.gz tmp/anipy_cli-2.7.9.tar.gz --markdown 20230414/a/anipy-cli/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-14 20:16:31] INFO root fetch - processPackages [jal]: Downloading https://files.pythonhosted.org/packages/0b/49/2dba64d77a60fef99c7b16e597c394440781b7d5e4cbcd72e29a6657d40c/jal-2023.4.5.tar.gz
+[2023-04-14 20:16:31] INFO root fetch - processPackages [ghid]: Downloading https://files.pythonhosted.org/packages/e1/a0/1635c9c87e7c018ce4bcbe739c93607c0e8ab6ceabac6563f6479d04c054/ghid-0.0.2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_28_x86_64.whl
+[2023-04-14 20:16:31] INFO root fetch - processPackages [jal]: executing diffoscope
+[2023-04-14 20:16:31] INFO root fetch - processPackages [jal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jal-2023.4.4.tar.gz tmp/jal-2023.4.5.tar.gz --markdown 20230414/j/jal/2023.4.4-2023.4.5/diff.md --exclude *.pyd
+[2023-04-14 20:16:32] INFO root fetch - processPackages [ghid]: executing diffoscope
+[2023-04-14 20:16:32] INFO root fetch - processPackages [ghid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghid-0.0.1-cp311-cp311-win_amd64.whl.zip tmp/ghid-0.0.2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_28_x86_64.whl.zip --markdown 20230414/g/ghid/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 20:16:32] INFO root fetch - processPackages [living-figures]: Start processing: PyroFork-dev
+[2023-04-14 20:16:32] INFO root fetch - main [MainThread]: End processing [living-figures]: success
+[2023-04-14 20:16:32] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.5a1.dev202304141818] Old Version: [2.1.5a1.dev202304141812]
+[2023-04-14 20:16:32] INFO root fetch - processPackages [PyroFork-dev]: Downloading https://files.pythonhosted.org/packages/92/fb/190a2dd903f1e407ceac4235b92079cd9c5d55d71eb8d316806641f0187f/PyroFork-dev-2.1.5a1.dev202304141818.tar.gz
+[2023-04-14 20:16:32] INFO root fetch - main [MainThread]: End processing [anipy-cli]: success
+[2023-04-14 20:16:32] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-14 20:16:32] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.5a1.dev202304141812.tar.gz tmp/PyroFork-dev-2.1.5a1.dev202304141818.tar.gz --markdown 20230414/P/PyroFork-dev/2.1.5a1.dev202304141812-2.1.5a1.dev202304141818/diff.md --exclude *.pyd
+[2023-04-14 20:16:33] INFO root fetch - main [MainThread]: End processing [ghid]: success
+[2023-04-14 20:16:34] INFO root fetch - main [MainThread]: End processing [jal]: success
+[2023-04-14 20:16:37] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
+[2023-04-14 20:18:04] INFO root fetch - main [MainThread]: End processing [pulumi-google-native]: success
+[2023-04-14 20:18:04] INFO root fetch - main [MainThread]: Store serial: [17711372]
