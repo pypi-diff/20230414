@@ -7730,3 +7730,83 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 08:02:54] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-04-14 08:02:55] INFO root fetch - main [MainThread]: End processing [plonetheme.barceloneta]: success
 [2023-04-14 08:02:55] INFO root fetch - main [MainThread]: Store serial: [17703556]
+[2023-04-14 08:07:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703556]
+[2023-04-14 08:08:02] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 08:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtenv666
+[2023-04-14 08:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cbig-network-correspondence
+[2023-04-14 08:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arcana-xnat
+[2023-04-14 08:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hugegraph-python
+[2023-04-14 08:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: marqo
+[2023-04-14 08:08:03] INFO root fetch - processPackages [marqo]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-14 08:08:03] WARNING root fetch - processPackages [hugegraph-python]: Skipping, unable to determine old version
+[2023-04-14 08:08:03] INFO root fetch - processPackages [hugegraph-python]: Start processing: credsweeper
+[2023-04-14 08:08:03] INFO root fetch - main [MainThread]: End processing [hugegraph-python] error
+[2023-04-14 08:08:03] INFO root fetch - processPackages [arcana-xnat]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-14 08:08:03] WARNING root fetch - processPackages [mtenv666]: Skipping, unable to determine old version
+[2023-04-14 08:08:03] INFO root fetch - processPackages [cbig-network-correspondence]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-14 08:08:03] INFO root fetch - processPackages [mtenv666]: Start processing: dfeed
+[2023-04-14 08:08:03] INFO root fetch - main [MainThread]: End processing [mtenv666] error
+[2023-04-14 08:08:03] INFO root fetch - processPackages [credsweeper]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-14 08:08:03] INFO root fetch - processPackages [dfeed]: New version: [0.0b1] Old Version: [0.0.1]
+[2023-04-14 08:08:03] INFO root fetch - processPackages [marqo]: Downloading https://files.pythonhosted.org/packages/79/28/985057e6ac5d34aefa87ff6142b428fd942bee2e34801fe940bf6b30057c/marqo-0.9.1.tar.gz
+[2023-04-14 08:08:03] INFO root fetch - processPackages [dfeed]: Downloading https://files.pythonhosted.org/packages/29/3a/8eb4dab92a23422246fbcb9877c568a0d61554b95b73ec7b936a337d969d/dfeed-0.0.1.tar.gz
+[2023-04-14 08:08:03] INFO root fetch - processPackages [credsweeper]: Downloading https://files.pythonhosted.org/packages/c8/f3/80d397896dc8341db49739159686e3ce051b01343c571697ca3466c4cd51/credsweeper-1.4.8.tar.gz
+[2023-04-14 08:08:03] INFO root fetch - processPackages [cbig-network-correspondence]: Downloading https://files.pythonhosted.org/packages/01/ab/f568d88726f7e32c28c64e4c2196a3c07cb0c79f3650ee51852c5e988f3b/cbig_network_correspondence-0.0.7.tar.gz
+[2023-04-14 08:08:03] INFO root fetch - processPackages [arcana-xnat]: Downloading https://files.pythonhosted.org/packages/1e/0d/16ab050e08eaed5f58c9b6a8fccf36473583dc91c9b5a84bb96dc6d29a8d/arcana_xnat-0.3.0.tar.gz
+[2023-04-14 08:08:03] INFO root fetch - processPackages [cbig-network-correspondence]: executing diffoscope
+[2023-04-14 08:08:03] INFO root fetch - processPackages [cbig-network-correspondence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbig_network_correspondence-0.0.6.tar.gz tmp/cbig_network_correspondence-0.0.7.tar.gz --markdown 20230414/c/cbig-network-correspondence/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-14 08:08:03] INFO root fetch - processPackages [dfeed]: Downloading https://files.pythonhosted.org/packages/9f/3b/084b28f00ea691434a8dfcd61cdbd2a6af7e4105c5a448e238eb0f1e8388/dfeed-0.0b1.tar.gz
+[2023-04-14 08:08:03] INFO root fetch - processPackages [marqo]: Downloading https://files.pythonhosted.org/packages/c1/ac/60aaadd3e7e5419b317f357fe097bd7d2a8d5edf095fc6dc94c9761195d5/marqo-0.9.2.tar.gz
+[2023-04-14 08:08:03] INFO root fetch - processPackages [arcana-xnat]: Downloading https://files.pythonhosted.org/packages/9a/d1/b394a1d837a2633cc14534881e3000a26ba9487785cb1d9baa5ad598a23b/arcana_xnat-0.3.1.tar.gz
+[2023-04-14 08:08:03] INFO root fetch - processPackages [marqo]: executing diffoscope
+[2023-04-14 08:08:03] INFO root fetch - processPackages [marqo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marqo-0.9.1.tar.gz tmp/marqo-0.9.2.tar.gz --markdown 20230414/m/marqo/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-14 08:08:03] INFO root fetch - processPackages [credsweeper]: Downloading https://files.pythonhosted.org/packages/65/87/a4b4a3270ff3c3d0efa97f29a60850ca3845c48bb63cf1cc1eba399d8a3e/credsweeper-1.4.9.tar.gz
+[2023-04-14 08:08:03] INFO root fetch - processPackages [dfeed]: executing diffoscope
+[2023-04-14 08:08:03] INFO root fetch - processPackages [dfeed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfeed-0.0.1.tar.gz tmp/dfeed-0.0b1.tar.gz --markdown 20230414/d/dfeed/0.0.1-0.0b1/diff.md --exclude *.pyd
+[2023-04-14 08:08:03] INFO root fetch - processPackages [arcana-xnat]: executing diffoscope
+[2023-04-14 08:08:03] INFO root fetch - processPackages [arcana-xnat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcana_xnat-0.3.0.tar.gz tmp/arcana_xnat-0.3.1.tar.gz --markdown 20230414/a/arcana-xnat/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-14 08:08:03] INFO root fetch - processPackages [credsweeper]: executing diffoscope
+[2023-04-14 08:08:03] INFO root fetch - processPackages [credsweeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/credsweeper-1.4.8.tar.gz tmp/credsweeper-1.4.9.tar.gz --markdown 20230414/c/credsweeper/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-14 08:08:04] INFO root fetch - processPackages [cbig-network-correspondence]: Start processing: mingdaoyun-sdk
+[2023-04-14 08:08:04] INFO root fetch - main [MainThread]: End processing [cbig-network-correspondence]: success
+[2023-04-14 08:08:04] INFO root fetch - processPackages [mingdaoyun-sdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 08:08:04] INFO root fetch - processPackages [mingdaoyun-sdk]: Downloading https://files.pythonhosted.org/packages/d2/9c/1e01ef293f6f0b3721eda8ebc5b039eeac86c0e1ba72771e02daa678e429/mingdaoyun-sdk-0.0.1.tar.gz
+[2023-04-14 08:08:04] INFO root fetch - processPackages [marqo]: Start processing: cis-checks-2023
+[2023-04-14 08:08:04] INFO root fetch - main [MainThread]: End processing [marqo]: success
+[2023-04-14 08:08:04] INFO root fetch - processPackages [cis-checks-2023]: New version: [2.0.8] Old Version: [2.0.7]
+[2023-04-14 08:08:04] INFO root fetch - processPackages [dfeed]: Start processing: ausbildungsnachweise-utils
+[2023-04-14 08:08:04] INFO root fetch - main [MainThread]: End processing [dfeed]: success
+[2023-04-14 08:08:04] WARNING root fetch - processPackages [ausbildungsnachweise-utils]: Skipping, unable to determine old version
+[2023-04-14 08:08:04] INFO root fetch - processPackages [ausbildungsnachweise-utils]: Start processing: dpyhr
+[2023-04-14 08:08:04] INFO root fetch - main [MainThread]: End processing [ausbildungsnachweise-utils] error
+[2023-04-14 08:08:04] INFO root fetch - processPackages [dpyhr]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 08:08:04] INFO root fetch - processPackages [mingdaoyun-sdk]: Downloading https://files.pythonhosted.org/packages/23/f9/f804e03e71e9cf259dfce23b59cdb06092abc38cf5ce0f9b5fa707ddf595/mingdaoyun-sdk-0.0.2.tar.gz
+[2023-04-14 08:08:05] INFO root fetch - processPackages [cis-checks-2023]: Downloading https://files.pythonhosted.org/packages/0c/96/ce8df0f9c5d98b85603e73c889b2c72b04be92fe9ae87d965db125932787/cis_checks_2023-2.0.8.tar.gz
+[2023-04-14 08:08:05] INFO root fetch - processPackages [mingdaoyun-sdk]: executing diffoscope
+[2023-04-14 08:08:05] INFO root fetch - processPackages [mingdaoyun-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mingdaoyun-sdk-0.0.1.tar.gz tmp/mingdaoyun-sdk-0.0.2.tar.gz --markdown 20230414/m/mingdaoyun-sdk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 08:08:05] INFO root fetch - processPackages [dpyhr]: Downloading https://files.pythonhosted.org/packages/f5/36/4bc745a6206d813cdc69e2dd68297cedd0dae11aa17785ffbd25341e6eb5/dpyhr-0.1.0.tar.gz
+[2023-04-14 08:08:05] INFO root fetch - processPackages [cis-checks-2023]: executing diffoscope
+[2023-04-14 08:08:05] INFO root fetch - processPackages [cis-checks-2023]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cis_checks_2023-2.0.7.tar.gz tmp/cis_checks_2023-2.0.8.tar.gz --markdown 20230414/c/cis-checks-2023/2.0.7-2.0.8/diff.md --exclude *.pyd
+[2023-04-14 08:08:05] INFO root fetch - processPackages [dpyhr]: Downloading https://files.pythonhosted.org/packages/e7/a4/d6f35c45247a10bfa7f429e69118f2afab82d3c6cda0520902bd16be2289/dpyhr-0.1.1.tar.gz
+[2023-04-14 08:08:05] INFO root fetch - processPackages [dpyhr]: executing diffoscope
+[2023-04-14 08:08:05] INFO root fetch - processPackages [dpyhr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpyhr-0.1.0.tar.gz tmp/dpyhr-0.1.1.tar.gz --markdown 20230414/d/dpyhr/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 08:08:05] INFO root fetch - processPackages [credsweeper]: Start processing: streampipes
+[2023-04-14 08:08:05] INFO root fetch - main [MainThread]: End processing [credsweeper]: success
+[2023-04-14 08:08:05] INFO root fetch - processPackages [streampipes]: New version: [0.91.0] Old Version: [0.0.2.dev0]
+[2023-04-14 08:08:05] INFO root fetch - processPackages [arcana-xnat]: Start processing: odoo14-addons-oca-purchase-workflow
+[2023-04-14 08:08:05] INFO root fetch - main [MainThread]: End processing [arcana-xnat]: success
+[2023-04-14 08:08:05] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: New version: [14.0.20230413.0] Old Version: [14.0.20230222.0]
+[2023-04-14 08:08:05] INFO root fetch - processPackages [streampipes]: Downloading https://files.pythonhosted.org/packages/91/27/2db58a4caec2d0ead637a3eda6961b305ead4f3287e7833c82040cbb4966/streampipes-0.0.2.dev0.tar.gz
+[2023-04-14 08:08:05] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/85/80/94df614babdbe8b1a1a9fff63d741fa3569fc0a24d3a27532b1b569bd1f3/odoo14_addons_oca_purchase_workflow-14.0.20230222.0-py3-none-any.whl
+[2023-04-14 08:08:06] INFO root fetch - main [MainThread]: End processing [mingdaoyun-sdk]: success
+[2023-04-14 08:08:06] INFO root fetch - processPackages [streampipes]: Downloading https://files.pythonhosted.org/packages/af/9a/5a45c80dbfdb0107022377d7f656802d2bdcc3062f1ac96887fceaa24b2d/streampipes-0.91.0.tar.gz
+[2023-04-14 08:08:06] INFO root fetch - processPackages [streampipes]: executing diffoscope
+[2023-04-14 08:08:06] INFO root fetch - processPackages [streampipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streampipes-0.0.2.dev0.tar.gz tmp/streampipes-0.91.0.tar.gz --markdown 20230414/s/streampipes/0.0.2.dev0-0.91.0/diff.md --exclude *.pyd
+[2023-04-14 08:08:06] INFO root fetch - main [MainThread]: End processing [cis-checks-2023]: success
+[2023-04-14 08:08:06] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/67/61/5a1a50e99107f9144e167a72ae521c52412c2f1d6a731159307591504266/odoo14_addons_oca_purchase_workflow-14.0.20230413.0-py3-none-any.whl
+[2023-04-14 08:08:06] INFO root fetch - main [MainThread]: End processing [dpyhr]: success
+[2023-04-14 08:08:06] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: executing diffoscope
+[2023-04-14 08:08:06] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_purchase_workflow-14.0.20230222.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_purchase_workflow-14.0.20230413.0-py3-none-any.whl.zip --markdown 20230414/o/odoo14-addons-oca-purchase-workflow/14.0.20230222.0-14.0.20230413.0/diff.md --exclude *.pyd
+[2023-04-14 08:08:07] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-purchase-workflow]: success
+[2023-04-14 08:08:07] INFO root fetch - main [MainThread]: End processing [streampipes]: success
+[2023-04-14 08:08:07] INFO root fetch - main [MainThread]: Store serial: [17703602]
