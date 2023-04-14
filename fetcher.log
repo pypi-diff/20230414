@@ -19834,3 +19834,86 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:06:03] INFO root fetch - main [MainThread]: End processing [molab]: success
 [2023-04-14 20:06:03] INFO root fetch - main [MainThread]: End processing [mlserver]: success
 [2023-04-14 20:06:03] INFO root fetch - main [MainThread]: Store serial: [17711300]
+[2023-04-14 20:11:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711300]
+[2023-04-14 20:11:11] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 20:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flordb
+[2023-04-14 20:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drs-compliance
+[2023-04-14 20:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrockmodulus
+[2023-04-14 20:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest
+[2023-04-14 20:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: EfficientWord-Net
+[2023-04-14 20:11:11] INFO root fetch - processPackages [drs-compliance]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 20:11:11] INFO root fetch - processPackages [flordb]: New version: [2.6.1] Old Version: [2.6.0]
+[2023-04-14 20:11:11] INFO root fetch - processPackages [EfficientWord-Net]: New version: [1.0.2] Old Version: [0.2.2]
+[2023-04-14 20:11:11] INFO root fetch - processPackages [pyrockmodulus]: New version: [0.6] Old Version: [0.5]
+[2023-04-14 20:11:11] INFO root fetch - processPackages [pytest]: New version: [7.3.1] Old Version: [7.3.0]
+[2023-04-14 20:11:11] INFO root fetch - processPackages [drs-compliance]: Downloading https://files.pythonhosted.org/packages/8c/9f/789d6ce440a9952eff6438c1dc559148f482b25d167ff7b029a26280ff50/drs-compliance-1.0.0.tar.gz
+[2023-04-14 20:11:11] INFO root fetch - processPackages [pyrockmodulus]: Downloading https://files.pythonhosted.org/packages/39/8e/57561027d472553e143709d31e3046f75cee8df6974e4a64cb4be88388c6/pyrockmodulus-0.5-py2.py3-none-any.whl
+[2023-04-14 20:11:11] INFO root fetch - processPackages [flordb]: Downloading https://files.pythonhosted.org/packages/2c/4f/fbca5f400b0ccad0edfa0519cffe2095a71f835dedc5c7207c3167ab1b7f/flordb-2.6.0.tar.gz
+[2023-04-14 20:11:11] INFO root fetch - processPackages [pytest]: Downloading https://files.pythonhosted.org/packages/ec/d9/36b65598f3d19d0a14d13dc87ad5fa42869ae53bb7471f619a30eaabc4bf/pytest-7.3.1.tar.gz
+[2023-04-14 20:11:11] INFO root fetch - processPackages [EfficientWord-Net]: Downloading https://files.pythonhosted.org/packages/ef/e3/53a15d20657c46125ac32fc0e07208c6aac5a052cf2d9fb9ac9d6623de9c/EfficientWord_Net-1.0.2-py3-none-any.whl
+[2023-04-14 20:11:11] INFO root fetch - processPackages [drs-compliance]: Downloading https://files.pythonhosted.org/packages/b3/87/7f6e7f8d2a1bf64c28e964d001aaab15b84206d75177025ccf99630fd292/drs-compliance-1.0.1.tar.gz
+[2023-04-14 20:11:11] WARNING root fetch - processPackages [EfficientWord-Net]: Skipping package: exceeds size limit 83983540>=10485760
+[2023-04-14 20:11:11] INFO root fetch - processPackages [EfficientWord-Net]: Start processing: seed-intersphinx-mapping
+[2023-04-14 20:11:11] INFO root fetch - main [MainThread]: End processing [EfficientWord-Net] error
+[2023-04-14 20:11:11] INFO root fetch - processPackages [seed-intersphinx-mapping]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-14 20:11:11] INFO root fetch - processPackages [pytest]: executing diffoscope
+[2023-04-14 20:11:11] INFO root fetch - processPackages [pytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-7.3.0.tar.gz tmp/pytest-7.3.1.tar.gz --markdown 20230414/p/pytest/7.3.0-7.3.1/diff.md --exclude *.pyd
+[2023-04-14 20:11:11] INFO root fetch - processPackages [drs-compliance]: executing diffoscope
+[2023-04-14 20:11:11] INFO root fetch - processPackages [drs-compliance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drs-compliance-1.0.0.tar.gz tmp/drs-compliance-1.0.1.tar.gz --markdown 20230414/d/drs-compliance/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 20:11:12] INFO root fetch - processPackages [pyrockmodulus]: Downloading https://files.pythonhosted.org/packages/4f/6b/be98b2c38e5ee32656bf4e5b739f0f73670fad0afa8e5389d9b6de9dfff5/pyrockmodulus-0.6-py2.py3-none-any.whl
+[2023-04-14 20:11:12] INFO root fetch - processPackages [flordb]: Downloading https://files.pythonhosted.org/packages/dd/44/639e587eed6c0f478a9f10cfe1a20d9ce9af2bbe876945fe576149b52075/flordb-2.6.1.tar.gz
+[2023-04-14 20:11:12] INFO root fetch - processPackages [pyrockmodulus]: executing diffoscope
+[2023-04-14 20:11:12] INFO root fetch - processPackages [pyrockmodulus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrockmodulus-0.5-py2.py3-none-any.whl.zip tmp/pyrockmodulus-0.6-py2.py3-none-any.whl.zip --markdown 20230414/p/pyrockmodulus/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-14 20:11:12] INFO root fetch - processPackages [flordb]: executing diffoscope
+[2023-04-14 20:11:12] INFO root fetch - processPackages [flordb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flordb-2.6.0.tar.gz tmp/flordb-2.6.1.tar.gz --markdown 20230414/f/flordb/2.6.0-2.6.1/diff.md --exclude *.pyd
+[2023-04-14 20:11:12] INFO root fetch - processPackages [seed-intersphinx-mapping]: Downloading https://files.pythonhosted.org/packages/94/7f/f50e77adbb6fa179b59ab8afafbf77b430b2d857cedc0d843868f1bb65f6/seed_intersphinx_mapping-1.2.0.tar.gz
+[2023-04-14 20:11:12] INFO root fetch - processPackages [seed-intersphinx-mapping]: Downloading https://files.pythonhosted.org/packages/78/71/020eda2813762819060181a357d8564f227289283a337f828bdc76287b55/seed_intersphinx_mapping-1.2.1.tar.gz
+[2023-04-14 20:11:12] INFO root fetch - processPackages [seed-intersphinx-mapping]: executing diffoscope
+[2023-04-14 20:11:12] INFO root fetch - processPackages [seed-intersphinx-mapping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seed_intersphinx_mapping-1.2.0.tar.gz tmp/seed_intersphinx_mapping-1.2.1.tar.gz --markdown 20230414/s/seed-intersphinx-mapping/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-14 20:11:13] INFO root fetch - processPackages [drs-compliance]: Start processing: plingo
+[2023-04-14 20:11:13] INFO root fetch - main [MainThread]: End processing [drs-compliance]: success
+[2023-04-14 20:11:13] INFO root fetch - processPackages [plingo]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-14 20:11:13] INFO root fetch - processPackages [plingo]: Downloading https://files.pythonhosted.org/packages/b4/2d/60bdeb502a1df8a8f973d7693a624772b61129e4de6641a53d2dc9837991/plingo-1.0.0.tar.gz
+[2023-04-14 20:11:13] INFO root fetch - processPackages [pyrockmodulus]: Start processing: PyroFork-dev
+[2023-04-14 20:11:13] INFO root fetch - main [MainThread]: End processing [pyrockmodulus]: success
+[2023-04-14 20:11:13] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.5a1.dev202304141812] Old Version: [2.1.5.dev202304141749]
+[2023-04-14 20:11:13] INFO root fetch - processPackages [plingo]: Downloading https://files.pythonhosted.org/packages/6d/7e/31a81087d04421269c39d7ae604aec72405d4e2518be4cee462c1f3fc95b/plingo-1.1.0.tar.gz
+[2023-04-14 20:11:13] INFO root fetch - processPackages [plingo]: executing diffoscope
+[2023-04-14 20:11:13] INFO root fetch - processPackages [plingo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plingo-1.0.0.tar.gz tmp/plingo-1.1.0.tar.gz --markdown 20230414/p/plingo/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-14 20:11:13] INFO root fetch - processPackages [seed-intersphinx-mapping]: Start processing: linearSubproblemSltns
+[2023-04-14 20:11:13] INFO root fetch - main [MainThread]: End processing [seed-intersphinx-mapping]: success
+[2023-04-14 20:11:13] INFO root fetch - processPackages [linearSubproblemSltns]: New version: [1.0.6] Old Version: [1.0.1]
+[2023-04-14 20:11:13] INFO root fetch - processPackages [PyroFork-dev]: Downloading https://files.pythonhosted.org/packages/c6/3c/a15a2d06db50380313529cbbb8dbafd450d8b7b0f59352647516b88b4119/PyroFork-dev-2.1.5a1.dev202304141812.tar.gz
+[2023-04-14 20:11:13] INFO root fetch - processPackages [linearSubproblemSltns]: Downloading https://files.pythonhosted.org/packages/b6/64/205b7aedc99d986ed72d3ea7f7c7ead5908f79c7ba731bb9982e2afd04e5/linearsubproblemsltns-1.0.1.tar.gz
+[2023-04-14 20:11:13] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-14 20:11:13] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.5.dev202304141749.tar.gz tmp/PyroFork-dev-2.1.5a1.dev202304141812.tar.gz --markdown 20230414/P/PyroFork-dev/2.1.5.dev202304141749-2.1.5a1.dev202304141812/diff.md --exclude *.pyd
+[2023-04-14 20:11:14] ERROR root fetch - processPackages [linearSubproblemSltns]: Unable to fetch info: No such project/version 'linearSubproblemSltns' 1.0.6
+[2023-04-14 20:11:14] INFO root fetch - processPackages [linearSubproblemSltns]: Start processing: linearSubproblemSltns
+[2023-04-14 20:11:14] INFO root fetch - main [MainThread]: End processing [linearSubproblemSltns] error
+[2023-04-14 20:11:14] INFO root fetch - processPackages [linearSubproblemSltns]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 20:11:14] INFO root fetch - processPackages [linearSubproblemSltns]: Downloading https://files.pythonhosted.org/packages/53/72/f15179ba62958a9d60c61552aadaa6a6fd64f3d839313196d99801b77d2c/linearsubproblemsltns-1.0.0.tar.gz
+[2023-04-14 20:11:14] INFO root fetch - processPackages [linearSubproblemSltns]: executing diffoscope
+[2023-04-14 20:11:14] INFO root fetch - processPackages [linearSubproblemSltns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linearsubproblemsltns-1.0.0.tar.gz tmp/linearsubproblemsltns-1.0.1.tar.gz --markdown 20230414/l/linearSubproblemSltns/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 20:11:14] INFO root fetch - processPackages [flordb]: Start processing: scrnatools
+[2023-04-14 20:11:14] INFO root fetch - main [MainThread]: End processing [flordb]: success
+[2023-04-14 20:11:14] INFO root fetch - processPackages [plingo]: Start processing: coredb-pgmq-python
+[2023-04-14 20:11:14] INFO root fetch - main [MainThread]: End processing [plingo]: success
+[2023-04-14 20:11:14] WARNING root fetch - processPackages [coredb-pgmq-python]: Skipping, unable to determine old version
+[2023-04-14 20:11:14] INFO root fetch - processPackages [coredb-pgmq-python]: Start processing: githubkit
+[2023-04-14 20:11:14] INFO root fetch - main [MainThread]: End processing [coredb-pgmq-python] error
+[2023-04-14 20:11:14] INFO root fetch - processPackages [scrnatools]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-14 20:11:14] INFO root fetch - processPackages [githubkit]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-14 20:11:15] INFO root fetch - processPackages [scrnatools]: Downloading https://files.pythonhosted.org/packages/03/8d/09b674e0af6f22b0a512cfc54695b1924dd88851113933fb7c5f67e6fb49/scrnatools-0.3.4.tar.gz
+[2023-04-14 20:11:15] INFO root fetch - processPackages [githubkit]: Downloading https://files.pythonhosted.org/packages/8b/9d/d23a08b3bbfb5e6957ab990102aa9b2a70d454c91836714bc9f41b541616/githubkit-0.9.7.tar.gz
+[2023-04-14 20:11:15] INFO root fetch - processPackages [scrnatools]: Downloading https://files.pythonhosted.org/packages/bb/ba/b82c839caa54d113425c924ae495c90e356e327d90f85f6c1b60bc840247/scrnatools-0.3.5.tar.gz
+[2023-04-14 20:11:15] INFO root fetch - processPackages [scrnatools]: executing diffoscope
+[2023-04-14 20:11:15] INFO root fetch - processPackages [scrnatools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrnatools-0.3.4.tar.gz tmp/scrnatools-0.3.5.tar.gz --markdown 20230414/s/scrnatools/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-14 20:11:15] INFO root fetch - processPackages [githubkit]: Downloading https://files.pythonhosted.org/packages/95/26/a95dcdc4df01641aafe3b6d5740fc26929aa7e5a5105dc8678b50783c7aa/githubkit-0.9.8.tar.gz
+[2023-04-14 20:11:15] INFO root fetch - processPackages [githubkit]: executing diffoscope
+[2023-04-14 20:11:15] INFO root fetch - processPackages [githubkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/githubkit-0.9.7.tar.gz tmp/githubkit-0.9.8.tar.gz --markdown 20230414/g/githubkit/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-14 20:11:15] INFO root fetch - main [MainThread]: End processing [linearSubproblemSltns]: success
+[2023-04-14 20:11:16] INFO root fetch - main [MainThread]: End processing [scrnatools]: success
+[2023-04-14 20:11:18] INFO root fetch - main [MainThread]: End processing [pytest]: success
+[2023-04-14 20:11:18] INFO root fetch - main [MainThread]: End processing [githubkit]: success
+[2023-04-14 20:11:18] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
+[2023-04-14 20:11:18] INFO root fetch - main [MainThread]: Store serial: [17711339]
