@@ -7157,3 +7157,16 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 06:45:58] INFO root fetch - main [MainThread]: End processing [chat-spiral]: success
 [2023-04-14 06:45:59] INFO root fetch - main [MainThread]: End processing [ALLCools]: success
 [2023-04-14 06:45:59] INFO root fetch - main [MainThread]: Store serial: [17703221]
+[2023-04-14 06:51:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703221]
+[2023-04-14 06:51:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-14 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tweakwcs
+[2023-04-14 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hugegraph-python
+[2023-04-14 06:51:07] WARNING root fetch - processPackages [hugegraph-python]: Skipping, unable to determine old version
+[2023-04-14 06:51:07] INFO root fetch - main [MainThread]: End processing [hugegraph-python] error
+[2023-04-14 06:51:07] INFO root fetch - processPackages [tweakwcs]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-14 06:51:07] INFO root fetch - processPackages [tweakwcs]: Downloading https://files.pythonhosted.org/packages/02/28/80ea4fb251117e064e2b3337162672b9b2a0b3418f9da79f8ed23322a6d9/tweakwcs-0.8.1.tar.gz
+[2023-04-14 06:51:07] INFO root fetch - processPackages [tweakwcs]: Downloading https://files.pythonhosted.org/packages/c9/11/743ac258e2af4251ce475f1f96b6325a5f8d512d3bfd154412b2731c092d/tweakwcs-0.8.2.tar.gz
+[2023-04-14 06:51:08] INFO root fetch - processPackages [tweakwcs]: executing diffoscope
+[2023-04-14 06:51:08] INFO root fetch - processPackages [tweakwcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweakwcs-0.8.1.tar.gz tmp/tweakwcs-0.8.2.tar.gz --markdown 20230414/t/tweakwcs/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-14 06:51:09] INFO root fetch - main [MainThread]: End processing [tweakwcs]: success
+[2023-04-14 06:51:09] INFO root fetch - main [MainThread]: Store serial: [17703229]
