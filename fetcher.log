@@ -9199,3 +9199,98 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 10:04:51] INFO root fetch - main [MainThread]: End processing [leadguru-common]: success
 [2023-04-14 10:04:54] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2023-04-14 10:04:54] INFO root fetch - main [MainThread]: Store serial: [17704351]
+[2023-04-14 10:09:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704351]
+[2023-04-14 10:10:01] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 10:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zytlib
+[2023-04-14 10:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alma-cdk.cross-region-parameter
+[2023-04-14 10:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqttoolkit
+[2023-04-14 10:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vaynerqualityassessments
+[2023-04-14 10:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sphinx-copybutton
+[2023-04-14 10:10:01] INFO root fetch - processPackages [pyqttoolkit]: New version: [0.8.0.dev1] Old Version: [0.8.0.dev0]
+[2023-04-14 10:10:01] INFO root fetch - processPackages [alma-cdk.cross-region-parameter]: New version: [0.0.14] Old Version: [0.0.13]
+[2023-04-14 10:10:01] INFO root fetch - processPackages [vaynerqualityassessments]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 10:10:01] INFO root fetch - processPackages [zytlib]: New version: [0.3.323] Old Version: [0.3.322]
+[2023-04-14 10:10:01] INFO root fetch - processPackages [sphinx-copybutton]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-14 10:10:01] INFO root fetch - processPackages [alma-cdk.cross-region-parameter]: Downloading https://files.pythonhosted.org/packages/f8/ae/b927e7dcd72f18757dd700d091c0e6af9656656612f8fc3708dfa2ab9b4d/alma-cdk.cross-region-parameter-0.0.13.tar.gz
+[2023-04-14 10:10:01] INFO root fetch - processPackages [pyqttoolkit]: Downloading https://files.pythonhosted.org/packages/5e/14/dc418fa190c4f5a818063053a8b4bd39d8de68fb25c2e0e5455489995d03/pyqttoolkit-0.8.0.dev0.tar.gz
+[2023-04-14 10:10:01] INFO root fetch - processPackages [sphinx-copybutton]: Downloading https://files.pythonhosted.org/packages/19/9b/fb86f67989742b077f46b3c979d671b8fac685a23a01c64073f4f6208d27/sphinx-copybutton-0.5.1.tar.gz
+[2023-04-14 10:10:01] INFO root fetch - processPackages [vaynerqualityassessments]: Downloading https://files.pythonhosted.org/packages/05/46/e179689a8df216afff2faae092a66f86fd035cff410a4d11491d44b92fce/vaynerqualityassessments-0.1.8.tar.gz
+[2023-04-14 10:10:01] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/eb/ff/4df6231fcec5c19588d21518d53f3509fc53fb7cf820f759eae122350437/zytlib-0.3.323-py3-none-any.whl
+[2023-04-14 10:10:02] INFO root fetch - processPackages [sphinx-copybutton]: Downloading https://files.pythonhosted.org/packages/fc/2b/a964715e7f5295f77509e59309959f4125122d648f86b4fe7d70ca1d882c/sphinx-copybutton-0.5.2.tar.gz
+[2023-04-14 10:10:02] INFO root fetch - processPackages [zytlib]: executing diffoscope
+[2023-04-14 10:10:02] INFO root fetch - processPackages [zytlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zytlib-0.3.322-py3-none-any.whl.zip tmp/zytlib-0.3.323-py3-none-any.whl.zip --markdown 20230414/z/zytlib/0.3.322-0.3.323/diff.md --exclude *.pyd
+[2023-04-14 10:10:02] INFO root fetch - processPackages [pyqttoolkit]: Downloading https://files.pythonhosted.org/packages/e7/c6/ae4cef48b723319f410b172ecb23796ca98ba146cb2d72650e3c82fea59c/pyqttoolkit-0.8.0.dev1.tar.gz
+[2023-04-14 10:10:02] INFO root fetch - processPackages [vaynerqualityassessments]: Downloading https://files.pythonhosted.org/packages/63/35/a57be06050190fe90244e534db5fafb2e5b1a3af8a0165feadde2ad46a04/vaynerqualityassessments-0.1.9.tar.gz
+[2023-04-14 10:10:02] INFO root fetch - processPackages [sphinx-copybutton]: executing diffoscope
+[2023-04-14 10:10:02] INFO root fetch - processPackages [sphinx-copybutton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-copybutton-0.5.1.tar.gz tmp/sphinx-copybutton-0.5.2.tar.gz --markdown 20230414/s/sphinx-copybutton/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-14 10:10:02] INFO root fetch - processPackages [pyqttoolkit]: executing diffoscope
+[2023-04-14 10:10:02] INFO root fetch - processPackages [pyqttoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqttoolkit-0.8.0.dev0.tar.gz tmp/pyqttoolkit-0.8.0.dev1.tar.gz --markdown 20230414/p/pyqttoolkit/0.8.0.dev0-0.8.0.dev1/diff.md --exclude *.pyd
+[2023-04-14 10:10:02] INFO root fetch - processPackages [vaynerqualityassessments]: executing diffoscope
+[2023-04-14 10:10:02] INFO root fetch - processPackages [vaynerqualityassessments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaynerqualityassessments-0.1.8.tar.gz tmp/vaynerqualityassessments-0.1.9.tar.gz --markdown 20230414/v/vaynerqualityassessments/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 10:10:02] INFO root fetch - processPackages [alma-cdk.cross-region-parameter]: Downloading https://files.pythonhosted.org/packages/16/7f/3bd215a7280eba099b6956b9de1f1750bab9ed3dac06dd47d4b147f384a3/alma-cdk.cross-region-parameter-0.0.14.tar.gz
+[2023-04-14 10:10:03] INFO root fetch - processPackages [zytlib]: Start processing: houston-client
+[2023-04-14 10:10:03] INFO root fetch - main [MainThread]: End processing [zytlib]: success
+[2023-04-14 10:10:03] INFO root fetch - processPackages [houston-client]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-14 10:10:03] INFO root fetch - processPackages [sphinx-copybutton]: Start processing: meta-label
+[2023-04-14 10:10:03] INFO root fetch - main [MainThread]: End processing [sphinx-copybutton]: success
+[2023-04-14 10:10:03] WARNING root fetch - processPackages [meta-label]: Skipping, unable to determine old version
+[2023-04-14 10:10:03] INFO root fetch - processPackages [meta-label]: Start processing: OmniBridge
+[2023-04-14 10:10:03] INFO root fetch - main [MainThread]: End processing [meta-label] error
+[2023-04-14 10:10:03] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 10:10:03] INFO root fetch - processPackages [vaynerqualityassessments]: Start processing: pipeline-csv
+[2023-04-14 10:10:03] INFO root fetch - main [MainThread]: End processing [vaynerqualityassessments]: success
+[2023-04-14 10:10:03] INFO root fetch - processPackages [pipeline-csv]: New version: [1.3] Old Version: [1.2]
+[2023-04-14 10:10:03] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-14 10:10:03] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230414/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 10:10:03] INFO root fetch - processPackages [houston-client]: Downloading https://files.pythonhosted.org/packages/cf/f3/52eae19919f6072d9964081c28bac0956d42a5b8dc3f34f532d022c92958/houston-client-1.3.0.tar.gz
+[2023-04-14 10:10:03] INFO root fetch - processPackages [pipeline-csv]: Downloading https://files.pythonhosted.org/packages/a9/96/1caa9a8b27ce47b9e76ae9856346019e0732ccba1047e015d2373006b56a/pipeline_csv-1.2.tar.gz
+[2023-04-14 10:10:03] INFO root fetch - processPackages [houston-client]: Downloading https://files.pythonhosted.org/packages/69/41/da1d830ccc57287b7ab7a755734045f27a8f1821aded1327550911433a4b/houston-client-1.3.1.tar.gz
+[2023-04-14 10:10:03] INFO root fetch - processPackages [pipeline-csv]: Downloading https://files.pythonhosted.org/packages/2c/e6/d9d8db328b5aee84706dd7610dbe6dd1c7145f1cc7525dcc201e082029f0/pipeline_csv-1.3.tar.gz
+[2023-04-14 10:10:03] INFO root fetch - processPackages [houston-client]: executing diffoscope
+[2023-04-14 10:10:03] INFO root fetch - processPackages [houston-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/houston-client-1.3.0.tar.gz tmp/houston-client-1.3.1.tar.gz --markdown 20230414/h/houston-client/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 10:10:04] INFO root fetch - processPackages [pipeline-csv]: executing diffoscope
+[2023-04-14 10:10:04] INFO root fetch - processPackages [pipeline-csv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipeline_csv-1.2.tar.gz tmp/pipeline_csv-1.3.tar.gz --markdown 20230414/p/pipeline-csv/1.2-1.3/diff.md --exclude *.pyd
+[2023-04-14 10:10:04] INFO root fetch - processPackages [pyqttoolkit]: Start processing: pylife-odbserver
+[2023-04-14 10:10:04] INFO root fetch - main [MainThread]: End processing [pyqttoolkit]: success
+[2023-04-14 10:10:04] INFO root fetch - processPackages [pylife-odbserver]: New version: [2.0.3rc3] Old Version: [2.0.3rc2]
+[2023-04-14 10:10:04] INFO root fetch - processPackages [OmniBridge]: Start processing: pybw
+[2023-04-14 10:10:04] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-14 10:10:04] INFO root fetch - processPackages [alma-cdk.cross-region-parameter]: executing diffoscope
+[2023-04-14 10:10:04] INFO root fetch - processPackages [alma-cdk.cross-region-parameter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alma-cdk.cross-region-parameter-0.0.13.tar.gz tmp/alma-cdk.cross-region-parameter-0.0.14.tar.gz --markdown 20230414/a/alma-cdk.cross-region-parameter/0.0.13-0.0.14/diff.md --exclude *.pyd
+[2023-04-14 10:10:04] INFO root fetch - processPackages [pybw]: New version: [23.4.4.2] Old Version: [23.4.4.1]
+[2023-04-14 10:10:04] INFO root fetch - processPackages [pylife-odbserver]: Downloading https://files.pythonhosted.org/packages/29/ce/164118a2f480b2e3460b656e480da10a8fafdbc781c64e45b7d8d5b280fe/pylife-odbserver-2.0.3rc3.tar.gz
+[2023-04-14 10:10:04] INFO root fetch - processPackages [pylife-odbserver]: executing diffoscope
+[2023-04-14 10:10:04] INFO root fetch - processPackages [pylife-odbserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylife-odbserver-2.0.3rc2.tar.gz tmp/pylife-odbserver-2.0.3rc3.tar.gz --markdown 20230414/p/pylife-odbserver/2.0.3rc2-2.0.3rc3/diff.md --exclude *.pyd
+[2023-04-14 10:10:04] INFO root fetch - processPackages [pybw]: executing diffoscope
+[2023-04-14 10:10:04] INFO root fetch - processPackages [pybw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybw-23.4.4.1.tar.gz tmp/pybw-23.4.4.2.tar.gz --markdown 20230414/p/pybw/23.4.4.1-23.4.4.2/diff.md --exclude *.pyd
+[2023-04-14 10:10:05] INFO root fetch - processPackages [houston-client]: Start processing: pylife-odbclient
+[2023-04-14 10:10:05] INFO root fetch - main [MainThread]: End processing [houston-client]: success
+[2023-04-14 10:10:05] INFO root fetch - processPackages [pylife-odbclient]: New version: [2.0.3rc3] Old Version: [2.0.3rc2]
+[2023-04-14 10:10:05] INFO root fetch - processPackages [pylife-odbclient]: Downloading https://files.pythonhosted.org/packages/f4/0d/0e12e789cca21f5f16776483d5cc7908d3febbfadb8c70b34554d0770d03/pylife-odbclient-2.0.3rc3.tar.gz
+[2023-04-14 10:10:05] INFO root fetch - processPackages [pylife-odbclient]: executing diffoscope
+[2023-04-14 10:10:05] INFO root fetch - processPackages [pylife-odbclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylife-odbclient-2.0.3rc2.tar.gz tmp/pylife-odbclient-2.0.3rc3.tar.gz --markdown 20230414/p/pylife-odbclient/2.0.3rc2-2.0.3rc3/diff.md --exclude *.pyd
+[2023-04-14 10:10:05] INFO root fetch - processPackages [pylife-odbserver]: Start processing: seven-cloudapp-frame
+[2023-04-14 10:10:05] INFO root fetch - main [MainThread]: End processing [pylife-odbserver]: success
+[2023-04-14 10:10:05] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-04-14 10:10:05] INFO root fetch - processPackages [pipeline-csv]: Start processing: workcell
+[2023-04-14 10:10:05] INFO root fetch - main [MainThread]: End processing [pipeline-csv]: success
+[2023-04-14 10:10:05] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-04-14 10:10:05] INFO root fetch - processPackages [pybw]: Start processing: pylife
+[2023-04-14 10:10:05] INFO root fetch - main [MainThread]: End processing [pybw]: success
+[2023-04-14 10:10:05] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230414/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-04-14 10:10:05] INFO root fetch - processPackages [workcell]: New version: [0.0.38] Old Version: [0.0.37]
+[2023-04-14 10:10:05] INFO root fetch - processPackages [pylife]: New version: [2.0.3rc3] Old Version: [2.0.2]
+[2023-04-14 10:10:06] INFO root fetch - main [MainThread]: End processing [alma-cdk.cross-region-parameter]: success
+[2023-04-14 10:10:06] INFO root fetch - processPackages [workcell]: Downloading https://files.pythonhosted.org/packages/ac/35/28280f5c0d59174d540560ff9f2393dadc15f5c2074c0fcc1e7e657d94aa/workcell-0.0.37.tar.gz
+[2023-04-14 10:10:06] INFO root fetch - processPackages [pylife]: Downloading https://files.pythonhosted.org/packages/72/07/5a2198e72298077f79691ec5edd437053811ed0dd1794ba7c7260a3156de/pylife-2.0.2.tar.gz
+[2023-04-14 10:10:06] INFO root fetch - processPackages [workcell]: Downloading https://files.pythonhosted.org/packages/7a/4f/3fd4f4801ca98978ea2600163622f231f4dc77a19fa8d11ca654f1bf4186/workcell-0.0.38.tar.gz
+[2023-04-14 10:10:06] INFO root fetch - processPackages [workcell]: executing diffoscope
+[2023-04-14 10:10:06] INFO root fetch - processPackages [workcell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/workcell-0.0.37.tar.gz tmp/workcell-0.0.38.tar.gz --markdown 20230414/w/workcell/0.0.37-0.0.38/diff.md --exclude *.pyd
+[2023-04-14 10:10:06] INFO root fetch - main [MainThread]: End processing [pylife-odbclient]: success
+[2023-04-14 10:10:07] INFO root fetch - processPackages [pylife]: Downloading https://files.pythonhosted.org/packages/c2/a1/96d250d081c71d1d0ca1eeb6188d24cd66ab8158857499a6459af1a134ac/pylife-2.0.3rc3.tar.gz
+[2023-04-14 10:10:07] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-04-14 10:10:07] INFO root fetch - main [MainThread]: End processing [workcell]: success
+[2023-04-14 10:10:08] INFO root fetch - processPackages [pylife]: executing diffoscope
+[2023-04-14 10:10:08] INFO root fetch - processPackages [pylife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylife-2.0.2.tar.gz tmp/pylife-2.0.3rc3.tar.gz --markdown 20230414/p/pylife/2.0.2-2.0.3rc3/diff.md --exclude *.pyd
+[2023-04-14 10:10:13] INFO root fetch - main [MainThread]: End processing [pylife]: success
+[2023-04-14 10:10:13] INFO root fetch - main [MainThread]: Store serial: [17704395]
