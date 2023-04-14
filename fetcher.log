@@ -14658,3 +14658,130 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 15:42:48] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-04-14 15:42:52] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-04-14 15:42:52] INFO root fetch - main [MainThread]: Store serial: [17707844]
+[2023-04-14 15:47:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17707844]
+[2023-04-14 15:48:00] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-04-14 15:48:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: casbin-postgresql-watcher
+[2023-04-14 15:48:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dxsp
+[2023-04-14 15:48:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lifeomic-patient-ml-types
+[2023-04-14 15:48:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dnadb
+[2023-04-14 15:48:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymagento
+[2023-04-14 15:48:00] INFO root fetch - processPackages [dnadb]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-14 15:48:00] INFO root fetch - processPackages [pymagento]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-04-14 15:48:00] INFO root fetch - processPackages [lifeomic-patient-ml-types]: New version: [7.4.1] Old Version: [7.3.0]
+[2023-04-14 15:48:00] INFO root fetch - processPackages [casbin-postgresql-watcher]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-14 15:48:00] INFO root fetch - processPackages [dxsp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 15:48:00] INFO root fetch - processPackages [dnadb]: Downloading https://files.pythonhosted.org/packages/23/8b/01e8d3459c3397d237680f9dfaa9e9a7e8d2a4b62bf848d47befe03f17da/dnadb-0.2.5.tar.gz
+[2023-04-14 15:48:00] INFO root fetch - processPackages [pymagento]: Downloading https://files.pythonhosted.org/packages/1c/a8/630403df581126485a4cce38c1c12693dd44513fd027a0c882d01646ba14/pymagento-1.6.1.tar.gz
+[2023-04-14 15:48:00] INFO root fetch - processPackages [casbin-postgresql-watcher]: Downloading https://files.pythonhosted.org/packages/c8/f5/2d15128ea77d035f448f58b42e73ea7c0473288bc17460f345fa77a05afe/casbin-postgresql-watcher-0.1.2.tar.gz
+[2023-04-14 15:48:00] INFO root fetch - processPackages [dnadb]: executing diffoscope
+[2023-04-14 15:48:00] INFO root fetch - processPackages [dnadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnadb-0.2.4.tar.gz tmp/dnadb-0.2.5.tar.gz --markdown 20230414/d/dnadb/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-14 15:48:00] INFO root fetch - processPackages [lifeomic-patient-ml-types]: Downloading https://files.pythonhosted.org/packages/f1/4f/6047fe0f4db5e9270e2b0d8de993f33437d573f160db9c457c8799615934/lifeomic_patient_ml_types-7.4.1.tar.gz
+[2023-04-14 15:48:00] INFO root fetch - processPackages [pymagento]: executing diffoscope
+[2023-04-14 15:48:00] INFO root fetch - processPackages [pymagento]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymagento-1.6.0.tar.gz tmp/pymagento-1.6.1.tar.gz --markdown 20230414/p/pymagento/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-04-14 15:48:00] INFO root fetch - processPackages [lifeomic-patient-ml-types]: executing diffoscope
+[2023-04-14 15:48:00] INFO root fetch - processPackages [lifeomic-patient-ml-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifeomic_patient_ml_types-7.3.0.tar.gz tmp/lifeomic_patient_ml_types-7.4.1.tar.gz --markdown 20230414/l/lifeomic-patient-ml-types/7.3.0-7.4.1/diff.md --exclude *.pyd
+[2023-04-14 15:48:00] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-14 15:48:00] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.8.tar.gz tmp/dxsp-1.0.9.tar.gz --markdown 20230414/d/dxsp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 15:48:01] INFO root fetch - processPackages [casbin-postgresql-watcher]: Downloading https://files.pythonhosted.org/packages/89/88/1f728f0264fa48e3277eef821c46705623279077eed3c63ab6adbcfb8540/casbin-postgresql-watcher-0.2.0.tar.gz
+[2023-04-14 15:48:01] INFO root fetch - processPackages [casbin-postgresql-watcher]: executing diffoscope
+[2023-04-14 15:48:01] INFO root fetch - processPackages [casbin-postgresql-watcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casbin-postgresql-watcher-0.1.2.tar.gz tmp/casbin-postgresql-watcher-0.2.0.tar.gz --markdown 20230414/c/casbin-postgresql-watcher/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 15:48:02] INFO root fetch - processPackages [dxsp]: Start processing: botik
+[2023-04-14 15:48:02] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-14 15:48:02] INFO root fetch - processPackages [pymagento]: Start processing: aeodata
+[2023-04-14 15:48:02] INFO root fetch - main [MainThread]: End processing [pymagento]: success
+[2023-04-14 15:48:02] WARNING root fetch - processPackages [aeodata]: Skipping, unable to determine old version
+[2023-04-14 15:48:02] INFO root fetch - processPackages [aeodata]: Start processing: nso-oc
+[2023-04-14 15:48:02] INFO root fetch - main [MainThread]: End processing [aeodata] error
+[2023-04-14 15:48:02] INFO root fetch - processPackages [nso-oc]: New version: [2.44.0] Old Version: [2.43.2]
+[2023-04-14 15:48:02] INFO root fetch - processPackages [lifeomic-patient-ml-types]: Start processing: lacuscore
+[2023-04-14 15:48:02] INFO root fetch - main [MainThread]: End processing [lifeomic-patient-ml-types]: success
+[2023-04-14 15:48:02] INFO root fetch - processPackages [botik]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 15:48:02] INFO root fetch - processPackages [dnadb]: Start processing: botik-telebot
+[2023-04-14 15:48:02] INFO root fetch - main [MainThread]: End processing [dnadb]: success
+[2023-04-14 15:48:02] INFO root fetch - processPackages [lacuscore]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-14 15:48:02] INFO root fetch - processPackages [botik-telebot]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 15:48:02] INFO root fetch - processPackages [casbin-postgresql-watcher]: Start processing: napari-hough-circle-detector
+[2023-04-14 15:48:02] INFO root fetch - main [MainThread]: End processing [casbin-postgresql-watcher]: success
+[2023-04-14 15:48:02] INFO root fetch - processPackages [napari-hough-circle-detector]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 15:48:02] INFO root fetch - processPackages [nso-oc]: Downloading https://files.pythonhosted.org/packages/31/9f/6e3be50ec68046d9ce0fee4923874d6c8a53a543dc00ba9105c11210d28f/nso-oc-2.44.0.tar.gz
+[2023-04-14 15:48:02] INFO root fetch - processPackages [botik]: Downloading https://files.pythonhosted.org/packages/f7/e6/450b48f656c72f775f2e8c1bd574851e305f4a25d4ce4a7fefc3ab9a4a10/botik-0.0.1.tar.gz
+[2023-04-14 15:48:02] INFO root fetch - processPackages [botik-telebot]: Downloading https://files.pythonhosted.org/packages/90/34/6fe4becac502e22b0d10ba47e2cddd7527eeac45f19cf469cda0b4659ae6/botik-telebot-0.0.1.tar.gz
+[2023-04-14 15:48:02] INFO root fetch - processPackages [nso-oc]: executing diffoscope
+[2023-04-14 15:48:02] INFO root fetch - processPackages [nso-oc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nso-oc-2.43.2.tar.gz tmp/nso-oc-2.44.0.tar.gz --markdown 20230414/n/nso-oc/2.43.2-2.44.0/diff.md --exclude *.pyd
+[2023-04-14 15:48:02] INFO root fetch - processPackages [napari-hough-circle-detector]: Downloading https://files.pythonhosted.org/packages/04/25/7db0f3af25a408f4ba63d017687e6f641c53b5c1c1e6dc6ed54be0c635b9/napari-hough-circle-detector-0.0.2.tar.gz
+[2023-04-14 15:48:02] INFO root fetch - processPackages [lacuscore]: Downloading https://files.pythonhosted.org/packages/a7/c6/ec666baab5ba9405e10b69a26a174e7968cc628d1de07276634a987a388e/lacuscore-1.4.9.tar.gz
+[2023-04-14 15:48:02] INFO root fetch - processPackages [botik-telebot]: Downloading https://files.pythonhosted.org/packages/03/65/be2d2229c9a80d94f39247ba736a878e0916ed36d71bb2a9d3f6cd82024f/botik-telebot-0.0.2.tar.gz
+[2023-04-14 15:48:02] INFO root fetch - processPackages [lacuscore]: executing diffoscope
+[2023-04-14 15:48:02] INFO root fetch - processPackages [lacuscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lacuscore-1.4.8.tar.gz tmp/lacuscore-1.4.9.tar.gz --markdown 20230414/l/lacuscore/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-14 15:48:02] INFO root fetch - processPackages [botik]: Downloading https://files.pythonhosted.org/packages/4f/90/efff7ca79655f22bb99841836d8da6dc333e9fa4417b83eae4fc5d818175/botik-0.0.2.tar.gz
+[2023-04-14 15:48:02] INFO root fetch - processPackages [botik-telebot]: executing diffoscope
+[2023-04-14 15:48:02] INFO root fetch - processPackages [botik-telebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botik-telebot-0.0.1.tar.gz tmp/botik-telebot-0.0.2.tar.gz --markdown 20230414/b/botik-telebot/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 15:48:02] INFO root fetch - processPackages [botik]: executing diffoscope
+[2023-04-14 15:48:02] INFO root fetch - processPackages [botik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botik-0.0.1.tar.gz tmp/botik-0.0.2.tar.gz --markdown 20230414/b/botik/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 15:48:02] INFO root fetch - processPackages [napari-hough-circle-detector]: Downloading https://files.pythonhosted.org/packages/f5/22/4b1fff46fc1438d4a8c5b0f94b31b744363fbb268788276d0599128b9708/napari-hough-circle-detector-0.0.3.tar.gz
+[2023-04-14 15:48:02] INFO root fetch - processPackages [napari-hough-circle-detector]: executing diffoscope
+[2023-04-14 15:48:02] INFO root fetch - processPackages [napari-hough-circle-detector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-hough-circle-detector-0.0.2.tar.gz tmp/napari-hough-circle-detector-0.0.3.tar.gz --markdown 20230414/n/napari-hough-circle-detector/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 15:48:03] INFO root fetch - processPackages [lacuscore]: Start processing: pylife-odbclient
+[2023-04-14 15:48:03] INFO root fetch - main [MainThread]: End processing [lacuscore]: success
+[2023-04-14 15:48:03] INFO root fetch - processPackages [pylife-odbclient]: New version: [2.0.3rc3] Old Version: [2.0.3rc2]
+[2023-04-14 15:48:03] INFO root fetch - processPackages [nso-oc]: Start processing: pylife-odbserver
+[2023-04-14 15:48:03] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
+[2023-04-14 15:48:03] INFO root fetch - processPackages [pylife-odbserver]: New version: [2.0.3rc3] Old Version: [2.0.3rc2]
+[2023-04-14 15:48:03] INFO root fetch - processPackages [pylife-odbclient]: executing diffoscope
+[2023-04-14 15:48:03] INFO root fetch - processPackages [pylife-odbclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylife-odbclient-2.0.3rc2.tar.gz tmp/pylife-odbclient-2.0.3rc3.tar.gz --markdown 20230414/p/pylife-odbclient/2.0.3rc2-2.0.3rc3/diff.md --exclude *.pyd
+[2023-04-14 15:48:03] INFO root fetch - processPackages [botik-telebot]: Start processing: nalyst
+[2023-04-14 15:48:03] INFO root fetch - main [MainThread]: End processing [botik-telebot]: success
+[2023-04-14 15:48:03] INFO root fetch - processPackages [pylife-odbserver]: executing diffoscope
+[2023-04-14 15:48:03] INFO root fetch - processPackages [pylife-odbserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylife-odbserver-2.0.3rc2.tar.gz tmp/pylife-odbserver-2.0.3rc3.tar.gz --markdown 20230414/p/pylife-odbserver/2.0.3rc2-2.0.3rc3/diff.md --exclude *.pyd
+[2023-04-14 15:48:03] INFO root fetch - processPackages [nalyst]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 15:48:04] INFO root fetch - processPackages [napari-hough-circle-detector]: Start processing: pylife
+[2023-04-14 15:48:04] INFO root fetch - main [MainThread]: End processing [napari-hough-circle-detector]: success
+[2023-04-14 15:48:04] INFO root fetch - processPackages [pylife]: New version: [2.0.3rc3] Old Version: [2.0.3]
+[2023-04-14 15:48:04] INFO root fetch - processPackages [botik]: Start processing: schematic-db
+[2023-04-14 15:48:04] INFO root fetch - main [MainThread]: End processing [botik]: success
+[2023-04-14 15:48:04] INFO root fetch - processPackages [schematic-db]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 15:48:04] INFO root fetch - processPackages [schematic-db]: executing diffoscope
+[2023-04-14 15:48:04] INFO root fetch - processPackages [schematic-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schematic_db-0.0.8.tar.gz tmp/schematic_db-0.0.9.tar.gz --markdown 20230414/s/schematic-db/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 15:48:04] INFO root fetch - processPackages [pylife]: Downloading https://files.pythonhosted.org/packages/cd/3d/bce3c463a935df6681eacf197a938888d1ed065dd66fffa867825a90ce44/pylife-2.0.3.tar.gz
+[2023-04-14 15:48:04] INFO root fetch - processPackages [nalyst]: Downloading https://files.pythonhosted.org/packages/d0/ed/29aa6911eef374d2077e078b056f51da4411821600a6a6edc3cf13f92d70/nalyst-0.0.4.tar.gz
+[2023-04-14 15:48:04] INFO root fetch - processPackages [nalyst]: executing diffoscope
+[2023-04-14 15:48:04] INFO root fetch - processPackages [nalyst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nalyst-0.0.3.tar.gz tmp/nalyst-0.0.4.tar.gz --markdown 20230414/n/nalyst/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 15:48:04] INFO root fetch - processPackages [pylife]: executing diffoscope
+[2023-04-14 15:48:04] INFO root fetch - processPackages [pylife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylife-2.0.3.tar.gz tmp/pylife-2.0.3rc3.tar.gz --markdown 20230414/p/pylife/2.0.3-2.0.3rc3/diff.md --exclude *.pyd
+[2023-04-14 15:48:05] INFO root fetch - processPackages [pylife-odbclient]: Start processing: sball
+[2023-04-14 15:48:05] INFO root fetch - main [MainThread]: End processing [pylife-odbclient]: success
+[2023-04-14 15:48:05] INFO root fetch - processPackages [sball]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-14 15:48:05] INFO root fetch - processPackages [schematic-db]: Start processing: pystoned
+[2023-04-14 15:48:05] INFO root fetch - main [MainThread]: End processing [schematic-db]: success
+[2023-04-14 15:48:05] INFO root fetch - processPackages [pystoned]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-14 15:48:05] INFO root fetch - processPackages [sball]: Downloading https://files.pythonhosted.org/packages/43/a6/fab53eab8a00e39355bb6b948bd6dbf84de1b54f9751aa017b3b5198a9ba/sball-0.9.3.tar.gz
+[2023-04-14 15:48:05] INFO root fetch - processPackages [nalyst]: Start processing: kaiju-tools
+[2023-04-14 15:48:05] INFO root fetch - main [MainThread]: End processing [nalyst]: success
+[2023-04-14 15:48:05] INFO root fetch - processPackages [kaiju-tools]: New version: [2.0.39] Old Version: [2.0.38]
+[2023-04-14 15:48:05] INFO root fetch - processPackages [pylife-odbserver]: Start processing: gtff
+[2023-04-14 15:48:05] INFO root fetch - main [MainThread]: End processing [pylife-odbserver]: success
+[2023-04-14 15:48:05] INFO root fetch - processPackages [sball]: executing diffoscope
+[2023-04-14 15:48:05] INFO root fetch - processPackages [sball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sball-0.9.2.tar.gz tmp/sball-0.9.3.tar.gz --markdown 20230414/s/sball/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-14 15:48:05] WARNING root fetch - processPackages [gtff]: Skipping, unable to determine old version
+[2023-04-14 15:48:05] INFO root fetch - processPackages [gtff]: Start processing: wodoo
+[2023-04-14 15:48:05] INFO root fetch - main [MainThread]: End processing [gtff] error
+[2023-04-14 15:48:05] INFO root fetch - processPackages [wodoo]: New version: [0.3.99] Old Version: [0.3.96]
+[2023-04-14 15:48:05] INFO root fetch - processPackages [kaiju-tools]: Downloading https://files.pythonhosted.org/packages/f2/92/12453c5898eb9907d5e7547744fd3c41c02f07cf8fad0651ebde150f32a9/kaiju_tools-2.0.39-py3-none-any.whl
+[2023-04-14 15:48:05] INFO root fetch - processPackages [wodoo]: executing diffoscope
+[2023-04-14 15:48:05] INFO root fetch - processPackages [wodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wodoo-0.3.96.tar.gz tmp/wodoo-0.3.99.tar.gz --markdown 20230414/w/wodoo/0.3.96-0.3.99/diff.md --exclude *.pyd
+[2023-04-14 15:48:05] INFO root fetch - processPackages [pystoned]: Downloading https://files.pythonhosted.org/packages/45/95/d62c1e6120995fed22a1ba39c050a06b403c5a16a99cd7c116f250dbb2d9/pystoned-0.6.4.tar.gz
+[2023-04-14 15:48:05] INFO root fetch - processPackages [kaiju-tools]: executing diffoscope
+[2023-04-14 15:48:05] INFO root fetch - processPackages [kaiju-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaiju_tools-2.0.38-py3-none-any.whl.zip tmp/kaiju_tools-2.0.39-py3-none-any.whl.zip --markdown 20230414/k/kaiju-tools/2.0.38-2.0.39/diff.md --exclude *.pyd
+[2023-04-14 15:48:05] INFO root fetch - processPackages [pystoned]: executing diffoscope
+[2023-04-14 15:48:05] INFO root fetch - processPackages [pystoned]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystoned-0.6.3.tar.gz tmp/pystoned-0.6.4.tar.gz --markdown 20230414/p/pystoned/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-14 15:48:06] INFO root fetch - processPackages [sball]: Start processing: drakaina
+[2023-04-14 15:48:06] INFO root fetch - main [MainThread]: End processing [sball]: success
+[2023-04-14 15:48:06] INFO root fetch - processPackages [drakaina]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-14 15:48:06] INFO root fetch - processPackages [drakaina]: executing diffoscope
+[2023-04-14 15:48:06] INFO root fetch - processPackages [drakaina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drakaina-0.6.8.tar.gz tmp/drakaina-0.6.9.tar.gz --markdown 20230414/d/drakaina/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-14 15:48:07] INFO root fetch - main [MainThread]: End processing [wodoo]: success
+[2023-04-14 15:48:07] INFO root fetch - main [MainThread]: End processing [pystoned]: success
+[2023-04-14 15:48:07] INFO root fetch - main [MainThread]: End processing [kaiju-tools]: success
+[2023-04-14 15:48:08] INFO root fetch - main [MainThread]: End processing [drakaina]: success
+[2023-04-14 15:48:09] INFO root fetch - main [MainThread]: End processing [pylife]: success
+[2023-04-14 15:48:09] INFO root fetch - main [MainThread]: Store serial: [17707916]
