@@ -19611,3 +19611,80 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 19:54:39] INFO root fetch - main [MainThread]: End processing [cirq-core]: success
 [2023-04-14 19:55:12] INFO root fetch - main [MainThread]: End processing [flet]: success
 [2023-04-14 19:55:12] INFO root fetch - main [MainThread]: Store serial: [17711067]
+[2023-04-14 20:00:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711067]
+[2023-04-14 20:00:20] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 20:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinxcontrib-matlabdomain
+[2023-04-14 20:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dvclive
+[2023-04-14 20:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ringelcoord
+[2023-04-14 20:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyscora-wrangler
+[2023-04-14 20:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mov-cli
+[2023-04-14 20:00:20] INFO root fetch - processPackages [ringelcoord]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 20:00:20] INFO root fetch - processPackages [sphinxcontrib-matlabdomain]: New version: [0.8.0] Old Version: [0.7.1]
+[2023-04-14 20:00:20] INFO root fetch - processPackages [dvclive]: New version: [2.6.4] Old Version: [2.6.3]
+[2023-04-14 20:00:20] INFO root fetch - processPackages [pyscora-wrangler]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-14 20:00:20] INFO root fetch - processPackages [mov-cli]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-04-14 20:00:20] INFO root fetch - processPackages [ringelcoord]: Downloading https://files.pythonhosted.org/packages/3b/e5/43a2c280a354a6f634de6032057e185849dfd666afe313c4e805f5b9a5ec/ringelcoord-0.0.2.tar.gz
+[2023-04-14 20:00:20] INFO root fetch - processPackages [pyscora-wrangler]: Downloading https://files.pythonhosted.org/packages/6f/4d/7eda6a0d094a0034e8ade0adbfc605faf96083333368d7f57bbb816d4caa/pyscora_wrangler-1.2.1.tar.gz
+[2023-04-14 20:00:20] INFO root fetch - processPackages [sphinxcontrib-matlabdomain]: executing diffoscope
+[2023-04-14 20:00:20] INFO root fetch - processPackages [sphinxcontrib-matlabdomain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib-matlabdomain-0.7.1.tar.gz tmp/sphinxcontrib-matlabdomain-0.8.0.tar.gz --markdown 20230414/s/sphinxcontrib-matlabdomain/0.7.1-0.8.0/diff.md --exclude *.pyd
+[2023-04-14 20:00:20] INFO root fetch - processPackages [mov-cli]: Downloading https://files.pythonhosted.org/packages/c5/e4/bacdcb3d8040bb7be285b444ad3def27693b5a427f7eca526fca844082d5/mov_cli-1.3.6.tar.gz
+[2023-04-14 20:00:20] INFO root fetch - processPackages [dvclive]: Downloading https://files.pythonhosted.org/packages/ee/2d/d7867ea5769624c15aa332d17a572b971e7ee50a2656e24a767251a69d51/dvclive-2.6.4.tar.gz
+[2023-04-14 20:00:20] INFO root fetch - processPackages [pyscora-wrangler]: Downloading https://files.pythonhosted.org/packages/b3/fb/30e5315088c757513ae5d16573b22990f9a7189a36ea8538564b4f065734/pyscora_wrangler-1.2.2.tar.gz
+[2023-04-14 20:00:21] INFO root fetch - processPackages [mov-cli]: executing diffoscope
+[2023-04-14 20:00:21] INFO root fetch - processPackages [mov-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mov_cli-1.3.5.tar.gz tmp/mov_cli-1.3.6.tar.gz --markdown 20230414/m/mov-cli/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-04-14 20:00:21] INFO root fetch - processPackages [ringelcoord]: Downloading https://files.pythonhosted.org/packages/5c/03/376d555b14dedc47500062fd40bae5861ee6a972daff877d706883fe5229/ringelcoord-0.0.3.tar.gz
+[2023-04-14 20:00:21] INFO root fetch - processPackages [pyscora-wrangler]: executing diffoscope
+[2023-04-14 20:00:21] INFO root fetch - processPackages [pyscora-wrangler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscora_wrangler-1.2.1.tar.gz tmp/pyscora_wrangler-1.2.2.tar.gz --markdown 20230414/p/pyscora-wrangler/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-14 20:00:21] INFO root fetch - processPackages [ringelcoord]: executing diffoscope
+[2023-04-14 20:00:21] INFO root fetch - processPackages [ringelcoord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ringelcoord-0.0.2.tar.gz tmp/ringelcoord-0.0.3.tar.gz --markdown 20230414/r/ringelcoord/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 20:00:21] INFO root fetch - processPackages [dvclive]: executing diffoscope
+[2023-04-14 20:00:21] INFO root fetch - processPackages [dvclive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvclive-2.6.3.tar.gz tmp/dvclive-2.6.4.tar.gz --markdown 20230414/d/dvclive/2.6.3-2.6.4/diff.md --exclude *.pyd
+[2023-04-14 20:00:22] INFO root fetch - processPackages [sphinxcontrib-matlabdomain]: Start processing: basaran
+[2023-04-14 20:00:22] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-matlabdomain]: success
+[2023-04-14 20:00:22] INFO root fetch - processPackages [basaran]: New version: [0.15.0] Old Version: [0.14.1]
+[2023-04-14 20:00:22] INFO root fetch - processPackages [ringelcoord]: Start processing: saspy
+[2023-04-14 20:00:22] INFO root fetch - main [MainThread]: End processing [ringelcoord]: success
+[2023-04-14 20:00:22] INFO root fetch - processPackages [saspy]: New version: [5.1.0] Old Version: [5.0.2]
+[2023-04-14 20:00:22] INFO root fetch - processPackages [pyscora-wrangler]: Start processing: gpt4all
+[2023-04-14 20:00:22] INFO root fetch - main [MainThread]: End processing [pyscora-wrangler]: success
+[2023-04-14 20:00:22] WARNING root fetch - processPackages [gpt4all]: Skipping, unable to determine old version
+[2023-04-14 20:00:22] INFO root fetch - processPackages [gpt4all]: Start processing: hearthstone-data
+[2023-04-14 20:00:22] INFO root fetch - main [MainThread]: End processing [gpt4all] error
+[2023-04-14 20:00:22] INFO root fetch - processPackages [mov-cli]: Start processing: hordelib
+[2023-04-14 20:00:22] INFO root fetch - main [MainThread]: End processing [mov-cli]: success
+[2023-04-14 20:00:22] INFO root fetch - processPackages [hearthstone-data]: New version: [95431.1] Old Version: [93849.1]
+[2023-04-14 20:00:22] INFO root fetch - processPackages [hordelib]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-14 20:00:22] INFO root fetch - processPackages [basaran]: Downloading https://files.pythonhosted.org/packages/ff/83/ee72770b0395a197b15ef05cb7d23dcc5ce9ceb90550adc23282238b1cd4/basaran-0.15.0.tar.gz
+[2023-04-14 20:00:22] INFO root fetch - processPackages [saspy]: Downloading https://files.pythonhosted.org/packages/f1/a8/0269b265da2bb8ced9623d19a45ecfc5577f88aece04872fe812f3b5e9ec/saspy-5.0.2.tar.gz
+[2023-04-14 20:00:22] INFO root fetch - processPackages [basaran]: executing diffoscope
+[2023-04-14 20:00:22] INFO root fetch - processPackages [basaran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basaran-0.14.1.tar.gz tmp/basaran-0.15.0.tar.gz --markdown 20230414/b/basaran/0.14.1-0.15.0/diff.md --exclude *.pyd
+[2023-04-14 20:00:22] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/26/a7/54b2b4a4aaf877eb2240b2504dfbf0bdf291456ff61707c7900fa8406187/hordelib-0.8.5.tar.gz
+[2023-04-14 20:00:22] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-14 20:00:22] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.8.4.tar.gz tmp/hordelib-0.8.5.tar.gz --markdown 20230414/h/hordelib/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-14 20:00:22] INFO root fetch - processPackages [hearthstone-data]: executing diffoscope
+[2023-04-14 20:00:22] INFO root fetch - processPackages [hearthstone-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hearthstone_data-93849.1.tar.gz tmp/hearthstone_data-95431.1.tar.gz --markdown 20230414/h/hearthstone-data/93849.1-95431.1/diff.md --exclude *.pyd
+[2023-04-14 20:00:22] INFO root fetch - processPackages [dvclive]: Start processing: ringelcoord
+[2023-04-14 20:00:22] INFO root fetch - main [MainThread]: End processing [dvclive]: success
+[2023-04-14 20:00:22] INFO root fetch - processPackages [ringelcoord]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 20:00:23] INFO root fetch - processPackages [ringelcoord]: executing diffoscope
+[2023-04-14 20:00:23] INFO root fetch - processPackages [ringelcoord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ringelcoord-0.0.2.tar.gz tmp/ringelcoord-0.0.3.tar.gz --markdown 20230414/r/ringelcoord/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 20:00:23] INFO root fetch - processPackages [basaran]: Start processing: pulumi-aws-native
+[2023-04-14 20:00:23] INFO root fetch - main [MainThread]: End processing [basaran]: success
+[2023-04-14 20:00:23] INFO root fetch - processPackages [pulumi-aws-native]: New version: [0.9.1a1641826769] Old Version: [0.9.1a1641824984]
+[2023-04-14 20:00:23] INFO root fetch - processPackages [saspy]: Downloading https://files.pythonhosted.org/packages/ae/a0/8ca89853dfc9c7669bce55592209e565aea3ef4e2d3a7b9863d1005f0e92/saspy-5.1.0.tar.gz
+[2023-04-14 20:00:23] INFO root fetch - processPackages [pulumi-aws-native]: executing diffoscope
+[2023-04-14 20:00:23] INFO root fetch - processPackages [pulumi-aws-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws_native-0.9.1a1641824984.tar.gz tmp/pulumi_aws_native-0.9.1a1641826769.tar.gz --markdown 20230414/p/pulumi-aws-native/0.9.1a1641824984-0.9.1a1641826769/diff.md --exclude *.pyd
+[2023-04-14 20:00:23] INFO root fetch - processPackages [hearthstone-data]: Start processing: torch-pruning
+[2023-04-14 20:00:23] INFO root fetch - main [MainThread]: End processing [hearthstone-data]: success
+[2023-04-14 20:00:23] INFO root fetch - processPackages [torch-pruning]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-14 20:00:24] INFO root fetch - main [MainThread]: End processing [ringelcoord]: success
+[2023-04-14 20:00:24] INFO root fetch - processPackages [torch-pruning]: Downloading https://files.pythonhosted.org/packages/d4/fe/9007a8e5b1082d9fd1829f16f9f2c4080548f6efc77bbca4dcda8940f142/torch-pruning-1.1.6.tar.gz
+[2023-04-14 20:00:24] INFO root fetch - processPackages [torch-pruning]: executing diffoscope
+[2023-04-14 20:00:24] INFO root fetch - processPackages [torch-pruning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch-pruning-1.1.5.tar.gz tmp/torch-pruning-1.1.6.tar.gz --markdown 20230414/t/torch-pruning/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-14 20:00:24] INFO root fetch - processPackages [saspy]: executing diffoscope
+[2023-04-14 20:00:24] INFO root fetch - processPackages [saspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saspy-5.0.2.tar.gz tmp/saspy-5.1.0.tar.gz --markdown 20230414/s/saspy/5.0.2-5.1.0/diff.md --exclude *.pyd
+[2023-04-14 20:00:25] INFO root fetch - main [MainThread]: End processing [torch-pruning]: success
+[2023-04-14 20:00:27] INFO root fetch - main [MainThread]: End processing [saspy]: success
+[2023-04-14 20:00:31] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-04-14 20:00:47] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
+[2023-04-14 20:00:47] INFO root fetch - main [MainThread]: Store serial: [17711151]
