@@ -22216,3 +22216,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 22:51:42] INFO root fetch - main [MainThread]: End processing [dxsp]: success
 [2023-04-14 22:51:42] INFO root fetch - main [MainThread]: End processing [astronomer-cosmos]: success
 [2023-04-14 22:51:42] INFO root fetch - main [MainThread]: Store serial: [17712821]
+[2023-04-14 22:56:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712821]
+[2023-04-14 22:56:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 22:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tupa123
+[2023-04-14 22:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aeolus
+[2023-04-14 22:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rotating-proxy-api
+[2023-04-14 22:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: symdexer
+[2023-04-14 22:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: convocations
+[2023-04-14 22:56:50] INFO root fetch - processPackages [aeolus]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 22:56:50] WARNING root fetch - processPackages [rotating-proxy-api]: Skipping, unable to determine old version
+[2023-04-14 22:56:50] INFO root fetch - processPackages [rotating-proxy-api]: Start processing: authanor
+[2023-04-14 22:56:50] INFO root fetch - main [MainThread]: End processing [rotating-proxy-api] error
+[2023-04-14 22:56:50] INFO root fetch - processPackages [tupa123]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-14 22:56:50] INFO root fetch - processPackages [symdexer]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-14 22:56:50] INFO root fetch - processPackages [convocations]: New version: [0.9] Old Version: [0.8]
+[2023-04-14 22:56:50] WARNING root fetch - processPackages [authanor]: Skipping, unable to determine old version
+[2023-04-14 22:56:50] INFO root fetch - processPackages [authanor]: Start processing: yandex-dmp-external-apache-flink
+[2023-04-14 22:56:50] INFO root fetch - main [MainThread]: End processing [authanor] error
+[2023-04-14 22:56:50] INFO root fetch - processPackages [tupa123]: executing diffoscope
+[2023-04-14 22:56:50] INFO root fetch - processPackages [tupa123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tupa123-1.2.8.tar.gz tmp/tupa123-1.2.9.tar.gz --markdown 20230414/t/tupa123/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-14 22:56:50] ERROR root fetch - processPackages [yandex-dmp-external-apache-flink]: Unable to get metadata: No such project 'yandex-dmp-external-apache-flink'
+[2023-04-14 22:56:50] INFO root fetch - main [MainThread]: End processing [yandex-dmp-external-apache-flink] error
+[2023-04-14 22:56:50] INFO root fetch - processPackages [aeolus]: Downloading https://files.pythonhosted.org/packages/e0/92/0f271f7b8e1dd186b56ae0961ee3e942b4c0757121ebd1798795aff760ba/aeolus-0.4.8.tar.gz
+[2023-04-14 22:56:50] INFO root fetch - processPackages [symdexer]: Downloading https://files.pythonhosted.org/packages/ba/5e/7ae3a90620078a192c40e36843de91b0cf07571e073e5ec283b1284c6088/symdexer-0.2.0.tar.gz
+[2023-04-14 22:56:50] INFO root fetch - processPackages [symdexer]: executing diffoscope
+[2023-04-14 22:56:50] INFO root fetch - processPackages [symdexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symdexer-0.1.2.tar.gz tmp/symdexer-0.2.0.tar.gz --markdown 20230414/s/symdexer/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 22:56:50] INFO root fetch - processPackages [convocations]: executing diffoscope
+[2023-04-14 22:56:50] INFO root fetch - processPackages [convocations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convocations-0.8.tar.gz tmp/convocations-0.9.tar.gz --markdown 20230414/c/convocations/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-14 22:56:50] INFO root fetch - processPackages [aeolus]: Downloading https://files.pythonhosted.org/packages/da/a0/a57a2a4d4895016e5a27201c3fe1992de1f7336ff22f66a9c4c85b5fbd1a/aeolus-0.4.9.tar.gz
+[2023-04-14 22:56:50] INFO root fetch - processPackages [aeolus]: executing diffoscope
+[2023-04-14 22:56:50] INFO root fetch - processPackages [aeolus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeolus-0.4.8.tar.gz tmp/aeolus-0.4.9.tar.gz --markdown 20230414/a/aeolus/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 22:56:51] INFO root fetch - main [MainThread]: End processing [tupa123]: success
+[2023-04-14 22:56:51] INFO root fetch - main [MainThread]: End processing [symdexer]: success
+[2023-04-14 22:56:52] INFO root fetch - main [MainThread]: End processing [convocations]: success
+[2023-04-14 22:56:52] INFO root fetch - main [MainThread]: End processing [aeolus]: success
+[2023-04-14 22:56:52] INFO root fetch - main [MainThread]: Store serial: [17712843]
