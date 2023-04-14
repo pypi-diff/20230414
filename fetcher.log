@@ -22840,3 +22840,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 23:44:27] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
 [2023-04-14 23:44:35] INFO root fetch - main [MainThread]: End processing [trainml]: success
 [2023-04-14 23:44:35] INFO root fetch - main [MainThread]: Store serial: [17713191]
+[2023-04-14 23:49:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713191]
+[2023-04-14 23:49:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 23:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickcalculator
+[2023-04-14 23:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dxsp
+[2023-04-14 23:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TheSilent
+[2023-04-14 23:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: luau
+[2023-04-14 23:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: randgenlib
+[2023-04-14 23:49:43] WARNING root fetch - processPackages [quickcalculator]: Skipping, unable to determine old version
+[2023-04-14 23:49:43] INFO root fetch - processPackages [quickcalculator]: Start processing: shreycriclivemac
+[2023-04-14 23:49:43] INFO root fetch - processPackages [randgenlib]: New version: [1.0.2] Old Version: [1.0.0]
+[2023-04-14 23:49:43] INFO root fetch - processPackages [luau]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-14 23:49:43] INFO root fetch - main [MainThread]: End processing [quickcalculator] error
+[2023-04-14 23:49:43] INFO root fetch - processPackages [dxsp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 23:49:43] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 23:49:43] INFO root fetch - processPackages [shreycriclivemac]: New version: [0.3] Old Version: [0.2]
+[2023-04-14 23:49:43] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-14 23:49:43] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230414/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 23:49:43] INFO root fetch - processPackages [shreycriclivemac]: Downloading https://files.pythonhosted.org/packages/9a/7b/1788a2303f4445138750edf9c8bb2b83f6ea3a0ea62d69ebc0b44af248de/shreycriclivemac-0.2.tar.gz
+[2023-04-14 23:49:43] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/81/64/020363cd65a71ed5941eeb4194d3d9aa12fed4b7f6a230559ed304a5f809/luau-0.2.1.tar.gz
+[2023-04-14 23:49:43] INFO root fetch - processPackages [randgenlib]: Downloading https://files.pythonhosted.org/packages/5b/79/7ddb64d894d5dae161117e4d0f1318a6746e6982f131be0f7de61b60f0ab/randgenlib-1.0.0.tar.gz
+[2023-04-14 23:49:43] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-14 23:49:43] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.2.0.tar.gz tmp/luau-0.2.1.tar.gz --markdown 20230414/l/luau/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 23:49:43] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-14 23:49:43] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.8.tar.gz tmp/dxsp-1.0.9.tar.gz --markdown 20230414/d/dxsp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 23:49:43] INFO root fetch - processPackages [shreycriclivemac]: Downloading https://files.pythonhosted.org/packages/b9/0c/756d125fd0dc158c67789c64957557bbdbd79852bb63cf016841b590c56c/shreycriclivemac-0.3.tar.gz
+[2023-04-14 23:49:43] INFO root fetch - processPackages [randgenlib]: Downloading https://files.pythonhosted.org/packages/b3/d6/1e83d77e708b84d08db4913313e6eef1c38d23d3945b108383a90a3eb109/randgenlib-1.0.2.tar.gz
+[2023-04-14 23:49:43] INFO root fetch - processPackages [shreycriclivemac]: executing diffoscope
+[2023-04-14 23:49:43] INFO root fetch - processPackages [shreycriclivemac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shreycriclivemac-0.2.tar.gz tmp/shreycriclivemac-0.3.tar.gz --markdown 20230414/s/shreycriclivemac/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-14 23:49:43] INFO root fetch - processPackages [randgenlib]: executing diffoscope
+[2023-04-14 23:49:43] INFO root fetch - processPackages [randgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/randgenlib-1.0.0.tar.gz tmp/randgenlib-1.0.2.tar.gz --markdown 20230414/r/randgenlib/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 23:49:44] INFO root fetch - processPackages [TheSilent]: Start processing: advancedrequests
+[2023-04-14 23:49:44] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-14 23:49:44] INFO root fetch - processPackages [advancedrequests]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-14 23:49:44] INFO root fetch - processPackages [dxsp]: Start processing: mov-cli
+[2023-04-14 23:49:44] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-14 23:49:44] INFO root fetch - processPackages [luau]: Start processing: pyroscopegridding
+[2023-04-14 23:49:44] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-14 23:49:44] INFO root fetch - processPackages [mov-cli]: New version: [1.3.7] Old Version: [1.3.6]
+[2023-04-14 23:49:44] INFO root fetch - processPackages [pyroscopegridding]: New version: [0.0.8] Old Version: [0.0.3]
+[2023-04-14 23:49:44] INFO root fetch - processPackages [pyroscopegridding]: executing diffoscope
+[2023-04-14 23:49:44] INFO root fetch - processPackages [pyroscopegridding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroscopegridding-0.0.3.tar.gz tmp/pyroscopegridding-0.0.8.tar.gz --markdown 20230414/p/pyroscopegridding/0.0.3-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 23:49:44] INFO root fetch - main [MainThread]: End processing [randgenlib]: success
+[2023-04-14 23:49:44] INFO root fetch - processPackages [mov-cli]: Downloading https://files.pythonhosted.org/packages/28/1d/79106e0d43fcf34a5690d1851ea729bf912fa37c54f9ee6800db7c1b7df1/mov_cli-1.3.7.tar.gz
+[2023-04-14 23:49:44] INFO root fetch - main [MainThread]: End processing [shreycriclivemac]: success
+[2023-04-14 23:49:44] INFO root fetch - processPackages [advancedrequests]: Downloading https://files.pythonhosted.org/packages/2b/73/3923605ab707f87524c4b528dba16d5bdd9edd0a808387b0e87111309a28/advancedrequests-1.0.3.tar.gz
+[2023-04-14 23:49:44] INFO root fetch - processPackages [advancedrequests]: executing diffoscope
+[2023-04-14 23:49:44] INFO root fetch - processPackages [advancedrequests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/advancedrequests-1.0.2.tar.gz tmp/advancedrequests-1.0.3.tar.gz --markdown 20230414/a/advancedrequests/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-14 23:49:44] INFO root fetch - processPackages [mov-cli]: executing diffoscope
+[2023-04-14 23:49:44] INFO root fetch - processPackages [mov-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mov_cli-1.3.6.tar.gz tmp/mov_cli-1.3.7.tar.gz --markdown 20230414/m/mov-cli/1.3.6-1.3.7/diff.md --exclude *.pyd
+[2023-04-14 23:49:45] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
+[2023-04-14 23:49:45] INFO root fetch - main [MainThread]: End processing [advancedrequests]: success
+[2023-04-14 23:49:46] INFO root fetch - main [MainThread]: End processing [mov-cli]: success
+[2023-04-14 23:49:46] INFO root fetch - main [MainThread]: Store serial: [17713223]
