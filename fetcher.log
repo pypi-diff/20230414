@@ -10361,3 +10361,108 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 11:10:29] INFO root fetch - main [MainThread]: End processing [mosaic-clustering]: success
 [2023-04-14 11:10:30] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-04-14 11:10:30] INFO root fetch - main [MainThread]: Store serial: [17705014]
+[2023-04-14 11:15:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705014]
+[2023-04-14 11:15:37] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-14 11:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finlogic
+[2023-04-14 11:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-Pillow
+[2023-04-14 11:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zopperuuid
+[2023-04-14 11:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arinc424
+[2023-04-14 11:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly
+[2023-04-14 11:15:38] INFO root fetch - processPackages [finlogic]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-14 11:15:38] INFO root fetch - processPackages [zopperuuid]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-14 11:15:38] WARNING root fetch - processPackages [arinc424]: Skipping, unable to determine old version
+[2023-04-14 11:15:38] INFO root fetch - processPackages [arinc424]: Start processing: steam-pysigma
+[2023-04-14 11:15:38] INFO root fetch - main [MainThread]: End processing [arinc424] error
+[2023-04-14 11:15:38] INFO root fetch - processPackages [types-Pillow]: New version: [9.5.0.0] Old Version: [9.4.0.9]
+[2023-04-14 11:15:38] INFO root fetch - processPackages [steam-pysigma]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-14 11:15:38] INFO root fetch - processPackages [tf-nightly]: New version: [2.13.0.dev20230414] Old Version: [2.13.0.dev20230413]
+[2023-04-14 11:15:38] INFO root fetch - processPackages [zopperuuid]: Downloading https://files.pythonhosted.org/packages/82/8b/61fb0ad2e0cd6f945412a705d94a58a5adbdea955a987e84c34eab98673c/zopperuuid-0.0.8.tar.gz
+[2023-04-14 11:15:38] INFO root fetch - processPackages [types-Pillow]: Downloading https://files.pythonhosted.org/packages/d3/c6/a0870eb473c294ffae4ae78bb05c56f3a49dfa4b29cf2fcd578615d6eeab/types-Pillow-9.4.0.9.tar.gz
+[2023-04-14 11:15:38] INFO root fetch - processPackages [zopperuuid]: executing diffoscope
+[2023-04-14 11:15:38] INFO root fetch - processPackages [zopperuuid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zopperuuid-0.0.7.tar.gz tmp/zopperuuid-0.0.8.tar.gz --markdown 20230414/z/zopperuuid/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 11:15:38] INFO root fetch - processPackages [finlogic]: Downloading https://files.pythonhosted.org/packages/ca/8d/19ce40e1e9cc6d00b4578d22e284e85f052c7c329a57fdf49a6b97d3ff65/FinLogic-0.3.6.tar.gz
+[2023-04-14 11:15:38] INFO root fetch - processPackages [steam-pysigma]: executing diffoscope
+[2023-04-14 11:15:38] INFO root fetch - processPackages [steam-pysigma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steam-pysigma-2023.4.7.tar.gz tmp/steam-pysigma-2023.4.8.tar.gz --markdown 20230414/s/steam-pysigma/2023.4.7-2023.4.8/diff.md --exclude *.pyd
+[2023-04-14 11:15:38] INFO root fetch - processPackages [finlogic]: executing diffoscope
+[2023-04-14 11:15:38] INFO root fetch - processPackages [finlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FinLogic-0.3.5.tar.gz tmp/FinLogic-0.3.6.tar.gz --markdown 20230414/f/finlogic/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-14 11:15:38] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/26/59/9b6ffac197642dcb4822f7a17f31448c7750965dd66ca84deb57630b2ce0/tf_nightly-2.13.0.dev20230414-cp39-cp39-win_amd64.whl
+[2023-04-14 11:15:38] INFO root fetch - processPackages [types-Pillow]: Downloading https://files.pythonhosted.org/packages/16/03/64b2839bbf317f9523b1add3d3d772657606bc1cd5de35e4f67629365acc/types-Pillow-9.5.0.0.tar.gz
+[2023-04-14 11:15:38] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2023-04-14 11:15:38] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.13.0.dev20230413-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.13.0.dev20230414-cp39-cp39-win_amd64.whl.zip --markdown 20230414/t/tf-nightly/2.13.0.dev20230413-2.13.0.dev20230414/diff.md --exclude *.pyd
+[2023-04-14 11:15:38] INFO root fetch - processPackages [types-Pillow]: executing diffoscope
+[2023-04-14 11:15:38] INFO root fetch - processPackages [types-Pillow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-Pillow-9.4.0.9.tar.gz tmp/types-Pillow-9.5.0.0.tar.gz --markdown 20230414/t/types-Pillow/9.4.0.9-9.5.0.0/diff.md --exclude *.pyd
+[2023-04-14 11:15:39] INFO root fetch - processPackages [zopperuuid]: Start processing: shcheck
+[2023-04-14 11:15:39] INFO root fetch - main [MainThread]: End processing [zopperuuid]: success
+[2023-04-14 11:15:39] INFO root fetch - processPackages [shcheck]: New version: [1.5.9] Old Version: [1.5.7]
+[2023-04-14 11:15:39] INFO root fetch - processPackages [steam-pysigma]: Start processing: pyarmor.cli
+[2023-04-14 11:15:39] INFO root fetch - main [MainThread]: End processing [steam-pysigma]: success
+[2023-04-14 11:15:39] INFO root fetch - processPackages [pyarmor.cli]: New version: [8.1.dev9] Old Version: [8.1.dev8]
+[2023-04-14 11:15:39] INFO root fetch - processPackages [shcheck]: Downloading https://files.pythonhosted.org/packages/c2/fc/128eca21a216316c808c250f771f899f5a1df11a5846b7242ff02323026c/shcheck-1.5.7.tar.gz
+[2023-04-14 11:15:39] INFO root fetch - processPackages [tf-nightly]: Start processing: pyarmor.cli.core
+[2023-04-14 11:15:39] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2023-04-14 11:15:39] INFO root fetch - processPackages [pyarmor.cli]: executing diffoscope
+[2023-04-14 11:15:39] INFO root fetch - processPackages [pyarmor.cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli-8.1.dev8-py2.py3-none-any.whl.zip tmp/pyarmor.cli-8.1.dev9-py2.py3-none-any.whl.zip --markdown 20230414/p/pyarmor.cli/8.1.dev8-8.1.dev9/diff.md --exclude *.pyd
+[2023-04-14 11:15:39] INFO root fetch - processPackages [pyarmor.cli.core]: New version: [2.1.dev9] Old Version: [2.1.dev7]
+[2023-04-14 11:15:39] INFO root fetch - processPackages [finlogic]: Start processing: jupyterlab-friendly-traceback
+[2023-04-14 11:15:39] INFO root fetch - main [MainThread]: End processing [finlogic]: success
+[2023-04-14 11:15:39] INFO root fetch - processPackages [jupyterlab-friendly-traceback]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 11:15:39] INFO root fetch - processPackages [shcheck]: Downloading https://files.pythonhosted.org/packages/05/66/978e56fff2f04a77ae2b36e17719506cdc753dc7a65a42851d7db4e4b290/shcheck-1.5.9.tar.gz
+[2023-04-14 11:15:39] INFO root fetch - processPackages [jupyterlab-friendly-traceback]: Downloading https://files.pythonhosted.org/packages/00/69/b32ac1db58e9ec715dbe284e1f40def272ca135af106f53d8a68de09715e/jupyterlab_friendly_traceback-0.2.1.tar.gz
+[2023-04-14 11:15:40] INFO root fetch - processPackages [shcheck]: executing diffoscope
+[2023-04-14 11:15:40] INFO root fetch - processPackages [shcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shcheck-1.5.7.tar.gz tmp/shcheck-1.5.9.tar.gz --markdown 20230414/s/shcheck/1.5.7-1.5.9/diff.md --exclude *.pyd
+[2023-04-14 11:15:40] INFO root fetch - processPackages [pyarmor.cli.core]: executing diffoscope
+[2023-04-14 11:15:40] INFO root fetch - processPackages [pyarmor.cli.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core-2.1.dev7-cp39-none-win_amd64.whl.zip tmp/pyarmor.cli.core-2.1.dev9-cp39-none-win_amd64.whl.zip --markdown 20230414/p/pyarmor.cli.core/2.1.dev7-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-14 11:15:40] INFO root fetch - processPackages [types-Pillow]: Start processing: gpt-api
+[2023-04-14 11:15:40] INFO root fetch - main [MainThread]: End processing [types-Pillow]: success
+[2023-04-14 11:15:40] INFO root fetch - processPackages [gpt-api]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-04-14 11:15:40] INFO root fetch - processPackages [jupyterlab-friendly-traceback]: Downloading https://files.pythonhosted.org/packages/da/fb/294d1224b406caec8a7fc49ed804dd50505623cc701e21c0579f1008514c/jupyterlab_friendly_traceback-0.2.2.tar.gz
+[2023-04-14 11:15:40] INFO root fetch - processPackages [jupyterlab-friendly-traceback]: executing diffoscope
+[2023-04-14 11:15:40] INFO root fetch - processPackages [jupyterlab-friendly-traceback]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_friendly_traceback-0.2.1.tar.gz tmp/jupyterlab_friendly_traceback-0.2.2.tar.gz --markdown 20230414/j/jupyterlab-friendly-traceback/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 11:15:40] INFO root fetch - processPackages [gpt-api]: Downloading https://files.pythonhosted.org/packages/e1/8c/856f98e77b94d4c1904ac1751bc29c470c482c039f60594b44a121869426/gpt-api-0.2.1.tar.gz
+[2023-04-14 11:15:40] INFO root fetch - processPackages [gpt-api]: executing diffoscope
+[2023-04-14 11:15:40] INFO root fetch - processPackages [gpt-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-api-0.1.1.tar.gz tmp/gpt-api-0.2.1.tar.gz --markdown 20230414/g/gpt-api/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 11:15:40] INFO root fetch - processPackages [pyarmor.cli]: Start processing: data-pipelines-cli
+[2023-04-14 11:15:40] INFO root fetch - main [MainThread]: End processing [pyarmor.cli]: success
+[2023-04-14 11:15:40] INFO root fetch - processPackages [data-pipelines-cli]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 11:15:40] INFO root fetch - processPackages [data-pipelines-cli]: Downloading https://files.pythonhosted.org/packages/cd/6c/a0fb36a514ebe5af4488426d929bb2898873282a5fe6c968aea1647e1890/data_pipelines_cli-0.8.0.tar.gz
+[2023-04-14 11:15:41] INFO root fetch - processPackages [pyarmor.cli.core]: Start processing: pretix-plugin-attendance-certificate
+[2023-04-14 11:15:41] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.core]: success
+[2023-04-14 11:15:41] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 11:15:41] INFO root fetch - processPackages [shcheck]: Start processing: pyarmor
+[2023-04-14 11:15:41] INFO root fetch - main [MainThread]: End processing [shcheck]: success
+[2023-04-14 11:15:41] INFO root fetch - processPackages [pyarmor]: New version: [8.1.dev9] Old Version: [8.1.dev7]
+[2023-04-14 11:15:41] INFO root fetch - processPackages [pyarmor]: executing diffoscope
+[2023-04-14 11:15:41] INFO root fetch - processPackages [pyarmor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor-8.1.dev7.zip tmp/pyarmor-8.1.dev9.zip --markdown 20230414/p/pyarmor/8.1.dev7-8.1.dev9/diff.md --exclude *.pyd
+[2023-04-14 11:15:41] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Downloading https://files.pythonhosted.org/packages/b6/71/0132809ca67d635cdd287258832c0fea53fb8752f130e8b53e4dbf17b7a3/pretix_plugin_attendance_certificate-0.1.6.tar.gz
+[2023-04-14 11:15:41] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: executing diffoscope
+[2023-04-14 11:15:41] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix_plugin_attendance_certificate-0.1.5.tar.gz tmp/pretix_plugin_attendance_certificate-0.1.6.tar.gz --markdown 20230414/p/pretix-plugin-attendance-certificate/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 11:15:41] INFO root fetch - processPackages [data-pipelines-cli]: Downloading https://files.pythonhosted.org/packages/e4/75/9be2188d5177d2fa3fa4a50c9b1fbf660d93d8701c94ee6a8df6dcdf9a4b/data_pipelines_cli-0.9.0.tar.gz
+[2023-04-14 11:15:41] INFO root fetch - processPackages [gpt-api]: Start processing: autoai-libs
+[2023-04-14 11:15:41] INFO root fetch - main [MainThread]: End processing [gpt-api]: success
+[2023-04-14 11:15:41] INFO root fetch - processPackages [autoai-libs]: New version: [1.15.1] Old Version: [1.15.0]
+[2023-04-14 11:15:41] INFO root fetch - processPackages [autoai-libs]: Downloading https://files.pythonhosted.org/packages/d1/08/ce255cf6313322c7d0227e6620142327e7aaefcac62d766c16a6e894d736/autoai_libs-1.15.0-74-cp39-cp39-win_amd64.whl
+[2023-04-14 11:15:41] INFO root fetch - processPackages [data-pipelines-cli]: executing diffoscope
+[2023-04-14 11:15:41] INFO root fetch - processPackages [data-pipelines-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_pipelines_cli-0.8.0.tar.gz tmp/data_pipelines_cli-0.9.0.tar.gz --markdown 20230414/d/data-pipelines-cli/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 11:15:42] INFO root fetch - processPackages [jupyterlab-friendly-traceback]: Start processing: reytool
+[2023-04-14 11:15:42] INFO root fetch - main [MainThread]: End processing [jupyterlab-friendly-traceback]: success
+[2023-04-14 11:15:42] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-04-14 11:15:42] INFO root fetch - processPackages [autoai-libs]: Downloading https://files.pythonhosted.org/packages/d9/97/fcc8257f191db5103871dd3812764e3315ab82636624efa5c5120c04fe44/autoai_libs-1.15.1-75-cp39-cp39-win_amd64.whl
+[2023-04-14 11:15:42] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Start processing: rdf-data-manager
+[2023-04-14 11:15:42] INFO root fetch - main [MainThread]: End processing [pretix-plugin-attendance-certificate]: success
+[2023-04-14 11:15:42] WARNING root fetch - processPackages [rdf-data-manager]: Skipping, unable to determine old version
+[2023-04-14 11:15:42] INFO root fetch - processPackages [rdf-data-manager]: Start processing: returnn
+[2023-04-14 11:15:42] INFO root fetch - main [MainThread]: End processing [rdf-data-manager] error
+[2023-04-14 11:15:42] INFO root fetch - processPackages [returnn]: New version: [1.20230414.110554] Old Version: [1.20230413.93323]
+[2023-04-14 11:15:42] INFO root fetch - processPackages [autoai-libs]: executing diffoscope
+[2023-04-14 11:15:42] INFO root fetch - processPackages [autoai-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoai_libs-1.15.0-74-cp39-cp39-win_amd64.whl.zip tmp/autoai_libs-1.15.1-75-cp39-cp39-win_amd64.whl.zip --markdown 20230414/a/autoai-libs/1.15.0-1.15.1/diff.md --exclude *.pyd
+[2023-04-14 11:15:42] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-04-14 11:15:42] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230414/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-04-14 11:15:42] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/75/e2/0d9caafbc8f2d0c3e9a966ff3ef4c1595ae9dbb13e4528e216613b846151/returnn-1.20230414.110554.tar.gz
+[2023-04-14 11:15:43] INFO root fetch - main [MainThread]: End processing [data-pipelines-cli]: success
+[2023-04-14 11:15:43] INFO root fetch - main [MainThread]: End processing [pyarmor]: success
+[2023-04-14 11:15:43] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-14 11:15:43] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230413.93323.tar.gz tmp/returnn-1.20230414.110554.tar.gz --markdown 20230414/r/returnn/1.20230413.93323-1.20230414.110554/diff.md --exclude *.pyd
+[2023-04-14 11:15:43] INFO root fetch - main [MainThread]: End processing [reytool]: success
+[2023-04-14 11:15:43] INFO root fetch - main [MainThread]: End processing [autoai-libs]: success
+[2023-04-14 11:15:48] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-14 11:15:48] INFO root fetch - main [MainThread]: Store serial: [17705114]
