@@ -14414,3 +14414,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 15:27:01] INFO root fetch - main [MainThread]: End processing [OpenGeode-Geosciences]: success
 [2023-04-14 15:27:01] INFO root fetch - main [MainThread]: End processing [django-content-blocks]: success
 [2023-04-14 15:27:01] INFO root fetch - main [MainThread]: Store serial: [17707695]
+[2023-04-14 15:32:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17707695]
+[2023-04-14 15:32:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 15:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apd
+[2023-04-14 15:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: via-hub-logistc
+[2023-04-14 15:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cbstorage
+[2023-04-14 15:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sball
+[2023-04-14 15:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: im-data-manager-job-decoder
+[2023-04-14 15:32:09] INFO root fetch - processPackages [cbstorage]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-14 15:32:09] INFO root fetch - processPackages [sball]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-14 15:32:09] INFO root fetch - processPackages [via-hub-logistc]: New version: [1.0.0] Old Version: [0.0.9]
+[2023-04-14 15:32:09] INFO root fetch - processPackages [apd]: New version: [0.5.0] Old Version: [0.4.4]
+[2023-04-14 15:32:09] INFO root fetch - processPackages [im-data-manager-job-decoder]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-14 15:32:09] INFO root fetch - processPackages [cbstorage]: Downloading https://files.pythonhosted.org/packages/21/69/cfbbc26ebdbd8a50457af98f70fef51749066437c61f884d30c9606a980e/cbstorage-0.1.0.tar.gz
+[2023-04-14 15:32:09] INFO root fetch - processPackages [sball]: Downloading https://files.pythonhosted.org/packages/58/c8/834b65997b05389e1bb6b408d83aa124ebe276aa7a1bad99ecfd26ea0379/sball-0.9.2.tar.gz
+[2023-04-14 15:32:09] INFO root fetch - processPackages [im-data-manager-job-decoder]: Downloading https://files.pythonhosted.org/packages/b8/4a/1ffb88fb6c242daa5635bd10510654c2d356bfa4efb0204564467e55a6b1/im-data-manager-job-decoder-1.8.1.tar.gz
+[2023-04-14 15:32:09] INFO root fetch - processPackages [apd]: Downloading https://files.pythonhosted.org/packages/a4/a9/c856233c0e72649fbc2f01dba6ecbd28aa0a06545d44bd671b1b527b60cf/apd-0.4.4.tar.gz
+[2023-04-14 15:32:10] INFO root fetch - processPackages [sball]: executing diffoscope
+[2023-04-14 15:32:10] INFO root fetch - processPackages [sball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sball-0.9.1.tar.gz tmp/sball-0.9.2.tar.gz --markdown 20230414/s/sball/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-14 15:32:10] INFO root fetch - processPackages [via-hub-logistc]: Downloading https://files.pythonhosted.org/packages/e1/c2/befac983e4ae3b036ba038e54118437a77ab6c124c2e178d28fa232350a5/via-hub-logistc-1.0.0.tar.gz
+[2023-04-14 15:32:10] INFO root fetch - processPackages [cbstorage]: Downloading https://files.pythonhosted.org/packages/de/6a/3c7eaf0821ce910693e31900c2f7851fc4fe360c4b43ffdb77973b5dae3f/cbstorage-0.1.2.tar.gz
+[2023-04-14 15:32:10] INFO root fetch - processPackages [apd]: Downloading https://files.pythonhosted.org/packages/df/b1/f1468a60beef105549dfa3a67116822482f70b6dbd209bef7047f887a578/apd-0.5.0.tar.gz
+[2023-04-14 15:32:10] INFO root fetch - processPackages [via-hub-logistc]: executing diffoscope
+[2023-04-14 15:32:10] INFO root fetch - processPackages [via-hub-logistc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/via-hub-logistc-0.0.9.tar.gz tmp/via-hub-logistc-1.0.0.tar.gz --markdown 20230414/v/via-hub-logistc/0.0.9-1.0.0/diff.md --exclude *.pyd
+[2023-04-14 15:32:10] INFO root fetch - processPackages [cbstorage]: executing diffoscope
+[2023-04-14 15:32:10] INFO root fetch - processPackages [cbstorage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbstorage-0.1.0.tar.gz tmp/cbstorage-0.1.2.tar.gz --markdown 20230414/c/cbstorage/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 15:32:10] INFO root fetch - processPackages [apd]: executing diffoscope
+[2023-04-14 15:32:10] INFO root fetch - processPackages [apd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apd-0.4.4.tar.gz tmp/apd-0.5.0.tar.gz --markdown 20230414/a/apd/0.4.4-0.5.0/diff.md --exclude *.pyd
+[2023-04-14 15:32:10] INFO root fetch - processPackages [im-data-manager-job-decoder]: Downloading https://files.pythonhosted.org/packages/af/73/f856a2d9ae03130fb59552d593e2b32353e595e21a87fdb570b9510d68e9/im-data-manager-job-decoder-1.9.0.tar.gz
+[2023-04-14 15:32:11] INFO root fetch - processPackages [im-data-manager-job-decoder]: executing diffoscope
+[2023-04-14 15:32:11] INFO root fetch - processPackages [im-data-manager-job-decoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/im-data-manager-job-decoder-1.8.1.tar.gz tmp/im-data-manager-job-decoder-1.9.0.tar.gz --markdown 20230414/i/im-data-manager-job-decoder/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-14 15:32:11] INFO root fetch - processPackages [sball]: Start processing: sherbystats
+[2023-04-14 15:32:11] INFO root fetch - main [MainThread]: End processing [sball]: success
+[2023-04-14 15:32:11] INFO root fetch - processPackages [sherbystats]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 15:32:11] INFO root fetch - processPackages [via-hub-logistc]: Start processing: phpdiscord
+[2023-04-14 15:32:11] INFO root fetch - main [MainThread]: End processing [via-hub-logistc]: success
+[2023-04-14 15:32:11] WARNING root fetch - processPackages [phpdiscord]: Skipping, unable to determine old version
+[2023-04-14 15:32:11] INFO root fetch - processPackages [phpdiscord]: Start processing: ipyparallel
+[2023-04-14 15:32:11] INFO root fetch - main [MainThread]: End processing [phpdiscord] error
+[2023-04-14 15:32:11] INFO root fetch - processPackages [sherbystats]: Downloading https://files.pythonhosted.org/packages/91/47/37ed10e3586a4ac571d5d180bfe769422b76eefa4fbcbf20f12e82d79b3e/sherbystats-0.0.5.tar.gz
+[2023-04-14 15:32:11] INFO root fetch - processPackages [ipyparallel]: New version: [8.6.1] Old Version: [8.6.0]
+[2023-04-14 15:32:11] INFO root fetch - processPackages [cbstorage]: Start processing: odoo14-addon-asterisk-click2dial
+[2023-04-14 15:32:11] INFO root fetch - main [MainThread]: End processing [cbstorage]: success
+[2023-04-14 15:32:11] INFO root fetch - processPackages [odoo14-addon-asterisk-click2dial]: New version: [14.0.2.0.0] Old Version: [14.0.1.0.1.dev9]
+[2023-04-14 15:32:11] INFO root fetch - processPackages [ipyparallel]: Downloading https://files.pythonhosted.org/packages/f0/88/d1cf7f462ecda78dcbccec4df3fc5ab504770cd67f199fca8662d7036634/ipyparallel-8.6.1.tar.gz
+[2023-04-14 15:32:11] INFO root fetch - processPackages [odoo14-addon-asterisk-click2dial]: Downloading https://files.pythonhosted.org/packages/f5/be/5675accec03d7b941d2a4d5a5031798d584bc55c9cf5c63a609d7f4da19b/odoo14_addon_asterisk_click2dial-14.0.1.0.1.dev9-py3-none-any.whl
+[2023-04-14 15:32:11] INFO root fetch - processPackages [sherbystats]: Downloading https://files.pythonhosted.org/packages/5b/72/b43dcb430887a22ce9f0ecf0ee98431fe8a43cbb58b3fcfc5730c36248ae/sherbystats-0.0.6.tar.gz
+[2023-04-14 15:32:11] INFO root fetch - main [MainThread]: End processing [apd]: success
+[2023-04-14 15:32:11] INFO root fetch - processPackages [sherbystats]: executing diffoscope
+[2023-04-14 15:32:11] INFO root fetch - processPackages [sherbystats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherbystats-0.0.5.tar.gz tmp/sherbystats-0.0.6.tar.gz --markdown 20230414/s/sherbystats/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 15:32:12] INFO root fetch - main [MainThread]: End processing [im-data-manager-job-decoder]: success
+[2023-04-14 15:32:12] INFO root fetch - processPackages [odoo14-addon-asterisk-click2dial]: Downloading https://files.pythonhosted.org/packages/da/b5/d73426966ea195d921cea1d086a8d0c0808303c654823a5d0c7006b08cf4/odoo14_addon_asterisk_click2dial-14.0.2.0.0-py3-none-any.whl
+[2023-04-14 15:32:12] INFO root fetch - processPackages [odoo14-addon-asterisk-click2dial]: executing diffoscope
+[2023-04-14 15:32:12] INFO root fetch - processPackages [odoo14-addon-asterisk-click2dial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_asterisk_click2dial-14.0.1.0.1.dev9-py3-none-any.whl.zip tmp/odoo14_addon_asterisk_click2dial-14.0.2.0.0-py3-none-any.whl.zip --markdown 20230414/o/odoo14-addon-asterisk-click2dial/14.0.1.0.1.dev9-14.0.2.0.0/diff.md --exclude *.pyd
+[2023-04-14 15:32:12] INFO root fetch - processPackages [ipyparallel]: executing diffoscope
+[2023-04-14 15:32:12] INFO root fetch - processPackages [ipyparallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyparallel-8.6.0.tar.gz tmp/ipyparallel-8.6.1.tar.gz --markdown 20230414/i/ipyparallel/8.6.0-8.6.1/diff.md --exclude *.pyd
+[2023-04-14 15:32:12] INFO root fetch - main [MainThread]: End processing [sherbystats]: success
+[2023-04-14 15:32:14] INFO root fetch - main [MainThread]: End processing [odoo14-addon-asterisk-click2dial]: success
+[2023-04-14 15:32:16] INFO root fetch - main [MainThread]: End processing [ipyparallel]: success
+[2023-04-14 15:32:16] INFO root fetch - main [MainThread]: Store serial: [17707729]
