@@ -8744,3 +8744,87 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 09:35:21] INFO root fetch - main [MainThread]: End processing [pyprocessors-afp_entities]: success
 [2023-04-14 09:35:21] INFO root fetch - main [MainThread]: End processing [dialogy]: success
 [2023-04-14 09:35:21] INFO root fetch - main [MainThread]: Store serial: [17704125]
+[2023-04-14 09:40:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704125]
+[2023-04-14 09:40:29] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 09:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finetuner
+[2023-04-14 09:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dj-ms-auth-router
+[2023-04-14 09:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyprocessors-afp_sports
+[2023-04-14 09:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foldedleastsquares
+[2023-04-14 09:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gurobi-machinelearning
+[2023-04-14 09:40:29] INFO root fetch - processPackages [foldedleastsquares]: New version: [1.0.43] Old Version: [1.0.42]
+[2023-04-14 09:40:29] INFO root fetch - processPackages [pyprocessors-afp_sports]: New version: [0.5.8] Old Version: [0.5.32]
+[2023-04-14 09:40:29] INFO root fetch - processPackages [gurobi-machinelearning]: New version: [1.1.1] Old Version: [1.1.0b0]
+[2023-04-14 09:40:29] INFO root fetch - processPackages [dj-ms-auth-router]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-14 09:40:29] INFO root fetch - processPackages [finetuner]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-04-14 09:40:29] INFO root fetch - processPackages [pyprocessors-afp_sports]: Downloading https://files.pythonhosted.org/packages/08/5a/410084a087534f700d09b363850c9fb646f3800bc5ba3d903ee40c7a6e21/pyprocessors-afp_sports-0.5.32.tar.gz
+[2023-04-14 09:40:29] INFO root fetch - processPackages [dj-ms-auth-router]: Downloading https://files.pythonhosted.org/packages/a4/f1/ae7bf666deb1f717aa6760d94d77362a61f38248c3de89c60c9811141a03/dj-ms-auth-router-1.5.0.tar.gz
+[2023-04-14 09:40:29] INFO root fetch - processPackages [gurobi-machinelearning]: Downloading https://files.pythonhosted.org/packages/52/ea/39bd69c908d348c459c03f9eb1ea60902bca175eae9dc6ec53b1619c2672/gurobi-machinelearning-1.1.0b0.tar.gz
+[2023-04-14 09:40:29] INFO root fetch - processPackages [foldedleastsquares]: Downloading https://files.pythonhosted.org/packages/42/63/9db78522ea6de1473c9fb72aceb14a8d786f0bce05e54e6be24ce9ea0df7/foldedleastsquares-1.0.43.tar.gz
+[2023-04-14 09:40:29] INFO root fetch - processPackages [finetuner]: Downloading https://files.pythonhosted.org/packages/49/32/4c1ca7b476e309aaed61aa25f55e90b5ac5a114c8119b067897907a282c2/finetuner-0.7.4.tar.gz
+[2023-04-14 09:40:29] INFO root fetch - processPackages [foldedleastsquares]: executing diffoscope
+[2023-04-14 09:40:29] INFO root fetch - processPackages [foldedleastsquares]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foldedleastsquares-1.0.42.tar.gz tmp/foldedleastsquares-1.0.43.tar.gz --markdown 20230414/f/foldedleastsquares/1.0.42-1.0.43/diff.md --exclude *.pyd
+[2023-04-14 09:40:30] INFO root fetch - processPackages [gurobi-machinelearning]: Downloading https://files.pythonhosted.org/packages/03/47/90111a75803278109680f1b16321a4d3ccc7a8b54272efe04457c0acdc52/gurobi-machinelearning-1.1.1.tar.gz
+[2023-04-14 09:40:30] INFO root fetch - processPackages [dj-ms-auth-router]: Downloading https://files.pythonhosted.org/packages/c7/2c/825fc9cf82d72ababc6e2114e6f85f3219cafd82aa251766a0a3b9ceaa8f/dj-ms-auth-router-1.5.1.tar.gz
+[2023-04-14 09:40:30] INFO root fetch - processPackages [pyprocessors-afp_sports]: Downloading https://files.pythonhosted.org/packages/32/24/fb4c19582421ce6e3a39cf92e86e5e84e591fe52a6f29dd3e83d683feaba/pyprocessors-afp_sports-0.5.8.tar.gz
+[2023-04-14 09:40:30] INFO root fetch - processPackages [finetuner]: Downloading https://files.pythonhosted.org/packages/45/5d/81de194d45119d538f99b894033a07b5e8d176a096eb64c69963910c2e63/finetuner-0.7.5.tar.gz
+[2023-04-14 09:40:30] INFO root fetch - processPackages [gurobi-machinelearning]: executing diffoscope
+[2023-04-14 09:40:30] INFO root fetch - processPackages [gurobi-machinelearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gurobi-machinelearning-1.1.0b0.tar.gz tmp/gurobi-machinelearning-1.1.1.tar.gz --markdown 20230414/g/gurobi-machinelearning/1.1.0b0-1.1.1/diff.md --exclude *.pyd
+[2023-04-14 09:40:30] INFO root fetch - processPackages [dj-ms-auth-router]: executing diffoscope
+[2023-04-14 09:40:30] INFO root fetch - processPackages [dj-ms-auth-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj-ms-auth-router-1.5.0.tar.gz tmp/dj-ms-auth-router-1.5.1.tar.gz --markdown 20230414/d/dj-ms-auth-router/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-14 09:40:30] INFO root fetch - processPackages [pyprocessors-afp_sports]: executing diffoscope
+[2023-04-14 09:40:30] INFO root fetch - processPackages [pyprocessors-afp_sports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprocessors-afp_sports-0.5.32.tar.gz tmp/pyprocessors-afp_sports-0.5.8.tar.gz --markdown 20230414/p/pyprocessors-afp_sports/0.5.32-0.5.8/diff.md --exclude *.pyd
+[2023-04-14 09:40:30] INFO root fetch - processPackages [finetuner]: executing diffoscope
+[2023-04-14 09:40:30] INFO root fetch - processPackages [finetuner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finetuner-0.7.4.tar.gz tmp/finetuner-0.7.5.tar.gz --markdown 20230414/f/finetuner/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-04-14 09:40:31] INFO root fetch - processPackages [dj-ms-auth-router]: Start processing: promsoft-weight-calc-interface
+[2023-04-14 09:40:31] INFO root fetch - main [MainThread]: End processing [dj-ms-auth-router]: success
+[2023-04-14 09:40:31] INFO root fetch - processPackages [promsoft-weight-calc-interface]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-14 09:40:31] INFO root fetch - processPackages [foldedleastsquares]: Start processing: griffon
+[2023-04-14 09:40:31] INFO root fetch - main [MainThread]: End processing [foldedleastsquares]: success
+[2023-04-14 09:40:31] INFO root fetch - processPackages [griffon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 09:40:31] INFO root fetch - processPackages [finetuner]: Start processing: Slpapy
+[2023-04-14 09:40:31] INFO root fetch - main [MainThread]: End processing [finetuner]: success
+[2023-04-14 09:40:31] INFO root fetch - processPackages [Slpapy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 09:40:31] INFO root fetch - processPackages [gurobi-machinelearning]: Start processing: wtfutil
+[2023-04-14 09:40:31] INFO root fetch - main [MainThread]: End processing [gurobi-machinelearning]: success
+[2023-04-14 09:40:31] INFO root fetch - processPackages [wtfutil]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 09:40:31] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-04-14 09:40:31] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.1.8.tar.gz tmp/Slpapy-0.1.9.tar.gz --markdown 20230414/S/Slpapy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 09:40:31] INFO root fetch - processPackages [promsoft-weight-calc-interface]: Downloading https://files.pythonhosted.org/packages/27/04/5f00837ebca60600358125922de16b3d4845cbf8516cc76b75c6a14e7f49/promsoft_weight_calc_interface-0.1.4.tar.gz
+[2023-04-14 09:40:31] INFO root fetch - processPackages [griffon]: executing diffoscope
+[2023-04-14 09:40:31] INFO root fetch - processPackages [griffon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffon-0.1.8.tar.gz tmp/griffon-0.1.9.tar.gz --markdown 20230414/g/griffon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 09:40:31] INFO root fetch - processPackages [wtfutil]: Downloading https://files.pythonhosted.org/packages/12/bc/897c6ecb3e3b1ce776dc39c9957a139a5cc8b7aee44e6d94feb5f1470bf2/wtfutil-1.0.8.tar.gz
+[2023-04-14 09:40:31] INFO root fetch - processPackages [promsoft-weight-calc-interface]: executing diffoscope
+[2023-04-14 09:40:31] INFO root fetch - processPackages [promsoft-weight-calc-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promsoft_weight_calc_interface-0.1.3.tar.gz tmp/promsoft_weight_calc_interface-0.1.4.tar.gz --markdown 20230414/p/promsoft-weight-calc-interface/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-14 09:40:32] INFO root fetch - processPackages [wtfutil]: Downloading https://files.pythonhosted.org/packages/dd/35/e253fdefd8394eb5f3d912857750dca0fc2a5261f82926c2b1c3e107500e/wtfutil-1.0.9.tar.gz
+[2023-04-14 09:40:32] INFO root fetch - processPackages [wtfutil]: executing diffoscope
+[2023-04-14 09:40:32] INFO root fetch - processPackages [wtfutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtfutil-1.0.8.tar.gz tmp/wtfutil-1.0.9.tar.gz --markdown 20230414/w/wtfutil/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 09:40:32] INFO root fetch - processPackages [Slpapy]: Start processing: finbourne-identity-sdk
+[2023-04-14 09:40:32] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
+[2023-04-14 09:40:32] INFO root fetch - processPackages [griffon]: Start processing: odoo-addon-stock-orderpoint-purchase-link
+[2023-04-14 09:40:32] INFO root fetch - main [MainThread]: End processing [griffon]: success
+[2023-04-14 09:40:32] INFO root fetch - processPackages [finbourne-identity-sdk]: New version: [0.0.840] Old Version: [0.0.2379]
+[2023-04-14 09:40:32] INFO root fetch - processPackages [promsoft-weight-calc-interface]: Start processing: PY-packArch
+[2023-04-14 09:40:32] INFO root fetch - main [MainThread]: End processing [promsoft-weight-calc-interface]: success
+[2023-04-14 09:40:32] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.0.0.2]
+[2023-04-14 09:40:32] INFO root fetch - processPackages [PY-packArch]: New version: [1.9.3.post1] Old Version: [1.9.3]
+[2023-04-14 09:40:32] INFO root fetch - processPackages [finbourne-identity-sdk]: Downloading https://files.pythonhosted.org/packages/c0/a2/7ba615d87751c2a7c050e0d90f16fdc6ee7c0873e52c9ebc1b66ea2daf60/finbourne-identity-sdk-0.0.2379.tar.gz
+[2023-04-14 09:40:33] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: Downloading https://files.pythonhosted.org/packages/c5/87/6f7e8606e55867a2a237bddaae1f2e8fb5d4fe9e349bbe55cf1e3b8f5fa8/odoo_addon_stock_orderpoint_purchase_link-15.0.1.0.0.2-py3-none-any.whl
+[2023-04-14 09:40:33] INFO root fetch - processPackages [PY-packArch]: Downloading https://files.pythonhosted.org/packages/48/4d/13a6f6df30b337824410f31bb66c83fbebefd1e6cba4dcf8da51187e0849/PY-packArch-1.9.3.post1.tar.gz
+[2023-04-14 09:40:33] INFO root fetch - processPackages [wtfutil]: Start processing: CrossPy
+[2023-04-14 09:40:33] INFO root fetch - main [MainThread]: End processing [wtfutil]: success
+[2023-04-14 09:40:33] INFO root fetch - processPackages [CrossPy]: New version: [0.0.0a3.dev9] Old Version: [0.0.0a3.dev8]
+[2023-04-14 09:40:33] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: Downloading https://files.pythonhosted.org/packages/8f/a8/6e913ac160a80b7912b9a375e2c46c6bb0365e70bdb623478e18598deb96/odoo_addon_stock_orderpoint_purchase_link-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-14 09:40:33] INFO root fetch - processPackages [finbourne-identity-sdk]: executing diffoscope
+[2023-04-14 09:40:33] INFO root fetch - processPackages [finbourne-identity-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-identity-sdk-0.0.2379.tar.gz tmp/finbourne-identity-sdk-0.0.840.tar.gz --markdown 20230414/f/finbourne-identity-sdk/0.0.2379-0.0.840/diff.md --exclude *.pyd
+[2023-04-14 09:40:33] INFO root fetch - processPackages [PY-packArch]: executing diffoscope
+[2023-04-14 09:40:33] INFO root fetch - processPackages [PY-packArch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PY-packArch-1.9.3.tar.gz tmp/PY-packArch-1.9.3.post1.tar.gz --markdown 20230414/P/PY-packArch/1.9.3-1.9.3.post1/diff.md --exclude *.pyd
+[2023-04-14 09:40:33] INFO root fetch - processPackages [CrossPy]: executing diffoscope
+[2023-04-14 09:40:33] INFO root fetch - processPackages [CrossPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CrossPy-0.0.0a3.dev8.tar.gz tmp/CrossPy-0.0.0a3.dev9.tar.gz --markdown 20230414/C/CrossPy/0.0.0a3.dev8-0.0.0a3.dev9/diff.md --exclude *.pyd
+[2023-04-14 09:40:33] INFO root fetch - main [MainThread]: End processing [pyprocessors-afp_sports]: success
+[2023-04-14 09:40:33] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: executing diffoscope
+[2023-04-14 09:40:33] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_orderpoint_purchase_link-15.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_stock_orderpoint_purchase_link-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230414/o/odoo-addon-stock-orderpoint-purchase-link/15.0.1.0.0.2-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-04-14 09:40:34] INFO root fetch - main [MainThread]: End processing [PY-packArch]: success
+[2023-04-14 09:40:34] INFO root fetch - main [MainThread]: End processing [CrossPy]: success
+[2023-04-14 09:40:34] INFO root fetch - main [MainThread]: End processing [finbourne-identity-sdk]: success
+[2023-04-14 09:40:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-orderpoint-purchase-link]: success
+[2023-04-14 09:40:41] INFO root fetch - main [MainThread]: Store serial: [17704164]
