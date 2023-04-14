@@ -11640,3 +11640,74 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 12:21:27] INFO root fetch - main [MainThread]: End processing [nessai]: success
 [2023-04-14 12:21:34] INFO root fetch - main [MainThread]: End processing [cronuseosdk]: success
 [2023-04-14 12:21:34] INFO root fetch - main [MainThread]: Store serial: [17705788]
+[2023-04-14 12:26:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705788]
+[2023-04-14 12:26:41] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 12:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nucliadb-contributor-assets
+[2023-04-14 12:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: luminesce-sdk-preview
+[2023-04-14 12:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: peaqevcore
+[2023-04-14 12:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: funding-service-design-utils
+[2023-04-14 12:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mo-json
+[2023-04-14 12:26:41] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post712] Old Version: [1.0.0.post711]
+[2023-04-14 12:26:41] INFO root fetch - processPackages [mo-json]: New version: [6.370.23104] Old Version: [6.368.23092]
+[2023-04-14 12:26:41] INFO root fetch - processPackages [funding-service-design-utils]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 12:26:41] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-04-14 12:26:41] INFO root fetch - processPackages [luminesce-sdk-preview]: New version: [1.9.92] Old Version: [1.9.88]
+[2023-04-14 12:26:41] INFO root fetch - processPackages [luminesce-sdk-preview]: executing diffoscope
+[2023-04-14 12:26:41] INFO root fetch - processPackages [luminesce-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luminesce-sdk-preview-1.9.88.tar.gz tmp/luminesce-sdk-preview-1.9.92.tar.gz --markdown 20230414/l/luminesce-sdk-preview/1.9.88-1.9.92/diff.md --exclude *.pyd
+[2023-04-14 12:26:41] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-04-14 12:26:41] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230414/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-04-14 12:26:41] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/f3/d0/b04010d0971d45b2214023dae54f3eb6fe5baa926df32db5bdd726727f3f/nucliadb_contributor_assets-1.0.0.post712-py3-none-any.whl
+[2023-04-14 12:26:41] INFO root fetch - processPackages [funding-service-design-utils]: Downloading https://files.pythonhosted.org/packages/8d/02/09a047c9ca2dc37efc6279891cb3d971fad8bcf3de4b8abaee69d8b1921d/funding-service-design-utils-1.0.8.tar.gz
+[2023-04-14 12:26:41] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/14/e6/d790b2525b7912d26efc966976b5b3455687415a915d87ed8dea674f079b/mo_json-6.368.23092-py2.py3-none-any.whl
+[2023-04-14 12:26:41] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-04-14 12:26:41] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post711-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post712-py3-none-any.whl.zip --markdown 20230414/n/nucliadb-contributor-assets/1.0.0.post711-1.0.0.post712/diff.md --exclude *.pyd
+[2023-04-14 12:26:42] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/6f/fc/b49a2bb9d39e875c43a975b4db1be1a89da34c33d1e53edc21555b21a09c/mo_json-6.370.23104-py2.py3-none-any.whl
+[2023-04-14 12:26:42] INFO root fetch - processPackages [mo-json]: executing diffoscope
+[2023-04-14 12:26:42] INFO root fetch - processPackages [mo-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_json-6.368.23092-py2.py3-none-any.whl.zip tmp/mo_json-6.370.23104-py2.py3-none-any.whl.zip --markdown 20230414/m/mo-json/6.368.23092-6.370.23104/diff.md --exclude *.pyd
+[2023-04-14 12:26:42] INFO root fetch - processPackages [funding-service-design-utils]: Downloading https://files.pythonhosted.org/packages/ef/ea/8a13f2a825fef3b284233e915d6c77bffa81c9ada4885a952bfef3c4b711/funding-service-design-utils-1.0.9.tar.gz
+[2023-04-14 12:26:42] INFO root fetch - processPackages [funding-service-design-utils]: executing diffoscope
+[2023-04-14 12:26:42] INFO root fetch - processPackages [funding-service-design-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funding-service-design-utils-1.0.8.tar.gz tmp/funding-service-design-utils-1.0.9.tar.gz --markdown 20230414/f/funding-service-design-utils/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 12:26:43] INFO root fetch - processPackages [peaqevcore]: Start processing: istatcelldata
+[2023-04-14 12:26:43] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-04-14 12:26:43] INFO root fetch - processPackages [mo-json]: Start processing: SentenceMatcher
+[2023-04-14 12:26:43] INFO root fetch - main [MainThread]: End processing [mo-json]: success
+[2023-04-14 12:26:43] WARNING root fetch - processPackages [istatcelldata]: Skipping, unable to determine old version
+[2023-04-14 12:26:43] INFO root fetch - processPackages [istatcelldata]: Start processing: django-marina
+[2023-04-14 12:26:43] INFO root fetch - main [MainThread]: End processing [istatcelldata] error
+[2023-04-14 12:26:43] INFO root fetch - processPackages [SentenceMatcher]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 12:26:43] INFO root fetch - processPackages [django-marina]: New version: [23.1] Old Version: [22.1]
+[2023-04-14 12:26:43] INFO root fetch - processPackages [funding-service-design-utils]: Start processing: mo-files
+[2023-04-14 12:26:43] INFO root fetch - main [MainThread]: End processing [funding-service-design-utils]: success
+[2023-04-14 12:26:43] INFO root fetch - processPackages [mo-files]: New version: [6.370.23104] Old Version: [6.368.23092]
+[2023-04-14 12:26:43] INFO root fetch - processPackages [SentenceMatcher]: Downloading https://files.pythonhosted.org/packages/e5/55/27386fc920c6beec7cd8f052f392e198a1bfb4c53cbb1880b5b11465e356/SentenceMatcher-0.0.1.tar.gz
+[2023-04-14 12:26:43] INFO root fetch - processPackages [django-marina]: Downloading https://files.pythonhosted.org/packages/54/c7/824a1faa13d61efedcf779be947c65476ee525d55d3a06413b276d110e22/django-marina-22.1.tar.gz
+[2023-04-14 12:26:43] INFO root fetch - processPackages [luminesce-sdk-preview]: Start processing: dao-analyzer
+[2023-04-14 12:26:43] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
+[2023-04-14 12:26:43] INFO root fetch - processPackages [dao-analyzer]: New version: [1.2.6.dev7] Old Version: [1.2.6.dev6]
+[2023-04-14 12:26:43] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/e5/0c/687d3402b7684678357bedf880a38f0fca67242b13e0752c470bfbdb2104/mo_files-6.368.23092-py2.py3-none-any.whl
+[2023-04-14 12:26:43] INFO root fetch - processPackages [dao-analyzer]: Downloading https://files.pythonhosted.org/packages/d6/37/7943dba6648fa9c1346b8260a9153dc4904d2d22d5f681aa64757cf9115f/dao-analyzer-1.2.6.dev6.tar.gz
+[2023-04-14 12:26:43] INFO root fetch - processPackages [SentenceMatcher]: Downloading https://files.pythonhosted.org/packages/20/67/10feb7f434b28d41040640a554a4829ac5c3da3ce2ca03b453ed884d8c98/SentenceMatcher-0.0.2.tar.gz
+[2023-04-14 12:26:43] INFO root fetch - processPackages [django-marina]: Downloading https://files.pythonhosted.org/packages/4d/05/998148ed8b27ad7bde9a9ab7e54c2035d49ba0b19fe666080b7140c121ec/django-marina-23.1.tar.gz
+[2023-04-14 12:26:43] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/fc/90/30ad0c6b382d46c4d5850731aeef9e16713b403d18d7805789f9b03e0953/mo_files-6.370.23104-py2.py3-none-any.whl
+[2023-04-14 12:26:43] INFO root fetch - processPackages [SentenceMatcher]: executing diffoscope
+[2023-04-14 12:26:43] INFO root fetch - processPackages [SentenceMatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SentenceMatcher-0.0.1.tar.gz tmp/SentenceMatcher-0.0.2.tar.gz --markdown 20230414/S/SentenceMatcher/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 12:26:43] INFO root fetch - processPackages [django-marina]: executing diffoscope
+[2023-04-14 12:26:43] INFO root fetch - processPackages [django-marina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-marina-22.1.tar.gz tmp/django-marina-23.1.tar.gz --markdown 20230414/d/django-marina/22.1-23.1/diff.md --exclude *.pyd
+[2023-04-14 12:26:43] INFO root fetch - processPackages [mo-files]: executing diffoscope
+[2023-04-14 12:26:43] INFO root fetch - processPackages [mo-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_files-6.368.23092-py2.py3-none-any.whl.zip tmp/mo_files-6.370.23104-py2.py3-none-any.whl.zip --markdown 20230414/m/mo-files/6.368.23092-6.370.23104/diff.md --exclude *.pyd
+[2023-04-14 12:26:44] INFO root fetch - processPackages [dao-analyzer]: Downloading https://files.pythonhosted.org/packages/3e/51/0067871bd961bb3672eb20999d7bef0acc6c94ba9cf6688c036a04b24a35/dao-analyzer-1.2.6.dev7.tar.gz
+[2023-04-14 12:26:44] INFO root fetch - processPackages [dao-analyzer]: executing diffoscope
+[2023-04-14 12:26:44] INFO root fetch - processPackages [dao-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dao-analyzer-1.2.6.dev6.tar.gz tmp/dao-analyzer-1.2.6.dev7.tar.gz --markdown 20230414/d/dao-analyzer/1.2.6.dev6-1.2.6.dev7/diff.md --exclude *.pyd
+[2023-04-14 12:26:44] INFO root fetch - processPackages [SentenceMatcher]: Start processing: x-Metaformer
+[2023-04-14 12:26:44] INFO root fetch - main [MainThread]: End processing [SentenceMatcher]: success
+[2023-04-14 12:26:44] INFO root fetch - processPackages [x-Metaformer]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-04-14 12:26:44] INFO root fetch - main [MainThread]: End processing [mo-files]: success
+[2023-04-14 12:26:45] INFO root fetch - processPackages [x-Metaformer]: Downloading https://files.pythonhosted.org/packages/5f/2e/4855c3b9928d5f6d3963adad668240c7aa8b2aae078dcda92aaac8a6851a/x-Metaformer-0.2.9.tar.gz
+[2023-04-14 12:26:45] INFO root fetch - main [MainThread]: End processing [django-marina]: success
+[2023-04-14 12:26:45] INFO root fetch - processPackages [x-Metaformer]: Downloading https://files.pythonhosted.org/packages/ff/a3/d3e87ae0bf7ed1241ea6db80c6bcd6f4474c09107c7b4462861c7d2f6388/x-Metaformer-0.3.0.tar.gz
+[2023-04-14 12:26:45] INFO root fetch - processPackages [x-Metaformer]: executing diffoscope
+[2023-04-14 12:26:45] INFO root fetch - processPackages [x-Metaformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-Metaformer-0.2.9.tar.gz tmp/x-Metaformer-0.3.0.tar.gz --markdown 20230414/x/x-Metaformer/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 12:26:46] INFO root fetch - main [MainThread]: End processing [x-Metaformer]: success
+[2023-04-14 12:26:49] INFO root fetch - main [MainThread]: End processing [dao-analyzer]: success
+[2023-04-14 12:26:59] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-04-14 12:26:59] INFO root fetch - main [MainThread]: Store serial: [17705819]
