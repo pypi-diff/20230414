@@ -6584,3 +6584,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 05:16:03] INFO root fetch - main [MainThread]: End processing [carrier-api]: success
 [2023-04-14 05:16:05] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azuread]: success
 [2023-04-14 05:16:05] INFO root fetch - main [MainThread]: Store serial: [17702835]
+[2023-04-14 05:21:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702835]
+[2023-04-14 05:21:12] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 05:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: macros-hj3415
+[2023-04-14 05:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: luau
+[2023-04-14 05:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stress-injector
+[2023-04-14 05:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: great-expectations-experimental
+[2023-04-14 05:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fabrictestbed-mflib
+[2023-04-14 05:21:12] WARNING root fetch - processPackages [macros-hj3415]: Skipping, unable to determine old version
+[2023-04-14 05:21:12] INFO root fetch - processPackages [macros-hj3415]: Start processing: anywidget
+[2023-04-14 05:21:12] INFO root fetch - main [MainThread]: End processing [macros-hj3415] error
+[2023-04-14 05:21:12] INFO root fetch - processPackages [luau]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-04-14 05:21:12] INFO root fetch - processPackages [fabrictestbed-mflib]: New version: [0.1.0b1] Old Version: [0.1.0b0]
+[2023-04-14 05:21:12] INFO root fetch - processPackages [stress-injector]: New version: [0.4a0] Old Version: [0.4]
+[2023-04-14 05:21:12] INFO root fetch - processPackages [great-expectations-experimental]: New version: [0.1.20230414008] Old Version: [0.1.20230413036]
+[2023-04-14 05:21:12] INFO root fetch - processPackages [anywidget]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-14 05:21:12] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/43/f6/f51d8e3c5cb6f6f03c422f1091ce313d49069ca6a57370184c2ca6442827/luau-0.1.3.tar.gz
+[2023-04-14 05:21:12] INFO root fetch - processPackages [stress-injector]: Downloading https://files.pythonhosted.org/packages/1f/d5/82bc9817fac91db38e66ef69421f38df8082f1dda4fc1be8f2f89d4b3fee/stress_injector-0.4-py3-none-any.whl
+[2023-04-14 05:21:12] INFO root fetch - processPackages [fabrictestbed-mflib]: Downloading https://files.pythonhosted.org/packages/37/81/3d8e91549d3f3df79226e5923f69f3f4dd4956306605ee7d045dda18a0d4/fabrictestbed-mflib-0.1.0b1.tar.gz
+[2023-04-14 05:21:12] INFO root fetch - processPackages [great-expectations-experimental]: Downloading https://files.pythonhosted.org/packages/c8/b5/3355cff8de72887f7c148ba209b2994296bd90f67faa73f5df099b35dc2e/great_expectations_experimental-0.1.20230414008.tar.gz
+[2023-04-14 05:21:12] INFO root fetch - processPackages [anywidget]: Downloading https://files.pythonhosted.org/packages/80/9c/43905d0728b61c4a472fab32771256dea24f72baa98260bfa986f5cad4ce/anywidget-0.2.0.tar.gz
+[2023-04-14 05:21:12] INFO root fetch - processPackages [stress-injector]: executing diffoscope
+[2023-04-14 05:21:12] INFO root fetch - processPackages [stress-injector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stress_injector-0.4-py3-none-any.whl.zip tmp/stress_injector-0.4a0-py3-none-any.whl.zip --markdown 20230414/s/stress-injector/0.4-0.4a0/diff.md --exclude *.pyd
+[2023-04-14 05:21:12] INFO root fetch - processPackages [great-expectations-experimental]: executing diffoscope
+[2023-04-14 05:21:12] INFO root fetch - processPackages [great-expectations-experimental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/great_expectations_experimental-0.1.20230413036.tar.gz tmp/great_expectations_experimental-0.1.20230414008.tar.gz --markdown 20230414/g/great-expectations-experimental/0.1.20230413036-0.1.20230414008/diff.md --exclude *.pyd
+[2023-04-14 05:21:12] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/24/ea/3f46be7883f1bcf0c0a8b9623c28ecdd32bd6b96480c040e848e43e7e546/luau-0.2.0.tar.gz
+[2023-04-14 05:21:12] INFO root fetch - processPackages [fabrictestbed-mflib]: executing diffoscope
+[2023-04-14 05:21:12] INFO root fetch - processPackages [fabrictestbed-mflib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabrictestbed-mflib-0.1.0b0.tar.gz tmp/fabrictestbed-mflib-0.1.0b1.tar.gz --markdown 20230414/f/fabrictestbed-mflib/0.1.0b0-0.1.0b1/diff.md --exclude *.pyd
+[2023-04-14 05:21:13] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-14 05:21:13] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.1.3.tar.gz tmp/luau-0.2.0.tar.gz --markdown 20230414/l/luau/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 05:21:13] INFO root fetch - processPackages [anywidget]: Downloading https://files.pythonhosted.org/packages/0e/da/0bc5992c055f63d25f4f86d50a0228ca8d2f38fab861319bf37514a9bfb6/anywidget-0.2.1.tar.gz
+[2023-04-14 05:21:14] INFO root fetch - processPackages [stress-injector]: Start processing: ezQpy
+[2023-04-14 05:21:14] INFO root fetch - main [MainThread]: End processing [stress-injector]: success
+[2023-04-14 05:21:14] INFO root fetch - processPackages [ezQpy]: New version: [0.2.0.1] Old Version: [0.2.0.0]
+[2023-04-14 05:21:14] INFO root fetch - processPackages [anywidget]: executing diffoscope
+[2023-04-14 05:21:14] INFO root fetch - processPackages [anywidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anywidget-0.2.0.tar.gz tmp/anywidget-0.2.1.tar.gz --markdown 20230414/a/anywidget/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 05:21:14] INFO root fetch - processPackages [luau]: Start processing: ApiLogicServer
+[2023-04-14 05:21:14] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-14 05:21:14] INFO root fetch - processPackages [ApiLogicServer]: New version: [8.2.0] Old Version: [8.1.5]
+[2023-04-14 05:21:14] INFO root fetch - processPackages [ezQpy]: Downloading https://files.pythonhosted.org/packages/95/91/c26d2e26f23c26937e2155b9a8728e8bbd6128f66d80122e54a375b6df0f/ezQpy-0.2.0.0.tar.gz
+[2023-04-14 05:21:14] INFO root fetch - processPackages [ApiLogicServer]: Downloading https://files.pythonhosted.org/packages/59/0e/f824a7663f889e0a1016a89b34794342e0cd6042c53e38ea0ad4e59eeac3/ApiLogicServer-8.1.5.tar.gz
+[2023-04-14 05:21:14] INFO root fetch - main [MainThread]: End processing [great-expectations-experimental]: success
+[2023-04-14 05:21:14] INFO root fetch - main [MainThread]: End processing [fabrictestbed-mflib]: success
+[2023-04-14 05:21:14] INFO root fetch - processPackages [ezQpy]: Downloading https://files.pythonhosted.org/packages/13/c7/f6875a92e75a8efed9f154bb4a9192e372888f4a8d3498c90ddce0db6946/ezQpy-0.2.0.1-py3-none-any.whl
+[2023-04-14 05:21:14] INFO root fetch - processPackages [ezQpy]: executing diffoscope
+[2023-04-14 05:21:14] INFO root fetch - processPackages [ezQpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezQpy-0.2.0.0.tar.gz tmp/ezQpy-0.2.0.1-py3-none-any.whl.zip --markdown 20230414/e/ezQpy/0.2.0.0-0.2.0.1/diff.md --exclude *.pyd
+[2023-04-14 05:21:15] INFO root fetch - main [MainThread]: End processing [ezQpy]: success
+[2023-04-14 05:21:16] INFO root fetch - processPackages [ApiLogicServer]: Downloading https://files.pythonhosted.org/packages/2d/60/7426f8642c634dd61306e2bf7ec0efeadb791a2b142e4f535f93274a13cf/ApiLogicServer-8.2.0.tar.gz
+[2023-04-14 05:21:17] INFO root fetch - main [MainThread]: End processing [anywidget]: success
+[2023-04-14 05:21:17] INFO root fetch - processPackages [ApiLogicServer]: executing diffoscope
+[2023-04-14 05:21:17] INFO root fetch - processPackages [ApiLogicServer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ApiLogicServer-8.1.5.tar.gz tmp/ApiLogicServer-8.2.0.tar.gz --markdown 20230414/A/ApiLogicServer/8.1.5-8.2.0/diff.md --exclude *.pyd
+[2023-04-14 05:21:26] INFO root fetch - main [MainThread]: End processing [ApiLogicServer]: success
+[2023-04-14 05:21:26] INFO root fetch - main [MainThread]: Store serial: [17702858]
