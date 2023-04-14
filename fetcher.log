@@ -8828,3 +8828,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 09:40:34] INFO root fetch - main [MainThread]: End processing [finbourne-identity-sdk]: success
 [2023-04-14 09:40:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-orderpoint-purchase-link]: success
 [2023-04-14 09:40:41] INFO root fetch - main [MainThread]: Store serial: [17704164]
+[2023-04-14 09:45:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704164]
+[2023-04-14 09:45:49] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 09:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tap-zoom
+[2023-04-14 09:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: youhi
+[2023-04-14 09:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-stock-orderpoint-generator
+[2023-04-14 09:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: i2
+[2023-04-14 09:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keras-nightly
+[2023-04-14 09:45:49] INFO root fetch - processPackages [i2]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 09:45:49] INFO root fetch - processPackages [youhi]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-14 09:45:49] INFO root fetch - processPackages [tap-zoom]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-14 09:45:49] WARNING root fetch - processPackages [odoo-addon-stock-orderpoint-generator]: Skipping, unable to determine old version
+[2023-04-14 09:45:49] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-generator]: Start processing: katalytic-images
+[2023-04-14 09:45:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-orderpoint-generator] error
+[2023-04-14 09:45:49] INFO root fetch - processPackages [katalytic-images]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 09:45:49] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-04-14 09:45:49] INFO root fetch - processPackages [youhi]: Downloading https://files.pythonhosted.org/packages/84/05/9057660493c56a703a7c8772a1b02df24344368931d9a1c2d730cf6f3105/youhi-1.0.6.tar.gz
+[2023-04-14 09:45:49] INFO root fetch - processPackages [katalytic-images]: Downloading https://files.pythonhosted.org/packages/fd/60/7d60962e98044fe24ecd5645adb009e2d38c09875691b98b6ec7d604c315/katalytic-images-0.1.3.tar.gz
+[2023-04-14 09:45:49] INFO root fetch - processPackages [i2]: executing diffoscope
+[2023-04-14 09:45:49] INFO root fetch - processPackages [i2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i2-0.0.98.tar.gz tmp/i2-0.0.99.tar.gz --markdown 20230414/i/i2/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 09:45:49] INFO root fetch - processPackages [tap-zoom]: Downloading https://files.pythonhosted.org/packages/fd/d9/b98208f3235e52081b85d7f3872b7e88cbc2f50e3257f1c6308db03eed36/tap-zoom-1.1.2.tar.gz
+[2023-04-14 09:45:49] INFO root fetch - processPackages [katalytic-images]: executing diffoscope
+[2023-04-14 09:45:49] INFO root fetch - processPackages [katalytic-images]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-images-0.1.2.tar.gz tmp/katalytic-images-0.1.3.tar.gz --markdown 20230414/k/katalytic-images/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 09:45:49] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-04-14 09:45:49] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230414/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-04-14 09:45:49] INFO root fetch - processPackages [youhi]: Downloading https://files.pythonhosted.org/packages/df/ac/0374c9d0eaf98d811cfff75e0ac735f3cb2ab43379c9abe490cdb6b899bc/youhi-1.0.7.tar.gz
+[2023-04-14 09:45:50] INFO root fetch - processPackages [tap-zoom]: executing diffoscope
+[2023-04-14 09:45:50] INFO root fetch - processPackages [tap-zoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap-zoom-1.1.1.tar.gz tmp/tap-zoom-1.1.2.tar.gz --markdown 20230414/t/tap-zoom/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-14 09:45:50] INFO root fetch - processPackages [youhi]: executing diffoscope
+[2023-04-14 09:45:50] INFO root fetch - processPackages [youhi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youhi-1.0.6.tar.gz tmp/youhi-1.0.7.tar.gz --markdown 20230414/y/youhi/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-14 09:45:51] INFO root fetch - processPackages [katalytic-images]: Start processing: statscend
+[2023-04-14 09:45:51] INFO root fetch - main [MainThread]: End processing [katalytic-images]: success
+[2023-04-14 09:45:51] INFO root fetch - processPackages [statscend]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-14 09:45:51] INFO root fetch - processPackages [tap-zoom]: Start processing: langchain-visualizer
+[2023-04-14 09:45:51] INFO root fetch - main [MainThread]: End processing [tap-zoom]: success
+[2023-04-14 09:45:51] INFO root fetch - processPackages [i2]: Start processing: constellate
+[2023-04-14 09:45:51] INFO root fetch - main [MainThread]: End processing [i2]: success
+[2023-04-14 09:45:51] INFO root fetch - processPackages [langchain-visualizer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 09:45:51] INFO root fetch - processPackages [constellate]: New version: [0.6.91] Old Version: [0.6.90]
+[2023-04-14 09:45:51] INFO root fetch - processPackages [statscend]: Downloading https://files.pythonhosted.org/packages/b3/61/7b9f2f0ec1e6aed2bba94894ea96484142b9b16d007a1dd9ef070c72f0d9/statscend-0.1.5.tar.gz
+[2023-04-14 09:45:51] INFO root fetch - processPackages [langchain-visualizer]: Downloading https://files.pythonhosted.org/packages/46/10/50d74f58550ffe5eca61ea43df7e98b776b69381027b0311ee3754767bf4/langchain_visualizer-0.0.8.tar.gz
+[2023-04-14 09:45:51] INFO root fetch - processPackages [youhi]: Start processing: viser
+[2023-04-14 09:45:51] INFO root fetch - main [MainThread]: End processing [youhi]: success
+[2023-04-14 09:45:51] INFO root fetch - processPackages [statscend]: executing diffoscope
+[2023-04-14 09:45:51] INFO root fetch - processPackages [statscend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statscend-0.1.4.tar.gz tmp/statscend-0.1.5.tar.gz --markdown 20230414/s/statscend/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-14 09:45:51] ERROR root fetch - processPackages [viser]: Unable to get metadata: No such project 'viser'
+[2023-04-14 09:45:51] INFO root fetch - main [MainThread]: End processing [viser] error
+[2023-04-14 09:45:51] INFO root fetch - processPackages [constellate]: Downloading https://files.pythonhosted.org/packages/e4/9f/b72fdd25ea6442e8dd0837c4587b552b38fbd4a049edf86d4ff158bc3594/constellate-0.6.91-py2.py3-none-any.whl
+[2023-04-14 09:45:51] INFO root fetch - processPackages [langchain-visualizer]: Downloading https://files.pythonhosted.org/packages/cb/63/161612739a89467e0de9234ac5cae8c9eabeae5a5d9e53e7fc8469dde38e/langchain_visualizer-0.0.9.tar.gz
+[2023-04-14 09:45:51] INFO root fetch - processPackages [langchain-visualizer]: executing diffoscope
+[2023-04-14 09:45:51] INFO root fetch - processPackages [langchain-visualizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_visualizer-0.0.8.tar.gz tmp/langchain_visualizer-0.0.9.tar.gz --markdown 20230414/l/langchain-visualizer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 09:45:51] INFO root fetch - processPackages [constellate]: executing diffoscope
+[2023-04-14 09:45:51] INFO root fetch - processPackages [constellate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constellate-0.6.90-py2.py3-none-any.whl.zip tmp/constellate-0.6.91-py2.py3-none-any.whl.zip --markdown 20230414/c/constellate/0.6.90-0.6.91/diff.md --exclude *.pyd
+[2023-04-14 09:45:52] INFO root fetch - main [MainThread]: End processing [statscend]: success
+[2023-04-14 09:45:52] INFO root fetch - main [MainThread]: End processing [langchain-visualizer]: success
+[2023-04-14 09:45:54] INFO root fetch - main [MainThread]: End processing [constellate]: success
+[2023-04-14 09:45:58] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-04-14 09:45:58] INFO root fetch - main [MainThread]: Store serial: [17704196]
