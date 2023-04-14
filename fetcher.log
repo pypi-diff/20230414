@@ -21922,3 +21922,76 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 22:30:32] INFO root fetch - main [MainThread]: End processing [butterneck-projen]: success
 [2023-04-14 22:30:33] INFO root fetch - main [MainThread]: End processing [PyUPC-EAN]: success
 [2023-04-14 22:30:33] INFO root fetch - main [MainThread]: Store serial: [17712652]
+[2023-04-14 22:35:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712652]
+[2023-04-14 22:35:41] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 22:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: magyar
+[2023-04-14 22:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oglio
+[2023-04-14 22:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metpx-sr3
+[2023-04-14 22:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clusterfun
+[2023-04-14 22:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycodeless
+[2023-04-14 22:35:41] INFO root fetch - processPackages [metpx-sr3]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-14 22:35:41] INFO root fetch - processPackages [oglio]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-14 22:35:41] INFO root fetch - processPackages [magyar]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-04-14 22:35:41] INFO root fetch - processPackages [clusterfun]: New version: [0.1.1a7] Old Version: [0.1.1a6]
+[2023-04-14 22:35:41] INFO root fetch - processPackages [pycodeless]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 22:35:41] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/9b/da/a36bdac764ce17a96bf74ca7bd26ee53b05d80058e6e6e313e4512b24134/clusterfun-0.1.1a6.tar.gz
+[2023-04-14 22:35:41] INFO root fetch - processPackages [oglio]: Downloading https://files.pythonhosted.org/packages/42/f1/359b962141ea5e08271fb27f7c51dacd003fba9b09e3ec6307d22f8ed349/oglio-0.6.0.tar.gz
+[2023-04-14 22:35:41] INFO root fetch - processPackages [metpx-sr3]: Downloading https://files.pythonhosted.org/packages/89/06/0f745164c2089adef9236ac31fbe46f4158d18631576d682cf9658757694/metpx_sr3-3.0.8-py3-none-any.whl
+[2023-04-14 22:35:41] INFO root fetch - processPackages [pycodeless]: Downloading https://files.pythonhosted.org/packages/f0/32/639d943df7a183ff198e52dbfd389545b17a37fce581de473f0db20093ff/pycodeless-0.2.2.tar.gz
+[2023-04-14 22:35:42] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/63/6e/fd7e3716bb9e8d9ba3be6513723436c8c1390c11494dcf72ad5741725dbe/magyar-2.9.0.tar.gz
+[2023-04-14 22:35:42] INFO root fetch - processPackages [pycodeless]: executing diffoscope
+[2023-04-14 22:35:42] INFO root fetch - processPackages [pycodeless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycodeless-0.2.1.tar.gz tmp/pycodeless-0.2.2.tar.gz --markdown 20230414/p/pycodeless/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 22:35:42] INFO root fetch - processPackages [oglio]: Downloading https://files.pythonhosted.org/packages/9c/8a/5539e96dd0e49e5819c88de4cd7d6cb84859f0e2ae5b6c92e6ac579f5e73/oglio-0.7.0.tar.gz
+[2023-04-14 22:35:42] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2023-04-14 22:35:42] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-2.8.0.tar.gz tmp/magyar-2.9.0.tar.gz --markdown 20230414/m/magyar/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-04-14 22:35:42] INFO root fetch - processPackages [oglio]: executing diffoscope
+[2023-04-14 22:35:42] INFO root fetch - processPackages [oglio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oglio-0.6.0.tar.gz tmp/oglio-0.7.0.tar.gz --markdown 20230414/o/oglio/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-14 22:35:42] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/c4/28/5dae18d6fd4dd2bca9ab3545e4322bf10f0e0732aeb645656e2a9e8a849d/clusterfun-0.1.1a7.tar.gz
+[2023-04-14 22:35:42] INFO root fetch - processPackages [metpx-sr3]: Downloading https://files.pythonhosted.org/packages/a4/8a/64230448bcafc80a1f9a2c5805a6cf7fb4956c1fea5a9c7439c01449480c/metpx_sr3-3.0.9-py3-none-any.whl
+[2023-04-14 22:35:42] INFO root fetch - processPackages [clusterfun]: executing diffoscope
+[2023-04-14 22:35:42] INFO root fetch - processPackages [clusterfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clusterfun-0.1.1a6.tar.gz tmp/clusterfun-0.1.1a7.tar.gz --markdown 20230414/c/clusterfun/0.1.1a6-0.1.1a7/diff.md --exclude *.pyd
+[2023-04-14 22:35:43] INFO root fetch - processPackages [metpx-sr3]: executing diffoscope
+[2023-04-14 22:35:43] INFO root fetch - processPackages [metpx-sr3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metpx_sr3-3.0.8-py3-none-any.whl.zip tmp/metpx_sr3-3.0.9-py3-none-any.whl.zip --markdown 20230414/m/metpx-sr3/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-14 22:35:43] INFO root fetch - processPackages [pycodeless]: Start processing: viser
+[2023-04-14 22:35:43] INFO root fetch - main [MainThread]: End processing [pycodeless]: success
+[2023-04-14 22:35:43] INFO root fetch - processPackages [magyar]: Start processing: clusterfun
+[2023-04-14 22:35:43] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2023-04-14 22:35:43] INFO root fetch - processPackages [clusterfun]: New version: [0.1.1a7] Old Version: [0.1.1a6]
+[2023-04-14 22:35:43] INFO root fetch - processPackages [viser]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 22:35:43] INFO root fetch - processPackages [clusterfun]: executing diffoscope
+[2023-04-14 22:35:43] INFO root fetch - processPackages [clusterfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clusterfun-0.1.1a6.tar.gz tmp/clusterfun-0.1.1a7.tar.gz --markdown 20230414/c/clusterfun/0.1.1a6-0.1.1a7/diff.md --exclude *.pyd
+[2023-04-14 22:35:43] INFO root fetch - processPackages [oglio]: Start processing: abstra
+[2023-04-14 22:35:43] INFO root fetch - main [MainThread]: End processing [oglio]: success
+[2023-04-14 22:35:43] INFO root fetch - processPackages [abstra]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 22:35:43] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/44/97/7faa52abe80605f0f491129afeeb3a9b31c32f166520f121dff44d7dac3d/viser-0.0.2.tar.gz
+[2023-04-14 22:35:43] INFO root fetch - processPackages [abstra]: executing diffoscope
+[2023-04-14 22:35:43] INFO root fetch - processPackages [abstra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstra-0.8.0.tar.gz tmp/abstra-0.9.0.tar.gz --markdown 20230414/a/abstra/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 22:35:44] INFO root fetch - processPackages [viser]: executing diffoscope
+[2023-04-14 22:35:44] INFO root fetch - processPackages [viser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viser-0.0.1.tar.gz tmp/viser-0.0.2.tar.gz --markdown 20230414/v/viser/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 22:35:44] INFO root fetch - processPackages [clusterfun]: Start processing: searchlix
+[2023-04-14 22:35:44] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
+[2023-04-14 22:35:44] INFO root fetch - processPackages [searchlix]: New version: [1.0.3] Old Version: [1.0.1]
+[2023-04-14 22:35:44] INFO root fetch - processPackages [searchlix]: Downloading https://files.pythonhosted.org/packages/d3/8e/d1ffe522e84afed1c12cd583898fa7140d0e2260f9a8b34d3cee5303d4c3/searchlix-1.0.1.tar.gz
+[2023-04-14 22:35:44] INFO root fetch - processPackages [searchlix]: Downloading https://files.pythonhosted.org/packages/40/87/592876c41738a14ca758f92edb11ab1c3615c9bd2255880cd1a03d35e484/searchlix-1.0.3.tar.gz
+[2023-04-14 22:35:45] INFO root fetch - processPackages [abstra]: Start processing: MGSurvE
+[2023-04-14 22:35:45] INFO root fetch - main [MainThread]: End processing [abstra]: success
+[2023-04-14 22:35:45] INFO root fetch - processPackages [MGSurvE]: New version: [0.8.0.1] Old Version: [0.7.5.5]
+[2023-04-14 22:35:45] INFO root fetch - processPackages [searchlix]: executing diffoscope
+[2023-04-14 22:35:45] INFO root fetch - processPackages [searchlix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlix-1.0.1.tar.gz tmp/searchlix-1.0.3.tar.gz --markdown 20230414/s/searchlix/1.0.1-1.0.3/diff.md --exclude *.pyd
+[2023-04-14 22:35:45] INFO root fetch - processPackages [clusterfun]: Start processing: bashparser
+[2023-04-14 22:35:45] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
+[2023-04-14 22:35:45] INFO root fetch - processPackages [MGSurvE]: Downloading https://files.pythonhosted.org/packages/88/7e/35361ebd809e06d385de954acc56637a4040201f235b12aace8ec112d23d/MGSurvE-0.7.5.5.tar.gz
+[2023-04-14 22:35:45] INFO root fetch - processPackages [bashparser]: New version: [0.8] Old Version: [0.7]
+[2023-04-14 22:35:45] INFO root fetch - processPackages [bashparser]: Downloading https://files.pythonhosted.org/packages/69/c0/84869001121b51b8041184ab564423664064b7932137069233946b9829e9/bashparser-0.7.tar.gz
+[2023-04-14 22:35:45] INFO root fetch - processPackages [MGSurvE]: Downloading https://files.pythonhosted.org/packages/4b/1b/0bdf68a6a8f14ffa37729ceacc2f58db972e254cbad373c5bb87e7a8fce0/MGSurvE-0.8.0.1.tar.gz
+[2023-04-14 22:35:45] INFO root fetch - processPackages [MGSurvE]: executing diffoscope
+[2023-04-14 22:35:45] INFO root fetch - processPackages [MGSurvE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MGSurvE-0.7.5.5.tar.gz tmp/MGSurvE-0.8.0.1.tar.gz --markdown 20230414/M/MGSurvE/0.7.5.5-0.8.0.1/diff.md --exclude *.pyd
+[2023-04-14 22:35:45] INFO root fetch - main [MainThread]: End processing [metpx-sr3]: success
+[2023-04-14 22:35:45] INFO root fetch - processPackages [bashparser]: Downloading https://files.pythonhosted.org/packages/f7/1f/7ae253c0428771d6f10fed548e92008b0b401f5a2a1f81374faff51f7c95/bashparser-0.8.tar.gz
+[2023-04-14 22:35:45] INFO root fetch - processPackages [bashparser]: executing diffoscope
+[2023-04-14 22:35:45] INFO root fetch - processPackages [bashparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bashparser-0.7.tar.gz tmp/bashparser-0.8.tar.gz --markdown 20230414/b/bashparser/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-14 22:35:46] INFO root fetch - main [MainThread]: End processing [viser]: success
+[2023-04-14 22:35:46] INFO root fetch - main [MainThread]: End processing [searchlix]: success
+[2023-04-14 22:35:46] INFO root fetch - main [MainThread]: End processing [MGSurvE]: success
+[2023-04-14 22:35:47] INFO root fetch - main [MainThread]: End processing [bashparser]: success
+[2023-04-14 22:35:47] INFO root fetch - main [MainThread]: Store serial: [17712696]
