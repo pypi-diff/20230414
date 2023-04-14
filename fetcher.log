@@ -16076,3 +16076,138 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 16:56:52] INFO root fetch - main [MainThread]: End processing [steamship-langchain]: success
 [2023-04-14 16:56:54] INFO root fetch - main [MainThread]: End processing [metdig]: success
 [2023-04-14 16:56:54] INFO root fetch - main [MainThread]: Store serial: [17708723]
+[2023-04-14 17:01:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17708723]
+[2023-04-14 17:02:02] INFO root fetch - main [MainThread]: Found 24 changed packages
+[2023-04-14 17:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-forbid
+[2023-04-14 17:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: parsenv
+[2023-04-14 17:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-pipelines
+[2023-04-14 17:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: djangoldp-needle
+[2023-04-14 17:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-insights4ci-client
+[2023-04-14 17:02:02] INFO root fetch - processPackages [parsenv]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 17:02:02] INFO root fetch - processPackages [django-forbid]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 17:02:02] WARNING root fetch - processPackages [django-pipelines]: Skipping, unable to determine old version
+[2023-04-14 17:02:02] INFO root fetch - processPackages [django-pipelines]: Start processing: practicalSPARQL
+[2023-04-14 17:02:02] INFO root fetch - main [MainThread]: End processing [django-pipelines] error
+[2023-04-14 17:02:02] WARNING root fetch - processPackages [python-insights4ci-client]: Skipping, unable to determine old version
+[2023-04-14 17:02:02] INFO root fetch - processPackages [python-insights4ci-client]: Start processing: brownian-stock
+[2023-04-14 17:02:02] INFO root fetch - main [MainThread]: End processing [python-insights4ci-client] error
+[2023-04-14 17:02:02] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 17:02:02] INFO root fetch - processPackages [practicalSPARQL]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 17:02:02] INFO root fetch - processPackages [brownian-stock]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 17:02:02] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-14 17:02:02] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230414/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 17:02:02] INFO root fetch - processPackages [parsenv]: Downloading https://files.pythonhosted.org/packages/9f/05/28a03171c06778042055ccfa9ed4d075e27602fb420d94cba8c46cc5daa5/parsenv-0.1.3.tar.gz
+[2023-04-14 17:02:02] INFO root fetch - processPackages [practicalSPARQL]: Downloading https://files.pythonhosted.org/packages/d2/63/c1f120eb0bf50d5145890e92ec1a161de7d632ad6f51113c18e45573a42d/practicalSPARQL-0.0.5.tar.gz
+[2023-04-14 17:02:02] INFO root fetch - processPackages [django-forbid]: Downloading https://files.pythonhosted.org/packages/0b/0c/6b38cd886c051e56c66bc7d69422b026a5a6ff54707f58d08bacc9015f07/django-forbid-0.0.5.tar.gz
+[2023-04-14 17:02:02] INFO root fetch - processPackages [parsenv]: executing diffoscope
+[2023-04-14 17:02:02] INFO root fetch - processPackages [parsenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsenv-0.1.2.tar.gz tmp/parsenv-0.1.3.tar.gz --markdown 20230414/p/parsenv/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 17:02:02] INFO root fetch - processPackages [django-forbid]: executing diffoscope
+[2023-04-14 17:02:02] INFO root fetch - processPackages [django-forbid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-forbid-0.0.4.tar.gz tmp/django-forbid-0.0.5.tar.gz --markdown 20230414/d/django-forbid/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 17:02:02] INFO root fetch - processPackages [brownian-stock]: executing diffoscope
+[2023-04-14 17:02:02] INFO root fetch - processPackages [brownian-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brownian-stock-0.0.8.tar.gz tmp/brownian-stock-0.0.9.tar.gz --markdown 20230414/b/brownian-stock/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 17:02:03] INFO root fetch - processPackages [practicalSPARQL]: Downloading https://files.pythonhosted.org/packages/81/47/4083dc5c7fd125e96a1ad62f37471cd87913f4ef533d8f30666ea06b27e5/practicalSPARQL-0.0.6.tar.gz
+[2023-04-14 17:02:03] INFO root fetch - processPackages [practicalSPARQL]: executing diffoscope
+[2023-04-14 17:02:03] INFO root fetch - processPackages [practicalSPARQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/practicalSPARQL-0.0.5.tar.gz tmp/practicalSPARQL-0.0.6.tar.gz --markdown 20230414/p/practicalSPARQL/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 17:02:03] INFO root fetch - processPackages [djangoldp-needle]: Start processing: rgwadmin
+[2023-04-14 17:02:03] INFO root fetch - main [MainThread]: End processing [djangoldp-needle]: success
+[2023-04-14 17:02:03] INFO root fetch - processPackages [rgwadmin]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-04-14 17:02:04] INFO root fetch - processPackages [parsenv]: Start processing: dittoffi
+[2023-04-14 17:02:04] INFO root fetch - main [MainThread]: End processing [parsenv]: success
+[2023-04-14 17:02:04] WARNING root fetch - processPackages [dittoffi]: Skipping, unable to determine old version
+[2023-04-14 17:02:04] INFO root fetch - processPackages [dittoffi]: Start processing: kaiju-tools
+[2023-04-14 17:02:04] INFO root fetch - main [MainThread]: End processing [dittoffi] error
+[2023-04-14 17:02:04] INFO root fetch - processPackages [kaiju-tools]: New version: [2.0.40] Old Version: [2.0.39]
+[2023-04-14 17:02:04] INFO root fetch - processPackages [django-forbid]: Start processing: tdw
+[2023-04-14 17:02:04] INFO root fetch - main [MainThread]: End processing [django-forbid]: success
+[2023-04-14 17:02:04] INFO root fetch - processPackages [tdw]: New version: [1.9.9.3] Old Version: [1.9.9.2]
+[2023-04-14 17:02:04] INFO root fetch - processPackages [rgwadmin]: Downloading https://files.pythonhosted.org/packages/b2/86/2a08355d878640c5229d31515dfadc4695ee476a963ee0ba9119262c1957/rgwadmin-2.4.0.tar.gz
+[2023-04-14 17:02:04] INFO root fetch - processPackages [tdw]: Downloading https://files.pythonhosted.org/packages/c4/72/7e9dcffb20652a0fc7a75acb9c45c9c15e02911caff77569e88bda949a27/tdw-1.9.9.2.tar.gz
+[2023-04-14 17:02:04] INFO root fetch - processPackages [kaiju-tools]: Downloading https://files.pythonhosted.org/packages/2e/94/8ed3aa66d755516ffbb34be2c83b98ba5731114ac0e06997f130d1331ad1/kaiju_tools-2.0.40-py3-none-any.whl
+[2023-04-14 17:02:04] WARNING root fetch - processPackages [tdw]: Skipping package: exceeds size limit 28395540>=10485760
+[2023-04-14 17:02:04] INFO root fetch - processPackages [tdw]: Start processing: dittolive
+[2023-04-14 17:02:04] INFO root fetch - main [MainThread]: End processing [tdw] error
+[2023-04-14 17:02:04] INFO root fetch - processPackages [brownian-stock]: Start processing: pandantic
+[2023-04-14 17:02:04] INFO root fetch - main [MainThread]: End processing [brownian-stock]: success
+[2023-04-14 17:02:04] WARNING root fetch - processPackages [dittolive]: Skipping, unable to determine old version
+[2023-04-14 17:02:04] INFO root fetch - processPackages [dittolive]: Start processing: HCP-Packer
+[2023-04-14 17:02:04] INFO root fetch - main [MainThread]: End processing [dittolive] error
+[2023-04-14 17:02:04] INFO root fetch - processPackages [HCP-Packer]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-14 17:02:04] WARNING root fetch - processPackages [pandantic]: Skipping, unable to determine old version
+[2023-04-14 17:02:04] INFO root fetch - processPackages [pandantic]: Start processing: lib4sbom
+[2023-04-14 17:02:04] INFO root fetch - main [MainThread]: End processing [pandantic] error
+[2023-04-14 17:02:04] INFO root fetch - processPackages [lib4sbom]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-14 17:02:04] INFO root fetch - processPackages [kaiju-tools]: executing diffoscope
+[2023-04-14 17:02:04] INFO root fetch - processPackages [kaiju-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaiju_tools-2.0.39-py3-none-any.whl.zip tmp/kaiju_tools-2.0.40-py3-none-any.whl.zip --markdown 20230414/k/kaiju-tools/2.0.39-2.0.40/diff.md --exclude *.pyd
+[2023-04-14 17:02:04] INFO root fetch - processPackages [rgwadmin]: Downloading https://files.pythonhosted.org/packages/c3/1b/e51ce335c89a0432947437b5e3cc0cec610f26712e6316c4a32494f76167/rgwadmin-2.4.1.tar.gz
+[2023-04-14 17:02:04] INFO root fetch - processPackages [HCP-Packer]: Downloading https://files.pythonhosted.org/packages/2b/1b/d8d0940cf9df6c9b8729da157a6907ce999187f83f8550dd15e24fa39db4/HCP-Packer-0.0.7.tar.gz
+[2023-04-14 17:02:04] INFO root fetch - processPackages [lib4sbom]: Downloading https://files.pythonhosted.org/packages/a2/78/1069856248895bd831f375b2082871e0ad369155e9760a14837352c070cd/lib4sbom-0.3.0-py2.py3-none-any.whl
+[2023-04-14 17:02:04] INFO root fetch - processPackages [rgwadmin]: executing diffoscope
+[2023-04-14 17:02:04] INFO root fetch - processPackages [rgwadmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rgwadmin-2.4.0.tar.gz tmp/rgwadmin-2.4.1.tar.gz --markdown 20230414/r/rgwadmin/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-04-14 17:02:04] INFO root fetch - processPackages [practicalSPARQL]: Start processing: robit
+[2023-04-14 17:02:04] INFO root fetch - main [MainThread]: End processing [practicalSPARQL]: success
+[2023-04-14 17:02:04] INFO root fetch - processPackages [robit]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-04-14 17:02:04] INFO root fetch - processPackages [lib4sbom]: Downloading https://files.pythonhosted.org/packages/59/a6/5e594b9d2554b0bd1449276c71ae542d5714d78d7e1c5be1c315e71c3026/lib4sbom-0.3.1-py2.py3-none-any.whl
+[2023-04-14 17:02:04] INFO root fetch - processPackages [lib4sbom]: executing diffoscope
+[2023-04-14 17:02:04] INFO root fetch - processPackages [lib4sbom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib4sbom-0.3.0-py2.py3-none-any.whl.zip tmp/lib4sbom-0.3.1-py2.py3-none-any.whl.zip --markdown 20230414/l/lib4sbom/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-14 17:02:04] INFO root fetch - processPackages [robit]: Downloading https://files.pythonhosted.org/packages/f0/95/06aba63f3d61e9c3c3a203376c89253f570c19caae9dba342f9844d90504/robit-0.2.3.tar.gz
+[2023-04-14 17:02:04] INFO root fetch - processPackages [HCP-Packer]: Downloading https://files.pythonhosted.org/packages/a3/ae/d240e4d46538674a5841a5bc360ffde032018b9a9e5ed3a3ee7a932ecf8d/HCP-Packer-0.0.8.tar.gz
+[2023-04-14 17:02:05] INFO root fetch - processPackages [HCP-Packer]: executing diffoscope
+[2023-04-14 17:02:05] INFO root fetch - processPackages [HCP-Packer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HCP-Packer-0.0.7.tar.gz tmp/HCP-Packer-0.0.8.tar.gz --markdown 20230414/H/HCP-Packer/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 17:02:05] INFO root fetch - processPackages [robit]: Downloading https://files.pythonhosted.org/packages/77/cb/e1b7c20e22375a843766249c75af92de0c8340e1c4c0f671e31a257a4f2a/robit-0.3.0.tar.gz
+[2023-04-14 17:02:05] INFO root fetch - processPackages [robit]: executing diffoscope
+[2023-04-14 17:02:05] INFO root fetch - processPackages [robit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robit-0.2.3.tar.gz tmp/robit-0.3.0.tar.gz --markdown 20230414/r/robit/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 17:02:05] INFO root fetch - processPackages [rgwadmin]: Start processing: aiotnse
+[2023-04-14 17:02:05] INFO root fetch - main [MainThread]: End processing [rgwadmin]: success
+[2023-04-14 17:02:05] INFO root fetch - processPackages [aiotnse]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-14 17:02:05] INFO root fetch - processPackages [aiotnse]: Downloading https://files.pythonhosted.org/packages/78/62/cc3be0097e2dc474258ec9a504de9a11f38cb350ef219cfa2989f034788e/aiotnse-1.1.0.tar.gz
+[2023-04-14 17:02:06] INFO root fetch - processPackages [aiotnse]: Downloading https://files.pythonhosted.org/packages/b5/88/cfabe10199669795d1d9d9a571461eebc52be583274371a8b72a1ea44aae/aiotnse-1.1.1.tar.gz
+[2023-04-14 17:02:06] INFO root fetch - processPackages [kaiju-tools]: Start processing: globus-compute-sdk
+[2023-04-14 17:02:06] INFO root fetch - main [MainThread]: End processing [kaiju-tools]: success
+[2023-04-14 17:02:06] INFO root fetch - processPackages [globus-compute-sdk]: New version: [2.0.1a0] Old Version: [2.0.0a1]
+[2023-04-14 17:02:06] INFO root fetch - processPackages [aiotnse]: executing diffoscope
+[2023-04-14 17:02:06] INFO root fetch - processPackages [aiotnse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotnse-1.1.0.tar.gz tmp/aiotnse-1.1.1.tar.gz --markdown 20230414/a/aiotnse/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-14 17:02:06] INFO root fetch - processPackages [HCP-Packer]: Start processing: globus-compute-endpoint
+[2023-04-14 17:02:06] INFO root fetch - main [MainThread]: End processing [HCP-Packer]: success
+[2023-04-14 17:02:06] INFO root fetch - processPackages [lib4sbom]: Start processing: distro2sbom
+[2023-04-14 17:02:06] INFO root fetch - main [MainThread]: End processing [lib4sbom]: success
+[2023-04-14 17:02:06] INFO root fetch - processPackages [globus-compute-endpoint]: New version: [2.0.1a0] Old Version: [2.0.0a1]
+[2023-04-14 17:02:06] INFO root fetch - processPackages [distro2sbom]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-14 17:02:06] INFO root fetch - processPackages [distro2sbom]: Downloading https://files.pythonhosted.org/packages/2f/d4/5589382e494d0314f8d2cb66deb5aa4eed676960a5c37220a49d3f0d0c83/distro2sbom-0.2.1-py2.py3-none-any.whl
+[2023-04-14 17:02:06] INFO root fetch - processPackages [globus-compute-sdk]: Downloading https://files.pythonhosted.org/packages/74/fc/9e86b3d45a5e47618a48deb5aad15aa4e0da611ddf3128ee679c0c1b6c05/globus-compute-sdk-2.0.1a0.tar.gz
+[2023-04-14 17:02:06] INFO root fetch - processPackages [globus-compute-endpoint]: Downloading https://files.pythonhosted.org/packages/68/32/5e2311a92ef992aec536cb2776e00b7a855b5bb655c60beb8af2d850ab0c/globus-compute-endpoint-2.0.1a0.tar.gz
+[2023-04-14 17:02:06] INFO root fetch - processPackages [distro2sbom]: Downloading https://files.pythonhosted.org/packages/26/99/5ff5b6d9a064f2260cdc85d8353014e83c77109fdcc7967dd8f461d8a768/distro2sbom-0.3.0-py2.py3-none-any.whl
+[2023-04-14 17:02:06] INFO root fetch - processPackages [globus-compute-sdk]: executing diffoscope
+[2023-04-14 17:02:06] INFO root fetch - processPackages [globus-compute-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/globus-compute-sdk-2.0.0a1.tar.gz tmp/globus-compute-sdk-2.0.1a0.tar.gz --markdown 20230414/g/globus-compute-sdk/2.0.0a1-2.0.1a0/diff.md --exclude *.pyd
+[2023-04-14 17:02:06] INFO root fetch - processPackages [globus-compute-endpoint]: executing diffoscope
+[2023-04-14 17:02:06] INFO root fetch - processPackages [globus-compute-endpoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/globus-compute-endpoint-2.0.0a1.tar.gz tmp/globus-compute-endpoint-2.0.1a0.tar.gz --markdown 20230414/g/globus-compute-endpoint/2.0.0a1-2.0.1a0/diff.md --exclude *.pyd
+[2023-04-14 17:02:06] INFO root fetch - processPackages [distro2sbom]: executing diffoscope
+[2023-04-14 17:02:06] INFO root fetch - processPackages [distro2sbom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/distro2sbom-0.2.1-py2.py3-none-any.whl.zip tmp/distro2sbom-0.3.0-py2.py3-none-any.whl.zip --markdown 20230414/d/distro2sbom/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 17:02:07] INFO root fetch - processPackages [aiotnse]: Start processing: unigui
+[2023-04-14 17:02:07] INFO root fetch - main [MainThread]: End processing [aiotnse]: success
+[2023-04-14 17:02:07] INFO root fetch - processPackages [unigui]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-04-14 17:02:07] INFO root fetch - processPackages [robit]: Start processing: sbom4files
+[2023-04-14 17:02:07] INFO root fetch - main [MainThread]: End processing [robit]: success
+[2023-04-14 17:02:07] INFO root fetch - processPackages [sbom4files]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 17:02:07] INFO root fetch - processPackages [unigui]: Downloading https://files.pythonhosted.org/packages/54/62/09f0b608e9e1baf9a12d0774627319212b4a39af6dc1d15bf72e50da6664/unigui-1.3.5.tar.gz
+[2023-04-14 17:02:07] INFO root fetch - processPackages [sbom4files]: Downloading https://files.pythonhosted.org/packages/e4/99/d12a7a5a6f06ce8f68d988bf83fa3e466e24bc4fe3e58273261ce33b6811/sbom4files-0.2.1-py2.py3-none-any.whl
+[2023-04-14 17:02:07] INFO root fetch - processPackages [unigui]: Downloading https://files.pythonhosted.org/packages/b4/29/f05b4381bcd3622bc8c700de339e43085ad968d4dc812a9fd4d304a7527a/unigui-1.3.6.tar.gz
+[2023-04-14 17:02:07] INFO root fetch - processPackages [globus-compute-sdk]: Start processing: discord-ext-pager
+[2023-04-14 17:02:07] INFO root fetch - main [MainThread]: End processing [globus-compute-sdk]: success
+[2023-04-14 17:02:07] WARNING root fetch - processPackages [discord-ext-pager]: Skipping, unable to determine old version
+[2023-04-14 17:02:07] INFO root fetch - processPackages [discord-ext-pager]: Start processing: tensorflow-text-nightly
+[2023-04-14 17:02:07] INFO root fetch - main [MainThread]: End processing [discord-ext-pager] error
+[2023-04-14 17:02:07] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.13.0.dev20230413] Old Version: [2.13.0.dev20230412]
+[2023-04-14 17:02:07] INFO root fetch - main [MainThread]: End processing [distro2sbom]: success
+[2023-04-14 17:02:07] INFO root fetch - processPackages [sbom4files]: Downloading https://files.pythonhosted.org/packages/44/0f/b5caa3b727fe5e79408ebcf25b4d3334c4ff0d7ffe874dfb24cd72786d18/sbom4files-0.2.2-py2.py3-none-any.whl
+[2023-04-14 17:02:08] INFO root fetch - processPackages [sbom4files]: executing diffoscope
+[2023-04-14 17:02:08] INFO root fetch - processPackages [sbom4files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbom4files-0.2.1-py2.py3-none-any.whl.zip tmp/sbom4files-0.2.2-py2.py3-none-any.whl.zip --markdown 20230414/s/sbom4files/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 17:02:08] INFO root fetch - processPackages [unigui]: executing diffoscope
+[2023-04-14 17:02:08] INFO root fetch - processPackages [unigui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unigui-1.3.5.tar.gz tmp/unigui-1.3.6.tar.gz --markdown 20230414/u/unigui/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-04-14 17:02:08] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/d9/39/1b3a9797bc3df33b76e456316aedeacf578c50decdbad11686782bc373be/tensorflow_text_nightly-2.13.0.dev20230413-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-14 17:02:08] INFO root fetch - main [MainThread]: End processing [globus-compute-endpoint]: success
+[2023-04-14 17:02:09] INFO root fetch - main [MainThread]: End processing [sbom4files]: success
+[2023-04-14 17:02:09] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-04-14 17:02:09] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.13.0.dev20230412-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.13.0.dev20230413-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230414/t/tensorflow-text-nightly/2.13.0.dev20230412-2.13.0.dev20230413/diff.md --exclude *.pyd
+[2023-04-14 17:02:10] INFO root fetch - main [MainThread]: End processing [unigui]: success
+[2023-04-14 17:02:11] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
+[2023-04-14 17:02:11] INFO root fetch - main [MainThread]: Store serial: [17708800]
