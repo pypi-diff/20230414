@@ -20969,3 +20969,133 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 21:24:59] INFO root fetch - main [MainThread]: End processing [awscli]: success
 [2023-04-14 21:25:09] INFO root fetch - main [MainThread]: End processing [botocore]: success
 [2023-04-14 21:25:09] INFO root fetch - main [MainThread]: Store serial: [17712115]
+[2023-04-14 21:30:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712115]
+[2023-04-14 21:30:17] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-14 21:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cribbage-scorer
+[2023-04-14 21:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mitoinstaller
+[2023-04-14 21:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openmdao
+[2023-04-14 21:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipsocgen
+[2023-04-14 21:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: startstop
+[2023-04-14 21:30:17] INFO root fetch - processPackages [cribbage-scorer]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-14 21:30:17] INFO root fetch - processPackages [startstop]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-14 21:30:17] INFO root fetch - processPackages [openmdao]: New version: [3.9.2] Old Version: [3.9.1]
+[2023-04-14 21:30:17] INFO root fetch - processPackages [mitoinstaller]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 21:30:17] INFO root fetch - processPackages [ipsocgen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 21:30:18] INFO root fetch - processPackages [cribbage-scorer]: Downloading https://files.pythonhosted.org/packages/47/c1/f8ff39babd9a35d360f4c1e22e7669c0d463f94083244943fec577f2b7b6/cribbage_scorer-0.2.2.tar.gz
+[2023-04-14 21:30:18] INFO root fetch - processPackages [openmdao]: Downloading https://files.pythonhosted.org/packages/b1/ff/889f897168af593cad2d48ab997b6591a1a14680c4e7d875a5f9bd3bf5de/openmdao-3.9.1.tar.gz
+[2023-04-14 21:30:18] INFO root fetch - processPackages [startstop]: Downloading https://files.pythonhosted.org/packages/a2/1a/3745cf5afcb8a76b56aaa0733f7bf30d33c0183d6a8a40496ec99d7f1338/startstop-1.0.6.tar.gz
+[2023-04-14 21:30:18] INFO root fetch - processPackages [mitoinstaller]: executing diffoscope
+[2023-04-14 21:30:18] INFO root fetch - processPackages [mitoinstaller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitoinstaller-0.0.98.tar.gz tmp/mitoinstaller-0.0.99.tar.gz --markdown 20230414/m/mitoinstaller/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 21:30:18] INFO root fetch - processPackages [startstop]: executing diffoscope
+[2023-04-14 21:30:18] INFO root fetch - processPackages [startstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/startstop-1.0.5.tar.gz tmp/startstop-1.0.6.tar.gz --markdown 20230414/s/startstop/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-14 21:30:18] INFO root fetch - processPackages [ipsocgen]: executing diffoscope
+[2023-04-14 21:30:18] INFO root fetch - processPackages [ipsocgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipsocgen-0.1.8.tar.gz tmp/ipsocgen-0.1.9.tar.gz --markdown 20230414/i/ipsocgen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 21:30:18] INFO root fetch - processPackages [cribbage-scorer]: Downloading https://files.pythonhosted.org/packages/c7/82/f95d21c910129c82230a4bbb1b383a4ce3a51e002dc880638dc42117eed7/cribbage_scorer-0.2.3.tar.gz
+[2023-04-14 21:30:18] INFO root fetch - processPackages [cribbage-scorer]: executing diffoscope
+[2023-04-14 21:30:18] INFO root fetch - processPackages [cribbage-scorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cribbage_scorer-0.2.2.tar.gz tmp/cribbage_scorer-0.2.3.tar.gz --markdown 20230414/c/cribbage-scorer/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-14 21:30:19] INFO root fetch - processPackages [startstop]: Start processing: datarobotx
+[2023-04-14 21:30:19] INFO root fetch - main [MainThread]: End processing [startstop]: success
+[2023-04-14 21:30:19] INFO root fetch - processPackages [datarobotx]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-14 21:30:19] INFO root fetch - processPackages [mitoinstaller]: Start processing: tastytrade-api
+[2023-04-14 21:30:19] INFO root fetch - main [MainThread]: End processing [mitoinstaller]: success
+[2023-04-14 21:30:19] INFO root fetch - processPackages [tastytrade-api]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 21:30:19] INFO root fetch - processPackages [datarobotx]: Downloading https://files.pythonhosted.org/packages/1b/e3/9fe2d714746742c5c337c64ad687024ae6fbaf532591f9c915599023a3bb/datarobotx-0.1.3-py3-none-any.whl
+[2023-04-14 21:30:19] INFO root fetch - processPackages [ipsocgen]: Start processing: FlashGBX
+[2023-04-14 21:30:19] INFO root fetch - main [MainThread]: End processing [ipsocgen]: success
+[2023-04-14 21:30:19] INFO root fetch - processPackages [FlashGBX]: New version: [3.9] Old Version: [3.8]
+[2023-04-14 21:30:19] INFO root fetch - processPackages [cribbage-scorer]: Start processing: trial_wm
+[2023-04-14 21:30:19] INFO root fetch - main [MainThread]: End processing [cribbage-scorer]: success
+[2023-04-14 21:30:19] INFO root fetch - processPackages [tastytrade-api]: Downloading https://files.pythonhosted.org/packages/ef/fb/8baffeed6dfd2fe38fc0a91a978d570e177e358666cdbaf6032a51ef18d6/tastytrade-api-0.1.0.tar.gz
+[2023-04-14 21:30:19] WARNING root fetch - processPackages [trial_wm]: Skipping, unable to determine old version
+[2023-04-14 21:30:19] INFO root fetch - processPackages [trial_wm]: Start processing: mitosheet
+[2023-04-14 21:30:19] INFO root fetch - main [MainThread]: End processing [trial_wm] error
+[2023-04-14 21:30:19] INFO root fetch - processPackages [mitosheet]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-14 21:30:19] INFO root fetch - processPackages [openmdao]: Downloading https://files.pythonhosted.org/packages/52/02/1fca327f1274b53bcf58ed2a337d667af129349805d1abc5d6d0ff1ada58/openmdao-3.9.2.tar.gz
+[2023-04-14 21:30:19] INFO root fetch - processPackages [mitosheet]: Downloading https://files.pythonhosted.org/packages/8f/ca/cfa5a04a8bad41705bac5f84cf0c0a38c2e86f34a87c85d097c82dd321da/mitosheet-0.1.98.tar.gz
+[2023-04-14 21:30:19] INFO root fetch - processPackages [datarobotx]: Downloading https://files.pythonhosted.org/packages/f4/fc/be4280dae81c5f2163bd189b6883242c003387cb78cef51dbf557801fab9/datarobotx-0.1.4-py3-none-any.whl
+[2023-04-14 21:30:19] INFO root fetch - processPackages [tastytrade-api]: Downloading https://files.pythonhosted.org/packages/c6/de/0ccb4576843be4094564c8d284e1dd9c5d249f63cb743de818958484724e/tastytrade-api-0.1.1.tar.gz
+[2023-04-14 21:30:20] INFO root fetch - processPackages [FlashGBX]: executing diffoscope
+[2023-04-14 21:30:20] INFO root fetch - processPackages [FlashGBX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlashGBX-3.8.tar.gz tmp/FlashGBX-3.9.tar.gz --markdown 20230414/F/FlashGBX/3.8-3.9/diff.md --exclude *.pyd
+[2023-04-14 21:30:20] INFO root fetch - processPackages [datarobotx]: executing diffoscope
+[2023-04-14 21:30:20] INFO root fetch - processPackages [datarobotx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datarobotx-0.1.3-py3-none-any.whl.zip tmp/datarobotx-0.1.4-py3-none-any.whl.zip --markdown 20230414/d/datarobotx/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-14 21:30:20] INFO root fetch - processPackages [tastytrade-api]: executing diffoscope
+[2023-04-14 21:30:20] INFO root fetch - processPackages [tastytrade-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-api-0.1.0.tar.gz tmp/tastytrade-api-0.1.1.tar.gz --markdown 20230414/t/tastytrade-api/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 21:30:20] WARNING root fetch - processPackages [mitosheet]: Skipping package: exceeds size limit 14622615>=10485760
+[2023-04-14 21:30:20] INFO root fetch - processPackages [mitosheet]: Start processing: cbra
+[2023-04-14 21:30:20] INFO root fetch - main [MainThread]: End processing [mitosheet] error
+[2023-04-14 21:30:20] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a82]
+[2023-04-14 21:30:20] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/cf/da/211d3337800313deabffe1586398c698e6f1fa4aaba4f11262bbbb599cf5/cbra-2.0.0a82.tar.gz
+[2023-04-14 21:30:20] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-14 21:30:20] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a82.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230414/c/cbra/2.0.0a82-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-14 21:30:21] INFO root fetch - processPackages [openmdao]: executing diffoscope
+[2023-04-14 21:30:21] INFO root fetch - processPackages [openmdao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmdao-3.9.1.tar.gz tmp/openmdao-3.9.2.tar.gz --markdown 20230414/o/openmdao/3.9.1-3.9.2/diff.md --exclude *.pyd
+[2023-04-14 21:30:21] INFO root fetch - processPackages [tastytrade-api]: Start processing: foring
+[2023-04-14 21:30:21] INFO root fetch - main [MainThread]: End processing [tastytrade-api]: success
+[2023-04-14 21:30:21] WARNING root fetch - processPackages [foring]: Skipping, unable to determine old version
+[2023-04-14 21:30:21] INFO root fetch - processPackages [foring]: Start processing: mypy-boto3-migration-hub-refactor-spaces
+[2023-04-14 21:30:21] INFO root fetch - main [MainThread]: End processing [foring] error
+[2023-04-14 21:30:21] INFO root fetch - processPackages [mypy-boto3-migration-hub-refactor-spaces]: New version: [1.26.68] Old Version: [1.26.28]
+[2023-04-14 21:30:21] INFO root fetch - processPackages [datarobotx]: Start processing: mypy-boto3-lambda
+[2023-04-14 21:30:21] INFO root fetch - main [MainThread]: End processing [datarobotx]: success
+[2023-04-14 21:30:21] INFO root fetch - processPackages [mypy-boto3-lambda]: New version: [1.26.80] Old Version: [1.26.55]
+[2023-04-14 21:30:21] INFO root fetch - processPackages [mypy-boto3-migration-hub-refactor-spaces]: Downloading https://files.pythonhosted.org/packages/09/6a/58af5d79ba82e6ba1a1d30f71968a7d52f6d60128e8d89ab5d5e1a186870/mypy-boto3-migration-hub-refactor-spaces-1.26.28.tar.gz
+[2023-04-14 21:30:21] INFO root fetch - processPackages [mypy-boto3-lambda]: executing diffoscope
+[2023-04-14 21:30:21] INFO root fetch - processPackages [mypy-boto3-lambda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-lambda-1.26.55.tar.gz tmp/mypy-boto3-lambda-1.26.80.tar.gz --markdown 20230414/m/mypy-boto3-lambda/1.26.55-1.26.80/diff.md --exclude *.pyd
+[2023-04-14 21:30:22] INFO root fetch - processPackages [mypy-boto3-migration-hub-refactor-spaces]: Downloading https://files.pythonhosted.org/packages/e7/f6/5b467f2575ba3da62558990593894675e1b8e7fb32d2860b5de3889b92e6/mypy-boto3-migration-hub-refactor-spaces-1.26.68.tar.gz
+[2023-04-14 21:30:22] INFO root fetch - processPackages [mypy-boto3-migration-hub-refactor-spaces]: executing diffoscope
+[2023-04-14 21:30:22] INFO root fetch - processPackages [mypy-boto3-migration-hub-refactor-spaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-migration-hub-refactor-spaces-1.26.28.tar.gz tmp/mypy-boto3-migration-hub-refactor-spaces-1.26.68.tar.gz --markdown 20230414/m/mypy-boto3-migration-hub-refactor-spaces/1.26.28-1.26.68/diff.md --exclude *.pyd
+[2023-04-14 21:30:22] INFO root fetch - processPackages [FlashGBX]: Start processing: mypy-boto3-rds
+[2023-04-14 21:30:22] INFO root fetch - main [MainThread]: End processing [FlashGBX]: success
+[2023-04-14 21:30:22] INFO root fetch - processPackages [mypy-boto3-rds]: New version: [1.26.99] Old Version: [1.26.97.post1]
+[2023-04-14 21:30:22] INFO root fetch - processPackages [mypy-boto3-rds]: Downloading https://files.pythonhosted.org/packages/68/18/8e0f9b4f073728696360d6f84d4cffc70b973c5392047f09a8624f3cb3d0/mypy-boto3-rds-1.26.97.post1.tar.gz
+[2023-04-14 21:30:22] INFO root fetch - processPackages [mypy-boto3-rds]: Downloading https://files.pythonhosted.org/packages/5f/00/e761620ff76ef2433a4c26d105b6d4d7f4aa2d5805ac498ddc3b691164ac/mypy-boto3-rds-1.26.99.tar.gz
+[2023-04-14 21:30:23] INFO root fetch - processPackages [mypy-boto3-rds]: executing diffoscope
+[2023-04-14 21:30:23] INFO root fetch - processPackages [mypy-boto3-rds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-rds-1.26.97.post1.tar.gz tmp/mypy-boto3-rds-1.26.99.tar.gz --markdown 20230414/m/mypy-boto3-rds/1.26.97.post1-1.26.99/diff.md --exclude *.pyd
+[2023-04-14 21:30:23] INFO root fetch - processPackages [mypy-boto3-lambda]: Start processing: mitosheet3
+[2023-04-14 21:30:23] INFO root fetch - main [MainThread]: End processing [mypy-boto3-lambda]: success
+[2023-04-14 21:30:23] INFO root fetch - processPackages [mitosheet3]: New version: [0.3.92] Old Version: [0.3.91]
+[2023-04-14 21:30:23] INFO root fetch - processPackages [mypy-boto3-migration-hub-refactor-spaces]: Start processing: mypy-boto3-ecs
+[2023-04-14 21:30:23] INFO root fetch - main [MainThread]: End processing [mypy-boto3-migration-hub-refactor-spaces]: success
+[2023-04-14 21:30:23] INFO root fetch - processPackages [mypy-boto3-ecs]: New version: [1.26.78] Old Version: [1.26.7]
+[2023-04-14 21:30:23] INFO root fetch - processPackages [mitosheet3]: executing diffoscope
+[2023-04-14 21:30:23] INFO root fetch - processPackages [mitosheet3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitosheet3-0.3.91.tar.gz tmp/mitosheet3-0.3.92.tar.gz --markdown 20230414/m/mitosheet3/0.3.91-0.3.92/diff.md --exclude *.pyd
+[2023-04-14 21:30:23] INFO root fetch - processPackages [mypy-boto3-ecs]: executing diffoscope
+[2023-04-14 21:30:23] INFO root fetch - processPackages [mypy-boto3-ecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-ecs-1.26.7.tar.gz tmp/mypy-boto3-ecs-1.26.78.tar.gz --markdown 20230414/m/mypy-boto3-ecs/1.26.7-1.26.78/diff.md --exclude *.pyd
+[2023-04-14 21:30:24] INFO root fetch - processPackages [mypy-boto3-rds]: Start processing: mypy-boto3
+[2023-04-14 21:30:24] INFO root fetch - main [MainThread]: End processing [mypy-boto3-rds]: success
+[2023-04-14 21:30:24] INFO root fetch - processPackages [mypy-boto3]: New version: [1.26.99] Old Version: [1.26.98]
+[2023-04-14 21:30:24] INFO root fetch - processPackages [cbra]: Start processing: boto3-stubs
+[2023-04-14 21:30:24] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-04-14 21:30:25] INFO root fetch - processPackages [boto3-stubs]: New version: [1.26.99] Old Version: [1.26.98]
+[2023-04-14 21:30:25] INFO root fetch - processPackages [mypy-boto3]: executing diffoscope
+[2023-04-14 21:30:25] INFO root fetch - processPackages [mypy-boto3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-1.26.98.tar.gz tmp/mypy-boto3-1.26.99.tar.gz --markdown 20230414/m/mypy-boto3/1.26.98-1.26.99/diff.md --exclude *.pyd
+[2023-04-14 21:30:25] INFO root fetch - processPackages [boto3-stubs]: executing diffoscope
+[2023-04-14 21:30:25] INFO root fetch - processPackages [boto3-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boto3-stubs-1.26.98.tar.gz tmp/boto3-stubs-1.26.99.tar.gz --markdown 20230414/b/boto3-stubs/1.26.98-1.26.99/diff.md --exclude *.pyd
+[2023-04-14 21:30:25] INFO root fetch - processPackages [mypy-boto3-ecs]: Start processing: canonical
+[2023-04-14 21:30:25] INFO root fetch - main [MainThread]: End processing [mypy-boto3-ecs]: success
+[2023-04-14 21:30:25] INFO root fetch - processPackages [canonical]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 21:30:25] INFO root fetch - processPackages [canonical]: executing diffoscope
+[2023-04-14 21:30:25] INFO root fetch - processPackages [canonical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canonical-0.8.0.tar.gz tmp/canonical-0.9.0.tar.gz --markdown 20230414/c/canonical/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 21:30:26] INFO root fetch - processPackages [boto3-stubs]: Start processing: boto3-stubs-lite
+[2023-04-14 21:30:26] INFO root fetch - main [MainThread]: End processing [boto3-stubs]: success
+[2023-04-14 21:30:26] INFO root fetch - processPackages [boto3-stubs-lite]: New version: [1.26.99] Old Version: [1.26.98]
+[2023-04-14 21:30:26] INFO root fetch - processPackages [canonical]: Start processing: dnadb
+[2023-04-14 21:30:26] INFO root fetch - main [MainThread]: End processing [canonical]: success
+[2023-04-14 21:30:26] INFO root fetch - processPackages [dnadb]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-14 21:30:26] INFO root fetch - processPackages [boto3-stubs-lite]: executing diffoscope
+[2023-04-14 21:30:26] INFO root fetch - processPackages [boto3-stubs-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boto3-stubs-lite-1.26.98.tar.gz tmp/boto3-stubs-lite-1.26.99.tar.gz --markdown 20230414/b/boto3-stubs-lite/1.26.98-1.26.99/diff.md --exclude *.pyd
+[2023-04-14 21:30:26] INFO root fetch - processPackages [mypy-boto3]: Start processing: lbutils-mp
+[2023-04-14 21:30:26] INFO root fetch - main [MainThread]: End processing [mypy-boto3]: success
+[2023-04-14 21:30:26] INFO root fetch - processPackages [lbutils-mp]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-14 21:30:26] INFO root fetch - processPackages [dnadb]: Downloading https://files.pythonhosted.org/packages/b4/52/ab87074cbcfcdd71aae566e003532baa74d38e2807b19f4855f5f0b0b546/dnadb-0.2.6.tar.gz
+[2023-04-14 21:30:26] INFO root fetch - processPackages [lbutils-mp]: Downloading https://files.pythonhosted.org/packages/e8/10/d77d31f23683dde62a87b8a2c1bcfa6e458396d9f588ee8630918b13702e/lbutils-mp-0.2.1.tar.gz
+[2023-04-14 21:30:27] INFO root fetch - processPackages [dnadb]: executing diffoscope
+[2023-04-14 21:30:27] INFO root fetch - processPackages [dnadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnadb-0.2.5.tar.gz tmp/dnadb-0.2.6.tar.gz --markdown 20230414/d/dnadb/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-14 21:30:27] INFO root fetch - processPackages [lbutils-mp]: executing diffoscope
+[2023-04-14 21:30:27] INFO root fetch - processPackages [lbutils-mp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbutils-mp-0.2.0.tar.gz tmp/lbutils-mp-0.2.1.tar.gz --markdown 20230414/l/lbutils-mp/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 21:30:27] INFO root fetch - main [MainThread]: End processing [mitosheet3]: success
+[2023-04-14 21:30:27] INFO root fetch - main [MainThread]: End processing [boto3-stubs-lite]: success
+[2023-04-14 21:30:28] INFO root fetch - main [MainThread]: End processing [dnadb]: success
+[2023-04-14 21:30:28] INFO root fetch - main [MainThread]: End processing [lbutils-mp]: success
+[2023-04-14 21:30:28] INFO root fetch - main [MainThread]: End processing [openmdao]: success
+[2023-04-14 21:30:28] INFO root fetch - main [MainThread]: Store serial: [17712186]
