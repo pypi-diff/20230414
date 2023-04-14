@@ -19688,3 +19688,149 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:00:31] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-04-14 20:00:47] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
 [2023-04-14 20:00:47] INFO root fetch - main [MainThread]: Store serial: [17711151]
+[2023-04-14 20:05:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711151]
+[2023-04-14 20:05:54] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-04-14 20:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xpag
+[2023-04-14 20:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xarg-python
+[2023-04-14 20:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: homeassistant-api
+[2023-04-14 20:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hyperliquid-python-sdk
+[2023-04-14 20:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: statistics-core
+[2023-04-14 20:05:54] INFO root fetch - processPackages [xpag]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-14 20:05:54] INFO root fetch - processPackages [hyperliquid-python-sdk]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-14 20:05:54] INFO root fetch - processPackages [statistics-core]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 20:05:54] WARNING root fetch - processPackages [xarg-python]: Skipping, unable to determine old version
+[2023-04-14 20:05:54] INFO root fetch - processPackages [xarg-python]: Start processing: NORDic
+[2023-04-14 20:05:54] INFO root fetch - main [MainThread]: End processing [xarg-python] error
+[2023-04-14 20:05:54] INFO root fetch - processPackages [homeassistant-api]: New version: [4.1.1.post1] Old Version: [4.1.1]
+[2023-04-14 20:05:54] INFO root fetch - processPackages [NORDic]: New version: [2.4.2] Old Version: [2.4.1]
+[2023-04-14 20:05:55] INFO root fetch - processPackages [statistics-core]: Downloading https://files.pythonhosted.org/packages/07/b8/4854294f535218ffe07bb81513c8cd032f6681ca861618db682971702129/statistics_core-0.0.4.tar.gz
+[2023-04-14 20:05:55] INFO root fetch - processPackages [hyperliquid-python-sdk]: Downloading https://files.pythonhosted.org/packages/02/a8/52c99c230be87cf3e2f79ca2b1fc659744f9af43874737ea26ae3731a288/hyperliquid_python_sdk-0.1.6.tar.gz
+[2023-04-14 20:05:55] INFO root fetch - processPackages [NORDic]: Downloading https://files.pythonhosted.org/packages/68/d8/ca32115f94112d1352e70d8b184c7b0a3282483d6c1c64a4cd4688632513/NORDic-2.4.1.tar.gz
+[2023-04-14 20:05:55] INFO root fetch - processPackages [homeassistant-api]: Downloading https://files.pythonhosted.org/packages/20/28/16e17186d69c0ef2a4aa8f32eb7b845e9953ce4d16205ef16df424aa27ef/homeassistant_api-4.1.1.tar.gz
+[2023-04-14 20:05:55] INFO root fetch - processPackages [xpag]: Downloading https://files.pythonhosted.org/packages/a6/c1/f8ab0a48a6aca989c9b19750ba0a54c8426e4160cb926eedc20e5c4662e9/xpag-0.1.7-py3-none-any.whl
+[2023-04-14 20:05:55] INFO root fetch - processPackages [hyperliquid-python-sdk]: Downloading https://files.pythonhosted.org/packages/91/fd/5881aa36b2fff873764f4d80f2604b0771c724381dd61daeaa4b3cc7e456/hyperliquid_python_sdk-0.1.7.tar.gz
+[2023-04-14 20:05:55] INFO root fetch - processPackages [NORDic]: Downloading https://files.pythonhosted.org/packages/ec/02/f81f9605d62c21938ccad904270885e2daf81be3044711d915ac34f8c888/NORDic-2.4.2.tar.gz
+[2023-04-14 20:05:55] INFO root fetch - processPackages [statistics-core]: Downloading https://files.pythonhosted.org/packages/3e/ca/2aa0c7f3cdac041e8f1ce5360ca52c01b54640f97861981d2875ac985a86/statistics_core-0.0.5.tar.gz
+[2023-04-14 20:05:55] INFO root fetch - processPackages [xpag]: executing diffoscope
+[2023-04-14 20:05:55] INFO root fetch - processPackages [xpag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpag-0.1.6-py3-none-any.whl.zip tmp/xpag-0.1.7-py3-none-any.whl.zip --markdown 20230414/x/xpag/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-14 20:05:55] INFO root fetch - processPackages [homeassistant-api]: Downloading https://files.pythonhosted.org/packages/1d/49/9e8293210bc4c8f75853bb1038f67bf49eb85f60553dc3d26e07d80e3a7d/homeassistant_api-4.1.1.post1.tar.gz
+[2023-04-14 20:05:55] INFO root fetch - processPackages [hyperliquid-python-sdk]: executing diffoscope
+[2023-04-14 20:05:55] INFO root fetch - processPackages [hyperliquid-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperliquid_python_sdk-0.1.6.tar.gz tmp/hyperliquid_python_sdk-0.1.7.tar.gz --markdown 20230414/h/hyperliquid-python-sdk/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-14 20:05:55] INFO root fetch - processPackages [NORDic]: executing diffoscope
+[2023-04-14 20:05:55] INFO root fetch - processPackages [NORDic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NORDic-2.4.1.tar.gz tmp/NORDic-2.4.2.tar.gz --markdown 20230414/N/NORDic/2.4.1-2.4.2/diff.md --exclude *.pyd
+[2023-04-14 20:05:55] INFO root fetch - processPackages [statistics-core]: executing diffoscope
+[2023-04-14 20:05:55] INFO root fetch - processPackages [statistics-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statistics_core-0.0.4.tar.gz tmp/statistics_core-0.0.5.tar.gz --markdown 20230414/s/statistics-core/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 20:05:55] INFO root fetch - processPackages [homeassistant-api]: executing diffoscope
+[2023-04-14 20:05:55] INFO root fetch - processPackages [homeassistant-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_api-4.1.1.tar.gz tmp/homeassistant_api-4.1.1.post1.tar.gz --markdown 20230414/h/homeassistant-api/4.1.1-4.1.1.post1/diff.md --exclude *.pyd
+[2023-04-14 20:05:56] INFO root fetch - processPackages [hyperliquid-python-sdk]: Start processing: oai-tools
+[2023-04-14 20:05:56] INFO root fetch - main [MainThread]: End processing [hyperliquid-python-sdk]: success
+[2023-04-14 20:05:56] INFO root fetch - processPackages [oai-tools]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 20:05:56] INFO root fetch - processPackages [statistics-core]: Start processing: xpip-python
+[2023-04-14 20:05:56] INFO root fetch - main [MainThread]: End processing [statistics-core]: success
+[2023-04-14 20:05:56] WARNING root fetch - processPackages [xpip-python]: Skipping, unable to determine old version
+[2023-04-14 20:05:56] INFO root fetch - processPackages [xpip-python]: Start processing: mlserver-huggingface
+[2023-04-14 20:05:56] INFO root fetch - main [MainThread]: End processing [xpip-python] error
+[2023-04-14 20:05:56] INFO root fetch - processPackages [mlserver-huggingface]: New version: [1.3.1] Old Version: [1.3.0rc2]
+[2023-04-14 20:05:56] INFO root fetch - processPackages [NORDic]: Start processing: mlserver-mllib
+[2023-04-14 20:05:56] INFO root fetch - main [MainThread]: End processing [NORDic]: success
+[2023-04-14 20:05:56] INFO root fetch - processPackages [xpag]: Start processing: mlserver-xgboost
+[2023-04-14 20:05:56] INFO root fetch - main [MainThread]: End processing [xpag]: success
+[2023-04-14 20:05:56] INFO root fetch - processPackages [mlserver-xgboost]: New version: [1.3.1] Old Version: [1.3.0rc2]
+[2023-04-14 20:05:56] INFO root fetch - processPackages [mlserver-mllib]: New version: [1.3.1] Old Version: [1.3.0rc2]
+[2023-04-14 20:05:56] INFO root fetch - processPackages [oai-tools]: Downloading https://files.pythonhosted.org/packages/c7/29/a239c9cace71f84ac177e9f20537da9be254145b194d807ca85af024e786/oai_tools-0.1.0.tar.gz
+[2023-04-14 20:05:57] INFO root fetch - processPackages [homeassistant-api]: Start processing: mlserver-mlflow
+[2023-04-14 20:05:57] INFO root fetch - main [MainThread]: End processing [homeassistant-api]: success
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-mlflow]: New version: [1.3.1] Old Version: [1.3.0rc2]
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-huggingface]: Downloading https://files.pythonhosted.org/packages/c3/aa/da18b7eab99c0d38715bc1f75ad5bf92744931616a98eee8bf456e20c12e/mlserver-huggingface-1.3.1.tar.gz
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-mllib]: Downloading https://files.pythonhosted.org/packages/94/80/1c9df74065b0126e82128a96268a7a25a3258b0e19a1e8c8c43e5b729551/mlserver-mllib-1.3.1.tar.gz
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-xgboost]: Downloading https://files.pythonhosted.org/packages/06/de/a3d7781786cd96b21c1e2d305957108f2025d206a889c4898d7d06d602ae/mlserver-xgboost-1.3.1.tar.gz
+[2023-04-14 20:05:57] INFO root fetch - processPackages [oai-tools]: Downloading https://files.pythonhosted.org/packages/cd/68/0902ee61f1cf6a93967a4ca30f5fb8773549526db81f4688992d53855373/oai_tools-0.1.1.tar.gz
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-mlflow]: Downloading https://files.pythonhosted.org/packages/a1/11/33e5697087b561feb025b10cdd895ee8e2185b35b08f1b0538c9f5c7af65/mlserver-mlflow-1.3.1.tar.gz
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-huggingface]: executing diffoscope
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-huggingface-1.3.0rc2.tar.gz tmp/mlserver-huggingface-1.3.1.tar.gz --markdown 20230414/m/mlserver-huggingface/1.3.0rc2-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-xgboost]: executing diffoscope
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-xgboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-xgboost-1.3.0rc2.tar.gz tmp/mlserver-xgboost-1.3.1.tar.gz --markdown 20230414/m/mlserver-xgboost/1.3.0rc2-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-mllib]: executing diffoscope
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-mllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mllib-1.3.0rc2.tar.gz tmp/mlserver-mllib-1.3.1.tar.gz --markdown 20230414/m/mlserver-mllib/1.3.0rc2-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 20:05:57] INFO root fetch - processPackages [oai-tools]: executing diffoscope
+[2023-04-14 20:05:57] INFO root fetch - processPackages [oai-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oai_tools-0.1.0.tar.gz tmp/oai_tools-0.1.1.tar.gz --markdown 20230414/o/oai-tools/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-mlflow]: executing diffoscope
+[2023-04-14 20:05:57] INFO root fetch - processPackages [mlserver-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mlflow-1.3.0rc2.tar.gz tmp/mlserver-mlflow-1.3.1.tar.gz --markdown 20230414/m/mlserver-mlflow/1.3.0rc2-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-xgboost]: Start processing: mlserver-lightgbm
+[2023-04-14 20:05:58] INFO root fetch - main [MainThread]: End processing [mlserver-xgboost]: success
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-lightgbm]: New version: [1.3.1] Old Version: [1.3.0rc2]
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-huggingface]: Start processing: mlserver-sklearn
+[2023-04-14 20:05:58] INFO root fetch - main [MainThread]: End processing [mlserver-huggingface]: success
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-sklearn]: New version: [1.3.1] Old Version: [1.3.0rc2]
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-mlflow]: Start processing: arlq
+[2023-04-14 20:05:58] INFO root fetch - main [MainThread]: End processing [mlserver-mlflow]: success
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-lightgbm]: Downloading https://files.pythonhosted.org/packages/8c/63/8e5458de41077fba1a308474e9b8bfbe9f3c657bb0d7850d65906773749e/mlserver-lightgbm-1.3.1.tar.gz
+[2023-04-14 20:05:58] INFO root fetch - processPackages [arlq]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 20:05:58] INFO root fetch - processPackages [oai-tools]: Start processing: mlserver-alibi-explain
+[2023-04-14 20:05:58] INFO root fetch - main [MainThread]: End processing [oai-tools]: success
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-sklearn]: Downloading https://files.pythonhosted.org/packages/93/a0/cdb460750c566fddf7d2a4744fd80b7ee4e87b2759dc686247cb07bd3de3/mlserver-sklearn-1.3.1.tar.gz
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-alibi-explain]: New version: [1.3.1] Old Version: [1.3.0rc2]
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-mllib]: Start processing: ramodels
+[2023-04-14 20:05:58] INFO root fetch - main [MainThread]: End processing [mlserver-mllib]: success
+[2023-04-14 20:05:58] INFO root fetch - processPackages [ramodels]: New version: [9.7.3] Old Version: [9.7.2]
+[2023-04-14 20:05:58] INFO root fetch - processPackages [arlq]: Downloading https://files.pythonhosted.org/packages/e4/59/a4675b9f02621314b7885dc798f06714320f60df4c0a12fba5f870f6968b/arlq-1.0.2.tar.gz
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-lightgbm]: executing diffoscope
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-lightgbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-lightgbm-1.3.0rc2.tar.gz tmp/mlserver-lightgbm-1.3.1.tar.gz --markdown 20230414/m/mlserver-lightgbm/1.3.0rc2-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-alibi-explain]: Downloading https://files.pythonhosted.org/packages/5c/b9/21f8013c5b5fcc61ebc730e5f5d14b2c8cfa1507485dc74cf9f45e22d0e1/mlserver-alibi-explain-1.3.1.tar.gz
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-sklearn]: executing diffoscope
+[2023-04-14 20:05:58] INFO root fetch - processPackages [mlserver-sklearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-sklearn-1.3.0rc2.tar.gz tmp/mlserver-sklearn-1.3.1.tar.gz --markdown 20230414/m/mlserver-sklearn/1.3.0rc2-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 20:05:59] INFO root fetch - processPackages [arlq]: executing diffoscope
+[2023-04-14 20:05:59] INFO root fetch - processPackages [arlq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arlq-1.0.1.tar.gz tmp/arlq-1.0.2.tar.gz --markdown 20230414/a/arlq/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 20:05:59] INFO root fetch - processPackages [mlserver-alibi-explain]: executing diffoscope
+[2023-04-14 20:05:59] INFO root fetch - processPackages [mlserver-alibi-explain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-explain-1.3.0rc2.tar.gz tmp/mlserver-alibi-explain-1.3.1.tar.gz --markdown 20230414/m/mlserver-alibi-explain/1.3.0rc2-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 20:05:59] INFO root fetch - processPackages [ramodels]: executing diffoscope
+[2023-04-14 20:05:59] INFO root fetch - processPackages [ramodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramodels-9.7.2.tar.gz tmp/ramodels-9.7.3.tar.gz --markdown 20230414/r/ramodels/9.7.2-9.7.3/diff.md --exclude *.pyd
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver-lightgbm]: Start processing: mlserver-alibi-detect
+[2023-04-14 20:06:00] INFO root fetch - main [MainThread]: End processing [mlserver-lightgbm]: success
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver-alibi-detect]: New version: [1.3.1] Old Version: [1.3.0rc2]
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver-sklearn]: Start processing: mlserver
+[2023-04-14 20:06:00] INFO root fetch - main [MainThread]: End processing [mlserver-sklearn]: success
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver]: New version: [1.3.1] Old Version: [1.3.0rc2]
+[2023-04-14 20:06:00] INFO root fetch - processPackages [arlq]: Start processing: statistics-core
+[2023-04-14 20:06:00] INFO root fetch - main [MainThread]: End processing [arlq]: success
+[2023-04-14 20:06:00] INFO root fetch - processPackages [statistics-core]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver-alibi-explain]: Start processing: konsepy
+[2023-04-14 20:06:00] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-explain]: success
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver-alibi-detect]: Downloading https://files.pythonhosted.org/packages/0b/6d/9eafbdbe79747b0dab3a07a016c6527a1ac7ce02f886a1f09051a2f030a8/mlserver-alibi-detect-1.3.1.tar.gz
+[2023-04-14 20:06:00] INFO root fetch - processPackages [konsepy]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 20:06:00] INFO root fetch - processPackages [statistics-core]: executing diffoscope
+[2023-04-14 20:06:00] INFO root fetch - processPackages [statistics-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statistics_core-0.0.4.tar.gz tmp/statistics_core-0.0.5.tar.gz --markdown 20230414/s/statistics-core/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver]: Downloading https://files.pythonhosted.org/packages/4d/7a/3a75dcd2dacb8a61a22d57ad936dc3c0f7adf87d244dca1a247ac655c85b/mlserver-1.3.1.tar.gz
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver-alibi-detect]: executing diffoscope
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver-alibi-detect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-detect-1.3.0rc2.tar.gz tmp/mlserver-alibi-detect-1.3.1.tar.gz --markdown 20230414/m/mlserver-alibi-detect/1.3.0rc2-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 20:06:00] INFO root fetch - processPackages [konsepy]: Downloading https://files.pythonhosted.org/packages/5c/c4/cad1b707ad8be46d3f16668874b0d7a928778b7bede9d062df4d49276c43/konsepy-0.0.4.tar.gz
+[2023-04-14 20:06:00] INFO root fetch - processPackages [ramodels]: Start processing: butter-cli
+[2023-04-14 20:06:00] INFO root fetch - main [MainThread]: End processing [ramodels]: success
+[2023-04-14 20:06:00] INFO root fetch - processPackages [butter-cli]: New version: [1.1] Old Version: [1.0]
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver]: executing diffoscope
+[2023-04-14 20:06:00] INFO root fetch - processPackages [mlserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-1.3.0rc2.tar.gz tmp/mlserver-1.3.1.tar.gz --markdown 20230414/m/mlserver/1.3.0rc2-1.3.1/diff.md --exclude *.pyd
+[2023-04-14 20:06:00] INFO root fetch - processPackages [konsepy]: executing diffoscope
+[2023-04-14 20:06:00] INFO root fetch - processPackages [butter-cli]: Downloading https://files.pythonhosted.org/packages/49/0e/9ae03e6edeabaaaeb8160d4e927a9c11e81f63270c4442e29c5cf389d5db/butter-cli-1.0.tar.gz
+[2023-04-14 20:06:00] INFO root fetch - processPackages [konsepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konsepy-0.0.3.tar.gz tmp/konsepy-0.0.4.tar.gz --markdown 20230414/k/konsepy/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 20:06:00] INFO root fetch - processPackages [butter-cli]: Downloading https://files.pythonhosted.org/packages/e8/30/fd4aa2ae20141010b6bb013c63728958c8238250a609a5779a73cf0a842a/butter-cli-1.1.tar.gz
+[2023-04-14 20:06:01] INFO root fetch - processPackages [butter-cli]: executing diffoscope
+[2023-04-14 20:06:01] INFO root fetch - processPackages [butter-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/butter-cli-1.0.tar.gz tmp/butter-cli-1.1.tar.gz --markdown 20230414/b/butter-cli/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-14 20:06:01] INFO root fetch - processPackages [statistics-core]: Start processing: gtfk
+[2023-04-14 20:06:01] INFO root fetch - main [MainThread]: End processing [statistics-core]: success
+[2023-04-14 20:06:01] WARNING root fetch - processPackages [gtfk]: Skipping, unable to determine old version
+[2023-04-14 20:06:01] INFO root fetch - processPackages [gtfk]: Start processing: blk-utils
+[2023-04-14 20:06:01] INFO root fetch - main [MainThread]: End processing [gtfk] error
+[2023-04-14 20:06:01] WARNING root fetch - processPackages [blk-utils]: Skipping, unable to determine old version
+[2023-04-14 20:06:01] INFO root fetch - processPackages [blk-utils]: Start processing: molab
+[2023-04-14 20:06:01] INFO root fetch - main [MainThread]: End processing [blk-utils] error
+[2023-04-14 20:06:01] INFO root fetch - processPackages [molab]: New version: [0.4.3] Old Version: [0.4.1]
+[2023-04-14 20:06:01] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-detect]: success
+[2023-04-14 20:06:01] INFO root fetch - processPackages [molab]: Downloading https://files.pythonhosted.org/packages/23/39/a5b2d83b4c0b711048b694f82a664a29aa3f00df3ee5d79986409d36636e/molab-0.4.1.tar.gz
+[2023-04-14 20:06:01] INFO root fetch - processPackages [molab]: Downloading https://files.pythonhosted.org/packages/42/7a/92588d9867ff86f3fd084b5e4e23bbed174bdf6a7eca7c138f6bd3dd2f77/molab-0.4.3.tar.gz
+[2023-04-14 20:06:01] INFO root fetch - main [MainThread]: End processing [konsepy]: success
+[2023-04-14 20:06:02] INFO root fetch - main [MainThread]: End processing [butter-cli]: success
+[2023-04-14 20:06:02] INFO root fetch - processPackages [molab]: executing diffoscope
+[2023-04-14 20:06:02] INFO root fetch - processPackages [molab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molab-0.4.1.tar.gz tmp/molab-0.4.3.tar.gz --markdown 20230414/m/molab/0.4.1-0.4.3/diff.md --exclude *.pyd
+[2023-04-14 20:06:03] INFO root fetch - main [MainThread]: End processing [molab]: success
+[2023-04-14 20:06:03] INFO root fetch - main [MainThread]: End processing [mlserver]: success
+[2023-04-14 20:06:03] INFO root fetch - main [MainThread]: Store serial: [17711300]
