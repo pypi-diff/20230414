@@ -6232,3 +6232,135 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 04:48:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-time-to-pay]: success
 [2023-04-14 04:48:48] INFO root fetch - main [MainThread]: End processing [smplotlib]: success
 [2023-04-14 04:48:48] INFO root fetch - main [MainThread]: Store serial: [17702661]
+[2023-04-14 04:53:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702661]
+[2023-04-14 04:53:54] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-14 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: visionaire4
+[2023-04-14 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: g42cloudsdkcbr
+[2023-04-14 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: g42cloudsdkcce
+[2023-04-14 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ka-ut-com
+[2023-04-14 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: seem
+[2023-04-14 04:53:55] WARNING root fetch - processPackages [ka-ut-com]: Skipping, unable to determine old version
+[2023-04-14 04:53:55] INFO root fetch - processPackages [ka-ut-com]: Start processing: g42cloudsdkcdn
+[2023-04-14 04:53:55] INFO root fetch - main [MainThread]: End processing [ka-ut-com] error
+[2023-04-14 04:53:55] INFO root fetch - processPackages [visionaire4]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcbr]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcce]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:53:55] WARNING root fetch - processPackages [seem]: Skipping, unable to determine old version
+[2023-04-14 04:53:55] INFO root fetch - processPackages [seem]: Start processing: g42cloudsdkces
+[2023-04-14 04:53:55] INFO root fetch - main [MainThread]: End processing [seem] error
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcdn]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkces]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:53:55] INFO root fetch - processPackages [visionaire4]: Downloading https://files.pythonhosted.org/packages/f7/9a/b6da0353568439e1f1b731a45b63fbbb5ce2ac7d715fd47c01fa47ca0e1d/visionaire4-0.0.5.tar.gz
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcdn]: Downloading https://files.pythonhosted.org/packages/ad/62/9e11ebb698ae71621f3bfd49f30cd220ed69735848d16d3ffe6d09c824bf/g42cloudsdkcdn-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkces]: Downloading https://files.pythonhosted.org/packages/f7/e7/efb3bc4130175c0c6ff25e3beb832dc92d53a95e9e46367c3d740e6c7a3b/g42cloudsdkces-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcbr]: Downloading https://files.pythonhosted.org/packages/84/f2/a51fe0a83f9bd78b101916ba88f99b8e26ca5bcb5a22018f47f2e137ef08/g42cloudsdkcbr-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcce]: Downloading https://files.pythonhosted.org/packages/87/a9/f3ae0d4bbfbf7039441c138d5a5762d0acda61604ae6fe62f7c0c9bb937d/g42cloudsdkcce-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:53:55] INFO root fetch - processPackages [visionaire4]: Downloading https://files.pythonhosted.org/packages/c5/7a/19490e7c2d6e0fa273aab7b37633dc5ec4f3ceb74664c1ee067ed0ac5596/visionaire4-0.1.0.tar.gz
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcdn]: Downloading https://files.pythonhosted.org/packages/63/9d/324e519f5b0efeaca387103277fcd8855d0e4dc26f133678b77a04ccbb5e/g42cloudsdkcdn-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:53:55] INFO root fetch - processPackages [visionaire4]: executing diffoscope
+[2023-04-14 04:53:55] INFO root fetch - processPackages [visionaire4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visionaire4-0.0.5.tar.gz tmp/visionaire4-0.1.0.tar.gz --markdown 20230414/v/visionaire4/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkces]: Downloading https://files.pythonhosted.org/packages/e4/63/eac4c00dfe9bd05a5b2a9247662551eea9419c1379cc6d634bd2ff6e7cbc/g42cloudsdkces-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcce]: Downloading https://files.pythonhosted.org/packages/bf/4c/27b1ff919f80ea98534e85bbcbe1f538f5877b9fc975c6500b0ccd2bfde3/g42cloudsdkcce-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcbr]: Downloading https://files.pythonhosted.org/packages/53/ae/3bd855e54eeb1bc5e178e0caea0d8fc1cecda6d15e1cc8ee5ede67cc352b/g42cloudsdkcbr-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcdn]: executing diffoscope
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcdn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkcdn-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkcdn-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkcdn/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcce]: executing diffoscope
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkcce-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkcce-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkcce/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcbr]: executing diffoscope
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkcbr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkcbr-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkcbr-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkcbr/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkces]: executing diffoscope
+[2023-04-14 04:53:55] INFO root fetch - processPackages [g42cloudsdkces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkces-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkces-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkces/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:53:56] INFO root fetch - processPackages [visionaire4]: Start processing: g42cloudsdkcore
+[2023-04-14 04:53:56] INFO root fetch - main [MainThread]: End processing [visionaire4]: success
+[2023-04-14 04:53:56] INFO root fetch - processPackages [g42cloudsdkcore]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:53:56] INFO root fetch - processPackages [g42cloudsdkcore]: Downloading https://files.pythonhosted.org/packages/6e/fd/a0f90d82a958aa97da09b6e850ae7aff1a0e9c8ee552045c3b71ddeeea63/g42cloudsdkcore-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:53:57] INFO root fetch - processPackages [g42cloudsdkcore]: Downloading https://files.pythonhosted.org/packages/a6/1e/5b34cfa448ad5b6007aa9b6db83ff4205df4b542a1af833549e038fddf10/g42cloudsdkcore-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:53:57] INFO root fetch - processPackages [g42cloudsdkcore]: executing diffoscope
+[2023-04-14 04:53:57] INFO root fetch - processPackages [g42cloudsdkcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkcore-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkcore-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkcore/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:53:57] INFO root fetch - processPackages [g42cloudsdkcdn]: Start processing: g42cloudsdkcse
+[2023-04-14 04:53:57] INFO root fetch - main [MainThread]: End processing [g42cloudsdkcdn]: success
+[2023-04-14 04:53:57] INFO root fetch - processPackages [g42cloudsdkcse]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:53:57] INFO root fetch - processPackages [g42cloudsdkcce]: Start processing: g42cloudsdkcts
+[2023-04-14 04:53:57] INFO root fetch - main [MainThread]: End processing [g42cloudsdkcce]: success
+[2023-04-14 04:53:57] INFO root fetch - processPackages [g42cloudsdkcts]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkces]: Start processing: g42cloudsdkecs
+[2023-04-14 04:53:58] INFO root fetch - main [MainThread]: End processing [g42cloudsdkces]: success
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkecs]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkcse]: Downloading https://files.pythonhosted.org/packages/d7/aa/3b8be73bfcbf5ceee5b78c1f375ed8f68edcdd2ea758a5eef9673b3005ac/g42cloudsdkcse-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkcts]: Downloading https://files.pythonhosted.org/packages/50/de/3be885b11df7d7c476a0277e96f6e9d6aa7d05a53d3fc732797cee44bccd/g42cloudsdkcts-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkcbr]: Start processing: g42cloudsdkelb
+[2023-04-14 04:53:58] INFO root fetch - main [MainThread]: End processing [g42cloudsdkcbr]: success
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkelb]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkecs]: Downloading https://files.pythonhosted.org/packages/a4/10/f81ecb09a183767282f83a254536ed2ce99bb17898021f8e18fb685073dc/g42cloudsdkecs-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkelb]: Downloading https://files.pythonhosted.org/packages/ce/6c/649b497d769913528e921145f140d217848a59672cbc0c39d6cb40a1f1a6/g42cloudsdkelb-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkcts]: Downloading https://files.pythonhosted.org/packages/a8/00/8cf929e22843aaa7bfef5e6ce26eeb2066264c09d9c11bebc66bdaf0b7d7/g42cloudsdkcts-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkecs]: Downloading https://files.pythonhosted.org/packages/62/20/26ba55b3423c3484568970c2f966477d4f1fbf97915b23082f879d19ca37/g42cloudsdkecs-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkcore]: Start processing: g42cloudsdkevs
+[2023-04-14 04:53:58] INFO root fetch - main [MainThread]: End processing [g42cloudsdkcore]: success
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkevs]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkcts]: executing diffoscope
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkcts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkcts-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkcts-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkcts/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkelb]: Downloading https://files.pythonhosted.org/packages/3b/29/c684da333ce0dbeb9b967fef27e40f27d4b2a5f5908b2231c8c8523a09e8/g42cloudsdkelb-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkcse]: Downloading https://files.pythonhosted.org/packages/da/94/d2c3a3f0b0f26084227eeb594bf3ec7f64b1bdd38d78e4e6122571402c4d/g42cloudsdkcse-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkecs]: executing diffoscope
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkecs-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkecs-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkecs/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkevs]: Downloading https://files.pythonhosted.org/packages/97/db/7adea2cf1733ab22bcd21a516937e70e67e64eb8eaf4b81d915964aa7077/g42cloudsdkevs-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkelb]: executing diffoscope
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkelb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkelb-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkelb-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkelb/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkcse]: executing diffoscope
+[2023-04-14 04:53:58] INFO root fetch - processPackages [g42cloudsdkcse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkcse-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkcse-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkcse/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:53:59] INFO root fetch - processPackages [g42cloudsdkevs]: Downloading https://files.pythonhosted.org/packages/03/67/226042ec41d01a9f35f61775bd2cfc821aeed1c27ed5d5581ade84372c3a/g42cloudsdkevs-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:53:59] INFO root fetch - processPackages [g42cloudsdkevs]: executing diffoscope
+[2023-04-14 04:53:59] INFO root fetch - processPackages [g42cloudsdkevs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkevs-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkevs-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkevs/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:53:59] INFO root fetch - processPackages [g42cloudsdkcts]: Start processing: g42cloudsdkims
+[2023-04-14 04:53:59] INFO root fetch - main [MainThread]: End processing [g42cloudsdkcts]: success
+[2023-04-14 04:53:59] INFO root fetch - processPackages [g42cloudsdkims]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:54:00] INFO root fetch - processPackages [g42cloudsdkims]: Downloading https://files.pythonhosted.org/packages/09/ab/fef46fc42aadd44d675f818dcf865256651cf0576a20a394821cfaad393e/g42cloudsdkims-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:54:00] INFO root fetch - processPackages [g42cloudsdkcse]: Start processing: g42cloudsdkrds
+[2023-04-14 04:54:00] INFO root fetch - main [MainThread]: End processing [g42cloudsdkcse]: success
+[2023-04-14 04:54:00] INFO root fetch - processPackages [g42cloudsdkrds]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:54:00] INFO root fetch - processPackages [g42cloudsdkrds]: Downloading https://files.pythonhosted.org/packages/a0/3f/38c08baf24311f0906924fd9e8ba5a968cce1f4dcd1506ebb70e095cfd29/g42cloudsdkrds-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:54:00] INFO root fetch - processPackages [g42cloudsdkims]: Downloading https://files.pythonhosted.org/packages/87/2b/818262ffa398db33a1ba42dcb2d92d4b70f55bb3ca0f0433fc0bd6d4532d/g42cloudsdkims-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:54:00] INFO root fetch - processPackages [g42cloudsdkims]: executing diffoscope
+[2023-04-14 04:54:00] INFO root fetch - processPackages [g42cloudsdkims]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkims-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkims-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkims/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:54:00] INFO root fetch - processPackages [g42cloudsdkrds]: Downloading https://files.pythonhosted.org/packages/b7/e1/69b122b636f740cd1381fc4b01498f657d430b715aa6c37eb12211e39c72/g42cloudsdkrds-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:54:00] INFO root fetch - processPackages [g42cloudsdkrds]: executing diffoscope
+[2023-04-14 04:54:00] INFO root fetch - processPackages [g42cloudsdkrds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkrds-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkrds-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkrds/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:54:01] INFO root fetch - processPackages [g42cloudsdkevs]: Start processing: g42cloudsdksmn
+[2023-04-14 04:54:01] INFO root fetch - main [MainThread]: End processing [g42cloudsdkevs]: success
+[2023-04-14 04:54:01] INFO root fetch - processPackages [g42cloudsdksmn]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:54:01] INFO root fetch - processPackages [g42cloudsdksmn]: Downloading https://files.pythonhosted.org/packages/f6/45/8f0c490320d0958e6e5db03146d2bac99f1cfdb252bee12a4648587249fb/g42cloudsdksmn-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:54:01] INFO root fetch - processPackages [g42cloudsdksmn]: Downloading https://files.pythonhosted.org/packages/04/0c/348c9f36658c3c101667059906cf8ab8d712e3fc5fa9aaf2121f73b0c522/g42cloudsdksmn-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:54:01] INFO root fetch - processPackages [g42cloudsdksmn]: executing diffoscope
+[2023-04-14 04:54:01] INFO root fetch - processPackages [g42cloudsdksmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdksmn-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdksmn-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdksmn/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:54:01] INFO root fetch - processPackages [g42cloudsdkelb]: Start processing: g42cloudsdkvpc
+[2023-04-14 04:54:01] INFO root fetch - main [MainThread]: End processing [g42cloudsdkelb]: success
+[2023-04-14 04:54:01] INFO root fetch - processPackages [g42cloudsdkvpc]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-04-14 04:54:01] INFO root fetch - processPackages [g42cloudsdkecs]: Start processing: pylint-keyword-only-args-plugin
+[2023-04-14 04:54:01] INFO root fetch - main [MainThread]: End processing [g42cloudsdkecs]: success
+[2023-04-14 04:54:01] WARNING root fetch - processPackages [pylint-keyword-only-args-plugin]: Skipping, unable to determine old version
+[2023-04-14 04:54:01] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: Start processing: eulith-web3
+[2023-04-14 04:54:01] INFO root fetch - main [MainThread]: End processing [pylint-keyword-only-args-plugin] error
+[2023-04-14 04:54:02] INFO root fetch - processPackages [eulith-web3]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 04:54:02] INFO root fetch - processPackages [g42cloudsdkvpc]: Downloading https://files.pythonhosted.org/packages/28/fd/26ed4a58cfa0c65c22834e059758b0f823da43ada9920ec464934e9d0249/g42cloudsdkvpc-0.0.4b0-py2.py3-none-any.whl
+[2023-04-14 04:54:02] INFO root fetch - processPackages [g42cloudsdkvpc]: Downloading https://files.pythonhosted.org/packages/2a/24/21b01b85e43a1860d21d5beefbf5c64023dcbc6acfa9ecac24b5d789eb53/g42cloudsdkvpc-0.0.5b0-py2.py3-none-any.whl
+[2023-04-14 04:54:02] INFO root fetch - processPackages [eulith-web3]: executing diffoscope
+[2023-04-14 04:54:02] INFO root fetch - processPackages [eulith-web3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eulith_web3-0.0.8.tar.gz tmp/eulith_web3-0.0.9.tar.gz --markdown 20230414/e/eulith-web3/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 04:54:02] INFO root fetch - processPackages [g42cloudsdkims]: Start processing: django-static-fontawesome
+[2023-04-14 04:54:02] INFO root fetch - main [MainThread]: End processing [g42cloudsdkims]: success
+[2023-04-14 04:54:02] INFO root fetch - processPackages [django-static-fontawesome]: New version: [6.4.0.0] Old Version: [5.15.4.0]
+[2023-04-14 04:54:02] INFO root fetch - processPackages [g42cloudsdkvpc]: executing diffoscope
+[2023-04-14 04:54:02] INFO root fetch - processPackages [g42cloudsdkvpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g42cloudsdkvpc-0.0.4b0-py2.py3-none-any.whl.zip tmp/g42cloudsdkvpc-0.0.5b0-py2.py3-none-any.whl.zip --markdown 20230414/g/g42cloudsdkvpc/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-04-14 04:54:02] INFO root fetch - processPackages [django-static-fontawesome]: Downloading https://files.pythonhosted.org/packages/64/a8/e773bddc22fa61049510c68a49e326550b1154f377a7b94ec791edc35f70/django-static-fontawesome-5.15.4.0.tar.gz
+[2023-04-14 04:54:03] INFO root fetch - processPackages [eulith-web3]: Start processing: ka-ut-obj
+[2023-04-14 04:54:03] INFO root fetch - main [MainThread]: End processing [eulith-web3]: success
+[2023-04-14 04:54:03] WARNING root fetch - processPackages [ka-ut-obj]: Skipping, unable to determine old version
+[2023-04-14 04:54:03] INFO root fetch - main [MainThread]: End processing [ka-ut-obj] error
+[2023-04-14 04:54:03] INFO root fetch - main [MainThread]: End processing [g42cloudsdksmn]: success
+[2023-04-14 04:54:03] INFO root fetch - processPackages [django-static-fontawesome]: Downloading https://files.pythonhosted.org/packages/28/8f/b4a598761476f53a3810fb5a4fc6ad7a45f97990d48b74b29710b4a080e6/django-static-fontawesome-6.4.0.0.tar.gz
+[2023-04-14 04:54:03] INFO root fetch - processPackages [django-static-fontawesome]: executing diffoscope
+[2023-04-14 04:54:03] INFO root fetch - processPackages [django-static-fontawesome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-static-fontawesome-5.15.4.0.tar.gz tmp/django-static-fontawesome-6.4.0.0.tar.gz --markdown 20230414/d/django-static-fontawesome/5.15.4.0-6.4.0.0/diff.md --exclude *.pyd
+[2023-04-14 04:54:04] INFO root fetch - main [MainThread]: End processing [g42cloudsdkrds]: success
+[2023-04-14 04:54:07] INFO root fetch - main [MainThread]: End processing [g42cloudsdkvpc]: success
+[2023-04-14 04:55:11] INFO root fetch - main [MainThread]: End processing [django-static-fontawesome]: success
+[2023-04-14 04:55:11] INFO root fetch - main [MainThread]: Store serial: [17702717]
