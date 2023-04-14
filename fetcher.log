@@ -20619,3 +20619,46 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 21:00:37] INFO root fetch - main [MainThread]: End processing [jumpthegun]: success
 [2023-04-14 21:00:37] INFO root fetch - main [MainThread]: End processing [wodoo]: success
 [2023-04-14 21:00:37] INFO root fetch - main [MainThread]: Store serial: [17711949]
+[2023-04-14 21:05:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711949]
+[2023-04-14 21:05:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 21:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: startstop
+[2023-04-14 21:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tastytrade-api
+[2023-04-14 21:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zxing
+[2023-04-14 21:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: antimeridian
+[2023-04-14 21:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyasic
+[2023-04-14 21:05:48] INFO root fetch - processPackages [startstop]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-14 21:05:48] WARNING root fetch - processPackages [tastytrade-api]: Skipping, unable to determine old version
+[2023-04-14 21:05:48] INFO root fetch - processPackages [tastytrade-api]: Start processing: statistics-core
+[2023-04-14 21:05:48] INFO root fetch - main [MainThread]: End processing [tastytrade-api] error
+[2023-04-14 21:05:48] INFO root fetch - processPackages [zxing]: New version: [1.0] Old Version: [0.9.3]
+[2023-04-14 21:05:48] INFO root fetch - processPackages [antimeridian]: New version: [0.0.2.post0] Old Version: [0.0.2]
+[2023-04-14 21:05:48] INFO root fetch - processPackages [pyasic]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-14 21:05:48] INFO root fetch - processPackages [statistics-core]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 21:05:48] INFO root fetch - processPackages [zxing]: Downloading https://files.pythonhosted.org/packages/98/ec/33cf0e4ee7442ca025b1604b6dbdb040ca9dc326d40479ddd92c735c0520/zxing-0.9.3.tar.gz
+[2023-04-14 21:05:48] INFO root fetch - processPackages [antimeridian]: Downloading https://files.pythonhosted.org/packages/66/7d/453b81677958a2a78671b1d48196f698c642c434c5e6d8b2cd05343496df/antimeridian-0.0.2-py3-none-any.whl
+[2023-04-14 21:05:48] INFO root fetch - processPackages [statistics-core]: Downloading https://files.pythonhosted.org/packages/73/db/03876e9f312cd083407c728e58435351395b69810b4a927bf7fd0d60f89a/statistics_core-0.0.6.tar.gz
+[2023-04-14 21:05:48] INFO root fetch - processPackages [pyasic]: executing diffoscope
+[2023-04-14 21:05:48] INFO root fetch - processPackages [pyasic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyasic-0.9.3.tar.gz tmp/pyasic-0.9.4.tar.gz --markdown 20230414/p/pyasic/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-14 21:05:48] INFO root fetch - processPackages [startstop]: Downloading https://files.pythonhosted.org/packages/c6/8a/0471de4ae20ad4ab2ce5b2ef7334fdded24e8e543817b45839eff6952a13/startstop-1.0.5.tar.gz
+[2023-04-14 21:05:48] INFO root fetch - processPackages [startstop]: executing diffoscope
+[2023-04-14 21:05:48] INFO root fetch - processPackages [startstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/startstop-1.0.4.tar.gz tmp/startstop-1.0.5.tar.gz --markdown 20230414/s/startstop/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-14 21:05:48] INFO root fetch - processPackages [statistics-core]: executing diffoscope
+[2023-04-14 21:05:48] INFO root fetch - processPackages [statistics-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statistics_core-0.0.5.tar.gz tmp/statistics_core-0.0.6.tar.gz --markdown 20230414/s/statistics-core/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 21:05:48] INFO root fetch - processPackages [antimeridian]: Downloading https://files.pythonhosted.org/packages/21/84/c75eb3c931129e8ddee0e85074a12d85e1e09224aff484d544d87d9957ca/antimeridian-0.0.2.post0.tar.gz
+[2023-04-14 21:05:48] WARNING root fetch - processPackages [antimeridian]: Skipping package: exceeds size limit 10975067>=10485760
+[2023-04-14 21:05:48] INFO root fetch - processPackages [antimeridian]: Start processing: thunno2
+[2023-04-14 21:05:48] INFO root fetch - main [MainThread]: End processing [antimeridian] error
+[2023-04-14 21:05:48] INFO root fetch - processPackages [thunno2]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-14 21:05:48] INFO root fetch - processPackages [zxing]: Downloading https://files.pythonhosted.org/packages/ad/d4/db45a4bc5b6d894f57234a877d105f9beda69b4eea9e05fc25786c1cf6f1/zxing-1.0.tar.gz
+[2023-04-14 21:05:48] INFO root fetch - processPackages [zxing]: executing diffoscope
+[2023-04-14 21:05:48] INFO root fetch - processPackages [zxing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zxing-0.9.3.tar.gz tmp/zxing-1.0.tar.gz --markdown 20230414/z/zxing/0.9.3-1.0/diff.md --exclude *.pyd
+[2023-04-14 21:05:48] INFO root fetch - processPackages [thunno2]: Downloading https://files.pythonhosted.org/packages/c2/17/fd854e88ae227b7b99947575ad3dc2957de96c1f7e7d1d887a09987a534b/thunno2-2.0.9.tar.gz
+[2023-04-14 21:05:48] INFO root fetch - processPackages [thunno2]: executing diffoscope
+[2023-04-14 21:05:48] INFO root fetch - processPackages [thunno2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thunno2-2.0.8.tar.gz tmp/thunno2-2.0.9.tar.gz --markdown 20230414/t/thunno2/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-14 21:05:49] INFO root fetch - main [MainThread]: End processing [startstop]: success
+[2023-04-14 21:05:49] INFO root fetch - main [MainThread]: End processing [statistics-core]: success
+[2023-04-14 21:05:50] INFO root fetch - main [MainThread]: End processing [pyasic]: success
+[2023-04-14 21:05:50] INFO root fetch - main [MainThread]: End processing [thunno2]: success
+[2023-04-14 21:08:48] ERROR root fetch - processPackages [zxing]: Timeout during execution of pkgdiff
+[2023-04-14 21:08:48] INFO root fetch - main [MainThread]: End processing [zxing] error
+[2023-04-14 21:08:48] INFO root fetch - main [MainThread]: Store serial: [17711971]
