@@ -19191,3 +19191,80 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 19:33:05] INFO root fetch - main [MainThread]: End processing [oak9-tython]: success
 [2023-04-14 19:33:07] INFO root fetch - main [MainThread]: End processing [vowpal-wabbit-next]: success
 [2023-04-14 19:33:07] INFO root fetch - main [MainThread]: Store serial: [17710775]
+[2023-04-14 19:38:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17710775]
+[2023-04-14 19:38:15] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-14 19:38:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cryptographylibs
+[2023-04-14 19:38:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peaqevcore
+[2023-04-14 19:38:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: piedomains
+[2023-04-14 19:38:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: citipy
+[2023-04-14 19:38:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-konf
+[2023-04-14 19:38:15] INFO root fetch - processPackages [cryptographylibs]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-04-14 19:38:15] INFO root fetch - processPackages [py-konf]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 19:38:15] INFO root fetch - processPackages [citipy]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 19:38:15] INFO root fetch - processPackages [piedomains]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 19:38:15] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-04-14 19:38:15] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-04-14 19:38:15] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230414/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-04-14 19:38:15] INFO root fetch - processPackages [cryptographylibs]: Downloading https://files.pythonhosted.org/packages/3c/56/5de82b5a630476fdc5ca709653aff01ef4e708e737b8be94abc03f40764c/cryptographylibs-1.0.0.tar.gz
+[2023-04-14 19:38:15] INFO root fetch - processPackages [citipy]: Downloading https://files.pythonhosted.org/packages/3b/d0/59721d0f3954781488aac17ee4a40412d0a3547e98bb16377a09c39a2807/citipy-0.0.5.tar.gz
+[2023-04-14 19:38:15] INFO root fetch - processPackages [py-konf]: Downloading https://files.pythonhosted.org/packages/31/c7/2d5a77e1c5fe9a9263287153aa1932d80dcfaa50704f01e995184dd3bfea/py_konf-0.1.2.tar.gz
+[2023-04-14 19:38:15] INFO root fetch - processPackages [piedomains]: executing diffoscope
+[2023-04-14 19:38:15] INFO root fetch - processPackages [piedomains]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piedomains-0.0.8.tar.gz tmp/piedomains-0.0.9.tar.gz --markdown 20230414/p/piedomains/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 19:38:15] INFO root fetch - processPackages [py-konf]: Downloading https://files.pythonhosted.org/packages/1e/f8/80466f4ae8172fadfa259e5fc5b70b0c46ceb776c776a54280fbcffe8556/py_konf-0.1.3.tar.gz
+[2023-04-14 19:38:15] INFO root fetch - processPackages [citipy]: Downloading https://files.pythonhosted.org/packages/37/c5/2a4f1fdd3c62d45887a400ba38af34b08d0b2b44cffc1e86d1b6d33b1897/citipy-0.0.6.tar.gz
+[2023-04-14 19:38:15] INFO root fetch - processPackages [cryptographylibs]: Downloading https://files.pythonhosted.org/packages/6b/31/8da4403c1b9b2e5e6bca297c27f8ca5b17c052ac76e12496892cddbc76d8/cryptographylibs-2.0.0.tar.gz
+[2023-04-14 19:38:15] INFO root fetch - processPackages [py-konf]: executing diffoscope
+[2023-04-14 19:38:15] INFO root fetch - processPackages [py-konf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_konf-0.1.2.tar.gz tmp/py_konf-0.1.3.tar.gz --markdown 20230414/p/py-konf/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 19:38:15] INFO root fetch - processPackages [citipy]: executing diffoscope
+[2023-04-14 19:38:15] INFO root fetch - processPackages [citipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citipy-0.0.5.tar.gz tmp/citipy-0.0.6.tar.gz --markdown 20230414/c/citipy/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 19:38:16] INFO root fetch - processPackages [cryptographylibs]: executing diffoscope
+[2023-04-14 19:38:16] INFO root fetch - processPackages [cryptographylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptographylibs-1.0.0.tar.gz tmp/cryptographylibs-2.0.0.tar.gz --markdown 20230414/c/cryptographylibs/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-14 19:38:16] INFO root fetch - processPackages [peaqevcore]: Start processing: PyMuPDF
+[2023-04-14 19:38:16] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-04-14 19:38:16] INFO root fetch - processPackages [PyMuPDF]: New version: [1.9.2] Old Version: [1.22.0]
+[2023-04-14 19:38:17] INFO root fetch - processPackages [PyMuPDF]: Downloading https://files.pythonhosted.org/packages/c8/9a/d9bc1f709a70dc5f3706c1f844c157b77431da380530d373f14fc6a36ccd/PyMuPDF-1.22.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-14 19:38:17] INFO root fetch - processPackages [py-konf]: Start processing: DeepXDE
+[2023-04-14 19:38:17] INFO root fetch - main [MainThread]: End processing [py-konf]: success
+[2023-04-14 19:38:17] INFO root fetch - processPackages [citipy]: Start processing: fastapi-async-sqlalchemy
+[2023-04-14 19:38:17] INFO root fetch - main [MainThread]: End processing [citipy]: success
+[2023-04-14 19:38:17] INFO root fetch - processPackages [DeepXDE]: New version: [1.8.4] Old Version: [1.8.3]
+[2023-04-14 19:38:17] INFO root fetch - processPackages [fastapi-async-sqlalchemy]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-14 19:38:17] INFO root fetch - processPackages [cryptographylibs]: Start processing: TheSilent
+[2023-04-14 19:38:17] INFO root fetch - main [MainThread]: End processing [cryptographylibs]: success
+[2023-04-14 19:38:17] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 19:38:17] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-14 19:38:17] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230414/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 19:38:17] WARNING root fetch - processPackages [PyMuPDF]: Skipping package: exceeds size limit 14120110>=10485760
+[2023-04-14 19:38:17] INFO root fetch - processPackages [PyMuPDF]: Start processing: cdklabs.cdk-ssm-documents
+[2023-04-14 19:38:17] INFO root fetch - main [MainThread]: End processing [PyMuPDF] error
+[2023-04-14 19:38:17] INFO root fetch - processPackages [cdklabs.cdk-ssm-documents]: New version: [0.0.36] Old Version: [0.0.35]
+[2023-04-14 19:38:17] INFO root fetch - processPackages [DeepXDE]: Downloading https://files.pythonhosted.org/packages/29/52/41d02d2feaa1ebd3e7ae2ae698259bb51c701d065c17013fa2902bb437db/DeepXDE-1.8.3.tar.gz
+[2023-04-14 19:38:17] WARNING root fetch - processPackages [DeepXDE]: Skipping package: exceeds size limit 24717318>=10485760
+[2023-04-14 19:38:17] INFO root fetch - processPackages [DeepXDE]: Start processing: example-package-lokas7755
+[2023-04-14 19:38:17] INFO root fetch - main [MainThread]: End processing [DeepXDE] error
+[2023-04-14 19:38:17] WARNING root fetch - processPackages [example-package-lokas7755]: Skipping, unable to determine old version
+[2023-04-14 19:38:17] INFO root fetch - processPackages [example-package-lokas7755]: Start processing: manim-ml
+[2023-04-14 19:38:17] INFO root fetch - main [MainThread]: End processing [example-package-lokas7755] error
+[2023-04-14 19:38:17] INFO root fetch - processPackages [manim-ml]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 19:38:17] INFO root fetch - processPackages [fastapi-async-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/7e/59/3273c6fb5b12c73635c2b000b751147aad23c853b3b4db68047a00214d81/fastapi-async-sqlalchemy-0.4.1.tar.gz
+[2023-04-14 19:38:17] INFO root fetch - processPackages [cdklabs.cdk-ssm-documents]: Downloading https://files.pythonhosted.org/packages/77/f1/37f955dc3a28f7a5af76ad2584d545a8cc86214a558e8b2c73855db3e601/cdklabs.cdk-ssm-documents-0.0.35.tar.gz
+[2023-04-14 19:38:17] INFO root fetch - processPackages [manim-ml]: executing diffoscope
+[2023-04-14 19:38:17] INFO root fetch - processPackages [manim-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manim-ml-0.0.8.tar.gz tmp/manim-ml-0.0.9.tar.gz --markdown 20230414/m/manim-ml/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 19:38:17] WARNING root fetch - processPackages [cdklabs.cdk-ssm-documents]: Skipping package: exceeds size limit 13606571>=10485760
+[2023-04-14 19:38:17] INFO root fetch - processPackages [cdklabs.cdk-ssm-documents]: Start processing: openmetadata-ingestion
+[2023-04-14 19:38:17] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ssm-documents] error
+[2023-04-14 19:38:17] INFO root fetch - processPackages [openmetadata-ingestion]: New version: [1.0.0.0.dev2] Old Version: [1.0.0.0.dev1]
+[2023-04-14 19:38:17] INFO root fetch - processPackages [fastapi-async-sqlalchemy]: executing diffoscope
+[2023-04-14 19:38:17] INFO root fetch - processPackages [fastapi-async-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-async-sqlalchemy-0.4.0.tar.gz tmp/fastapi-async-sqlalchemy-0.4.1.tar.gz --markdown 20230414/f/fastapi-async-sqlalchemy/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-14 19:38:17] INFO root fetch - processPackages [openmetadata-ingestion]: Downloading https://files.pythonhosted.org/packages/bb/eb/30beabba6d06f38ac82c32e085513845b72607719fa9eb688f5f8cce0b31/openmetadata-ingestion-1.0.0.0.dev2.tar.gz
+[2023-04-14 19:38:18] INFO root fetch - processPackages [openmetadata-ingestion]: executing diffoscope
+[2023-04-14 19:38:18] INFO root fetch - processPackages [openmetadata-ingestion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmetadata-ingestion-1.0.0.0.dev1.tar.gz tmp/openmetadata-ingestion-1.0.0.0.dev2.tar.gz --markdown 20230414/o/openmetadata-ingestion/1.0.0.0.dev1-1.0.0.0.dev2/diff.md --exclude *.pyd
+[2023-04-14 19:38:18] INFO root fetch - processPackages [TheSilent]: Start processing: rk-utils
+[2023-04-14 19:38:18] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-14 19:38:18] WARNING root fetch - processPackages [rk-utils]: Skipping, unable to determine old version
+[2023-04-14 19:38:18] INFO root fetch - main [MainThread]: End processing [rk-utils] error
+[2023-04-14 19:38:18] INFO root fetch - main [MainThread]: End processing [manim-ml]: success
+[2023-04-14 19:38:18] INFO root fetch - main [MainThread]: End processing [fastapi-async-sqlalchemy]: success
+[2023-04-14 19:38:19] INFO root fetch - main [MainThread]: End processing [piedomains]: success
+[2023-04-14 19:38:36] INFO root fetch - main [MainThread]: End processing [openmetadata-ingestion]: success
+[2023-04-14 19:38:36] INFO root fetch - main [MainThread]: Store serial: [17710859]
