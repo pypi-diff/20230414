@@ -21797,3 +21797,70 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 22:20:04] INFO root fetch - main [MainThread]: End processing [datadog-checks-base]: success
 [2023-04-14 22:20:06] INFO root fetch - main [MainThread]: End processing [surveyequivalence]: success
 [2023-04-14 22:20:06] INFO root fetch - main [MainThread]: Store serial: [17712576]
+[2023-04-14 22:25:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712576]
+[2023-04-14 22:25:14] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 22:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schbot
+[2023-04-14 22:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quantconnect-stubs
+[2023-04-14 22:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tonconnect
+[2023-04-14 22:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whappy
+[2023-04-14 22:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: griptape-core
+[2023-04-14 22:25:14] INFO root fetch - processPackages [whappy]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-14 22:25:14] INFO root fetch - processPackages [schbot]: New version: [0.6.2] Old Version: [0.6.0]
+[2023-04-14 22:25:14] WARNING root fetch - processPackages [tonconnect]: Skipping, unable to determine old version
+[2023-04-14 22:25:14] INFO root fetch - processPackages [tonconnect]: Start processing: lbutils-mp
+[2023-04-14 22:25:14] INFO root fetch - main [MainThread]: End processing [tonconnect] error
+[2023-04-14 22:25:14] INFO root fetch - processPackages [griptape-core]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-14 22:25:14] INFO root fetch - processPackages [lbutils-mp]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 22:25:14] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-14 22:25:14] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-14 22:25:14] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230414/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-14 22:25:14] INFO root fetch - processPackages [schbot]: Downloading https://files.pythonhosted.org/packages/ad/f6/fd6f7cb691d6774c011d22208210ca2e375726aa90d6a5e73d951b73de74/schbot-0.6.0-py3-none-any.whl
+[2023-04-14 22:25:14] INFO root fetch - processPackages [whappy]: Downloading https://files.pythonhosted.org/packages/62/51/71c26c66b72548aa7b90d529f829cb9929630b40904c5c93250541c51211/whappy-0.2.1.tar.gz
+[2023-04-14 22:25:14] INFO root fetch - processPackages [griptape-core]: Downloading https://files.pythonhosted.org/packages/61/76/619f4830cca6cb8b9fce9deed4706f2fc1e3fcab5731604d4a2b15df8ddb/griptape_core-0.7.3.tar.gz
+[2023-04-14 22:25:14] INFO root fetch - processPackages [lbutils-mp]: Downloading https://files.pythonhosted.org/packages/58/75/df2a59349616f166430c3e8c1bede3658b848eb8fcaa03db32f2551b93e8/lbutils-mp-0.2.2.tar.gz
+[2023-04-14 22:25:14] INFO root fetch - processPackages [whappy]: executing diffoscope
+[2023-04-14 22:25:14] INFO root fetch - processPackages [griptape-core]: executing diffoscope
+[2023-04-14 22:25:14] INFO root fetch - processPackages [whappy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whappy-0.2.0.tar.gz tmp/whappy-0.2.1.tar.gz --markdown 20230414/w/whappy/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 22:25:14] INFO root fetch - processPackages [griptape-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape_core-0.7.2.tar.gz tmp/griptape_core-0.7.3.tar.gz --markdown 20230414/g/griptape-core/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-14 22:25:15] INFO root fetch - processPackages [lbutils-mp]: executing diffoscope
+[2023-04-14 22:25:15] INFO root fetch - processPackages [lbutils-mp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbutils-mp-0.2.1.tar.gz tmp/lbutils-mp-0.2.2.tar.gz --markdown 20230414/l/lbutils-mp/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 22:25:15] INFO root fetch - processPackages [schbot]: Downloading https://files.pythonhosted.org/packages/72/ad/c0faedc5ec566b1a2f432e48a40ede62b2937404796c1a4aea1d28c8c299/schbot-0.6.2-py3-none-any.whl
+[2023-04-14 22:25:15] INFO root fetch - processPackages [schbot]: executing diffoscope
+[2023-04-14 22:25:15] INFO root fetch - processPackages [schbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schbot-0.6.0-py3-none-any.whl.zip tmp/schbot-0.6.2-py3-none-any.whl.zip --markdown 20230414/s/schbot/0.6.0-0.6.2/diff.md --exclude *.pyd
+[2023-04-14 22:25:16] INFO root fetch - processPackages [whappy]: Start processing: theforensicator
+[2023-04-14 22:25:16] INFO root fetch - main [MainThread]: End processing [whappy]: success
+[2023-04-14 22:25:16] INFO root fetch - processPackages [theforensicator]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-14 22:25:16] INFO root fetch - processPackages [griptape-core]: Start processing: argumentor
+[2023-04-14 22:25:16] INFO root fetch - main [MainThread]: End processing [griptape-core]: success
+[2023-04-14 22:25:16] INFO root fetch - processPackages [argumentor]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-14 22:25:16] INFO root fetch - processPackages [theforensicator]: Downloading https://files.pythonhosted.org/packages/54/c4/d612b4105b25321242070b0d6ae4d7a7008cdfd271c18c7cbe6a284aea8e/theforensicator-0.1.0.tar.gz
+[2023-04-14 22:25:16] INFO root fetch - processPackages [schbot]: Start processing: gentrace-py
+[2023-04-14 22:25:16] INFO root fetch - main [MainThread]: End processing [schbot]: success
+[2023-04-14 22:25:16] INFO root fetch - processPackages [gentrace-py]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 22:25:16] INFO root fetch - processPackages [argumentor]: Downloading https://files.pythonhosted.org/packages/a0/ce/740f10b9571bb7d954d4678075674bc004ab6bafb8be68d451cf24eba26f/argumentor-1.0.0.tar.gz
+[2023-04-14 22:25:16] INFO root fetch - processPackages [lbutils-mp]: Start processing: tonconnect
+[2023-04-14 22:25:16] INFO root fetch - main [MainThread]: End processing [lbutils-mp]: success
+[2023-04-14 22:25:16] INFO root fetch - processPackages [tonconnect]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 22:25:16] INFO root fetch - processPackages [theforensicator]: Downloading https://files.pythonhosted.org/packages/20/cc/6e55961939079bbdc28cd903e6b33de8bea41f7b5d6e0ae4251204bc566c/theforensicator-0.1.2.tar.gz
+[2023-04-14 22:25:16] INFO root fetch - processPackages [gentrace-py]: Downloading https://files.pythonhosted.org/packages/88/3b/ada179a008cd14e6b397c516dcafd1e7623ec6970b99b4f795c17ac366f3/gentrace_py-0.2.1.tar.gz
+[2023-04-14 22:25:16] INFO root fetch - processPackages [tonconnect]: Downloading https://files.pythonhosted.org/packages/fb/68/0088820f2becdab4300704b405a19a084488b096194fa3f898c3347fdd9d/tonconnect-0.0.1.tar.gz
+[2023-04-14 22:25:16] INFO root fetch - processPackages [argumentor]: Downloading https://files.pythonhosted.org/packages/13/5a/966355c01d15da1f90e9b9d9b010afb47998f6824dfc90b264256a7e8af6/argumentor-1.1.0.tar.gz
+[2023-04-14 22:25:16] INFO root fetch - processPackages [theforensicator]: executing diffoscope
+[2023-04-14 22:25:16] INFO root fetch - processPackages [theforensicator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/theforensicator-0.1.0.tar.gz tmp/theforensicator-0.1.2.tar.gz --markdown 20230414/t/theforensicator/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 22:25:16] INFO root fetch - processPackages [gentrace-py]: Downloading https://files.pythonhosted.org/packages/68/61/b4c9ae91df88de2f68ba27e96eeb30ceb6c8543048aa6d73b0ee890e29d7/gentrace_py-0.2.2.tar.gz
+[2023-04-14 22:25:16] INFO root fetch - processPackages [tonconnect]: Downloading https://files.pythonhosted.org/packages/b5/61/6e53900fd1b46fff4c5ebdb1c64ce2501cc34d9d60871b48ee0d5694b619/tonconnect-0.0.2.tar.gz
+[2023-04-14 22:25:16] INFO root fetch - processPackages [argumentor]: executing diffoscope
+[2023-04-14 22:25:16] INFO root fetch - processPackages [argumentor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argumentor-1.0.0.tar.gz tmp/argumentor-1.1.0.tar.gz --markdown 20230414/a/argumentor/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-14 22:25:17] INFO root fetch - processPackages [tonconnect]: executing diffoscope
+[2023-04-14 22:25:17] INFO root fetch - processPackages [tonconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tonconnect-0.0.1.tar.gz tmp/tonconnect-0.0.2.tar.gz --markdown 20230414/t/tonconnect/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 22:25:17] INFO root fetch - processPackages [gentrace-py]: executing diffoscope
+[2023-04-14 22:25:17] INFO root fetch - processPackages [gentrace-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gentrace_py-0.2.1.tar.gz tmp/gentrace_py-0.2.2.tar.gz --markdown 20230414/g/gentrace-py/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 22:25:17] INFO root fetch - processPackages [theforensicator]: Start processing: esprepomanager
+[2023-04-14 22:25:17] INFO root fetch - main [MainThread]: End processing [theforensicator]: success
+[2023-04-14 22:25:18] WARNING root fetch - processPackages [esprepomanager]: Skipping, unable to determine old version
+[2023-04-14 22:25:18] INFO root fetch - main [MainThread]: End processing [esprepomanager] error
+[2023-04-14 22:25:18] INFO root fetch - main [MainThread]: End processing [argumentor]: success
+[2023-04-14 22:25:18] INFO root fetch - main [MainThread]: End processing [gentrace-py]: success
+[2023-04-14 22:25:18] INFO root fetch - main [MainThread]: End processing [tonconnect]: success
+[2023-04-14 22:25:19] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-04-14 22:25:19] INFO root fetch - main [MainThread]: Store serial: [17712624]
