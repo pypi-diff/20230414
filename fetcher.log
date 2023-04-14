@@ -7099,3 +7099,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 06:35:39] INFO root fetch - main [MainThread]: End processing [CrossPy]: success
 [2023-04-14 06:35:39] INFO root fetch - main [MainThread]: End processing [selectfix]: success
 [2023-04-14 06:35:39] INFO root fetch - main [MainThread]: Store serial: [17703188]
+[2023-04-14 06:40:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703188]
+[2023-04-14 06:40:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-14 06:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpt-api
+[2023-04-14 06:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: StaticVar
+[2023-04-14 06:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vit
+[2023-04-14 06:40:46] INFO root fetch - processPackages [StaticVar]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 06:40:46] INFO root fetch - processPackages [gpt-api]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-04-14 06:40:46] INFO root fetch - processPackages [vit]: New version: [2.3.0] Old Version: [2.2.0b1]
+[2023-04-14 06:40:46] INFO root fetch - processPackages [StaticVar]: Downloading https://files.pythonhosted.org/packages/f1/e7/c9814b55a6e33cc6bdaa2cf839365288405810ecf576c4146bb680388f33/StaticVar-0.0.1.tar.gz
+[2023-04-14 06:40:46] INFO root fetch - processPackages [vit]: Downloading https://files.pythonhosted.org/packages/ae/f1/64946a912241e5b1118c99013a1396253342d95ca48a1bfe3d91aa4ad8ee/vit-2.2.0b1.tar.gz
+[2023-04-14 06:40:46] INFO root fetch - processPackages [gpt-api]: Downloading https://files.pythonhosted.org/packages/5b/15/0ebf19d92d8947083383df56ddda5786c8dfb98966748ea8c1be3d6a383e/gpt-api-0.2.0.tar.gz
+[2023-04-14 06:40:47] INFO root fetch - processPackages [gpt-api]: executing diffoscope
+[2023-04-14 06:40:47] INFO root fetch - processPackages [gpt-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-api-0.1.3.tar.gz tmp/gpt-api-0.2.0.tar.gz --markdown 20230414/g/gpt-api/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 06:40:47] INFO root fetch - processPackages [vit]: Downloading https://files.pythonhosted.org/packages/44/1c/e92432357d5dd26ad086e4a05ff066c0539e754fbe3dfdd78e0cb206964b/vit-2.3.0.tar.gz
+[2023-04-14 06:40:47] INFO root fetch - processPackages [StaticVar]: Downloading https://files.pythonhosted.org/packages/39/68/20ca2b444ccbf7209a1d5170d194e898ed54594870377a5183842dcfbe0a/StaticVar-0.0.2.tar.gz
+[2023-04-14 06:40:47] INFO root fetch - processPackages [vit]: executing diffoscope
+[2023-04-14 06:40:47] INFO root fetch - processPackages [vit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vit-2.2.0b1.tar.gz tmp/vit-2.3.0.tar.gz --markdown 20230414/v/vit/2.2.0b1-2.3.0/diff.md --exclude *.pyd
+[2023-04-14 06:40:47] INFO root fetch - processPackages [StaticVar]: executing diffoscope
+[2023-04-14 06:40:47] INFO root fetch - processPackages [StaticVar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StaticVar-0.0.1.tar.gz tmp/StaticVar-0.0.2.tar.gz --markdown 20230414/S/StaticVar/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 06:40:48] INFO root fetch - main [MainThread]: End processing [gpt-api]: success
+[2023-04-14 06:40:48] INFO root fetch - main [MainThread]: End processing [StaticVar]: success
+[2023-04-14 06:40:49] INFO root fetch - main [MainThread]: End processing [vit]: success
+[2023-04-14 06:40:49] INFO root fetch - main [MainThread]: Store serial: [17703201]
