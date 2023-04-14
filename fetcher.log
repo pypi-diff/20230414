@@ -20069,3 +20069,80 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:23:17] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-04-14 20:23:19] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2023-04-14 20:23:19] INFO root fetch - main [MainThread]: Store serial: [17711411]
+[2023-04-14 20:28:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711411]
+[2023-04-14 20:28:27] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 20:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nextline-graphql
+[2023-04-14 20:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QPUIQ
+[2023-04-14 20:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coffea
+[2023-04-14 20:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlblocks
+[2023-04-14 20:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: butterneck-projen
+[2023-04-14 20:28:27] INFO root fetch - processPackages [QPUIQ]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 20:28:27] INFO root fetch - processPackages [nextline-graphql]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-14 20:28:27] INFO root fetch - processPackages [mlblocks]: New version: [0.5.1.dev0] Old Version: [0.5.0]
+[2023-04-14 20:28:27] INFO root fetch - processPackages [butterneck-projen]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 20:28:27] INFO root fetch - processPackages [coffea]: New version: [2023.4.0rc1] Old Version: [2023.4.0rc0]
+[2023-04-14 20:28:27] INFO root fetch - processPackages [nextline-graphql]: Downloading https://files.pythonhosted.org/packages/13/ad/0c5ea7d1fcfee0748c63a32b00898d927d0a572d1f65c2b5e7d5898fb6cf/nextline_graphql-0.5.2.tar.gz
+[2023-04-14 20:28:27] INFO root fetch - processPackages [coffea]: Downloading https://files.pythonhosted.org/packages/cf/b1/58ca63adbdbce5ab876d8bddb3bfce3a5029545cb6198eac006a6a0cd6da/coffea-2023.4.0rc0.tar.gz
+[2023-04-14 20:28:27] INFO root fetch - processPackages [QPUIQ]: Downloading https://files.pythonhosted.org/packages/ac/ab/cb7361330cf7d48a5fb78787af3c14795da1fdf1899ecb26692f7885583b/QPUIQ-0.1.2.tar.gz
+[2023-04-14 20:28:27] INFO root fetch - processPackages [butterneck-projen]: Downloading https://files.pythonhosted.org/packages/7b/5b/4f544cde446d18533fe67cef611ca081ec527ce3e538706b29394c776844/butterneck-projen-0.0.4.tar.gz
+[2023-04-14 20:28:27] INFO root fetch - processPackages [mlblocks]: Downloading https://files.pythonhosted.org/packages/a9/50/60fa7864b86714183d3970dd1e0a125052eca9347086b779e107866a2100/mlblocks-0.5.0.tar.gz
+[2023-04-14 20:28:27] WARNING root fetch - processPackages [coffea]: Skipping package: exceeds size limit 12216843>=10485760
+[2023-04-14 20:28:27] INFO root fetch - processPackages [coffea]: Start processing: sdgrate
+[2023-04-14 20:28:27] INFO root fetch - main [MainThread]: End processing [coffea] error
+[2023-04-14 20:28:28] INFO root fetch - processPackages [sdgrate]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 20:28:28] INFO root fetch - processPackages [nextline-graphql]: Downloading https://files.pythonhosted.org/packages/e0/97/cd1b8d8793d733e321f416ca6b8b91cf382c87beb7943dc6bbe7bd88ee67/nextline_graphql-0.5.3.tar.gz
+[2023-04-14 20:28:28] INFO root fetch - processPackages [QPUIQ]: Downloading https://files.pythonhosted.org/packages/16/9c/6b65c01d0da42562081d6a8ae0a56ebf3da5f6d5c54e13d06fbe627cd62f/QPUIQ-0.1.3.tar.gz
+[2023-04-14 20:28:28] INFO root fetch - processPackages [mlblocks]: Downloading https://files.pythonhosted.org/packages/69/4d/777afd7b48c70dcf8bfa8007500feeec03d697a067d7c451e46604628e71/mlblocks-0.5.1.dev0.tar.gz
+[2023-04-14 20:28:28] INFO root fetch - processPackages [sdgrate]: Downloading https://files.pythonhosted.org/packages/5d/11/93b4c645e58ea581e036a35968ba96cea697872657e793c7b32a77e7404a/sdgrate-0.2.1.tar.gz
+[2023-04-14 20:28:28] INFO root fetch - processPackages [butterneck-projen]: Downloading https://files.pythonhosted.org/packages/71/a7/8fcc1330948b33c608aa08b126be21602c29befd32b6f8ca26f11c24c686/butterneck-projen-0.0.5.tar.gz
+[2023-04-14 20:28:28] INFO root fetch - processPackages [QPUIQ]: executing diffoscope
+[2023-04-14 20:28:28] INFO root fetch - processPackages [QPUIQ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QPUIQ-0.1.2.tar.gz tmp/QPUIQ-0.1.3.tar.gz --markdown 20230414/Q/QPUIQ/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 20:28:28] INFO root fetch - processPackages [nextline-graphql]: executing diffoscope
+[2023-04-14 20:28:28] INFO root fetch - processPackages [nextline-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextline_graphql-0.5.2.tar.gz tmp/nextline_graphql-0.5.3.tar.gz --markdown 20230414/n/nextline-graphql/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-14 20:28:28] INFO root fetch - processPackages [mlblocks]: executing diffoscope
+[2023-04-14 20:28:28] INFO root fetch - processPackages [mlblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlblocks-0.5.0.tar.gz tmp/mlblocks-0.5.1.dev0.tar.gz --markdown 20230414/m/mlblocks/0.5.0-0.5.1.dev0/diff.md --exclude *.pyd
+[2023-04-14 20:28:28] INFO root fetch - processPackages [butterneck-projen]: executing diffoscope
+[2023-04-14 20:28:28] INFO root fetch - processPackages [butterneck-projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/butterneck-projen-0.0.4.tar.gz tmp/butterneck-projen-0.0.5.tar.gz --markdown 20230414/b/butterneck-projen/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 20:28:28] INFO root fetch - processPackages [sdgrate]: Downloading https://files.pythonhosted.org/packages/58/dd/4626baec791d1375c492cb848412c13647d81f641193d531bbba496101e4/sdgrate-0.2.2.tar.gz
+[2023-04-14 20:28:28] INFO root fetch - processPackages [sdgrate]: executing diffoscope
+[2023-04-14 20:28:28] INFO root fetch - processPackages [sdgrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdgrate-0.2.1.tar.gz tmp/sdgrate-0.2.2.tar.gz --markdown 20230414/s/sdgrate/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 20:28:29] INFO root fetch - processPackages [nextline-graphql]: Start processing: OpenABC
+[2023-04-14 20:28:29] INFO root fetch - main [MainThread]: End processing [nextline-graphql]: success
+[2023-04-14 20:28:29] WARNING root fetch - processPackages [OpenABC]: Skipping, unable to determine old version
+[2023-04-14 20:28:29] INFO root fetch - processPackages [OpenABC]: Start processing: pyschism
+[2023-04-14 20:28:29] INFO root fetch - main [MainThread]: End processing [OpenABC] error
+[2023-04-14 20:28:29] INFO root fetch - processPackages [pyschism]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-14 20:28:29] INFO root fetch - processPackages [QPUIQ]: Start processing: auto_rxn
+[2023-04-14 20:28:29] INFO root fetch - main [MainThread]: End processing [QPUIQ]: success
+[2023-04-14 20:28:29] WARNING root fetch - processPackages [auto_rxn]: Skipping, unable to determine old version
+[2023-04-14 20:28:29] INFO root fetch - processPackages [auto_rxn]: Start processing: hujdgzx
+[2023-04-14 20:28:29] INFO root fetch - main [MainThread]: End processing [auto_rxn] error
+[2023-04-14 20:28:29] WARNING root fetch - processPackages [hujdgzx]: Skipping, unable to determine old version
+[2023-04-14 20:28:29] INFO root fetch - processPackages [hujdgzx]: Start processing: TapisCL-ICICLE
+[2023-04-14 20:28:29] INFO root fetch - main [MainThread]: End processing [hujdgzx] error
+[2023-04-14 20:28:29] INFO root fetch - processPackages [butterneck-projen]: Start processing: ypricemagic
+[2023-04-14 20:28:29] INFO root fetch - main [MainThread]: End processing [butterneck-projen]: success
+[2023-04-14 20:28:29] INFO root fetch - processPackages [TapisCL-ICICLE]: New version: [0.0.25] Old Version: [0.0.24]
+[2023-04-14 20:28:29] INFO root fetch - processPackages [ypricemagic]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-04-14 20:28:29] INFO root fetch - processPackages [pyschism]: Downloading https://files.pythonhosted.org/packages/f3/fa/15512a56a8f58a169f48980e201ee68b71d2f4b0c89d9569083240e0d61a/pyschism-0.1.6.tar.gz
+[2023-04-14 20:28:29] INFO root fetch - processPackages [ypricemagic]: executing diffoscope
+[2023-04-14 20:28:29] INFO root fetch - processPackages [ypricemagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ypricemagic-2.1.5.tar.gz tmp/ypricemagic-2.1.6.tar.gz --markdown 20230414/y/ypricemagic/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-04-14 20:28:29] INFO root fetch - processPackages [mlblocks]: Start processing: python-plus
+[2023-04-14 20:28:29] INFO root fetch - main [MainThread]: End processing [mlblocks]: success
+[2023-04-14 20:28:29] INFO root fetch - processPackages [TapisCL-ICICLE]: Downloading https://files.pythonhosted.org/packages/2e/dd/b701232a27b118bb88ff07259ec6ac2c9a1e09c8842a62dde4df14531684/TapisCL-ICICLE-0.0.25.tar.gz
+[2023-04-14 20:28:29] INFO root fetch - processPackages [python-plus]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-04-14 20:28:30] INFO root fetch - processPackages [TapisCL-ICICLE]: executing diffoscope
+[2023-04-14 20:28:30] INFO root fetch - processPackages [TapisCL-ICICLE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TapisCL-ICICLE-0.0.24.tar.gz tmp/TapisCL-ICICLE-0.0.25.tar.gz --markdown 20230414/T/TapisCL-ICICLE/0.0.24-0.0.25/diff.md --exclude *.pyd
+[2023-04-14 20:28:30] INFO root fetch - processPackages [pyschism]: Downloading https://files.pythonhosted.org/packages/41/25/0ba406dcdf6ea42cc460f48f89fb30b341f7fc63658708bab45dc0fe48ab/pyschism-0.1.7.tar.gz
+[2023-04-14 20:28:30] INFO root fetch - processPackages [python-plus]: Downloading https://files.pythonhosted.org/packages/4a/01/2e38b2d196fb6c84b16ac3521072eed7e5bfd302227a637e387e952c8b94/python_plus-2.0.5.tar.gz
+[2023-04-14 20:28:30] INFO root fetch - processPackages [pyschism]: executing diffoscope
+[2023-04-14 20:28:30] INFO root fetch - processPackages [pyschism]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyschism-0.1.6.tar.gz tmp/pyschism-0.1.7.tar.gz --markdown 20230414/p/pyschism/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-14 20:28:30] INFO root fetch - processPackages [python-plus]: Downloading https://files.pythonhosted.org/packages/34/6a/b73f5661d2a620c77963477277d4fcc45acd7db3bee004c93b77dd70f81c/python_plus-2.0.6.tar.gz
+[2023-04-14 20:28:30] INFO root fetch - main [MainThread]: End processing [sdgrate]: success
+[2023-04-14 20:28:30] INFO root fetch - processPackages [python-plus]: executing diffoscope
+[2023-04-14 20:28:30] INFO root fetch - processPackages [python-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_plus-2.0.5.tar.gz tmp/python_plus-2.0.6.tar.gz --markdown 20230414/p/python-plus/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-04-14 20:28:31] INFO root fetch - main [MainThread]: End processing [TapisCL-ICICLE]: success
+[2023-04-14 20:28:31] INFO root fetch - main [MainThread]: End processing [ypricemagic]: success
+[2023-04-14 20:28:31] INFO root fetch - main [MainThread]: End processing [python-plus]: success
+[2023-04-14 20:28:32] INFO root fetch - main [MainThread]: End processing [pyschism]: success
+[2023-04-14 20:28:32] INFO root fetch - main [MainThread]: Store serial: [17711483]
