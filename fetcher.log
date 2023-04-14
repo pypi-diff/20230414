@@ -9944,3 +9944,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 10:48:53] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-04-14 10:48:56] INFO root fetch - main [MainThread]: End processing [mixturemapping]: success
 [2023-04-14 10:48:56] INFO root fetch - main [MainThread]: Store serial: [17704760]
+[2023-04-14 10:53:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704760]
+[2023-04-14 10:54:04] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 10:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Tom-Toolbox
+[2023-04-14 10:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kkpyutil
+[2023-04-14 10:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pheno-utils
+[2023-04-14 10:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Geode-SimplexGeosciences
+[2023-04-14 10:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: govtech-data
+[2023-04-14 10:54:04] INFO root fetch - processPackages [Tom-Toolbox]: New version: [0.0.1.post2] Old Version: [0.0.1.post1]
+[2023-04-14 10:54:04] WARNING root fetch - processPackages [govtech-data]: Skipping, unable to determine old version
+[2023-04-14 10:54:04] INFO root fetch - processPackages [govtech-data]: Start processing: zopperuuid
+[2023-04-14 10:54:04] INFO root fetch - main [MainThread]: End processing [govtech-data] error
+[2023-04-14 10:54:04] INFO root fetch - processPackages [pheno-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 10:54:04] WARNING root fetch - processPackages [Geode-SimplexGeosciences]: Skipping, unable to determine old version
+[2023-04-14 10:54:04] INFO root fetch - processPackages [Geode-SimplexGeosciences]: Start processing: ddr-analysis-tools
+[2023-04-14 10:54:04] INFO root fetch - main [MainThread]: End processing [Geode-SimplexGeosciences] error
+[2023-04-14 10:54:04] INFO root fetch - processPackages [kkpyutil]: New version: [0.99.1] Old Version: [0.99.0]
+[2023-04-14 10:54:04] INFO root fetch - processPackages [ddr-analysis-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 10:54:04] INFO root fetch - processPackages [pheno-utils]: executing diffoscope
+[2023-04-14 10:54:04] INFO root fetch - processPackages [pheno-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheno-utils-0.0.8.tar.gz tmp/pheno-utils-0.0.9.tar.gz --markdown 20230414/p/pheno-utils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 10:54:04] WARNING root fetch - processPackages [zopperuuid]: Skipping, unable to determine old version
+[2023-04-14 10:54:04] INFO root fetch - processPackages [zopperuuid]: Start processing: list-dataloaders
+[2023-04-14 10:54:04] INFO root fetch - main [MainThread]: End processing [zopperuuid] error
+[2023-04-14 10:54:04] WARNING root fetch - processPackages [list-dataloaders]: Skipping, unable to determine old version
+[2023-04-14 10:54:04] INFO root fetch - processPackages [list-dataloaders]: Start processing: qutewindow
+[2023-04-14 10:54:04] INFO root fetch - main [MainThread]: End processing [list-dataloaders] error
+[2023-04-14 10:54:04] INFO root fetch - processPackages [Tom-Toolbox]: Downloading https://files.pythonhosted.org/packages/31/f5/a5d31d3ac8084aa30f7b7f3bece1a37353b43e134f6a74dd2d8a078ffd7a/Tom-Toolbox-0.0.1.post2.tar.gz
+[2023-04-14 10:54:04] INFO root fetch - processPackages [qutewindow]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 10:54:04] INFO root fetch - processPackages [ddr-analysis-tools]: Downloading https://files.pythonhosted.org/packages/63/ab/4ec7a53d2b0f217e850e03094f5e6a1d26d3be703297c0eff05a522fc32e/ddr_analysis_tools-0.0.9.tar.gz
+[2023-04-14 10:54:04] INFO root fetch - processPackages [ddr-analysis-tools]: executing diffoscope
+[2023-04-14 10:54:04] INFO root fetch - processPackages [ddr-analysis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddr_analysis_tools-0.0.8.tar.gz tmp/ddr_analysis_tools-0.0.9.tar.gz --markdown 20230414/d/ddr-analysis-tools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 10:54:05] INFO root fetch - processPackages [qutewindow]: executing diffoscope
+[2023-04-14 10:54:05] INFO root fetch - processPackages [qutewindow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qutewindow-0.1.8.tar.gz tmp/qutewindow-0.1.9.tar.gz --markdown 20230414/q/qutewindow/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 10:54:05] INFO root fetch - processPackages [Tom-Toolbox]: executing diffoscope
+[2023-04-14 10:54:05] INFO root fetch - processPackages [Tom-Toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Tom-Toolbox-0.0.1.post1.tar.gz tmp/Tom-Toolbox-0.0.1.post2.tar.gz --markdown 20230414/T/Tom-Toolbox/0.0.1.post1-0.0.1.post2/diff.md --exclude *.pyd
+[2023-04-14 10:54:05] INFO root fetch - processPackages [kkpyutil]: executing diffoscope
+[2023-04-14 10:54:05] INFO root fetch - processPackages [kkpyutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyutil-0.99.0.tar.gz tmp/kkpyutil-0.99.1.tar.gz --markdown 20230414/k/kkpyutil/0.99.0-0.99.1/diff.md --exclude *.pyd
+[2023-04-14 10:54:06] INFO root fetch - processPackages [pheno-utils]: Start processing: oauth2-client
+[2023-04-14 10:54:06] INFO root fetch - processPackages [Tom-Toolbox]: Start processing: web-poe-api
+[2023-04-14 10:54:06] INFO root fetch - main [MainThread]: End processing [pheno-utils]: success
+[2023-04-14 10:54:06] INFO root fetch - main [MainThread]: End processing [Tom-Toolbox]: success
+[2023-04-14 10:54:06] WARNING root fetch - processPackages [web-poe-api]: Skipping, unable to determine old version
+[2023-04-14 10:54:06] INFO root fetch - processPackages [web-poe-api]: Start processing: cccrontab
+[2023-04-14 10:54:06] INFO root fetch - main [MainThread]: End processing [web-poe-api] error
+[2023-04-14 10:54:06] INFO root fetch - processPackages [oauth2-client]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-14 10:54:06] INFO root fetch - processPackages [cccrontab]: New version: [1.3] Old Version: [1.1]
+[2023-04-14 10:54:06] INFO root fetch - main [MainThread]: End processing [kkpyutil]: success
+[2023-04-14 10:54:06] INFO root fetch - main [MainThread]: End processing [ddr-analysis-tools]: success
+[2023-04-14 10:54:06] INFO root fetch - processPackages [oauth2-client]: Downloading https://files.pythonhosted.org/packages/d6/0c/938044f495fc8253f12aa5b0e7835ea9973434a98bb816a1bf34b6a37d91/oauth2-client-1.3.0.tar.gz
+[2023-04-14 10:54:06] INFO root fetch - main [MainThread]: End processing [qutewindow]: success
+[2023-04-14 10:54:06] INFO root fetch - processPackages [cccrontab]: Downloading https://files.pythonhosted.org/packages/40/46/551a0fce0725f12497f9348f9bfcbc97c3698f4c1c1910d09311bcb97b79/cccrontab-1.3.tar.gz
+[2023-04-14 10:54:06] INFO root fetch - processPackages [cccrontab]: executing diffoscope
+[2023-04-14 10:54:06] INFO root fetch - processPackages [cccrontab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cccrontab-1.1.tar.gz tmp/cccrontab-1.3.tar.gz --markdown 20230414/c/cccrontab/1.1-1.3/diff.md --exclude *.pyd
+[2023-04-14 10:54:06] INFO root fetch - processPackages [oauth2-client]: Downloading https://files.pythonhosted.org/packages/4c/24/fc93c244b3533df61c09dd1dfe8085ce5f0c3dbec57a29e9c4c8c425156c/oauth2-client-1.4.0.tar.gz
+[2023-04-14 10:54:06] INFO root fetch - processPackages [oauth2-client]: executing diffoscope
+[2023-04-14 10:54:06] INFO root fetch - processPackages [oauth2-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oauth2-client-1.3.0.tar.gz tmp/oauth2-client-1.4.0.tar.gz --markdown 20230414/o/oauth2-client/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-14 10:54:07] INFO root fetch - main [MainThread]: End processing [cccrontab]: success
+[2023-04-14 10:54:07] INFO root fetch - main [MainThread]: End processing [oauth2-client]: success
+[2023-04-14 10:54:07] INFO root fetch - main [MainThread]: Store serial: [17704809]
