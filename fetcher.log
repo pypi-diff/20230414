@@ -22488,3 +22488,140 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 23:17:44] INFO root fetch - main [MainThread]: End processing [turbo-queue]: success
 [2023-04-14 23:17:44] INFO root fetch - main [MainThread]: End processing [chatarena]: success
 [2023-04-14 23:17:44] INFO root fetch - main [MainThread]: Store serial: [17712991]
+[2023-04-14 23:22:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712991]
+[2023-04-14 23:22:52] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-14 23:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-mongorest-mpcontribs
+[2023-04-14 23:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbt-redshift
+[2023-04-14 23:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dkist-processing-test
+[2023-04-14 23:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlfluff
+[2023-04-14 23:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlfluff-templater-dbt
+[2023-04-14 23:22:52] INFO root fetch - processPackages [flask-mongorest-mpcontribs]: New version: [3.3.0] Old Version: [3.2.4]
+[2023-04-14 23:22:52] INFO root fetch - processPackages [sqlfluff]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-14 23:22:52] INFO root fetch - processPackages [dbt-redshift]: New version: [1.5.0rc1] Old Version: [1.5.0b4]
+[2023-04-14 23:22:52] INFO root fetch - processPackages [sqlfluff-templater-dbt]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-14 23:22:52] INFO root fetch - processPackages [dkist-processing-test]: New version: [1.0.9rc3] Old Version: [1.0.9rc2]
+[2023-04-14 23:22:52] INFO root fetch - processPackages [flask-mongorest-mpcontribs]: Downloading https://files.pythonhosted.org/packages/06/0f/1baf101ded03fca7cdedd0323e0b6ce30b19087e30cd05fa8d3a3a924c74/flask-mongorest-mpcontribs-3.2.4.tar.gz
+[2023-04-14 23:22:52] INFO root fetch - processPackages [dkist-processing-test]: executing diffoscope
+[2023-04-14 23:22:52] INFO root fetch - processPackages [dkist-processing-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-processing-test-1.0.9rc2.tar.gz tmp/dkist-processing-test-1.0.9rc3.tar.gz --markdown 20230414/d/dkist-processing-test/1.0.9rc2-1.0.9rc3/diff.md --exclude *.pyd
+[2023-04-14 23:22:52] INFO root fetch - processPackages [dbt-redshift]: Downloading https://files.pythonhosted.org/packages/f4/50/72569fe26b89d7408595be0f9ce565db4facd42d34ddd53a676b917ae2fc/dbt-redshift-1.5.0b4.tar.gz
+[2023-04-14 23:22:52] INFO root fetch - processPackages [sqlfluff-templater-dbt]: Downloading https://files.pythonhosted.org/packages/aa/12/9bfba20577301793bfedb991cb096f5ca74b81c7421bacb7908e7df31087/sqlfluff-templater-dbt-2.0.5.tar.gz
+[2023-04-14 23:22:52] INFO root fetch - processPackages [sqlfluff]: Downloading https://files.pythonhosted.org/packages/84/f3/a2062b04b6bd5e2c1322779f367bf51f63ca8a3f5d6bfb14f7b8d2dce3f2/sqlfluff-2.0.5.tar.gz
+[2023-04-14 23:22:52] INFO root fetch - processPackages [sqlfluff-templater-dbt]: executing diffoscope
+[2023-04-14 23:22:52] INFO root fetch - processPackages [sqlfluff-templater-dbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlfluff-templater-dbt-2.0.4.tar.gz tmp/sqlfluff-templater-dbt-2.0.5.tar.gz --markdown 20230414/s/sqlfluff-templater-dbt/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-14 23:22:53] INFO root fetch - processPackages [flask-mongorest-mpcontribs]: Downloading https://files.pythonhosted.org/packages/73/57/9eafaa2bfe95d9a4b05e8d505cc17e89fbdfcc14feeddc4a2a13eac9a710/flask-mongorest-mpcontribs-3.3.0.tar.gz
+[2023-04-14 23:22:53] INFO root fetch - processPackages [sqlfluff]: executing diffoscope
+[2023-04-14 23:22:53] INFO root fetch - processPackages [sqlfluff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlfluff-2.0.4.tar.gz tmp/sqlfluff-2.0.5.tar.gz --markdown 20230414/s/sqlfluff/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-14 23:22:53] INFO root fetch - processPackages [flask-mongorest-mpcontribs]: executing diffoscope
+[2023-04-14 23:22:53] INFO root fetch - processPackages [flask-mongorest-mpcontribs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-mongorest-mpcontribs-3.2.4.tar.gz tmp/flask-mongorest-mpcontribs-3.3.0.tar.gz --markdown 20230414/f/flask-mongorest-mpcontribs/3.2.4-3.3.0/diff.md --exclude *.pyd
+[2023-04-14 23:22:53] INFO root fetch - processPackages [dbt-redshift]: Downloading https://files.pythonhosted.org/packages/64/0d/22b2b65ef67ee8ac46cb234bccc6ebf6e1d2ea26e6fa3cba0d59cb54ac7e/dbt-redshift-1.5.0rc1.tar.gz
+[2023-04-14 23:22:53] INFO root fetch - processPackages [dbt-redshift]: executing diffoscope
+[2023-04-14 23:22:53] INFO root fetch - processPackages [dbt-redshift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-redshift-1.5.0b4.tar.gz tmp/dbt-redshift-1.5.0rc1.tar.gz --markdown 20230414/d/dbt-redshift/1.5.0b4-1.5.0rc1/diff.md --exclude *.pyd
+[2023-04-14 23:22:53] INFO root fetch - processPackages [dkist-processing-test]: Start processing: butterneck-projen
+[2023-04-14 23:22:53] INFO root fetch - main [MainThread]: End processing [dkist-processing-test]: success
+[2023-04-14 23:22:54] INFO root fetch - processPackages [butterneck-projen]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-14 23:22:54] INFO root fetch - processPackages [sqlfluff-templater-dbt]: Start processing: pipcryptliberyV2
+[2023-04-14 23:22:54] INFO root fetch - main [MainThread]: End processing [sqlfluff-templater-dbt]: success
+[2023-04-14 23:22:54] INFO root fetch - processPackages [butterneck-projen]: Downloading https://files.pythonhosted.org/packages/ec/4c/776a32d34a511b31959c668f8390146569ee825d1c27e47936a13a5b5188/butterneck-projen-0.0.8.tar.gz
+[2023-04-14 23:22:54] WARNING root fetch - processPackages [pipcryptliberyV2]: Skipping, unable to determine old version
+[2023-04-14 23:22:54] INFO root fetch - processPackages [pipcryptliberyV2]: Start processing: furiosa-common
+[2023-04-14 23:22:54] INFO root fetch - main [MainThread]: End processing [pipcryptliberyV2] error
+[2023-04-14 23:22:54] INFO root fetch - processPackages [furiosa-common]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:54] INFO root fetch - processPackages [butterneck-projen]: executing diffoscope
+[2023-04-14 23:22:54] INFO root fetch - processPackages [butterneck-projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/butterneck-projen-0.0.7.tar.gz tmp/butterneck-projen-0.0.8.tar.gz --markdown 20230414/b/butterneck-projen/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 23:22:54] INFO root fetch - processPackages [furiosa-common]: Downloading https://files.pythonhosted.org/packages/16/73/b3beadcf94f5144cc40211bd64931c90bafa07e81c4e567405772ed64996/furiosa-common-0.9.0rc3.tar.gz
+[2023-04-14 23:22:54] INFO root fetch - processPackages [furiosa-common]: executing diffoscope
+[2023-04-14 23:22:54] INFO root fetch - processPackages [furiosa-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-common-0.9.0rc2.tar.gz tmp/furiosa-common-0.9.0rc3.tar.gz --markdown 20230414/f/furiosa-common/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-04-14 23:22:54] INFO root fetch - processPackages [dbt-redshift]: Start processing: furiosa-cli
+[2023-04-14 23:22:54] INFO root fetch - main [MainThread]: End processing [dbt-redshift]: success
+[2023-04-14 23:22:54] INFO root fetch - processPackages [furiosa-cli]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:54] INFO root fetch - processPackages [flask-mongorest-mpcontribs]: Start processing: lenskappa
+[2023-04-14 23:22:54] INFO root fetch - main [MainThread]: End processing [flask-mongorest-mpcontribs]: success
+[2023-04-14 23:22:54] INFO root fetch - processPackages [lenskappa]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-04-14 23:22:54] INFO root fetch - processPackages [furiosa-cli]: Downloading https://files.pythonhosted.org/packages/96/de/696a597e430ef41323a6c5ad2ea4b504aa72c548739862dd38adec4b9f9d/furiosa-cli-0.9.0rc3.tar.gz
+[2023-04-14 23:22:54] INFO root fetch - processPackages [furiosa-cli]: executing diffoscope
+[2023-04-14 23:22:54] INFO root fetch - processPackages [furiosa-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-cli-0.9.0rc2.tar.gz tmp/furiosa-cli-0.9.0rc3.tar.gz --markdown 20230414/f/furiosa-cli/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-04-14 23:22:54] INFO root fetch - processPackages [lenskappa]: Downloading https://files.pythonhosted.org/packages/9a/d5/f632bc90c3e0c275bc7c96c1cf8634ca31cf280e0e2e4910ec695d89150a/lenskappa-0.5.5.tar.gz
+[2023-04-14 23:22:54] WARNING root fetch - processPackages [lenskappa]: Skipping package: exceeds size limit 11008686>=10485760
+[2023-04-14 23:22:54] INFO root fetch - processPackages [lenskappa]: Start processing: furiosa-tools
+[2023-04-14 23:22:54] INFO root fetch - main [MainThread]: End processing [lenskappa] error
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-tools]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-tools]: Downloading https://files.pythonhosted.org/packages/13/09/cf28665cb2da7e77abb5bbf278614e2cb39d6b827311b96076245be39e38/furiosa-tools-0.9.0rc3.tar.gz
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-tools]: executing diffoscope
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-tools-0.9.0rc2.tar.gz tmp/furiosa-tools-0.9.0rc3.tar.gz --markdown 20230414/f/furiosa-tools/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-04-14 23:22:55] INFO root fetch - processPackages [butterneck-projen]: Start processing: peerprint
+[2023-04-14 23:22:55] INFO root fetch - main [MainThread]: End processing [butterneck-projen]: success
+[2023-04-14 23:22:55] INFO root fetch - processPackages [peerprint]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-common]: Start processing: furiosa-registry
+[2023-04-14 23:22:55] INFO root fetch - main [MainThread]: End processing [furiosa-common]: success
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-registry]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:55] INFO root fetch - processPackages [peerprint]: Downloading https://files.pythonhosted.org/packages/8f/d6/cdbe3077c46dc79c88d9b4bcc4e53e1b35bc6f1187c88a6ebbd600c66948/peerprint-0.2.0.tar.gz
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-registry]: Downloading https://files.pythonhosted.org/packages/fa/1f/11507ac9a74d83992922654cc41402ae511e5a1f33ede4744d18dc727dd9/furiosa-registry-0.9.0rc3.tar.gz
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-cli]: Start processing: furiosa-runtime
+[2023-04-14 23:22:55] INFO root fetch - main [MainThread]: End processing [furiosa-cli]: success
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-registry]: executing diffoscope
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-registry-0.9.0rc2.tar.gz tmp/furiosa-registry-0.9.0rc3.tar.gz --markdown 20230414/f/furiosa-registry/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-runtime]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:55] INFO root fetch - processPackages [peerprint]: Downloading https://files.pythonhosted.org/packages/9d/ec/07fb68aa539187f5b58bb883b8d80d8768ae1f0757ccc5422f295b72a540/peerprint-0.3.0.tar.gz
+[2023-04-14 23:22:55] INFO root fetch - processPackages [sqlfluff]: Start processing: furiosa-optimizer
+[2023-04-14 23:22:55] INFO root fetch - main [MainThread]: End processing [sqlfluff]: success
+[2023-04-14 23:22:55] INFO root fetch - processPackages [furiosa-optimizer]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:56] INFO root fetch - processPackages [peerprint]: executing diffoscope
+[2023-04-14 23:22:56] INFO root fetch - processPackages [peerprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peerprint-0.2.0.tar.gz tmp/peerprint-0.3.0.tar.gz --markdown 20230414/p/peerprint/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-runtime]: Downloading https://files.pythonhosted.org/packages/a3/6c/35083d6c9120947d20b39a21ac658746181ad712ce67fe70d927cb76d336/furiosa-runtime-0.9.0rc3.tar.gz
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-optimizer]: Downloading https://files.pythonhosted.org/packages/64/23/679691234044c12432b5deddc61a992d3a66de2659204d430d3beebcded5/furiosa-optimizer-0.9.0rc2.tar.gz
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-runtime]: executing diffoscope
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-runtime-0.9.0rc2.tar.gz tmp/furiosa-runtime-0.9.0rc3.tar.gz --markdown 20230414/f/furiosa-runtime/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-04-14 23:22:56] WARNING root fetch - processPackages [furiosa-optimizer]: Skipping package: exceeds size limit 20707737>=10485760
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-optimizer]: Start processing: furiosa-quantizer
+[2023-04-14 23:22:56] INFO root fetch - main [MainThread]: End processing [furiosa-optimizer] error
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-quantizer]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-quantizer]: Downloading https://files.pythonhosted.org/packages/f2/33/02db984079e01696d569700021d38ff5a85fb07754574f049c5a82bf5f73/furiosa-quantizer-0.9.0rc2.tar.gz
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-tools]: Start processing: furiosa-litmus
+[2023-04-14 23:22:56] INFO root fetch - main [MainThread]: End processing [furiosa-tools]: success
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-litmus]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-quantizer]: Downloading https://files.pythonhosted.org/packages/34/bc/d8a0d84e2e621174e91bf76b44714a3dbd1d9340aa61904c5b85e20e90ca/furiosa-quantizer-0.9.0rc3.tar.gz
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-quantizer]: executing diffoscope
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-quantizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-quantizer-0.9.0rc2.tar.gz tmp/furiosa-quantizer-0.9.0rc3.tar.gz --markdown 20230414/f/furiosa-quantizer/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-litmus]: Downloading https://files.pythonhosted.org/packages/18/0d/8b8d1ec4db4a75b102ff3794dfd3bf898bd048a5a7e92abcc7e1af1c4a18/furiosa-litmus-0.9.0rc3.tar.gz
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-litmus]: executing diffoscope
+[2023-04-14 23:22:56] INFO root fetch - processPackages [furiosa-litmus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-litmus-0.9.0rc2.tar.gz tmp/furiosa-litmus-0.9.0rc3.tar.gz --markdown 20230414/f/furiosa-litmus/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-04-14 23:22:57] INFO root fetch - processPackages [furiosa-registry]: Start processing: furiosa-server
+[2023-04-14 23:22:57] INFO root fetch - main [MainThread]: End processing [furiosa-registry]: success
+[2023-04-14 23:22:57] INFO root fetch - processPackages [furiosa-server]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:57] INFO root fetch - processPackages [furiosa-runtime]: Start processing: prunerr
+[2023-04-14 23:22:57] INFO root fetch - main [MainThread]: End processing [furiosa-runtime]: success
+[2023-04-14 23:22:57] INFO root fetch - processPackages [prunerr]: New version: [1.1.0b26] Old Version: [1.1.0b25]
+[2023-04-14 23:22:57] INFO root fetch - processPackages [furiosa-server]: Downloading https://files.pythonhosted.org/packages/af/86/58f72bd3bfccd4bc9f1108b6bc810ed4050f70df8c56976d17967c29f1fc/furiosa-server-0.9.0rc2.tar.gz
+[2023-04-14 23:22:57] WARNING root fetch - processPackages [furiosa-server]: Skipping package: exceeds size limit 10789003>=10485760
+[2023-04-14 23:22:57] INFO root fetch - processPackages [furiosa-server]: Start processing: furiosa-serving
+[2023-04-14 23:22:57] INFO root fetch - main [MainThread]: End processing [furiosa-server] error
+[2023-04-14 23:22:57] INFO root fetch - processPackages [furiosa-serving]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:57] INFO root fetch - processPackages [prunerr]: Downloading https://files.pythonhosted.org/packages/a0/65/7ae5f3ef03aff4fec10eb3444213c57df503baa226f8f6846a0cc493af5e/prunerr-1.1.0b26.tar.gz
+[2023-04-14 23:22:57] INFO root fetch - processPackages [furiosa-serving]: Downloading https://files.pythonhosted.org/packages/5e/69/ad76d508560566a3298f0dbd7f2169080e49e36cb243f10c10f780337ae5/furiosa-serving-0.9.0rc3.tar.gz
+[2023-04-14 23:22:57] INFO root fetch - processPackages [prunerr]: executing diffoscope
+[2023-04-14 23:22:57] INFO root fetch - processPackages [prunerr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prunerr-1.1.0b25.tar.gz tmp/prunerr-1.1.0b26.tar.gz --markdown 20230414/p/prunerr/1.1.0b25-1.1.0b26/diff.md --exclude *.pyd
+[2023-04-14 23:22:57] INFO root fetch - processPackages [furiosa-quantizer]: Start processing: pulumi-confluentcloud
+[2023-04-14 23:22:57] INFO root fetch - main [MainThread]: End processing [furiosa-quantizer]: success
+[2023-04-14 23:22:57] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2023-04-14 23:22:57] INFO root fetch - processPackages [peerprint]: Start processing: furiosa-sdk
+[2023-04-14 23:22:57] INFO root fetch - main [MainThread]: End processing [peerprint]: success
+[2023-04-14 23:22:57] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2023-04-14 23:22:57] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20230414/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/diff.md --exclude *.pyd
+[2023-04-14 23:22:57] INFO root fetch - processPackages [furiosa-sdk]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-04-14 23:22:57] INFO root fetch - processPackages [furiosa-sdk]: Downloading https://files.pythonhosted.org/packages/38/32/95a1e147f008193a15bfc693abe3eb7016e6050cfa7c60cf261e4c63c2d8/furiosa-sdk-0.9.0rc3.tar.gz
+[2023-04-14 23:22:58] INFO root fetch - processPackages [furiosa-litmus]: Start processing: turbo-queue
+[2023-04-14 23:22:58] INFO root fetch - main [MainThread]: End processing [furiosa-litmus]: success
+[2023-04-14 23:22:58] INFO root fetch - processPackages [turbo-queue]: New version: [0.5.2.2] Old Version: [0.5.2]
+[2023-04-14 23:22:58] INFO root fetch - processPackages [furiosa-serving]: executing diffoscope
+[2023-04-14 23:22:58] INFO root fetch - processPackages [furiosa-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-serving-0.9.0rc2.tar.gz tmp/furiosa-serving-0.9.0rc3.tar.gz --markdown 20230414/f/furiosa-serving/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-04-14 23:22:58] INFO root fetch - processPackages [furiosa-sdk]: executing diffoscope
+[2023-04-14 23:22:58] INFO root fetch - processPackages [furiosa-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-sdk-0.9.0rc2.tar.gz tmp/furiosa-sdk-0.9.0rc3.tar.gz --markdown 20230414/f/furiosa-sdk/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-04-14 23:22:58] INFO root fetch - processPackages [turbo-queue]: Downloading https://files.pythonhosted.org/packages/2a/da/294f8286168ceded349978fc735bfae9e6093b09036a1645bc69a6af99d6/turbo_queue-0.5.2.2.tar.gz
+[2023-04-14 23:22:58] INFO root fetch - processPackages [turbo-queue]: executing diffoscope
+[2023-04-14 23:22:58] INFO root fetch - processPackages [turbo-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_queue-0.5.2.tar.gz tmp/turbo_queue-0.5.2.2.tar.gz --markdown 20230414/t/turbo-queue/0.5.2-0.5.2.2/diff.md --exclude *.pyd
+[2023-04-14 23:22:59] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2023-04-14 23:22:59] INFO root fetch - main [MainThread]: End processing [furiosa-sdk]: success
+[2023-04-14 23:22:59] INFO root fetch - main [MainThread]: End processing [furiosa-serving]: success
+[2023-04-14 23:23:00] INFO root fetch - main [MainThread]: End processing [turbo-queue]: success
+[2023-04-14 23:23:04] INFO root fetch - main [MainThread]: End processing [prunerr]: success
+[2023-04-14 23:23:04] INFO root fetch - main [MainThread]: Store serial: [17713060]
