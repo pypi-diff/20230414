@@ -6918,3 +6918,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 05:58:17] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
 [2023-04-14 05:59:13] INFO root fetch - main [MainThread]: End processing [parimutuelsdk]: success
 [2023-04-14 05:59:13] INFO root fetch - main [MainThread]: Store serial: [17703061]
+[2023-04-14 06:04:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703061]
+[2023-04-14 06:04:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-14 06:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chat-spiral
+[2023-04-14 06:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: symbol-sdk-python
+[2023-04-14 06:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-fieldservice
+[2023-04-14 06:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bkpaas-auth
+[2023-04-14 06:04:31] INFO root fetch - processPackages [symbol-sdk-python]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-04-14 06:04:31] INFO root fetch - processPackages [bkpaas-auth]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-14 06:04:31] WARNING root fetch - processPackages [chat-spiral]: Skipping, unable to determine old version
+[2023-04-14 06:04:31] INFO root fetch - main [MainThread]: End processing [chat-spiral] error
+[2023-04-14 06:04:31] INFO root fetch - processPackages [odoo14-addon-fieldservice]: New version: [14.0.1.9.0] Old Version: [14.0.1.8.1.dev2]
+[2023-04-14 06:04:31] INFO root fetch - processPackages [odoo14-addon-fieldservice]: executing diffoscope
+[2023-04-14 06:04:31] INFO root fetch - processPackages [odoo14-addon-fieldservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_fieldservice-14.0.1.8.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_fieldservice-14.0.1.9.0-py3-none-any.whl.zip --markdown 20230414/o/odoo14-addon-fieldservice/14.0.1.8.1.dev2-14.0.1.9.0/diff.md --exclude *.pyd
+[2023-04-14 06:04:31] INFO root fetch - processPackages [symbol-sdk-python]: Downloading https://files.pythonhosted.org/packages/11/39/3e4397a551771c57c83479419ba69d00aede8e677036ce129c899c0b88e7/symbol-sdk-python-3.0.3.tar.gz
+[2023-04-14 06:04:31] INFO root fetch - processPackages [bkpaas-auth]: Downloading https://files.pythonhosted.org/packages/fd/88/4c583154b63844ae270fc10d928a638d55567f0045ffcc68207d5fbdf115/bkpaas-auth-2.0.2.tar.gz
+[2023-04-14 06:04:31] INFO root fetch - processPackages [symbol-sdk-python]: Downloading https://files.pythonhosted.org/packages/de/c3/867431cc8417aa0fec6569d4b34379682f833d188cc53377d586b70c6aec/symbol-sdk-python-3.0.4.tar.gz
+[2023-04-14 06:04:31] INFO root fetch - processPackages [bkpaas-auth]: Downloading https://files.pythonhosted.org/packages/4d/f6/a255468305de48f5c56fddfecd3664a7f1ee663bcef3a9d768d0f928eac2/bkpaas-auth-2.0.3.tar.gz
+[2023-04-14 06:04:31] INFO root fetch - processPackages [bkpaas-auth]: executing diffoscope
+[2023-04-14 06:04:31] INFO root fetch - processPackages [bkpaas-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bkpaas-auth-2.0.2.tar.gz tmp/bkpaas-auth-2.0.3.tar.gz --markdown 20230414/b/bkpaas-auth/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-14 06:04:31] INFO root fetch - processPackages [symbol-sdk-python]: executing diffoscope
+[2023-04-14 06:04:31] INFO root fetch - processPackages [symbol-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbol-sdk-python-3.0.3.tar.gz tmp/symbol-sdk-python-3.0.4.tar.gz --markdown 20230414/s/symbol-sdk-python/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-04-14 06:04:32] INFO root fetch - main [MainThread]: End processing [bkpaas-auth]: success
+[2023-04-14 06:04:33] INFO root fetch - main [MainThread]: End processing [odoo14-addon-fieldservice]: success
+[2023-04-14 06:04:33] INFO root fetch - main [MainThread]: End processing [symbol-sdk-python]: success
+[2023-04-14 06:04:33] INFO root fetch - main [MainThread]: Store serial: [17703074]
