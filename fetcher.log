@@ -12614,3 +12614,59 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 13:38:08] INFO root fetch - processPackages [dissect.esedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dissect.esedb-3.6.dev1.tar.gz tmp/dissect.esedb-3.7.dev1.tar.gz --markdown 20230414/d/dissect.esedb/3.6.dev1-3.7.dev1/diff.md --exclude *.pyd
 [2023-04-14 13:38:10] INFO root fetch - main [MainThread]: End processing [dissect.esedb]: success
 [2023-04-14 13:38:10] INFO root fetch - main [MainThread]: Store serial: [17706448]
+[2023-04-14 13:43:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706448]
+[2023-04-14 13:43:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 13:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tools-hjh
+[2023-04-14 13:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compel
+[2023-04-14 13:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymovements
+[2023-04-14 13:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nobias
+[2023-04-14 13:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: salure-helpers-planday
+[2023-04-14 13:43:17] INFO root fetch - processPackages [nobias]: New version: [0.1.6] Old Version: [0.1.51]
+[2023-04-14 13:43:17] INFO root fetch - processPackages [salure-helpers-planday]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 13:43:17] INFO root fetch - processPackages [compel]: New version: [1.1.3.dev0] Old Version: [1.1.3]
+[2023-04-14 13:43:17] INFO root fetch - processPackages [tools-hjh]: New version: [2.5.4] Old Version: [2.5.3]
+[2023-04-14 13:43:17] INFO root fetch - processPackages [pymovements]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 13:43:17] INFO root fetch - processPackages [compel]: Downloading https://files.pythonhosted.org/packages/56/81/6ce6b7b09607e7b8df7bfa0b32189f65d8f501b3dc0aa9f81e0150ed08ba/compel-1.1.3.tar.gz
+[2023-04-14 13:43:17] INFO root fetch - processPackages [nobias]: Downloading https://files.pythonhosted.org/packages/0d/11/da0e3305d698a625ddd0bd0100b75989aea6cf9c4989f65416dc68d83769/nobias-0.1.51.tar.gz
+[2023-04-14 13:43:17] INFO root fetch - processPackages [salure-helpers-planday]: Downloading https://files.pythonhosted.org/packages/05/14/86a4b881997cc3deaede404f98128df54d9436ee27c5b28ca9aa916635f5/salure_helpers_planday-0.0.1.tar.gz
+[2023-04-14 13:43:17] INFO root fetch - processPackages [pymovements]: Downloading https://files.pythonhosted.org/packages/84/4e/46c2dac99c9ee7b97604c91e8fb36f40b596388dbf3c51e0b1ca06b429f7/pymovements-0.8.0.tar.gz
+[2023-04-14 13:43:18] INFO root fetch - processPackages [compel]: executing diffoscope
+[2023-04-14 13:43:18] INFO root fetch - processPackages [compel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compel-1.1.3.tar.gz tmp/compel-1.1.3.dev0.tar.gz --markdown 20230414/c/compel/1.1.3-1.1.3.dev0/diff.md --exclude *.pyd
+[2023-04-14 13:43:18] INFO root fetch - processPackages [tools-hjh]: Downloading https://files.pythonhosted.org/packages/2f/b2/442d5988540ea9184d1b4fbfe9060c0ad22e77f9430530f07517534a787f/tools_hjh-2.5.4.tar.gz
+[2023-04-14 13:43:18] INFO root fetch - processPackages [tools-hjh]: executing diffoscope
+[2023-04-14 13:43:18] INFO root fetch - processPackages [tools-hjh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tools_hjh-2.5.3.tar.gz tmp/tools_hjh-2.5.4.tar.gz --markdown 20230414/t/tools-hjh/2.5.3-2.5.4/diff.md --exclude *.pyd
+[2023-04-14 13:43:18] INFO root fetch - processPackages [nobias]: Downloading https://files.pythonhosted.org/packages/4a/f9/d9dea7cf42ab117a998f33f301cd01243b20a905a694e4f5f20b08a76205/nobias-0.1.6.tar.gz
+[2023-04-14 13:43:18] INFO root fetch - processPackages [salure-helpers-planday]: Downloading https://files.pythonhosted.org/packages/69/e4/2738e24978a4e0e07e11b1f4f9eac770061e80a0bb04e2a57fc6c0656e22/salure_helpers_planday-0.0.2.tar.gz
+[2023-04-14 13:43:18] INFO root fetch - processPackages [pymovements]: Downloading https://files.pythonhosted.org/packages/b8/95/8fa925c54e07f7bca4ad8850c566562df2f9d4a670450954f10240911a80/pymovements-0.9.0.tar.gz
+[2023-04-14 13:43:18] INFO root fetch - processPackages [salure-helpers-planday]: executing diffoscope
+[2023-04-14 13:43:18] INFO root fetch - processPackages [salure-helpers-planday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salure_helpers_planday-0.0.1.tar.gz tmp/salure_helpers_planday-0.0.2.tar.gz --markdown 20230414/s/salure-helpers-planday/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 13:43:18] INFO root fetch - processPackages [pymovements]: executing diffoscope
+[2023-04-14 13:43:18] INFO root fetch - processPackages [pymovements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymovements-0.8.0.tar.gz tmp/pymovements-0.9.0.tar.gz --markdown 20230414/p/pymovements/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 13:43:18] INFO root fetch - processPackages [nobias]: executing diffoscope
+[2023-04-14 13:43:18] INFO root fetch - processPackages [nobias]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nobias-0.1.51.tar.gz tmp/nobias-0.1.6.tar.gz --markdown 20230414/n/nobias/0.1.51-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 13:43:19] INFO root fetch - processPackages [compel]: Start processing: aiven-client
+[2023-04-14 13:43:19] INFO root fetch - main [MainThread]: End processing [compel]: success
+[2023-04-14 13:43:19] INFO root fetch - processPackages [aiven-client]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-04-14 13:43:19] INFO root fetch - processPackages [tools-hjh]: Start processing: planetaryguides
+[2023-04-14 13:43:19] INFO root fetch - main [MainThread]: End processing [tools-hjh]: success
+[2023-04-14 13:43:19] WARNING root fetch - processPackages [planetaryguides]: Skipping, unable to determine old version
+[2023-04-14 13:43:19] INFO root fetch - processPackages [planetaryguides]: Start processing: cfdonnx
+[2023-04-14 13:43:19] INFO root fetch - main [MainThread]: End processing [planetaryguides] error
+[2023-04-14 13:43:19] INFO root fetch - processPackages [salure-helpers-planday]: Start processing: mosaik-influxdb2
+[2023-04-14 13:43:19] INFO root fetch - main [MainThread]: End processing [salure-helpers-planday]: success
+[2023-04-14 13:43:19] INFO root fetch - processPackages [aiven-client]: Downloading https://files.pythonhosted.org/packages/74/21/61edc8dcc85b35296280f19d54a902613e226c31e01d2693efacb2dafd8a/aiven-client-2.8.0.tar.gz
+[2023-04-14 13:43:19] WARNING root fetch - processPackages [cfdonnx]: Skipping, unable to determine old version
+[2023-04-14 13:43:19] INFO root fetch - main [MainThread]: End processing [cfdonnx] error
+[2023-04-14 13:43:19] INFO root fetch - processPackages [mosaik-influxdb2]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-14 13:43:19] INFO root fetch - main [MainThread]: End processing [nobias]: success
+[2023-04-14 13:43:19] INFO root fetch - main [MainThread]: End processing [pymovements]: success
+[2023-04-14 13:43:19] INFO root fetch - processPackages [mosaik-influxdb2]: Downloading https://files.pythonhosted.org/packages/7b/e1/926f946744103abf872c5c212d9774692e0f646991b6cea93987bd675afd/mosaik_influxdb2-0.2.0.tar.gz
+[2023-04-14 13:43:19] INFO root fetch - processPackages [aiven-client]: Downloading https://files.pythonhosted.org/packages/b0/22/3ed2692d0b55f5a16dccaa615a6ca36816028fe3862261bb43a20331f4c0/aiven-client-2.9.0.tar.gz
+[2023-04-14 13:43:19] INFO root fetch - processPackages [aiven-client]: executing diffoscope
+[2023-04-14 13:43:19] INFO root fetch - processPackages [aiven-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiven-client-2.8.0.tar.gz tmp/aiven-client-2.9.0.tar.gz --markdown 20230414/a/aiven-client/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-04-14 13:43:20] INFO root fetch - processPackages [mosaik-influxdb2]: Downloading https://files.pythonhosted.org/packages/dc/da/f9744c5b58b003bf518ff07f8d619c86d38f41f1f9ab8782a20b48fea261/mosaik_influxdb2-0.3.0.tar.gz
+[2023-04-14 13:43:20] INFO root fetch - processPackages [mosaik-influxdb2]: executing diffoscope
+[2023-04-14 13:43:20] INFO root fetch - processPackages [mosaik-influxdb2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaik_influxdb2-0.2.0.tar.gz tmp/mosaik_influxdb2-0.3.0.tar.gz --markdown 20230414/m/mosaik-influxdb2/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 13:43:21] INFO root fetch - main [MainThread]: End processing [mosaik-influxdb2]: success
+[2023-04-14 13:43:21] INFO root fetch - main [MainThread]: End processing [aiven-client]: success
+[2023-04-14 13:43:21] INFO root fetch - main [MainThread]: Store serial: [17706480]
