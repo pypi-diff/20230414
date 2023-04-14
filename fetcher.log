@@ -7367,3 +7367,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 07:20:33] INFO root fetch - main [MainThread]: End processing [analysisbykwok]: success
 [2023-04-14 07:20:34] INFO root fetch - main [MainThread]: End processing [tg-upload]: success
 [2023-04-14 07:20:34] INFO root fetch - main [MainThread]: Store serial: [17703350]
+[2023-04-14 07:25:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703350]
+[2023-04-14 07:25:41] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 07:25:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ecodata
+[2023-04-14 07:25:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyttsx4
+[2023-04-14 07:25:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xj-flow
+[2023-04-14 07:25:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chromoformer
+[2023-04-14 07:25:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyhealthbox3
+[2023-04-14 07:25:41] WARNING root fetch - processPackages [chromoformer]: Skipping, unable to determine old version
+[2023-04-14 07:25:41] INFO root fetch - processPackages [chromoformer]: Start processing: hanlp
+[2023-04-14 07:25:41] INFO root fetch - main [MainThread]: End processing [chromoformer] error
+[2023-04-14 07:25:41] INFO root fetch - processPackages [pyttsx4]: New version: [3.0.7] Old Version: [3.0.6]
+[2023-04-14 07:25:41] INFO root fetch - processPackages [ecodata]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 07:25:41] INFO root fetch - processPackages [pyhealthbox3]: New version: [0.0.18] Old Version: [0.0.17]
+[2023-04-14 07:25:41] INFO root fetch - processPackages [xj-flow]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 07:25:41] INFO root fetch - processPackages [hanlp]: New version: [2.1.0b9] Old Version: [2.1.0b8]
+[2023-04-14 07:25:41] INFO root fetch - processPackages [xj-flow]: executing diffoscope
+[2023-04-14 07:25:41] INFO root fetch - processPackages [xj-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_flow-1.0.8.tar.gz tmp/xj_flow-1.0.9.tar.gz --markdown 20230414/x/xj-flow/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 07:25:41] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/09/e4/5af444a038e260bcba55e85ed1be6f9bf4277a704b37c4c405d8c8fc4be8/ecodata-1.0.1.tar.gz
+[2023-04-14 07:25:41] INFO root fetch - processPackages [pyhealthbox3]: Downloading https://files.pythonhosted.org/packages/b1/06/2b02877bfc26fd675f32c70a09c4be7c9ac166a5fa7b2dcd2bd0dab6fed4/pyhealthbox3-0.0.18.tar.gz
+[2023-04-14 07:25:41] INFO root fetch - processPackages [pyttsx4]: Downloading https://files.pythonhosted.org/packages/32/d0/22bf5958f9a274aa01f245c2a5d4e79997009c8819ad34a4f5032c564751/pyttsx4-3.0.7-py3-none-any.whl
+[2023-04-14 07:25:42] INFO root fetch - processPackages [pyhealthbox3]: executing diffoscope
+[2023-04-14 07:25:42] INFO root fetch - processPackages [pyhealthbox3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhealthbox3-0.0.17.tar.gz tmp/pyhealthbox3-0.0.18.tar.gz --markdown 20230414/p/pyhealthbox3/0.0.17-0.0.18/diff.md --exclude *.pyd
+[2023-04-14 07:25:42] INFO root fetch - processPackages [hanlp]: executing diffoscope
+[2023-04-14 07:25:42] INFO root fetch - processPackages [hanlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hanlp-2.1.0b8.tar.gz tmp/hanlp-2.1.0b9.tar.gz --markdown 20230414/h/hanlp/2.1.0b8-2.1.0b9/diff.md --exclude *.pyd
+[2023-04-14 07:25:42] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/0f/9c/6f07583c825fa0d541afda65bafe363499c0cf5dd84c9371565097e400fb/ecodata-1.0.2.tar.gz
+[2023-04-14 07:25:42] INFO root fetch - processPackages [pyttsx4]: executing diffoscope
+[2023-04-14 07:25:42] INFO root fetch - processPackages [pyttsx4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttsx4-3.0.6-py3-none-any.whl.zip tmp/pyttsx4-3.0.7-py3-none-any.whl.zip --markdown 20230414/p/pyttsx4/3.0.6-3.0.7/diff.md --exclude *.pyd
+[2023-04-14 07:25:42] INFO root fetch - processPackages [ecodata]: executing diffoscope
+[2023-04-14 07:25:42] INFO root fetch - processPackages [ecodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecodata-1.0.1.tar.gz tmp/ecodata-1.0.2.tar.gz --markdown 20230414/e/ecodata/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 07:25:43] INFO root fetch - processPackages [xj-flow]: Start processing: py-yettagam
+[2023-04-14 07:25:43] INFO root fetch - main [MainThread]: End processing [xj-flow]: success
+[2023-04-14 07:25:43] INFO root fetch - processPackages [py-yettagam]: New version: [0.0.2.9] Old Version: [0.0.2.8]
+[2023-04-14 07:25:43] INFO root fetch - processPackages [pyhealthbox3]: Start processing: crazy-thursday
+[2023-04-14 07:25:43] INFO root fetch - main [MainThread]: End processing [pyhealthbox3]: success
+[2023-04-14 07:25:43] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-14 07:25:43] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-14 07:25:43] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230414/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-14 07:25:43] INFO root fetch - main [MainThread]: End processing [pyttsx4]: success
+[2023-04-14 07:25:43] INFO root fetch - main [MainThread]: End processing [ecodata]: success
+[2023-04-14 07:25:44] INFO root fetch - processPackages [py-yettagam]: executing diffoscope
+[2023-04-14 07:25:44] INFO root fetch - processPackages [py-yettagam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_yettagam-0.0.2.8.tar.gz tmp/py_yettagam-0.0.2.9.tar.gz --markdown 20230414/p/py-yettagam/0.0.2.8-0.0.2.9/diff.md --exclude *.pyd
+[2023-04-14 07:25:44] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-14 07:25:45] INFO root fetch - main [MainThread]: End processing [hanlp]: success
+[2023-04-14 07:25:45] INFO root fetch - main [MainThread]: End processing [py-yettagam]: success
+[2023-04-14 07:25:45] INFO root fetch - main [MainThread]: Store serial: [17703377]
