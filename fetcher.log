@@ -11772,3 +11772,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 12:32:11] INFO root fetch - main [MainThread]: End processing [dao-analyzer]: success
 [2023-04-14 12:32:11] INFO root fetch - main [MainThread]: End processing [mo-json-config]: success
 [2023-04-14 12:32:11] INFO root fetch - main [MainThread]: Store serial: [17705855]
+[2023-04-14 12:37:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705855]
+[2023-04-14 12:37:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 12:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jijbench
+[2023-04-14 12:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robotmk
+[2023-04-14 12:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-streams
+[2023-04-14 12:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: test23414234234
+[2023-04-14 12:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: x-Metaformer
+[2023-04-14 12:37:19] INFO root fetch - processPackages [jijbench]: New version: [0.5.0] Old Version: [0.4.7]
+[2023-04-14 12:37:19] INFO root fetch - processPackages [mo-streams]: New version: [1.370.23104] Old Version: [1.368.23092]
+[2023-04-14 12:37:19] INFO root fetch - processPackages [robotmk]: New version: [0.0.51] Old Version: [0.0.50]
+[2023-04-14 12:37:19] INFO root fetch - processPackages [test23414234234]: New version: [0.6] Old Version: [0.5]
+[2023-04-14 12:37:19] INFO root fetch - processPackages [x-Metaformer]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-14 12:37:19] INFO root fetch - processPackages [test23414234234]: Downloading https://files.pythonhosted.org/packages/5f/a4/5de338a58798e9398d2faff0629065965d7bb78ab222ed3b4d8ce49bda6d/test23414234234-0.5.tar.gz
+[2023-04-14 12:37:19] INFO root fetch - processPackages [jijbench]: Downloading https://files.pythonhosted.org/packages/29/e1/dcf5b6fd6620c7a8accf091c489266b8179cfb710795b0f5a302ebac09a4/jijbench-0.4.7.tar.gz
+[2023-04-14 12:37:19] INFO root fetch - processPackages [mo-streams]: Downloading https://files.pythonhosted.org/packages/a6/54/501956ee5e52a35ead557b5a651065d84258a2ecf50a1097add21da1ca00/mo_streams-1.368.23092-py2.py3-none-any.whl
+[2023-04-14 12:37:19] INFO root fetch - processPackages [x-Metaformer]: Downloading https://files.pythonhosted.org/packages/9e/94/ee62ac48ceb19d7bbf501d200f56f7f893d6a36e5fd9617343bf99a77190/x-Metaformer-0.3.1.tar.gz
+[2023-04-14 12:37:19] INFO root fetch - processPackages [x-Metaformer]: executing diffoscope
+[2023-04-14 12:37:19] INFO root fetch - processPackages [x-Metaformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-Metaformer-0.3.0.tar.gz tmp/x-Metaformer-0.3.1.tar.gz --markdown 20230414/x/x-Metaformer/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-14 12:37:20] INFO root fetch - processPackages [robotmk]: Downloading https://files.pythonhosted.org/packages/47/8f/08b359bf3b2401ca4fa32e8b74959b280cfeb9c105ea796f32bde985eff4/robotmk-0.0.51.tar.gz
+[2023-04-14 12:37:20] INFO root fetch - processPackages [test23414234234]: Downloading https://files.pythonhosted.org/packages/cf/04/bbd6031c84e35b6ac8c11ed8a71d6f2513a75a944bcc288559bfad9bfe90/test23414234234-0.6.tar.gz
+[2023-04-14 12:37:20] INFO root fetch - processPackages [robotmk]: executing diffoscope
+[2023-04-14 12:37:20] INFO root fetch - processPackages [robotmk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotmk-0.0.50.tar.gz tmp/robotmk-0.0.51.tar.gz --markdown 20230414/r/robotmk/0.0.50-0.0.51/diff.md --exclude *.pyd
+[2023-04-14 12:37:20] INFO root fetch - processPackages [mo-streams]: Downloading https://files.pythonhosted.org/packages/8f/31/38ae9baeeabff773edef32a018aff5da12d2dcfaa0f2d2669989e27252f3/mo_streams-1.370.23104-py2.py3-none-any.whl
+[2023-04-14 12:37:20] INFO root fetch - processPackages [test23414234234]: executing diffoscope
+[2023-04-14 12:37:20] INFO root fetch - processPackages [test23414234234]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test23414234234-0.5.tar.gz tmp/test23414234234-0.6.tar.gz --markdown 20230414/t/test23414234234/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-14 12:37:20] INFO root fetch - processPackages [mo-streams]: executing diffoscope
+[2023-04-14 12:37:20] INFO root fetch - processPackages [mo-streams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_streams-1.368.23092-py2.py3-none-any.whl.zip tmp/mo_streams-1.370.23104-py2.py3-none-any.whl.zip --markdown 20230414/m/mo-streams/1.368.23092-1.370.23104/diff.md --exclude *.pyd
+[2023-04-14 12:37:20] INFO root fetch - processPackages [jijbench]: Downloading https://files.pythonhosted.org/packages/62/4a/353ef73ab5b5aceabae08c4faefa284e21c569daf76626bb6c16ef21f278/jijbench-0.5.0.tar.gz
+[2023-04-14 12:37:20] INFO root fetch - processPackages [jijbench]: executing diffoscope
+[2023-04-14 12:37:20] INFO root fetch - processPackages [jijbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jijbench-0.4.7.tar.gz tmp/jijbench-0.5.0.tar.gz --markdown 20230414/j/jijbench/0.4.7-0.5.0/diff.md --exclude *.pyd
+[2023-04-14 12:37:21] INFO root fetch - processPackages [x-Metaformer]: Start processing: gentrace-py
+[2023-04-14 12:37:21] INFO root fetch - main [MainThread]: End processing [x-Metaformer]: success
+[2023-04-14 12:37:21] INFO root fetch - processPackages [gentrace-py]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 12:37:21] INFO root fetch - processPackages [test23414234234]: Start processing: yourtools
+[2023-04-14 12:37:21] INFO root fetch - main [MainThread]: End processing [test23414234234]: success
+[2023-04-14 12:37:21] INFO root fetch - processPackages [yourtools]: New version: [0.5.1] Old Version: [0.4.9]
+[2023-04-14 12:37:21] INFO root fetch - processPackages [mo-streams]: Start processing: test23414234234
+[2023-04-14 12:37:21] INFO root fetch - main [MainThread]: End processing [mo-streams]: success
+[2023-04-14 12:37:21] INFO root fetch - processPackages [test23414234234]: New version: [0.6] Old Version: [0.5]
+[2023-04-14 12:37:21] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/94/b1/7064b070c214fcc415f8eacee98a6dda220e320c4b41733c59431cb26801/yourtools-0.5.1.tar.gz
+[2023-04-14 12:37:21] INFO root fetch - processPackages [robotmk]: Start processing: cg
+[2023-04-14 12:37:21] INFO root fetch - main [MainThread]: End processing [robotmk]: success
+[2023-04-14 12:37:21] INFO root fetch - processPackages [test23414234234]: executing diffoscope
+[2023-04-14 12:37:21] INFO root fetch - processPackages [test23414234234]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test23414234234-0.5.tar.gz tmp/test23414234234-0.6.tar.gz --markdown 20230414/t/test23414234234/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-14 12:37:21] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-14 12:37:21] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.4.9.tar.gz tmp/yourtools-0.5.1.tar.gz --markdown 20230414/y/yourtools/0.4.9-0.5.1/diff.md --exclude *.pyd
+[2023-04-14 12:37:21] INFO root fetch - processPackages [cg]: New version: [27.2.9] Old Version: [27.2.8]
+[2023-04-14 12:37:21] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-04-14 12:37:21] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-27.2.8.tar.gz tmp/cg-27.2.9.tar.gz --markdown 20230414/c/cg/27.2.8-27.2.9/diff.md --exclude *.pyd
+[2023-04-14 12:37:21] INFO root fetch - processPackages [gentrace-py]: Downloading https://files.pythonhosted.org/packages/54/89/518d8e102d06e990a8c2afbd32812841942e6756d26cf234ae804669b4bf/gentrace_py-0.1.5.tar.gz
+[2023-04-14 12:37:21] INFO root fetch - processPackages [gentrace-py]: Downloading https://files.pythonhosted.org/packages/bd/f0/a1cc4963d6987b5323e50b628a57e17028c73206db3f8e4b336dcb5f50ff/gentrace_py-0.1.6.tar.gz
+[2023-04-14 12:37:22] INFO root fetch - processPackages [gentrace-py]: executing diffoscope
+[2023-04-14 12:37:22] INFO root fetch - processPackages [gentrace-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gentrace_py-0.1.5.tar.gz tmp/gentrace_py-0.1.6.tar.gz --markdown 20230414/g/gentrace-py/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 12:37:22] INFO root fetch - main [MainThread]: End processing [test23414234234]: success
+[2023-04-14 12:37:22] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-14 12:37:23] INFO root fetch - main [MainThread]: End processing [gentrace-py]: success
+[2023-04-14 12:37:31] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-04-14 12:38:35] INFO root fetch - main [MainThread]: End processing [jijbench]: success
+[2023-04-14 12:38:35] INFO root fetch - main [MainThread]: Store serial: [17705882]
