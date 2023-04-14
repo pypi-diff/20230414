@@ -20146,3 +20146,90 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:28:31] INFO root fetch - main [MainThread]: End processing [python-plus]: success
 [2023-04-14 20:28:32] INFO root fetch - main [MainThread]: End processing [pyschism]: success
 [2023-04-14 20:28:32] INFO root fetch - main [MainThread]: Store serial: [17711483]
+[2023-04-14 20:33:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711483]
+[2023-04-14 20:33:39] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 20:33:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cortex-cli
+[2023-04-14 20:33:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: katalytic
+[2023-04-14 20:33:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: componentize-py
+[2023-04-14 20:33:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langchain-serve
+[2023-04-14 20:33:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cryptographylibary
+[2023-04-14 20:33:39] INFO root fetch - processPackages [cortex-cli]: New version: [1.12.5] Old Version: [1.12.4]
+[2023-04-14 20:33:39] INFO root fetch - processPackages [cryptographylibary]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-04-14 20:33:39] INFO root fetch - processPackages [katalytic]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 20:33:39] WARNING root fetch - processPackages [componentize-py]: Skipping, unable to determine old version
+[2023-04-14 20:33:39] INFO root fetch - processPackages [componentize-py]: Start processing: ramodels
+[2023-04-14 20:33:39] INFO root fetch - main [MainThread]: End processing [componentize-py] error
+[2023-04-14 20:33:39] INFO root fetch - processPackages [langchain-serve]: New version: [0.0.3.dev3] Old Version: [0.0.3.dev19]
+[2023-04-14 20:33:39] INFO root fetch - processPackages [ramodels]: New version: [9.7.3] Old Version: [9.7.2]
+[2023-04-14 20:33:39] INFO root fetch - processPackages [ramodels]: executing diffoscope
+[2023-04-14 20:33:39] INFO root fetch - processPackages [ramodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramodels-9.7.2.tar.gz tmp/ramodels-9.7.3.tar.gz --markdown 20230414/r/ramodels/9.7.2-9.7.3/diff.md --exclude *.pyd
+[2023-04-14 20:33:39] INFO root fetch - processPackages [cryptographylibary]: Downloading https://files.pythonhosted.org/packages/84/fc/6cd5bef7c34f7931dc99c3f962fbc2bd584ab3a8eba877023e0749278938/cryptographylibary-1.0.0.tar.gz
+[2023-04-14 20:33:39] INFO root fetch - processPackages [katalytic]: Downloading https://files.pythonhosted.org/packages/51/d9/ea8923e142edd6dfc3b49c188432fde83165a2506ed3214e2dca4e921781/katalytic-0.1.0.tar.gz
+[2023-04-14 20:33:39] INFO root fetch - processPackages [langchain-serve]: Downloading https://files.pythonhosted.org/packages/a4/91/f144178020069942ccc14ddf0bd8d41884a730e17f420516da1d62cc68d8/langchain-serve-0.0.3.dev19.tar.gz
+[2023-04-14 20:33:40] INFO root fetch - processPackages [cortex-cli]: Downloading https://files.pythonhosted.org/packages/e4/dc/0482e82bba936fb3c21b03d181fbb6e5739d517b745998924fdf54e6eaea/cortex_cli-1.12.5.tar.gz
+[2023-04-14 20:33:40] INFO root fetch - processPackages [cortex-cli]: executing diffoscope
+[2023-04-14 20:33:40] INFO root fetch - processPackages [cortex-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortex_cli-1.12.4.tar.gz tmp/cortex_cli-1.12.5.tar.gz --markdown 20230414/c/cortex-cli/1.12.4-1.12.5/diff.md --exclude *.pyd
+[2023-04-14 20:33:40] INFO root fetch - processPackages [katalytic]: Downloading https://files.pythonhosted.org/packages/7a/22/0d4c4f374431694587039686f70a03d4ad5aa4249b96a3b13472c346e504/katalytic-0.1.1.tar.gz
+[2023-04-14 20:33:40] INFO root fetch - processPackages [cryptographylibary]: Downloading https://files.pythonhosted.org/packages/d8/79/879e1d18fe0c11c4d77ddcab11c940d9617192287751b04c499bc60d3dd7/cryptographylibary-2.0.0.tar.gz
+[2023-04-14 20:33:40] INFO root fetch - processPackages [cryptographylibary]: executing diffoscope
+[2023-04-14 20:33:40] INFO root fetch - processPackages [cryptographylibary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptographylibary-1.0.0.tar.gz tmp/cryptographylibary-2.0.0.tar.gz --markdown 20230414/c/cryptographylibary/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-14 20:33:40] INFO root fetch - processPackages [langchain-serve]: Downloading https://files.pythonhosted.org/packages/30/c1/d3d53fd041d5d8fb4e330bf62e3f52104a1be43db6a0259141f0ef10fd07/langchain-serve-0.0.3.dev3.tar.gz
+[2023-04-14 20:33:40] INFO root fetch - processPackages [katalytic]: executing diffoscope
+[2023-04-14 20:33:40] INFO root fetch - processPackages [katalytic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-0.1.0.tar.gz tmp/katalytic-0.1.1.tar.gz --markdown 20230414/k/katalytic/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 20:33:40] INFO root fetch - processPackages [langchain-serve]: executing diffoscope
+[2023-04-14 20:33:40] INFO root fetch - processPackages [langchain-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-serve-0.0.3.dev19.tar.gz tmp/langchain-serve-0.0.3.dev3.tar.gz --markdown 20230414/l/langchain-serve/0.0.3.dev19-0.0.3.dev3/diff.md --exclude *.pyd
+[2023-04-14 20:33:41] INFO root fetch - processPackages [ramodels]: Start processing: i-texts
+[2023-04-14 20:33:41] INFO root fetch - main [MainThread]: End processing [ramodels]: success
+[2023-04-14 20:33:41] WARNING root fetch - processPackages [i-texts]: Skipping, unable to determine old version
+[2023-04-14 20:33:41] INFO root fetch - processPackages [i-texts]: Start processing: TapisCL-ICICLE
+[2023-04-14 20:33:41] INFO root fetch - main [MainThread]: End processing [i-texts] error
+[2023-04-14 20:33:41] INFO root fetch - processPackages [TapisCL-ICICLE]: New version: [0.0.26] Old Version: [0.0.25]
+[2023-04-14 20:33:41] INFO root fetch - processPackages [cryptographylibary]: Start processing: pypercard
+[2023-04-14 20:33:41] INFO root fetch - main [MainThread]: End processing [cryptographylibary]: success
+[2023-04-14 20:33:41] INFO root fetch - processPackages [pypercard]: New version: [0.0.1a6] Old Version: [0.0.1a5]
+[2023-04-14 20:33:41] INFO root fetch - processPackages [TapisCL-ICICLE]: Downloading https://files.pythonhosted.org/packages/27/7f/702b845409e92863b314cb50f27bee8bdba2045103d4514ec47f407a3336/TapisCL-ICICLE-0.0.26.tar.gz
+[2023-04-14 20:33:41] INFO root fetch - processPackages [TapisCL-ICICLE]: executing diffoscope
+[2023-04-14 20:33:41] INFO root fetch - processPackages [TapisCL-ICICLE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TapisCL-ICICLE-0.0.25.tar.gz tmp/TapisCL-ICICLE-0.0.26.tar.gz --markdown 20230414/T/TapisCL-ICICLE/0.0.25-0.0.26/diff.md --exclude *.pyd
+[2023-04-14 20:33:41] INFO root fetch - processPackages [pypercard]: Downloading https://files.pythonhosted.org/packages/30/ce/e130d14436182da114f91051cdbcbfd08afb3c5cb0fd1895ce1403a6cc9a/pypercard-0.0.1a5.tar.gz
+[2023-04-14 20:33:41] INFO root fetch - processPackages [katalytic]: Start processing: crazy-thursday
+[2023-04-14 20:33:41] INFO root fetch - main [MainThread]: End processing [katalytic]: success
+[2023-04-14 20:33:41] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-14 20:33:41] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-14 20:33:41] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230414/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-14 20:33:41] INFO root fetch - processPackages [langchain-serve]: Start processing: log21
+[2023-04-14 20:33:41] INFO root fetch - main [MainThread]: End processing [langchain-serve]: success
+[2023-04-14 20:33:41] INFO root fetch - processPackages [log21]: New version: [2.4.4] Old Version: [2.4.3]
+[2023-04-14 20:33:41] INFO root fetch - processPackages [cortex-cli]: Start processing: quip-cli
+[2023-04-14 20:33:41] INFO root fetch - main [MainThread]: End processing [cortex-cli]: success
+[2023-04-14 20:33:41] INFO root fetch - processPackages [quip-cli]: New version: [1.8.8] Old Version: [1.8.7]
+[2023-04-14 20:33:41] WARNING root fetch - processPackages [pypercard]: Skipping package: exceeds size limit 32285750>=10485760
+[2023-04-14 20:33:41] INFO root fetch - processPackages [pypercard]: Start processing: linearSubproblemSltns
+[2023-04-14 20:33:41] INFO root fetch - main [MainThread]: End processing [pypercard] error
+[2023-04-14 20:33:41] INFO root fetch - processPackages [linearSubproblemSltns]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 20:33:42] INFO root fetch - processPackages [log21]: Downloading https://files.pythonhosted.org/packages/5c/17/89ee75bcf1a525cf13e1af7301c38dd1f9370e04c18391fdb61a67b07bd4/log21-2.4.3.tar.gz
+[2023-04-14 20:33:42] INFO root fetch - processPackages [quip-cli]: Downloading https://files.pythonhosted.org/packages/94/aa/95de5fe059e7df020ef6b3aa6edf2bb535c2209d038d09c547c64757b069/quip-cli-1.8.7.tar.gz
+[2023-04-14 20:33:42] INFO root fetch - processPackages [linearSubproblemSltns]: Downloading https://files.pythonhosted.org/packages/bb/7b/abec88073ce9985f655c3489ef224f743a702159641c794cc8e3ff7a28ac/linearsubproblemsltns-1.0.2.tar.gz
+[2023-04-14 20:33:42] INFO root fetch - processPackages [linearSubproblemSltns]: executing diffoscope
+[2023-04-14 20:33:42] INFO root fetch - processPackages [linearSubproblemSltns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linearsubproblemsltns-1.0.1.tar.gz tmp/linearsubproblemsltns-1.0.2.tar.gz --markdown 20230414/l/linearSubproblemSltns/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 20:33:42] INFO root fetch - processPackages [log21]: Downloading https://files.pythonhosted.org/packages/b2/26/acb7dcb1d8d9736e60e8c83ab56374a32039d50725279c8bf4c92899e4aa/log21-2.4.4.tar.gz
+[2023-04-14 20:33:42] INFO root fetch - processPackages [log21]: executing diffoscope
+[2023-04-14 20:33:42] INFO root fetch - processPackages [log21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/log21-2.4.3.tar.gz tmp/log21-2.4.4.tar.gz --markdown 20230414/l/log21/2.4.3-2.4.4/diff.md --exclude *.pyd
+[2023-04-14 20:33:42] INFO root fetch - processPackages [quip-cli]: Downloading https://files.pythonhosted.org/packages/ba/84/f447f7f7ce85a8aeb0eec9341ea3b1b19a7b0fdb87c3461db00ce066bd81/quip-cli-1.8.8.tar.gz
+[2023-04-14 20:33:42] INFO root fetch - processPackages [quip-cli]: executing diffoscope
+[2023-04-14 20:33:42] INFO root fetch - processPackages [quip-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quip-cli-1.8.7.tar.gz tmp/quip-cli-1.8.8.tar.gz --markdown 20230414/q/quip-cli/1.8.7-1.8.8/diff.md --exclude *.pyd
+[2023-04-14 20:33:42] INFO root fetch - processPackages [TapisCL-ICICLE]: Start processing: kk-scrapy-redis
+[2023-04-14 20:33:42] INFO root fetch - main [MainThread]: End processing [TapisCL-ICICLE]: success
+[2023-04-14 20:33:42] WARNING root fetch - processPackages [kk-scrapy-redis]: Skipping, unable to determine old version
+[2023-04-14 20:33:42] INFO root fetch - processPackages [kk-scrapy-redis]: Start processing: osm-annotation
+[2023-04-14 20:33:42] INFO root fetch - main [MainThread]: End processing [kk-scrapy-redis] error
+[2023-04-14 20:33:42] INFO root fetch - processPackages [osm-annotation]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 20:33:42] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-14 20:33:43] INFO root fetch - processPackages [osm-annotation]: Downloading https://files.pythonhosted.org/packages/03/d5/1dfe0c193f2bc90d0bd81730d1e9105b199ccefbd30f19c28006e909bb66/osm_annotation-0.1.8.tar.gz
+[2023-04-14 20:33:43] INFO root fetch - main [MainThread]: End processing [linearSubproblemSltns]: success
+[2023-04-14 20:33:43] INFO root fetch - processPackages [osm-annotation]: Downloading https://files.pythonhosted.org/packages/40/7c/af9a31496070e3bd8647805d50b5332684709bb24b601d8206931c305ff5/osm_annotation-0.1.9.tar.gz
+[2023-04-14 20:33:43] INFO root fetch - processPackages [osm-annotation]: executing diffoscope
+[2023-04-14 20:33:43] INFO root fetch - processPackages [osm-annotation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osm_annotation-0.1.8.tar.gz tmp/osm_annotation-0.1.9.tar.gz --markdown 20230414/o/osm-annotation/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 20:33:43] INFO root fetch - main [MainThread]: End processing [quip-cli]: success
+[2023-04-14 20:33:44] INFO root fetch - main [MainThread]: End processing [osm-annotation]: success
+[2023-04-14 20:33:44] INFO root fetch - main [MainThread]: End processing [log21]: success
+[2023-04-14 20:33:44] INFO root fetch - main [MainThread]: Store serial: [17711596]
