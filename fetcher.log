@@ -6016,3 +6016,82 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 04:21:06] INFO root fetch - main [MainThread]: End processing [gama-cli]: success
 [2023-04-14 04:22:44] INFO root fetch - main [MainThread]: End processing [langflow]: success
 [2023-04-14 04:22:44] INFO root fetch - main [MainThread]: Store serial: [17702510]
+[2023-04-14 04:27:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702510]
+[2023-04-14 04:27:53] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-14 04:27:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apibara
+[2023-04-14 04:27:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decanter-ai-sdk
+[2023-04-14 04:27:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iam-actions
+[2023-04-14 04:27:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hydra-zen
+[2023-04-14 04:27:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gpt-api
+[2023-04-14 04:27:53] INFO root fetch - processPackages [hydra-zen]: New version: [0.9.1] Old Version: [0.9.0rc5]
+[2023-04-14 04:27:53] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230414] Old Version: [1.2.20230413]
+[2023-04-14 04:27:53] INFO root fetch - processPackages [apibara]: New version: [0.6.6a3] Old Version: [0.6.6a2]
+[2023-04-14 04:27:53] INFO root fetch - processPackages [decanter-ai-sdk]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-14 04:27:53] INFO root fetch - processPackages [gpt-api]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 04:27:53] INFO root fetch - processPackages [hydra-zen]: Downloading https://files.pythonhosted.org/packages/21/7e/604d7ba9ff16a283e2f50a1de89b0bf58cf1bd84b2dcbb6f6f9658b232f6/hydra_zen-0.9.0rc5.tar.gz
+[2023-04-14 04:27:53] INFO root fetch - processPackages [apibara]: Downloading https://files.pythonhosted.org/packages/7d/7f/e3dd58b0d28e2213539e1ab69a5788a62e59874c9d4ebe380777792ac907/apibara-0.6.6a2.tar.gz
+[2023-04-14 04:27:53] INFO root fetch - processPackages [gpt-api]: Downloading https://files.pythonhosted.org/packages/b0/1a/1257ab6556e1e2c44c60939bb34274e4346111ad9d71ae4d6d1bfca922a1/gpt-api-0.1.3.tar.gz
+[2023-04-14 04:27:53] INFO root fetch - processPackages [decanter-ai-sdk]: Downloading https://files.pythonhosted.org/packages/67/6e/a76e21d8455d1d1aab8ab3b33ffcfea001523f7f5275b3dd775227bda674/decanter-ai-sdk-0.1.8.tar.gz
+[2023-04-14 04:27:53] INFO root fetch - processPackages [gpt-api]: executing diffoscope
+[2023-04-14 04:27:53] INFO root fetch - processPackages [gpt-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-api-0.1.2.tar.gz tmp/gpt-api-0.1.3.tar.gz --markdown 20230414/g/gpt-api/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 04:27:53] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/bd/b9/fd1a480fb7700f09c2032af55e85302bbe84bfe29714acec28d73ba23041/iam_actions-1.2.20230414.tar.gz
+[2023-04-14 04:27:53] INFO root fetch - processPackages [decanter-ai-sdk]: executing diffoscope
+[2023-04-14 04:27:53] INFO root fetch - processPackages [decanter-ai-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decanter-ai-sdk-0.1.7.tar.gz tmp/decanter-ai-sdk-0.1.8.tar.gz --markdown 20230414/d/decanter-ai-sdk/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-14 04:27:53] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-04-14 04:27:53] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230413.tar.gz tmp/iam_actions-1.2.20230414.tar.gz --markdown 20230414/i/iam-actions/1.2.20230413-1.2.20230414/diff.md --exclude *.pyd
+[2023-04-14 04:27:54] INFO root fetch - processPackages [apibara]: Downloading https://files.pythonhosted.org/packages/d7/02/1253a60a964238c518f8a201c8c427e6d9b5bc91cffd15b3e600f2928d89/apibara-0.6.6a3.tar.gz
+[2023-04-14 04:27:54] INFO root fetch - processPackages [apibara]: executing diffoscope
+[2023-04-14 04:27:54] INFO root fetch - processPackages [apibara]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apibara-0.6.6a2.tar.gz tmp/apibara-0.6.6a3.tar.gz --markdown 20230414/a/apibara/0.6.6a2-0.6.6a3/diff.md --exclude *.pyd
+[2023-04-14 04:27:54] INFO root fetch - processPackages [hydra-zen]: Downloading https://files.pythonhosted.org/packages/86/3d/de492179605f70616f99c02b2d98c9d2e3234d211c4a3c11237fafe66db0/hydra_zen-0.9.1.tar.gz
+[2023-04-14 04:27:54] INFO root fetch - processPackages [gpt-api]: Start processing: localplan
+[2023-04-14 04:27:54] INFO root fetch - main [MainThread]: End processing [gpt-api]: success
+[2023-04-14 04:27:54] INFO root fetch - processPackages [localplan]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 04:27:54] INFO root fetch - processPackages [localplan]: Downloading https://files.pythonhosted.org/packages/fb/2a/b97f14ac06c184c2d84b1cb1fe108945d754083f9482135c4703e1d5659f/localplan-0.0.1.tar.gz
+[2023-04-14 04:27:54] INFO root fetch - processPackages [decanter-ai-sdk]: Start processing: novelai-api
+[2023-04-14 04:27:54] INFO root fetch - main [MainThread]: End processing [decanter-ai-sdk]: success
+[2023-04-14 04:27:54] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2023-04-14 04:27:54] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2023-04-14 04:27:54] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20230414/n/novelai-api/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-14 04:27:54] INFO root fetch - processPackages [localplan]: Downloading https://files.pythonhosted.org/packages/2d/e2/3f7f496edcba881e788da4f543a2be890cfaf2f3399ae49126797187c768/localplan-0.0.2.tar.gz
+[2023-04-14 04:27:55] INFO root fetch - processPackages [hydra-zen]: executing diffoscope
+[2023-04-14 04:27:55] INFO root fetch - processPackages [hydra-zen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydra_zen-0.9.0rc5.tar.gz tmp/hydra_zen-0.9.1.tar.gz --markdown 20230414/h/hydra-zen/0.9.0rc5-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 04:27:55] INFO root fetch - processPackages [localplan]: executing diffoscope
+[2023-04-14 04:27:55] INFO root fetch - processPackages [localplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localplan-0.0.1.tar.gz tmp/localplan-0.0.2.tar.gz --markdown 20230414/l/localplan/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 04:27:55] INFO root fetch - processPackages [apibara]: Start processing: areixio
+[2023-04-14 04:27:55] INFO root fetch - main [MainThread]: End processing [apibara]: success
+[2023-04-14 04:27:55] INFO root fetch - processPackages [areixio]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-14 04:27:56] INFO root fetch - processPackages [areixio]: executing diffoscope
+[2023-04-14 04:27:56] INFO root fetch - processPackages [areixio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areixio-0.2.8.tar.gz tmp/areixio-0.2.9.tar.gz --markdown 20230414/a/areixio/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-14 04:27:56] INFO root fetch - processPackages [localplan]: Start processing: dcb-admin-page-generator
+[2023-04-14 04:27:56] INFO root fetch - main [MainThread]: End processing [localplan]: success
+[2023-04-14 04:27:56] INFO root fetch - processPackages [dcb-admin-page-generator]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 04:27:56] INFO root fetch - processPackages [novelai-api]: Start processing: typewritereffect
+[2023-04-14 04:27:56] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2023-04-14 04:27:56] WARNING root fetch - processPackages [typewritereffect]: Skipping, unable to determine old version
+[2023-04-14 04:27:56] INFO root fetch - processPackages [typewritereffect]: Start processing: shieldcloudapi
+[2023-04-14 04:27:56] INFO root fetch - main [MainThread]: End processing [typewritereffect] error
+[2023-04-14 04:27:56] INFO root fetch - processPackages [shieldcloudapi]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-14 04:27:56] INFO root fetch - processPackages [shieldcloudapi]: Downloading https://files.pythonhosted.org/packages/20/5c/583707f0abe3f5befe03fede202b20b86afb828bbd424cd4256e7a1ddc15/shieldcloudapi-0.1.3.tar.gz
+[2023-04-14 04:27:56] INFO root fetch - processPackages [dcb-admin-page-generator]: Downloading https://files.pythonhosted.org/packages/71/1e/917fc11b2be1875c35f243ef05158cc7a8bf27b5d20d3427d362f812cbb3/dcb_admin_page_generator-0.0.6.tar.gz
+[2023-04-14 04:27:56] INFO root fetch - processPackages [dcb-admin-page-generator]: executing diffoscope
+[2023-04-14 04:27:56] INFO root fetch - processPackages [dcb-admin-page-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcb_admin_page_generator-0.0.5.tar.gz tmp/dcb_admin_page_generator-0.0.6.tar.gz --markdown 20230414/d/dcb-admin-page-generator/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 04:27:56] INFO root fetch - processPackages [shieldcloudapi]: Downloading https://files.pythonhosted.org/packages/eb/33/5ac68e0c8b6ea447ddc9ff75b9a01fc394476a138a99c49f85b8dcfaa100/shieldcloudapi-0.1.4.tar.gz
+[2023-04-14 04:27:57] INFO root fetch - processPackages [shieldcloudapi]: executing diffoscope
+[2023-04-14 04:27:57] INFO root fetch - processPackages [shieldcloudapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shieldcloudapi-0.1.3.tar.gz tmp/shieldcloudapi-0.1.4.tar.gz --markdown 20230414/s/shieldcloudapi/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-14 04:27:57] INFO root fetch - processPackages [hydra-zen]: Start processing: botnium
+[2023-04-14 04:27:57] INFO root fetch - main [MainThread]: End processing [hydra-zen]: success
+[2023-04-14 04:27:57] WARNING root fetch - processPackages [botnium]: Skipping, unable to determine old version
+[2023-04-14 04:27:57] INFO root fetch - processPackages [botnium]: Start processing: django-bulmacss
+[2023-04-14 04:27:57] INFO root fetch - main [MainThread]: End processing [botnium] error
+[2023-04-14 04:27:57] WARNING root fetch - processPackages [django-bulmacss]: Skipping, unable to determine old version
+[2023-04-14 04:27:57] INFO root fetch - processPackages [django-bulmacss]: Start processing: coloraide
+[2023-04-14 04:27:57] INFO root fetch - main [MainThread]: End processing [django-bulmacss] error
+[2023-04-14 04:27:57] INFO root fetch - processPackages [coloraide]: New version: [2.1] Old Version: [2.0.2]
+[2023-04-14 04:27:57] INFO root fetch - processPackages [coloraide]: Downloading https://files.pythonhosted.org/packages/51/2b/f497c4312890fc736a5d43137d7294825fe76155cb861a4819f9260c120f/coloraide-2.0.2.tar.gz
+[2023-04-14 04:27:57] INFO root fetch - main [MainThread]: End processing [dcb-admin-page-generator]: success
+[2023-04-14 04:27:57] WARNING root fetch - processPackages [coloraide]: Skipping package: exceeds size limit 16212980>=10485760
+[2023-04-14 04:27:57] INFO root fetch - main [MainThread]: End processing [coloraide] error
+[2023-04-14 04:27:58] INFO root fetch - main [MainThread]: End processing [shieldcloudapi]: success
+[2023-04-14 04:27:58] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-04-14 04:28:05] INFO root fetch - main [MainThread]: End processing [areixio]: success
+[2023-04-14 04:28:05] INFO root fetch - main [MainThread]: Store serial: [17702554]
