@@ -8044,3 +8044,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 08:31:57] INFO root fetch - main [MainThread]: End processing [pydantic-aiohttp]: success
 [2023-04-14 08:32:53] INFO root fetch - main [MainThread]: End processing [antgo]: success
 [2023-04-14 08:32:53] INFO root fetch - main [MainThread]: Store serial: [17703754]
+[2023-04-14 08:37:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703754]
+[2023-04-14 08:38:01] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 08:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Geode-Background
+[2023-04-14 08:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sugar-shell
+[2023-04-14 08:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tw
+[2023-04-14 08:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-vite-react
+[2023-04-14 08:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: myelectricaldatapy
+[2023-04-14 08:38:01] INFO root fetch - processPackages [sugar-shell]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-14 08:38:01] INFO root fetch - processPackages [tw]: New version: [3.9.0] Old Version: [3.8.1]
+[2023-04-14 08:38:01] INFO root fetch - processPackages [myelectricaldatapy]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-04-14 08:38:01] INFO root fetch - processPackages [django-vite-react]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 08:38:01] WARNING root fetch - processPackages [Geode-Background]: Skipping, unable to determine old version
+[2023-04-14 08:38:01] INFO root fetch - processPackages [Geode-Background]: Start processing: pipen-filters
+[2023-04-14 08:38:01] INFO root fetch - main [MainThread]: End processing [Geode-Background] error
+[2023-04-14 08:38:01] INFO root fetch - processPackages [pipen-filters]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-14 08:38:01] INFO root fetch - processPackages [django-vite-react]: Downloading https://files.pythonhosted.org/packages/c2/93/30f106e48f387dc9760b8f5181c1024e665ea8806cd2386b86f31d513fb4/django-vite-react-0.0.1.tar.gz
+[2023-04-14 08:38:01] INFO root fetch - processPackages [pipen-filters]: Downloading https://files.pythonhosted.org/packages/8b/87/7350fe6772dca4f175bf65b94c40733d2aaf28481c3ab9f788d27870fceb/pipen_filters-0.6.0.tar.gz
+[2023-04-14 08:38:01] INFO root fetch - processPackages [sugar-shell]: Downloading https://files.pythonhosted.org/packages/cc/93/68dd42b718f694009ba834ef1735205cac466b0964e3a3a79831493e4e51/sugar_shell-0.2.3.tar.gz
+[2023-04-14 08:38:01] INFO root fetch - processPackages [tw]: Downloading https://files.pythonhosted.org/packages/a1/f1/bdfe9fe94788d173f89acb91e971ab92efa16ac626bed080468cda96870a/tw-3.8.1.tar.gz
+[2023-04-14 08:38:01] INFO root fetch - processPackages [myelectricaldatapy]: Downloading https://files.pythonhosted.org/packages/f2/0f/a6a9c601ed720bed7a3adbb9dcb751f26a8183ee1dd1f8ef096faf1f15be/myelectricaldatapy-1.9.6.tar.gz
+[2023-04-14 08:38:01] INFO root fetch - processPackages [django-vite-react]: Downloading https://files.pythonhosted.org/packages/6c/71/6b7d1e75c580f9ce00dacf5c1b7010092106ce3efb99d6b806eaadc00051/django-vite-react-0.0.2.tar.gz
+[2023-04-14 08:38:01] INFO root fetch - processPackages [myelectricaldatapy]: executing diffoscope
+[2023-04-14 08:38:01] INFO root fetch - processPackages [myelectricaldatapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myelectricaldatapy-1.9.5.tar.gz tmp/myelectricaldatapy-1.9.6.tar.gz --markdown 20230414/m/myelectricaldatapy/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-04-14 08:38:01] INFO root fetch - processPackages [django-vite-react]: executing diffoscope
+[2023-04-14 08:38:01] INFO root fetch - processPackages [django-vite-react]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-vite-react-0.0.1.tar.gz tmp/django-vite-react-0.0.2.tar.gz --markdown 20230414/d/django-vite-react/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 08:38:01] INFO root fetch - processPackages [pipen-filters]: Downloading https://files.pythonhosted.org/packages/ec/97/2f5ddd8629e9df2c0b59ce8c1412dacc1058d09656d1b206a2bb8d4ad36a/pipen_filters-0.7.0.tar.gz
+[2023-04-14 08:38:01] INFO root fetch - processPackages [sugar-shell]: Downloading https://files.pythonhosted.org/packages/dd/9c/dee5fd19f8d0746b21075a0e5573c6aba9c4854250ef8f1efaa509e85af6/sugar_shell-0.2.4.tar.gz
+[2023-04-14 08:38:01] INFO root fetch - processPackages [pipen-filters]: executing diffoscope
+[2023-04-14 08:38:01] INFO root fetch - processPackages [pipen-filters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_filters-0.6.0.tar.gz tmp/pipen_filters-0.7.0.tar.gz --markdown 20230414/p/pipen-filters/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-14 08:38:01] INFO root fetch - processPackages [sugar-shell]: executing diffoscope
+[2023-04-14 08:38:01] INFO root fetch - processPackages [sugar-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sugar_shell-0.2.3.tar.gz tmp/sugar_shell-0.2.4.tar.gz --markdown 20230414/s/sugar-shell/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-14 08:38:02] INFO root fetch - processPackages [tw]: Downloading https://files.pythonhosted.org/packages/7a/cd/5ebf3a1631139efa3bbf0a5649eb00c21304820ffe9e1b294c87369a21eb/tw-3.9.0.tar.gz
+[2023-04-14 08:38:02] INFO root fetch - processPackages [tw]: executing diffoscope
+[2023-04-14 08:38:02] INFO root fetch - processPackages [tw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tw-3.8.1.tar.gz tmp/tw-3.9.0.tar.gz --markdown 20230414/t/tw/3.8.1-3.9.0/diff.md --exclude *.pyd
+[2023-04-14 08:38:02] INFO root fetch - processPackages [django-vite-react]: Start processing: delphixpy
+[2023-04-14 08:38:02] INFO root fetch - main [MainThread]: End processing [django-vite-react]: success
+[2023-04-14 08:38:02] INFO root fetch - processPackages [delphixpy]: New version: [1.9.3.0] Old Version: [1.9.2.0]
+[2023-04-14 08:38:02] INFO root fetch - processPackages [pipen-filters]: Start processing: common-test-1
+[2023-04-14 08:38:02] INFO root fetch - main [MainThread]: End processing [pipen-filters]: success
+[2023-04-14 08:38:02] WARNING root fetch - processPackages [common-test-1]: Skipping, unable to determine old version
+[2023-04-14 08:38:02] INFO root fetch - main [MainThread]: End processing [common-test-1] error
+[2023-04-14 08:38:02] INFO root fetch - main [MainThread]: End processing [sugar-shell]: success
+[2023-04-14 08:38:02] INFO root fetch - main [MainThread]: End processing [myelectricaldatapy]: success
+[2023-04-14 08:38:03] INFO root fetch - processPackages [delphixpy]: Downloading https://files.pythonhosted.org/packages/72/d1/cc9d4049bb24d9574b4602bf56430e6d2802b9efa401800b03ccd4f98a1d/delphixpy-1.9.2.0.tar.gz
+[2023-04-14 08:38:05] INFO root fetch - main [MainThread]: End processing [tw]: success
+[2023-04-14 08:38:05] INFO root fetch - processPackages [delphixpy]: Downloading https://files.pythonhosted.org/packages/a3/35/a9a69663b7d681a8dfe0e8b1cdb6505653efd3b44f0a25edcd1b2beb0d08/delphixpy-1.9.3.0.tar.gz
+[2023-04-14 08:38:07] INFO root fetch - processPackages [delphixpy]: executing diffoscope
+[2023-04-14 08:38:07] INFO root fetch - processPackages [delphixpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/delphixpy-1.9.2.0.tar.gz tmp/delphixpy-1.9.3.0.tar.gz --markdown 20230414/d/delphixpy/1.9.2.0-1.9.3.0/diff.md --exclude *.pyd
+[2023-04-14 08:41:07] ERROR root fetch - processPackages [delphixpy]: Timeout during execution of pkgdiff
+[2023-04-14 08:41:07] INFO root fetch - main [MainThread]: End processing [delphixpy] error
+[2023-04-14 08:41:07] INFO root fetch - main [MainThread]: Store serial: [17703787]
