@@ -22625,3 +22625,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 23:23:00] INFO root fetch - main [MainThread]: End processing [turbo-queue]: success
 [2023-04-14 23:23:04] INFO root fetch - main [MainThread]: End processing [prunerr]: success
 [2023-04-14 23:23:04] INFO root fetch - main [MainThread]: Store serial: [17713060]
+[2023-04-14 23:28:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713060]
+[2023-04-14 23:28:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-14 23:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dxsp
+[2023-04-14 23:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ocrmypdf
+[2023-04-14 23:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: elifecleaner
+[2023-04-14 23:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipcryptographylibaryV2
+[2023-04-14 23:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyqtgraph
+[2023-04-14 23:28:12] INFO root fetch - processPackages [dxsp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 23:28:12] INFO root fetch - processPackages [pyqtgraph]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-14 23:28:12] INFO root fetch - processPackages [elifecleaner]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 23:28:12] INFO root fetch - processPackages [pipcryptographylibaryV2]: New version: [1.2.0] Old Version: [1.0.0]
+[2023-04-14 23:28:12] INFO root fetch - processPackages [ocrmypdf]: New version: [9.8.2] Old Version: [9.8.1]
+[2023-04-14 23:28:13] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-14 23:28:13] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.8.tar.gz tmp/dxsp-1.0.9.tar.gz --markdown 20230414/d/dxsp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 23:28:13] INFO root fetch - processPackages [elifecleaner]: executing diffoscope
+[2023-04-14 23:28:13] INFO root fetch - processPackages [elifecleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elifecleaner-0.9.0.tar.gz tmp/elifecleaner-0.9.1.tar.gz --markdown 20230414/e/elifecleaner/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 23:28:13] INFO root fetch - processPackages [pyqtgraph]: Downloading https://files.pythonhosted.org/packages/ed/1e/6d130184f35c8c4aeb8488c7da0b06cbae239710648fc1086778391e32bf/pyqtgraph-0.9.7.tar.gz
+[2023-04-14 23:28:13] INFO root fetch - processPackages [ocrmypdf]: Downloading https://files.pythonhosted.org/packages/14/45/a2315680b83ec61fee6771408338754b37b678e56dacb9abdc770190b759/ocrmypdf-9.8.1.tar.gz
+[2023-04-14 23:28:13] INFO root fetch - processPackages [pipcryptographylibaryV2]: Downloading https://files.pythonhosted.org/packages/d2/57/52116481909bc7d7d416cda3353405733382a90435a4f8775e120bf58c74/pipcryptographylibaryV2-1.0.0.tar.gz
+[2023-04-14 23:28:13] INFO root fetch - processPackages [pipcryptographylibaryV2]: Downloading https://files.pythonhosted.org/packages/48/bd/531673bd2888b6719abd2851a4af539e7eb98c19cd9e76db77e447b83830/pipcryptographylibaryV2-1.2.0.tar.gz
+[2023-04-14 23:28:13] INFO root fetch - processPackages [pyqtgraph]: Downloading https://files.pythonhosted.org/packages/3c/ae/482ffc3f9c4a0e21502417cb0504acd8b91779ce0381018518a4173b36ab/pyqtgraph-0.9.8.tar.gz
+[2023-04-14 23:28:13] INFO root fetch - processPackages [pipcryptographylibaryV2]: executing diffoscope
+[2023-04-14 23:28:13] INFO root fetch - processPackages [pipcryptographylibaryV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipcryptographylibaryV2-1.0.0.tar.gz tmp/pipcryptographylibaryV2-1.2.0.tar.gz --markdown 20230414/p/pipcryptographylibaryV2/1.0.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-14 23:28:13] INFO root fetch - processPackages [pyqtgraph]: executing diffoscope
+[2023-04-14 23:28:13] INFO root fetch - processPackages [pyqtgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqtgraph-0.9.7.tar.gz tmp/pyqtgraph-0.9.8.tar.gz --markdown 20230414/p/pyqtgraph/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-14 23:28:14] INFO root fetch - processPackages [dxsp]: Start processing: keepercommander
+[2023-04-14 23:28:14] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-14 23:28:14] INFO root fetch - main [MainThread]: End processing [elifecleaner]: success
+[2023-04-14 23:28:14] INFO root fetch - processPackages [keepercommander]: New version: [4.9] Old Version: [4.88]
+[2023-04-14 23:28:14] INFO root fetch - main [MainThread]: End processing [pipcryptographylibaryV2]: success
+[2023-04-14 23:28:14] INFO root fetch - processPackages [keepercommander]: executing diffoscope
+[2023-04-14 23:28:14] INFO root fetch - processPackages [keepercommander]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keepercommander-4.88.tar.gz tmp/keepercommander-4.9.tar.gz --markdown 20230414/k/keepercommander/4.88-4.9/diff.md --exclude *.pyd
+[2023-04-14 23:28:16] INFO root fetch - processPackages [ocrmypdf]: Downloading https://files.pythonhosted.org/packages/e9/15/f126999a5fa467662835013d51793ea20eb24aac509252b0a5b1a5f403f3/ocrmypdf-9.8.2.tar.gz
+[2023-04-14 23:28:16] INFO root fetch - main [MainThread]: End processing [keepercommander]: success
+[2023-04-14 23:28:18] INFO root fetch - processPackages [ocrmypdf]: executing diffoscope
+[2023-04-14 23:28:18] INFO root fetch - processPackages [ocrmypdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocrmypdf-9.8.1.tar.gz tmp/ocrmypdf-9.8.2.tar.gz --markdown 20230414/o/ocrmypdf/9.8.1-9.8.2/diff.md --exclude *.pyd
+[2023-04-14 23:28:22] INFO root fetch - main [MainThread]: End processing [ocrmypdf]: success
+[2023-04-14 23:28:28] INFO root fetch - main [MainThread]: End processing [pyqtgraph]: success
+[2023-04-14 23:28:28] INFO root fetch - main [MainThread]: Store serial: [17713084]
