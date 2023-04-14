@@ -13528,3 +13528,80 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 14:41:39] INFO root fetch - main [MainThread]: End processing [daskcheck]: success
 [2023-04-14 14:41:40] INFO root fetch - main [MainThread]: End processing [gustaf]: success
 [2023-04-14 14:41:40] INFO root fetch - main [MainThread]: Store serial: [17707152]
+[2023-04-14 14:46:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17707152]
+[2023-04-14 14:46:47] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 14:46:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: veetility
+[2023-04-14 14:46:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SPLayout
+[2023-04-14 14:46:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyProcessAutom
+[2023-04-14 14:46:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: compressbinarytable
+[2023-04-14 14:46:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CTkMessagebox
+[2023-04-14 14:46:47] INFO root fetch - processPackages [CTkMessagebox]: New version: [1.8] Old Version: [1.74]
+[2023-04-14 14:46:47] WARNING root fetch - processPackages [compressbinarytable]: Skipping, unable to determine old version
+[2023-04-14 14:46:47] INFO root fetch - processPackages [compressbinarytable]: Start processing: gs-peer-connection
+[2023-04-14 14:46:47] INFO root fetch - main [MainThread]: End processing [compressbinarytable] error
+[2023-04-14 14:46:47] INFO root fetch - processPackages [pyProcessAutom]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-14 14:46:47] INFO root fetch - processPackages [veetility]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 14:46:47] INFO root fetch - processPackages [SPLayout]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-14 14:46:48] INFO root fetch - processPackages [gs-peer-connection]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 14:46:48] INFO root fetch - processPackages [veetility]: executing diffoscope
+[2023-04-14 14:46:48] INFO root fetch - processPackages [veetility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veetility-0.1.8.tar.gz tmp/veetility-0.1.9.tar.gz --markdown 20230414/v/veetility/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 14:46:48] INFO root fetch - processPackages [CTkMessagebox]: Downloading https://files.pythonhosted.org/packages/d6/63/69a96e53e8163e63797de10e17c4daf7c605b2320dd93092fa45ea1ed0ff/CTkMessagebox-1.74.tar.gz
+[2023-04-14 14:46:48] INFO root fetch - processPackages [pyProcessAutom]: Downloading https://files.pythonhosted.org/packages/a7/57/0113a59884dead608eafa240b861d54c5c0c90333b8b6881b68e97cf17d1/pyProcessAutom-1.4.9.tar.gz
+[2023-04-14 14:46:48] INFO root fetch - processPackages [SPLayout]: Downloading https://files.pythonhosted.org/packages/da/85/f8aab2d04f8fa5b57508b1ae42826fb0cfdd0fc80095eee6eabcfde78b5b/SPLayout-0.4.3.tar.gz
+[2023-04-14 14:46:48] INFO root fetch - processPackages [gs-peer-connection]: Downloading https://files.pythonhosted.org/packages/2b/f2/2fad48c1e8beffe0dcfbe560081f9686682cf52ef15bd8c1ca2f4ef6b33a/gs-peer-connection-0.0.8.tar.gz
+[2023-04-14 14:46:48] INFO root fetch - processPackages [pyProcessAutom]: executing diffoscope
+[2023-04-14 14:46:48] INFO root fetch - processPackages [pyProcessAutom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyProcessAutom-1.4.8.tar.gz tmp/pyProcessAutom-1.4.9.tar.gz --markdown 20230414/p/pyProcessAutom/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-14 14:46:48] INFO root fetch - processPackages [CTkMessagebox]: Downloading https://files.pythonhosted.org/packages/87/0e/7d363237b65db4fc75b1c5ad8f684f8cf63a8bafd70609d1583cb4ad1567/CTkMessagebox-1.8.tar.gz
+[2023-04-14 14:46:48] INFO root fetch - processPackages [SPLayout]: Downloading https://files.pythonhosted.org/packages/79/ed/01217df76f8a2a9eb4e3b062cf326a8de5257188a8d42046ec9532107c98/SPLayout-0.4.4.tar.gz
+[2023-04-14 14:46:48] INFO root fetch - processPackages [SPLayout]: executing diffoscope
+[2023-04-14 14:46:48] INFO root fetch - processPackages [SPLayout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SPLayout-0.4.3.tar.gz tmp/SPLayout-0.4.4.tar.gz --markdown 20230414/S/SPLayout/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-14 14:46:48] INFO root fetch - processPackages [CTkMessagebox]: executing diffoscope
+[2023-04-14 14:46:48] INFO root fetch - processPackages [CTkMessagebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTkMessagebox-1.74.tar.gz tmp/CTkMessagebox-1.8.tar.gz --markdown 20230414/C/CTkMessagebox/1.74-1.8/diff.md --exclude *.pyd
+[2023-04-14 14:46:48] INFO root fetch - processPackages [gs-peer-connection]: Downloading https://files.pythonhosted.org/packages/e9/3a/a4f33a77bfb1c126891781631ab489faaa57e9730c21f81fa0ce8178474e/gs-peer-connection-0.0.9.tar.gz
+[2023-04-14 14:46:48] INFO root fetch - processPackages [gs-peer-connection]: executing diffoscope
+[2023-04-14 14:46:48] INFO root fetch - processPackages [gs-peer-connection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs-peer-connection-0.0.8.tar.gz tmp/gs-peer-connection-0.0.9.tar.gz --markdown 20230414/g/gs-peer-connection/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 14:46:49] INFO root fetch - processPackages [veetility]: Start processing: pulumi-azure-native
+[2023-04-14 14:46:49] INFO root fetch - main [MainThread]: End processing [veetility]: success
+[2023-04-14 14:46:49] INFO root fetch - processPackages [pulumi-azure-native]: New version: [1.99.3a1681473063] Old Version: [1.99.3a1681354021]
+[2023-04-14 14:46:49] INFO root fetch - processPackages [pyProcessAutom]: Start processing: esp-idf-monitor
+[2023-04-14 14:46:49] INFO root fetch - main [MainThread]: End processing [pyProcessAutom]: success
+[2023-04-14 14:46:49] INFO root fetch - processPackages [esp-idf-monitor]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-14 14:46:49] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/fb/a8/cd03e55f5b603c8d8bd9eb064b5be985861c92821647b7720a0e9695c61b/pulumi_azure_native-1.99.3a1681354021.tar.gz
+[2023-04-14 14:46:49] INFO root fetch - processPackages [esp-idf-monitor]: Downloading https://files.pythonhosted.org/packages/8f/b3/8c32f113ce2ad21511e8fa51f2dbf08eb4b4b2c6df1b2ac0b2c223d9b4cf/esp-idf-monitor-1.0.2.tar.gz
+[2023-04-14 14:46:49] INFO root fetch - processPackages [CTkMessagebox]: Start processing: netbox-kea-dhcp
+[2023-04-14 14:46:49] INFO root fetch - main [MainThread]: End processing [CTkMessagebox]: success
+[2023-04-14 14:46:49] INFO root fetch - processPackages [netbox-kea-dhcp]: New version: [0.0.1a4] Old Version: [0.0.1a3]
+[2023-04-14 14:46:49] INFO root fetch - processPackages [gs-peer-connection]: Start processing: pycodeless
+[2023-04-14 14:46:49] INFO root fetch - main [MainThread]: End processing [gs-peer-connection]: success
+[2023-04-14 14:46:49] INFO root fetch - processPackages [pycodeless]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 14:46:49] INFO root fetch - processPackages [netbox-kea-dhcp]: Downloading https://files.pythonhosted.org/packages/51/85/c553a7caa48ca355fc7c3a62a57db5431088a3ef52357cb990ba677c081b/netbox_kea_dhcp-0.0.1a4.tar.gz
+[2023-04-14 14:46:49] INFO root fetch - processPackages [SPLayout]: Start processing: duit
+[2023-04-14 14:46:49] INFO root fetch - main [MainThread]: End processing [SPLayout]: success
+[2023-04-14 14:46:49] INFO root fetch - processPackages [esp-idf-monitor]: Downloading https://files.pythonhosted.org/packages/81/dd/8ea09e4666a35751dfda7e240a1c0feddb3b19a6f20668e678018c523479/esp-idf-monitor-1.0.3.tar.gz
+[2023-04-14 14:46:49] INFO root fetch - processPackages [duit]: New version: [0.1.7.1] Old Version: [0.1.7]
+[2023-04-14 14:46:49] INFO root fetch - processPackages [esp-idf-monitor]: executing diffoscope
+[2023-04-14 14:46:49] INFO root fetch - processPackages [esp-idf-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esp-idf-monitor-1.0.2.tar.gz tmp/esp-idf-monitor-1.0.3.tar.gz --markdown 20230414/e/esp-idf-monitor/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-14 14:46:49] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 62790993>=10485760
+[2023-04-14 14:46:49] INFO root fetch - processPackages [pulumi-azure-native]: Start processing: create-docker-compose
+[2023-04-14 14:46:49] INFO root fetch - main [MainThread]: End processing [pulumi-azure-native] error
+[2023-04-14 14:46:49] INFO root fetch - processPackages [netbox-kea-dhcp]: executing diffoscope
+[2023-04-14 14:46:49] INFO root fetch - processPackages [netbox-kea-dhcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox_kea_dhcp-0.0.1a3.tar.gz tmp/netbox_kea_dhcp-0.0.1a4.tar.gz --markdown 20230414/n/netbox-kea-dhcp/0.0.1a3-0.0.1a4/diff.md --exclude *.pyd
+[2023-04-14 14:46:49] INFO root fetch - processPackages [pycodeless]: Downloading https://files.pythonhosted.org/packages/24/c8/9ccd71208c560434a6acecc3f4806be73822fe7636003a4ae30a2a16524b/pycodeless-0.1.0.tar.gz
+[2023-04-14 14:46:50] INFO root fetch - processPackages [create-docker-compose]: New version: [0.2] Old Version: [0.1]
+[2023-04-14 14:46:50] INFO root fetch - processPackages [duit]: Downloading https://files.pythonhosted.org/packages/a3/6e/97a3681e1f76f511d31943ad33ac1a3a786b8aac21fccbb6b13f8d11cfef/duit-0.1.7-py3-none-any.whl
+[2023-04-14 14:46:50] INFO root fetch - processPackages [pycodeless]: Downloading https://files.pythonhosted.org/packages/d3/c2/57f382dfc6da67f2b5f6b65e7be9009d1d35cbd5151dc0d58f9dc480f7c4/pycodeless-0.2.0.tar.gz
+[2023-04-14 14:46:50] INFO root fetch - processPackages [pycodeless]: executing diffoscope
+[2023-04-14 14:46:50] INFO root fetch - processPackages [pycodeless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycodeless-0.1.0.tar.gz tmp/pycodeless-0.2.0.tar.gz --markdown 20230414/p/pycodeless/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 14:46:50] INFO root fetch - processPackages [duit]: Downloading https://files.pythonhosted.org/packages/c7/27/e720b801e07e1976cd9df34b77253c38b0093f67c7eeba72e81115fbfb61/duit-0.1.7.1-py3-none-any.whl
+[2023-04-14 14:46:50] INFO root fetch - processPackages [create-docker-compose]: Downloading https://files.pythonhosted.org/packages/16/05/b1259fa148f74a2dd8c48b921fcdefd54228df1a296c6cb5e3f36f5fce09/create_docker_compose-0.1.tar.gz
+[2023-04-14 14:46:50] INFO root fetch - processPackages [duit]: executing diffoscope
+[2023-04-14 14:46:50] INFO root fetch - processPackages [duit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duit-0.1.7-py3-none-any.whl.zip tmp/duit-0.1.7.1-py3-none-any.whl.zip --markdown 20230414/d/duit/0.1.7-0.1.7.1/diff.md --exclude *.pyd
+[2023-04-14 14:46:50] INFO root fetch - processPackages [create-docker-compose]: Downloading https://files.pythonhosted.org/packages/d2/3b/4ab88800e8ed714782bf098af18f9be7813225d734dfc3b192261f2c8391/create_docker_compose-0.2.tar.gz
+[2023-04-14 14:46:50] INFO root fetch - processPackages [create-docker-compose]: executing diffoscope
+[2023-04-14 14:46:50] INFO root fetch - processPackages [create-docker-compose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/create_docker_compose-0.1.tar.gz tmp/create_docker_compose-0.2.tar.gz --markdown 20230414/c/create-docker-compose/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-14 14:46:51] INFO root fetch - main [MainThread]: End processing [esp-idf-monitor]: success
+[2023-04-14 14:46:51] INFO root fetch - main [MainThread]: End processing [netbox-kea-dhcp]: success
+[2023-04-14 14:46:51] INFO root fetch - main [MainThread]: End processing [pycodeless]: success
+[2023-04-14 14:46:51] INFO root fetch - main [MainThread]: End processing [create-docker-compose]: success
+[2023-04-14 14:46:51] INFO root fetch - main [MainThread]: End processing [duit]: success
+[2023-04-14 14:46:51] INFO root fetch - main [MainThread]: Store serial: [17707188]
