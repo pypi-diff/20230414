@@ -7566,3 +7566,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 07:47:18] INFO root fetch - main [MainThread]: End processing [imaginaition]: success
 [2023-04-14 07:47:18] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pos-pms-link]: success
 [2023-04-14 07:47:18] INFO root fetch - main [MainThread]: Store serial: [17703465]
+[2023-04-14 07:52:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703465]
+[2023-04-14 07:52:25] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 07:52:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hackyargparser
+[2023-04-14 07:52:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyoxynet
+[2023-04-14 07:52:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyProcessAutom
+[2023-04-14 07:52:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: naver-sens
+[2023-04-14 07:52:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cardano-mass-payments
+[2023-04-14 07:52:25] INFO root fetch - processPackages [pyProcessAutom]: New version: [1.4.5] Old Version: [1.4.4]
+[2023-04-14 07:52:25] INFO root fetch - processPackages [hackyargparser]: New version: [0.11] Old Version: [0.10]
+[2023-04-14 07:52:25] WARNING root fetch - processPackages [naver-sens]: Skipping, unable to determine old version
+[2023-04-14 07:52:25] INFO root fetch - processPackages [naver-sens]: Start processing: apache-dolphinscheduler
+[2023-04-14 07:52:25] INFO root fetch - main [MainThread]: End processing [naver-sens] error
+[2023-04-14 07:52:25] INFO root fetch - processPackages [pyoxynet]: New version: [0.0.9.9] Old Version: [0.0.9.8]
+[2023-04-14 07:52:25] INFO root fetch - processPackages [cardano-mass-payments]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-14 07:52:25] INFO root fetch - processPackages [apache-dolphinscheduler]: New version: [4.0.3] Old Version: [4.0.2a8]
+[2023-04-14 07:52:25] INFO root fetch - processPackages [pyoxynet]: executing diffoscope
+[2023-04-14 07:52:25] INFO root fetch - processPackages [pyoxynet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyoxynet-0.0.9.8.tar.gz tmp/pyoxynet-0.0.9.9.tar.gz --markdown 20230414/p/pyoxynet/0.0.9.8-0.0.9.9/diff.md --exclude *.pyd
+[2023-04-14 07:52:25] INFO root fetch - processPackages [pyProcessAutom]: Downloading https://files.pythonhosted.org/packages/06/fc/ff34766d4d1a0143c0a7e493ad8b972965aa1f5eb9212b176ed0922b4631/pyProcessAutom-1.4.5.tar.gz
+[2023-04-14 07:52:25] INFO root fetch - processPackages [hackyargparser]: Downloading https://files.pythonhosted.org/packages/51/d2/2a3435cfc69cc3a5a62ab3c03bbd69f7124261a5518a3d4eeb0beb817c76/hackyargparser-0.10.tar.gz
+[2023-04-14 07:52:25] INFO root fetch - processPackages [cardano-mass-payments]: Downloading https://files.pythonhosted.org/packages/2b/a0/e95cc6c6e035d4dc98b3deb612eb732580e4758702140a523a37b58805f0/cardano-mass-payments-0.1.4.tar.gz
+[2023-04-14 07:52:25] INFO root fetch - processPackages [apache-dolphinscheduler]: Downloading https://files.pythonhosted.org/packages/fe/b1/7fcd2b1ec98439a1eb06e3b2228ef2e7bb7e61acb0300fa7e49cadc9dc38/apache-dolphinscheduler-4.0.2a8.tar.gz
+[2023-04-14 07:52:25] INFO root fetch - processPackages [pyProcessAutom]: executing diffoscope
+[2023-04-14 07:52:25] INFO root fetch - processPackages [pyProcessAutom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyProcessAutom-1.4.4.tar.gz tmp/pyProcessAutom-1.4.5.tar.gz --markdown 20230414/p/pyProcessAutom/1.4.4-1.4.5/diff.md --exclude *.pyd
+[2023-04-14 07:52:26] INFO root fetch - processPackages [hackyargparser]: Downloading https://files.pythonhosted.org/packages/0c/7e/ab463ca40c824647b2d9aa0fff92ff208f2ea50180fe5f48656a6b16d88e/hackyargparser-0.11.tar.gz
+[2023-04-14 07:52:26] INFO root fetch - processPackages [hackyargparser]: executing diffoscope
+[2023-04-14 07:52:26] INFO root fetch - processPackages [hackyargparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hackyargparser-0.10.tar.gz tmp/hackyargparser-0.11.tar.gz --markdown 20230414/h/hackyargparser/0.10-0.11/diff.md --exclude *.pyd
+[2023-04-14 07:52:26] INFO root fetch - processPackages [cardano-mass-payments]: Downloading https://files.pythonhosted.org/packages/af/02/1d6800fc43d28d18b593f0698213856585b159afa11d093b73eea69b7547/cardano-mass-payments-0.1.5.tar.gz
+[2023-04-14 07:52:26] INFO root fetch - processPackages [apache-dolphinscheduler]: Downloading https://files.pythonhosted.org/packages/26/34/bdbab9df54fba2c58036cb5ecde9596fa6b9ef30f3e697ed5a4d720403d8/apache-dolphinscheduler-4.0.3.tar.gz
+[2023-04-14 07:52:26] INFO root fetch - processPackages [cardano-mass-payments]: executing diffoscope
+[2023-04-14 07:52:26] INFO root fetch - processPackages [cardano-mass-payments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardano-mass-payments-0.1.4.tar.gz tmp/cardano-mass-payments-0.1.5.tar.gz --markdown 20230414/c/cardano-mass-payments/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-14 07:52:26] INFO root fetch - processPackages [apache-dolphinscheduler]: executing diffoscope
+[2023-04-14 07:52:26] INFO root fetch - processPackages [apache-dolphinscheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-dolphinscheduler-4.0.2a8.tar.gz tmp/apache-dolphinscheduler-4.0.3.tar.gz --markdown 20230414/a/apache-dolphinscheduler/4.0.2a8-4.0.3/diff.md --exclude *.pyd
+[2023-04-14 07:52:27] INFO root fetch - processPackages [pyProcessAutom]: Start processing: django-bulmacss
+[2023-04-14 07:52:27] INFO root fetch - main [MainThread]: End processing [pyProcessAutom]: success
+[2023-04-14 07:52:27] INFO root fetch - processPackages [django-bulmacss]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 07:52:27] INFO root fetch - processPackages [hackyargparser]: Start processing: groupdocs-annotation-cloud
+[2023-04-14 07:52:27] INFO root fetch - main [MainThread]: End processing [hackyargparser]: success
+[2023-04-14 07:52:27] INFO root fetch - processPackages [groupdocs-annotation-cloud]: New version: [23.4] Old Version: [22.2]
+[2023-04-14 07:52:27] INFO root fetch - processPackages [django-bulmacss]: Downloading https://files.pythonhosted.org/packages/38/34/395831fb45cd6de164bbbf4640c78bd3a8e33be780ed7b01fb03efe9fa8a/django-bulmacss-0.0.1.tar.gz
+[2023-04-14 07:52:27] INFO root fetch - processPackages [groupdocs-annotation-cloud]: Downloading https://files.pythonhosted.org/packages/49/a5/a2a783366fb7b500695a71fe65fabfa7c4ad5f3ef079d0c5f86cc7d2316b/groupdocs-annotation-cloud-22.2.tar.gz
+[2023-04-14 07:52:27] INFO root fetch - processPackages [django-bulmacss]: Downloading https://files.pythonhosted.org/packages/87/92/8bc00edd717602792ea428b4edd8522b183ac5b4e7a992e74a29446a375f/django-bulmacss-0.0.2.tar.gz
+[2023-04-14 07:52:27] INFO root fetch - processPackages [django-bulmacss]: executing diffoscope
+[2023-04-14 07:52:27] INFO root fetch - processPackages [django-bulmacss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bulmacss-0.0.1.tar.gz tmp/django-bulmacss-0.0.2.tar.gz --markdown 20230414/d/django-bulmacss/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 07:52:27] INFO root fetch - processPackages [cardano-mass-payments]: Start processing: you-livep
+[2023-04-14 07:52:27] INFO root fetch - main [MainThread]: End processing [cardano-mass-payments]: success
+[2023-04-14 07:52:27] WARNING root fetch - processPackages [you-livep]: Skipping, unable to determine old version
+[2023-04-14 07:52:27] INFO root fetch - main [MainThread]: End processing [you-livep] error
+[2023-04-14 07:52:27] INFO root fetch - processPackages [groupdocs-annotation-cloud]: Downloading https://files.pythonhosted.org/packages/6c/b1/19dda8583a168dd9752f0c428ea710f7365f6f5efbba9918d36d99527275/groupdocs-annotation-cloud-23.4.tar.gz
+[2023-04-14 07:52:27] INFO root fetch - processPackages [groupdocs-annotation-cloud]: executing diffoscope
+[2023-04-14 07:52:27] INFO root fetch - processPackages [groupdocs-annotation-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/groupdocs-annotation-cloud-22.2.tar.gz tmp/groupdocs-annotation-cloud-23.4.tar.gz --markdown 20230414/g/groupdocs-annotation-cloud/22.2-23.4/diff.md --exclude *.pyd
+[2023-04-14 07:52:27] INFO root fetch - main [MainThread]: End processing [pyoxynet]: success
+[2023-04-14 07:52:28] INFO root fetch - main [MainThread]: End processing [apache-dolphinscheduler]: success
+[2023-04-14 07:52:29] INFO root fetch - main [MainThread]: End processing [django-bulmacss]: success
+[2023-04-14 07:52:29] INFO root fetch - main [MainThread]: End processing [groupdocs-annotation-cloud]: success
+[2023-04-14 07:52:29] INFO root fetch - main [MainThread]: Store serial: [17703495]
