@@ -15729,3 +15729,125 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 16:41:00] INFO root fetch - main [MainThread]: End processing [metobs-toolkit]: success
 [2023-04-14 16:41:00] INFO root fetch - main [MainThread]: End processing [SCALECAST]: success
 [2023-04-14 16:41:00] INFO root fetch - main [MainThread]: Store serial: [17708525]
+[2023-04-14 16:46:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17708525]
+[2023-04-14 16:46:08] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-14 16:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: symbolic-learn
+[2023-04-14 16:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: newick-tree-builder
+[2023-04-14 16:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hlatypingtools
+[2023-04-14 16:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vonage
+[2023-04-14 16:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cybrid-api-id-python
+[2023-04-14 16:46:08] INFO root fetch - processPackages [symbolic-learn]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 16:46:08] WARNING root fetch - processPackages [hlatypingtools]: Skipping, unable to determine old version
+[2023-04-14 16:46:08] INFO root fetch - processPackages [hlatypingtools]: Start processing: coverage-pyver-pragma
+[2023-04-14 16:46:08] INFO root fetch - main [MainThread]: End processing [hlatypingtools] error
+[2023-04-14 16:46:08] INFO root fetch - processPackages [newick-tree-builder]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-14 16:46:08] INFO root fetch - processPackages [vonage]: New version: [4.0.0b0] Old Version: [3.4.0]
+[2023-04-14 16:46:08] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 16:46:08] INFO root fetch - processPackages [coverage-pyver-pragma]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-14 16:46:08] INFO root fetch - processPackages [symbolic-learn]: Downloading https://files.pythonhosted.org/packages/ac/87/b4e693a7a183c19ce0a26b4fee7151bd7f92b3ec77ac387536c00def5be6/symbolic-learn-0.1.0.tar.gz
+[2023-04-14 16:46:08] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-04-14 16:46:08] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230414/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 16:46:08] INFO root fetch - processPackages [vonage]: Downloading https://files.pythonhosted.org/packages/6a/cd/b4a13e0a4312eef95919764b42b5dd695e038536e115c576b5a3eb30c92e/vonage-3.4.0.tar.gz
+[2023-04-14 16:46:08] INFO root fetch - processPackages [coverage-pyver-pragma]: Downloading https://files.pythonhosted.org/packages/1c/7e/e51876786e64525d702d1cda8acede3579012248dcc4fdd8e8dc142898d1/coverage_pyver_pragma-0.3.1.tar.gz
+[2023-04-14 16:46:08] INFO root fetch - processPackages [newick-tree-builder]: Downloading https://files.pythonhosted.org/packages/a9/fb/f12b25245d9a8570a7d60adf8f09069570cae7975682d7c9cff14fc5c732/newick-tree-builder-0.4.5.tar.gz
+[2023-04-14 16:46:08] INFO root fetch - processPackages [symbolic-learn]: Downloading https://files.pythonhosted.org/packages/ee/55/c07f503096aec4ea61ebcf6d5fb7aec1005f6b8b9ae3896206f7439734cb/symbolic-learn-0.1.1.tar.gz
+[2023-04-14 16:46:08] INFO root fetch - processPackages [newick-tree-builder]: executing diffoscope
+[2023-04-14 16:46:08] INFO root fetch - processPackages [newick-tree-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newick-tree-builder-0.4.4.tar.gz tmp/newick-tree-builder-0.4.5.tar.gz --markdown 20230414/n/newick-tree-builder/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-14 16:46:08] INFO root fetch - processPackages [coverage-pyver-pragma]: Downloading https://files.pythonhosted.org/packages/e8/a4/690f6724076878e9ab594d0dcc64bda4b0467bbd40dcf6650be538218635/coverage_pyver_pragma-0.3.2.tar.gz
+[2023-04-14 16:46:08] INFO root fetch - processPackages [symbolic-learn]: executing diffoscope
+[2023-04-14 16:46:08] INFO root fetch - processPackages [symbolic-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolic-learn-0.1.0.tar.gz tmp/symbolic-learn-0.1.1.tar.gz --markdown 20230414/s/symbolic-learn/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 16:46:08] INFO root fetch - processPackages [vonage]: Downloading https://files.pythonhosted.org/packages/e3/22/fa900e3527c8d1e4ad704ea9199bf1b28aa7f230b383fe6b80d3e2fa6ffc/vonage-4.0.0b0.tar.gz
+[2023-04-14 16:46:08] INFO root fetch - processPackages [coverage-pyver-pragma]: executing diffoscope
+[2023-04-14 16:46:08] INFO root fetch - processPackages [coverage-pyver-pragma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coverage_pyver_pragma-0.3.1.tar.gz tmp/coverage_pyver_pragma-0.3.2.tar.gz --markdown 20230414/c/coverage-pyver-pragma/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-14 16:46:08] INFO root fetch - processPackages [vonage]: executing diffoscope
+[2023-04-14 16:46:08] INFO root fetch - processPackages [vonage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vonage-3.4.0.tar.gz tmp/vonage-4.0.0b0.tar.gz --markdown 20230414/v/vonage/3.4.0-4.0.0b0/diff.md --exclude *.pyd
+[2023-04-14 16:46:09] INFO root fetch - processPackages [newick-tree-builder]: Start processing: cybrid-api-bank-python
+[2023-04-14 16:46:09] INFO root fetch - main [MainThread]: End processing [newick-tree-builder]: success
+[2023-04-14 16:46:09] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 16:46:09] INFO root fetch - processPackages [cybrid-api-id-python]: Start processing: zillion
+[2023-04-14 16:46:09] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-04-14 16:46:09] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-04-14 16:46:09] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230414/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 16:46:09] INFO root fetch - processPackages [zillion]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 16:46:09] INFO root fetch - processPackages [symbolic-learn]: Start processing: sym-sdk
+[2023-04-14 16:46:09] INFO root fetch - main [MainThread]: End processing [symbolic-learn]: success
+[2023-04-14 16:46:09] INFO root fetch - processPackages [sym-sdk]: New version: [0.9.0a1] Old Version: [0.9.0]
+[2023-04-14 16:46:09] INFO root fetch - processPackages [coverage-pyver-pragma]: Start processing: cybrid-api-organization-python
+[2023-04-14 16:46:09] INFO root fetch - main [MainThread]: End processing [coverage-pyver-pragma]: success
+[2023-04-14 16:46:10] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 16:46:10] INFO root fetch - processPackages [zillion]: executing diffoscope
+[2023-04-14 16:46:10] INFO root fetch - processPackages [zillion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zillion-0.9.8.tar.gz tmp/zillion-0.9.9.tar.gz --markdown 20230414/z/zillion/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 16:46:10] INFO root fetch - processPackages [sym-sdk]: executing diffoscope
+[2023-04-14 16:46:10] INFO root fetch - processPackages [sym-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sym-sdk-0.9.0.tar.gz tmp/sym-sdk-0.9.0a1.tar.gz --markdown 20230414/s/sym-sdk/0.9.0-0.9.0a1/diff.md --exclude *.pyd
+[2023-04-14 16:46:10] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-04-14 16:46:10] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230414/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 16:46:10] INFO root fetch - processPackages [vonage]: Start processing: parsenv
+[2023-04-14 16:46:10] INFO root fetch - main [MainThread]: End processing [vonage]: success
+[2023-04-14 16:46:10] WARNING root fetch - processPackages [parsenv]: Skipping, unable to determine old version
+[2023-04-14 16:46:10] INFO root fetch - processPackages [parsenv]: Start processing: rlds
+[2023-04-14 16:46:10] INFO root fetch - main [MainThread]: End processing [parsenv] error
+[2023-04-14 16:46:10] INFO root fetch - processPackages [rlds]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-14 16:46:10] INFO root fetch - processPackages [rlds]: Downloading https://files.pythonhosted.org/packages/d0/cd/e91aac7d79aebf582f03605223c18878039a8762fab98d9f4ff62fa399be/rlds-0.1.7-py3-none-manylinux2010_x86_64.whl
+[2023-04-14 16:46:10] INFO root fetch - processPackages [rlds]: Downloading https://files.pythonhosted.org/packages/7b/76/0aba1fc99e7357d8a995cfa2d117ab923f74836d1ec5748d8959b1ec2840/rlds-0.1.8-py3-none-manylinux2010_x86_64.whl
+[2023-04-14 16:46:10] INFO root fetch - processPackages [rlds]: executing diffoscope
+[2023-04-14 16:46:10] INFO root fetch - processPackages [rlds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rlds-0.1.7-py3-none-manylinux2010_x86_64.whl.zip tmp/rlds-0.1.8-py3-none-manylinux2010_x86_64.whl.zip --markdown 20230414/r/rlds/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-14 16:46:11] INFO root fetch - processPackages [zillion]: Start processing: trustee
+[2023-04-14 16:46:11] INFO root fetch - main [MainThread]: End processing [zillion]: success
+[2023-04-14 16:46:11] INFO root fetch - processPackages [trustee]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-14 16:46:11] INFO root fetch - processPackages [sym-sdk]: Start processing: arcanum-newspaper-segmentation-client
+[2023-04-14 16:46:11] INFO root fetch - main [MainThread]: End processing [sym-sdk]: success
+[2023-04-14 16:46:11] INFO root fetch - processPackages [arcanum-newspaper-segmentation-client]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-04-14 16:46:11] INFO root fetch - processPackages [cybrid-api-organization-python]: Start processing: phpdiscord
+[2023-04-14 16:46:11] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-04-14 16:46:11] INFO root fetch - processPackages [phpdiscord]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 16:46:11] INFO root fetch - processPackages [trustee]: Downloading https://files.pythonhosted.org/packages/ba/d1/4f111d414086b69fa4533d7b02f784828133de0f136cea76fa2b63ead19c/trustee-1.1.1.tar.gz
+[2023-04-14 16:46:11] INFO root fetch - processPackages [arcanum-newspaper-segmentation-client]: Downloading https://files.pythonhosted.org/packages/88/da/007b33990c84a849fc2f22cb5bc3b5fc155627e2f8175a99a734ba3528d0/arcanum-newspaper-segmentation-client-1.6.5.tar.gz
+[2023-04-14 16:46:11] INFO root fetch - processPackages [phpdiscord]: Downloading https://files.pythonhosted.org/packages/d2/77/4cbdba066198bcd70f7e10f7bdf7fd69415b4308d5e3ade94b69b5b1b501/phpdiscord-1.0.0.tar.gz
+[2023-04-14 16:46:11] INFO root fetch - processPackages [arcanum-newspaper-segmentation-client]: executing diffoscope
+[2023-04-14 16:46:11] INFO root fetch - processPackages [arcanum-newspaper-segmentation-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcanum-newspaper-segmentation-client-1.6.4.tar.gz tmp/arcanum-newspaper-segmentation-client-1.6.5.tar.gz --markdown 20230414/a/arcanum-newspaper-segmentation-client/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-04-14 16:46:11] INFO root fetch - processPackages [trustee]: Downloading https://files.pythonhosted.org/packages/22/65/645c0af7fa203363453b0690ba193dd96afa5a9f1a3bc342f4a6fc2e55ec/trustee-1.1.2.tar.gz
+[2023-04-14 16:46:12] INFO root fetch - processPackages [phpdiscord]: Downloading https://files.pythonhosted.org/packages/a2/3c/bf4d92d0cbf4cbaccaf57d3b4ce5a585becab4821342113b9adf4f0195ab/phpdiscord-1.0.1.tar.gz
+[2023-04-14 16:46:12] INFO root fetch - processPackages [trustee]: executing diffoscope
+[2023-04-14 16:46:12] INFO root fetch - processPackages [trustee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trustee-1.1.1.tar.gz tmp/trustee-1.1.2.tar.gz --markdown 20230414/t/trustee/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-14 16:46:12] INFO root fetch - processPackages [phpdiscord]: executing diffoscope
+[2023-04-14 16:46:12] INFO root fetch - processPackages [phpdiscord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phpdiscord-1.0.0.tar.gz tmp/phpdiscord-1.0.1.tar.gz --markdown 20230414/p/phpdiscord/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 16:46:12] INFO root fetch - processPackages [rlds]: Start processing: zuspec-arl-eval
+[2023-04-14 16:46:12] INFO root fetch - main [MainThread]: End processing [rlds]: success
+[2023-04-14 16:46:12] INFO root fetch - processPackages [zuspec-arl-eval]: New version: [0.0.1.4700989533] Old Version: [0.0.1.4344922200]
+[2023-04-14 16:46:12] INFO root fetch - processPackages [zuspec-arl-eval]: Downloading https://files.pythonhosted.org/packages/97/a7/8fddfb06499c824f600d611f60739ff277eacca5078c710b997ce8501972/zuspec_arl_eval-0.0.1.4344922200-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-14 16:46:12] INFO root fetch - processPackages [cybrid-api-bank-python]: Start processing: tfy-mlflow-client
+[2023-04-14 16:46:12] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-04-14 16:46:12] INFO root fetch - processPackages [tfy-mlflow-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 16:46:12] INFO root fetch - processPackages [zuspec-arl-eval]: Downloading https://files.pythonhosted.org/packages/97/05/053dad007e61b49fe34704a8cd3b78d6eafc40d659189a58ad60b79843bc/zuspec_arl_eval-0.0.1.4700989533-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-14 16:46:12] INFO root fetch - processPackages [tfy-mlflow-client]: Downloading https://files.pythonhosted.org/packages/43/f0/45be21abdff732bb8de13f178413b52bd098bb8395e239c8721423f39e0e/tfy-mlflow-client-0.0.8.tar.gz
+[2023-04-14 16:46:12] INFO root fetch - processPackages [arcanum-newspaper-segmentation-client]: Start processing: connpy
+[2023-04-14 16:46:12] INFO root fetch - main [MainThread]: End processing [arcanum-newspaper-segmentation-client]: success
+[2023-04-14 16:46:12] INFO root fetch - processPackages [connpy]: New version: [3.0.0] Old Version: [2.1.8]
+[2023-04-14 16:46:13] INFO root fetch - processPackages [zuspec-arl-eval]: executing diffoscope
+[2023-04-14 16:46:13] INFO root fetch - processPackages [zuspec-arl-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_arl_eval-0.0.1.4344922200-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_arl_eval-0.0.1.4700989533-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230414/z/zuspec-arl-eval/0.0.1.4344922200-0.0.1.4700989533/diff.md --exclude *.pyd
+[2023-04-14 16:46:13] INFO root fetch - processPackages [connpy]: Downloading https://files.pythonhosted.org/packages/e6/3b/de59b6b98b1493151ee88cbb434d2d941b32f7a89b32a261fd779b562a68/connpy-2.1.8.tar.gz
+[2023-04-14 16:46:13] INFO root fetch - processPackages [phpdiscord]: Start processing: ecowitt2mqtt
+[2023-04-14 16:46:13] INFO root fetch - main [MainThread]: End processing [phpdiscord]: success
+[2023-04-14 16:46:13] INFO root fetch - processPackages [ecowitt2mqtt]: New version: [2023.4.0] Old Version: [2023.2.1]
+[2023-04-14 16:46:13] INFO root fetch - processPackages [trustee]: Start processing: murfey
+[2023-04-14 16:46:13] INFO root fetch - main [MainThread]: End processing [trustee]: success
+[2023-04-14 16:46:13] INFO root fetch - processPackages [murfey]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-04-14 16:46:13] INFO root fetch - processPackages [ecowitt2mqtt]: Downloading https://files.pythonhosted.org/packages/d1/b9/40fcebdacb19d53d710733c1f02c038d02f20c3b394b327f33651b89ee80/ecowitt2mqtt-2023.2.1.tar.gz
+[2023-04-14 16:46:13] INFO root fetch - processPackages [connpy]: Downloading https://files.pythonhosted.org/packages/53/d2/195d1f848135f9b520493f05677811b4b256f8e8af6aa3ccb36d4b1e4de5/connpy-3.0.0.tar.gz
+[2023-04-14 16:46:13] INFO root fetch - processPackages [connpy]: executing diffoscope
+[2023-04-14 16:46:13] INFO root fetch - processPackages [connpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connpy-2.1.8.tar.gz tmp/connpy-3.0.0.tar.gz --markdown 20230414/c/connpy/2.1.8-3.0.0/diff.md --exclude *.pyd
+[2023-04-14 16:46:13] INFO root fetch - processPackages [murfey]: Downloading https://files.pythonhosted.org/packages/27/37/9af8d15e6566c38a951f0681f8edab3cffbaef429dfafd58667975af8bee/murfey-0.7.7.tar.gz
+[2023-04-14 16:46:13] INFO root fetch - processPackages [ecowitt2mqtt]: Downloading https://files.pythonhosted.org/packages/27/25/3f1a667273da4ec0f809f59cdbc136c8d729ee035289f072f3643027bade/ecowitt2mqtt-2023.4.0.tar.gz
+[2023-04-14 16:46:13] INFO root fetch - processPackages [ecowitt2mqtt]: executing diffoscope
+[2023-04-14 16:46:13] INFO root fetch - processPackages [ecowitt2mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecowitt2mqtt-2023.2.1.tar.gz tmp/ecowitt2mqtt-2023.4.0.tar.gz --markdown 20230414/e/ecowitt2mqtt/2023.2.1-2023.4.0/diff.md --exclude *.pyd
+[2023-04-14 16:46:13] INFO root fetch - processPackages [murfey]: executing diffoscope
+[2023-04-14 16:46:13] INFO root fetch - processPackages [murfey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/murfey-0.7.6.tar.gz tmp/murfey-0.7.7.tar.gz --markdown 20230414/m/murfey/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-04-14 16:46:14] INFO root fetch - processPackages [tfy-mlflow-client]: Downloading https://files.pythonhosted.org/packages/99/46/ec87ff507a911f7eb4550bd758513440cf543ba1d9701b042b5caf64682a/tfy-mlflow-client-0.0.9.tar.gz
+[2023-04-14 16:46:14] INFO root fetch - processPackages [tfy-mlflow-client]: executing diffoscope
+[2023-04-14 16:46:14] INFO root fetch - processPackages [tfy-mlflow-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfy-mlflow-client-0.0.8.tar.gz tmp/tfy-mlflow-client-0.0.9.tar.gz --markdown 20230414/t/tfy-mlflow-client/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 16:46:14] INFO root fetch - main [MainThread]: End processing [connpy]: success
+[2023-04-14 16:46:15] INFO root fetch - main [MainThread]: End processing [ecowitt2mqtt]: success
+[2023-04-14 16:46:15] INFO root fetch - main [MainThread]: End processing [murfey]: success
+[2023-04-14 16:46:17] INFO root fetch - main [MainThread]: End processing [zuspec-arl-eval]: success
+[2023-04-14 16:46:17] INFO root fetch - main [MainThread]: End processing [tfy-mlflow-client]: success
+[2023-04-14 16:46:17] INFO root fetch - main [MainThread]: Store serial: [17708592]
