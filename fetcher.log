@@ -8203,3 +8203,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 08:51:34] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-social]: success
 [2023-04-14 08:51:34] INFO root fetch - main [MainThread]: End processing [stamox]: success
 [2023-04-14 08:51:34] INFO root fetch - main [MainThread]: Store serial: [17703835]
+[2023-04-14 08:56:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703835]
+[2023-04-14 08:56:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 08:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chain-aide
+[2023-04-14 08:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: provider-switch
+[2023-04-14 08:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stamox
+[2023-04-14 08:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chalkpy
+[2023-04-14 08:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mingdaoyun-sdk
+[2023-04-14 08:56:42] INFO root fetch - processPackages [mingdaoyun-sdk]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 08:56:42] INFO root fetch - processPackages [stamox]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 08:56:42] INFO root fetch - processPackages [chain-aide]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-14 08:56:42] INFO root fetch - processPackages [provider-switch]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 08:56:42] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-14 08:56:43] INFO root fetch - processPackages [chain-aide]: Downloading https://files.pythonhosted.org/packages/c0/80/88f9aacccf00475e9d6b69c2c7c694ab74c041d085dd31f4b8d4c2dc8eb8/chain-aide-1.0.2.tar.gz
+[2023-04-14 08:56:43] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-14 08:56:43] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230414/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-14 08:56:43] INFO root fetch - processPackages [mingdaoyun-sdk]: Downloading https://files.pythonhosted.org/packages/83/0a/37dc10e945bdcbf2804fa44cb31b29a5d8cd6dbd0f1f50aada73b5fcd938/mingdaoyun_sdk-0.0.5.tar.gz
+[2023-04-14 08:56:43] INFO root fetch - processPackages [provider-switch]: Downloading https://files.pythonhosted.org/packages/8b/e3/c1cca50a6b01c97e65e660217636fd806f6e851a332e3f37d86e10f92c0f/provider-switch-0.0.8.tar.gz
+[2023-04-14 08:56:43] INFO root fetch - processPackages [stamox]: Downloading https://files.pythonhosted.org/packages/dd/a9/3f1c55c21d800ba753f8291f4e5ac524b5a9e20d8d61151455a1d4b8be63/stamox-0.1.3.tar.gz
+[2023-04-14 08:56:43] INFO root fetch - processPackages [chain-aide]: Downloading https://files.pythonhosted.org/packages/53/dc/85cc0eeca17eec93d38120a210bdd229860c72c093e8993ce490a3fa65a8/chain-aide-1.0.3.tar.gz
+[2023-04-14 08:56:43] INFO root fetch - processPackages [mingdaoyun-sdk]: executing diffoscope
+[2023-04-14 08:56:43] INFO root fetch - processPackages [mingdaoyun-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mingdaoyun_sdk-0.0.4.tar.gz tmp/mingdaoyun_sdk-0.0.5.tar.gz --markdown 20230414/m/mingdaoyun-sdk/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 08:56:43] INFO root fetch - processPackages [stamox]: executing diffoscope
+[2023-04-14 08:56:43] INFO root fetch - processPackages [stamox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stamox-0.1.2.tar.gz tmp/stamox-0.1.3.tar.gz --markdown 20230414/s/stamox/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 08:56:43] INFO root fetch - processPackages [chain-aide]: executing diffoscope
+[2023-04-14 08:56:43] INFO root fetch - processPackages [chain-aide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chain-aide-1.0.2.tar.gz tmp/chain-aide-1.0.3.tar.gz --markdown 20230414/c/chain-aide/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-14 08:56:43] INFO root fetch - processPackages [provider-switch]: Downloading https://files.pythonhosted.org/packages/4e/56/5d1b98053040582f21a41f144eb7fad199eb0ac4c1a7be807313ef0d36c9/provider-switch-0.0.9.tar.gz
+[2023-04-14 08:56:43] INFO root fetch - processPackages [provider-switch]: executing diffoscope
+[2023-04-14 08:56:43] INFO root fetch - processPackages [provider-switch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/provider-switch-0.0.8.tar.gz tmp/provider-switch-0.0.9.tar.gz --markdown 20230414/p/provider-switch/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 08:56:44] INFO root fetch - processPackages [mingdaoyun-sdk]: Start processing: boto-session-manager
+[2023-04-14 08:56:44] INFO root fetch - main [MainThread]: End processing [mingdaoyun-sdk]: success
+[2023-04-14 08:56:44] INFO root fetch - processPackages [boto-session-manager]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-04-14 08:56:44] INFO root fetch - processPackages [chain-aide]: Start processing: maus
+[2023-04-14 08:56:44] INFO root fetch - main [MainThread]: End processing [chain-aide]: success
+[2023-04-14 08:56:44] INFO root fetch - processPackages [boto-session-manager]: Downloading https://files.pythonhosted.org/packages/55/32/058a67539a5884ecded5186150f0cf3a8f7f9221bd7b38d96e4d9706ab80/boto_session_manager-1.4.2.tar.gz
+[2023-04-14 08:56:44] INFO root fetch - processPackages [maus]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 08:56:44] INFO root fetch - processPackages [boto-session-manager]: Downloading https://files.pythonhosted.org/packages/f6/0b/54fc6a1390c3b1b640c30e4439e87aeba96c41ae52624f78c93be604bd8d/boto_session_manager-1.4.3.tar.gz
+[2023-04-14 08:56:44] INFO root fetch - main [MainThread]: End processing [provider-switch]: success
+[2023-04-14 08:56:44] INFO root fetch - main [MainThread]: End processing [stamox]: success
+[2023-04-14 08:56:44] INFO root fetch - processPackages [boto-session-manager]: executing diffoscope
+[2023-04-14 08:56:44] INFO root fetch - processPackages [boto-session-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boto_session_manager-1.4.2.tar.gz tmp/boto_session_manager-1.4.3.tar.gz --markdown 20230414/b/boto-session-manager/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-04-14 08:56:45] INFO root fetch - processPackages [maus]: executing diffoscope
+[2023-04-14 08:56:45] INFO root fetch - processPackages [maus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maus-0.3.8.tar.gz tmp/maus-0.3.9.tar.gz --markdown 20230414/m/maus/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 08:56:46] INFO root fetch - main [MainThread]: End processing [boto-session-manager]: success
+[2023-04-14 08:56:46] INFO root fetch - main [MainThread]: End processing [maus]: success
+[2023-04-14 08:56:48] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-04-14 08:56:48] INFO root fetch - main [MainThread]: Store serial: [17703855]
