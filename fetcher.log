@@ -20478,3 +20478,88 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:49:52] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
 [2023-04-14 20:50:08] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
 [2023-04-14 20:50:08] INFO root fetch - main [MainThread]: Store serial: [17711813]
+[2023-04-14 20:55:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711813]
+[2023-04-14 20:55:15] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-14 20:55:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: router-log-preprocessor
+[2023-04-14 20:55:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arraymap
+[2023-04-14 20:55:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thunno2
+[2023-04-14 20:55:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sagemaker-ssh-helper
+[2023-04-14 20:55:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: i-texts
+[2023-04-14 20:55:15] INFO root fetch - processPackages [thunno2]: New version: [2.0.8] Old Version: [2.0.7]
+[2023-04-14 20:55:15] INFO root fetch - processPackages [sagemaker-ssh-helper]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-14 20:55:15] INFO root fetch - processPackages [router-log-preprocessor]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-14 20:55:15] INFO root fetch - processPackages [i-texts]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 20:55:15] INFO root fetch - processPackages [arraymap]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 20:55:16] INFO root fetch - processPackages [thunno2]: Downloading https://files.pythonhosted.org/packages/72/7e/8a1825965c4c6d865e65e0146cb28d30ac72e5de85e049e053dbe5df7b2f/thunno2-2.0.8.tar.gz
+[2023-04-14 20:55:16] INFO root fetch - processPackages [sagemaker-ssh-helper]: Downloading https://files.pythonhosted.org/packages/f4/98/dfc3c1cc50cb63bcfa490f84a3cf02f2c90b804d39a26b5befb01505534e/sagemaker-ssh-helper-1.9.0.tar.gz
+[2023-04-14 20:55:16] INFO root fetch - processPackages [i-texts]: Downloading https://files.pythonhosted.org/packages/e6/a0/79d9437c606d2a17cc245c4c748b37a2679555b018fee77c2b67c82c9ca3/i-texts-0.1.0.tar.gz
+[2023-04-14 20:55:16] INFO root fetch - processPackages [router-log-preprocessor]: Downloading https://files.pythonhosted.org/packages/54/d9/8647e85129f54d98bdc49291ead55304844442a3dd2449b46b0adfd637c9/router_log_preprocessor-0.1.4.tar.gz
+[2023-04-14 20:55:16] INFO root fetch - processPackages [arraymap]: Downloading https://files.pythonhosted.org/packages/e6/50/0461f227961bf8578ce33e4f76e667bf92268f0f00a00c1450659dc56bfb/arraymap-0.1.3.tar.gz
+[2023-04-14 20:55:16] INFO root fetch - processPackages [thunno2]: executing diffoscope
+[2023-04-14 20:55:16] INFO root fetch - processPackages [thunno2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thunno2-2.0.7.tar.gz tmp/thunno2-2.0.8.tar.gz --markdown 20230414/t/thunno2/2.0.7-2.0.8/diff.md --exclude *.pyd
+[2023-04-14 20:55:16] INFO root fetch - processPackages [router-log-preprocessor]: executing diffoscope
+[2023-04-14 20:55:16] INFO root fetch - processPackages [router-log-preprocessor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/router_log_preprocessor-0.1.3.tar.gz tmp/router_log_preprocessor-0.1.4.tar.gz --markdown 20230414/r/router-log-preprocessor/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-14 20:55:16] INFO root fetch - processPackages [arraymap]: executing diffoscope
+[2023-04-14 20:55:16] INFO root fetch - processPackages [arraymap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraymap-0.1.2.tar.gz tmp/arraymap-0.1.3.tar.gz --markdown 20230414/a/arraymap/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 20:55:16] INFO root fetch - processPackages [sagemaker-ssh-helper]: Downloading https://files.pythonhosted.org/packages/f3/b4/5ecd056a02ac9c17b6741db757c77e63ab9503eb3a64f7525e80db5acc08/sagemaker-ssh-helper-1.9.1.tar.gz
+[2023-04-14 20:55:16] INFO root fetch - processPackages [i-texts]: Downloading https://files.pythonhosted.org/packages/8e/1f/da115700d204c092235810b75f91a79a8afadf67df5c2e991e1895ef025b/i-texts-0.1.1.tar.gz
+[2023-04-14 20:55:16] INFO root fetch - processPackages [sagemaker-ssh-helper]: executing diffoscope
+[2023-04-14 20:55:16] INFO root fetch - processPackages [sagemaker-ssh-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemaker-ssh-helper-1.9.0.tar.gz tmp/sagemaker-ssh-helper-1.9.1.tar.gz --markdown 20230414/s/sagemaker-ssh-helper/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-14 20:55:16] INFO root fetch - processPackages [i-texts]: executing diffoscope
+[2023-04-14 20:55:16] INFO root fetch - processPackages [i-texts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i-texts-0.1.0.tar.gz tmp/i-texts-0.1.1.tar.gz --markdown 20230414/i/i-texts/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 20:55:17] INFO root fetch - processPackages [thunno2]: Start processing: wodoo
+[2023-04-14 20:55:17] INFO root fetch - main [MainThread]: End processing [thunno2]: success
+[2023-04-14 20:55:17] INFO root fetch - processPackages [wodoo]: New version: [0.3.99] Old Version: [0.3.96]
+[2023-04-14 20:55:17] INFO root fetch - processPackages [arraymap]: Start processing: cybrid-api-organization-python
+[2023-04-14 20:55:17] INFO root fetch - main [MainThread]: End processing [arraymap]: success
+[2023-04-14 20:55:17] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 20:55:17] INFO root fetch - processPackages [wodoo]: executing diffoscope
+[2023-04-14 20:55:17] INFO root fetch - processPackages [wodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wodoo-0.3.96.tar.gz tmp/wodoo-0.3.99.tar.gz --markdown 20230414/w/wodoo/0.3.96-0.3.99/diff.md --exclude *.pyd
+[2023-04-14 20:55:17] INFO root fetch - processPackages [i-texts]: Start processing: cybrid-api-bank-python
+[2023-04-14 20:55:17] INFO root fetch - main [MainThread]: End processing [i-texts]: success
+[2023-04-14 20:55:17] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-04-14 20:55:17] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230414/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 20:55:18] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 20:55:18] INFO root fetch - processPackages [router-log-preprocessor]: Start processing: cybrid-api-id-python
+[2023-04-14 20:55:18] INFO root fetch - main [MainThread]: End processing [router-log-preprocessor]: success
+[2023-04-14 20:55:18] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 20:55:18] INFO root fetch - processPackages [sagemaker-ssh-helper]: Start processing: bodo-jupyterlab
+[2023-04-14 20:55:18] INFO root fetch - main [MainThread]: End processing [sagemaker-ssh-helper]: success
+[2023-04-14 20:55:18] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-04-14 20:55:18] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230414/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 20:55:18] INFO root fetch - processPackages [bodo-jupyterlab]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-04-14 20:55:18] INFO root fetch - processPackages [bodo-jupyterlab]: executing diffoscope
+[2023-04-14 20:55:18] INFO root fetch - processPackages [bodo-jupyterlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bodo_jupyterlab-1.7.0.tar.gz tmp/bodo_jupyterlab-1.9.0.tar.gz --markdown 20230414/b/bodo-jupyterlab/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-14 20:55:18] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-04-14 20:55:18] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230414/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 20:55:19] INFO root fetch - processPackages [cybrid-api-organization-python]: Start processing: aws-ket
+[2023-04-14 20:55:19] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-04-14 20:55:19] INFO root fetch - processPackages [aws-ket]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 20:55:19] INFO root fetch - processPackages [wodoo]: Start processing: localstack-s3-pyspark
+[2023-04-14 20:55:19] INFO root fetch - main [MainThread]: End processing [wodoo]: success
+[2023-04-14 20:55:19] INFO root fetch - processPackages [localstack-s3-pyspark]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-14 20:55:19] INFO root fetch - processPackages [aws-ket]: Downloading https://files.pythonhosted.org/packages/09/54/784e7cbd9ae6a0ba46968443db1ad1ad027d0b6ad70dadf259e3b253feb5/aws-ket-0.1.3.tar.gz
+[2023-04-14 20:55:19] INFO root fetch - processPackages [localstack-s3-pyspark]: Downloading https://files.pythonhosted.org/packages/55/9f/0dbd3a42c420992f26e7d47573bc6ef22d21a598ca93366a3dafdc3268ac/localstack-s3-pyspark-0.7.0.tar.gz
+[2023-04-14 20:55:19] INFO root fetch - processPackages [cybrid-api-id-python]: Start processing: notebook-logger
+[2023-04-14 20:55:19] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-04-14 20:55:19] INFO root fetch - processPackages [notebook-logger]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 20:55:19] INFO root fetch - processPackages [aws-ket]: executing diffoscope
+[2023-04-14 20:55:19] INFO root fetch - processPackages [aws-ket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-ket-0.1.2.tar.gz tmp/aws-ket-0.1.3.tar.gz --markdown 20230414/a/aws-ket/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 20:55:19] INFO root fetch - processPackages [notebook-logger]: executing diffoscope
+[2023-04-14 20:55:19] INFO root fetch - processPackages [notebook-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebook-logger-0.1.0.tar.gz tmp/notebook-logger-0.1.1.tar.gz --markdown 20230414/n/notebook-logger/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 20:55:20] INFO root fetch - processPackages [localstack-s3-pyspark]: Downloading https://files.pythonhosted.org/packages/83/c3/a46efa1c82beafeecc277f3cca4475b262832f2f4e21a9f852e03f04505a/localstack-s3-pyspark-0.8.0.tar.gz
+[2023-04-14 20:55:20] INFO root fetch - processPackages [localstack-s3-pyspark]: executing diffoscope
+[2023-04-14 20:55:20] INFO root fetch - processPackages [localstack-s3-pyspark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-s3-pyspark-0.7.0.tar.gz tmp/localstack-s3-pyspark-0.8.0.tar.gz --markdown 20230414/l/localstack-s3-pyspark/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-14 20:55:20] INFO root fetch - processPackages [cybrid-api-bank-python]: Start processing: point-cloud-utils
+[2023-04-14 20:55:20] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-04-14 20:55:20] INFO root fetch - main [MainThread]: End processing [aws-ket]: success
+[2023-04-14 20:55:21] INFO root fetch - main [MainThread]: End processing [notebook-logger]: success
+[2023-04-14 20:55:21] INFO root fetch - processPackages [point-cloud-utils]: New version: [0.29.3] Old Version: [0.29.1]
+[2023-04-14 20:55:21] INFO root fetch - main [MainThread]: End processing [localstack-s3-pyspark]: success
+[2023-04-14 20:55:21] INFO root fetch - processPackages [point-cloud-utils]: Downloading https://files.pythonhosted.org/packages/f2/1e/ced0c0e1ada8611fa080034dea8d803a7cd95019d1714c685b54c27ec393/point-cloud-utils-0.29.1.tar.gz
+[2023-04-14 20:55:21] INFO root fetch - processPackages [point-cloud-utils]: Downloading https://files.pythonhosted.org/packages/c3/b5/2a360fea6c9ac3b8a7b967804f6d916b2aa4f7847f6279494b431cdf8423/point_cloud_utils-0.29.3-cp310-cp310-win_amd64.whl
+[2023-04-14 20:55:22] INFO root fetch - processPackages [point-cloud-utils]: executing diffoscope
+[2023-04-14 20:55:22] INFO root fetch - processPackages [point-cloud-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/point-cloud-utils-0.29.1.tar.gz tmp/point_cloud_utils-0.29.3-cp310-cp310-win_amd64.whl.zip --markdown 20230414/p/point-cloud-utils/0.29.1-0.29.3/diff.md --exclude *.pyd
+[2023-04-14 20:55:23] INFO root fetch - main [MainThread]: End processing [point-cloud-utils]: success
+[2023-04-14 20:55:26] INFO root fetch - main [MainThread]: End processing [bodo-jupyterlab]: success
+[2023-04-14 20:55:26] INFO root fetch - main [MainThread]: Store serial: [17711899]
