@@ -6870,3 +6870,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 05:52:58] INFO root fetch - main [MainThread]: End processing [auto-editor]: success
 [2023-04-14 05:53:00] INFO root fetch - main [MainThread]: End processing [devoud]: success
 [2023-04-14 05:53:00] INFO root fetch - main [MainThread]: Store serial: [17703030]
+[2023-04-14 05:58:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703030]
+[2023-04-14 05:58:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 05:58:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypreql
+[2023-04-14 05:58:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: insights-extractor
+[2023-04-14 05:58:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neetbox
+[2023-04-14 05:58:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: parimutuelsdk
+[2023-04-14 05:58:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vernac
+[2023-04-14 05:58:10] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2023-04-14 05:58:10] INFO root fetch - processPackages [neetbox]: New version: [0.1.507] Old Version: [0.1.506]
+[2023-04-14 05:58:10] INFO root fetch - processPackages [parimutuelsdk]: New version: [0.1.0] Old Version: [0.0.78]
+[2023-04-14 05:58:10] WARNING root fetch - processPackages [insights-extractor]: Skipping, unable to determine old version
+[2023-04-14 05:58:10] INFO root fetch - processPackages [vernac]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 05:58:10] INFO root fetch - processPackages [insights-extractor]: Start processing: qontract-reconcile
+[2023-04-14 05:58:10] INFO root fetch - main [MainThread]: End processing [insights-extractor] error
+[2023-04-14 05:58:10] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-14 05:58:10] INFO root fetch - processPackages [neetbox]: Downloading https://files.pythonhosted.org/packages/88/ab/56173528c546c7ef6c4bdef78db6eb9954e4611b398d9d6dcc9f5ad179e5/neetbox-0.1.507.tar.gz
+[2023-04-14 05:58:10] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-14 05:58:10] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230414/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-14 05:58:10] INFO root fetch - processPackages [parimutuelsdk]: Downloading https://files.pythonhosted.org/packages/bc/ca/dfb148d720a2da758335bcbb54869a994b688b5935feab5192e6fdf50b50/parimutuelsdk-0.0.78-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-14 05:58:10] INFO root fetch - processPackages [vernac]: Downloading https://files.pythonhosted.org/packages/ae/04/4429a90dc219b81955a62f6903a1b80bc69942e975946e3d9e55cf5325c5/vernac-0.0.2.tar.gz
+[2023-04-14 05:58:11] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2023-04-14 05:58:11] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20230414/p/pypreql/0.0.1rc8-0.0.1rc9/diff.md --exclude *.pyd
+[2023-04-14 05:58:11] INFO root fetch - processPackages [neetbox]: executing diffoscope
+[2023-04-14 05:58:11] INFO root fetch - processPackages [neetbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neetbox-0.1.506.tar.gz tmp/neetbox-0.1.507.tar.gz --markdown 20230414/n/neetbox/0.1.506-0.1.507/diff.md --exclude *.pyd
+[2023-04-14 05:58:11] INFO root fetch - processPackages [vernac]: executing diffoscope
+[2023-04-14 05:58:11] INFO root fetch - processPackages [vernac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vernac-0.0.1.tar.gz tmp/vernac-0.0.2.tar.gz --markdown 20230414/v/vernac/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 05:58:12] INFO root fetch - processPackages [vernac]: Start processing: cdktf-cdktf-provider-azurerm
+[2023-04-14 05:58:12] INFO root fetch - main [MainThread]: End processing [vernac]: success
+[2023-04-14 05:58:12] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: New version: [6.0.0] Old Version: [5.0.9]
+[2023-04-14 05:58:12] INFO root fetch - processPackages [neetbox]: Start processing: ogr-tiller
+[2023-04-14 05:58:12] INFO root fetch - main [MainThread]: End processing [neetbox]: success
+[2023-04-14 05:58:12] INFO root fetch - processPackages [ogr-tiller]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 05:58:12] INFO root fetch - processPackages [pypreql]: Start processing: lambda-runtimes
+[2023-04-14 05:58:12] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2023-04-14 05:58:12] INFO root fetch - processPackages [parimutuelsdk]: Downloading https://files.pythonhosted.org/packages/ff/67/6b961aa990d4cef36d0d234389e66a2c2f7ce639fc8b7784971033b6ef96/parimutuelsdk-0.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-14 05:58:12] INFO root fetch - processPackages [ogr-tiller]: executing diffoscope
+[2023-04-14 05:58:12] INFO root fetch - processPackages [ogr-tiller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogr_tiller-0.0.8.tar.gz tmp/ogr_tiller-0.0.9.tar.gz --markdown 20230414/o/ogr-tiller/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 05:58:12] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Downloading https://files.pythonhosted.org/packages/6c/46/cdfc661852cf8811b495212003d62640b68189678afa1c77694f26abf25f/cdktf-cdktf-provider-azurerm-5.0.9.tar.gz
+[2023-04-14 05:58:12] WARNING root fetch - processPackages [lambda-runtimes]: Skipping, unable to determine old version
+[2023-04-14 05:58:12] INFO root fetch - main [MainThread]: End processing [lambda-runtimes] error
+[2023-04-14 05:58:12] WARNING root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Skipping package: exceeds size limit 81917991>=10485760
+[2023-04-14 05:58:12] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azurerm] error
+[2023-04-14 05:58:13] INFO root fetch - processPackages [parimutuelsdk]: executing diffoscope
+[2023-04-14 05:58:13] INFO root fetch - processPackages [parimutuelsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parimutuelsdk-0.0.78-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/parimutuelsdk-0.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230414/p/parimutuelsdk/0.0.78-0.1.0/diff.md --exclude *.pyd
+[2023-04-14 05:58:13] INFO root fetch - main [MainThread]: End processing [ogr-tiller]: success
+[2023-04-14 05:58:17] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-04-14 05:59:13] INFO root fetch - main [MainThread]: End processing [parimutuelsdk]: success
+[2023-04-14 05:59:13] INFO root fetch - main [MainThread]: Store serial: [17703061]
