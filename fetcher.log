@@ -16837,3 +16837,107 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 17:28:41] INFO root fetch - main [MainThread]: End processing [energyplus-launch]: success
 [2023-04-14 17:28:42] INFO root fetch - main [MainThread]: End processing [visiongraph]: success
 [2023-04-14 17:28:42] INFO root fetch - main [MainThread]: Store serial: [17709141]
+[2023-04-14 17:33:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17709141]
+[2023-04-14 17:33:50] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-14 17:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: i2cssh
+[2023-04-14 17:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robyn
+[2023-04-14 17:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jira-assistant
+[2023-04-14 17:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyautogui-simplified-edition
+[2023-04-14 17:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wodoo
+[2023-04-14 17:33:50] INFO root fetch - processPackages [pyautogui-simplified-edition]: New version: [1.0a2] Old Version: [1.0a1]
+[2023-04-14 17:33:50] INFO root fetch - processPackages [jira-assistant]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-14 17:33:50] INFO root fetch - processPackages [i2cssh]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 17:33:50] INFO root fetch - processPackages [wodoo]: New version: [0.3.99] Old Version: [0.3.96]
+[2023-04-14 17:33:50] INFO root fetch - processPackages [robyn]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-14 17:33:50] INFO root fetch - processPackages [pyautogui-simplified-edition]: Downloading https://files.pythonhosted.org/packages/94/10/070c99bf024c400be68f7568e4d9f610ee3c79d9718cf453ca3d0b7e0e82/pyautogui_simplified_edition-1.0a1.tar.gz
+[2023-04-14 17:33:50] INFO root fetch - processPackages [wodoo]: executing diffoscope
+[2023-04-14 17:33:50] INFO root fetch - processPackages [wodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wodoo-0.3.96.tar.gz tmp/wodoo-0.3.99.tar.gz --markdown 20230414/w/wodoo/0.3.96-0.3.99/diff.md --exclude *.pyd
+[2023-04-14 17:33:50] INFO root fetch - processPackages [i2cssh]: Downloading https://files.pythonhosted.org/packages/75/a1/d7d217db025b77baa5dcbf8b226cf7944f4593ce195229e1b9417152fe0e/i2cssh-0.0.8.tar.gz
+[2023-04-14 17:33:50] INFO root fetch - processPackages [jira-assistant]: Downloading https://files.pythonhosted.org/packages/9c/98/d37da86ac10e5ef1ce0d30d3ca9126accc1c2a691997d6f7210c8354f973/jira-assistant-0.1.8.tar.gz
+[2023-04-14 17:33:50] INFO root fetch - processPackages [jira-assistant]: executing diffoscope
+[2023-04-14 17:33:50] INFO root fetch - processPackages [jira-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jira-assistant-0.1.7.tar.gz tmp/jira-assistant-0.1.8.tar.gz --markdown 20230414/j/jira-assistant/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-14 17:33:51] INFO root fetch - processPackages [i2cssh]: Downloading https://files.pythonhosted.org/packages/68/75/6f77b0743797b72c052706e37bd711c265d2a6e4eb7b72c3b552cd8f6991/i2cssh-0.0.9.tar.gz
+[2023-04-14 17:33:51] INFO root fetch - processPackages [robyn]: executing diffoscope
+[2023-04-14 17:33:51] INFO root fetch - processPackages [robyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robyn-0.8.1.tar.gz tmp/robyn-0.9.0.tar.gz --markdown 20230414/r/robyn/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 17:33:51] INFO root fetch - processPackages [pyautogui-simplified-edition]: Downloading https://files.pythonhosted.org/packages/9a/77/360c4af9190045e4c44c6a3761d9f4a5def97aeb71fb31ebb090e0c51243/pyautogui_simplified_edition-1.0a2.tar.gz
+[2023-04-14 17:33:51] INFO root fetch - processPackages [pyautogui-simplified-edition]: executing diffoscope
+[2023-04-14 17:33:51] INFO root fetch - processPackages [pyautogui-simplified-edition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyautogui_simplified_edition-1.0a1.tar.gz tmp/pyautogui_simplified_edition-1.0a2.tar.gz --markdown 20230414/p/pyautogui-simplified-edition/1.0a1-1.0a2/diff.md --exclude *.pyd
+[2023-04-14 17:33:51] INFO root fetch - processPackages [i2cssh]: executing diffoscope
+[2023-04-14 17:33:51] INFO root fetch - processPackages [i2cssh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i2cssh-0.0.8.tar.gz tmp/i2cssh-0.0.9.tar.gz --markdown 20230414/i/i2cssh/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 17:33:52] INFO root fetch - processPackages [pyautogui-simplified-edition]: Start processing: tts-arranger
+[2023-04-14 17:33:52] INFO root fetch - main [MainThread]: End processing [pyautogui-simplified-edition]: success
+[2023-04-14 17:33:52] INFO root fetch - processPackages [tts-arranger]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 17:33:52] INFO root fetch - processPackages [jira-assistant]: Start processing: cleanchausie
+[2023-04-14 17:33:52] INFO root fetch - main [MainThread]: End processing [jira-assistant]: success
+[2023-04-14 17:33:52] INFO root fetch - processPackages [cleanchausie]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-14 17:33:52] INFO root fetch - processPackages [i2cssh]: Start processing: funasr
+[2023-04-14 17:33:52] INFO root fetch - main [MainThread]: End processing [i2cssh]: success
+[2023-04-14 17:33:52] INFO root fetch - processPackages [cleanchausie]: executing diffoscope
+[2023-04-14 17:33:52] INFO root fetch - processPackages [cleanchausie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cleanchausie-1.9.0.tar.gz tmp/cleanchausie-1.9.1.tar.gz --markdown 20230414/c/cleanchausie/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-14 17:33:52] INFO root fetch - processPackages [robyn]: Start processing: apyproxy
+[2023-04-14 17:33:52] INFO root fetch - main [MainThread]: End processing [robyn]: success
+[2023-04-14 17:33:52] INFO root fetch - processPackages [funasr]: New version: [0.4.1] Old Version: [0.3.1]
+[2023-04-14 17:33:52] INFO root fetch - processPackages [tts-arranger]: Downloading https://files.pythonhosted.org/packages/87/e8/32748ca2e81aa7a5bcfba17cfcfc4e9c041e28d2c8263c646b61509dfa05/tts_arranger-0.1.2.tar.gz
+[2023-04-14 17:33:52] WARNING root fetch - processPackages [apyproxy]: Skipping, unable to determine old version
+[2023-04-14 17:33:52] INFO root fetch - processPackages [apyproxy]: Start processing: jmlopez-m
+[2023-04-14 17:33:52] INFO root fetch - main [MainThread]: End processing [apyproxy] error
+[2023-04-14 17:33:52] INFO root fetch - processPackages [tts-arranger]: executing diffoscope
+[2023-04-14 17:33:52] INFO root fetch - processPackages [tts-arranger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tts_arranger-0.1.1.tar.gz tmp/tts_arranger-0.1.2.tar.gz --markdown 20230414/t/tts-arranger/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 17:33:52] INFO root fetch - processPackages [jmlopez-m]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 17:33:52] INFO root fetch - processPackages [funasr]: Downloading https://files.pythonhosted.org/packages/50/78/f55895b8023cc56129a8e28bc7b042dbe7fa26a76076d1f012bb0373b9a2/funasr-0.3.1.tar.gz
+[2023-04-14 17:33:52] INFO root fetch - processPackages [funasr]: Downloading https://files.pythonhosted.org/packages/cc/aa/4b394cc80078676cc39d68c5a1e8114d1916611fd3a62d512d72df0d1ff9/funasr-0.4.1.tar.gz
+[2023-04-14 17:33:52] INFO root fetch - processPackages [jmlopez-m]: executing diffoscope
+[2023-04-14 17:33:52] INFO root fetch - processPackages [jmlopez-m]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jmlopez-m-0.8.0.tar.gz tmp/jmlopez-m-0.9.0.tar.gz --markdown 20230414/j/jmlopez-m/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 17:33:53] INFO root fetch - processPackages [funasr]: executing diffoscope
+[2023-04-14 17:33:53] INFO root fetch - processPackages [funasr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funasr-0.3.1.tar.gz tmp/funasr-0.4.1.tar.gz --markdown 20230414/f/funasr/0.3.1-0.4.1/diff.md --exclude *.pyd
+[2023-04-14 17:33:53] INFO root fetch - processPackages [cleanchausie]: Start processing: dittoffi
+[2023-04-14 17:33:53] INFO root fetch - main [MainThread]: End processing [cleanchausie]: success
+[2023-04-14 17:33:53] WARNING root fetch - processPackages [dittoffi]: Skipping, unable to determine old version
+[2023-04-14 17:33:53] INFO root fetch - processPackages [dittoffi]: Start processing: lusid-workflow-sdk-preview
+[2023-04-14 17:33:53] INFO root fetch - main [MainThread]: End processing [dittoffi] error
+[2023-04-14 17:33:53] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: New version: [0.1.208] Old Version: [0.1.164]
+[2023-04-14 17:33:53] INFO root fetch - processPackages [wodoo]: Start processing: vollseg
+[2023-04-14 17:33:53] INFO root fetch - main [MainThread]: End processing [wodoo]: success
+[2023-04-14 17:33:53] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-14 17:33:53] INFO root fetch - processPackages [tts-arranger]: Start processing: kintree
+[2023-04-14 17:33:53] INFO root fetch - main [MainThread]: End processing [tts-arranger]: success
+[2023-04-14 17:33:53] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-14 17:33:53] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: Downloading https://files.pythonhosted.org/packages/ff/11/85c79ae3b817409ddbd56537c6648c2310021fa138c13334b3cc1ddaafc8/lusid-workflow-sdk-preview-0.1.164.tar.gz
+[2023-04-14 17:33:53] INFO root fetch - processPackages [kintree]: New version: [1.0.0rc0] Old Version: [1.0.0b2]
+[2023-04-14 17:33:54] INFO root fetch - processPackages [kintree]: Downloading https://files.pythonhosted.org/packages/e0/46/6673de2976244c1f023127146458ad08e5e6598bdfd55c7de3502412ba7f/kintree-1.0.0b2.tar.gz
+[2023-04-14 17:33:54] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: Downloading https://files.pythonhosted.org/packages/0a/88/618f1a2500f12ec1ec416759523ca704127532a864a47b08d14707d00bfb/lusid-workflow-sdk-preview-0.1.208.tar.gz
+[2023-04-14 17:33:54] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-14 17:33:54] INFO root fetch - processPackages [vollseg]: Start processing: dittolive
+[2023-04-14 17:33:54] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-14 17:33:54] WARNING root fetch - processPackages [dittolive]: Skipping, unable to determine old version
+[2023-04-14 17:33:54] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: executing diffoscope
+[2023-04-14 17:33:54] INFO root fetch - processPackages [dittolive]: Start processing: ampy
+[2023-04-14 17:33:54] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-workflow-sdk-preview-0.1.164.tar.gz tmp/lusid-workflow-sdk-preview-0.1.208.tar.gz --markdown 20230414/l/lusid-workflow-sdk-preview/0.1.164-0.1.208/diff.md --exclude *.pyd
+[2023-04-14 17:33:54] INFO root fetch - main [MainThread]: End processing [dittolive] error
+[2023-04-14 17:33:54] WARNING root fetch - processPackages [ampy]: Skipping, unable to determine old version
+[2023-04-14 17:33:54] INFO root fetch - processPackages [ampy]: Start processing: nsj-rest-lib
+[2023-04-14 17:33:54] INFO root fetch - main [MainThread]: End processing [ampy] error
+[2023-04-14 17:33:54] INFO root fetch - processPackages [nsj-rest-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 17:33:54] INFO root fetch - processPackages [jmlopez-m]: Start processing: provider-switch
+[2023-04-14 17:33:54] INFO root fetch - main [MainThread]: End processing [jmlopez-m]: success
+[2023-04-14 17:33:54] INFO root fetch - processPackages [provider-switch]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 17:33:54] INFO root fetch - processPackages [provider-switch]: executing diffoscope
+[2023-04-14 17:33:54] INFO root fetch - processPackages [provider-switch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/provider-switch-0.0.8.tar.gz tmp/provider-switch-0.0.9.tar.gz --markdown 20230414/p/provider-switch/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 17:33:54] INFO root fetch - processPackages [kintree]: Downloading https://files.pythonhosted.org/packages/6d/11/1691a0e21338d4cc074094687b04550b768778138caabf5a7fab23081029/kintree-1.0.0rc0.tar.gz
+[2023-04-14 17:33:54] INFO root fetch - processPackages [nsj-rest-lib]: Downloading https://files.pythonhosted.org/packages/17/e7/04d787cd28a88315df230c44d1672dbf0645da8e05af692ee4bdd3c5463e/nsj_rest_lib-0.1.8.tar.gz
+[2023-04-14 17:33:54] INFO root fetch - processPackages [kintree]: executing diffoscope
+[2023-04-14 17:33:54] INFO root fetch - processPackages [kintree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kintree-1.0.0b2.tar.gz tmp/kintree-1.0.0rc0.tar.gz --markdown 20230414/k/kintree/1.0.0b2-1.0.0rc0/diff.md --exclude *.pyd
+[2023-04-14 17:33:54] INFO root fetch - processPackages [nsj-rest-lib]: Downloading https://files.pythonhosted.org/packages/82/5e/6c5c03ff9fb837776bc4f929d95fc514f61235c060710778c09ebca3872a/nsj_rest_lib-0.1.9.tar.gz
+[2023-04-14 17:33:54] INFO root fetch - processPackages [nsj-rest-lib]: executing diffoscope
+[2023-04-14 17:33:54] INFO root fetch - processPackages [nsj-rest-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsj_rest_lib-0.1.8.tar.gz tmp/nsj_rest_lib-0.1.9.tar.gz --markdown 20230414/n/nsj-rest-lib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 17:33:55] INFO root fetch - processPackages [provider-switch]: Start processing: etm-dgraham
+[2023-04-14 17:33:55] INFO root fetch - main [MainThread]: End processing [provider-switch]: success
+[2023-04-14 17:33:55] INFO root fetch - processPackages [etm-dgraham]: New version: [4.9.7] Old Version: [4.9.6]
+[2023-04-14 17:33:55] INFO root fetch - processPackages [etm-dgraham]: executing diffoscope
+[2023-04-14 17:33:55] INFO root fetch - processPackages [etm-dgraham]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etm-dgraham-4.9.6.tar.gz tmp/etm-dgraham-4.9.7.tar.gz --markdown 20230414/e/etm-dgraham/4.9.6-4.9.7/diff.md --exclude *.pyd
+[2023-04-14 17:33:55] INFO root fetch - main [MainThread]: End processing [lusid-workflow-sdk-preview]: success
+[2023-04-14 17:33:56] INFO root fetch - main [MainThread]: End processing [kintree]: success
+[2023-04-14 17:33:56] INFO root fetch - main [MainThread]: End processing [nsj-rest-lib]: success
+[2023-04-14 17:33:57] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
+[2023-04-14 17:33:57] INFO root fetch - main [MainThread]: End processing [funasr]: success
+[2023-04-14 17:33:57] INFO root fetch - main [MainThread]: Store serial: [17709241]
