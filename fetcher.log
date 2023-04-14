@@ -12882,3 +12882,74 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 13:58:57] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
 [2023-04-14 13:59:02] INFO root fetch - main [MainThread]: End processing [wallycore]: success
 [2023-04-14 13:59:02] INFO root fetch - main [MainThread]: Store serial: [17706695]
+[2023-04-14 14:04:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706695]
+[2023-04-14 14:04:15] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 14:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: idun-guardian-client
+[2023-04-14 14:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isystem.connect
+[2023-04-14 14:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: epsf-generator
+[2023-04-14 14:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simpleimageio
+[2023-04-14 14:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hb-test-generator
+[2023-04-14 14:04:15] WARNING root fetch - processPackages [epsf-generator]: Skipping, unable to determine old version
+[2023-04-14 14:04:15] INFO root fetch - processPackages [epsf-generator]: Start processing: xmos-ai-tools
+[2023-04-14 14:04:15] INFO root fetch - main [MainThread]: End processing [epsf-generator] error
+[2023-04-14 14:04:15] INFO root fetch - processPackages [hb-test-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 14:04:15] INFO root fetch - processPackages [idun-guardian-client]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-14 14:04:15] INFO root fetch - processPackages [simpleimageio]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-14 14:04:15] INFO root fetch - processPackages [xmos-ai-tools]: New version: [0.2.2.dev91] Old Version: [0.2.2.dev51]
+[2023-04-14 14:04:16] INFO root fetch - processPackages [isystem.connect]: New version: [9.21.99.0] Old Version: [9.21.98.0]
+[2023-04-14 14:04:16] INFO root fetch - processPackages [hb-test-generator]: executing diffoscope
+[2023-04-14 14:04:16] INFO root fetch - processPackages [hb-test-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hb-test-generator-0.1.8.tar.gz tmp/hb-test-generator-0.1.9.tar.gz --markdown 20230414/h/hb-test-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 14:04:16] INFO root fetch - processPackages [xmos-ai-tools]: Downloading https://files.pythonhosted.org/packages/45/ec/1596423fa6f0d2c54b1d97912de474f453e7e855296ee673b664073e93ea/xmos_ai_tools-0.2.2.dev51-py3-none-win_amd64.whl
+[2023-04-14 14:04:16] INFO root fetch - processPackages [idun-guardian-client]: Downloading https://files.pythonhosted.org/packages/34/e7/532e8f9f74d6bc4d7d07aed3bfd55b696929036c312d52149e2b35e76ba8/idun_guardian_client-1.1.1.tar.gz
+[2023-04-14 14:04:16] INFO root fetch - processPackages [isystem.connect]: Downloading https://files.pythonhosted.org/packages/5d/9f/30b1143a09e60e7a4ac2753bf53d1a1dd6b6de276c7b3b3141d9acc535c7/isystem.connect-9.21.98.0-cp39-none-win_amd64.whl
+[2023-04-14 14:04:16] INFO root fetch - processPackages [simpleimageio]: Downloading https://files.pythonhosted.org/packages/0b/d8/f27fe770edbe44ac73793d8c689707643df8cb020fdd67e0fc163a0af8a6/simpleimageio-1.3.2.tar.gz
+[2023-04-14 14:04:16] WARNING root fetch - processPackages [xmos-ai-tools]: Skipping package: exceeds size limit 12231762>=10485760
+[2023-04-14 14:04:16] INFO root fetch - processPackages [xmos-ai-tools]: Start processing: jageocoder
+[2023-04-14 14:04:16] INFO root fetch - main [MainThread]: End processing [xmos-ai-tools] error
+[2023-04-14 14:04:16] INFO root fetch - processPackages [jageocoder]: New version: [2.0.0] Old Version: [1.4.1rc1]
+[2023-04-14 14:04:16] INFO root fetch - processPackages [simpleimageio]: executing diffoscope
+[2023-04-14 14:04:16] INFO root fetch - processPackages [simpleimageio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleimageio-1.3.1.tar.gz tmp/simpleimageio-1.3.2.tar.gz --markdown 20230414/s/simpleimageio/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-14 14:04:16] INFO root fetch - processPackages [idun-guardian-client]: Downloading https://files.pythonhosted.org/packages/e9/18/27a1266ef06e50afd31a98ea308c345a0f2784b4e51d317c1e1101628efe/idun_guardian_client-1.1.2.tar.gz
+[2023-04-14 14:04:16] INFO root fetch - processPackages [jageocoder]: Downloading https://files.pythonhosted.org/packages/26/cf/990c551f97841a8c2afb2597e8ab7d37688decbe2091231f90ba42acac65/jageocoder-2.0.0.tar.gz
+[2023-04-14 14:04:16] INFO root fetch - processPackages [idun-guardian-client]: executing diffoscope
+[2023-04-14 14:04:16] INFO root fetch - processPackages [idun-guardian-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idun_guardian_client-1.1.1.tar.gz tmp/idun_guardian_client-1.1.2.tar.gz --markdown 20230414/i/idun-guardian-client/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-14 14:04:16] INFO root fetch - processPackages [jageocoder]: executing diffoscope
+[2023-04-14 14:04:16] INFO root fetch - processPackages [jageocoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jageocoder-1.4.1rc1.tar.gz tmp/jageocoder-2.0.0.tar.gz --markdown 20230414/j/jageocoder/1.4.1rc1-2.0.0/diff.md --exclude *.pyd
+[2023-04-14 14:04:17] INFO root fetch - processPackages [hb-test-generator]: Start processing: test-23234231
+[2023-04-14 14:04:17] INFO root fetch - main [MainThread]: End processing [hb-test-generator]: success
+[2023-04-14 14:04:17] WARNING root fetch - processPackages [test-23234231]: Skipping, unable to determine old version
+[2023-04-14 14:04:17] INFO root fetch - processPackages [test-23234231]: Start processing: mixturemapping
+[2023-04-14 14:04:17] INFO root fetch - main [MainThread]: End processing [test-23234231] error
+[2023-04-14 14:04:17] INFO root fetch - processPackages [mixturemapping]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 14:04:17] INFO root fetch - processPackages [mixturemapping]: Downloading https://files.pythonhosted.org/packages/dd/4e/3cbd69635a75b54529a572ae97ef2d99a7d0219ba841e5042f9248d2f655/mixturemapping-0.2.2-py39-none-any.whl
+[2023-04-14 14:04:17] INFO root fetch - processPackages [isystem.connect]: Downloading https://files.pythonhosted.org/packages/27/b1/d981879b837518117ae5b16714ad63be1c2b0214805deb0eac63c5cd22f9/isystem.connect-9.21.99.0-cp39-none-win_amd64.whl
+[2023-04-14 14:04:17] INFO root fetch - processPackages [mixturemapping]: executing diffoscope
+[2023-04-14 14:04:17] INFO root fetch - processPackages [mixturemapping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixturemapping-0.2.1-py39-none-any.whl.zip tmp/mixturemapping-0.2.2-py39-none-any.whl.zip --markdown 20230414/m/mixturemapping/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 14:04:17] INFO root fetch - processPackages [idun-guardian-client]: Start processing: ert
+[2023-04-14 14:04:17] INFO root fetch - main [MainThread]: End processing [idun-guardian-client]: success
+[2023-04-14 14:04:17] INFO root fetch - processPackages [ert]: New version: [5.0.0b6] Old Version: [5.0.0b5]
+[2023-04-14 14:04:18] INFO root fetch - processPackages [ert]: Downloading https://files.pythonhosted.org/packages/50/d4/5b62c10783820549e94f731bc3a2d02ae98eb41fc8f8c48e901d35d3071b/ert-5.0.0b6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-14 14:04:18] INFO root fetch - processPackages [jageocoder]: Start processing: mmgen
+[2023-04-14 14:04:18] INFO root fetch - main [MainThread]: End processing [jageocoder]: success
+[2023-04-14 14:04:18] INFO root fetch - processPackages [mmgen]: New version: [1.0.0rc0] Old Version: [0.7.3]
+[2023-04-14 14:04:18] INFO root fetch - processPackages [mmgen]: Downloading https://files.pythonhosted.org/packages/eb/95/f2199fb288c3d09822605f2da3ad65d599b8b37a64c7172e00fe3fdb1e42/mmgen-0.7.3.tar.gz
+[2023-04-14 14:04:18] INFO root fetch - processPackages [simpleimageio]: Start processing: mac-cleanup
+[2023-04-14 14:04:18] INFO root fetch - main [MainThread]: End processing [simpleimageio]: success
+[2023-04-14 14:04:18] INFO root fetch - processPackages [mac-cleanup]: New version: [3.0.0] Old Version: [2.2.5]
+[2023-04-14 14:04:18] INFO root fetch - processPackages [ert]: executing diffoscope
+[2023-04-14 14:04:18] INFO root fetch - processPackages [ert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ert-5.0.0b5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/ert-5.0.0b6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230414/e/ert/5.0.0b5-5.0.0b6/diff.md --exclude *.pyd
+[2023-04-14 14:04:18] INFO root fetch - processPackages [mmgen]: Downloading https://files.pythonhosted.org/packages/bf/f0/3604adafe306ef42948551203f591b59bf5348e38950d9a796388d240c06/mmgen-1.0.0rc0.tar.gz
+[2023-04-14 14:04:18] INFO root fetch - processPackages [mac-cleanup]: Downloading https://files.pythonhosted.org/packages/8f/13/62e3bfd014ac8e0663d14bf230e2a634a80358ef05482079f5d9d4de70a2/mac_cleanup-2.2.5.tar.gz
+[2023-04-14 14:04:18] INFO root fetch - processPackages [mmgen]: executing diffoscope
+[2023-04-14 14:04:18] INFO root fetch - processPackages [mmgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmgen-0.7.3.tar.gz tmp/mmgen-1.0.0rc0.tar.gz --markdown 20230414/m/mmgen/0.7.3-1.0.0rc0/diff.md --exclude *.pyd
+[2023-04-14 14:04:18] INFO root fetch - processPackages [isystem.connect]: executing diffoscope
+[2023-04-14 14:04:18] INFO root fetch - processPackages [isystem.connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isystem.connect-9.21.98.0-cp39-none-win_amd64.whl.zip tmp/isystem.connect-9.21.99.0-cp39-none-win_amd64.whl.zip --markdown 20230414/i/isystem.connect/9.21.98.0-9.21.99.0/diff.md --exclude *.pyd
+[2023-04-14 14:04:19] INFO root fetch - processPackages [mac-cleanup]: Downloading https://files.pythonhosted.org/packages/c2/5a/13cf13c4ef1e50e7aad12fe8ba907994d0a1fc88f43ba77070d967713a77/mac_cleanup-3.0.0.tar.gz
+[2023-04-14 14:04:19] INFO root fetch - processPackages [mac-cleanup]: executing diffoscope
+[2023-04-14 14:04:19] INFO root fetch - processPackages [mac-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mac_cleanup-2.2.5.tar.gz tmp/mac_cleanup-3.0.0.tar.gz --markdown 20230414/m/mac-cleanup/2.2.5-3.0.0/diff.md --exclude *.pyd
+[2023-04-14 14:04:20] INFO root fetch - main [MainThread]: End processing [mac-cleanup]: success
+[2023-04-14 14:04:20] INFO root fetch - main [MainThread]: End processing [isystem.connect]: success
+[2023-04-14 14:04:21] INFO root fetch - main [MainThread]: End processing [mmgen]: success
+[2023-04-14 14:04:32] INFO root fetch - main [MainThread]: End processing [ert]: success
+[2023-04-14 14:04:33] INFO root fetch - main [MainThread]: End processing [mixturemapping]: success
+[2023-04-14 14:04:33] INFO root fetch - main [MainThread]: Store serial: [17706765]
