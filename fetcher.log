@@ -20233,3 +20233,103 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:33:44] INFO root fetch - main [MainThread]: End processing [osm-annotation]: success
 [2023-04-14 20:33:44] INFO root fetch - main [MainThread]: End processing [log21]: success
 [2023-04-14 20:33:44] INFO root fetch - main [MainThread]: Store serial: [17711596]
+[2023-04-14 20:38:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711596]
+[2023-04-14 20:38:52] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-14 20:38:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yamicache
+[2023-04-14 20:38:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: berconpy
+[2023-04-14 20:38:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fbgemm-gpu-nightly
+[2023-04-14 20:38:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apache-airflow-providers-fastetl
+[2023-04-14 20:38:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cellworld
+[2023-04-14 20:38:52] INFO root fetch - processPackages [yamicache]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-14 20:38:52] INFO root fetch - processPackages [berconpy]: New version: [2.1.0b3] Old Version: [2.1.0b2]
+[2023-04-14 20:38:52] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 20:38:52] INFO root fetch - processPackages [cellworld]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 20:38:52] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-14 20:38:52] INFO root fetch - processPackages [berconpy]: Downloading https://files.pythonhosted.org/packages/3c/7d/c23929e52a678a07109b477055d90b2cd24df1777bd84348a272543240dc/berconpy-2.1.0b2.tar.gz
+[2023-04-14 20:38:52] INFO root fetch - processPackages [yamicache]: Downloading https://files.pythonhosted.org/packages/a8/9c/5c26c8e4504f94617bfa6287c76846852d95844c71305ef91dcb29cdda91/yamicache-0.7.2.tar.gz
+[2023-04-14 20:38:52] INFO root fetch - processPackages [cellworld]: Downloading https://files.pythonhosted.org/packages/5b/48/37c208bf9f17c56f039db252d8343184a4a55191496e7d6fc9880261bc31/cellworld-0.0.98.tar.gz
+[2023-04-14 20:38:52] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: Downloading https://files.pythonhosted.org/packages/12/86/a49132eede2018b7d1cfba7865e1515a7b553acb461b26a9c0088d02b9ac/apache-airflow-providers-fastetl-0.0.6.tar.gz
+[2023-04-14 20:38:52] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: executing diffoscope
+[2023-04-14 20:38:52] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-fastetl-0.0.5.tar.gz tmp/apache-airflow-providers-fastetl-0.0.6.tar.gz --markdown 20230414/a/apache-airflow-providers-fastetl/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 20:38:52] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/91/d7/37b19c2c14c34663f10ad284c315d7cdad71cbf7995d5e3bd737507ac655/fbgemm_gpu_nightly-2023.4.8-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-14 20:38:52] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 205605176>=10485760
+[2023-04-14 20:38:52] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Start processing: pysmells
+[2023-04-14 20:38:52] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-04-14 20:38:52] INFO root fetch - processPackages [pysmells]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 20:38:52] INFO root fetch - processPackages [yamicache]: Downloading https://files.pythonhosted.org/packages/85/7d/cfaf1da85aae08906fbfac0974b5c7c62c8a57a794830c28c410d9a19609/yamicache-0.7.3.tar.gz
+[2023-04-14 20:38:52] INFO root fetch - processPackages [yamicache]: executing diffoscope
+[2023-04-14 20:38:52] INFO root fetch - processPackages [yamicache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yamicache-0.7.2.tar.gz tmp/yamicache-0.7.3.tar.gz --markdown 20230414/y/yamicache/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-14 20:38:52] INFO root fetch - processPackages [cellworld]: Downloading https://files.pythonhosted.org/packages/ef/23/3c6f38892cfa3ebc3c34a2cf3e74549ede81266641f0969285913d8e199b/cellworld-0.0.99.tar.gz
+[2023-04-14 20:38:52] INFO root fetch - processPackages [berconpy]: Downloading https://files.pythonhosted.org/packages/a7/37/0836aa1e8e86a558a324c86a8848934c485af9d3772f67a0187ea8e3be71/berconpy-2.1.0b3.tar.gz
+[2023-04-14 20:38:53] INFO root fetch - processPackages [cellworld]: executing diffoscope
+[2023-04-14 20:38:53] INFO root fetch - processPackages [cellworld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellworld-0.0.98.tar.gz tmp/cellworld-0.0.99.tar.gz --markdown 20230414/c/cellworld/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 20:38:53] INFO root fetch - processPackages [berconpy]: executing diffoscope
+[2023-04-14 20:38:53] INFO root fetch - processPackages [berconpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/berconpy-2.1.0b2.tar.gz tmp/berconpy-2.1.0b3.tar.gz --markdown 20230414/b/berconpy/2.1.0b2-2.1.0b3/diff.md --exclude *.pyd
+[2023-04-14 20:38:53] INFO root fetch - processPackages [pysmells]: executing diffoscope
+[2023-04-14 20:38:53] INFO root fetch - processPackages [pysmells]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysmells-1.0.8.tar.gz tmp/pysmells-1.0.9.tar.gz --markdown 20230414/p/pysmells/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 20:38:53] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: Start processing: multisigwallet-predeployed
+[2023-04-14 20:38:53] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-fastetl]: success
+[2023-04-14 20:38:53] INFO root fetch - processPackages [multisigwallet-predeployed]: New version: [1.1.0b0] Old Version: [1.1.0a8]
+[2023-04-14 20:38:54] INFO root fetch - processPackages [yamicache]: Start processing: cellworld
+[2023-04-14 20:38:54] INFO root fetch - main [MainThread]: End processing [yamicache]: success
+[2023-04-14 20:38:54] INFO root fetch - processPackages [cellworld]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 20:38:54] INFO root fetch - processPackages [multisigwallet-predeployed]: Downloading https://files.pythonhosted.org/packages/61/84/7b437bd109cdfa4c6704109ad2a9b9773a833916227a01071a5fe9028a73/multisigwallet-predeployed-1.1.0a8.tar.gz
+[2023-04-14 20:38:54] INFO root fetch - processPackages [cellworld]: executing diffoscope
+[2023-04-14 20:38:54] INFO root fetch - processPackages [cellworld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellworld-0.0.98.tar.gz tmp/cellworld-0.0.99.tar.gz --markdown 20230414/c/cellworld/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 20:38:54] INFO root fetch - processPackages [berconpy]: Start processing: notebook-logger
+[2023-04-14 20:38:54] INFO root fetch - main [MainThread]: End processing [berconpy]: success
+[2023-04-14 20:38:54] INFO root fetch - processPackages [notebook-logger]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 20:38:54] INFO root fetch - processPackages [multisigwallet-predeployed]: Downloading https://files.pythonhosted.org/packages/8c/1c/8b79b88b388efc42f56022bfd25f70593fed322c6754a3ccdca7c16ca26b/multisigwallet-predeployed-1.1.0b0.tar.gz
+[2023-04-14 20:38:54] INFO root fetch - processPackages [cellworld]: Start processing: pyulog
+[2023-04-14 20:38:54] INFO root fetch - main [MainThread]: End processing [cellworld]: success
+[2023-04-14 20:38:54] INFO root fetch - processPackages [pyulog]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 20:38:54] INFO root fetch - processPackages [pysmells]: Start processing: vision-explanation-methods
+[2023-04-14 20:38:54] INFO root fetch - main [MainThread]: End processing [pysmells]: success
+[2023-04-14 20:38:54] INFO root fetch - processPackages [vision-explanation-methods]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 20:38:54] INFO root fetch - processPackages [multisigwallet-predeployed]: executing diffoscope
+[2023-04-14 20:38:54] INFO root fetch - processPackages [multisigwallet-predeployed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multisigwallet-predeployed-1.1.0a8.tar.gz tmp/multisigwallet-predeployed-1.1.0b0.tar.gz --markdown 20230414/m/multisigwallet-predeployed/1.1.0a8-1.1.0b0/diff.md --exclude *.pyd
+[2023-04-14 20:38:54] INFO root fetch - processPackages [notebook-logger]: Downloading https://files.pythonhosted.org/packages/5a/e8/5a367a1246fb7a675c5c7577fdb5f131b0f0b70a72c6087c3abad6c5c164/notebook-logger-0.1.0.tar.gz
+[2023-04-14 20:38:54] INFO root fetch - processPackages [pyulog]: Downloading https://files.pythonhosted.org/packages/8a/02/0771ead760d3e96ef7021255e1ef695dc4d18fe199bf3e17abc79aeb7308/pyulog-1.0.0.tar.gz
+[2023-04-14 20:38:54] INFO root fetch - processPackages [vision-explanation-methods]: Downloading https://files.pythonhosted.org/packages/24/da/45d7ea4b91264379d25e6108257be0d681e13461d07b619857d8e099a874/vision_explanation_methods-0.0.4.tar.gz
+[2023-04-14 20:38:54] INFO root fetch - processPackages [notebook-logger]: Downloading https://files.pythonhosted.org/packages/81/77/ad0b761163ee28abd1265e50e61e4b3039145dfd317aa24d950999350080/notebook-logger-0.1.1.tar.gz
+[2023-04-14 20:38:54] INFO root fetch - processPackages [notebook-logger]: executing diffoscope
+[2023-04-14 20:38:54] INFO root fetch - processPackages [notebook-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebook-logger-0.1.0.tar.gz tmp/notebook-logger-0.1.1.tar.gz --markdown 20230414/n/notebook-logger/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 20:38:54] INFO root fetch - processPackages [pyulog]: Downloading https://files.pythonhosted.org/packages/b8/57/b37c2fdf37b98cd7b46d0ed75d0c868f4cc3b654c92269dfb923d0730fc2/pyulog-1.0.1.tar.gz
+[2023-04-14 20:38:54] INFO root fetch - processPackages [vision-explanation-methods]: Downloading https://files.pythonhosted.org/packages/83/92/31f258709f940f35c418742d05549a5564a35bdf20389083414203a51b44/vision_explanation_methods-0.0.5.tar.gz
+[2023-04-14 20:38:54] INFO root fetch - processPackages [pyulog]: executing diffoscope
+[2023-04-14 20:38:54] INFO root fetch - processPackages [pyulog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyulog-1.0.0.tar.gz tmp/pyulog-1.0.1.tar.gz --markdown 20230414/p/pyulog/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 20:38:54] INFO root fetch - processPackages [vision-explanation-methods]: executing diffoscope
+[2023-04-14 20:38:54] INFO root fetch - processPackages [vision-explanation-methods]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision_explanation_methods-0.0.4.tar.gz tmp/vision_explanation_methods-0.0.5.tar.gz --markdown 20230414/v/vision-explanation-methods/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 20:38:55] INFO root fetch - processPackages [cellworld]: Start processing: gptchangelog
+[2023-04-14 20:38:55] INFO root fetch - main [MainThread]: End processing [cellworld]: success
+[2023-04-14 20:38:55] INFO root fetch - processPackages [gptchangelog]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-14 20:38:55] INFO root fetch - processPackages [gptchangelog]: Downloading https://files.pythonhosted.org/packages/2c/c0/b909099268051dde3563f8808657ff19a1336a2e260d40f9391b52800362/gptchangelog-0.2.0.tar.gz
+[2023-04-14 20:38:55] INFO root fetch - processPackages [multisigwallet-predeployed]: Start processing: ovos-utils
+[2023-04-14 20:38:55] INFO root fetch - main [MainThread]: End processing [multisigwallet-predeployed]: success
+[2023-04-14 20:38:55] INFO root fetch - processPackages [ovos-utils]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-14 20:38:55] INFO root fetch - processPackages [gptchangelog]: executing diffoscope
+[2023-04-14 20:38:55] INFO root fetch - processPackages [gptchangelog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptchangelog-0.1.1.tar.gz tmp/gptchangelog-0.2.0.tar.gz --markdown 20230414/g/gptchangelog/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 20:38:55] INFO root fetch - processPackages [ovos-utils]: executing diffoscope
+[2023-04-14 20:38:55] INFO root fetch - processPackages [ovos-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_utils-0.0.9.tar.gz tmp/ovos_utils-0.0.9a1.tar.gz --markdown 20230414/o/ovos-utils/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-14 20:38:55] INFO root fetch - processPackages [notebook-logger]: Start processing: cellworld
+[2023-04-14 20:38:55] INFO root fetch - main [MainThread]: End processing [notebook-logger]: success
+[2023-04-14 20:38:55] INFO root fetch - processPackages [cellworld]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 20:38:55] INFO root fetch - processPackages [cellworld]: executing diffoscope
+[2023-04-14 20:38:55] INFO root fetch - processPackages [cellworld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellworld-0.0.98.tar.gz tmp/cellworld-0.0.99.tar.gz --markdown 20230414/c/cellworld/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 20:38:56] INFO root fetch - processPackages [vision-explanation-methods]: Start processing: ovos-utils
+[2023-04-14 20:38:56] INFO root fetch - main [MainThread]: End processing [vision-explanation-methods]: success
+[2023-04-14 20:38:56] INFO root fetch - processPackages [ovos-utils]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-14 20:38:56] INFO root fetch - processPackages [ovos-utils]: executing diffoscope
+[2023-04-14 20:38:56] INFO root fetch - processPackages [ovos-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_utils-0.0.9.tar.gz tmp/ovos_utils-0.0.9a1.tar.gz --markdown 20230414/o/ovos-utils/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-14 20:38:56] INFO root fetch - processPackages [pyulog]: Start processing: cbra
+[2023-04-14 20:38:56] INFO root fetch - main [MainThread]: End processing [pyulog]: success
+[2023-04-14 20:38:56] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a81]
+[2023-04-14 20:38:56] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/4c/c6/fc3cc519446c51b86ea60c127746674120956d045ba464506b7b125a0f00/cbra-2.0.0a81.tar.gz
+[2023-04-14 20:38:56] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-14 20:38:56] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a81.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230414/c/cbra/2.0.0a81-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-14 20:38:56] INFO root fetch - main [MainThread]: End processing [gptchangelog]: success
+[2023-04-14 20:38:57] INFO root fetch - main [MainThread]: End processing [cellworld]: success
+[2023-04-14 20:38:57] INFO root fetch - main [MainThread]: End processing [ovos-utils]: success
+[2023-04-14 20:38:57] INFO root fetch - main [MainThread]: End processing [ovos-utils]: success
+[2023-04-14 20:39:01] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-04-14 20:39:01] INFO root fetch - main [MainThread]: Store serial: [17711678]
