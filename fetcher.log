@@ -7437,3 +7437,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 07:30:54] INFO root fetch - main [MainThread]: End processing [ipsw]: success
 [2023-04-14 07:30:54] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
 [2023-04-14 07:30:54] INFO root fetch - main [MainThread]: Store serial: [17703392]
+[2023-04-14 07:35:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703392]
+[2023-04-14 07:36:02] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 07:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zwkit
+[2023-04-14 07:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mingdaoyun-sdk
+[2023-04-14 07:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bingbong
+[2023-04-14 07:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deepke
+[2023-04-14 07:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-openupgrade-scripts
+[2023-04-14 07:36:02] INFO root fetch - processPackages [deepke]: New version: [2.2.1] Old Version: [2.2]
+[2023-04-14 07:36:02] INFO root fetch - processPackages [zwkit]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 07:36:02] INFO root fetch - processPackages [bingbong]: New version: [0.1.6.1] Old Version: [0.1.6]
+[2023-04-14 07:36:02] WARNING root fetch - processPackages [mingdaoyun-sdk]: Skipping, unable to determine old version
+[2023-04-14 07:36:02] INFO root fetch - processPackages [mingdaoyun-sdk]: Start processing: py2nut
+[2023-04-14 07:36:02] INFO root fetch - main [MainThread]: End processing [mingdaoyun-sdk] error
+[2023-04-14 07:36:02] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: New version: [14.0.1.0.2.dev99] Old Version: [14.0.1.0.2.dev95]
+[2023-04-14 07:36:02] INFO root fetch - processPackages [py2nut]: New version: [3.2.2] Old Version: [3.2.1]
+[2023-04-14 07:36:02] INFO root fetch - processPackages [zwkit]: executing diffoscope
+[2023-04-14 07:36:02] INFO root fetch - processPackages [zwkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zwkit-0.4.8.tar.gz tmp/zwkit-0.4.9.tar.gz --markdown 20230414/z/zwkit/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 07:36:02] INFO root fetch - processPackages [deepke]: Downloading https://files.pythonhosted.org/packages/37/eb/28f1b622c084dbae11b7092ccabbca12ffaeb5c597807046ab4a48e91e3d/deepke-2.2.tar.gz
+[2023-04-14 07:36:02] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/ec/50/ce82e83016d56e83f3ba41393c3470ef868ae1581c3f47640932504291c8/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev95-py3-none-any.whl
+[2023-04-14 07:36:02] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/6f/c7/a9b26f0028dfa0be8d4437fe3acd1852f1e66cbd6026f7abbb253586e570/bingbong-0.1.6.1-py3-none-any.whl
+[2023-04-14 07:36:02] INFO root fetch - processPackages [py2nut]: Downloading https://files.pythonhosted.org/packages/82/9c/d607dc5b3278ff3e2432a4f8cb3610b4a6bbb1be01efd9a2e09d6fdcd067/py2nut-3.2.1.tar.gz
+[2023-04-14 07:36:02] INFO root fetch - processPackages [bingbong]: executing diffoscope
+[2023-04-14 07:36:02] INFO root fetch - processPackages [bingbong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingbong-0.1.6-py3-none-any.whl.zip tmp/bingbong-0.1.6.1-py3-none-any.whl.zip --markdown 20230414/b/bingbong/0.1.6-0.1.6.1/diff.md --exclude *.pyd
+[2023-04-14 07:36:02] INFO root fetch - processPackages [deepke]: Downloading https://files.pythonhosted.org/packages/d1/79/3ec7a5b14ecc16677b13e2f2603f56849a54ec9a0a527f1556d65f9c9f3a/deepke-2.2.1.tar.gz
+[2023-04-14 07:36:02] INFO root fetch - processPackages [py2nut]: Downloading https://files.pythonhosted.org/packages/d4/65/ef0d978353dfc084469be9a5cd4dc41120aab67f56013590df22e5323317/py2nut-3.2.2.tar.gz
+[2023-04-14 07:36:03] INFO root fetch - processPackages [py2nut]: executing diffoscope
+[2023-04-14 07:36:03] INFO root fetch - processPackages [py2nut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py2nut-3.2.1.tar.gz tmp/py2nut-3.2.2.tar.gz --markdown 20230414/p/py2nut/3.2.1-3.2.2/diff.md --exclude *.pyd
+[2023-04-14 07:36:03] INFO root fetch - processPackages [deepke]: executing diffoscope
+[2023-04-14 07:36:03] INFO root fetch - processPackages [deepke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepke-2.2.tar.gz tmp/deepke-2.2.1.tar.gz --markdown 20230414/d/deepke/2.2-2.2.1/diff.md --exclude *.pyd
+[2023-04-14 07:36:03] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/d0/8c/a24d16c65bf9fe5ae4605a1657606542a2bb75c0ac9281be45aa9cb0464d/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev99-py3-none-any.whl
+[2023-04-14 07:36:03] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: executing diffoscope
+[2023-04-14 07:36:03] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev95-py3-none-any.whl.zip tmp/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev99-py3-none-any.whl.zip --markdown 20230414/o/odoo14-addon-openupgrade-scripts/14.0.1.0.2.dev95-14.0.1.0.2.dev99/diff.md --exclude *.pyd
+[2023-04-14 07:36:03] INFO root fetch - processPackages [zwkit]: Start processing: pymycobot
+[2023-04-14 07:36:03] INFO root fetch - main [MainThread]: End processing [zwkit]: success
+[2023-04-14 07:36:03] INFO root fetch - processPackages [pymycobot]: New version: [3.0.8b2] Old Version: [3.0.8b1]
+[2023-04-14 07:36:03] INFO root fetch - processPackages [pymycobot]: executing diffoscope
+[2023-04-14 07:36:03] INFO root fetch - processPackages [pymycobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymycobot-3.0.8b1.tar.gz tmp/pymycobot-3.0.8b2.tar.gz --markdown 20230414/p/pymycobot/3.0.8b1-3.0.8b2/diff.md --exclude *.pyd
+[2023-04-14 07:36:03] INFO root fetch - processPackages [bingbong]: Start processing: seven-cloudapp-frame
+[2023-04-14 07:36:03] INFO root fetch - main [MainThread]: End processing [bingbong]: success
+[2023-04-14 07:36:04] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-04-14 07:36:04] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-04-14 07:36:04] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230414/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-04-14 07:36:04] INFO root fetch - main [MainThread]: End processing [py2nut]: success
+[2023-04-14 07:36:05] INFO root fetch - main [MainThread]: End processing [pymycobot]: success
+[2023-04-14 07:36:05] INFO root fetch - main [MainThread]: End processing [deepke]: success
+[2023-04-14 07:36:05] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-04-14 07:36:10] INFO root fetch - main [MainThread]: End processing [odoo14-addon-openupgrade-scripts]: success
+[2023-04-14 07:36:10] INFO root fetch - main [MainThread]: Store serial: [17703415]
