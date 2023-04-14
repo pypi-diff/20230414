@@ -10466,3 +10466,113 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 11:15:43] INFO root fetch - main [MainThread]: End processing [autoai-libs]: success
 [2023-04-14 11:15:48] INFO root fetch - main [MainThread]: End processing [returnn]: success
 [2023-04-14 11:15:48] INFO root fetch - main [MainThread]: Store serial: [17705114]
+[2023-04-14 11:20:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705114]
+[2023-04-14 11:20:55] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-14 11:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: preprocessing-pgp
+[2023-04-14 11:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rctoolf
+[2023-04-14 11:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-04-14 11:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opstool
+[2023-04-14 11:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: singletrader
+[2023-04-14 11:20:55] INFO root fetch - processPackages [preprocessing-pgp]: New version: [0.2.9.dev3] Old Version: [0.2.9.dev2]
+[2023-04-14 11:20:55] INFO root fetch - processPackages [opstool]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-14 11:20:55] INFO root fetch - processPackages [rctoolf]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 11:20:55] INFO root fetch - processPackages [singletrader]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-14 11:20:56] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-14 11:20:56] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-14 11:20:56] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230414/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-14 11:20:56] INFO root fetch - processPackages [opstool]: Downloading https://files.pythonhosted.org/packages/e6/be/9454098b9bc52b2a94931e73f6e2d01564dbf9bf2d32b8f578e7a434a841/opstool-0.7.2.tar.gz
+[2023-04-14 11:20:56] INFO root fetch - processPackages [preprocessing-pgp]: Downloading https://files.pythonhosted.org/packages/aa/d2/b6fb43f3c5f924756c103491ddec927572a6cf45264ce69610031d21b5c7/preprocessing-pgp-0.2.9.dev2.tar.gz
+[2023-04-14 11:20:56] INFO root fetch - processPackages [rctoolf]: Downloading https://files.pythonhosted.org/packages/5f/d0/ae15206e9bd380b82c443bbc8739cd926c0e5d30ec299c619434c4f5a686/rctoolf-0.0.1.tar.gz
+[2023-04-14 11:20:56] INFO root fetch - processPackages [singletrader]: Downloading https://files.pythonhosted.org/packages/88/ff/1e85da5076fa9ecf29b8bce2d182a6db8198c549073fcab43e0ebcb777c9/singletrader-0.1.1-py3-none-any.whl
+[2023-04-14 11:20:56] WARNING root fetch - processPackages [preprocessing-pgp]: Skipping package: exceeds size limit 78856792>=10485760
+[2023-04-14 11:20:56] INFO root fetch - processPackages [preprocessing-pgp]: Start processing: rul-datasets
+[2023-04-14 11:20:56] INFO root fetch - main [MainThread]: End processing [preprocessing-pgp] error
+[2023-04-14 11:20:56] INFO root fetch - processPackages [rul-datasets]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 11:20:56] INFO root fetch - processPackages [singletrader]: Downloading https://files.pythonhosted.org/packages/e8/49/c5815a479a37d6f69f46e577fd56bf2def82e78955aa6c02e70172351198/singletrader-0.2.0.tar.gz
+[2023-04-14 11:20:56] INFO root fetch - processPackages [rul-datasets]: executing diffoscope
+[2023-04-14 11:20:56] INFO root fetch - processPackages [rul-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rul_datasets-0.9.0.tar.gz tmp/rul_datasets-0.9.1.tar.gz --markdown 20230414/r/rul-datasets/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 11:20:56] INFO root fetch - processPackages [opstool]: Downloading https://files.pythonhosted.org/packages/bb/77/668daa801f4269068ff3b7c5e6354806c98c619164968b0bef3976304ec2/opstool-0.7.3.tar.gz
+[2023-04-14 11:20:56] INFO root fetch - processPackages [singletrader]: executing diffoscope
+[2023-04-14 11:20:56] INFO root fetch - processPackages [singletrader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/singletrader-0.1.1-py3-none-any.whl.zip tmp/singletrader-0.2.0.tar.gz --markdown 20230414/s/singletrader/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 11:20:56] INFO root fetch - processPackages [opstool]: executing diffoscope
+[2023-04-14 11:20:56] INFO root fetch - processPackages [opstool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opstool-0.7.2.tar.gz tmp/opstool-0.7.3.tar.gz --markdown 20230414/o/opstool/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-14 11:20:56] INFO root fetch - processPackages [rctoolf]: Downloading https://files.pythonhosted.org/packages/45/54/6bc9d2af84e7a2acf823e90f7fd3523f6758d9f10c1d6cc0adcff95c11ac/rctoolf-0.0.2.tar.gz
+[2023-04-14 11:20:56] INFO root fetch - processPackages [rctoolf]: executing diffoscope
+[2023-04-14 11:20:56] INFO root fetch - processPackages [rctoolf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rctoolf-0.0.1.tar.gz tmp/rctoolf-0.0.2.tar.gz --markdown 20230414/r/rctoolf/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 11:20:57] INFO root fetch - processPackages [spanishconjugator]: Start processing: spanishconjugator
+[2023-04-14 11:20:57] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-14 11:20:57] INFO root fetch - processPackages [rul-datasets]: Start processing: pyarmor.cli.runtime
+[2023-04-14 11:20:57] INFO root fetch - main [MainThread]: End processing [rul-datasets]: success
+[2023-04-14 11:20:57] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-14 11:20:57] INFO root fetch - processPackages [singletrader]: Start processing: ign-gpao-client
+[2023-04-14 11:20:57] INFO root fetch - main [MainThread]: End processing [singletrader]: success
+[2023-04-14 11:20:57] INFO root fetch - processPackages [pyarmor.cli.runtime]: New version: [2.1.dev9] Old Version: [2.1.dev8]
+[2023-04-14 11:20:57] INFO root fetch - processPackages [ign-gpao-client]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 11:20:57] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-14 11:20:57] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230414/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-14 11:20:57] INFO root fetch - processPackages [pyarmor.cli.runtime]: executing diffoscope
+[2023-04-14 11:20:57] INFO root fetch - processPackages [pyarmor.cli.runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.runtime-2.1.dev8-cp39-none-any.whl.zip tmp/pyarmor.cli.runtime-2.1.dev9-cp39-none-any.whl.zip --markdown 20230414/p/pyarmor.cli.runtime/2.1.dev8-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-14 11:20:57] INFO root fetch - processPackages [rctoolf]: Start processing: ecodata
+[2023-04-14 11:20:57] INFO root fetch - main [MainThread]: End processing [rctoolf]: success
+[2023-04-14 11:20:57] INFO root fetch - processPackages [ecodata]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 11:20:57] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/3c/3e/690018e6a90f823536cf0dfd24f93f19c4ef6924ef3c06aca27b7578de04/ecodata-0.0.6.tar.gz
+[2023-04-14 11:20:58] INFO root fetch - processPackages [ign-gpao-client]: executing diffoscope
+[2023-04-14 11:20:58] INFO root fetch - processPackages [ign-gpao-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ign-gpao-client-0.8.0.tar.gz tmp/ign-gpao-client-0.9.0.tar.gz --markdown 20230414/i/ign-gpao-client/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 11:20:58] INFO root fetch - processPackages [ecodata]: executing diffoscope
+[2023-04-14 11:20:58] INFO root fetch - processPackages [ecodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecodata-0.0.5.tar.gz tmp/ecodata-0.0.6.tar.gz --markdown 20230414/e/ecodata/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 11:20:58] INFO root fetch - processPackages [spanishconjugator]: Start processing: raycast-discord-game
+[2023-04-14 11:20:58] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-14 11:20:58] WARNING root fetch - processPackages [raycast-discord-game]: Skipping, unable to determine old version
+[2023-04-14 11:20:58] INFO root fetch - processPackages [raycast-discord-game]: Start processing: fondant
+[2023-04-14 11:20:58] INFO root fetch - main [MainThread]: End processing [raycast-discord-game] error
+[2023-04-14 11:20:58] WARNING root fetch - processPackages [fondant]: Skipping, unable to determine old version
+[2023-04-14 11:20:58] INFO root fetch - processPackages [fondant]: Start processing: djangoldp-needle
+[2023-04-14 11:20:58] INFO root fetch - main [MainThread]: End processing [fondant] error
+[2023-04-14 11:20:59] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 11:20:59] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-14 11:20:59] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230414/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 11:20:59] INFO root fetch - processPackages [ecodata]: Start processing: swagger-coverage
+[2023-04-14 11:20:59] INFO root fetch - main [MainThread]: End processing [ecodata]: success
+[2023-04-14 11:20:59] INFO root fetch - processPackages [ign-gpao-client]: Start processing: mltu
+[2023-04-14 11:20:59] INFO root fetch - main [MainThread]: End processing [ign-gpao-client]: success
+[2023-04-14 11:20:59] INFO root fetch - processPackages [mltu]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-14 11:20:59] INFO root fetch - processPackages [swagger-coverage]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-04-14 11:20:59] INFO root fetch - processPackages [mltu]: executing diffoscope
+[2023-04-14 11:20:59] INFO root fetch - processPackages [mltu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mltu-1.0.5.tar.gz tmp/mltu-1.0.6.tar.gz --markdown 20230414/m/mltu/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-14 11:20:59] INFO root fetch - processPackages [swagger-coverage]: Downloading https://files.pythonhosted.org/packages/8d/ab/3a26a1fa8213c90337a662484e9cc1dc6d0f224ffe164a7c8afa74716a8c/swagger-coverage-3.0.0.tar.gz
+[2023-04-14 11:20:59] WARNING root fetch - processPackages [swagger-coverage]: Skipping package: exceeds size limit 16281344>=10485760
+[2023-04-14 11:20:59] INFO root fetch - processPackages [swagger-coverage]: Start processing: dimensionality-reduction-jmsv
+[2023-04-14 11:20:59] INFO root fetch - main [MainThread]: End processing [swagger-coverage] error
+[2023-04-14 11:20:59] WARNING root fetch - processPackages [dimensionality-reduction-jmsv]: Skipping, unable to determine old version
+[2023-04-14 11:20:59] INFO root fetch - processPackages [dimensionality-reduction-jmsv]: Start processing: psytricks
+[2023-04-14 11:20:59] INFO root fetch - main [MainThread]: End processing [dimensionality-reduction-jmsv] error
+[2023-04-14 11:20:59] WARNING root fetch - processPackages [psytricks]: Skipping, unable to determine old version
+[2023-04-14 11:20:59] INFO root fetch - processPackages [psytricks]: Start processing: toml-file
+[2023-04-14 11:20:59] INFO root fetch - main [MainThread]: End processing [psytricks] error
+[2023-04-14 11:20:59] INFO root fetch - processPackages [toml-file]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 11:21:00] INFO root fetch - processPackages [toml-file]: Downloading https://files.pythonhosted.org/packages/90/84/b4c6b22ee673f7037521d405f0e6035f92c76113bcbb6e5b150849897d27/toml_file-1.0.2.tar.gz
+[2023-04-14 11:21:00] INFO root fetch - processPackages [opstool]: Start processing: copernicus-marine-client
+[2023-04-14 11:21:00] INFO root fetch - main [MainThread]: End processing [opstool]: success
+[2023-04-14 11:21:00] INFO root fetch - processPackages [copernicus-marine-client]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-14 11:21:00] INFO root fetch - processPackages [toml-file]: executing diffoscope
+[2023-04-14 11:21:00] INFO root fetch - processPackages [toml-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toml_file-1.0.1.tar.gz tmp/toml_file-1.0.2.tar.gz --markdown 20230414/t/toml-file/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 11:21:00] INFO root fetch - processPackages [djangoldp-needle]: Start processing: codechecker
+[2023-04-14 11:21:00] INFO root fetch - main [MainThread]: End processing [djangoldp-needle]: success
+[2023-04-14 11:21:00] INFO root fetch - processPackages [copernicus-marine-client]: executing diffoscope
+[2023-04-14 11:21:00] INFO root fetch - processPackages [copernicus-marine-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copernicus_marine_client-0.4.0.tar.gz tmp/copernicus_marine_client-0.5.0.tar.gz --markdown 20230414/c/copernicus-marine-client/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-14 11:21:00] INFO root fetch - processPackages [codechecker]: New version: [6.22.0rc1] Old Version: [6.22.0]
+[2023-04-14 11:21:00] INFO root fetch - processPackages [mltu]: Start processing: nanolayer
+[2023-04-14 11:21:00] INFO root fetch - main [MainThread]: End processing [mltu]: success
+[2023-04-14 11:21:00] INFO root fetch - processPackages [codechecker]: Downloading https://files.pythonhosted.org/packages/9b/1c/e1f1a42c4f639c113993a67f656b3194643fe41fb29068e3a933a192be9a/codechecker-6.22.0.tar.gz
+[2023-04-14 11:21:00] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 11:21:00] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-14 11:21:00] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230414/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 11:21:00] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.runtime]: success
+[2023-04-14 11:21:01] INFO root fetch - main [MainThread]: End processing [toml-file]: success
+[2023-04-14 11:21:01] INFO root fetch - main [MainThread]: End processing [copernicus-marine-client]: success
+[2023-04-14 11:21:01] INFO root fetch - processPackages [codechecker]: Downloading https://files.pythonhosted.org/packages/a0/d8/9f86e9ff7fcce9455097a7738ba8002d8e3a4e9b480f5697946ba3f7674c/codechecker-6.22.0rc1.tar.gz
+[2023-04-14 11:21:01] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-04-14 11:21:03] INFO root fetch - processPackages [codechecker]: executing diffoscope
+[2023-04-14 11:21:03] INFO root fetch - processPackages [codechecker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codechecker-6.22.0.tar.gz tmp/codechecker-6.22.0rc1.tar.gz --markdown 20230414/c/codechecker/6.22.0-6.22.0rc1/diff.md --exclude *.pyd
+[2023-04-14 11:21:35] INFO root fetch - main [MainThread]: End processing [codechecker]: success
+[2023-04-14 11:21:35] INFO root fetch - main [MainThread]: Store serial: [17705205]
