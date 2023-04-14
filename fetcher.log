@@ -1364,3 +1364,90 @@
 [2023-04-14 01:57:57] INFO root fetch - main [MainThread]: End processing [python-project-structure]: success
 [2023-04-14 01:57:58] INFO root fetch - main [MainThread]: End processing [emojidb-python]: success
 [2023-04-14 01:57:58] INFO root fetch - main [MainThread]: Store serial: [17699808]
+[2023-04-14 02:03:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699808]
+[2023-04-14 02:03:05] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-14 02:03:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygpt-net
+[2023-04-14 02:03:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: energinet-ml-sdk
+[2023-04-14 02:03:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ecopipeline
+[2023-04-14 02:03:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: finlab
+[2023-04-14 02:03:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchdatasets-nightly
+[2023-04-14 02:03:05] INFO root fetch - processPackages [pygpt-net]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-14 02:03:05] INFO root fetch - processPackages [ecopipeline]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 02:03:05] INFO root fetch - processPackages [energinet-ml-sdk]: New version: [0.9.2.dev87] Old Version: [0.9.2.dev86]
+[2023-04-14 02:03:05] INFO root fetch - processPackages [finlab]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-14 02:03:05] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1681344191] Old Version: [1681257804]
+[2023-04-14 02:03:05] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/88/8d/1505b7d54c86d60d5ec7856b6950ea9a19066bb025e5ef171ab505ab92fb/pygpt-net-0.9.2.tar.gz
+[2023-04-14 02:03:05] INFO root fetch - processPackages [ecopipeline]: Downloading https://files.pythonhosted.org/packages/5a/30/7827748e364b1b53157f6b19f155cb12e491bb403ca76256d1ae94ac8506/ecopipeline-0.0.6.tar.gz
+[2023-04-14 02:03:05] INFO root fetch - processPackages [ecopipeline]: executing diffoscope
+[2023-04-14 02:03:05] INFO root fetch - processPackages [ecopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecopipeline-0.0.5.tar.gz tmp/ecopipeline-0.0.6.tar.gz --markdown 20230414/e/ecopipeline/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 02:03:05] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/f3/e1/49502616f6bc416a5b003aac29e08d884fb332098df83d077dc9d91f2188/torchdatasets-nightly-1681344191.tar.gz
+[2023-04-14 02:03:05] INFO root fetch - processPackages [finlab]: Downloading https://files.pythonhosted.org/packages/fa/37/9e925386c0a47955204990f19d34852c9e41dd43ac014ee9bd5cdb616259/finlab-0.4.1-cp39-cp39-win_amd64.whl
+[2023-04-14 02:03:05] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/eb/52/9551afa04c26bffac83d8d1d07d174b1c54eb25f92276bc6f80b81aecf7d/pygpt-net-0.9.3.tar.gz
+[2023-04-14 02:03:05] INFO root fetch - processPackages [finlab]: executing diffoscope
+[2023-04-14 02:03:05] INFO root fetch - processPackages [finlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finlab-0.4.0-cp39-cp39-win_amd64.whl.zip tmp/finlab-0.4.1-cp39-cp39-win_amd64.whl.zip --markdown 20230414/f/finlab/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-14 02:03:05] INFO root fetch - processPackages [energinet-ml-sdk]: executing diffoscope
+[2023-04-14 02:03:05] INFO root fetch - processPackages [energinet-ml-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energinet-ml-sdk-0.9.2.dev86.tar.gz tmp/energinet-ml-sdk-0.9.2.dev87.tar.gz --markdown 20230414/e/energinet-ml-sdk/0.9.2.dev86-0.9.2.dev87/diff.md --exclude *.pyd
+[2023-04-14 02:03:05] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2023-04-14 02:03:05] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt-net-0.9.2.tar.gz tmp/pygpt-net-0.9.3.tar.gz --markdown 20230414/p/pygpt-net/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-14 02:03:05] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-04-14 02:03:05] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1681257804.tar.gz tmp/torchdatasets-nightly-1681344191.tar.gz --markdown 20230414/t/torchdatasets-nightly/1681257804-1681344191/diff.md --exclude *.pyd
+[2023-04-14 02:03:06] INFO root fetch - processPackages [ecopipeline]: Start processing: mct-nightly
+[2023-04-14 02:03:06] INFO root fetch - main [MainThread]: End processing [ecopipeline]: success
+[2023-04-14 02:03:06] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9042023.post411] Old Version: [1.8.0.9032023.post431]
+[2023-04-14 02:03:06] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-04-14 02:03:06] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9032023.post431.tar.gz tmp/mct-nightly-1.8.0.9042023.post411.tar.gz --markdown 20230414/m/mct-nightly/1.8.0.9032023.post431-1.8.0.9042023.post411/diff.md --exclude *.pyd
+[2023-04-14 02:03:06] INFO root fetch - processPackages [torchdatasets-nightly]: Start processing: EmailEctractor
+[2023-04-14 02:03:06] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-04-14 02:03:06] INFO root fetch - processPackages [EmailEctractor]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 02:03:07] INFO root fetch - processPackages [EmailEctractor]: Downloading https://files.pythonhosted.org/packages/14/19/c61c8250e347a1fd7a7a9d8073ff0deef34b13c02f6e1fb04aaf9243453d/EmailEctractor-0.1.0.tar.gz
+[2023-04-14 02:03:07] INFO root fetch - processPackages [finlab]: Start processing: pcleaner
+[2023-04-14 02:03:07] INFO root fetch - main [MainThread]: End processing [finlab]: success
+[2023-04-14 02:03:07] INFO root fetch - processPackages [pcleaner]: New version: [1.5.0] Old Version: [1.4.1]
+[2023-04-14 02:03:07] INFO root fetch - processPackages [pygpt-net]: Start processing: jaxkern-nightly
+[2023-04-14 02:03:07] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2023-04-14 02:03:07] INFO root fetch - processPackages [EmailEctractor]: Downloading https://files.pythonhosted.org/packages/fa/25/5c7aba93283bd31b6f2d62218ad330d27e17ac7c8c87442e6f8220f8e3de/EmailEctractor-0.2.0.tar.gz
+[2023-04-14 02:03:07] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-04-14 02:03:07] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/42/4c/945e65db7f71337b76c2ebaa23ecc37b72f476c910c795ca1669465b34cd/pcleaner-1.4.1.tar.gz
+[2023-04-14 02:03:07] INFO root fetch - processPackages [EmailEctractor]: executing diffoscope
+[2023-04-14 02:03:07] INFO root fetch - processPackages [EmailEctractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EmailEctractor-0.1.0.tar.gz tmp/EmailEctractor-0.2.0.tar.gz --markdown 20230414/E/EmailEctractor/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 02:03:07] INFO root fetch - processPackages [energinet-ml-sdk]: Start processing: cellmap
+[2023-04-14 02:03:07] INFO root fetch - main [MainThread]: End processing [energinet-ml-sdk]: success
+[2023-04-14 02:03:07] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-04-14 02:03:07] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230414/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-04-14 02:03:07] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304140004] Old Version: [1.0.1.dev202304130547]
+[2023-04-14 02:03:07] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/f8/98/bf8add3b092484b03a638a6ba9bd05df7e71cba6612c30151c21d1f817f7/cellmap-1.0.1.dev202304140004-py3-none-any.whl
+[2023-04-14 02:03:07] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/a7/e6/0f8eca23518abb4adc8c68b41cd3b03f1b08e15f8cbe042e9b4f08861a4a/pcleaner-1.5.0.tar.gz
+[2023-04-14 02:03:07] INFO root fetch - processPackages [pcleaner]: executing diffoscope
+[2023-04-14 02:03:07] INFO root fetch - processPackages [pcleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcleaner-1.4.1.tar.gz tmp/pcleaner-1.5.0.tar.gz --markdown 20230414/p/pcleaner/1.4.1-1.5.0/diff.md --exclude *.pyd
+[2023-04-14 02:03:07] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-14 02:03:07] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304130547-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304140004-py3-none-any.whl.zip --markdown 20230414/c/cellmap/1.0.1.dev202304130547-1.0.1.dev202304140004/diff.md --exclude *.pyd
+[2023-04-14 02:03:08] INFO root fetch - processPackages [EmailEctractor]: Start processing: genopype
+[2023-04-14 02:03:08] INFO root fetch - main [MainThread]: End processing [EmailEctractor]: success
+[2023-04-14 02:03:08] INFO root fetch - processPackages [genopype]: New version: [2023.4.13] Old Version: [2020.3.27]
+[2023-04-14 02:03:08] INFO root fetch - processPackages [genopype]: Downloading https://files.pythonhosted.org/packages/b1/a1/f6f08ea96b57346e683542beb4436619e2ea9c6ed27916dda262810c0930/genopype-2020.3.27.tar.gz
+[2023-04-14 02:03:08] INFO root fetch - processPackages [jaxkern-nightly]: Start processing: RegScale-CLI
+[2023-04-14 02:03:08] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-04-14 02:03:08] INFO root fetch - processPackages [RegScale-CLI]: New version: [4.25.1] Old Version: [4.25.0]
+[2023-04-14 02:03:08] INFO root fetch - processPackages [cellmap]: Start processing: jaxutils-nightly
+[2023-04-14 02:03:08] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-14 02:03:08] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230413] Old Version: [0.0.8.dev20230412]
+[2023-04-14 02:03:08] INFO root fetch - processPackages [genopype]: Downloading https://files.pythonhosted.org/packages/05/d7/587c19bc5172d7c44e64d740fcc139b8cc0867b39967a6f01a5c5a128176/genopype-2023.4.13.tar.gz
+[2023-04-14 02:03:08] INFO root fetch - processPackages [genopype]: executing diffoscope
+[2023-04-14 02:03:08] INFO root fetch - processPackages [genopype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genopype-2020.3.27.tar.gz tmp/genopype-2023.4.13.tar.gz --markdown 20230414/g/genopype/2020.3.27-2023.4.13/diff.md --exclude *.pyd
+[2023-04-14 02:03:08] INFO root fetch - processPackages [pcleaner]: Start processing: tccli
+[2023-04-14 02:03:08] INFO root fetch - main [MainThread]: End processing [pcleaner]: success
+[2023-04-14 02:03:08] INFO root fetch - processPackages [RegScale-CLI]: Downloading https://files.pythonhosted.org/packages/08/f9/294c4e144c25f3ec199f9c0ce34ba9ca326237828fe26834a73ac4517f31/RegScale_CLI-4.25.1-py3-none-any.whl
+[2023-04-14 02:03:08] INFO root fetch - processPackages [tccli]: New version: [3.0.99.1] Old Version: [3.0.98.1]
+[2023-04-14 02:03:08] INFO root fetch - processPackages [RegScale-CLI]: executing diffoscope
+[2023-04-14 02:03:08] INFO root fetch - processPackages [RegScale-CLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RegScale_CLI-4.25.0-py3-none-any.whl.zip tmp/RegScale_CLI-4.25.1-py3-none-any.whl.zip --markdown 20230414/R/RegScale-CLI/4.25.0-4.25.1/diff.md --exclude *.pyd
+[2023-04-14 02:03:09] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/6d/1d/3dd07bcdbc044f0575cdb13b932cf553b9161f2493670fba90ea495bf1ee/jaxutils-nightly-0.0.8.dev20230413.tar.gz
+[2023-04-14 02:03:09] INFO root fetch - processPackages [tccli]: executing diffoscope
+[2023-04-14 02:03:09] INFO root fetch - processPackages [tccli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tccli-3.0.98.1.tar.gz tmp/tccli-3.0.99.1.tar.gz --markdown 20230414/t/tccli/3.0.98.1-3.0.99.1/diff.md --exclude *.pyd
+[2023-04-14 02:03:09] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-04-14 02:03:09] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230412.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230413.tar.gz --markdown 20230414/j/jaxutils-nightly/0.0.8.dev20230412-0.0.8.dev20230413/diff.md --exclude *.pyd
+[2023-04-14 02:03:09] INFO root fetch - main [MainThread]: End processing [genopype]: success
+[2023-04-14 02:03:10] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-04-14 02:03:10] INFO root fetch - main [MainThread]: End processing [RegScale-CLI]: success
+[2023-04-14 02:03:13] INFO root fetch - main [MainThread]: End processing [tccli]: success
+[2023-04-14 02:03:14] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-04-14 02:03:14] INFO root fetch - main [MainThread]: Store serial: [17699861]
