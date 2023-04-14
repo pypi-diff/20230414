@@ -18112,3 +18112,104 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 18:27:19] INFO root fetch - main [MainThread]: End processing [taipy-gui]: success
 [2023-04-14 18:27:31] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
 [2023-04-14 18:27:31] INFO root fetch - main [MainThread]: Store serial: [17710052]
+[2023-04-14 18:32:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17710052]
+[2023-04-14 18:32:38] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-14 18:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psa-car-controller
+[2023-04-14 18:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: akhaleel338package
+[2023-04-14 18:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: always-updates
+[2023-04-14 18:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certbot-dns-google-domains
+[2023-04-14 18:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shub-workflow
+[2023-04-14 18:32:38] WARNING root fetch - processPackages [akhaleel338package]: Skipping, unable to determine old version
+[2023-04-14 18:32:38] INFO root fetch - processPackages [akhaleel338package]: Start processing: zwkit
+[2023-04-14 18:32:38] INFO root fetch - main [MainThread]: End processing [akhaleel338package] error
+[2023-04-14 18:32:38] INFO root fetch - processPackages [certbot-dns-google-domains]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 18:32:38] INFO root fetch - processPackages [psa-car-controller]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-14 18:32:38] INFO root fetch - processPackages [zwkit]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 18:32:38] INFO root fetch - processPackages [shub-workflow]: New version: [1.9.7.4] Old Version: [1.9.7.3]
+[2023-04-14 18:32:38] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-14 18:32:38] INFO root fetch - processPackages [zwkit]: executing diffoscope
+[2023-04-14 18:32:38] INFO root fetch - processPackages [zwkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zwkit-0.4.8.tar.gz tmp/zwkit-0.4.9.tar.gz --markdown 20230414/z/zwkit/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 18:32:38] INFO root fetch - processPackages [shub-workflow]: executing diffoscope
+[2023-04-14 18:32:38] INFO root fetch - processPackages [shub-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shub-workflow-1.9.7.3.tar.gz tmp/shub-workflow-1.9.7.4.tar.gz --markdown 20230414/s/shub-workflow/1.9.7.3-1.9.7.4/diff.md --exclude *.pyd
+[2023-04-14 18:32:38] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-14 18:32:38] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230414/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-14 18:32:39] INFO root fetch - processPackages [certbot-dns-google-domains]: Downloading https://files.pythonhosted.org/packages/f9/73/2d34b1b8a0ef6e7680fea4e65ecae6055e52c2c476a9a842f8db71da2a50/certbot_dns_google_domains-0.1.8.tar.gz
+[2023-04-14 18:32:39] INFO root fetch - processPackages [psa-car-controller]: executing diffoscope
+[2023-04-14 18:32:39] INFO root fetch - processPackages [psa-car-controller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psa_car_controller-3.0.8.tar.gz tmp/psa_car_controller-3.0.9.tar.gz --markdown 20230414/p/psa-car-controller/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-14 18:32:39] INFO root fetch - processPackages [certbot-dns-google-domains]: Downloading https://files.pythonhosted.org/packages/fc/fd/f4b6f9748c5c5f6212957127a7ae331b346fab1d361625190a84e023b50f/certbot_dns_google_domains-0.1.9.tar.gz
+[2023-04-14 18:32:39] INFO root fetch - processPackages [certbot-dns-google-domains]: executing diffoscope
+[2023-04-14 18:32:39] INFO root fetch - processPackages [certbot-dns-google-domains]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/certbot_dns_google_domains-0.1.8.tar.gz tmp/certbot_dns_google_domains-0.1.9.tar.gz --markdown 20230414/c/certbot-dns-google-domains/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 18:32:39] INFO root fetch - processPackages [zwkit]: Start processing: nonebot-plugin-naturel-gpt
+[2023-04-14 18:32:39] INFO root fetch - main [MainThread]: End processing [zwkit]: success
+[2023-04-14 18:32:39] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: New version: [2.1.0] Old Version: [2.0.5]
+[2023-04-14 18:32:40] INFO root fetch - processPackages [always-updates]: Start processing: mindify
+[2023-04-14 18:32:40] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-04-14 18:32:40] INFO root fetch - processPackages [mindify]: New version: [0.0.23] Old Version: [0.0.22]
+[2023-04-14 18:32:40] INFO root fetch - processPackages [shub-workflow]: Start processing: concurrent-plugin
+[2023-04-14 18:32:40] INFO root fetch - main [MainThread]: End processing [shub-workflow]: success
+[2023-04-14 18:32:40] INFO root fetch - processPackages [concurrent-plugin]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-14 18:32:40] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: Downloading https://files.pythonhosted.org/packages/72/1a/08917b7655f7ade45a42ca30c3f210a89e52c1db23f6896d8a2750269c2a/nonebot_plugin_naturel_gpt-2.0.5.tar.gz
+[2023-04-14 18:32:40] INFO root fetch - processPackages [mindify]: Downloading https://files.pythonhosted.org/packages/b7/d5/91c6fd57f1d49b46ea6fdee25e326c402f23b539d5fb16e547c9bad8db28/mindify-0.0.22-py3-none-any.whl
+[2023-04-14 18:32:40] INFO root fetch - processPackages [concurrent-plugin]: Downloading https://files.pythonhosted.org/packages/0f/62/394867ddb70e67d54d9387acb7425a31df7776867a0e386e651c484fe710/concurrent_plugin-0.4.3-py3-none-any.whl
+[2023-04-14 18:32:40] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: Downloading https://files.pythonhosted.org/packages/cf/18/7124fbe9ccd4a8b15a3d4ed8fcc77b7e73dd0807ffb8e5eb46939ed2cb43/nonebot_plugin_naturel_gpt-2.1.0.tar.gz
+[2023-04-14 18:32:40] INFO root fetch - processPackages [concurrent-plugin]: executing diffoscope
+[2023-04-14 18:32:40] INFO root fetch - processPackages [concurrent-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/concurrent_plugin-0.4.2-py3-none-any.whl.zip tmp/concurrent_plugin-0.4.3-py3-none-any.whl.zip --markdown 20230414/c/concurrent-plugin/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-14 18:32:40] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: executing diffoscope
+[2023-04-14 18:32:40] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_naturel_gpt-2.0.5.tar.gz tmp/nonebot_plugin_naturel_gpt-2.1.0.tar.gz --markdown 20230414/n/nonebot-plugin-naturel-gpt/2.0.5-2.1.0/diff.md --exclude *.pyd
+[2023-04-14 18:32:40] INFO root fetch - processPackages [mindify]: Downloading https://files.pythonhosted.org/packages/16/0a/d9fe14a6596d7cd7a2f3b244c25cdae8e7c229bbbd1cb01c4f7612df2dd7/mindify-0.0.23-py3-none-any.whl
+[2023-04-14 18:32:40] INFO root fetch - processPackages [mindify]: executing diffoscope
+[2023-04-14 18:32:40] INFO root fetch - processPackages [mindify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindify-0.0.22-py3-none-any.whl.zip tmp/mindify-0.0.23-py3-none-any.whl.zip --markdown 20230414/m/mindify/0.0.22-0.0.23/diff.md --exclude *.pyd
+[2023-04-14 18:32:41] INFO root fetch - processPackages [psa-car-controller]: Start processing: idem-aws
+[2023-04-14 18:32:41] INFO root fetch - main [MainThread]: End processing [psa-car-controller]: success
+[2023-04-14 18:32:41] INFO root fetch - processPackages [idem-aws]: New version: [1.7.3] Old Version: [1.7.2]
+[2023-04-14 18:32:41] INFO root fetch - processPackages [concurrent-plugin]: Start processing: tapqir
+[2023-04-14 18:32:41] INFO root fetch - main [MainThread]: End processing [concurrent-plugin]: success
+[2023-04-14 18:32:41] INFO root fetch - processPackages [tapqir]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-14 18:32:41] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: Start processing: pyvts
+[2023-04-14 18:32:41] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-naturel-gpt]: success
+[2023-04-14 18:32:41] INFO root fetch - processPackages [pyvts]: New version: [0.3.0] Old Version: [0.2.7]
+[2023-04-14 18:32:41] INFO root fetch - processPackages [idem-aws]: Downloading https://files.pythonhosted.org/packages/ff/21/17780f8e967fdafff659050b40811425c49b2846f2f3dd1b16d8ca1732b8/idem-aws-1.7.3.tar.gz
+[2023-04-14 18:32:42] INFO root fetch - processPackages [tapqir]: Downloading https://files.pythonhosted.org/packages/91/69/1c960221ab66c27d8d70669e4b9e10fd6da91b193a5085278cff59ea8283/tapqir-1.1.8.tar.gz
+[2023-04-14 18:32:42] INFO root fetch - processPackages [pyvts]: Downloading https://files.pythonhosted.org/packages/10/58/4c9a5068f0a92f6fd9d55443bc9d98e7dc94c1c0170dbffc331ce4b902e3/pyvts-0.3.0.tar.gz
+[2023-04-14 18:32:42] INFO root fetch - processPackages [idem-aws]: executing diffoscope
+[2023-04-14 18:32:42] INFO root fetch - processPackages [idem-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idem-aws-1.7.2.tar.gz tmp/idem-aws-1.7.3.tar.gz --markdown 20230414/i/idem-aws/1.7.2-1.7.3/diff.md --exclude *.pyd
+[2023-04-14 18:32:42] INFO root fetch - processPackages [pyvts]: executing diffoscope
+[2023-04-14 18:32:42] INFO root fetch - processPackages [pyvts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvts-0.2.7.tar.gz tmp/pyvts-0.3.0.tar.gz --markdown 20230414/p/pyvts/0.2.7-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 18:32:42] INFO root fetch - processPackages [tapqir]: Downloading https://files.pythonhosted.org/packages/0e/03/b9bf1915f52064cdccba08887fb9ad8a172342ab648fcdbec3dc4aa16919/tapqir-1.1.9.tar.gz
+[2023-04-14 18:32:42] INFO root fetch - processPackages [mindify]: Start processing: tsetmc
+[2023-04-14 18:32:42] INFO root fetch - main [MainThread]: End processing [mindify]: success
+[2023-04-14 18:32:42] INFO root fetch - processPackages [tsetmc]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 18:32:42] INFO root fetch - processPackages [tsetmc]: Downloading https://files.pythonhosted.org/packages/e9/89/591bbad4fd0fe61938b4209f60e88c1fb470f266fe465ce188ca3fa4c499/tsetmc-0.9.0.tar.gz
+[2023-04-14 18:32:42] INFO root fetch - processPackages [tapqir]: executing diffoscope
+[2023-04-14 18:32:42] INFO root fetch - processPackages [tapqir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tapqir-1.1.8.tar.gz tmp/tapqir-1.1.9.tar.gz --markdown 20230414/t/tapqir/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-14 18:32:42] INFO root fetch - processPackages [tsetmc]: Downloading https://files.pythonhosted.org/packages/58/ff/602c329041abb143266ea818f96ae044114643056881f5b90ee954fa644d/tsetmc-0.9.1.tar.gz
+[2023-04-14 18:32:43] INFO root fetch - processPackages [tsetmc]: executing diffoscope
+[2023-04-14 18:32:43] INFO root fetch - processPackages [tsetmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsetmc-0.9.0.tar.gz tmp/tsetmc-0.9.1.tar.gz --markdown 20230414/t/tsetmc/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 18:32:43] INFO root fetch - processPackages [pyvts]: Start processing: acryl-datahub
+[2023-04-14 18:32:43] INFO root fetch - main [MainThread]: End processing [pyvts]: success
+[2023-04-14 18:32:43] INFO root fetch - processPackages [acryl-datahub]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-04-14 18:32:43] INFO root fetch - processPackages [acryl-datahub]: executing diffoscope
+[2023-04-14 18:32:43] INFO root fetch - processPackages [acryl-datahub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-0.9.6rc0.tar.gz tmp/acryl-datahub-0.9.6rc1.tar.gz --markdown 20230414/a/acryl-datahub/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-04-14 18:32:44] INFO root fetch - processPackages [tsetmc]: Start processing: acryl-datahub-airflow-plugin
+[2023-04-14 18:32:44] INFO root fetch - main [MainThread]: End processing [tsetmc]: success
+[2023-04-14 18:32:44] INFO root fetch - processPackages [certbot-dns-google-domains]: Start processing: odoo14-addon-shopfloor-mobile-base
+[2023-04-14 18:32:44] INFO root fetch - main [MainThread]: End processing [certbot-dns-google-domains]: success
+[2023-04-14 18:32:44] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-04-14 18:32:44] INFO root fetch - processPackages [odoo14-addon-shopfloor-mobile-base]: New version: [14.0.3.9.1] Old Version: [14.0.3.9.0]
+[2023-04-14 18:32:44] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: executing diffoscope
+[2023-04-14 18:32:44] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-airflow-plugin-0.9.6rc0.tar.gz tmp/acryl-datahub-airflow-plugin-0.9.6rc1.tar.gz --markdown 20230414/a/acryl-datahub-airflow-plugin/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-04-14 18:32:44] INFO root fetch - processPackages [odoo14-addon-shopfloor-mobile-base]: Downloading https://files.pythonhosted.org/packages/c9/02/fbd281e8677b36013336bf9465d3cffb46f7d914917799726d5401feda45/odoo14_addon_shopfloor_mobile_base-14.0.3.9.0-py3-none-any.whl
+[2023-04-14 18:32:45] INFO root fetch - processPackages [tapqir]: Start processing: connpy
+[2023-04-14 18:32:45] INFO root fetch - main [MainThread]: End processing [tapqir]: success
+[2023-04-14 18:32:45] INFO root fetch - processPackages [connpy]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-04-14 18:32:45] INFO root fetch - processPackages [connpy]: executing diffoscope
+[2023-04-14 18:32:45] INFO root fetch - processPackages [connpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connpy-3.0.0.tar.gz tmp/connpy-3.0.1.tar.gz --markdown 20230414/c/connpy/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-04-14 18:32:45] INFO root fetch - main [MainThread]: End processing [acryl-datahub-airflow-plugin]: success
+[2023-04-14 18:32:45] INFO root fetch - processPackages [odoo14-addon-shopfloor-mobile-base]: Downloading https://files.pythonhosted.org/packages/9c/4e/8ecc8852ff23bc95932ae1f8ba30fe73b8ddad3a6a84ff656bb087fcf7ed/odoo14_addon_shopfloor_mobile_base-14.0.3.9.1-py3-none-any.whl
+[2023-04-14 18:32:46] INFO root fetch - main [MainThread]: End processing [connpy]: success
+[2023-04-14 18:32:46] INFO root fetch - processPackages [odoo14-addon-shopfloor-mobile-base]: executing diffoscope
+[2023-04-14 18:32:46] INFO root fetch - processPackages [odoo14-addon-shopfloor-mobile-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shopfloor_mobile_base-14.0.3.9.0-py3-none-any.whl.zip tmp/odoo14_addon_shopfloor_mobile_base-14.0.3.9.1-py3-none-any.whl.zip --markdown 20230414/o/odoo14-addon-shopfloor-mobile-base/14.0.3.9.0-14.0.3.9.1/diff.md --exclude *.pyd
+[2023-04-14 18:32:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor-mobile-base]: success
+[2023-04-14 18:32:50] INFO root fetch - main [MainThread]: End processing [idem-aws]: success
+[2023-04-14 18:32:51] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
+[2023-04-14 18:32:51] INFO root fetch - main [MainThread]: Store serial: [17710099]
