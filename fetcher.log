@@ -20333,3 +20333,95 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:38:57] INFO root fetch - main [MainThread]: End processing [ovos-utils]: success
 [2023-04-14 20:39:01] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-04-14 20:39:01] INFO root fetch - main [MainThread]: Store serial: [17711678]
+[2023-04-14 20:44:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711678]
+[2023-04-14 20:44:09] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 20:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TransLiter
+[2023-04-14 20:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shub-workflow
+[2023-04-14 20:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langchain-serve
+[2023-04-14 20:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysparkler
+[2023-04-14 20:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: osm-annotation
+[2023-04-14 20:44:09] INFO root fetch - processPackages [pysparkler]: New version: [0.4.dev1681497870] Old Version: [0.4.dev1681490474]
+[2023-04-14 20:44:09] INFO root fetch - processPackages [langchain-serve]: New version: [0.0.3.dev3] Old Version: [0.0.3.dev19]
+[2023-04-14 20:44:09] INFO root fetch - processPackages [TransLiter]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-14 20:44:09] INFO root fetch - processPackages [osm-annotation]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 20:44:09] INFO root fetch - processPackages [shub-workflow]: New version: [1.9.7.4] Old Version: [1.9.7.3]
+[2023-04-14 20:44:09] INFO root fetch - processPackages [langchain-serve]: executing diffoscope
+[2023-04-14 20:44:09] INFO root fetch - processPackages [langchain-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-serve-0.0.3.dev19.tar.gz tmp/langchain-serve-0.0.3.dev3.tar.gz --markdown 20230414/l/langchain-serve/0.0.3.dev19-0.0.3.dev3/diff.md --exclude *.pyd
+[2023-04-14 20:44:09] INFO root fetch - processPackages [osm-annotation]: executing diffoscope
+[2023-04-14 20:44:09] INFO root fetch - processPackages [osm-annotation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osm_annotation-0.1.8.tar.gz tmp/osm_annotation-0.1.9.tar.gz --markdown 20230414/o/osm-annotation/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 20:44:09] INFO root fetch - processPackages [shub-workflow]: executing diffoscope
+[2023-04-14 20:44:09] INFO root fetch - processPackages [shub-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shub-workflow-1.9.7.3.tar.gz tmp/shub-workflow-1.9.7.4.tar.gz --markdown 20230414/s/shub-workflow/1.9.7.3-1.9.7.4/diff.md --exclude *.pyd
+[2023-04-14 20:44:09] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/e7/65/36bdec96c91f1c201fdf281d5bfb2e0cfac449ce1cfa0ff2632c412dd009/pysparkler-0.4.dev1681497870.tar.gz
+[2023-04-14 20:44:09] INFO root fetch - processPackages [TransLiter]: Downloading https://files.pythonhosted.org/packages/98/8a/4c688a7fd7a5f422231a5d30f94294e4f04dc02aa68dc392294227be8ae3/TransLiter-0.2.3.tar.gz
+[2023-04-14 20:44:09] INFO root fetch - processPackages [pysparkler]: executing diffoscope
+[2023-04-14 20:44:09] INFO root fetch - processPackages [pysparkler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkler-0.4.dev1681490474.tar.gz tmp/pysparkler-0.4.dev1681497870.tar.gz --markdown 20230414/p/pysparkler/0.4.dev1681490474-0.4.dev1681497870/diff.md --exclude *.pyd
+[2023-04-14 20:44:09] INFO root fetch - processPackages [TransLiter]: Downloading https://files.pythonhosted.org/packages/4a/36/4b5c8142b5f297463d7bcc25ec011fdb74af21138a3e059da29bd13715d7/TransLiter-0.2.4.tar.gz
+[2023-04-14 20:44:09] INFO root fetch - processPackages [TransLiter]: executing diffoscope
+[2023-04-14 20:44:09] INFO root fetch - processPackages [TransLiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TransLiter-0.2.3.tar.gz tmp/TransLiter-0.2.4.tar.gz --markdown 20230414/T/TransLiter/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-14 20:44:10] INFO root fetch - processPackages [osm-annotation]: Start processing: distributed
+[2023-04-14 20:44:10] INFO root fetch - main [MainThread]: End processing [osm-annotation]: success
+[2023-04-14 20:44:10] INFO root fetch - processPackages [distributed]: New version: [2023.4.0] Old Version: [2023.3.2.1]
+[2023-04-14 20:44:10] INFO root fetch - processPackages [langchain-serve]: Start processing: dask
+[2023-04-14 20:44:10] INFO root fetch - main [MainThread]: End processing [langchain-serve]: success
+[2023-04-14 20:44:10] INFO root fetch - processPackages [distributed]: Downloading https://files.pythonhosted.org/packages/14/f3/9b2eb80516522f6efd3b7023fdbf7e10462964a541ed2ac392aada13e373/distributed-2023.3.2.1.tar.gz
+[2023-04-14 20:44:10] INFO root fetch - processPackages [dask]: New version: [2023.4.0] Old Version: [2023.3.2]
+[2023-04-14 20:44:10] INFO root fetch - processPackages [shub-workflow]: Start processing: GMMA
+[2023-04-14 20:44:10] INFO root fetch - main [MainThread]: End processing [shub-workflow]: success
+[2023-04-14 20:44:10] INFO root fetch - processPackages [GMMA]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-14 20:44:11] INFO root fetch - processPackages [pysparkler]: Start processing: asana-preview
+[2023-04-14 20:44:11] INFO root fetch - main [MainThread]: End processing [pysparkler]: success
+[2023-04-14 20:44:11] INFO root fetch - processPackages [asana-preview]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 20:44:11] INFO root fetch - processPackages [dask]: Downloading https://files.pythonhosted.org/packages/0c/9b/97d74556303db7db8622cd92b7f0d3d76e539ae97adeb21c72eda36d22c4/dask-2023.3.2.tar.gz
+[2023-04-14 20:44:11] INFO root fetch - processPackages [GMMA]: Downloading https://files.pythonhosted.org/packages/04/6c/aff509893fa5ff0dfb4ef9fd99844ff8fc78c9de41acb17a5e8616c589ab/GMMA-1.1.8.tar.gz
+[2023-04-14 20:44:11] INFO root fetch - processPackages [TransLiter]: Start processing: openabc
+[2023-04-14 20:44:11] INFO root fetch - main [MainThread]: End processing [TransLiter]: success
+[2023-04-14 20:44:11] WARNING root fetch - processPackages [openabc]: Skipping, unable to determine old version
+[2023-04-14 20:44:11] INFO root fetch - processPackages [openabc]: Start processing: roboflow
+[2023-04-14 20:44:11] INFO root fetch - main [MainThread]: End processing [openabc] error
+[2023-04-14 20:44:11] INFO root fetch - processPackages [roboflow]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-14 20:44:11] INFO root fetch - processPackages [distributed]: Downloading https://files.pythonhosted.org/packages/be/ef/d3055244cb4f80320f85311ddd84e211a98565d5c800d5949e54d4573309/distributed-2023.4.0.tar.gz
+[2023-04-14 20:44:11] INFO root fetch - processPackages [dask]: Downloading https://files.pythonhosted.org/packages/c8/11/e2a897b7dfd768e87b1e8d2ae5ebe3ce29cbce0547ba9a3aa2ba1be49324/dask-2023.4.0.tar.gz
+[2023-04-14 20:44:11] INFO root fetch - processPackages [asana-preview]: Downloading https://files.pythonhosted.org/packages/5a/2e/aea10c254670b3b172835d9c74f0a4ee63a87641a7d7b8a6ce3c4559bf31/asana-preview-1.0.2.tar.gz
+[2023-04-14 20:44:11] INFO root fetch - processPackages [asana-preview]: executing diffoscope
+[2023-04-14 20:44:11] INFO root fetch - processPackages [asana-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asana-preview-1.0.1.tar.gz tmp/asana-preview-1.0.2.tar.gz --markdown 20230414/a/asana-preview/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 20:44:11] INFO root fetch - processPackages [distributed]: executing diffoscope
+[2023-04-14 20:44:11] INFO root fetch - processPackages [distributed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/distributed-2023.3.2.1.tar.gz tmp/distributed-2023.4.0.tar.gz --markdown 20230414/d/distributed/2023.3.2.1-2023.4.0/diff.md --exclude *.pyd
+[2023-04-14 20:44:11] INFO root fetch - processPackages [roboflow]: Downloading https://files.pythonhosted.org/packages/f1/a5/6e7aa1f38c77f16378f355d796e00c8228be8d37c68a4f712a190f001275/roboflow-1.0.5.tar.gz
+[2023-04-14 20:44:11] INFO root fetch - processPackages [dask]: executing diffoscope
+[2023-04-14 20:44:11] INFO root fetch - processPackages [dask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-2023.3.2.tar.gz tmp/dask-2023.4.0.tar.gz --markdown 20230414/d/dask/2023.3.2-2023.4.0/diff.md --exclude *.pyd
+[2023-04-14 20:44:11] INFO root fetch - processPackages [roboflow]: executing diffoscope
+[2023-04-14 20:44:11] INFO root fetch - processPackages [roboflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboflow-1.0.4.tar.gz tmp/roboflow-1.0.5.tar.gz --markdown 20230414/r/roboflow/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-14 20:44:11] INFO root fetch - processPackages [GMMA]: Downloading https://files.pythonhosted.org/packages/3d/ff/23677440624f446de00f627110824f0ed6168adb42001894c86d25001a70/GMMA-1.1.9.tar.gz
+[2023-04-14 20:44:11] INFO root fetch - processPackages [GMMA]: executing diffoscope
+[2023-04-14 20:44:11] INFO root fetch - processPackages [GMMA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GMMA-1.1.8.tar.gz tmp/GMMA-1.1.9.tar.gz --markdown 20230414/G/GMMA/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-14 20:44:12] INFO root fetch - processPackages [GMMA]: Start processing: pyworxcloud
+[2023-04-14 20:44:12] INFO root fetch - main [MainThread]: End processing [GMMA]: success
+[2023-04-14 20:44:12] INFO root fetch - processPackages [roboflow]: Start processing: cellworld
+[2023-04-14 20:44:12] INFO root fetch - main [MainThread]: End processing [roboflow]: success
+[2023-04-14 20:44:12] INFO root fetch - processPackages [pyworxcloud]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-14 20:44:12] INFO root fetch - processPackages [cellworld]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 20:44:12] INFO root fetch - processPackages [cellworld]: executing diffoscope
+[2023-04-14 20:44:12] INFO root fetch - processPackages [cellworld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellworld-0.0.98.tar.gz tmp/cellworld-0.0.99.tar.gz --markdown 20230414/c/cellworld/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 20:44:13] INFO root fetch - processPackages [pyworxcloud]: Downloading https://files.pythonhosted.org/packages/2b/5d/2901046456a1d5ced69b7440bd05b9aa644e1aa457630c5f9388aecb183b/pyworxcloud-3.0.4.tar.gz
+[2023-04-14 20:44:13] INFO root fetch - processPackages [pyworxcloud]: Downloading https://files.pythonhosted.org/packages/ed/60/c39b7762f5ce4687160c0fbf453e8a9afb1759245cf74edfe25873f73dd8/pyworxcloud-3.0.5.tar.gz
+[2023-04-14 20:44:13] INFO root fetch - processPackages [pyworxcloud]: executing diffoscope
+[2023-04-14 20:44:13] INFO root fetch - processPackages [pyworxcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyworxcloud-3.0.4.tar.gz tmp/pyworxcloud-3.0.5.tar.gz --markdown 20230414/p/pyworxcloud/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-14 20:44:13] INFO root fetch - processPackages [asana-preview]: Start processing: surveyequivalence
+[2023-04-14 20:44:13] INFO root fetch - main [MainThread]: End processing [asana-preview]: success
+[2023-04-14 20:44:13] INFO root fetch - processPackages [surveyequivalence]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 20:44:13] INFO root fetch - processPackages [cellworld]: Start processing: sinacor-negs
+[2023-04-14 20:44:13] INFO root fetch - main [MainThread]: End processing [cellworld]: success
+[2023-04-14 20:44:13] INFO root fetch - processPackages [surveyequivalence]: Downloading https://files.pythonhosted.org/packages/98/81/5daf4d289d80595669c396a32b82ac40452766a03bf7458f4ebafa7da9be/surveyequivalence-0.1.1.tar.gz
+[2023-04-14 20:44:14] INFO root fetch - processPackages [sinacor-negs]: New version: [0.1.1] Old Version: [0.0.6]
+[2023-04-14 20:44:14] INFO root fetch - processPackages [sinacor-negs]: Downloading https://files.pythonhosted.org/packages/47/27/b4bcf794d73802bab82de65d23af4b419433172b724ac6844cb0909ad8ab/sinacor_negs-0.1.1.tar.gz
+[2023-04-14 20:44:14] INFO root fetch - main [MainThread]: End processing [pyworxcloud]: success
+[2023-04-14 20:44:14] INFO root fetch - processPackages [sinacor-negs]: executing diffoscope
+[2023-04-14 20:44:14] INFO root fetch - processPackages [sinacor-negs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinacor_negs-0.0.6-py3-none-any.whl.zip tmp/sinacor_negs-0.1.1.tar.gz --markdown 20230414/s/sinacor-negs/0.0.6-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 20:44:14] INFO root fetch - processPackages [surveyequivalence]: Downloading https://files.pythonhosted.org/packages/55/3e/b0e5eeea0231350bc227255449a5910d9b576fd8ba99ddad68d3032f0cd3/surveyequivalence-0.1.2.tar.gz
+[2023-04-14 20:44:14] INFO root fetch - processPackages [surveyequivalence]: executing diffoscope
+[2023-04-14 20:44:14] INFO root fetch - processPackages [surveyequivalence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surveyequivalence-0.1.1.tar.gz tmp/surveyequivalence-0.1.2.tar.gz --markdown 20230414/s/surveyequivalence/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 20:44:15] INFO root fetch - main [MainThread]: End processing [distributed]: success
+[2023-04-14 20:44:15] INFO root fetch - main [MainThread]: End processing [sinacor-negs]: success
+[2023-04-14 20:44:18] INFO root fetch - main [MainThread]: End processing [surveyequivalence]: success
+[2023-04-14 20:44:21] INFO root fetch - main [MainThread]: End processing [dask]: success
+[2023-04-14 20:44:21] INFO root fetch - main [MainThread]: Store serial: [17711752]
