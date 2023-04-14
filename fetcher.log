@@ -18213,3 +18213,125 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 18:32:50] INFO root fetch - main [MainThread]: End processing [idem-aws]: success
 [2023-04-14 18:32:51] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
 [2023-04-14 18:32:51] INFO root fetch - main [MainThread]: Store serial: [17710099]
+[2023-04-14 18:37:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17710099]
+[2023-04-14 18:37:59] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-14 18:37:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: connpy
+[2023-04-14 18:37:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poppt
+[2023-04-14 18:37:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OmniBridge
+[2023-04-14 18:37:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rvq-vae-gpt
+[2023-04-14 18:37:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: visualimiss
+[2023-04-14 18:37:59] INFO root fetch - processPackages [connpy]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-04-14 18:37:59] INFO root fetch - processPackages [rvq-vae-gpt]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 18:37:59] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 18:37:59] INFO root fetch - processPackages [poppt]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 18:37:59] INFO root fetch - processPackages [visualimiss]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 18:37:59] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-14 18:37:59] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230414/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 18:37:59] INFO root fetch - processPackages [rvq-vae-gpt]: Downloading https://files.pythonhosted.org/packages/ed/28/9e681fe2c934ed6e33e516e0006ec7f2f2fd9476d58587721a593cc4a72c/rvq-vae-gpt-0.0.3.tar.gz
+[2023-04-14 18:37:59] INFO root fetch - processPackages [connpy]: Downloading https://files.pythonhosted.org/packages/6b/8c/8b832e6b965bdfa0ccaba489542f7df6a41653a217e61634a34f29c1659b/connpy-3.0.2.tar.gz
+[2023-04-14 18:37:59] INFO root fetch - processPackages [visualimiss]: Downloading https://files.pythonhosted.org/packages/90/ed/21af90e87d139428fcc96f64b4b682054d997e42710069b508864200e344/visualimiss-0.0.3.tar.gz
+[2023-04-14 18:37:59] INFO root fetch - processPackages [poppt]: Downloading https://files.pythonhosted.org/packages/67/d4/d1be62443831d45efb096ea9ad1bdfb25bcb5c431ba0bfaaf1a4f447b373/poppt-0.0.9.tar.gz
+[2023-04-14 18:37:59] INFO root fetch - processPackages [connpy]: executing diffoscope
+[2023-04-14 18:37:59] INFO root fetch - processPackages [connpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connpy-3.0.1.tar.gz tmp/connpy-3.0.2.tar.gz --markdown 20230414/c/connpy/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-04-14 18:37:59] INFO root fetch - processPackages [rvq-vae-gpt]: Downloading https://files.pythonhosted.org/packages/da/a9/176915c3da4480cadf100745b97de8c35985db45d3b5dc7731b0091e8e8a/rvq-vae-gpt-0.0.4.tar.gz
+[2023-04-14 18:37:59] INFO root fetch - processPackages [visualimiss]: Downloading https://files.pythonhosted.org/packages/0b/ca/65043714931068634e933ea5ec40f16bc83681cbd96a807793be8f707950/visualimiss-0.0.4.tar.gz
+[2023-04-14 18:37:59] INFO root fetch - processPackages [poppt]: executing diffoscope
+[2023-04-14 18:37:59] INFO root fetch - processPackages [poppt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poppt-0.0.8.tar.gz tmp/poppt-0.0.9.tar.gz --markdown 20230414/p/poppt/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 18:37:59] INFO root fetch - processPackages [rvq-vae-gpt]: executing diffoscope
+[2023-04-14 18:37:59] INFO root fetch - processPackages [rvq-vae-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rvq-vae-gpt-0.0.3.tar.gz tmp/rvq-vae-gpt-0.0.4.tar.gz --markdown 20230414/r/rvq-vae-gpt/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 18:38:00] INFO root fetch - processPackages [visualimiss]: executing diffoscope
+[2023-04-14 18:38:00] INFO root fetch - processPackages [visualimiss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visualimiss-0.0.3.tar.gz tmp/visualimiss-0.0.4.tar.gz --markdown 20230414/v/visualimiss/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 18:38:00] INFO root fetch - processPackages [OmniBridge]: Start processing: visualimiss
+[2023-04-14 18:38:00] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-14 18:38:00] INFO root fetch - processPackages [visualimiss]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 18:38:00] INFO root fetch - processPackages [connpy]: Start processing: visualimiss
+[2023-04-14 18:38:00] INFO root fetch - main [MainThread]: End processing [connpy]: success
+[2023-04-14 18:38:00] INFO root fetch - processPackages [visualimiss]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 18:38:00] INFO root fetch - processPackages [visualimiss]: Downloading https://files.pythonhosted.org/packages/a0/c9/75cdf9faaa575a6bed19ef035883123cc84da0dce050d797787c3e5af12c/visualimiss-0.0.5.tar.gz
+[2023-04-14 18:38:01] INFO root fetch - processPackages [visualimiss]: Downloading https://files.pythonhosted.org/packages/a0/c9/75cdf9faaa575a6bed19ef035883123cc84da0dce050d797787c3e5af12c/visualimiss-0.0.5.tar.gz
+[2023-04-14 18:38:01] INFO root fetch - processPackages [poppt]: Start processing: visualimiss
+[2023-04-14 18:38:01] INFO root fetch - main [MainThread]: End processing [poppt]: success
+[2023-04-14 18:38:01] INFO root fetch - processPackages [visualimiss]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 18:38:01] INFO root fetch - processPackages [rvq-vae-gpt]: Start processing: magyar
+[2023-04-14 18:38:01] INFO root fetch - main [MainThread]: End processing [rvq-vae-gpt]: success
+[2023-04-14 18:38:01] INFO root fetch - processPackages [magyar]: New version: [2.8.0] Old Version: [2.7.0]
+[2023-04-14 18:38:01] INFO root fetch - processPackages [visualimiss]: Start processing: dash-dndkit
+[2023-04-14 18:38:01] INFO root fetch - main [MainThread]: End processing [visualimiss]: success
+[2023-04-14 18:38:01] INFO root fetch - processPackages [visualimiss]: executing diffoscope
+[2023-04-14 18:38:01] INFO root fetch - processPackages [visualimiss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visualimiss-0.0.4.tar.gz tmp/visualimiss-0.0.5.tar.gz --markdown 20230414/v/visualimiss/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 18:38:01] INFO root fetch - processPackages [visualimiss]: executing diffoscope
+[2023-04-14 18:38:01] INFO root fetch - processPackages [visualimiss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visualimiss-0.0.4.tar.gz tmp/visualimiss-0.0.5.tar.gz --markdown 20230414/v/visualimiss/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 18:38:01] WARNING root fetch - processPackages [dash-dndkit]: Skipping, unable to determine old version
+[2023-04-14 18:38:01] INFO root fetch - processPackages [dash-dndkit]: Start processing: enough
+[2023-04-14 18:38:01] INFO root fetch - main [MainThread]: End processing [dash-dndkit] error
+[2023-04-14 18:38:01] INFO root fetch - processPackages [visualimiss]: executing diffoscope
+[2023-04-14 18:38:01] INFO root fetch - processPackages [visualimiss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visualimiss-0.0.4.tar.gz tmp/visualimiss-0.0.5.tar.gz --markdown 20230414/v/visualimiss/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 18:38:01] INFO root fetch - processPackages [enough]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-04-14 18:38:01] INFO root fetch - processPackages [enough]: executing diffoscope
+[2023-04-14 18:38:01] INFO root fetch - processPackages [enough]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enough-2.2.8.tar.gz tmp/enough-2.2.9.tar.gz --markdown 20230414/e/enough/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-04-14 18:38:01] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/b8/4f/b60222f587bebcff4512e82bbb127a2fb4a849817f6bac640a7e1153a933/magyar-2.8.0.tar.gz
+[2023-04-14 18:38:01] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2023-04-14 18:38:01] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-2.7.0.tar.gz tmp/magyar-2.8.0.tar.gz --markdown 20230414/m/magyar/2.7.0-2.8.0/diff.md --exclude *.pyd
+[2023-04-14 18:38:02] INFO root fetch - processPackages [visualimiss]: Start processing: hatch-datadog-build-metadata
+[2023-04-14 18:38:02] INFO root fetch - main [MainThread]: End processing [visualimiss]: success
+[2023-04-14 18:38:02] INFO root fetch - processPackages [hatch-datadog-build-metadata]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-14 18:38:02] INFO root fetch - processPackages [visualimiss]: Start processing: lbutils-mp
+[2023-04-14 18:38:02] INFO root fetch - main [MainThread]: End processing [visualimiss]: success
+[2023-04-14 18:38:02] ERROR root fetch - processPackages [hatch-datadog-build-metadata]: Unable to fetch info: No such project/version 'hatch-datadog-build-metadata' 0.0.1
+[2023-04-14 18:38:02] INFO root fetch - processPackages [hatch-datadog-build-metadata]: Start processing: vicedtools
+[2023-04-14 18:38:02] INFO root fetch - main [MainThread]: End processing [hatch-datadog-build-metadata] error
+[2023-04-14 18:38:02] INFO root fetch - processPackages [lbutils-mp]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-14 18:38:02] INFO root fetch - processPackages [vicedtools]: New version: [0.0.8.1] Old Version: [0.0.8]
+[2023-04-14 18:38:02] INFO root fetch - processPackages [visualimiss]: Start processing: istec-p4-gs
+[2023-04-14 18:38:02] INFO root fetch - main [MainThread]: End processing [visualimiss]: success
+[2023-04-14 18:38:02] WARNING root fetch - processPackages [istec-p4-gs]: Skipping, unable to determine old version
+[2023-04-14 18:38:02] INFO root fetch - processPackages [istec-p4-gs]: Start processing: flet-core
+[2023-04-14 18:38:02] INFO root fetch - main [MainThread]: End processing [istec-p4-gs] error
+[2023-04-14 18:38:02] INFO root fetch - processPackages [flet-core]: New version: [0.6.0.dev1309] Old Version: [0.6.0.dev1300]
+[2023-04-14 18:38:02] INFO root fetch - processPackages [lbutils-mp]: Downloading https://files.pythonhosted.org/packages/15/ae/7e996901a4323541fe575cf18ace164dd372a30bd053c9b08dc4c4dec8cc/lbutils-mp-0.1.1.tar.gz
+[2023-04-14 18:38:02] INFO root fetch - processPackages [magyar]: Start processing: flet
+[2023-04-14 18:38:02] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2023-04-14 18:38:02] INFO root fetch - processPackages [flet]: New version: [0.6.0.dev1309] Old Version: [0.6.0.dev1300]
+[2023-04-14 18:38:02] INFO root fetch - processPackages [vicedtools]: Downloading https://files.pythonhosted.org/packages/f2/dc/3c24e013cb3ee5c6b990062a026128b907ca56e1d4121166558b6f85178d/vicedtools-0.0.8.1.tar.gz
+[2023-04-14 18:38:02] INFO root fetch - processPackages [flet-core]: Downloading https://files.pythonhosted.org/packages/cb/e4/20c307d894fb8868afd4426924ae5b2db92ff1fb9d96ead3f792e698f310/flet_core-0.6.0.dev1309.tar.gz
+[2023-04-14 18:38:02] INFO root fetch - processPackages [vicedtools]: executing diffoscope
+[2023-04-14 18:38:02] INFO root fetch - processPackages [vicedtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vicedtools-0.0.8.tar.gz tmp/vicedtools-0.0.8.1.tar.gz --markdown 20230414/v/vicedtools/0.0.8-0.0.8.1/diff.md --exclude *.pyd
+[2023-04-14 18:38:02] INFO root fetch - processPackages [lbutils-mp]: Downloading https://files.pythonhosted.org/packages/8f/bb/315eb5a982bf0ce6ea14de6abd1eac2ba17dd2dbb8a5a4ba827fef31c030/lbutils-mp-0.2.0.tar.gz
+[2023-04-14 18:38:03] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/cc/2d/a9eba7f80220b2ea38b2e11de5853289fcaeef066a741e3446dec193992d/flet-0.6.0.dev1309.tar.gz
+[2023-04-14 18:38:03] INFO root fetch - processPackages [flet-core]: executing diffoscope
+[2023-04-14 18:38:03] INFO root fetch - processPackages [flet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_core-0.6.0.dev1300.tar.gz tmp/flet_core-0.6.0.dev1309.tar.gz --markdown 20230414/f/flet-core/0.6.0.dev1300-0.6.0.dev1309/diff.md --exclude *.pyd
+[2023-04-14 18:38:03] INFO root fetch - processPackages [lbutils-mp]: executing diffoscope
+[2023-04-14 18:38:03] INFO root fetch - processPackages [lbutils-mp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbutils-mp-0.1.1.tar.gz tmp/lbutils-mp-0.2.0.tar.gz --markdown 20230414/l/lbutils-mp/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 18:38:03] INFO root fetch - processPackages [flet]: executing diffoscope
+[2023-04-14 18:38:03] INFO root fetch - processPackages [flet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-0.6.0.dev1300.tar.gz tmp/flet-0.6.0.dev1309.tar.gz --markdown 20230414/f/flet/0.6.0.dev1300-0.6.0.dev1309/diff.md --exclude *.pyd
+[2023-04-14 18:38:04] INFO root fetch - processPackages [lbutils-mp]: Start processing: pysparkler
+[2023-04-14 18:38:04] INFO root fetch - main [MainThread]: End processing [lbutils-mp]: success
+[2023-04-14 18:38:04] INFO root fetch - processPackages [pysparkler]: New version: [0.4.dev1681490474] Old Version: [0.3.dev1681426864]
+[2023-04-14 18:38:04] INFO root fetch - processPackages [vicedtools]: Start processing: flet-pyodide
+[2023-04-14 18:38:04] INFO root fetch - main [MainThread]: End processing [vicedtools]: success
+[2023-04-14 18:38:04] INFO root fetch - processPackages [flet-pyodide]: New version: [0.6.0.dev1309] Old Version: [0.6.0.dev1300]
+[2023-04-14 18:38:04] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/58/4f/6b105b474d8c540c91c46f838817498913885cfccd37ed5b50f73309738b/pysparkler-0.4.dev1681490474.tar.gz
+[2023-04-14 18:38:04] INFO root fetch - processPackages [pysparkler]: executing diffoscope
+[2023-04-14 18:38:04] INFO root fetch - processPackages [pysparkler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkler-0.3.dev1681426864.tar.gz tmp/pysparkler-0.4.dev1681490474.tar.gz --markdown 20230414/p/pysparkler/0.3.dev1681426864-0.4.dev1681490474/diff.md --exclude *.pyd
+[2023-04-14 18:38:04] INFO root fetch - processPackages [flet-core]: Start processing: curl-arguments-url
+[2023-04-14 18:38:04] INFO root fetch - main [MainThread]: End processing [flet-core]: success
+[2023-04-14 18:38:04] INFO root fetch - processPackages [flet-pyodide]: Downloading https://files.pythonhosted.org/packages/4b/87/103e95fa06196d631dabeec09a83b2ede1efbb768c8130b4dccd7d557964/flet_pyodide-0.6.0.dev1309.tar.gz
+[2023-04-14 18:38:04] INFO root fetch - processPackages [curl-arguments-url]: New version: [0.1.0a1] Old Version: [0.1.0]
+[2023-04-14 18:38:04] INFO root fetch - processPackages [flet-pyodide]: executing diffoscope
+[2023-04-14 18:38:04] INFO root fetch - processPackages [flet-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_pyodide-0.6.0.dev1300.tar.gz tmp/flet_pyodide-0.6.0.dev1309.tar.gz --markdown 20230414/f/flet-pyodide/0.6.0.dev1300-0.6.0.dev1309/diff.md --exclude *.pyd
+[2023-04-14 18:38:05] INFO root fetch - processPackages [curl-arguments-url]: Downloading https://files.pythonhosted.org/packages/d4/dc/717937d30169ccf7af6a2e09f615c511bc02d9912375cfeabfb7df508b44/curl_arguments_url-0.1.0.tar.gz
+[2023-04-14 18:38:05] INFO root fetch - processPackages [curl-arguments-url]: Downloading https://files.pythonhosted.org/packages/dd/59/779a75db9ade13e28d666d8d27778bf3f66edbc86fc30ecf433305e704af/curl_arguments_url-0.1.0a1.tar.gz
+[2023-04-14 18:38:05] INFO root fetch - processPackages [curl-arguments-url]: executing diffoscope
+[2023-04-14 18:38:05] INFO root fetch - processPackages [curl-arguments-url]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curl_arguments_url-0.1.0.tar.gz tmp/curl_arguments_url-0.1.0a1.tar.gz --markdown 20230414/c/curl-arguments-url/0.1.0-0.1.0a1/diff.md --exclude *.pyd
+[2023-04-14 18:38:05] INFO root fetch - processPackages [pysparkler]: Start processing: visualimiss
+[2023-04-14 18:38:05] INFO root fetch - main [MainThread]: End processing [pysparkler]: success
+[2023-04-14 18:38:05] INFO root fetch - processPackages [visualimiss]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 18:38:05] INFO root fetch - processPackages [visualimiss]: executing diffoscope
+[2023-04-14 18:38:05] INFO root fetch - processPackages [visualimiss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visualimiss-0.0.4.tar.gz tmp/visualimiss-0.0.5.tar.gz --markdown 20230414/v/visualimiss/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 18:38:05] INFO root fetch - main [MainThread]: End processing [flet-pyodide]: success
+[2023-04-14 18:38:06] INFO root fetch - main [MainThread]: End processing [curl-arguments-url]: success
+[2023-04-14 18:38:06] INFO root fetch - main [MainThread]: End processing [visualimiss]: success
+[2023-04-14 18:38:52] INFO root fetch - main [MainThread]: End processing [flet]: success
+[2023-04-14 18:41:01] ERROR root fetch - processPackages [enough]: Timeout during execution of pkgdiff
+[2023-04-14 18:41:01] INFO root fetch - main [MainThread]: End processing [enough] error
+[2023-04-14 18:41:01] INFO root fetch - main [MainThread]: Store serial: [17710173]
