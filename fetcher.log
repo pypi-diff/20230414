@@ -6433,3 +6433,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 05:00:25] INFO root fetch - main [MainThread]: End processing [heizer]: success
 [2023-04-14 05:00:26] INFO root fetch - main [MainThread]: End processing [sample-metadata]: success
 [2023-04-14 05:00:26] INFO root fetch - main [MainThread]: Store serial: [17702761]
+[2023-04-14 05:05:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702761]
+[2023-04-14 05:05:33] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 05:05:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aspose-cells-python
+[2023-04-14 05:05:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smplotlib
+[2023-04-14 05:05:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: imbalanced-metrics
+[2023-04-14 05:05:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: duckdb
+[2023-04-14 05:05:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: heizer
+[2023-04-14 05:05:34] INFO root fetch - processPackages [imbalanced-metrics]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 05:05:34] INFO root fetch - processPackages [aspose-cells-python]: New version: [23.4.0] Old Version: [23.3.0]
+[2023-04-14 05:05:34] INFO root fetch - processPackages [smplotlib]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 05:05:34] INFO root fetch - processPackages [heizer]: New version: [999999.dev1681441424] Old Version: [999999.dev1681441259]
+[2023-04-14 05:05:34] INFO root fetch - processPackages [duckdb]: New version: [0.7.2.dev1803] Old Version: [0.7.2.dev1734]
+[2023-04-14 05:05:34] INFO root fetch - processPackages [imbalanced-metrics]: Downloading https://files.pythonhosted.org/packages/d3/7c/757aa0bdbdddc308088936943f07b9fb0358ed6ecd00aecfb9b5529c5c01/imbalanced_metrics-0.0.2.tar.gz
+[2023-04-14 05:05:34] INFO root fetch - processPackages [aspose-cells-python]: Downloading https://files.pythonhosted.org/packages/44/e9/4625cf565b0cacde565c46010391ec0520e39d9b9bba382f41eb7406dd53/aspose_cells_python-23.3.0-py3-none-win_amd64.whl
+[2023-04-14 05:05:34] INFO root fetch - processPackages [heizer]: executing diffoscope
+[2023-04-14 05:05:34] INFO root fetch - processPackages [heizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heizer-999999.dev1681441259.tar.gz tmp/heizer-999999.dev1681441424.tar.gz --markdown 20230414/h/heizer/999999.dev1681441259-999999.dev1681441424/diff.md --exclude *.pyd
+[2023-04-14 05:05:34] INFO root fetch - processPackages [smplotlib]: Downloading https://files.pythonhosted.org/packages/43/9a/e5a304c78046a71734b0b16d7a52509ea1fa09754905ef54fb48ca233bb1/smplotlib-0.0.4.tar.gz
+[2023-04-14 05:05:34] WARNING root fetch - processPackages [aspose-cells-python]: Skipping package: exceeds size limit 54450820>=10485760
+[2023-04-14 05:05:34] INFO root fetch - processPackages [aspose-cells-python]: Start processing: ka-ut-spe
+[2023-04-14 05:05:34] INFO root fetch - main [MainThread]: End processing [aspose-cells-python] error
+[2023-04-14 05:05:34] WARNING root fetch - processPackages [ka-ut-spe]: Skipping, unable to determine old version
+[2023-04-14 05:05:34] INFO root fetch - processPackages [ka-ut-spe]: Start processing: apache-airflow-providers-fastetl
+[2023-04-14 05:05:34] INFO root fetch - main [MainThread]: End processing [ka-ut-spe] error
+[2023-04-14 05:05:34] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 05:05:34] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/d3/07/6b949ab4b964d72d4977607dd7dd32f060374baaca9df815dd4367c3b1d0/duckdb-0.7.2.dev1734.tar.gz
+[2023-04-14 05:05:34] INFO root fetch - processPackages [smplotlib]: executing diffoscope
+[2023-04-14 05:05:34] INFO root fetch - processPackages [smplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smplotlib-0.0.3.tar.gz tmp/smplotlib-0.0.4.tar.gz --markdown 20230414/s/smplotlib/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 05:05:34] INFO root fetch - processPackages [imbalanced-metrics]: Downloading https://files.pythonhosted.org/packages/4b/cb/52d85e50ec064a305797955a2a02cc30549d44db5f843d4dc83877f91a4c/imbalanced_metrics-0.0.3.tar.gz
+[2023-04-14 05:05:34] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: Downloading https://files.pythonhosted.org/packages/07/c7/3e786b5c74a442920370cdd7c6b0974cc1cc831c59174e801f724eda36ee/apache-airflow-providers-fastetl-0.0.3.tar.gz
+[2023-04-14 05:05:34] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/56/1a/3057f88437ab9097f33a6f442a2a86c62bc980050ff7a181a3d5f8c92203/duckdb-0.7.2.dev1803-cp36-cp36m-macosx_10_9_x86_64.whl
+[2023-04-14 05:05:34] INFO root fetch - processPackages [imbalanced-metrics]: executing diffoscope
+[2023-04-14 05:05:34] INFO root fetch - processPackages [imbalanced-metrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imbalanced_metrics-0.0.2.tar.gz tmp/imbalanced_metrics-0.0.3.tar.gz --markdown 20230414/i/imbalanced-metrics/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 05:05:34] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: Downloading https://files.pythonhosted.org/packages/fc/cc/509ec6f34e48d715af0efa16e8eb79f9ab9c128b627602323fc4419b278a/apache-airflow-providers-fastetl-0.0.4.tar.gz
+[2023-04-14 05:05:35] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 14255111>=10485760
+[2023-04-14 05:05:35] INFO root fetch - processPackages [duckdb]: Start processing: pymc
+[2023-04-14 05:05:35] INFO root fetch - main [MainThread]: End processing [duckdb] error
+[2023-04-14 05:05:35] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: executing diffoscope
+[2023-04-14 05:05:35] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-fastetl-0.0.3.tar.gz tmp/apache-airflow-providers-fastetl-0.0.4.tar.gz --markdown 20230414/a/apache-airflow-providers-fastetl/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 05:05:35] INFO root fetch - processPackages [pymc]: New version: [5.3.0] Old Version: [5.2.0]
+[2023-04-14 05:05:35] INFO root fetch - processPackages [pymc]: Downloading https://files.pythonhosted.org/packages/3c/8c/095db1efbb613d40183cf5df353d0e356f40f14980d308d878217e053e25/pymc-5.2.0.tar.gz
+[2023-04-14 05:05:35] INFO root fetch - main [MainThread]: End processing [heizer]: success
+[2023-04-14 05:05:35] INFO root fetch - main [MainThread]: End processing [smplotlib]: success
+[2023-04-14 05:05:35] INFO root fetch - processPackages [pymc]: Downloading https://files.pythonhosted.org/packages/a8/f7/8267c7f163d0b75e9ca3a76fd67f2f1f6a7c564d3a921ed9b35569db8b3a/pymc-5.3.0.tar.gz
+[2023-04-14 05:05:35] INFO root fetch - main [MainThread]: End processing [imbalanced-metrics]: success
+[2023-04-14 05:05:35] INFO root fetch - processPackages [pymc]: executing diffoscope
+[2023-04-14 05:05:35] INFO root fetch - processPackages [pymc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymc-5.2.0.tar.gz tmp/pymc-5.3.0.tar.gz --markdown 20230414/p/pymc/5.2.0-5.3.0/diff.md --exclude *.pyd
+[2023-04-14 05:05:36] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-fastetl]: success
+[2023-04-14 05:05:38] INFO root fetch - main [MainThread]: End processing [pymc]: success
+[2023-04-14 05:05:38] INFO root fetch - main [MainThread]: Store serial: [17702786]
