@@ -6482,3 +6482,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 05:05:36] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-fastetl]: success
 [2023-04-14 05:05:38] INFO root fetch - main [MainThread]: End processing [pymc]: success
 [2023-04-14 05:05:38] INFO root fetch - main [MainThread]: Store serial: [17702786]
+[2023-04-14 05:10:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702786]
+[2023-04-14 05:10:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 05:10:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepper-cli
+[2023-04-14 05:10:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strkit
+[2023-04-14 05:10:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atlasofsmoothspaces
+[2023-04-14 05:10:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GANDLF
+[2023-04-14 05:10:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdktf-cdktf-provider-spotinst
+[2023-04-14 05:10:45] INFO root fetch - processPackages [pepper-cli]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 05:10:45] INFO root fetch - processPackages [atlasofsmoothspaces]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-14 05:10:45] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230414] Old Version: [0.0.16.dev20230413]
+[2023-04-14 05:10:45] INFO root fetch - processPackages [strkit]: New version: [0.8.0a9] Old Version: [0.8.0a8]
+[2023-04-14 05:10:45] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: New version: [6.0.0] Old Version: [5.0.9]
+[2023-04-14 05:10:45] INFO root fetch - processPackages [strkit]: executing diffoscope
+[2023-04-14 05:10:45] INFO root fetch - processPackages [strkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strkit-0.8.0a8.tar.gz tmp/strkit-0.8.0a9.tar.gz --markdown 20230414/s/strkit/0.8.0a8-0.8.0a9/diff.md --exclude *.pyd
+[2023-04-14 05:10:45] INFO root fetch - processPackages [pepper-cli]: Downloading https://files.pythonhosted.org/packages/58/40/c54bf4b34fe9467cba988a477e82193deebc28b1792035083df56f76be34/pepper_cli-0.1.0.tar.gz
+[2023-04-14 05:10:46] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/98/1d/3032326ec77ff1afbc222f1f7974f146052e1f720576af18352b6d72246e/GANDLF-0.0.16.dev20230414.tar.gz
+[2023-04-14 05:10:46] INFO root fetch - processPackages [atlasofsmoothspaces]: Downloading https://files.pythonhosted.org/packages/b1/0b/380f47221dc979badd975d204a71ecea1b92444021223ba0a5b561a1f6d2/atlasofsmoothspaces-1.0.8.tar.gz
+[2023-04-14 05:10:46] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/3f/53/568495aa7e73ac5db68494fd9198b1af5a87d75a79869d091da207d1f4a9/cdktf-cdktf-provider-spotinst-5.0.9.tar.gz
+[2023-04-14 05:10:46] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-04-14 05:10:46] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230413.tar.gz tmp/GANDLF-0.0.16.dev20230414.tar.gz --markdown 20230414/G/GANDLF/0.0.16.dev20230413-0.0.16.dev20230414/diff.md --exclude *.pyd
+[2023-04-14 05:10:46] INFO root fetch - processPackages [atlasofsmoothspaces]: executing diffoscope
+[2023-04-14 05:10:46] INFO root fetch - processPackages [atlasofsmoothspaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlasofsmoothspaces-1.0.7.tar.gz tmp/atlasofsmoothspaces-1.0.8.tar.gz --markdown 20230414/a/atlasofsmoothspaces/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-14 05:10:46] INFO root fetch - processPackages [pepper-cli]: Downloading https://files.pythonhosted.org/packages/41/c6/90cbb004ee84f7a9d675c492d86b1e78c28bd7d2e1462b5b3ecfbf022e84/pepper_cli-0.1.1.tar.gz
+[2023-04-14 05:10:46] INFO root fetch - processPackages [pepper-cli]: executing diffoscope
+[2023-04-14 05:10:46] INFO root fetch - processPackages [pepper-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepper_cli-0.1.0.tar.gz tmp/pepper_cli-0.1.1.tar.gz --markdown 20230414/p/pepper-cli/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 05:10:47] INFO root fetch - processPackages [atlasofsmoothspaces]: Start processing: ka-ut-air
+[2023-04-14 05:10:47] INFO root fetch - main [MainThread]: End processing [atlasofsmoothspaces]: success
+[2023-04-14 05:10:47] WARNING root fetch - processPackages [ka-ut-air]: Skipping, unable to determine old version
+[2023-04-14 05:10:47] INFO root fetch - processPackages [ka-ut-air]: Start processing: ovos-ww-plugin-precise-lite
+[2023-04-14 05:10:47] INFO root fetch - main [MainThread]: End processing [ka-ut-air] error
+[2023-04-14 05:10:47] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/3d/5d/c3d70f51eaa87f8164967752c86c6e708eaa97329521bb392aa51d63ae0b/cdktf-cdktf-provider-spotinst-6.0.0.tar.gz
+[2023-04-14 05:10:47] INFO root fetch - processPackages [strkit]: Start processing: cdktf-cdktf-provider-pagerduty
+[2023-04-14 05:10:47] INFO root fetch - main [MainThread]: End processing [strkit]: success
+[2023-04-14 05:10:47] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: New version: [6.0.1] Old Version: [6.0.0]
+[2023-04-14 05:10:47] INFO root fetch - processPackages [ovos-ww-plugin-precise-lite]: New version: [0.1.2a4] Old Version: [0.1.2a3]
+[2023-04-14 05:10:47] INFO root fetch - main [MainThread]: End processing [pepper-cli]: success
+[2023-04-14 05:10:47] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: executing diffoscope
+[2023-04-14 05:10:47] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-pagerduty-6.0.0.tar.gz tmp/cdktf-cdktf-provider-pagerduty-6.0.1.tar.gz --markdown 20230414/c/cdktf-cdktf-provider-pagerduty/6.0.0-6.0.1/diff.md --exclude *.pyd
+[2023-04-14 05:10:47] INFO root fetch - processPackages [ovos-ww-plugin-precise-lite]: Downloading https://files.pythonhosted.org/packages/f5/32/0955dab034459035f14343d78cf7c03517449209a8b8dfa9a2604937cf76/ovos_ww_plugin_precise_lite-0.1.2a3-py3-none-any.whl
+[2023-04-14 05:10:47] INFO root fetch - processPackages [ovos-ww-plugin-precise-lite]: Downloading https://files.pythonhosted.org/packages/50/e4/d5d27725ffb3f14cc2981cf7728527be8417485276520ebdd6eb7e9779e1/ovos_ww_plugin_precise_lite-0.1.2a4-py3-none-any.whl
+[2023-04-14 05:10:48] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-04-14 05:10:48] INFO root fetch - processPackages [ovos-ww-plugin-precise-lite]: executing diffoscope
+[2023-04-14 05:10:48] INFO root fetch - processPackages [ovos-ww-plugin-precise-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_ww_plugin_precise_lite-0.1.2a3-py3-none-any.whl.zip tmp/ovos_ww_plugin_precise_lite-0.1.2a4-py3-none-any.whl.zip --markdown 20230414/o/ovos-ww-plugin-precise-lite/0.1.2a3-0.1.2a4/diff.md --exclude *.pyd
+[2023-04-14 05:10:48] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: executing diffoscope
+[2023-04-14 05:10:48] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-spotinst-5.0.9.tar.gz tmp/cdktf-cdktf-provider-spotinst-6.0.0.tar.gz --markdown 20230414/c/cdktf-cdktf-provider-spotinst/5.0.9-6.0.0/diff.md --exclude *.pyd
+[2023-04-14 05:10:49] INFO root fetch - main [MainThread]: End processing [ovos-ww-plugin-precise-lite]: success
+[2023-04-14 05:10:49] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-pagerduty]: success
+[2023-04-14 05:10:51] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
+[2023-04-14 05:10:51] INFO root fetch - main [MainThread]: Store serial: [17702813]
