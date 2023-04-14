@@ -10271,3 +10271,93 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 11:05:13] INFO root fetch - main [MainThread]: End processing [datature]: success
 [2023-04-14 11:05:14] INFO root fetch - main [MainThread]: End processing [pglift]: success
 [2023-04-14 11:05:14] INFO root fetch - main [MainThread]: Store serial: [17704966]
+[2023-04-14 11:10:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704966]
+[2023-04-14 11:10:22] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 11:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: always-updates
+[2023-04-14 11:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: collective.mailchimp
+[2023-04-14 11:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gui-executor
+[2023-04-14 11:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qontract-reconcile
+[2023-04-14 11:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: polarismesh-specification
+[2023-04-14 11:10:22] INFO root fetch - processPackages [collective.mailchimp]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-14 11:10:22] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-14 11:10:22] INFO root fetch - processPackages [polarismesh-specification]: New version: [1.3.0a4] Old Version: [1.3.0a3]
+[2023-04-14 11:10:22] INFO root fetch - processPackages [gui-executor]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 11:10:22] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-14 11:10:22] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-14 11:10:22] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230414/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-14 11:10:22] INFO root fetch - processPackages [gui-executor]: executing diffoscope
+[2023-04-14 11:10:22] INFO root fetch - processPackages [gui-executor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gui-executor-0.9.8.tar.gz tmp/gui-executor-0.9.9.tar.gz --markdown 20230414/g/gui-executor/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 11:10:22] INFO root fetch - processPackages [collective.mailchimp]: Downloading https://files.pythonhosted.org/packages/db/1b/992315efa4ad875e45cd8056bdc3df9e6ed45727f0892cee23e428d32362/collective.mailchimp-3.1.0.tar.gz
+[2023-04-14 11:10:22] INFO root fetch - processPackages [polarismesh-specification]: Downloading https://files.pythonhosted.org/packages/cd/a1/6956731d749d3a3500892e1395d7696de3669a574a7d6658a80d6571eb11/polarismesh_specification-1.3.0a4.tar.gz
+[2023-04-14 11:10:22] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-14 11:10:22] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230414/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-14 11:10:23] INFO root fetch - processPackages [polarismesh-specification]: executing diffoscope
+[2023-04-14 11:10:23] INFO root fetch - processPackages [polarismesh-specification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polarismesh_specification-1.3.0a3.tar.gz tmp/polarismesh_specification-1.3.0a4.tar.gz --markdown 20230414/p/polarismesh-specification/1.3.0a3-1.3.0a4/diff.md --exclude *.pyd
+[2023-04-14 11:10:23] INFO root fetch - processPackages [collective.mailchimp]: Downloading https://files.pythonhosted.org/packages/18/5a/b71730162ea636129521dbbb220ab06b7911d9a94eff0d760a25d10e8733/collective.mailchimp-3.1.1.tar.gz
+[2023-04-14 11:10:23] INFO root fetch - processPackages [collective.mailchimp]: executing diffoscope
+[2023-04-14 11:10:23] INFO root fetch - processPackages [collective.mailchimp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/collective.mailchimp-3.1.0.tar.gz tmp/collective.mailchimp-3.1.1.tar.gz --markdown 20230414/c/collective.mailchimp/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-14 11:10:23] INFO root fetch - processPackages [always-updates]: Start processing: mautrix
+[2023-04-14 11:10:23] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-04-14 11:10:24] INFO root fetch - processPackages [mautrix]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 11:10:24] INFO root fetch - processPackages [gui-executor]: Start processing: zopperuuid
+[2023-04-14 11:10:24] INFO root fetch - main [MainThread]: End processing [gui-executor]: success
+[2023-04-14 11:10:24] INFO root fetch - processPackages [mautrix]: executing diffoscope
+[2023-04-14 11:10:24] INFO root fetch - processPackages [mautrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mautrix-0.9.8.tar.gz tmp/mautrix-0.9.9.tar.gz --markdown 20230414/m/mautrix/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 11:10:24] INFO root fetch - processPackages [zopperuuid]: New version: [0.0.7] Old Version: [0.0.5]
+[2023-04-14 11:10:24] INFO root fetch - processPackages [zopperuuid]: Downloading https://files.pythonhosted.org/packages/47/0e/84f1f91124c6ec7dbd09631d7e251e8531144d1925768f42f40703803bf8/zopperuuid-0.0.5.tar.gz
+[2023-04-14 11:10:24] INFO root fetch - processPackages [polarismesh-specification]: Start processing: yyxx-game-pkg
+[2023-04-14 11:10:24] INFO root fetch - main [MainThread]: End processing [polarismesh-specification]: success
+[2023-04-14 11:10:24] INFO root fetch - processPackages [yyxx-game-pkg]: New version: [2023.4.7.1] Old Version: [2023.4.4.1]
+[2023-04-14 11:10:24] INFO root fetch - processPackages [yyxx-game-pkg]: executing diffoscope
+[2023-04-14 11:10:24] INFO root fetch - processPackages [yyxx-game-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yyxx_game_pkg-2023.4.4.1.tar.gz tmp/yyxx_game_pkg-2023.4.7.1.tar.gz --markdown 20230414/y/yyxx-game-pkg/2023.4.4.1-2023.4.7.1/diff.md --exclude *.pyd
+[2023-04-14 11:10:24] INFO root fetch - processPackages [zopperuuid]: Downloading https://files.pythonhosted.org/packages/a1/a6/67cba9d1f29402d50e27da6caece98fdf328f6953c66add7fdea640ab23e/zopperuuid-0.0.7.tar.gz
+[2023-04-14 11:10:24] INFO root fetch - processPackages [collective.mailchimp]: Start processing: akshare
+[2023-04-14 11:10:24] INFO root fetch - main [MainThread]: End processing [collective.mailchimp]: success
+[2023-04-14 11:10:24] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-14 11:10:24] INFO root fetch - processPackages [zopperuuid]: executing diffoscope
+[2023-04-14 11:10:24] INFO root fetch - processPackages [zopperuuid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zopperuuid-0.0.5.tar.gz tmp/zopperuuid-0.0.7.tar.gz --markdown 20230414/z/zopperuuid/0.0.5-0.0.7/diff.md --exclude *.pyd
+[2023-04-14 11:10:24] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-04-14 11:10:24] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230414/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-14 11:10:25] INFO root fetch - processPackages [zopperuuid]: Start processing: ecodata
+[2023-04-14 11:10:25] INFO root fetch - main [MainThread]: End processing [zopperuuid]: success
+[2023-04-14 11:10:25] INFO root fetch - processPackages [ecodata]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 11:10:25] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/54/c6/26859bf4ff4ff94c46c71c14c5acc5c19834010b640341276e64dedcea31/ecodata-0.0.5.tar.gz
+[2023-04-14 11:10:26] INFO root fetch - processPackages [mautrix]: Start processing: eisenmp-examples
+[2023-04-14 11:10:26] INFO root fetch - main [MainThread]: End processing [mautrix]: success
+[2023-04-14 11:10:26] INFO root fetch - processPackages [eisenmp-examples]: New version: [0.4.1] Old Version: [0.4]
+[2023-04-14 11:10:26] INFO root fetch - processPackages [ecodata]: executing diffoscope
+[2023-04-14 11:10:26] INFO root fetch - processPackages [ecodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecodata-0.0.4.tar.gz tmp/ecodata-0.0.5.tar.gz --markdown 20230414/e/ecodata/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 11:10:26] INFO root fetch - processPackages [eisenmp-examples]: Downloading https://files.pythonhosted.org/packages/06/bc/9e4d3fcf16760336d34528b4e15f7cb12832eaf18b6cd1ef4564e405b66d/eisenmp_examples-0.4.1.tar.gz
+[2023-04-14 11:10:26] INFO root fetch - processPackages [yyxx-game-pkg]: Start processing: mb-pytorch
+[2023-04-14 11:10:26] INFO root fetch - main [MainThread]: End processing [yyxx-game-pkg]: success
+[2023-04-14 11:10:26] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304140911] Old Version: [1.0.202304132101]
+[2023-04-14 11:10:26] INFO root fetch - processPackages [eisenmp-examples]: executing diffoscope
+[2023-04-14 11:10:26] INFO root fetch - processPackages [eisenmp-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eisenmp_examples-0.4.tar.gz tmp/eisenmp_examples-0.4.1.tar.gz --markdown 20230414/e/eisenmp-examples/0.4-0.4.1/diff.md --exclude *.pyd
+[2023-04-14 11:10:26] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/b0/b5/c2e9112c3c48c58e1ab197977e1c364ee568248d0fb84d97921064226e3c/mb_pytorch-1.0.202304140911-py3-none-any.whl
+[2023-04-14 11:10:26] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-14 11:10:26] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304132101-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304140911-py3-none-any.whl.zip --markdown 20230414/m/mb-pytorch/1.0.202304132101-1.0.202304140911/diff.md --exclude *.pyd
+[2023-04-14 11:10:27] INFO root fetch - processPackages [ecodata]: Start processing: bnipython
+[2023-04-14 11:10:27] INFO root fetch - main [MainThread]: End processing [ecodata]: success
+[2023-04-14 11:10:27] INFO root fetch - processPackages [bnipython]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-14 11:10:27] INFO root fetch - processPackages [eisenmp-examples]: Start processing: mosaic-clustering
+[2023-04-14 11:10:27] INFO root fetch - main [MainThread]: End processing [eisenmp-examples]: success
+[2023-04-14 11:10:27] INFO root fetch - processPackages [bnipython]: Downloading https://files.pythonhosted.org/packages/fe/eb/1f592456a914bcba4c547313449f805880d1ccdd6e906613cd04e7d8c376/bnipython-0.5.0.tar.gz
+[2023-04-14 11:10:27] INFO root fetch - processPackages [mosaic-clustering]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-14 11:10:27] INFO root fetch - processPackages [qontract-reconcile]: Start processing: tbp-nightly
+[2023-04-14 11:10:27] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-04-14 11:10:27] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-04-14 11:10:27] INFO root fetch - processPackages [bnipython]: Downloading https://files.pythonhosted.org/packages/46/f7/a97481b85a284b87f7e44c9c435f2b055bead2e3ced169817535f672d53d/bnipython-0.6.0.tar.gz
+[2023-04-14 11:10:27] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-14 11:10:27] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-04-14 11:10:27] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230414/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-04-14 11:10:27] INFO root fetch - processPackages [mosaic-clustering]: Downloading https://files.pythonhosted.org/packages/b4/34/ce9fa05cb1933c71be6c91f986136c11dd75c6548d1e47fbf71b5276efda/mosaic-clustering-0.4.0.tar.gz
+[2023-04-14 11:10:28] INFO root fetch - processPackages [bnipython]: executing diffoscope
+[2023-04-14 11:10:28] INFO root fetch - processPackages [bnipython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bnipython-0.5.0.tar.gz tmp/bnipython-0.6.0.tar.gz --markdown 20230414/b/bnipython/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-14 11:10:28] INFO root fetch - processPackages [mosaic-clustering]: Downloading https://files.pythonhosted.org/packages/a7/a4/92dabdb0a25038263f7dfe333dec57697380b1ae14e4626b2dcb0a8e3ca5/mosaic-clustering-0.4.1.tar.gz
+[2023-04-14 11:10:28] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-04-14 11:10:28] INFO root fetch - processPackages [mosaic-clustering]: executing diffoscope
+[2023-04-14 11:10:28] INFO root fetch - processPackages [mosaic-clustering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaic-clustering-0.4.0.tar.gz tmp/mosaic-clustering-0.4.1.tar.gz --markdown 20230414/m/mosaic-clustering/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-14 11:10:29] INFO root fetch - main [MainThread]: End processing [bnipython]: success
+[2023-04-14 11:10:29] INFO root fetch - main [MainThread]: End processing [mosaic-clustering]: success
+[2023-04-14 11:10:30] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-04-14 11:10:30] INFO root fetch - main [MainThread]: Store serial: [17705014]
