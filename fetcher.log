@@ -16211,3 +16211,168 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 17:02:10] INFO root fetch - main [MainThread]: End processing [unigui]: success
 [2023-04-14 17:02:11] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-04-14 17:02:11] INFO root fetch - main [MainThread]: Store serial: [17708800]
+[2023-04-14 17:07:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17708800]
+[2023-04-14 17:07:19] INFO root fetch - main [MainThread]: Found 29 changed packages
+[2023-04-14 17:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sbomtools
+[2023-04-14 17:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sbomdiff
+[2023-04-14 17:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sbom2doc
+[2023-04-14 17:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xformers
+[2023-04-14 17:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: digitalarztools
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbomtools]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbomdiff]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbom2doc]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-14 17:07:19] INFO root fetch - processPackages [digitalarztools]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-14 17:07:19] INFO root fetch - processPackages [xformers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbom2doc]: Downloading https://files.pythonhosted.org/packages/e4/78/335344e5144e0ef19203e8e357518d65a0f544fbd95b63005f7fd3e9afb5/sbom2doc-0.1.2-py2.py3-none-any.whl
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbomdiff]: Downloading https://files.pythonhosted.org/packages/ec/f6/62a24ca68d29cf573a6a11ee4f689137fc67e45ad85278f6b8c7d1c12457/sbomdiff-0.4.1-py2.py3-none-any.whl
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbomtools]: Downloading https://files.pythonhosted.org/packages/08/01/0c52ee7d4645e1630a57c4ec36a91f1c8dcd70c7a9a6131381723b5716cd/sbomtools-0.3.2.tar.gz
+[2023-04-14 17:07:19] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/c8/b0/c891eedaf169125ca329bf7aff5001ae9edbda919474df47394e9061c38a/digitalarztools-0.0.7.tar.gz
+[2023-04-14 17:07:19] INFO root fetch - processPackages [xformers]: executing diffoscope
+[2023-04-14 17:07:19] INFO root fetch - processPackages [xformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xformers-0.0.8.tar.gz tmp/xformers-0.0.9.tar.gz --markdown 20230414/x/xformers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbomtools]: Downloading https://files.pythonhosted.org/packages/7e/b9/f13f671dd3e4a18539e7e5d297e47cabab6cc5fcf3b1029e672981232281/sbomtools-0.3.3.tar.gz
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbom2doc]: Downloading https://files.pythonhosted.org/packages/b9/ca/81c7f810ab79480bab8e30a4af68e4edccdcceb0fafb81103857a9c3f085/sbom2doc-0.2.0-py2.py3-none-any.whl
+[2023-04-14 17:07:19] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/b5/68/99097e7e8ab286315bea6cc0c6648f909b981f4e2065be485528760f507d/digitalarztools-0.0.8.tar.gz
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbomdiff]: Downloading https://files.pythonhosted.org/packages/b5/79/3c1060b124921de1b77ddce1a7df678b7bf4437f0487e341d4e17a00c113/sbomdiff-0.4.2-py2.py3-none-any.whl
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbomtools]: executing diffoscope
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbomtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbomtools-0.3.2.tar.gz tmp/sbomtools-0.3.3.tar.gz --markdown 20230414/s/sbomtools/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbom2doc]: executing diffoscope
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbom2doc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbom2doc-0.1.2-py2.py3-none-any.whl.zip tmp/sbom2doc-0.2.0-py2.py3-none-any.whl.zip --markdown 20230414/s/sbom2doc/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 17:07:19] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2023-04-14 17:07:19] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.0.7.tar.gz tmp/digitalarztools-0.0.8.tar.gz --markdown 20230414/d/digitalarztools/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbomdiff]: executing diffoscope
+[2023-04-14 17:07:19] INFO root fetch - processPackages [sbomdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbomdiff-0.4.1-py2.py3-none-any.whl.zip tmp/sbomdiff-0.4.2-py2.py3-none-any.whl.zip --markdown 20230414/s/sbomdiff/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-14 17:07:20] INFO root fetch - processPackages [sbomtools]: Start processing: compilecls
+[2023-04-14 17:07:20] INFO root fetch - main [MainThread]: End processing [sbomtools]: success
+[2023-04-14 17:07:20] INFO root fetch - processPackages [compilecls]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-14 17:07:21] INFO root fetch - processPackages [sbomdiff]: Start processing: django-pipelines
+[2023-04-14 17:07:21] INFO root fetch - main [MainThread]: End processing [sbomdiff]: success
+[2023-04-14 17:07:21] INFO root fetch - processPackages [sbom2doc]: Start processing: sbomaudit
+[2023-04-14 17:07:21] INFO root fetch - main [MainThread]: End processing [sbom2doc]: success
+[2023-04-14 17:07:21] INFO root fetch - processPackages [sbomaudit]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 17:07:21] INFO root fetch - processPackages [django-pipelines]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 17:07:21] INFO root fetch - processPackages [compilecls]: Downloading https://files.pythonhosted.org/packages/e4/61/2a561610364f81c0b89001230d1bc9998421b19f7c2fc9231740e090c835/compilecls-1.0.6.tar.gz
+[2023-04-14 17:07:21] INFO root fetch - processPackages [django-pipelines]: Downloading https://files.pythonhosted.org/packages/84/33/512159dbb8f528e431b529f09f3e4e0dd098f88872743effd56491e71188/django-pipelines-0.1.0.tar.gz
+[2023-04-14 17:07:21] INFO root fetch - processPackages [sbomaudit]: Downloading https://files.pythonhosted.org/packages/5a/3e/a65fbf0eb127cfa7e65ba4e1cc23fefece1f492c3c2dcf56c2ca1b11b637/sbomaudit-0.1.1-py2.py3-none-any.whl
+[2023-04-14 17:07:21] INFO root fetch - processPackages [compilecls]: executing diffoscope
+[2023-04-14 17:07:21] INFO root fetch - processPackages [compilecls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compilecls-1.0.5.tar.gz tmp/compilecls-1.0.6.tar.gz --markdown 20230414/c/compilecls/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-14 17:07:21] INFO root fetch - processPackages [xformers]: Start processing: sbom4python
+[2023-04-14 17:07:21] INFO root fetch - main [MainThread]: End processing [xformers]: success
+[2023-04-14 17:07:21] INFO root fetch - processPackages [sbom4python]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 17:07:21] INFO root fetch - processPackages [digitalarztools]: Start processing: django-dashboards
+[2023-04-14 17:07:21] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2023-04-14 17:07:21] INFO root fetch - processPackages [django-dashboards]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 17:07:21] INFO root fetch - processPackages [sbom4python]: Downloading https://files.pythonhosted.org/packages/8b/44/fc5f143c47756bf42ba6e63b4e16b40573839d934988640b12c6fc2d3967/sbom4python-0.9.0-py2.py3-none-any.whl
+[2023-04-14 17:07:21] INFO root fetch - processPackages [django-pipelines]: Downloading https://files.pythonhosted.org/packages/47/7a/aa8cd7e55a5a0e12a45d3a2e7d796597dc326563b331b6f0ad66465c9cbe/django-pipelines-0.1.1.tar.gz
+[2023-04-14 17:07:21] INFO root fetch - processPackages [django-dashboards]: Downloading https://files.pythonhosted.org/packages/7e/16/411d3d164e52adc7057053ac275dce3cc8d743cb776e320c573ae249a41b/django-dashboards-0.1.0.tar.gz
+[2023-04-14 17:07:21] INFO root fetch - processPackages [sbomaudit]: Downloading https://files.pythonhosted.org/packages/46/4f/f3b66342965da60aa911031698c15c9d40ce001e6a78868679e126c3e364/sbomaudit-0.1.2-py2.py3-none-any.whl
+[2023-04-14 17:07:21] INFO root fetch - processPackages [sbomaudit]: executing diffoscope
+[2023-04-14 17:07:21] INFO root fetch - processPackages [sbomaudit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbomaudit-0.1.1-py2.py3-none-any.whl.zip tmp/sbomaudit-0.1.2-py2.py3-none-any.whl.zip --markdown 20230414/s/sbomaudit/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 17:07:21] INFO root fetch - processPackages [sbom4python]: Downloading https://files.pythonhosted.org/packages/fd/00/df09fdb7fec7da4a9e0e81b032edaf1ced9c59e701cdb1faf435db11f812/sbom4python-0.9.1-py2.py3-none-any.whl
+[2023-04-14 17:07:21] INFO root fetch - processPackages [django-pipelines]: executing diffoscope
+[2023-04-14 17:07:21] INFO root fetch - processPackages [django-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-pipelines-0.1.0.tar.gz tmp/django-pipelines-0.1.1.tar.gz --markdown 20230414/d/django-pipelines/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 17:07:22] INFO root fetch - processPackages [sbom4python]: executing diffoscope
+[2023-04-14 17:07:22] INFO root fetch - processPackages [sbom4python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbom4python-0.9.0-py2.py3-none-any.whl.zip tmp/sbom4python-0.9.1-py2.py3-none-any.whl.zip --markdown 20230414/s/sbom4python/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 17:07:22] INFO root fetch - processPackages [compilecls]: Start processing: sbommerge
+[2023-04-14 17:07:22] INFO root fetch - main [MainThread]: End processing [compilecls]: success
+[2023-04-14 17:07:22] WARNING root fetch - processPackages [sbommerge]: Skipping, unable to determine old version
+[2023-04-14 17:07:22] INFO root fetch - processPackages [sbommerge]: Start processing: axterdb
+[2023-04-14 17:07:22] INFO root fetch - main [MainThread]: End processing [sbommerge] error
+[2023-04-14 17:07:22] INFO root fetch - processPackages [axterdb]: New version: [1.4.1] Old Version: [1.4]
+[2023-04-14 17:07:22] INFO root fetch - processPackages [axterdb]: Downloading https://files.pythonhosted.org/packages/40/8f/5c1d81910cb6f1242bc4fd6a9c02ae5e8b95999576daf8d5367746eab00d/axterdb-1.4.1.tar.gz
+[2023-04-14 17:07:22] INFO root fetch - processPackages [django-dashboards]: Downloading https://files.pythonhosted.org/packages/06/e3/47c62b7b9b75446147a980ee6733197a43d99bcc85ae27c00f37f02ec3ed/django-dashboards-0.1.1.tar.gz
+[2023-04-14 17:07:22] INFO root fetch - processPackages [axterdb]: executing diffoscope
+[2023-04-14 17:07:22] INFO root fetch - processPackages [axterdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/axterdb-1.4.tar.gz tmp/axterdb-1.4.1.tar.gz --markdown 20230414/a/axterdb/1.4-1.4.1/diff.md --exclude *.pyd
+[2023-04-14 17:07:22] INFO root fetch - processPackages [sbomaudit]: Start processing: libcoveweb2
+[2023-04-14 17:07:22] INFO root fetch - main [MainThread]: End processing [sbomaudit]: success
+[2023-04-14 17:07:22] WARNING root fetch - processPackages [libcoveweb2]: Skipping, unable to determine old version
+[2023-04-14 17:07:22] INFO root fetch - processPackages [libcoveweb2]: Start processing: resc-vcs-scraper
+[2023-04-14 17:07:22] INFO root fetch - main [MainThread]: End processing [libcoveweb2] error
+[2023-04-14 17:07:22] INFO root fetch - processPackages [resc-vcs-scraper]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-14 17:07:23] INFO root fetch - processPackages [sbom4python]: Start processing: nowcasting-datamodel
+[2023-04-14 17:07:23] INFO root fetch - main [MainThread]: End processing [sbom4python]: success
+[2023-04-14 17:07:23] INFO root fetch - processPackages [nowcasting-datamodel]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-04-14 17:07:23] INFO root fetch - processPackages [resc-vcs-scraper]: Downloading https://files.pythonhosted.org/packages/e3/25/069975e2d9fac8e6ae2d1bea462b757546e8c7ce4faa8fe8335de12db339/resc_vcs_scraper-1.1.0.tar.gz
+[2023-04-14 17:07:23] INFO root fetch - processPackages [nowcasting-datamodel]: Downloading https://files.pythonhosted.org/packages/4a/24/e60d3fe1706649bf6a39fa8311ba4db982c6b86a19ffc60bd59595c09dba/nowcasting_datamodel-1.3.3.tar.gz
+[2023-04-14 17:07:23] INFO root fetch - processPackages [resc-vcs-scraper]: Downloading https://files.pythonhosted.org/packages/fb/22/a819b3dd2423229fd84500e3e00caae2152fafca67c64d16f76dadf22bee/resc_vcs_scraper-1.2.0.tar.gz
+[2023-04-14 17:07:23] INFO root fetch - processPackages [nowcasting-datamodel]: executing diffoscope
+[2023-04-14 17:07:23] INFO root fetch - processPackages [nowcasting-datamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nowcasting_datamodel-1.3.2.tar.gz tmp/nowcasting_datamodel-1.3.3.tar.gz --markdown 20230414/n/nowcasting-datamodel/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-04-14 17:07:23] INFO root fetch - processPackages [resc-vcs-scraper]: executing diffoscope
+[2023-04-14 17:07:23] INFO root fetch - processPackages [resc-vcs-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resc_vcs_scraper-1.1.0.tar.gz tmp/resc_vcs_scraper-1.2.0.tar.gz --markdown 20230414/r/resc-vcs-scraper/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-14 17:07:23] INFO root fetch - processPackages [django-pipelines]: Start processing: resc-vcs-scanner
+[2023-04-14 17:07:23] INFO root fetch - main [MainThread]: End processing [django-pipelines]: success
+[2023-04-14 17:07:23] INFO root fetch - processPackages [resc-vcs-scanner]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-14 17:07:23] INFO root fetch - processPackages [django-dashboards]: executing diffoscope
+[2023-04-14 17:07:23] INFO root fetch - processPackages [django-dashboards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-dashboards-0.1.0.tar.gz tmp/django-dashboards-0.1.1.tar.gz --markdown 20230414/d/django-dashboards/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 17:07:23] INFO root fetch - processPackages [resc-vcs-scanner]: Downloading https://files.pythonhosted.org/packages/3d/56/f57c8394b3cd92a6c30f61439f91c3c27a19813eb86237b5be39a319f58c/resc_vcs_scanner-1.1.0.tar.gz
+[2023-04-14 17:07:24] INFO root fetch - processPackages [axterdb]: Start processing: taylor-series
+[2023-04-14 17:07:24] INFO root fetch - main [MainThread]: End processing [axterdb]: success
+[2023-04-14 17:07:24] WARNING root fetch - processPackages [taylor-series]: Skipping, unable to determine old version
+[2023-04-14 17:07:24] INFO root fetch - processPackages [taylor-series]: Start processing: flasking
+[2023-04-14 17:07:24] INFO root fetch - main [MainThread]: End processing [taylor-series] error
+[2023-04-14 17:07:24] WARNING root fetch - processPackages [flasking]: Skipping, unable to determine old version
+[2023-04-14 17:07:24] INFO root fetch - processPackages [flasking]: Start processing: archytas
+[2023-04-14 17:07:24] INFO root fetch - main [MainThread]: End processing [flasking] error
+[2023-04-14 17:07:24] INFO root fetch - processPackages [resc-vcs-scanner]: Downloading https://files.pythonhosted.org/packages/bd/a6/5a09089729fccb365049aaa35058abde2770f49482a17b022139c7c47f43/resc_vcs_scanner-1.2.0.tar.gz
+[2023-04-14 17:07:24] WARNING root fetch - processPackages [archytas]: Skipping, unable to determine old version
+[2023-04-14 17:07:24] INFO root fetch - processPackages [archytas]: Start processing: combadge
+[2023-04-14 17:07:24] INFO root fetch - main [MainThread]: End processing [archytas] error
+[2023-04-14 17:07:24] INFO root fetch - processPackages [combadge]: New version: [0.1.0rc3] Old Version: [0.1.0rc2]
+[2023-04-14 17:07:24] INFO root fetch - processPackages [resc-vcs-scanner]: executing diffoscope
+[2023-04-14 17:07:24] INFO root fetch - processPackages [resc-vcs-scanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resc_vcs_scanner-1.1.0.tar.gz tmp/resc_vcs_scanner-1.2.0.tar.gz --markdown 20230414/r/resc-vcs-scanner/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-14 17:07:24] INFO root fetch - processPackages [combadge]: Downloading https://files.pythonhosted.org/packages/02/ef/95b767f403ca242ba477089ca922aba51b8d49b92070c47cc01b704e99ce/combadge-0.1.0rc2.tar.gz
+[2023-04-14 17:07:24] INFO root fetch - processPackages [resc-vcs-scraper]: Start processing: franpdf
+[2023-04-14 17:07:24] INFO root fetch - main [MainThread]: End processing [resc-vcs-scraper]: success
+[2023-04-14 17:07:24] INFO root fetch - processPackages [combadge]: Downloading https://files.pythonhosted.org/packages/5d/a1/6bdd535a3869eedee64b38e6b5aa9677276b567b7611a053205ee906ebc0/combadge-0.1.0rc3.tar.gz
+[2023-04-14 17:07:24] WARNING root fetch - processPackages [franpdf]: Skipping, unable to determine old version
+[2023-04-14 17:07:24] INFO root fetch - processPackages [franpdf]: Start processing: pyroscope-gridtools
+[2023-04-14 17:07:24] INFO root fetch - main [MainThread]: End processing [franpdf] error
+[2023-04-14 17:07:24] INFO root fetch - processPackages [pyroscope-gridtools]: New version: [0.1] Old Version: [0.0.3]
+[2023-04-14 17:07:24] INFO root fetch - processPackages [combadge]: executing diffoscope
+[2023-04-14 17:07:24] INFO root fetch - processPackages [combadge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/combadge-0.1.0rc2.tar.gz tmp/combadge-0.1.0rc3.tar.gz --markdown 20230414/c/combadge/0.1.0rc2-0.1.0rc3/diff.md --exclude *.pyd
+[2023-04-14 17:07:24] INFO root fetch - processPackages [pyroscope-gridtools]: Downloading https://files.pythonhosted.org/packages/97/d8/6a007e3aa06b2af9ca3dfeae78944bbe5e3cb17f50c8a7ffcb34c39f0e5a/pyroscope_gridtools-0.0.3.tar.gz
+[2023-04-14 17:07:25] INFO root fetch - processPackages [resc-vcs-scanner]: Start processing: htmlpack
+[2023-04-14 17:07:25] INFO root fetch - main [MainThread]: End processing [resc-vcs-scanner]: success
+[2023-04-14 17:07:25] INFO root fetch - processPackages [pyroscope-gridtools]: Downloading https://files.pythonhosted.org/packages/49/6c/1b0a7416fe12162298032a4b7a397515f22d9d63fe5cac7c6f36db867ae8/Pyroscope-gridtools-0.1.tar.gz
+[2023-04-14 17:07:25] WARNING root fetch - processPackages [htmlpack]: Skipping, unable to determine old version
+[2023-04-14 17:07:25] INFO root fetch - processPackages [htmlpack]: Start processing: resc-backend
+[2023-04-14 17:07:25] INFO root fetch - main [MainThread]: End processing [htmlpack] error
+[2023-04-14 17:07:25] INFO root fetch - processPackages [resc-backend]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-14 17:07:25] INFO root fetch - processPackages [pyroscope-gridtools]: executing diffoscope
+[2023-04-14 17:07:25] INFO root fetch - processPackages [pyroscope-gridtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroscope_gridtools-0.0.3.tar.gz tmp/Pyroscope-gridtools-0.1.tar.gz --markdown 20230414/p/pyroscope-gridtools/0.0.3-0.1/diff.md --exclude *.pyd
+[2023-04-14 17:07:25] INFO root fetch - processPackages [resc-backend]: Downloading https://files.pythonhosted.org/packages/c0/82/122e32b57945e005a6da22731d20fd7ffe2081f73e05736ebf4397d5eafc/resc_backend-1.1.0.tar.gz
+[2023-04-14 17:07:26] INFO root fetch - processPackages [combadge]: Start processing: tigramite
+[2023-04-14 17:07:26] INFO root fetch - main [MainThread]: End processing [combadge]: success
+[2023-04-14 17:07:26] INFO root fetch - processPackages [resc-backend]: Downloading https://files.pythonhosted.org/packages/e8/72/cc50987f8f957b4c2bb0ebfbb594d0f1ad1b00ed947ed5fc50b95b4a5d57/resc_backend-1.2.0.tar.gz
+[2023-04-14 17:07:26] INFO root fetch - processPackages [tigramite]: New version: [5.2.0.1] Old Version: [5.2.0.0]
+[2023-04-14 17:07:26] INFO root fetch - processPackages [tigramite]: executing diffoscope
+[2023-04-14 17:07:26] INFO root fetch - processPackages [tigramite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tigramite-5.2.0.0.tar.gz tmp/tigramite-5.2.0.1.tar.gz --markdown 20230414/t/tigramite/5.2.0.0-5.2.0.1/diff.md --exclude *.pyd
+[2023-04-14 17:07:26] INFO root fetch - processPackages [django-dashboards]: Start processing: libcove2
+[2023-04-14 17:07:26] INFO root fetch - main [MainThread]: End processing [django-dashboards]: success
+[2023-04-14 17:07:26] INFO root fetch - processPackages [resc-backend]: executing diffoscope
+[2023-04-14 17:07:26] INFO root fetch - processPackages [resc-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resc_backend-1.1.0.tar.gz tmp/resc_backend-1.2.0.tar.gz --markdown 20230414/r/resc-backend/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-14 17:07:26] WARNING root fetch - processPackages [libcove2]: Skipping, unable to determine old version
+[2023-04-14 17:07:26] INFO root fetch - processPackages [libcove2]: Start processing: pyraisdk-test
+[2023-04-14 17:07:26] INFO root fetch - main [MainThread]: End processing [libcove2] error
+[2023-04-14 17:07:26] INFO root fetch - processPackages [pyraisdk-test]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-14 17:07:26] INFO root fetch - processPackages [pyraisdk-test]: executing diffoscope
+[2023-04-14 17:07:26] INFO root fetch - processPackages [pyraisdk-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyraisdk_test-0.2.8.tar.gz tmp/pyraisdk_test-0.2.9.tar.gz --markdown 20230414/p/pyraisdk-test/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-14 17:07:26] INFO root fetch - processPackages [nowcasting-datamodel]: Start processing: pylayerize
+[2023-04-14 17:07:26] INFO root fetch - main [MainThread]: End processing [nowcasting-datamodel]: success
+[2023-04-14 17:07:26] INFO root fetch - processPackages [pylayerize]: New version: [1.0.0] Old Version: [0.0.1]
+[2023-04-14 17:07:26] INFO root fetch - processPackages [pyroscope-gridtools]: Start processing: funasr-onnx
+[2023-04-14 17:07:26] INFO root fetch - main [MainThread]: End processing [pyroscope-gridtools]: success
+[2023-04-14 17:07:26] INFO root fetch - processPackages [pylayerize]: Downloading https://files.pythonhosted.org/packages/e8/d3/2d90a31fc7aeda67bd66018558b3bfcbe9c654d03da4ddba39fde308a9e4/pylayerize-0.0.1.tar.gz
+[2023-04-14 17:07:26] INFO root fetch - processPackages [funasr-onnx]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-14 17:07:27] INFO root fetch - processPackages [pylayerize]: Downloading https://files.pythonhosted.org/packages/b9/e3/28ee82d45217a49149362313fa21f2e0ba714783c43b0f30eb4741e09820/pylayerize-1.0.0.tar.gz
+[2023-04-14 17:07:27] INFO root fetch - processPackages [funasr-onnx]: Downloading https://files.pythonhosted.org/packages/ec/90/504306391c80d74fcdb61d39336280bcbdc8b2a7145347fb319ebd034f26/funasr_onnx-0.0.2.tar.gz
+[2023-04-14 17:07:27] INFO root fetch - processPackages [pylayerize]: executing diffoscope
+[2023-04-14 17:07:27] INFO root fetch - processPackages [pylayerize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylayerize-0.0.1.tar.gz tmp/pylayerize-1.0.0.tar.gz --markdown 20230414/p/pylayerize/0.0.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-14 17:07:27] INFO root fetch - processPackages [funasr-onnx]: Downloading https://files.pythonhosted.org/packages/1e/06/17a352dd69e8c8b9730ae9c6cc771adb9ec6f9af542f461a98a22db715fa/funasr_onnx-0.0.4.tar.gz
+[2023-04-14 17:07:27] INFO root fetch - main [MainThread]: End processing [pyraisdk-test]: success
+[2023-04-14 17:07:27] INFO root fetch - main [MainThread]: End processing [tigramite]: success
+[2023-04-14 17:07:27] INFO root fetch - processPackages [funasr-onnx]: executing diffoscope
+[2023-04-14 17:07:27] INFO root fetch - processPackages [funasr-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funasr_onnx-0.0.2.tar.gz tmp/funasr_onnx-0.0.4.tar.gz --markdown 20230414/f/funasr-onnx/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 17:07:27] INFO root fetch - main [MainThread]: End processing [resc-backend]: success
+[2023-04-14 17:07:28] INFO root fetch - main [MainThread]: End processing [pylayerize]: success
+[2023-04-14 17:07:28] INFO root fetch - main [MainThread]: End processing [funasr-onnx]: success
+[2023-04-14 17:07:28] INFO root fetch - main [MainThread]: Store serial: [17708895]
