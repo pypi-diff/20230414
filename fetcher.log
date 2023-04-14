@@ -6095,3 +6095,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 04:27:58] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-04-14 04:28:05] INFO root fetch - main [MainThread]: End processing [areixio]: success
 [2023-04-14 04:28:05] INFO root fetch - main [MainThread]: Store serial: [17702554]
+[2023-04-14 04:33:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702554]
+[2023-04-14 04:33:16] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 04:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: subjugate
+[2023-04-14 04:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hotbox
+[2023-04-14 04:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-checkbox-normalize
+[2023-04-14 04:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anylabeling
+[2023-04-14 04:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stress-injector
+[2023-04-14 04:33:16] WARNING root fetch - processPackages [subjugate]: Skipping, unable to determine old version
+[2023-04-14 04:33:16] INFO root fetch - processPackages [subjugate]: Start processing: pcl-pangu
+[2023-04-14 04:33:16] INFO root fetch - main [MainThread]: End processing [subjugate] error
+[2023-04-14 04:33:16] INFO root fetch - processPackages [django-checkbox-normalize]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-14 04:33:16] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.6.1] Old Version: [1.2.6]
+[2023-04-14 04:33:16] INFO root fetch - processPackages [anylabeling]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-14 04:33:16] INFO root fetch - processPackages [stress-injector]: New version: [0.4a0] Old Version: [0.3.2]
+[2023-04-14 04:33:16] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 04:33:16] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-04-14 04:33:16] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230414/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 04:33:16] INFO root fetch - processPackages [django-checkbox-normalize]: Downloading https://files.pythonhosted.org/packages/dc/19/26506ccde0bf117eef0ae137a87e3fe8b37e7c9c141bfdf256dd03adf9b1/django-checkbox-normalize-0.1.2.tar.gz
+[2023-04-14 04:33:16] INFO root fetch - processPackages [pcl-pangu]: Downloading https://files.pythonhosted.org/packages/9f/04/298e2f229b71b31b843639dc00ea87e88f21db528ad3fcaddad7d66a01b3/pcl_pangu-1.2.6.1.tar.gz
+[2023-04-14 04:33:16] INFO root fetch - processPackages [stress-injector]: Downloading https://files.pythonhosted.org/packages/9a/55/504f2d4bf255e8d6bc98ea48e2133a05991f365736b0466227fba0e37b2c/stress-injector-0.3.2.tar.gz
+[2023-04-14 04:33:16] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/0a/28/af62ad400ecc8f0d5c6f847aaa20c3c50be4036c90e625cd6cc58ec39b5c/anylabeling-0.1.5.tar.gz
+[2023-04-14 04:33:17] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-14 04:33:17] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.6.tar.gz tmp/pcl_pangu-1.2.6.1.tar.gz --markdown 20230414/p/pcl-pangu/1.2.6-1.2.6.1/diff.md --exclude *.pyd
+[2023-04-14 04:33:17] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-14 04:33:17] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.1.4.tar.gz tmp/anylabeling-0.1.5.tar.gz --markdown 20230414/a/anylabeling/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-14 04:33:17] INFO root fetch - processPackages [stress-injector]: Downloading https://files.pythonhosted.org/packages/93/16/78145c01c4f04ac577cb156d636bd0ad7147afe9903d15a1181cd22a8ed6/stress_injector-0.4a0-py3-none-any.whl
+[2023-04-14 04:33:17] INFO root fetch - processPackages [django-checkbox-normalize]: Downloading https://files.pythonhosted.org/packages/1f/ff/dd109fb7033443d0f599f820ad3105b173e685b312a9729610551a6a4f02/django-checkbox-normalize-0.2.0.tar.gz
+[2023-04-14 04:33:17] INFO root fetch - processPackages [stress-injector]: executing diffoscope
+[2023-04-14 04:33:17] INFO root fetch - processPackages [stress-injector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stress-injector-0.3.2.tar.gz tmp/stress_injector-0.4a0-py3-none-any.whl.zip --markdown 20230414/s/stress-injector/0.3.2-0.4a0/diff.md --exclude *.pyd
+[2023-04-14 04:33:17] INFO root fetch - processPackages [django-checkbox-normalize]: executing diffoscope
+[2023-04-14 04:33:17] INFO root fetch - processPackages [django-checkbox-normalize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-checkbox-normalize-0.1.2.tar.gz tmp/django-checkbox-normalize-0.2.0.tar.gz --markdown 20230414/d/django-checkbox-normalize/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 04:33:18] INFO root fetch - processPackages [hotbox]: Start processing: QuickStart-Rhy
+[2023-04-14 04:33:18] INFO root fetch - main [MainThread]: End processing [hotbox]: success
+[2023-04-14 04:33:18] INFO root fetch - processPackages [QuickStart-Rhy]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-14 04:33:18] INFO root fetch - processPackages [stress-injector]: Start processing: hotbox
+[2023-04-14 04:33:18] INFO root fetch - main [MainThread]: End processing [stress-injector]: success
+[2023-04-14 04:33:18] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 04:33:18] INFO root fetch - processPackages [django-checkbox-normalize]: Start processing: openctp-tts
+[2023-04-14 04:33:18] INFO root fetch - main [MainThread]: End processing [django-checkbox-normalize]: success
+[2023-04-14 04:33:18] INFO root fetch - processPackages [QuickStart-Rhy]: executing diffoscope
+[2023-04-14 04:33:18] INFO root fetch - processPackages [QuickStart-Rhy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuickStart_Rhy-0.6.8.tar.gz tmp/QuickStart_Rhy-0.6.9.tar.gz --markdown 20230414/Q/QuickStart-Rhy/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-14 04:33:18] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-04-14 04:33:18] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230414/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 04:33:18] WARNING root fetch - processPackages [openctp-tts]: Skipping, unable to determine old version
+[2023-04-14 04:33:18] INFO root fetch - main [MainThread]: End processing [openctp-tts] error
+[2023-04-14 04:33:18] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-04-14 04:33:19] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-14 04:33:19] INFO root fetch - main [MainThread]: End processing [QuickStart-Rhy]: success
+[2023-04-14 04:33:19] INFO root fetch - main [MainThread]: End processing [hotbox]: success
+[2023-04-14 04:33:19] INFO root fetch - main [MainThread]: Store serial: [17702589]
