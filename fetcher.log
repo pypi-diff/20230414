@@ -11922,3 +11922,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 12:48:57] INFO root fetch - main [MainThread]: End processing [lamindb]: success
 [2023-04-14 12:48:58] INFO root fetch - main [MainThread]: End processing [pyprocessors-afp_entities]: success
 [2023-04-14 12:48:58] INFO root fetch - main [MainThread]: Store serial: [17705985]
+[2023-04-14 12:54:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705985]
+[2023-04-14 12:54:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 12:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: govtech-data
+[2023-04-14 12:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gmltools
+[2023-04-14 12:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: byebyelogger
+[2023-04-14 12:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eoq2
+[2023-04-14 12:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: techplus
+[2023-04-14 12:54:05] INFO root fetch - processPackages [govtech-data]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 12:54:05] WARNING root fetch - processPackages [byebyelogger]: Skipping, unable to determine old version
+[2023-04-14 12:54:05] WARNING root fetch - processPackages [techplus]: Skipping, unable to determine old version
+[2023-04-14 12:54:05] INFO root fetch - processPackages [byebyelogger]: Start processing: istatcelldata
+[2023-04-14 12:54:05] INFO root fetch - processPackages [techplus]: Start processing: opustools
+[2023-04-14 12:54:05] INFO root fetch - main [MainThread]: End processing [byebyelogger] error
+[2023-04-14 12:54:05] INFO root fetch - processPackages [eoq2]: New version: [2.2.9] Old Version: [2.2.6]
+[2023-04-14 12:54:05] INFO root fetch - main [MainThread]: End processing [techplus] error
+[2023-04-14 12:54:05] INFO root fetch - processPackages [istatcelldata]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-14 12:54:05] INFO root fetch - processPackages [opustools]: New version: [1.5.3] Old Version: [1.4.0]
+[2023-04-14 12:54:05] WARNING root fetch - processPackages [gmltools]: Skipping, unable to determine old version
+[2023-04-14 12:54:05] INFO root fetch - processPackages [gmltools]: Start processing: dao-analyzer
+[2023-04-14 12:54:05] INFO root fetch - main [MainThread]: End processing [gmltools] error
+[2023-04-14 12:54:05] INFO root fetch - processPackages [dao-analyzer]: New version: [1.2.6.dev9] Old Version: [1.2.6.dev8]
+[2023-04-14 12:54:06] INFO root fetch - processPackages [eoq2]: Downloading https://files.pythonhosted.org/packages/57/6e/e62ab44476da66a91daf5168772cbfd01a9ba29a1ca30fc6e3987111d3bc/eoq2-2.2.6.tar.gz
+[2023-04-14 12:54:06] INFO root fetch - processPackages [istatcelldata]: Downloading https://files.pythonhosted.org/packages/26/4d/698db70c3d9e226d870168b00f9aa2c9e941cdb9cecd327ba361536aea73/istatcelldata-0.5.0.tar.gz
+[2023-04-14 12:54:06] INFO root fetch - processPackages [opustools]: Downloading https://files.pythonhosted.org/packages/70/c8/dda49131102120e64b225e2fe4557eca4a218fabf8531bd3c6a512253518/opustools-1.4.0.tar.gz
+[2023-04-14 12:54:06] INFO root fetch - processPackages [govtech-data]: Downloading https://files.pythonhosted.org/packages/1b/6e/7f570be144eb53daeca53aaf703d57184b83fa0e2e673342e6f121c78a4b/govtech_data-0.1.2.tar.gz
+[2023-04-14 12:54:06] INFO root fetch - processPackages [dao-analyzer]: Downloading https://files.pythonhosted.org/packages/55/bc/fa7edbbc52fa21904a8ae8aeb8419c7d2c115e344779778eaa9ff990c667/dao-analyzer-1.2.6.dev9.tar.gz
+[2023-04-14 12:54:06] INFO root fetch - processPackages [govtech-data]: executing diffoscope
+[2023-04-14 12:54:06] INFO root fetch - processPackages [govtech-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/govtech_data-0.1.1.tar.gz tmp/govtech_data-0.1.2.tar.gz --markdown 20230414/g/govtech-data/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 12:54:06] INFO root fetch - processPackages [istatcelldata]: Downloading https://files.pythonhosted.org/packages/b5/b9/6c3b94e286b5a394796f9294ca10f13fe2fc977c84080fb4ce3bbd7da9a7/istatcelldata-0.5.1.tar.gz
+[2023-04-14 12:54:06] INFO root fetch - processPackages [dao-analyzer]: executing diffoscope
+[2023-04-14 12:54:06] INFO root fetch - processPackages [dao-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dao-analyzer-1.2.6.dev8.tar.gz tmp/dao-analyzer-1.2.6.dev9.tar.gz --markdown 20230414/d/dao-analyzer/1.2.6.dev8-1.2.6.dev9/diff.md --exclude *.pyd
+[2023-04-14 12:54:06] INFO root fetch - processPackages [istatcelldata]: executing diffoscope
+[2023-04-14 12:54:06] INFO root fetch - processPackages [istatcelldata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istatcelldata-0.5.0.tar.gz tmp/istatcelldata-0.5.1.tar.gz --markdown 20230414/i/istatcelldata/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-14 12:54:06] INFO root fetch - processPackages [opustools]: Downloading https://files.pythonhosted.org/packages/32/ae/373b8bbe32e631d4a589fda134bfa9cac12df5202c43de711254edb2d78e/opustools-1.5.3.tar.gz
+[2023-04-14 12:54:06] INFO root fetch - processPackages [eoq2]: Downloading https://files.pythonhosted.org/packages/f6/d9/e7990e24511c866fc166b1b6d7b39adf769f6f28ca78a9093c7d4c4ab0cc/eoq2-2.2.9.tar.gz
+[2023-04-14 12:54:06] WARNING root fetch - processPackages [opustools]: Skipping package: exceeds size limit 18308365>=10485760
+[2023-04-14 12:54:06] INFO root fetch - main [MainThread]: End processing [opustools] error
+[2023-04-14 12:54:06] INFO root fetch - processPackages [eoq2]: executing diffoscope
+[2023-04-14 12:54:06] INFO root fetch - processPackages [eoq2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eoq2-2.2.6.tar.gz tmp/eoq2-2.2.9.tar.gz --markdown 20230414/e/eoq2/2.2.6-2.2.9/diff.md --exclude *.pyd
+[2023-04-14 12:54:07] INFO root fetch - main [MainThread]: End processing [govtech-data]: success
+[2023-04-14 12:54:07] INFO root fetch - main [MainThread]: End processing [istatcelldata]: success
+[2023-04-14 12:54:08] INFO root fetch - main [MainThread]: End processing [eoq2]: success
+[2023-04-14 12:54:09] INFO root fetch - main [MainThread]: End processing [dao-analyzer]: success
+[2023-04-14 12:54:09] INFO root fetch - main [MainThread]: Store serial: [17706014]
