@@ -6749,3 +6749,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 05:32:17] INFO root fetch - main [MainThread]: End processing [pmcx]: success
 [2023-04-14 05:32:17] INFO root fetch - main [MainThread]: End processing [odoo14-addon-product-contract]: success
 [2023-04-14 05:32:17] INFO root fetch - main [MainThread]: Store serial: [17702951]
+[2023-04-14 05:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702951]
+[2023-04-14 05:37:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-14 05:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hotbox
+[2023-04-14 05:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lvlspy
+[2023-04-14 05:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yyxx-game-pkg-dev
+[2023-04-14 05:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: textgen
+[2023-04-14 05:37:24] INFO root fetch - processPackages [lvlspy]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-14 05:37:24] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 05:37:24] INFO root fetch - processPackages [textgen]: New version: [0.2.1] Old Version: [0.1.9]
+[2023-04-14 05:37:24] INFO root fetch - processPackages [yyxx-game-pkg-dev]: New version: [2023.4.4.1.dev7] Old Version: [2023.4.4.1.dev5]
+[2023-04-14 05:37:24] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-04-14 05:37:24] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230414/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 05:37:24] INFO root fetch - processPackages [lvlspy]: Downloading https://files.pythonhosted.org/packages/74/78/8c6792490f6667049ebd147ff85c3b4c8a2ecf9351446e025d039c4091c0/lvlspy-1.3.0.tar.gz
+[2023-04-14 05:37:24] INFO root fetch - processPackages [yyxx-game-pkg-dev]: Downloading https://files.pythonhosted.org/packages/70/46/2cbaa9eb75b59c912d30922fbc433cf03fd3d2bb97deecaea55c6fa778f6/yyxx_game_pkg_dev-2023.4.4.1.dev5.tar.gz
+[2023-04-14 05:37:25] INFO root fetch - processPackages [textgen]: Downloading https://files.pythonhosted.org/packages/c2/b1/5e2b3d6b24c3976eea60c9d338d41c983887f81297494897f937d7fe8e55/textgen-0.2.1.tar.gz
+[2023-04-14 05:37:25] INFO root fetch - processPackages [lvlspy]: Downloading https://files.pythonhosted.org/packages/3e/b1/b20d3b8a792bb350a891f3b8214c451d095343bbabf2c3d6b7177f5d2618/lvlspy-1.4.0.tar.gz
+[2023-04-14 05:37:25] INFO root fetch - processPackages [textgen]: executing diffoscope
+[2023-04-14 05:37:25] INFO root fetch - processPackages [textgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textgen-0.1.9.tar.gz tmp/textgen-0.2.1.tar.gz --markdown 20230414/t/textgen/0.1.9-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 05:37:25] INFO root fetch - processPackages [lvlspy]: executing diffoscope
+[2023-04-14 05:37:25] INFO root fetch - processPackages [lvlspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lvlspy-1.3.0.tar.gz tmp/lvlspy-1.4.0.tar.gz --markdown 20230414/l/lvlspy/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-14 05:37:25] INFO root fetch - main [MainThread]: End processing [hotbox]: success
+[2023-04-14 05:37:26] INFO root fetch - processPackages [yyxx-game-pkg-dev]: Downloading https://files.pythonhosted.org/packages/a6/20/6ca2c348f3267907e7bb02df80f99c36139c586e0ee552b8b2870fc5940b/yyxx_game_pkg_dev-2023.4.4.1.dev7.tar.gz
+[2023-04-14 05:37:26] INFO root fetch - main [MainThread]: End processing [textgen]: success
+[2023-04-14 05:37:26] INFO root fetch - main [MainThread]: End processing [lvlspy]: success
+[2023-04-14 05:37:27] INFO root fetch - processPackages [yyxx-game-pkg-dev]: executing diffoscope
+[2023-04-14 05:37:27] INFO root fetch - processPackages [yyxx-game-pkg-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yyxx_game_pkg_dev-2023.4.4.1.dev5.tar.gz tmp/yyxx_game_pkg_dev-2023.4.4.1.dev7.tar.gz --markdown 20230414/y/yyxx-game-pkg-dev/2023.4.4.1.dev5-2023.4.4.1.dev7/diff.md --exclude *.pyd
+[2023-04-14 05:37:29] INFO root fetch - main [MainThread]: End processing [yyxx-game-pkg-dev]: success
+[2023-04-14 05:37:29] INFO root fetch - main [MainThread]: Store serial: [17702968]
