@@ -6531,3 +6531,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 05:10:49] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-pagerduty]: success
 [2023-04-14 05:10:51] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
 [2023-04-14 05:10:51] INFO root fetch - main [MainThread]: Store serial: [17702813]
+[2023-04-14 05:15:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702813]
+[2023-04-14 05:15:59] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 05:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: novelai-api
+[2023-04-14 05:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdktf-cdktf-provider-azuread
+[2023-04-14 05:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hagworm
+[2023-04-14 05:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hotbox
+[2023-04-14 05:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-pgstac
+[2023-04-14 05:15:59] INFO root fetch - processPackages [cdk-pgstac]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-04-14 05:15:59] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 05:15:59] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2023-04-14 05:15:59] INFO root fetch - processPackages [hagworm]: New version: [5.4.5] Old Version: [5.4.4]
+[2023-04-14 05:15:59] INFO root fetch - processPackages [cdktf-cdktf-provider-azuread]: New version: [6.0.0] Old Version: [5.0.5]
+[2023-04-14 05:15:59] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-04-14 05:15:59] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230414/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 05:15:59] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2023-04-14 05:15:59] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20230414/n/novelai-api/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-14 05:15:59] INFO root fetch - processPackages [cdk-pgstac]: Downloading https://files.pythonhosted.org/packages/eb/c7/2b359e066a0e83f1fedbbcef5926d3ab8e752295e5c5ab856e029d8593bc/cdk-pgstac-3.0.0.tar.gz
+[2023-04-14 05:15:59] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/ac/9b/82b0eab2c96ae2d1345c891243b0252dc7c1b8618848e30423efc705ed92/hagworm-5.4.5.tar.gz
+[2023-04-14 05:15:59] INFO root fetch - processPackages [cdktf-cdktf-provider-azuread]: Downloading https://files.pythonhosted.org/packages/a7/bb/50737e9e2f48253678f454166443ce55df9ad8f415917ef3dc69e919104c/cdktf-cdktf-provider-azuread-5.0.5.tar.gz
+[2023-04-14 05:16:00] INFO root fetch - processPackages [hagworm]: executing diffoscope
+[2023-04-14 05:16:00] INFO root fetch - processPackages [hagworm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagworm-5.4.4.tar.gz tmp/hagworm-5.4.5.tar.gz --markdown 20230414/h/hagworm/5.4.4-5.4.5/diff.md --exclude *.pyd
+[2023-04-14 05:16:00] INFO root fetch - processPackages [cdk-pgstac]: Downloading https://files.pythonhosted.org/packages/22/f6/b756eb4a4440425c96287bce2b325e3d24a352241a05eb6c2788d50f80ab/cdk-pgstac-3.0.1.tar.gz
+[2023-04-14 05:16:00] INFO root fetch - processPackages [cdk-pgstac]: executing diffoscope
+[2023-04-14 05:16:00] INFO root fetch - processPackages [cdk-pgstac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-pgstac-3.0.0.tar.gz tmp/cdk-pgstac-3.0.1.tar.gz --markdown 20230414/c/cdk-pgstac/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-04-14 05:16:00] INFO root fetch - processPackages [cdktf-cdktf-provider-azuread]: Downloading https://files.pythonhosted.org/packages/4b/54/8ff0bdeca03710fd1031cdec529db5df1f5a536cda306075f6665fd7029b/cdktf-cdktf-provider-azuread-6.0.0.tar.gz
+[2023-04-14 05:16:00] INFO root fetch - processPackages [hotbox]: Start processing: ai-transform
+[2023-04-14 05:16:00] INFO root fetch - main [MainThread]: End processing [hotbox]: success
+[2023-04-14 05:16:00] INFO root fetch - processPackages [ai-transform]: New version: [0.30.6] Old Version: [0.30.5]
+[2023-04-14 05:16:00] INFO root fetch - processPackages [cdktf-cdktf-provider-azuread]: executing diffoscope
+[2023-04-14 05:16:00] INFO root fetch - processPackages [cdktf-cdktf-provider-azuread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-azuread-5.0.5.tar.gz tmp/cdktf-cdktf-provider-azuread-6.0.0.tar.gz --markdown 20230414/c/cdktf-cdktf-provider-azuread/5.0.5-6.0.0/diff.md --exclude *.pyd
+[2023-04-14 05:16:01] INFO root fetch - processPackages [novelai-api]: Start processing: hadmin
+[2023-04-14 05:16:01] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2023-04-14 05:16:01] INFO root fetch - processPackages [hadmin]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-14 05:16:01] INFO root fetch - processPackages [ai-transform]: Downloading https://files.pythonhosted.org/packages/dc/c1/1ec2687864b25226c03026d42663d9945b272ef56cae874e66a1297c4e05/ai_transform-0.30.6.tar.gz
+[2023-04-14 05:16:01] INFO root fetch - processPackages [hadmin]: Downloading https://files.pythonhosted.org/packages/9a/cb/153b97894dc5b9d34d7e5e1262fd6d82ee6ba8307595bba297c825b19a2d/hadmin-1.1.3.tar.gz
+[2023-04-14 05:16:01] INFO root fetch - processPackages [cdk-pgstac]: Start processing: carrier-api
+[2023-04-14 05:16:01] INFO root fetch - main [MainThread]: End processing [cdk-pgstac]: success
+[2023-04-14 05:16:01] INFO root fetch - processPackages [carrier-api]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-14 05:16:01] INFO root fetch - processPackages [ai-transform]: executing diffoscope
+[2023-04-14 05:16:01] INFO root fetch - processPackages [ai-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_transform-0.30.5.tar.gz tmp/ai_transform-0.30.6.tar.gz --markdown 20230414/a/ai-transform/0.30.5-0.30.6/diff.md --exclude *.pyd
+[2023-04-14 05:16:01] INFO root fetch - main [MainThread]: End processing [hagworm]: success
+[2023-04-14 05:16:01] INFO root fetch - processPackages [hadmin]: Downloading https://files.pythonhosted.org/packages/e5/58/4d1795585190c87b2a6c6970603cecfb7c1b80000e7f20174e0d84eab108/hadmin-1.1.4.tar.gz
+[2023-04-14 05:16:01] INFO root fetch - processPackages [carrier-api]: Downloading https://files.pythonhosted.org/packages/82/34/4de62ebac474206b048d2ce35e328dd6d64d6f3d5d9cb0c44c1139257e88/carrier_api-1.9.0.tar.gz
+[2023-04-14 05:16:01] INFO root fetch - processPackages [hadmin]: executing diffoscope
+[2023-04-14 05:16:01] INFO root fetch - processPackages [hadmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hadmin-1.1.3.tar.gz tmp/hadmin-1.1.4.tar.gz --markdown 20230414/h/hadmin/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-14 05:16:01] INFO root fetch - processPackages [carrier-api]: Downloading https://files.pythonhosted.org/packages/a2/3b/a937c597e4b8ae3e122ff9be4bc95f4b83ad2beed8227200eca070a37b62/carrier_api-1.9.1.tar.gz
+[2023-04-14 05:16:02] INFO root fetch - processPackages [carrier-api]: executing diffoscope
+[2023-04-14 05:16:02] INFO root fetch - processPackages [carrier-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carrier_api-1.9.0.tar.gz tmp/carrier_api-1.9.1.tar.gz --markdown 20230414/c/carrier-api/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-14 05:16:02] INFO root fetch - main [MainThread]: End processing [ai-transform]: success
+[2023-04-14 05:16:02] INFO root fetch - main [MainThread]: End processing [hadmin]: success
+[2023-04-14 05:16:03] INFO root fetch - main [MainThread]: End processing [carrier-api]: success
+[2023-04-14 05:16:05] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azuread]: success
+[2023-04-14 05:16:05] INFO root fetch - main [MainThread]: Store serial: [17702835]
