@@ -13196,3 +13196,75 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 14:20:21] INFO root fetch - main [MainThread]: End processing [GoogleBard]: success
 [2023-04-14 14:20:22] INFO root fetch - main [MainThread]: End processing [hestia-earth-models]: success
 [2023-04-14 14:20:22] INFO root fetch - main [MainThread]: Store serial: [17706927]
+[2023-04-14 14:25:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706927]
+[2023-04-14 14:25:30] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 14:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flowd
+[2023-04-14 14:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pythainlp
+[2023-04-14 14:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pythesyncer
+[2023-04-14 14:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: csoundengine
+[2023-04-14 14:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nucliadb-contributor-assets
+[2023-04-14 14:25:30] INFO root fetch - processPackages [flowd]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 14:25:30] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post713] Old Version: [1.0.0.post712]
+[2023-04-14 14:25:30] INFO root fetch - processPackages [pythainlp]: New version: [4.0.0b1] Old Version: [4.0.0]
+[2023-04-14 14:25:30] INFO root fetch - processPackages [pythesyncer]: New version: [23.4.14.20] Old Version: [23.4.14.19]
+[2023-04-14 14:25:30] INFO root fetch - processPackages [csoundengine]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-14 14:25:30] INFO root fetch - processPackages [pythainlp]: Downloading https://files.pythonhosted.org/packages/7b/c9/8848a806d35c3b63f5e5b6e05db0549d833ee19a7048134e79ede3318797/pythainlp-4.0.0.tar.gz
+[2023-04-14 14:25:30] INFO root fetch - processPackages [flowd]: Downloading https://files.pythonhosted.org/packages/37/8c/f2657c9b9709e26ceb772c655d47f4f3b5150ea85b2623b574484f260b37/flowd-1.0.1.tar.gz
+[2023-04-14 14:25:30] INFO root fetch - processPackages [pythesyncer]: Downloading https://files.pythonhosted.org/packages/a7/bc/4633f3bf81779427a77023a3c76a0f9df5f021208ed1cc4447b221c94089/pythesyncer-23.4.14.19.tar.gz
+[2023-04-14 14:25:30] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/bb/a4/67d93557ef4e666c80fa06480a62ada955041f007848240031d8681b1779/nucliadb_contributor_assets-1.0.0.post713-py3-none-any.whl
+[2023-04-14 14:25:30] INFO root fetch - processPackages [csoundengine]: Downloading https://files.pythonhosted.org/packages/7e/65/7ced7dbe4e22e46686d21b1c1f4f9ccdae973749309778d5040775d47b64/csoundengine-1.9.0.tar.gz
+[2023-04-14 14:25:31] INFO root fetch - processPackages [pythainlp]: Downloading https://files.pythonhosted.org/packages/75/62/ae41d67c10083d8300d73b3f00cc42f168b5fd5795ac0fa14e4e7bd3e6fc/pythainlp-4.0.0b1.tar.gz
+[2023-04-14 14:25:31] INFO root fetch - processPackages [flowd]: Downloading https://files.pythonhosted.org/packages/29/cb/eed7dbad978b812a3381f14fd28de3f42dafecbecdf1433b972d7b36b2ba/flowd-1.0.2.tar.gz
+[2023-04-14 14:25:31] INFO root fetch - processPackages [pythesyncer]: Downloading https://files.pythonhosted.org/packages/58/69/9efe19ff7b6afc976bd17d352389b6959439a9ae25d5cf1cf7276e19f067/pythesyncer-23.4.14.20.tar.gz
+[2023-04-14 14:25:31] INFO root fetch - processPackages [pythainlp]: executing diffoscope
+[2023-04-14 14:25:31] INFO root fetch - processPackages [pythainlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythainlp-4.0.0.tar.gz tmp/pythainlp-4.0.0b1.tar.gz --markdown 20230414/p/pythainlp/4.0.0-4.0.0b1/diff.md --exclude *.pyd
+[2023-04-14 14:25:31] INFO root fetch - processPackages [flowd]: executing diffoscope
+[2023-04-14 14:25:31] INFO root fetch - processPackages [flowd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowd-1.0.1.tar.gz tmp/flowd-1.0.2.tar.gz --markdown 20230414/f/flowd/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 14:25:31] INFO root fetch - processPackages [pythesyncer]: executing diffoscope
+[2023-04-14 14:25:31] INFO root fetch - processPackages [pythesyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythesyncer-23.4.14.19.tar.gz tmp/pythesyncer-23.4.14.20.tar.gz --markdown 20230414/p/pythesyncer/23.4.14.19-23.4.14.20/diff.md --exclude *.pyd
+[2023-04-14 14:25:31] INFO root fetch - processPackages [csoundengine]: Downloading https://files.pythonhosted.org/packages/4a/14/227b8a91163ff83cd5f33dd91852165fa3635f9750a26d2738e5de432cf7/csoundengine-1.9.1.tar.gz
+[2023-04-14 14:25:31] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-04-14 14:25:31] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post712-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post713-py3-none-any.whl.zip --markdown 20230414/n/nucliadb-contributor-assets/1.0.0.post712-1.0.0.post713/diff.md --exclude *.pyd
+[2023-04-14 14:25:31] INFO root fetch - processPackages [csoundengine]: executing diffoscope
+[2023-04-14 14:25:31] INFO root fetch - processPackages [csoundengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csoundengine-1.9.0.tar.gz tmp/csoundengine-1.9.1.tar.gz --markdown 20230414/c/csoundengine/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-14 14:25:32] INFO root fetch - processPackages [pythesyncer]: Start processing: openmetadata-ingestion
+[2023-04-14 14:25:32] INFO root fetch - main [MainThread]: End processing [pythesyncer]: success
+[2023-04-14 14:25:32] INFO root fetch - processPackages [openmetadata-ingestion]: New version: [1.0.0.0.dev1] Old Version: [1.0.0.0.dev0]
+[2023-04-14 14:25:32] INFO root fetch - processPackages [flowd]: Start processing: pyproject-installer
+[2023-04-14 14:25:32] INFO root fetch - main [MainThread]: End processing [flowd]: success
+[2023-04-14 14:25:32] INFO root fetch - processPackages [pyproject-installer]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-14 14:25:32] INFO root fetch - processPackages [openmetadata-ingestion]: Downloading https://files.pythonhosted.org/packages/8c/cf/aa525209721492958b2360dc2d7d46027d91b8d95a563c44182abb182238/openmetadata-ingestion-1.0.0.0.dev0.tar.gz
+[2023-04-14 14:25:32] INFO root fetch - processPackages [pyproject-installer]: Downloading https://files.pythonhosted.org/packages/da/a2/f890a712f956027ffcb49c1b36e2e4f0c5d123bdfb77b9226855766e76e2/pyproject_installer-0.4.0.tar.gz
+[2023-04-14 14:25:32] INFO root fetch - processPackages [openmetadata-ingestion]: Downloading https://files.pythonhosted.org/packages/0f/bb/467f2cd06e5a06767104d8e7b682e9b49909169bd339ef9db2fdb26b2afd/openmetadata-ingestion-1.0.0.0.dev1.tar.gz
+[2023-04-14 14:25:32] INFO root fetch - processPackages [pyproject-installer]: Downloading https://files.pythonhosted.org/packages/79/ae/8bc349979ef640e3a9e4ab570d055ffbf8e22d1f92de4f6e06c3f58e154a/pyproject_installer-0.5.0.tar.gz
+[2023-04-14 14:25:32] INFO root fetch - processPackages [openmetadata-ingestion]: executing diffoscope
+[2023-04-14 14:25:32] INFO root fetch - processPackages [pyproject-installer]: executing diffoscope
+[2023-04-14 14:25:32] INFO root fetch - processPackages [pyproject-installer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_installer-0.4.0.tar.gz tmp/pyproject_installer-0.5.0.tar.gz --markdown 20230414/p/pyproject-installer/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-14 14:25:32] INFO root fetch - processPackages [openmetadata-ingestion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmetadata-ingestion-1.0.0.0.dev0.tar.gz tmp/openmetadata-ingestion-1.0.0.0.dev1.tar.gz --markdown 20230414/o/openmetadata-ingestion/1.0.0.0.dev0-1.0.0.0.dev1/diff.md --exclude *.pyd
+[2023-04-14 14:25:33] INFO root fetch - processPackages [csoundengine]: Start processing: default-values
+[2023-04-14 14:25:33] INFO root fetch - main [MainThread]: End processing [csoundengine]: success
+[2023-04-14 14:25:33] INFO root fetch - processPackages [default-values]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-14 14:25:33] INFO root fetch - processPackages [default-values]: Downloading https://files.pythonhosted.org/packages/ee/e4/d16774e6180226ddaf47e8096d8c3650cb588775372db2a744fa5baf6f7b/default_values-0.5.1.tar.gz
+[2023-04-14 14:25:33] INFO root fetch - processPackages [pythainlp]: Start processing: scrapse
+[2023-04-14 14:25:33] INFO root fetch - main [MainThread]: End processing [pythainlp]: success
+[2023-04-14 14:25:33] INFO root fetch - processPackages [scrapse]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 14:25:33] INFO root fetch - processPackages [scrapse]: Downloading https://files.pythonhosted.org/packages/c1/7f/ae9c33e91ba8cfb44f2a747ded182e3edd07f130dd4e5e1395090845f0f1/scrapse-0.3.8.tar.gz
+[2023-04-14 14:25:33] INFO root fetch - processPackages [default-values]: Downloading https://files.pythonhosted.org/packages/f1/b7/7cf4ee3a7b1d3c01194dd872b2d3e8aad19b4a16c7caff55f97150cf72cc/default_values-0.5.2.tar.gz
+[2023-04-14 14:25:33] INFO root fetch - processPackages [default-values]: executing diffoscope
+[2023-04-14 14:25:33] INFO root fetch - processPackages [default-values]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/default_values-0.5.1.tar.gz tmp/default_values-0.5.2.tar.gz --markdown 20230414/d/default-values/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-14 14:25:33] INFO root fetch - processPackages [scrapse]: Downloading https://files.pythonhosted.org/packages/95/dd/01d3d50132107e0666075d203d21a7621774c728158629d70a335e536e2a/scrapse-0.3.9.tar.gz
+[2023-04-14 14:25:33] INFO root fetch - processPackages [scrapse]: executing diffoscope
+[2023-04-14 14:25:33] INFO root fetch - processPackages [scrapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapse-0.3.8.tar.gz tmp/scrapse-0.3.9.tar.gz --markdown 20230414/s/scrapse/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 14:25:34] INFO root fetch - processPackages [pyproject-installer]: Start processing: eotransform
+[2023-04-14 14:25:34] INFO root fetch - main [MainThread]: End processing [pyproject-installer]: success
+[2023-04-14 14:25:34] INFO root fetch - processPackages [eotransform]: New version: [1.8.0] Old Version: [1.7.0]
+[2023-04-14 14:25:34] INFO root fetch - processPackages [eotransform]: Downloading https://files.pythonhosted.org/packages/ff/09/a741d4129335f27400b3254c875d183cd783e666e044068592b1a730c82b/eotransform-1.7.0.tar.gz
+[2023-04-14 14:25:34] INFO root fetch - main [MainThread]: End processing [default-values]: success
+[2023-04-14 14:25:34] INFO root fetch - processPackages [eotransform]: Downloading https://files.pythonhosted.org/packages/72/d1/85f98d7c94cc9e8caf7c9746d1f5ea3a118a2e8648de2fb0d7cf3aaaae09/eotransform-1.8.0.tar.gz
+[2023-04-14 14:25:34] INFO root fetch - processPackages [eotransform]: executing diffoscope
+[2023-04-14 14:25:34] INFO root fetch - processPackages [eotransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eotransform-1.7.0.tar.gz tmp/eotransform-1.8.0.tar.gz --markdown 20230414/e/eotransform/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2023-04-14 14:25:35] INFO root fetch - main [MainThread]: End processing [scrapse]: success
+[2023-04-14 14:25:36] INFO root fetch - main [MainThread]: End processing [eotransform]: success
+[2023-04-14 14:25:46] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-04-14 14:25:54] INFO root fetch - main [MainThread]: End processing [openmetadata-ingestion]: success
+[2023-04-14 14:25:54] INFO root fetch - main [MainThread]: Store serial: [17706963]
