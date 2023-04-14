@@ -7412,3 +7412,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 07:25:45] INFO root fetch - main [MainThread]: End processing [hanlp]: success
 [2023-04-14 07:25:45] INFO root fetch - main [MainThread]: End processing [py-yettagam]: success
 [2023-04-14 07:25:45] INFO root fetch - main [MainThread]: Store serial: [17703377]
+[2023-04-14 07:30:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703377]
+[2023-04-14 07:30:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-14 07:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipsw
+[2023-04-14 07:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: domolibrary
+[2023-04-14 07:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyhealthbox3
+[2023-04-14 07:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dxsp
+[2023-04-14 07:30:52] INFO root fetch - processPackages [pyhealthbox3]: New version: [0.0.19] Old Version: [0.0.17]
+[2023-04-14 07:30:52] INFO root fetch - processPackages [domolibrary]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 07:30:52] INFO root fetch - processPackages [ipsw]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 07:30:52] INFO root fetch - processPackages [dxsp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 07:30:52] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-14 07:30:52] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.8.tar.gz tmp/dxsp-1.0.9.tar.gz --markdown 20230414/d/dxsp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 07:30:52] INFO root fetch - processPackages [ipsw]: Downloading https://files.pythonhosted.org/packages/b8/2d/6b7e5d0f8174daf411659aae537c2c09db79f8aeb1180b6173cff0f8e698/ipsw-0.1.2.tar.gz
+[2023-04-14 07:30:52] INFO root fetch - processPackages [pyhealthbox3]: Downloading https://files.pythonhosted.org/packages/1d/2f/b65084aba36a9c6a2440b2950ec3ff3ad34bbddf09970043d81637ffaf7f/pyhealthbox3-0.0.19.tar.gz
+[2023-04-14 07:30:52] INFO root fetch - processPackages [domolibrary]: executing diffoscope
+[2023-04-14 07:30:52] INFO root fetch - processPackages [domolibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domolibrary-0.0.8.tar.gz tmp/domolibrary-0.0.9.tar.gz --markdown 20230414/d/domolibrary/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 07:30:52] INFO root fetch - processPackages [ipsw]: executing diffoscope
+[2023-04-14 07:30:52] INFO root fetch - processPackages [ipsw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipsw-0.1.1.tar.gz tmp/ipsw-0.1.2.tar.gz --markdown 20230414/i/ipsw/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 07:30:52] INFO root fetch - processPackages [pyhealthbox3]: executing diffoscope
+[2023-04-14 07:30:52] INFO root fetch - processPackages [pyhealthbox3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhealthbox3-0.0.17.tar.gz tmp/pyhealthbox3-0.0.19.tar.gz --markdown 20230414/p/pyhealthbox3/0.0.17-0.0.19/diff.md --exclude *.pyd
+[2023-04-14 07:30:53] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-14 07:30:54] INFO root fetch - main [MainThread]: End processing [pyhealthbox3]: success
+[2023-04-14 07:30:54] INFO root fetch - main [MainThread]: End processing [ipsw]: success
+[2023-04-14 07:30:54] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
+[2023-04-14 07:30:54] INFO root fetch - main [MainThread]: Store serial: [17703392]
