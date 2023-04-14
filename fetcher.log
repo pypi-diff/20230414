@@ -7268,3 +7268,71 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 07:07:17] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
 [2023-04-14 07:10:07] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-04-14 07:10:07] INFO root fetch - main [MainThread]: Store serial: [17703298]
+[2023-04-14 07:15:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703298]
+[2023-04-14 07:15:14] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 07:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ypricemagic
+[2023-04-14 07:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qlat
+[2023-04-14 07:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qlat-grid
+[2023-04-14 07:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qlat-utils
+[2023-04-14 07:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rapidpe-rift-pipe
+[2023-04-14 07:15:14] INFO root fetch - processPackages [qlat]: New version: [0.9] Old Version: [0.8]
+[2023-04-14 07:15:14] INFO root fetch - processPackages [qlat-utils]: New version: [0.9] Old Version: [0.8]
+[2023-04-14 07:15:14] INFO root fetch - processPackages [qlat-grid]: New version: [0.9] Old Version: [0.8]
+[2023-04-14 07:15:15] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.0.9.dev20230323] Old Version: [0.0.9.dev20230322]
+[2023-04-14 07:15:15] INFO root fetch - processPackages [ypricemagic]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-04-14 07:15:15] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-04-14 07:15:15] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.0.9.dev20230322.tar.gz tmp/rapidpe_rift_pipe-0.0.9.dev20230323.tar.gz --markdown 20230414/r/rapidpe-rift-pipe/0.0.9.dev20230322-0.0.9.dev20230323/diff.md --exclude *.pyd
+[2023-04-14 07:15:15] INFO root fetch - processPackages [ypricemagic]: Downloading https://files.pythonhosted.org/packages/47/99/f548f8c9b9f3252b2bd8b6c510116a827b04c2b7b5e1c6f5bbae2928dac6/ypricemagic-2.1.6.tar.gz
+[2023-04-14 07:15:15] INFO root fetch - processPackages [qlat]: executing diffoscope
+[2023-04-14 07:15:15] INFO root fetch - processPackages [qlat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlat-0.8.tar.gz tmp/qlat-0.9.tar.gz --markdown 20230414/q/qlat/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-14 07:15:15] INFO root fetch - processPackages [qlat-grid]: executing diffoscope
+[2023-04-14 07:15:15] INFO root fetch - processPackages [qlat-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlat_grid-0.8.tar.gz tmp/qlat_grid-0.9.tar.gz --markdown 20230414/q/qlat-grid/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-14 07:15:15] INFO root fetch - processPackages [ypricemagic]: executing diffoscope
+[2023-04-14 07:15:15] INFO root fetch - processPackages [ypricemagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ypricemagic-2.1.5.tar.gz tmp/ypricemagic-2.1.6.tar.gz --markdown 20230414/y/ypricemagic/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-04-14 07:15:15] INFO root fetch - processPackages [qlat-utils]: executing diffoscope
+[2023-04-14 07:15:15] INFO root fetch - processPackages [qlat-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlat_utils-0.8.tar.gz tmp/qlat_utils-0.9.tar.gz --markdown 20230414/q/qlat-utils/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-14 07:15:16] INFO root fetch - processPackages [rapidpe-rift-pipe]: Start processing: nonebot-plugin-clock
+[2023-04-14 07:15:16] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2023-04-14 07:15:16] INFO root fetch - processPackages [nonebot-plugin-clock]: New version: [0.8.8] Old Version: [0.8.6]
+[2023-04-14 07:15:16] INFO root fetch - processPackages [nonebot-plugin-clock]: Downloading https://files.pythonhosted.org/packages/02/6f/f71ef5b887b7f57cd6b9e328bb0831d7f629607faa26ffcba58cfd183693/nonebot-plugin-clock-0.8.8.tar.gz
+[2023-04-14 07:15:16] INFO root fetch - processPackages [qlat-grid]: Start processing: tg-upload
+[2023-04-14 07:15:16] INFO root fetch - main [MainThread]: End processing [qlat-grid]: success
+[2023-04-14 07:15:16] INFO root fetch - processPackages [nonebot-plugin-clock]: executing diffoscope
+[2023-04-14 07:15:16] INFO root fetch - processPackages [nonebot-plugin-clock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-clock-0.8.6.tar.gz tmp/nonebot-plugin-clock-0.8.8.tar.gz --markdown 20230414/n/nonebot-plugin-clock/0.8.6-0.8.8/diff.md --exclude *.pyd
+[2023-04-14 07:15:16] WARNING root fetch - processPackages [tg-upload]: Skipping, unable to determine old version
+[2023-04-14 07:15:16] INFO root fetch - processPackages [tg-upload]: Start processing: FPC
+[2023-04-14 07:15:16] INFO root fetch - main [MainThread]: End processing [tg-upload] error
+[2023-04-14 07:15:16] INFO root fetch - processPackages [FPC]: New version: [0.9] Old Version: [0.8]
+[2023-04-14 07:15:16] INFO root fetch - processPackages [FPC]: Downloading https://files.pythonhosted.org/packages/21/8e/cb3fde359346e40cec7994e595614ef647675f843dea133076850fd2db07/FPC-0.8.tar.gz
+[2023-04-14 07:15:16] INFO root fetch - processPackages [qlat-utils]: Start processing: multiPrime
+[2023-04-14 07:15:16] INFO root fetch - main [MainThread]: End processing [qlat-utils]: success
+[2023-04-14 07:15:16] INFO root fetch - processPackages [multiPrime]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-14 07:15:17] INFO root fetch - processPackages [FPC]: Downloading https://files.pythonhosted.org/packages/2e/52/6ad17c7fd21298054bcd96fc5e86fe54f07e006467ce5452d57c016d92bc/FPC-0.9.tar.gz
+[2023-04-14 07:15:17] INFO root fetch - processPackages [FPC]: executing diffoscope
+[2023-04-14 07:15:17] INFO root fetch - processPackages [FPC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FPC-0.8.tar.gz tmp/FPC-0.9.tar.gz --markdown 20230414/F/FPC/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-14 07:15:17] INFO root fetch - processPackages [multiPrime]: Downloading https://files.pythonhosted.org/packages/46/d3/8c51682810102606710e8c90d1a35486c29ae1cc71ebbb00af5d358b8d45/multiPrime-2.3.9.tar.gz
+[2023-04-14 07:15:17] INFO root fetch - processPackages [ypricemagic]: Start processing: py-yettagam
+[2023-04-14 07:15:17] INFO root fetch - main [MainThread]: End processing [ypricemagic]: success
+[2023-04-14 07:15:17] INFO root fetch - processPackages [py-yettagam]: New version: [0.0.2.9] Old Version: [0.0.2.8]
+[2023-04-14 07:15:17] INFO root fetch - processPackages [multiPrime]: executing diffoscope
+[2023-04-14 07:15:17] INFO root fetch - processPackages [multiPrime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiPrime-2.3.8.tar.gz tmp/multiPrime-2.3.9.tar.gz --markdown 20230414/m/multiPrime/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-14 07:15:17] INFO root fetch - processPackages [py-yettagam]: executing diffoscope
+[2023-04-14 07:15:17] INFO root fetch - processPackages [py-yettagam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_yettagam-0.0.2.8.tar.gz tmp/py_yettagam-0.0.2.9.tar.gz --markdown 20230414/p/py-yettagam/0.0.2.8-0.0.2.9/diff.md --exclude *.pyd
+[2023-04-14 07:15:17] INFO root fetch - processPackages [nonebot-plugin-clock]: Start processing: dxsp
+[2023-04-14 07:15:17] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-clock]: success
+[2023-04-14 07:15:17] INFO root fetch - processPackages [dxsp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 07:15:17] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-14 07:15:17] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.8.tar.gz tmp/dxsp-1.0.9.tar.gz --markdown 20230414/d/dxsp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 07:15:18] INFO root fetch - processPackages [FPC]: Start processing: pylbm
+[2023-04-14 07:15:18] INFO root fetch - main [MainThread]: End processing [FPC]: success
+[2023-04-14 07:15:18] INFO root fetch - processPackages [pylbm]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 07:15:18] INFO root fetch - main [MainThread]: End processing [multiPrime]: success
+[2023-04-14 07:15:18] INFO root fetch - processPackages [pylbm]: Downloading https://files.pythonhosted.org/packages/e0/a3/b72ef0bc67e3c59fc28015a07fe759a6ae28cd117e7abd2c07782f42b856/pylbm-0.8.0.tar.gz
+[2023-04-14 07:15:18] INFO root fetch - main [MainThread]: End processing [py-yettagam]: success
+[2023-04-14 07:15:18] INFO root fetch - processPackages [pylbm]: Downloading https://files.pythonhosted.org/packages/0b/ea/e0ea863caaac7aceab136a5bbe2f3bb41025fda492b1f7ef91a9bffd7e2f/pylbm-0.9.0.tar.gz
+[2023-04-14 07:15:18] INFO root fetch - processPackages [pylbm]: executing diffoscope
+[2023-04-14 07:15:18] INFO root fetch - processPackages [pylbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylbm-0.8.0.tar.gz tmp/pylbm-0.9.0.tar.gz --markdown 20230414/p/pylbm/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 07:15:20] INFO root fetch - main [MainThread]: End processing [qlat]: success
+[2023-04-14 07:15:21] INFO root fetch - main [MainThread]: End processing [pylbm]: success
+[2023-04-14 07:15:24] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-14 07:15:24] INFO root fetch - main [MainThread]: Store serial: [17703335]
