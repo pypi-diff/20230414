@@ -12314,3 +12314,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 13:20:43] INFO root fetch - main [MainThread]: End processing [geovisio_cli]: success
 [2023-04-14 13:20:47] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-04-14 13:20:47] INFO root fetch - main [MainThread]: Store serial: [17706292]
+[2023-04-14 13:25:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706292]
+[2023-04-14 13:25:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 13:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: music-assistant-frontend
+[2023-04-14 13:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CTkColorPicker
+[2023-04-14 13:25:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hb-test-generator
+[2023-04-14 13:25:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: databutton
+[2023-04-14 13:25:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shub-workflow
+[2023-04-14 13:25:55] INFO root fetch - processPackages [CTkColorPicker]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-14 13:25:55] INFO root fetch - processPackages [hb-test-generator]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-14 13:25:55] INFO root fetch - processPackages [databutton]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-14 13:25:55] INFO root fetch - processPackages [music-assistant-frontend]: New version: [20230414.0] Old Version: [20230404.0]
+[2023-04-14 13:25:55] INFO root fetch - processPackages [shub-workflow]: New version: [1.9.7.4] Old Version: [1.9.7.3]
+[2023-04-14 13:25:55] INFO root fetch - processPackages [databutton]: executing diffoscope
+[2023-04-14 13:25:55] INFO root fetch - processPackages [CTkColorPicker]: Downloading https://files.pythonhosted.org/packages/62/b6/58f526cc1d3216692db39f58610d982fbd96a17821fd9c7135aa25478364/CTkColorPicker-0.4.0.tar.gz
+[2023-04-14 13:25:55] INFO root fetch - processPackages [databutton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databutton-0.9.1.tar.gz tmp/databutton-0.9.2.tar.gz --markdown 20230414/d/databutton/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-14 13:25:55] INFO root fetch - processPackages [music-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/48/8a/0c929118776a4dadffa8abebee34b82a2f76d25e1a8366885d69882e7152/music_assistant_frontend-20230404.0-py3-none-any.whl
+[2023-04-14 13:25:55] INFO root fetch - processPackages [hb-test-generator]: Downloading https://files.pythonhosted.org/packages/fd/a8/bbe2c726a012693f34c3e99bc1187144fd6feb62865dd1f32094e7bc48aa/hb-test-generator-0.1.5.tar.gz
+[2023-04-14 13:25:55] INFO root fetch - processPackages [hb-test-generator]: executing diffoscope
+[2023-04-14 13:25:55] INFO root fetch - processPackages [hb-test-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hb-test-generator-0.1.4.tar.gz tmp/hb-test-generator-0.1.5.tar.gz --markdown 20230414/h/hb-test-generator/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-14 13:25:55] INFO root fetch - processPackages [shub-workflow]: executing diffoscope
+[2023-04-14 13:25:55] INFO root fetch - processPackages [shub-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shub-workflow-1.9.7.3.tar.gz tmp/shub-workflow-1.9.7.4.tar.gz --markdown 20230414/s/shub-workflow/1.9.7.3-1.9.7.4/diff.md --exclude *.pyd
+[2023-04-14 13:25:55] INFO root fetch - processPackages [CTkColorPicker]: Downloading https://files.pythonhosted.org/packages/80/f2/f43a177473d7cc0808deb8da5e063f8a15d79eaf0a5c34814b21dc687a80/CTkColorPicker-0.5.0.tar.gz
+[2023-04-14 13:25:55] INFO root fetch - processPackages [CTkColorPicker]: executing diffoscope
+[2023-04-14 13:25:55] INFO root fetch - processPackages [CTkColorPicker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTkColorPicker-0.4.0.tar.gz tmp/CTkColorPicker-0.5.0.tar.gz --markdown 20230414/C/CTkColorPicker/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-14 13:25:56] INFO root fetch - processPackages [music-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/0d/9a/ea12ea4d6a2f7d8b8f3658fddd250b010e4a081e3e5ca409b8c4c3762d45/music_assistant_frontend-20230414.0-py3-none-any.whl
+[2023-04-14 13:25:56] INFO root fetch - processPackages [databutton]: Start processing: torchrec-nightly
+[2023-04-14 13:25:56] INFO root fetch - main [MainThread]: End processing [databutton]: success
+[2023-04-14 13:25:56] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.4.9] Old Version: [2023.4.7]
+[2023-04-14 13:25:56] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-04-14 13:25:56] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.4.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.4.9-py39-none-any.whl.zip --markdown 20230414/t/torchrec-nightly/2023.4.7-2023.4.9/diff.md --exclude *.pyd
+[2023-04-14 13:25:56] INFO root fetch - processPackages [hb-test-generator]: Start processing: yourtools
+[2023-04-14 13:25:56] INFO root fetch - main [MainThread]: End processing [hb-test-generator]: success
+[2023-04-14 13:25:56] INFO root fetch - processPackages [yourtools]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-14 13:25:56] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/12/53/9ab41a1d15cc32f36eb48272bb2e44c0c867f2fdd466f10355d2597eb0c6/yourtools-0.5.4.tar.gz
+[2023-04-14 13:25:56] INFO root fetch - processPackages [music-assistant-frontend]: executing diffoscope
+[2023-04-14 13:25:56] INFO root fetch - processPackages [music-assistant-frontend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/music_assistant_frontend-20230404.0-py3-none-any.whl.zip tmp/music_assistant_frontend-20230414.0-py3-none-any.whl.zip --markdown 20230414/m/music-assistant-frontend/20230404.0-20230414.0/diff.md --exclude *.pyd
+[2023-04-14 13:25:56] INFO root fetch - processPackages [shub-workflow]: Start processing: NewsArticlesScraper
+[2023-04-14 13:25:56] INFO root fetch - main [MainThread]: End processing [shub-workflow]: success
+[2023-04-14 13:25:56] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-14 13:25:56] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.5.3.tar.gz tmp/yourtools-0.5.4.tar.gz --markdown 20230414/y/yourtools/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-14 13:25:56] INFO root fetch - processPackages [NewsArticlesScraper]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-14 13:25:57] INFO root fetch - processPackages [CTkColorPicker]: Start processing: pretix-plugin-attendance-certificate
+[2023-04-14 13:25:57] INFO root fetch - main [MainThread]: End processing [CTkColorPicker]: success
+[2023-04-14 13:25:57] INFO root fetch - processPackages [NewsArticlesScraper]: Downloading https://files.pythonhosted.org/packages/b7/89/991c034baf59894cc9ee480d73b4d63cf4940cb33d0815ffa2987150b13f/NewsArticlesScraper-0.1.6.tar.gz
+[2023-04-14 13:25:57] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-14 13:25:57] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Downloading https://files.pythonhosted.org/packages/b8/40/2d3f4a8e8dff4a1cd3533c1e3f17e095f74b07f078c397785a55fc293fbb/pretix_plugin_attendance_certificate-0.1.7.tar.gz
+[2023-04-14 13:25:57] INFO root fetch - processPackages [NewsArticlesScraper]: Downloading https://files.pythonhosted.org/packages/48/6f/eb6cb38fdf724e18b3a8dc4e79b8ba2ec1adc1082e1331a75091bb19b32e/NewsArticlesScraper-0.1.7.tar.gz
+[2023-04-14 13:25:57] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: executing diffoscope
+[2023-04-14 13:25:57] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix_plugin_attendance_certificate-0.1.6.tar.gz tmp/pretix_plugin_attendance_certificate-0.1.7.tar.gz --markdown 20230414/p/pretix-plugin-attendance-certificate/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-14 13:25:57] INFO root fetch - processPackages [NewsArticlesScraper]: executing diffoscope
+[2023-04-14 13:25:57] INFO root fetch - processPackages [NewsArticlesScraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NewsArticlesScraper-0.1.6.tar.gz tmp/NewsArticlesScraper-0.1.7.tar.gz --markdown 20230414/N/NewsArticlesScraper/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-14 13:25:57] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-14 13:25:58] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-04-14 13:25:58] INFO root fetch - main [MainThread]: End processing [pretix-plugin-attendance-certificate]: success
+[2023-04-14 13:25:58] INFO root fetch - main [MainThread]: End processing [NewsArticlesScraper]: success
+[2023-04-14 13:26:28] INFO root fetch - main [MainThread]: End processing [music-assistant-frontend]: success
+[2023-04-14 13:26:28] INFO root fetch - main [MainThread]: Store serial: [17706321]
