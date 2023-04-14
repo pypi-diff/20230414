@@ -19398,3 +19398,68 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 19:43:53] INFO root fetch - main [MainThread]: End processing [jobbergate-api]: success
 [2023-04-14 19:43:54] INFO root fetch - main [MainThread]: End processing [django-socio-grpc]: success
 [2023-04-14 19:43:54] INFO root fetch - main [MainThread]: Store serial: [17710952]
+[2023-04-14 19:48:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17710952]
+[2023-04-14 19:49:02] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 19:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: statistics-core
+[2023-04-14 19:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: splight-cli
+[2023-04-14 19:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: govtech-data
+[2023-04-14 19:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openmetadata-managed-apis
+[2023-04-14 19:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: better-translation
+[2023-04-14 19:49:02] WARNING root fetch - processPackages [statistics-core]: Skipping, unable to determine old version
+[2023-04-14 19:49:02] INFO root fetch - processPackages [statistics-core]: Start processing: rootbox
+[2023-04-14 19:49:02] INFO root fetch - main [MainThread]: End processing [statistics-core] error
+[2023-04-14 19:49:02] INFO root fetch - processPackages [rootbox]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-14 19:49:02] INFO root fetch - processPackages [splight-cli]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-14 19:49:02] INFO root fetch - processPackages [better-translation]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-14 19:49:02] INFO root fetch - processPackages [govtech-data]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 19:49:02] INFO root fetch - processPackages [openmetadata-managed-apis]: New version: [1.0.0.0.dev2] Old Version: [1.0.0.0.dev1]
+[2023-04-14 19:49:02] INFO root fetch - processPackages [rootbox]: Downloading https://files.pythonhosted.org/packages/e4/91/4a414667a3c1982e04a1bc670028035dc1ba2b085afca3b971aefa21924e/rootbox-0.0.8.tar.gz
+[2023-04-14 19:49:02] INFO root fetch - processPackages [openmetadata-managed-apis]: Downloading https://files.pythonhosted.org/packages/7a/3e/4dd7bede43622bd8060832d240a58f383fa1209dd612a75c5a07a6a17a53/openmetadata_managed_apis-1.0.0.0.dev2.tar.gz
+[2023-04-14 19:49:02] INFO root fetch - processPackages [govtech-data]: Downloading https://files.pythonhosted.org/packages/6a/1e/9667916811a9ef73a742b197b1cb8b8a555249c880ef43d352a374e3abf3/govtech_data-0.1.3.tar.gz
+[2023-04-14 19:49:03] INFO root fetch - processPackages [better-translation]: Downloading https://files.pythonhosted.org/packages/e5/f7/9e1a9433286144600af54a8b8dcd175977fd2b45710c6aada793135f0d26/better-translation-0.3.2.tar.gz
+[2023-04-14 19:49:03] INFO root fetch - processPackages [splight-cli]: executing diffoscope
+[2023-04-14 19:49:03] INFO root fetch - processPackages [splight-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-cli-2.3.8.tar.gz tmp/splight-cli-2.3.9.tar.gz --markdown 20230414/s/splight-cli/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-14 19:49:03] INFO root fetch - processPackages [rootbox]: executing diffoscope
+[2023-04-14 19:49:03] INFO root fetch - processPackages [rootbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rootbox-0.0.7.tar.gz tmp/rootbox-0.0.8.tar.gz --markdown 20230414/r/rootbox/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 19:49:03] INFO root fetch - processPackages [openmetadata-managed-apis]: executing diffoscope
+[2023-04-14 19:49:03] INFO root fetch - processPackages [openmetadata-managed-apis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmetadata_managed_apis-1.0.0.0.dev1.tar.gz tmp/openmetadata_managed_apis-1.0.0.0.dev2.tar.gz --markdown 20230414/o/openmetadata-managed-apis/1.0.0.0.dev1-1.0.0.0.dev2/diff.md --exclude *.pyd
+[2023-04-14 19:49:03] INFO root fetch - processPackages [govtech-data]: executing diffoscope
+[2023-04-14 19:49:03] INFO root fetch - processPackages [govtech-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/govtech_data-0.1.2.tar.gz tmp/govtech_data-0.1.3.tar.gz --markdown 20230414/g/govtech-data/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 19:49:03] INFO root fetch - processPackages [better-translation]: executing diffoscope
+[2023-04-14 19:49:03] INFO root fetch - processPackages [better-translation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better-translation-0.3.1.tar.gz tmp/better-translation-0.3.2.tar.gz --markdown 20230414/b/better-translation/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-14 19:49:04] INFO root fetch - processPackages [govtech-data]: Start processing: PyroFork-dev
+[2023-04-14 19:49:04] INFO root fetch - main [MainThread]: End processing [govtech-data]: success
+[2023-04-14 19:49:04] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.5.dev202304141749] Old Version: [2.1.5.dev202304141742]
+[2023-04-14 19:49:04] INFO root fetch - processPackages [splight-cli]: Start processing: m3-learning
+[2023-04-14 19:49:04] INFO root fetch - main [MainThread]: End processing [splight-cli]: success
+[2023-04-14 19:49:04] INFO root fetch - processPackages [m3-learning]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 19:49:04] INFO root fetch - processPackages [rootbox]: Start processing: datajunction
+[2023-04-14 19:49:04] INFO root fetch - main [MainThread]: End processing [rootbox]: success
+[2023-04-14 19:49:04] WARNING root fetch - processPackages [datajunction]: Skipping, unable to determine old version
+[2023-04-14 19:49:04] INFO root fetch - processPackages [datajunction]: Start processing: cursesplus
+[2023-04-14 19:49:04] INFO root fetch - main [MainThread]: End processing [datajunction] error
+[2023-04-14 19:49:04] INFO root fetch - processPackages [PyroFork-dev]: Downloading https://files.pythonhosted.org/packages/4b/e4/9401900273685315918e8ba4faa4b6aea5258afb13ddb155c6954eb34dda/PyroFork-dev-2.1.5.dev202304141749.tar.gz
+[2023-04-14 19:49:04] INFO root fetch - processPackages [better-translation]: Start processing: pic-rucio
+[2023-04-14 19:49:04] INFO root fetch - main [MainThread]: End processing [better-translation]: success
+[2023-04-14 19:49:04] INFO root fetch - processPackages [cursesplus]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-14 19:49:04] INFO root fetch - processPackages [pic-rucio]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 19:49:04] INFO root fetch - processPackages [openmetadata-managed-apis]: Start processing: statistics-core
+[2023-04-14 19:49:04] INFO root fetch - main [MainThread]: End processing [openmetadata-managed-apis]: success
+[2023-04-14 19:49:04] WARNING root fetch - processPackages [statistics-core]: Skipping, unable to determine old version
+[2023-04-14 19:49:04] INFO root fetch - main [MainThread]: End processing [statistics-core] error
+[2023-04-14 19:49:04] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-14 19:49:04] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.5.dev202304141742.tar.gz tmp/PyroFork-dev-2.1.5.dev202304141749.tar.gz --markdown 20230414/P/PyroFork-dev/2.1.5.dev202304141742-2.1.5.dev202304141749/diff.md --exclude *.pyd
+[2023-04-14 19:49:04] INFO root fetch - processPackages [pic-rucio]: Downloading https://files.pythonhosted.org/packages/ad/7c/d95e92adc77024e594a5fd7c81ac3a792d3e669e9251dd0372921a3c6b7d/pic_rucio-0.1.0-py3-none-any.whl
+[2023-04-14 19:49:04] INFO root fetch - processPackages [cursesplus]: Downloading https://files.pythonhosted.org/packages/fd/71/e1d9c3a9d704d3b638f4359df04202d4243ed78b1664d4b5d11b090ee951/cursesplus-2.0.1.tar.gz
+[2023-04-14 19:49:04] INFO root fetch - processPackages [m3-learning]: executing diffoscope
+[2023-04-14 19:49:04] INFO root fetch - processPackages [m3-learning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m3_learning-0.0.8.tar.gz tmp/m3_learning-0.0.9.tar.gz --markdown 20230414/m/m3-learning/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 19:49:05] INFO root fetch - processPackages [pic-rucio]: Downloading https://files.pythonhosted.org/packages/a2/4b/fc380c831d4db805ae777b9aa04d21220c089cd4a1acb270811a5e788f54/pic_rucio-0.1.1-py3-none-any.whl
+[2023-04-14 19:49:05] INFO root fetch - processPackages [cursesplus]: executing diffoscope
+[2023-04-14 19:49:05] INFO root fetch - processPackages [cursesplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cursesplus-2.0.0.tar.gz tmp/cursesplus-2.0.1.tar.gz --markdown 20230414/c/cursesplus/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-14 19:49:05] INFO root fetch - processPackages [pic-rucio]: executing diffoscope
+[2023-04-14 19:49:05] INFO root fetch - processPackages [pic-rucio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pic_rucio-0.1.0-py3-none-any.whl.zip tmp/pic_rucio-0.1.1-py3-none-any.whl.zip --markdown 20230414/p/pic-rucio/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 19:49:06] INFO root fetch - main [MainThread]: End processing [m3-learning]: success
+[2023-04-14 19:49:06] INFO root fetch - main [MainThread]: End processing [cursesplus]: success
+[2023-04-14 19:49:06] INFO root fetch - main [MainThread]: End processing [pic-rucio]: success
+[2023-04-14 19:49:08] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
+[2023-04-14 19:49:08] INFO root fetch - main [MainThread]: Store serial: [17710989]
