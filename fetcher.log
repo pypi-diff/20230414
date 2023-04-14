@@ -13787,3 +13787,103 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 14:52:08] INFO root fetch - main [MainThread]: End processing [findontime]: success
 [2023-04-14 14:52:09] INFO root fetch - main [MainThread]: End processing [dsw-tdk]: success
 [2023-04-14 14:52:09] INFO root fetch - main [MainThread]: Store serial: [17707266]
+[2023-04-14 14:57:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17707266]
+[2023-04-14 14:57:17] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-14 14:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: compressbinarytable
+[2023-04-14 14:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bingbong
+[2023-04-14 14:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kinisi
+[2023-04-14 14:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: somnium
+[2023-04-14 14:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: durkon
+[2023-04-14 14:57:17] INFO root fetch - processPackages [bingbong]: New version: [0.1.6.2] Old Version: [0.1.6.1]
+[2023-04-14 14:57:17] INFO root fetch - processPackages [compressbinarytable]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-14 14:57:17] WARNING root fetch - processPackages [somnium]: Skipping, unable to determine old version
+[2023-04-14 14:57:17] INFO root fetch - processPackages [somnium]: Start processing: pcleaner
+[2023-04-14 14:57:17] INFO root fetch - main [MainThread]: End processing [somnium] error
+[2023-04-14 14:57:17] INFO root fetch - processPackages [durkon]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-14 14:57:17] INFO root fetch - processPackages [kinisi]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-14 14:57:17] INFO root fetch - processPackages [pcleaner]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-14 14:57:17] INFO root fetch - processPackages [compressbinarytable]: Downloading https://files.pythonhosted.org/packages/0c/a2/26a3d60c3f26600db8c9ba180e31b882e4975ab5ba08ada9b9a7f701e235/compressbinarytable-0.1.7.tar.gz
+[2023-04-14 14:57:17] INFO root fetch - processPackages [kinisi]: Downloading https://files.pythonhosted.org/packages/33/10/6aa4e0aa7b95ae1796123f060874985489cdb696d046b16c392405b77830/kinisi-0.6.4.tar.gz
+[2023-04-14 14:57:17] INFO root fetch - processPackages [durkon]: Downloading https://files.pythonhosted.org/packages/a9/7e/69f97cf77afa5039e864ddcabefecb9b74217144cbdb2ee3332465f4080a/durkon-0.0.7.tar.gz
+[2023-04-14 14:57:17] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/87/4b/701f26d06dd2e0b7f04a46039cb652f348f2441c0ea927e111fa6e6dcb96/pcleaner-1.5.2.tar.gz
+[2023-04-14 14:57:17] INFO root fetch - processPackages [pcleaner]: executing diffoscope
+[2023-04-14 14:57:17] INFO root fetch - processPackages [pcleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcleaner-1.5.1.tar.gz tmp/pcleaner-1.5.2.tar.gz --markdown 20230414/p/pcleaner/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-14 14:57:17] INFO root fetch - processPackages [kinisi]: executing diffoscope
+[2023-04-14 14:57:17] INFO root fetch - processPackages [kinisi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kinisi-0.6.3.tar.gz tmp/kinisi-0.6.4.tar.gz --markdown 20230414/k/kinisi/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-14 14:57:17] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/74/3b/14f584cddfe852fe942d16ece5bff7991d4be5c3608e475b3e86de9f061a/bingbong-0.1.6.2-py3-none-any.whl
+[2023-04-14 14:57:17] INFO root fetch - processPackages [compressbinarytable]: Downloading https://files.pythonhosted.org/packages/2e/3f/d865b85dbb706c4254d2809783dade5d946388d6721ae5fb1b9cace5af60/compressbinarytable-0.1.8.tar.gz
+[2023-04-14 14:57:17] INFO root fetch - processPackages [bingbong]: executing diffoscope
+[2023-04-14 14:57:17] INFO root fetch - processPackages [bingbong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingbong-0.1.6.1-py3-none-any.whl.zip tmp/bingbong-0.1.6.2-py3-none-any.whl.zip --markdown 20230414/b/bingbong/0.1.6.1-0.1.6.2/diff.md --exclude *.pyd
+[2023-04-14 14:57:17] INFO root fetch - processPackages [compressbinarytable]: executing diffoscope
+[2023-04-14 14:57:17] INFO root fetch - processPackages [compressbinarytable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compressbinarytable-0.1.7.tar.gz tmp/compressbinarytable-0.1.8.tar.gz --markdown 20230414/c/compressbinarytable/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-14 14:57:17] INFO root fetch - processPackages [durkon]: Downloading https://files.pythonhosted.org/packages/92/49/5a99ec8161bf70ac3ad90d61f1d779e3951e98d1c4f579fd636c790cc317/durkon-0.0.8.tar.gz
+[2023-04-14 14:57:17] INFO root fetch - processPackages [durkon]: executing diffoscope
+[2023-04-14 14:57:17] INFO root fetch - processPackages [durkon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/durkon-0.0.7.tar.gz tmp/durkon-0.0.8.tar.gz --markdown 20230414/d/durkon/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 14:57:18] INFO root fetch - processPackages [compressbinarytable]: Start processing: fractal-server
+[2023-04-14 14:57:18] INFO root fetch - main [MainThread]: End processing [compressbinarytable]: success
+[2023-04-14 14:57:18] INFO root fetch - processPackages [fractal-server]: New version: [1.2.0a4] Old Version: [1.2.0a3]
+[2023-04-14 14:57:18] INFO root fetch - processPackages [bingbong]: Start processing: herbiv
+[2023-04-14 14:57:18] INFO root fetch - main [MainThread]: End processing [bingbong]: success
+[2023-04-14 14:57:18] INFO root fetch - processPackages [herbiv]: New version: [0.1a4] Old Version: [0.1a3]
+[2023-04-14 14:57:18] INFO root fetch - processPackages [pcleaner]: Start processing: aws-cdk.lambda-layer-kubectl-v26
+[2023-04-14 14:57:18] INFO root fetch - main [MainThread]: End processing [pcleaner]: success
+[2023-04-14 14:57:18] WARNING root fetch - processPackages [aws-cdk.lambda-layer-kubectl-v26]: Skipping, unable to determine old version
+[2023-04-14 14:57:18] INFO root fetch - processPackages [aws-cdk.lambda-layer-kubectl-v26]: Start processing: awscdk-resources-mongodbatlas
+[2023-04-14 14:57:18] INFO root fetch - main [MainThread]: End processing [aws-cdk.lambda-layer-kubectl-v26] error
+[2023-04-14 14:57:18] WARNING root fetch - processPackages [awscdk-resources-mongodbatlas]: Skipping, unable to determine old version
+[2023-04-14 14:57:18] INFO root fetch - processPackages [awscdk-resources-mongodbatlas]: Start processing: autoupgrade-prima
+[2023-04-14 14:57:18] INFO root fetch - main [MainThread]: End processing [awscdk-resources-mongodbatlas] error
+[2023-04-14 14:57:18] INFO root fetch - processPackages [autoupgrade-prima]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-14 14:57:19] INFO root fetch - processPackages [fractal-server]: Downloading https://files.pythonhosted.org/packages/b5/27/0ceaa096adb202467e2cb2d8b9fc73ff745ec28db93225071a27bbac6457/fractal_server-1.2.0a4.tar.gz
+[2023-04-14 14:57:19] INFO root fetch - processPackages [autoupgrade-prima]: Downloading https://files.pythonhosted.org/packages/23/a0/e5586169ff55c6a2b689f58ae3e002eb3bfcf3b71f57012961b1c69c735b/autoupgrade_prima-0.6.4-py2.py3-none-any.whl
+[2023-04-14 14:57:19] INFO root fetch - processPackages [herbiv]: Downloading https://files.pythonhosted.org/packages/8c/b9/3e97a3d302fad5a4d43a382907437e7c75ef2c31f51cb021c4a471fc308c/herbiv-0.1a4.tar.gz
+[2023-04-14 14:57:19] INFO root fetch - processPackages [fractal-server]: executing diffoscope
+[2023-04-14 14:57:19] INFO root fetch - processPackages [fractal-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fractal_server-1.2.0a3.tar.gz tmp/fractal_server-1.2.0a4.tar.gz --markdown 20230414/f/fractal-server/1.2.0a3-1.2.0a4/diff.md --exclude *.pyd
+[2023-04-14 14:57:19] INFO root fetch - processPackages [durkon]: Start processing: orchid-python-api
+[2023-04-14 14:57:19] INFO root fetch - main [MainThread]: End processing [durkon]: success
+[2023-04-14 14:57:19] INFO root fetch - processPackages [orchid-python-api]: New version: [2023.1.220] Old Version: [2022.4.252]
+[2023-04-14 14:57:19] INFO root fetch - processPackages [autoupgrade-prima]: Downloading https://files.pythonhosted.org/packages/a6/a2/bd00b7cb6b0ad196cf0c7289a11cbefbb42a6f8c36724d6fe9030dcbb943/autoupgrade_prima-0.6.5-py2.py3-none-any.whl
+[2023-04-14 14:57:19] INFO root fetch - processPackages [autoupgrade-prima]: executing diffoscope
+[2023-04-14 14:57:19] INFO root fetch - processPackages [autoupgrade-prima]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoupgrade_prima-0.6.4-py2.py3-none-any.whl.zip tmp/autoupgrade_prima-0.6.5-py2.py3-none-any.whl.zip --markdown 20230414/a/autoupgrade-prima/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-14 14:57:19] INFO root fetch - processPackages [orchid-python-api]: Downloading https://files.pythonhosted.org/packages/d0/43/b20e04f7835ac4256f47d00614c5dadfaebfa0be2d5e1012a3de20d1c18c/orchid_python_api-2022.4.252.tar.gz
+[2023-04-14 14:57:19] INFO root fetch - processPackages [orchid-python-api]: Downloading https://files.pythonhosted.org/packages/8f/29/2b20207bcd3716a8b302581120f20aee93d5cd20bb105ee8842f8a569241/orchid_python_api-2023.1.220.tar.gz
+[2023-04-14 14:57:19] INFO root fetch - processPackages [orchid-python-api]: executing diffoscope
+[2023-04-14 14:57:19] INFO root fetch - processPackages [orchid-python-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orchid_python_api-2022.4.252.tar.gz tmp/orchid_python_api-2023.1.220.tar.gz --markdown 20230414/o/orchid-python-api/2022.4.252-2023.1.220/diff.md --exclude *.pyd
+[2023-04-14 14:57:19] INFO root fetch - processPackages [herbiv]: executing diffoscope
+[2023-04-14 14:57:19] INFO root fetch - processPackages [herbiv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/herbiv-0.1a3.tar.gz tmp/herbiv-0.1a4.tar.gz --markdown 20230414/h/herbiv/0.1a3-0.1a4/diff.md --exclude *.pyd
+[2023-04-14 14:57:20] INFO root fetch - processPackages [autoupgrade-prima]: Start processing: oc-orm-initializator
+[2023-04-14 14:57:20] INFO root fetch - main [MainThread]: End processing [autoupgrade-prima]: success
+[2023-04-14 14:57:20] WARNING root fetch - processPackages [oc-orm-initializator]: Skipping, unable to determine old version
+[2023-04-14 14:57:20] INFO root fetch - processPackages [oc-orm-initializator]: Start processing: compressbinarytable
+[2023-04-14 14:57:20] INFO root fetch - main [MainThread]: End processing [oc-orm-initializator] error
+[2023-04-14 14:57:20] INFO root fetch - processPackages [compressbinarytable]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-14 14:57:20] INFO root fetch - processPackages [compressbinarytable]: executing diffoscope
+[2023-04-14 14:57:20] INFO root fetch - processPackages [compressbinarytable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compressbinarytable-0.1.7.tar.gz tmp/compressbinarytable-0.1.8.tar.gz --markdown 20230414/c/compressbinarytable/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-14 14:57:20] INFO root fetch - processPackages [fractal-server]: Start processing: capellambse
+[2023-04-14 14:57:20] INFO root fetch - main [MainThread]: End processing [fractal-server]: success
+[2023-04-14 14:57:21] INFO root fetch - processPackages [kinisi]: Start processing: python-dxf
+[2023-04-14 14:57:21] INFO root fetch - main [MainThread]: End processing [kinisi]: success
+[2023-04-14 14:57:21] INFO root fetch - processPackages [capellambse]: New version: [0.5.9.dev5] Old Version: [0.5.9]
+[2023-04-14 14:57:21] INFO root fetch - processPackages [python-dxf]: New version: [9.0.1] Old Version: [8.0.2]
+[2023-04-14 14:57:21] INFO root fetch - processPackages [capellambse]: executing diffoscope
+[2023-04-14 14:57:21] INFO root fetch - processPackages [capellambse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capellambse-0.5.9.tar.gz tmp/capellambse-0.5.9.dev5.tar.gz --markdown 20230414/c/capellambse/0.5.9-0.5.9.dev5/diff.md --exclude *.pyd
+[2023-04-14 14:57:21] INFO root fetch - processPackages [python-dxf]: executing diffoscope
+[2023-04-14 14:57:21] INFO root fetch - processPackages [python-dxf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-dxf-8.0.2.tar.gz tmp/python-dxf-9.0.1.tar.gz --markdown 20230414/p/python-dxf/8.0.2-9.0.1/diff.md --exclude *.pyd
+[2023-04-14 14:57:21] INFO root fetch - processPackages [compressbinarytable]: Start processing: cloudshell-networking-cisco
+[2023-04-14 14:57:21] INFO root fetch - main [MainThread]: End processing [compressbinarytable]: success
+[2023-04-14 14:57:21] INFO root fetch - processPackages [cloudshell-networking-cisco]: New version: [7.0.0] Old Version: [6.1.4]
+[2023-04-14 14:57:21] INFO root fetch - processPackages [cloudshell-networking-cisco]: Downloading https://files.pythonhosted.org/packages/f5/a6/38806be47d9cf535ac2670f05c600969c9cfddab75d17e07482c8b2075cd/cloudshell-networking-cisco-6.1.4.zip
+[2023-04-14 14:57:22] INFO root fetch - processPackages [herbiv]: Start processing: cir4mics
+[2023-04-14 14:57:22] INFO root fetch - main [MainThread]: End processing [herbiv]: success
+[2023-04-14 14:57:22] INFO root fetch - processPackages [cir4mics]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-14 14:57:22] INFO root fetch - processPackages [cloudshell-networking-cisco]: Downloading https://files.pythonhosted.org/packages/b5/cb/442a0750ebf16f5a742aedb4d9e464f62ba9d439b83e4e8de0f85ea67b7d/cloudshell-networking-cisco-7.0.0.zip
+[2023-04-14 14:57:22] INFO root fetch - processPackages [cir4mics]: executing diffoscope
+[2023-04-14 14:57:22] INFO root fetch - processPackages [cir4mics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cir4mics-0.1.3.tar.gz tmp/cir4mics-0.1.4.tar.gz --markdown 20230414/c/cir4mics/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-14 14:57:22] INFO root fetch - main [MainThread]: End processing [orchid-python-api]: success
+[2023-04-14 14:57:22] INFO root fetch - processPackages [cloudshell-networking-cisco]: executing diffoscope
+[2023-04-14 14:57:22] INFO root fetch - processPackages [cloudshell-networking-cisco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudshell-networking-cisco-6.1.4.zip tmp/cloudshell-networking-cisco-7.0.0.zip --markdown 20230414/c/cloudshell-networking-cisco/6.1.4-7.0.0/diff.md --exclude *.pyd
+[2023-04-14 14:57:22] INFO root fetch - main [MainThread]: End processing [python-dxf]: success
+[2023-04-14 14:57:24] INFO root fetch - main [MainThread]: End processing [cloudshell-networking-cisco]: success
+[2023-04-14 14:57:24] INFO root fetch - main [MainThread]: End processing [cir4mics]: success
+[2023-04-14 14:57:28] INFO root fetch - main [MainThread]: End processing [capellambse]: success
+[2023-04-14 14:57:28] INFO root fetch - main [MainThread]: Store serial: [17707336]
