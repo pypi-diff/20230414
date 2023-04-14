@@ -5802,3 +5802,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 03:49:31] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
 [2023-04-14 03:49:31] INFO root fetch - main [MainThread]: End processing [boa-fm]: success
 [2023-04-14 03:49:31] INFO root fetch - main [MainThread]: Store serial: [17702372]
+[2023-04-14 03:54:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702372]
+[2023-04-14 03:54:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-14 03:54:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: card-component-st-test
+[2023-04-14 03:54:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onvif-zeep-async
+[2023-04-14 03:54:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastel
+[2023-04-14 03:54:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellmap
+[2023-04-14 03:54:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: insights-core
+[2023-04-14 03:54:39] INFO root fetch - processPackages [onvif-zeep-async]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-14 03:54:39] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304140154] Old Version: [1.0.1.dev202304140021]
+[2023-04-14 03:54:39] WARNING root fetch - processPackages [card-component-st-test]: Skipping, unable to determine old version
+[2023-04-14 03:54:39] INFO root fetch - main [MainThread]: End processing [card-component-st-test] error
+[2023-04-14 03:54:39] INFO root fetch - processPackages [insights-core]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-04-14 03:54:39] INFO root fetch - processPackages [fastel]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-14 03:54:39] INFO root fetch - processPackages [insights-core]: Downloading https://files.pythonhosted.org/packages/f3/81/16f7a849f7cbc9bee8db9f5977d010b158789872781fa41fbd360186ba1d/insights-core-3.1.8.tar.gz
+[2023-04-14 03:54:39] INFO root fetch - processPackages [fastel]: Downloading https://files.pythonhosted.org/packages/d4/7c/0ac3553271018540f34e1c23fe0d5f1dd1c745d8eceb8354f57ba65bab50/fastel-2.7.8.tar.gz
+[2023-04-14 03:54:39] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/43/71/30ff89591fa0066bc4cc48e6ce85da2b8deee62ca83efeffcd0a24ead597/cellmap-1.0.1.dev202304140154-py3-none-any.whl
+[2023-04-14 03:54:39] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/9f/de/8b36e69a11307316d83078ae2d0447e72dca0249ff0a978b0be250392e7d/onvif-zeep-async-1.2.5.tar.gz
+[2023-04-14 03:54:39] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-14 03:54:39] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304140021-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304140154-py3-none-any.whl.zip --markdown 20230414/c/cellmap/1.0.1.dev202304140021-1.0.1.dev202304140154/diff.md --exclude *.pyd
+[2023-04-14 03:54:39] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-04-14 03:54:39] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-1.2.4.tar.gz tmp/onvif-zeep-async-1.2.5.tar.gz --markdown 20230414/o/onvif-zeep-async/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-14 03:54:40] INFO root fetch - processPackages [fastel]: Downloading https://files.pythonhosted.org/packages/9c/ee/07f1d2a50223ed3acf40b6c4fe9e9cf7cddc2cc50050109b66f2104c8dec/fastel-2.7.9.tar.gz
+[2023-04-14 03:54:40] INFO root fetch - processPackages [insights-core]: Downloading https://files.pythonhosted.org/packages/f5/b2/60deb6f5b9efa1b3747c5a8d04cebd550974d0cf3d58f995c286096830b7/insights-core-3.1.9.tar.gz
+[2023-04-14 03:54:40] INFO root fetch - processPackages [fastel]: executing diffoscope
+[2023-04-14 03:54:40] INFO root fetch - processPackages [fastel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastel-2.7.8.tar.gz tmp/fastel-2.7.9.tar.gz --markdown 20230414/f/fastel/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-14 03:54:40] INFO root fetch - processPackages [insights-core]: executing diffoscope
+[2023-04-14 03:54:40] INFO root fetch - processPackages [insights-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/insights-core-3.1.8.tar.gz tmp/insights-core-3.1.9.tar.gz --markdown 20230414/i/insights-core/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-04-14 03:54:40] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-14 03:54:41] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-04-14 03:54:41] INFO root fetch - main [MainThread]: End processing [fastel]: success
+[2023-04-14 03:55:01] INFO root fetch - main [MainThread]: End processing [insights-core]: success
+[2023-04-14 03:55:01] INFO root fetch - main [MainThread]: Store serial: [17702388]
