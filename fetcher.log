@@ -8249,3 +8249,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 08:56:46] INFO root fetch - main [MainThread]: End processing [maus]: success
 [2023-04-14 08:56:48] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-04-14 08:56:48] INFO root fetch - main [MainThread]: Store serial: [17703855]
+[2023-04-14 09:01:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703855]
+[2023-04-14 09:01:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-14 09:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyscancf
+[2023-04-14 09:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqio-nightly
+[2023-04-14 09:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biglist
+[2023-04-14 09:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: revproxy-auth
+[2023-04-14 09:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: katalytic-pkg
+[2023-04-14 09:01:56] INFO root fetch - processPackages [katalytic-pkg]: New version: [0.2.3] Old Version: [0.2.0]
+[2023-04-14 09:01:56] INFO root fetch - processPackages [biglist]: New version: [0.7.9b6] Old Version: [0.7.9b5]
+[2023-04-14 09:01:56] INFO root fetch - processPackages [pyscancf]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-04-14 09:01:56] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-04-14 09:01:56] WARNING root fetch - processPackages [revproxy-auth]: Skipping, unable to determine old version
+[2023-04-14 09:01:56] INFO root fetch - processPackages [revproxy-auth]: Start processing: py-unused-deps
+[2023-04-14 09:01:56] INFO root fetch - main [MainThread]: End processing [revproxy-auth] error
+[2023-04-14 09:01:56] INFO root fetch - processPackages [py-unused-deps]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-14 09:01:56] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-04-14 09:01:56] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230414/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-04-14 09:01:56] INFO root fetch - processPackages [pyscancf]: Downloading https://files.pythonhosted.org/packages/ae/d9/7079beb5171aba2f7e34863c5ca9bdaf31fa1c33cdc1a3dffc2a399b335e/pyscancf-1.0.7-py3-none-any.whl
+[2023-04-14 09:01:57] INFO root fetch - processPackages [biglist]: Downloading https://files.pythonhosted.org/packages/d4/c9/00f368903fbaa58f60871560effb1317c32afea442308d00c87a1db4885c/biglist-0.7.9b6.tar.gz
+[2023-04-14 09:01:57] INFO root fetch - processPackages [katalytic-pkg]: Downloading https://files.pythonhosted.org/packages/68/77/a68055f687f38e7d6afe6ff66bf0d4613f30e1f038efe2e7508ac6a2fd5a/katalytic-pkg-0.2.3.tar.gz
+[2023-04-14 09:01:57] INFO root fetch - processPackages [py-unused-deps]: Downloading https://files.pythonhosted.org/packages/f1/5b/cae4beea3cd187b8c91988f48535c1f659c490699d82a5e8630466b3a586/py-unused-deps-0.3.0.tar.gz
+[2023-04-14 09:01:57] INFO root fetch - processPackages [katalytic-pkg]: executing diffoscope
+[2023-04-14 09:01:57] INFO root fetch - processPackages [katalytic-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-pkg-0.2.0.tar.gz tmp/katalytic-pkg-0.2.3.tar.gz --markdown 20230414/k/katalytic-pkg/0.2.0-0.2.3/diff.md --exclude *.pyd
+[2023-04-14 09:01:57] INFO root fetch - processPackages [biglist]: executing diffoscope
+[2023-04-14 09:01:57] INFO root fetch - processPackages [biglist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biglist-0.7.9b5.tar.gz tmp/biglist-0.7.9b6.tar.gz --markdown 20230414/b/biglist/0.7.9b5-0.7.9b6/diff.md --exclude *.pyd
+[2023-04-14 09:01:57] INFO root fetch - processPackages [py-unused-deps]: executing diffoscope
+[2023-04-14 09:01:57] INFO root fetch - processPackages [py-unused-deps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-unused-deps-0.2.1.tar.gz tmp/py-unused-deps-0.3.0.tar.gz --markdown 20230414/p/py-unused-deps/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 09:01:57] INFO root fetch - processPackages [pyscancf]: Downloading https://files.pythonhosted.org/packages/0f/dd/5d604af7eb637783e9e2b9facc3904578f2dd8e03658ad5af01fe24e8292/pyscancf-1.0.9-py3-none-any.whl
+[2023-04-14 09:01:57] INFO root fetch - processPackages [pyscancf]: executing diffoscope
+[2023-04-14 09:01:57] INFO root fetch - processPackages [pyscancf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscancf-1.0.7-py3-none-any.whl.zip tmp/pyscancf-1.0.9-py3-none-any.whl.zip --markdown 20230414/p/pyscancf/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 09:01:58] INFO root fetch - main [MainThread]: End processing [katalytic-pkg]: success
+[2023-04-14 09:01:58] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-04-14 09:01:58] INFO root fetch - main [MainThread]: End processing [biglist]: success
+[2023-04-14 09:01:58] INFO root fetch - main [MainThread]: End processing [py-unused-deps]: success
+[2023-04-14 09:01:58] INFO root fetch - main [MainThread]: End processing [pyscancf]: success
+[2023-04-14 09:01:58] INFO root fetch - main [MainThread]: Store serial: [17703880]
