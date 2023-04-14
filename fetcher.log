@@ -13098,3 +13098,101 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 14:15:05] INFO root fetch - main [MainThread]: End processing [XZGUtil]: success
 [2023-04-14 14:15:07] INFO root fetch - main [MainThread]: End processing [fastphase]: success
 [2023-04-14 14:15:07] INFO root fetch - main [MainThread]: Store serial: [17706842]
+[2023-04-14 14:20:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706842]
+[2023-04-14 14:20:14] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-14 14:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: test-23234231
+[2023-04-14 14:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kmRead
+[2023-04-14 14:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-pattern-import-export
+[2023-04-14 14:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kinisi
+[2023-04-14 14:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: test-23234231
+[2023-04-14 14:20:15] INFO root fetch - processPackages [kmRead]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 14:20:15] INFO root fetch - processPackages [test-23234231]: New version: [232] Old Version: [11]
+[2023-04-14 14:20:15] INFO root fetch - processPackages [odoo14-addon-pattern-import-export]: New version: [14.0.2.5.0] Old Version: [14.0.2.4.3.dev1]
+[2023-04-14 14:20:15] INFO root fetch - processPackages [test-23234231]: New version: [232] Old Version: [11]
+[2023-04-14 14:20:15] INFO root fetch - processPackages [kinisi]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-14 14:20:15] INFO root fetch - processPackages [test-23234231]: Downloading https://files.pythonhosted.org/packages/a0/1e/d12660487bd6f9380b90dca77d61085a7ed1f88451f40306bf30b11c7847/test_23234231-11.tar.gz
+[2023-04-14 14:20:15] INFO root fetch - processPackages [test-23234231]: Downloading https://files.pythonhosted.org/packages/a0/1e/d12660487bd6f9380b90dca77d61085a7ed1f88451f40306bf30b11c7847/test_23234231-11.tar.gz
+[2023-04-14 14:20:15] INFO root fetch - processPackages [odoo14-addon-pattern-import-export]: Downloading https://files.pythonhosted.org/packages/50/cb/23e7a4d1d43cf8f1e0d015b232a67672454dff1eaf51039e5199745e11fb/odoo14_addon_pattern_import_export-14.0.2.4.3.dev1-py3-none-any.whl
+[2023-04-14 14:20:15] INFO root fetch - processPackages [kinisi]: Downloading https://files.pythonhosted.org/packages/36/3c/b8de311220888fb04e29416721457c586f4a3762f6d41ba09c35fb15d194/kinisi-0.6.2.tar.gz
+[2023-04-14 14:20:15] INFO root fetch - processPackages [kmRead]: Downloading https://files.pythonhosted.org/packages/e6/dd/a3438d28a9d667931cc10c7f7f641fc8689e9184dd915fa75f30ad387167/kmRead-0.1.6.tar.gz
+[2023-04-14 14:20:15] INFO root fetch - processPackages [kmRead]: executing diffoscope
+[2023-04-14 14:20:15] INFO root fetch - processPackages [kmRead]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmRead-0.1.5.tar.gz tmp/kmRead-0.1.6.tar.gz --markdown 20230414/k/kmRead/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 14:20:15] INFO root fetch - processPackages [test-23234231]: Downloading https://files.pythonhosted.org/packages/2c/26/30e704fa1c150a61d8d17f81d47b769acdc963c7f951949c6a677770f44c/test_23234231-232.tar.gz
+[2023-04-14 14:20:15] INFO root fetch - processPackages [test-23234231]: Downloading https://files.pythonhosted.org/packages/2c/26/30e704fa1c150a61d8d17f81d47b769acdc963c7f951949c6a677770f44c/test_23234231-232.tar.gz
+[2023-04-14 14:20:15] INFO root fetch - processPackages [odoo14-addon-pattern-import-export]: Downloading https://files.pythonhosted.org/packages/f0/8a/1b055981d8a0d9c370420fd56d67bcf679ffeac6cc26b6b7e16986154361/odoo14_addon_pattern_import_export-14.0.2.5.0-py3-none-any.whl
+[2023-04-14 14:20:15] INFO root fetch - processPackages [kinisi]: Downloading https://files.pythonhosted.org/packages/ad/2d/98ed2315b412f3d2f44b8bc22db6c04a3e7d1099446d14bfc4cad70799ca/kinisi-0.6.3.tar.gz
+[2023-04-14 14:20:15] INFO root fetch - processPackages [test-23234231]: executing diffoscope
+[2023-04-14 14:20:15] INFO root fetch - processPackages [test-23234231]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_23234231-11.tar.gz tmp/test_23234231-232.tar.gz --markdown 20230414/t/test-23234231/11-232/diff.md --exclude *.pyd
+[2023-04-14 14:20:15] INFO root fetch - processPackages [test-23234231]: executing diffoscope
+[2023-04-14 14:20:15] INFO root fetch - processPackages [test-23234231]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_23234231-11.tar.gz tmp/test_23234231-232.tar.gz --markdown 20230414/t/test-23234231/11-232/diff.md --exclude *.pyd
+[2023-04-14 14:20:15] INFO root fetch - processPackages [odoo14-addon-pattern-import-export]: executing diffoscope
+[2023-04-14 14:20:15] INFO root fetch - processPackages [odoo14-addon-pattern-import-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_pattern_import_export-14.0.2.4.3.dev1-py3-none-any.whl.zip tmp/odoo14_addon_pattern_import_export-14.0.2.5.0-py3-none-any.whl.zip --markdown 20230414/o/odoo14-addon-pattern-import-export/14.0.2.4.3.dev1-14.0.2.5.0/diff.md --exclude *.pyd
+[2023-04-14 14:20:16] INFO root fetch - processPackages [kinisi]: executing diffoscope
+[2023-04-14 14:20:16] INFO root fetch - processPackages [kinisi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kinisi-0.6.2.tar.gz tmp/kinisi-0.6.3.tar.gz --markdown 20230414/k/kinisi/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-14 14:20:16] INFO root fetch - processPackages [kmRead]: Start processing: pyProcessAutom
+[2023-04-14 14:20:16] INFO root fetch - main [MainThread]: End processing [kmRead]: success
+[2023-04-14 14:20:16] INFO root fetch - processPackages [pyProcessAutom]: New version: [1.4.7] Old Version: [1.4.6]
+[2023-04-14 14:20:16] INFO root fetch - processPackages [pyProcessAutom]: Downloading https://files.pythonhosted.org/packages/90/c4/42e3f870022046a2a84afd1feacd663b6c3593749af9d23edfb7a52fa74c/pyProcessAutom-1.4.7.tar.gz
+[2023-04-14 14:20:17] INFO root fetch - processPackages [pyProcessAutom]: executing diffoscope
+[2023-04-14 14:20:17] INFO root fetch - processPackages [pyProcessAutom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyProcessAutom-1.4.6.tar.gz tmp/pyProcessAutom-1.4.7.tar.gz --markdown 20230414/p/pyProcessAutom/1.4.6-1.4.7/diff.md --exclude *.pyd
+[2023-04-14 14:20:17] INFO root fetch - processPackages [odoo14-addon-pattern-import-export]: Start processing: abrain
+[2023-04-14 14:20:17] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pattern-import-export]: success
+[2023-04-14 14:20:17] INFO root fetch - processPackages [abrain]: New version: [1.0rc0.post3] Old Version: [1.0rc0]
+[2023-04-14 14:20:17] INFO root fetch - processPackages [test-23234231]: Start processing: hb-test-generator
+[2023-04-14 14:20:17] INFO root fetch - main [MainThread]: End processing [test-23234231]: success
+[2023-04-14 14:20:17] INFO root fetch - processPackages [hb-test-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 14:20:17] INFO root fetch - processPackages [abrain]: Downloading https://files.pythonhosted.org/packages/68/9b/7f8eb4f786ac2c4a94e5777aacb99acd4194e54b7fe34c577b1e05d91165/abrain-1.0rc0.tar.gz
+[2023-04-14 14:20:17] INFO root fetch - processPackages [hb-test-generator]: executing diffoscope
+[2023-04-14 14:20:17] INFO root fetch - processPackages [hb-test-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hb-test-generator-0.1.8.tar.gz tmp/hb-test-generator-0.1.9.tar.gz --markdown 20230414/h/hb-test-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 14:20:17] INFO root fetch - processPackages [kinisi]: Start processing: asone
+[2023-04-14 14:20:17] INFO root fetch - main [MainThread]: End processing [kinisi]: success
+[2023-04-14 14:20:17] INFO root fetch - processPackages [asone]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-14 14:20:17] INFO root fetch - processPackages [abrain]: Downloading https://files.pythonhosted.org/packages/2b/b5/04a3b8419df876022b1912368629ee05eaae10a4c6a1a76c7c62c98c8789/abrain-1.0rc0.post3.tar.gz
+[2023-04-14 14:20:17] INFO root fetch - processPackages [test-23234231]: Start processing: codefast
+[2023-04-14 14:20:17] INFO root fetch - main [MainThread]: End processing [test-23234231]: success
+[2023-04-14 14:20:17] INFO root fetch - processPackages [codefast]: New version: [23.4.8.2] Old Version: [23.4.7.8]
+[2023-04-14 14:20:17] INFO root fetch - processPackages [asone]: Downloading https://files.pythonhosted.org/packages/54/ab/cbc76ba4fb38fa4b0bb06b435952cc7f42fd8a56fa35d623a2d0584e7cf5/asone-0.2.6-py3-none-any.whl
+[2023-04-14 14:20:17] INFO root fetch - processPackages [abrain]: executing diffoscope
+[2023-04-14 14:20:17] INFO root fetch - processPackages [abrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abrain-1.0rc0.tar.gz tmp/abrain-1.0rc0.post3.tar.gz --markdown 20230414/a/abrain/1.0rc0-1.0rc0.post3/diff.md --exclude *.pyd
+[2023-04-14 14:20:17] INFO root fetch - processPackages [asone]: executing diffoscope
+[2023-04-14 14:20:17] INFO root fetch - processPackages [asone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asone-0.2.5-py3-none-any.whl.zip tmp/asone-0.2.6-py3-none-any.whl.zip --markdown 20230414/a/asone/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-14 14:20:18] INFO root fetch - processPackages [codefast]: executing diffoscope
+[2023-04-14 14:20:18] INFO root fetch - processPackages [codefast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codefast-23.4.7.8.tar.gz tmp/codefast-23.4.8.2.tar.gz --markdown 20230414/c/codefast/23.4.7.8-23.4.8.2/diff.md --exclude *.pyd
+[2023-04-14 14:20:18] INFO root fetch - processPackages [pyProcessAutom]: Start processing: pyquotegen
+[2023-04-14 14:20:18] INFO root fetch - main [MainThread]: End processing [pyProcessAutom]: success
+[2023-04-14 14:20:18] INFO root fetch - processPackages [pyquotegen]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 14:20:18] INFO root fetch - processPackages [hb-test-generator]: Start processing: rul-datasets
+[2023-04-14 14:20:18] INFO root fetch - main [MainThread]: End processing [hb-test-generator]: success
+[2023-04-14 14:20:18] INFO root fetch - processPackages [rul-datasets]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 14:20:18] INFO root fetch - processPackages [pyquotegen]: Downloading https://files.pythonhosted.org/packages/82/89/cb423562b6b192838494537420057b714e29b8c62f8e0bbe18b5c2b149fa/pyquotegen-0.0.2.tar.gz
+[2023-04-14 14:20:18] INFO root fetch - processPackages [rul-datasets]: executing diffoscope
+[2023-04-14 14:20:18] INFO root fetch - processPackages [rul-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rul_datasets-0.9.0.tar.gz tmp/rul_datasets-0.9.1.tar.gz --markdown 20230414/r/rul-datasets/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 14:20:18] INFO root fetch - processPackages [pyquotegen]: Downloading https://files.pythonhosted.org/packages/7c/dd/fc1d47c32a69c2832ec0c6fd1ced28c98d51244faf52a650fef8bf5b002a/pyquotegen-0.0.3.tar.gz
+[2023-04-14 14:20:18] INFO root fetch - processPackages [pyquotegen]: executing diffoscope
+[2023-04-14 14:20:18] INFO root fetch - processPackages [pyquotegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyquotegen-0.0.2.tar.gz tmp/pyquotegen-0.0.3.tar.gz --markdown 20230414/p/pyquotegen/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 14:20:19] INFO root fetch - processPackages [abrain]: Start processing: hestia-earth-models
+[2023-04-14 14:20:19] INFO root fetch - main [MainThread]: End processing [abrain]: success
+[2023-04-14 14:20:19] INFO root fetch - processPackages [hestia-earth-models]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 14:20:19] INFO root fetch - processPackages [hestia-earth-models]: executing diffoscope
+[2023-04-14 14:20:19] INFO root fetch - processPackages [hestia-earth-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hestia-earth-models-0.9.0.tar.gz tmp/hestia-earth-models-0.9.1.tar.gz --markdown 20230414/h/hestia-earth-models/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 14:20:19] INFO root fetch - processPackages [codefast]: Start processing: newick-tree-builder
+[2023-04-14 14:20:19] INFO root fetch - main [MainThread]: End processing [codefast]: success
+[2023-04-14 14:20:19] WARNING root fetch - processPackages [newick-tree-builder]: Skipping, unable to determine old version
+[2023-04-14 14:20:19] INFO root fetch - processPackages [newick-tree-builder]: Start processing: GoogleBard
+[2023-04-14 14:20:19] INFO root fetch - main [MainThread]: End processing [newick-tree-builder] error
+[2023-04-14 14:20:19] INFO root fetch - processPackages [GoogleBard]: New version: [0.0.7] Old Version: [0.0.6.1]
+[2023-04-14 14:20:19] INFO root fetch - processPackages [rul-datasets]: Start processing: robotmk
+[2023-04-14 14:20:19] INFO root fetch - main [MainThread]: End processing [rul-datasets]: success
+[2023-04-14 14:20:19] INFO root fetch - processPackages [robotmk]: New version: [0.0.52] Old Version: [0.0.51]
+[2023-04-14 14:20:19] INFO root fetch - processPackages [robotmk]: executing diffoscope
+[2023-04-14 14:20:19] INFO root fetch - processPackages [robotmk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotmk-0.0.51.tar.gz tmp/robotmk-0.0.52.tar.gz --markdown 20230414/r/robotmk/0.0.51-0.0.52/diff.md --exclude *.pyd
+[2023-04-14 14:20:19] INFO root fetch - processPackages [GoogleBard]: Downloading https://files.pythonhosted.org/packages/5f/c6/bc272d6149aaf9def89a43757e01daec5a743646b68011bca07f5b5576fe/GoogleBard-0.0.6.1.tar.gz
+[2023-04-14 14:20:19] INFO root fetch - main [MainThread]: End processing [pyquotegen]: success
+[2023-04-14 14:20:19] INFO root fetch - processPackages [GoogleBard]: Downloading https://files.pythonhosted.org/packages/02/9c/61b0e2ac16d8adb471723a062c046daec50e2db9bfc1498d621035b547b4/GoogleBard-0.0.7.tar.gz
+[2023-04-14 14:20:20] INFO root fetch - processPackages [GoogleBard]: executing diffoscope
+[2023-04-14 14:20:20] INFO root fetch - processPackages [GoogleBard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GoogleBard-0.0.6.1.tar.gz tmp/GoogleBard-0.0.7.tar.gz --markdown 20230414/G/GoogleBard/0.0.6.1-0.0.7/diff.md --exclude *.pyd
+[2023-04-14 14:20:20] INFO root fetch - main [MainThread]: End processing [asone]: success
+[2023-04-14 14:20:21] INFO root fetch - main [MainThread]: End processing [robotmk]: success
+[2023-04-14 14:20:21] INFO root fetch - main [MainThread]: End processing [GoogleBard]: success
+[2023-04-14 14:20:22] INFO root fetch - main [MainThread]: End processing [hestia-earth-models]: success
+[2023-04-14 14:20:22] INFO root fetch - main [MainThread]: Store serial: [17706927]
