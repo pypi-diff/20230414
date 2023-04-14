@@ -12816,3 +12816,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 13:53:45] INFO root fetch - main [MainThread]: End processing [odoo12-addon-product-intercompany-account]: success
 [2023-04-14 13:53:45] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
 [2023-04-14 13:53:45] INFO root fetch - main [MainThread]: Store serial: [17706589]
+[2023-04-14 13:58:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706589]
+[2023-04-14 13:58:53] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 13:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotmk
+[2023-04-14 13:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: orquestra-sdk
+[2023-04-14 13:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chelsa-cmip6
+[2023-04-14 13:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: extras-require
+[2023-04-14 13:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pythesyncer
+[2023-04-14 13:58:53] INFO root fetch - processPackages [chelsa-cmip6]: New version: [1.2] Old Version: [1.1]
+[2023-04-14 13:58:53] INFO root fetch - processPackages [orquestra-sdk]: New version: [0.46.0] Old Version: [0.45.1]
+[2023-04-14 13:58:53] INFO root fetch - processPackages [extras-require]: New version: [0.5.0] Old Version: [0.4.3]
+[2023-04-14 13:58:53] INFO root fetch - processPackages [robotmk]: New version: [0.0.52] Old Version: [0.0.51]
+[2023-04-14 13:58:53] WARNING root fetch - processPackages [pythesyncer]: Skipping, unable to determine old version
+[2023-04-14 13:58:53] INFO root fetch - processPackages [pythesyncer]: Start processing: wallycore
+[2023-04-14 13:58:53] INFO root fetch - main [MainThread]: End processing [pythesyncer] error
+[2023-04-14 13:58:53] INFO root fetch - processPackages [wallycore]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-14 13:58:53] INFO root fetch - processPackages [chelsa-cmip6]: Downloading https://files.pythonhosted.org/packages/40/ec/a401319d9dd27b9ea121274febfd2126af74dfa286737aa069a085a23927/chelsa_cmip6-1.1.tar.gz
+[2023-04-14 13:58:53] INFO root fetch - processPackages [orquestra-sdk]: Downloading https://files.pythonhosted.org/packages/40/4c/96cc6e4723407dcc294fd8f5503c122fe3c512b02ef60e6dd40f68b0519a/orquestra_sdk-0.45.1-py3-none-any.whl
+[2023-04-14 13:58:53] INFO root fetch - processPackages [extras-require]: Downloading https://files.pythonhosted.org/packages/3a/d3/28af9441ed26e11a45b7f91390c62b7432a005a6d963548206abf96f053d/extras_require-0.4.3.tar.gz
+[2023-04-14 13:58:53] INFO root fetch - processPackages [robotmk]: Downloading https://files.pythonhosted.org/packages/7f/0a/aa7898cebf1405dd98a802ee5f3a047bc577c2b64eb73ed29ae8dc181205/robotmk-0.0.52.tar.gz
+[2023-04-14 13:58:53] INFO root fetch - processPackages [wallycore]: Downloading https://files.pythonhosted.org/packages/85/3a/4a2c51f7de858f0d0ad96fc386f3e1c562e553c676d21a8eb01e0cf5292a/wallycore-0.8.8-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+[2023-04-14 13:58:53] INFO root fetch - processPackages [robotmk]: executing diffoscope
+[2023-04-14 13:58:53] INFO root fetch - processPackages [robotmk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotmk-0.0.51.tar.gz tmp/robotmk-0.0.52.tar.gz --markdown 20230414/r/robotmk/0.0.51-0.0.52/diff.md --exclude *.pyd
+[2023-04-14 13:58:53] INFO root fetch - processPackages [chelsa-cmip6]: Downloading https://files.pythonhosted.org/packages/24/9a/1e514908770403bce7b09d20aa62ee1d9106126ff19d370b72badd92d70d/chelsa_cmip6-1.2.tar.gz
+[2023-04-14 13:58:53] INFO root fetch - processPackages [extras-require]: Downloading https://files.pythonhosted.org/packages/6e/d2/dd3dfc25b0d4948de7a0aeb1d21b5cdee6f2289e39013fd0273220fed5ba/extras_require-0.5.0.tar.gz
+[2023-04-14 13:58:53] INFO root fetch - processPackages [orquestra-sdk]: Downloading https://files.pythonhosted.org/packages/85/d6/eefedcaf05b48cb78334e7a700e16f29b444133308cf5ebb788d54a00e43/orquestra-sdk-0.46.0.tar.gz
+[2023-04-14 13:58:54] INFO root fetch - processPackages [chelsa-cmip6]: executing diffoscope
+[2023-04-14 13:58:54] INFO root fetch - processPackages [chelsa-cmip6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chelsa_cmip6-1.1.tar.gz tmp/chelsa_cmip6-1.2.tar.gz --markdown 20230414/c/chelsa-cmip6/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-14 13:58:54] INFO root fetch - processPackages [extras-require]: executing diffoscope
+[2023-04-14 13:58:54] INFO root fetch - processPackages [extras-require]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extras_require-0.4.3.tar.gz tmp/extras_require-0.5.0.tar.gz --markdown 20230414/e/extras-require/0.4.3-0.5.0/diff.md --exclude *.pyd
+[2023-04-14 13:58:54] INFO root fetch - processPackages [wallycore]: Downloading https://files.pythonhosted.org/packages/6f/37/2f44617bd8293e063ac90040724a891f496f56466d79d70a52909f7c38a3/wallycore-0.8.9-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+[2023-04-14 13:58:54] INFO root fetch - processPackages [orquestra-sdk]: executing diffoscope
+[2023-04-14 13:58:54] INFO root fetch - processPackages [orquestra-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orquestra_sdk-0.45.1-py3-none-any.whl.zip tmp/orquestra-sdk-0.46.0.tar.gz --markdown 20230414/o/orquestra-sdk/0.45.1-0.46.0/diff.md --exclude *.pyd
+[2023-04-14 13:58:54] INFO root fetch - processPackages [wallycore]: executing diffoscope
+[2023-04-14 13:58:54] INFO root fetch - processPackages [wallycore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wallycore-0.8.8-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip tmp/wallycore-0.8.9-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip --markdown 20230414/w/wallycore/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-14 13:58:55] INFO root fetch - processPackages [chelsa-cmip6]: Start processing: inels-mqtt-new
+[2023-04-14 13:58:55] INFO root fetch - main [MainThread]: End processing [chelsa-cmip6]: success
+[2023-04-14 13:58:55] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-14 13:58:55] INFO root fetch - processPackages [extras-require]: Start processing: nlpo3
+[2023-04-14 13:58:55] INFO root fetch - main [MainThread]: End processing [extras-require]: success
+[2023-04-14 13:58:55] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-14 13:58:55] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230414/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-14 13:58:55] INFO root fetch - processPackages [nlpo3]: New version: [1.3.0] Old Version: [1.2.6]
+[2023-04-14 13:58:55] INFO root fetch - processPackages [robotmk]: Start processing: eargait
+[2023-04-14 13:58:55] INFO root fetch - main [MainThread]: End processing [robotmk]: success
+[2023-04-14 13:58:55] INFO root fetch - processPackages [eargait]: New version: [1.7.0] Old Version: [1.6.0]
+[2023-04-14 13:58:55] INFO root fetch - processPackages [nlpo3]: Downloading https://files.pythonhosted.org/packages/d6/3b/1514977f53c0e8e86b1fce6c9523cd7e248e729864505c7475bc13595700/nlpo3-1.2.6.tar.gz
+[2023-04-14 13:58:55] INFO root fetch - processPackages [nlpo3]: Downloading https://files.pythonhosted.org/packages/f0/32/c157467f2fdd4969a3d1c421e56aa7ec1f43f2c4c4ab405e93cf9226e047/nlpo3-1.3.0.tar.gz
+[2023-04-14 13:58:55] INFO root fetch - processPackages [eargait]: Downloading https://files.pythonhosted.org/packages/fc/40/c0e03b348604ef32dc8b33d4432b4e2de55e5019c1a6ee95db2d31330e94/eargait-1.7.0.tar.gz
+[2023-04-14 13:58:55] INFO root fetch - processPackages [nlpo3]: executing diffoscope
+[2023-04-14 13:58:55] INFO root fetch - processPackages [nlpo3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpo3-1.2.6.tar.gz tmp/nlpo3-1.3.0.tar.gz --markdown 20230414/n/nlpo3/1.2.6-1.3.0/diff.md --exclude *.pyd
+[2023-04-14 13:58:55] INFO root fetch - processPackages [orquestra-sdk]: Start processing: codcat
+[2023-04-14 13:58:55] INFO root fetch - main [MainThread]: End processing [orquestra-sdk]: success
+[2023-04-14 13:58:56] WARNING root fetch - processPackages [codcat]: Skipping, unable to determine old version
+[2023-04-14 13:58:56] INFO root fetch - processPackages [codcat]: Start processing: inels-mqtt-new
+[2023-04-14 13:58:56] INFO root fetch - main [MainThread]: End processing [codcat] error
+[2023-04-14 13:58:56] INFO root fetch - processPackages [eargait]: executing diffoscope
+[2023-04-14 13:58:56] INFO root fetch - processPackages [eargait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eargait-1.6.0.tar.gz tmp/eargait-1.7.0.tar.gz --markdown 20230414/e/eargait/1.6.0-1.7.0/diff.md --exclude *.pyd
+[2023-04-14 13:58:56] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-14 13:58:56] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-14 13:58:56] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230414/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-14 13:58:56] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
+[2023-04-14 13:58:57] INFO root fetch - main [MainThread]: End processing [eargait]: success
+[2023-04-14 13:58:57] INFO root fetch - main [MainThread]: End processing [nlpo3]: success
+[2023-04-14 13:58:57] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
+[2023-04-14 13:59:02] INFO root fetch - main [MainThread]: End processing [wallycore]: success
+[2023-04-14 13:59:02] INFO root fetch - main [MainThread]: Store serial: [17706695]
