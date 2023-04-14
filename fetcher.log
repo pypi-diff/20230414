@@ -12670,3 +12670,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 13:43:21] INFO root fetch - main [MainThread]: End processing [mosaik-influxdb2]: success
 [2023-04-14 13:43:21] INFO root fetch - main [MainThread]: End processing [aiven-client]: success
 [2023-04-14 13:43:21] INFO root fetch - main [MainThread]: Store serial: [17706480]
+[2023-04-14 13:48:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706480]
+[2023-04-14 13:48:29] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 13:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightguide
+[2023-04-14 13:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jina
+[2023-04-14 13:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hb-test-generator
+[2023-04-14 13:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stallmanGPT
+[2023-04-14 13:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wanna-ml
+[2023-04-14 13:48:29] INFO root fetch - processPackages [wanna-ml]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-14 13:48:29] INFO root fetch - processPackages [hb-test-generator]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-14 13:48:29] WARNING root fetch - processPackages [stallmanGPT]: Skipping, unable to determine old version
+[2023-04-14 13:48:29] INFO root fetch - processPackages [stallmanGPT]: Start processing: eth-py
+[2023-04-14 13:48:29] INFO root fetch - main [MainThread]: End processing [stallmanGPT] error
+[2023-04-14 13:48:29] INFO root fetch - processPackages [lightguide]: New version: [0.4.0] Old Version: [0.2.1]
+[2023-04-14 13:48:29] WARNING root fetch - processPackages [eth-py]: Skipping, unable to determine old version
+[2023-04-14 13:48:29] INFO root fetch - processPackages [eth-py]: Start processing: stable-baselines3
+[2023-04-14 13:48:29] INFO root fetch - main [MainThread]: End processing [eth-py] error
+[2023-04-14 13:48:29] INFO root fetch - processPackages [jina]: New version: [3.9.3.dev9] Old Version: [3.9.3.dev8]
+[2023-04-14 13:48:29] INFO root fetch - processPackages [stable-baselines3]: New version: [2.0.0a5] Old Version: [2.0.0a4]
+[2023-04-14 13:48:29] INFO root fetch - processPackages [jina]: executing diffoscope
+[2023-04-14 13:48:29] INFO root fetch - processPackages [jina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jina-3.9.3.dev8.tar.gz tmp/jina-3.9.3.dev9.tar.gz --markdown 20230414/j/jina/3.9.3.dev8-3.9.3.dev9/diff.md --exclude *.pyd
+[2023-04-14 13:48:29] INFO root fetch - processPackages [wanna-ml]: Downloading https://files.pythonhosted.org/packages/23/f5/366f60cb7660fc223085c2152137b1c31d0009507d50f0df0fb967d8fd43/wanna-ml-0.2.8.tar.gz
+[2023-04-14 13:48:29] INFO root fetch - processPackages [lightguide]: Downloading https://files.pythonhosted.org/packages/9f/99/36e979a6be114f9c3c63440509acf0b7d90538567dbcea7dee086f61bc57/lightguide-0.2.1.tar.gz
+[2023-04-14 13:48:29] INFO root fetch - processPackages [hb-test-generator]: Downloading https://files.pythonhosted.org/packages/07/83/be88ea3373aa4b422a7fd06be6d6ec431e11c4b1c4ffffc2298e5b012e7b/hb-test-generator-0.1.8.tar.gz
+[2023-04-14 13:48:29] INFO root fetch - processPackages [stable-baselines3]: Downloading https://files.pythonhosted.org/packages/38/7a/01a08eadaf0ce57f2f75a7f02a8d89aa7ff16b6652d3fe3b5172c52d00bf/stable_baselines3-2.0.0a5.tar.gz
+[2023-04-14 13:48:29] INFO root fetch - processPackages [hb-test-generator]: executing diffoscope
+[2023-04-14 13:48:29] INFO root fetch - processPackages [hb-test-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hb-test-generator-0.1.7.tar.gz tmp/hb-test-generator-0.1.8.tar.gz --markdown 20230414/h/hb-test-generator/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-14 13:48:29] INFO root fetch - processPackages [stable-baselines3]: executing diffoscope
+[2023-04-14 13:48:29] INFO root fetch - processPackages [stable-baselines3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stable_baselines3-2.0.0a4.tar.gz tmp/stable_baselines3-2.0.0a5.tar.gz --markdown 20230414/s/stable-baselines3/2.0.0a4-2.0.0a5/diff.md --exclude *.pyd
+[2023-04-14 13:48:29] INFO root fetch - processPackages [lightguide]: Downloading https://files.pythonhosted.org/packages/8b/9d/16d36fd97a205dcc74b54efe5268f983c0e20d5434320da35b2b371ec5d2/lightguide-0.4.0.tar.gz
+[2023-04-14 13:48:29] WARNING root fetch - processPackages [lightguide]: Skipping package: exceeds size limit 13539724>=10485760
+[2023-04-14 13:48:29] INFO root fetch - processPackages [lightguide]: Start processing: text-scrubber
+[2023-04-14 13:48:29] INFO root fetch - main [MainThread]: End processing [lightguide] error
+[2023-04-14 13:48:29] INFO root fetch - processPackages [text-scrubber]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-14 13:48:29] INFO root fetch - processPackages [text-scrubber]: Downloading https://files.pythonhosted.org/packages/67/70/a38cc7ca2c50d586aa581980a54396963d40bfdaa1fb5567278482b023ae/text-scrubber-0.4.1.tar.gz
+[2023-04-14 13:48:29] INFO root fetch - processPackages [wanna-ml]: Downloading https://files.pythonhosted.org/packages/d2/31/e24fa7241cafc732581765cfb1d4f22944b79c52e8718e2fadfab8a768a2/wanna-ml-0.2.9.tar.gz
+[2023-04-14 13:48:30] WARNING root fetch - processPackages [text-scrubber]: Skipping package: exceeds size limit 30129651>=10485760
+[2023-04-14 13:48:30] INFO root fetch - processPackages [text-scrubber]: Start processing: astrojs-aws.construct
+[2023-04-14 13:48:30] INFO root fetch - main [MainThread]: End processing [text-scrubber] error
+[2023-04-14 13:48:30] INFO root fetch - processPackages [wanna-ml]: executing diffoscope
+[2023-04-14 13:48:30] INFO root fetch - processPackages [wanna-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wanna-ml-0.2.8.tar.gz tmp/wanna-ml-0.2.9.tar.gz --markdown 20230414/w/wanna-ml/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-14 13:48:30] INFO root fetch - processPackages [astrojs-aws.construct]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 13:48:30] INFO root fetch - processPackages [astrojs-aws.construct]: Downloading https://files.pythonhosted.org/packages/04/f5/c570b6fa2b76b0356ed15981f4a4be7530485c1d3ec475026ad7d65c6693/astrojs-aws.construct-0.0.9.tar.gz
+[2023-04-14 13:48:30] INFO root fetch - processPackages [hb-test-generator]: Start processing: documentdataextraction
+[2023-04-14 13:48:30] INFO root fetch - main [MainThread]: End processing [hb-test-generator]: success
+[2023-04-14 13:48:30] INFO root fetch - processPackages [astrojs-aws.construct]: executing diffoscope
+[2023-04-14 13:48:30] INFO root fetch - processPackages [astrojs-aws.construct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astrojs-aws.construct-0.0.8.tar.gz tmp/astrojs-aws.construct-0.0.9.tar.gz --markdown 20230414/a/astrojs-aws.construct/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 13:48:30] INFO root fetch - processPackages [documentdataextraction]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 13:48:30] INFO root fetch - processPackages [documentdataextraction]: Downloading https://files.pythonhosted.org/packages/1a/e4/1e85519ce247c6ed7c20e6c47ef38f5c09cf919ff231bf453cc23a1f0ba0/documentdataextraction-0.0.8-py3-none-any.whl
+[2023-04-14 13:48:31] INFO root fetch - main [MainThread]: End processing [stable-baselines3]: success
+[2023-04-14 13:48:31] INFO root fetch - processPackages [documentdataextraction]: Downloading https://files.pythonhosted.org/packages/b3/ec/eb9901e48d02bee04847cd1afe0c6b8ca7231d1a8b133261a63ae052f777/documentdataextraction-0.0.9-py3-none-any.whl
+[2023-04-14 13:48:31] INFO root fetch - main [MainThread]: End processing [jina]: success
+[2023-04-14 13:48:31] INFO root fetch - main [MainThread]: End processing [wanna-ml]: success
+[2023-04-14 13:48:31] INFO root fetch - main [MainThread]: End processing [astrojs-aws.construct]: success
+[2023-04-14 13:48:31] INFO root fetch - processPackages [documentdataextraction]: executing diffoscope
+[2023-04-14 13:48:31] INFO root fetch - processPackages [documentdataextraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/documentdataextraction-0.0.8-py3-none-any.whl.zip tmp/documentdataextraction-0.0.9-py3-none-any.whl.zip --markdown 20230414/d/documentdataextraction/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 13:48:32] INFO root fetch - main [MainThread]: End processing [documentdataextraction]: success
+[2023-04-14 13:48:32] INFO root fetch - main [MainThread]: Store serial: [17706544]
