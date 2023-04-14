@@ -6364,3 +6364,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 04:54:07] INFO root fetch - main [MainThread]: End processing [g42cloudsdkvpc]: success
 [2023-04-14 04:55:11] INFO root fetch - main [MainThread]: End processing [django-static-fontawesome]: success
 [2023-04-14 04:55:11] INFO root fetch - main [MainThread]: Store serial: [17702717]
+[2023-04-14 05:00:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702717]
+[2023-04-14 05:00:21] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 05:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arcana
+[2023-04-14 05:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: command-fight-game-learning
+[2023-04-14 05:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ka-ut-gen
+[2023-04-14 05:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pepper-cli
+[2023-04-14 05:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tt-terminal-translator
+[2023-04-14 05:00:21] INFO root fetch - processPackages [arcana]: New version: [2.0b2] Old Version: [2.0b0.dev7]
+[2023-04-14 05:00:21] INFO root fetch - processPackages [command-fight-game-learning]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-14 05:00:21] WARNING root fetch - processPackages [pepper-cli]: Skipping, unable to determine old version
+[2023-04-14 05:00:21] INFO root fetch - processPackages [pepper-cli]: Start processing: heizer
+[2023-04-14 05:00:21] INFO root fetch - main [MainThread]: End processing [pepper-cli] error
+[2023-04-14 05:00:21] WARNING root fetch - processPackages [ka-ut-gen]: Skipping, unable to determine old version
+[2023-04-14 05:00:21] INFO root fetch - processPackages [ka-ut-gen]: Start processing: hotbox
+[2023-04-14 05:00:21] INFO root fetch - main [MainThread]: End processing [ka-ut-gen] error
+[2023-04-14 05:00:21] INFO root fetch - processPackages [tt-terminal-translator]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 05:00:21] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 05:00:21] INFO root fetch - processPackages [heizer]: New version: [999999.dev1681441259] Old Version: [999999.dev1681435064]
+[2023-04-14 05:00:21] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-04-14 05:00:21] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230414/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 05:00:22] INFO root fetch - processPackages [command-fight-game-learning]: Downloading https://files.pythonhosted.org/packages/56/0b/1615813bc092b2fdde66fbe94d5509af887e03d7b03c6e8eee9bdb05ba44/command_fight_game_learning-2.0.0.tar.gz
+[2023-04-14 05:00:22] INFO root fetch - processPackages [tt-terminal-translator]: Downloading https://files.pythonhosted.org/packages/3e/2f/596f2467dc7a7f2f7ecb269f0d18a45b2210fb979513291260fee72db818/tt_terminal_translator-0.1.0.tar.gz
+[2023-04-14 05:00:22] INFO root fetch - processPackages [heizer]: Downloading https://files.pythonhosted.org/packages/43/5c/9c062908bc0c909855bf2ac366253b84e8691ce6af7af9783ad12535e9a1/heizer-999999.dev1681441259.tar.gz
+[2023-04-14 05:00:22] INFO root fetch - processPackages [command-fight-game-learning]: Downloading https://files.pythonhosted.org/packages/53/30/94073ecc2d30655907f4423fd3450076531024fb002300cec4c5f4abce72/command_fight_game_learning-2.0.1.tar.gz
+[2023-04-14 05:00:22] INFO root fetch - processPackages [command-fight-game-learning]: executing diffoscope
+[2023-04-14 05:00:22] INFO root fetch - processPackages [command-fight-game-learning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/command_fight_game_learning-2.0.0.tar.gz tmp/command_fight_game_learning-2.0.1.tar.gz --markdown 20230414/c/command-fight-game-learning/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-14 05:00:22] INFO root fetch - processPackages [arcana]: executing diffoscope
+[2023-04-14 05:00:22] INFO root fetch - processPackages [arcana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcana-2.0b0.dev7.tar.gz tmp/arcana-2.0b2.tar.gz --markdown 20230414/a/arcana/2.0b0.dev7-2.0b2/diff.md --exclude *.pyd
+[2023-04-14 05:00:22] INFO root fetch - processPackages [heizer]: executing diffoscope
+[2023-04-14 05:00:22] INFO root fetch - processPackages [heizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heizer-999999.dev1681435064.tar.gz tmp/heizer-999999.dev1681441259.tar.gz --markdown 20230414/h/heizer/999999.dev1681435064-999999.dev1681441259/diff.md --exclude *.pyd
+[2023-04-14 05:00:22] INFO root fetch - processPackages [tt-terminal-translator]: Downloading https://files.pythonhosted.org/packages/80/6a/245bfd02c4a245c944e985c12190bbe31bdce8090f5156232aaab979cc24/tt_terminal_translator-0.1.1.tar.gz
+[2023-04-14 05:00:22] INFO root fetch - processPackages [tt-terminal-translator]: executing diffoscope
+[2023-04-14 05:00:22] INFO root fetch - processPackages [tt-terminal-translator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tt_terminal_translator-0.1.0.tar.gz tmp/tt_terminal_translator-0.1.1.tar.gz --markdown 20230414/t/tt-terminal-translator/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 05:00:23] INFO root fetch - processPackages [command-fight-game-learning]: Start processing: smplotlib
+[2023-04-14 05:00:23] INFO root fetch - main [MainThread]: End processing [command-fight-game-learning]: success
+[2023-04-14 05:00:23] INFO root fetch - processPackages [smplotlib]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 05:00:23] INFO root fetch - processPackages [hotbox]: Start processing: ka-ut-app
+[2023-04-14 05:00:23] INFO root fetch - main [MainThread]: End processing [hotbox]: success
+[2023-04-14 05:00:23] INFO root fetch - processPackages [smplotlib]: Downloading https://files.pythonhosted.org/packages/e5/a6/306b1a3e7187fd8829d85c91ea44beb8d30851394927d632161eacf6cb68/smplotlib-0.0.3.tar.gz
+[2023-04-14 05:00:23] INFO root fetch - processPackages [tt-terminal-translator]: Start processing: heizer
+[2023-04-14 05:00:23] INFO root fetch - main [MainThread]: End processing [tt-terminal-translator]: success
+[2023-04-14 05:00:23] WARNING root fetch - processPackages [ka-ut-app]: Skipping, unable to determine old version
+[2023-04-14 05:00:23] INFO root fetch - processPackages [ka-ut-app]: Start processing: sample-metadata
+[2023-04-14 05:00:23] INFO root fetch - main [MainThread]: End processing [ka-ut-app] error
+[2023-04-14 05:00:23] INFO root fetch - processPackages [heizer]: New version: [999999.dev1681441424] Old Version: [999999.dev1681441259]
+[2023-04-14 05:00:23] INFO root fetch - processPackages [sample-metadata]: New version: [5.7.0] Old Version: [5.6.1]
+[2023-04-14 05:00:23] INFO root fetch - processPackages [smplotlib]: executing diffoscope
+[2023-04-14 05:00:23] INFO root fetch - processPackages [smplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smplotlib-0.0.2.tar.gz tmp/smplotlib-0.0.3.tar.gz --markdown 20230414/s/smplotlib/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 05:00:23] INFO root fetch - processPackages [sample-metadata]: executing diffoscope
+[2023-04-14 05:00:23] INFO root fetch - processPackages [sample-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sample_metadata-5.6.1.tar.gz tmp/sample_metadata-5.7.0.tar.gz --markdown 20230414/s/sample-metadata/5.6.1-5.7.0/diff.md --exclude *.pyd
+[2023-04-14 05:00:23] INFO root fetch - processPackages [heizer]: Downloading https://files.pythonhosted.org/packages/9b/8e/233773279790bc580fa8afc3dfde1ce97799a1501d300e314dba3aa56e8d/heizer-999999.dev1681441424.tar.gz
+[2023-04-14 05:00:23] INFO root fetch - processPackages [heizer]: Start processing: MyJpHolidays
+[2023-04-14 05:00:23] INFO root fetch - main [MainThread]: End processing [heizer]: success
+[2023-04-14 05:00:23] INFO root fetch - processPackages [MyJpHolidays]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-14 05:00:23] INFO root fetch - processPackages [arcana]: Start processing: heizer
+[2023-04-14 05:00:23] INFO root fetch - main [MainThread]: End processing [arcana]: success
+[2023-04-14 05:00:23] INFO root fetch - processPackages [heizer]: executing diffoscope
+[2023-04-14 05:00:23] INFO root fetch - processPackages [heizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heizer-999999.dev1681441259.tar.gz tmp/heizer-999999.dev1681441424.tar.gz --markdown 20230414/h/heizer/999999.dev1681441259-999999.dev1681441424/diff.md --exclude *.pyd
+[2023-04-14 05:00:23] INFO root fetch - processPackages [MyJpHolidays]: executing diffoscope
+[2023-04-14 05:00:23] INFO root fetch - processPackages [MyJpHolidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyJpHolidays-0.8.0.tar.gz tmp/MyJpHolidays-0.8.1.tar.gz --markdown 20230414/M/MyJpHolidays/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-14 05:00:23] INFO root fetch - processPackages [heizer]: New version: [999999.dev1681441424] Old Version: [999999.dev1681441259]
+[2023-04-14 05:00:23] INFO root fetch - processPackages [heizer]: executing diffoscope
+[2023-04-14 05:00:23] INFO root fetch - processPackages [heizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heizer-999999.dev1681441259.tar.gz tmp/heizer-999999.dev1681441424.tar.gz --markdown 20230414/h/heizer/999999.dev1681441259-999999.dev1681441424/diff.md --exclude *.pyd
+[2023-04-14 05:00:24] INFO root fetch - main [MainThread]: End processing [smplotlib]: success
+[2023-04-14 05:00:25] INFO root fetch - main [MainThread]: End processing [MyJpHolidays]: success
+[2023-04-14 05:00:25] INFO root fetch - main [MainThread]: End processing [heizer]: success
+[2023-04-14 05:00:25] INFO root fetch - main [MainThread]: End processing [heizer]: success
+[2023-04-14 05:00:26] INFO root fetch - main [MainThread]: End processing [sample-metadata]: success
+[2023-04-14 05:00:26] INFO root fetch - main [MainThread]: Store serial: [17702761]
