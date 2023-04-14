@@ -14165,3 +14165,118 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 15:11:08] INFO root fetch - main [MainThread]: End processing [cornflakes]: success
 [2023-04-14 15:11:12] INFO root fetch - main [MainThread]: End processing [qiskit-nature]: success
 [2023-04-14 15:11:12] INFO root fetch - main [MainThread]: Store serial: [17707539]
+[2023-04-14 15:16:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17707539]
+[2023-04-14 15:16:20] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-14 15:16:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sball
+[2023-04-14 15:16:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flake8-dunder-all
+[2023-04-14 15:16:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-django
+[2023-04-14 15:16:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polywrap-http-plugin
+[2023-04-14 15:16:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dune-harmonizer
+[2023-04-14 15:16:20] INFO root fetch - processPackages [sball]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 15:16:20] INFO root fetch - processPackages [polywrap-http-plugin]: New version: [0.1.0a3] Old Version: [0.1.0a2]
+[2023-04-14 15:16:20] INFO root fetch - processPackages [flake8-dunder-all]: New version: [0.3.0b1] Old Version: [0.3.0]
+[2023-04-14 15:16:20] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 15:16:20] INFO root fetch - processPackages [dune-harmonizer]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 15:16:20] INFO root fetch - processPackages [sball]: Downloading https://files.pythonhosted.org/packages/a4/89/d89c68bcf7139c33cf01fe227330dd18de739d4828901964f2caa4c52003/sball-0.9.0.tar.gz
+[2023-04-14 15:16:20] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-14 15:16:20] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230414/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 15:16:20] INFO root fetch - processPackages [flake8-dunder-all]: Downloading https://files.pythonhosted.org/packages/8a/ba/7bf00420cb336d39d700578f001a2c6786b6f527c4f1cd1a05b4bd3737c8/flake8_dunder_all-0.3.0.tar.gz
+[2023-04-14 15:16:20] INFO root fetch - processPackages [polywrap-http-plugin]: Downloading https://files.pythonhosted.org/packages/ad/62/6503aee96d60be8ff384060d96b4066aa7e1da6d90d3658e789460ce6c72/polywrap_http_plugin-0.1.0a2.tar.gz
+[2023-04-14 15:16:20] INFO root fetch - processPackages [dune-harmonizer]: Downloading https://files.pythonhosted.org/packages/a4/f8/8a0350399d6ae77ff2092499b8e34198227f992e8ec195707354c6680bb3/dune_harmonizer-0.1.0.tar.gz
+[2023-04-14 15:16:21] INFO root fetch - processPackages [sball]: Downloading https://files.pythonhosted.org/packages/49/13/5c7cd53fbd872f94648eb79e04bee707d60789c4b27ab7ca3f2cc132c41e/sball-0.9.1.tar.gz
+[2023-04-14 15:16:21] INFO root fetch - processPackages [flake8-dunder-all]: executing diffoscope
+[2023-04-14 15:16:21] INFO root fetch - processPackages [flake8-dunder-all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8_dunder_all-0.3.0.tar.gz tmp/flake8_dunder_all-0.3.0b1.tar.gz --markdown 20230414/f/flake8-dunder-all/0.3.0-0.3.0b1/diff.md --exclude *.pyd
+[2023-04-14 15:16:21] INFO root fetch - processPackages [dune-harmonizer]: Downloading https://files.pythonhosted.org/packages/20/f2/969ab197e8ee4d7b5570a8587da376b306f0737e8ec088107b64ce9fffd9/dune_harmonizer-0.2.0.tar.gz
+[2023-04-14 15:16:21] INFO root fetch - processPackages [polywrap-http-plugin]: Downloading https://files.pythonhosted.org/packages/a2/79/44165426d48798409404a0193cd935c8232a1480609ecc2806a94d79b471/polywrap_http_plugin-0.1.0a3.tar.gz
+[2023-04-14 15:16:21] INFO root fetch - processPackages [sball]: executing diffoscope
+[2023-04-14 15:16:21] INFO root fetch - processPackages [sball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sball-0.9.0.tar.gz tmp/sball-0.9.1.tar.gz --markdown 20230414/s/sball/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 15:16:21] INFO root fetch - processPackages [dune-harmonizer]: executing diffoscope
+[2023-04-14 15:16:21] INFO root fetch - processPackages [dune-harmonizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_harmonizer-0.1.0.tar.gz tmp/dune_harmonizer-0.2.0.tar.gz --markdown 20230414/d/dune-harmonizer/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 15:16:21] INFO root fetch - processPackages [polywrap-http-plugin]: executing diffoscope
+[2023-04-14 15:16:21] INFO root fetch - processPackages [polywrap-http-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_http_plugin-0.1.0a2.tar.gz tmp/polywrap_http_plugin-0.1.0a3.tar.gz --markdown 20230414/p/polywrap-http-plugin/0.1.0a2-0.1.0a3/diff.md --exclude *.pyd
+[2023-04-14 15:16:22] INFO root fetch - processPackages [nbdev-django]: Start processing: aeon
+[2023-04-14 15:16:22] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-14 15:16:22] INFO root fetch - processPackages [aeon]: New version: [0.1.0rc0] Old Version: [0.1.0]
+[2023-04-14 15:16:22] INFO root fetch - processPackages [aeon]: Downloading https://files.pythonhosted.org/packages/4a/90/94bd13b3317c1f7c1e65cdf838bf6b13b0ba7c1074e803f312ec22fe10be/aeon-0.1.0.tar.gz
+[2023-04-14 15:16:22] INFO root fetch - processPackages [flake8-dunder-all]: Start processing: nbdev-apl
+[2023-04-14 15:16:22] INFO root fetch - main [MainThread]: End processing [flake8-dunder-all]: success
+[2023-04-14 15:16:22] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.713] Old Version: [0.0.712]
+[2023-04-14 15:16:22] INFO root fetch - processPackages [sball]: Start processing: tinytext
+[2023-04-14 15:16:22] INFO root fetch - main [MainThread]: End processing [sball]: success
+[2023-04-14 15:16:22] INFO root fetch - processPackages [tinytext]: New version: [3.5.0] Old Version: [3.4.0]
+[2023-04-14 15:16:22] WARNING root fetch - processPackages [aeon]: Skipping package: exceeds size limit 21059541>=10485760
+[2023-04-14 15:16:22] INFO root fetch - processPackages [aeon]: Start processing: oc-delivery-apps
+[2023-04-14 15:16:22] INFO root fetch - main [MainThread]: End processing [aeon] error
+[2023-04-14 15:16:22] WARNING root fetch - processPackages [oc-delivery-apps]: Skipping, unable to determine old version
+[2023-04-14 15:16:22] INFO root fetch - processPackages [oc-delivery-apps]: Start processing: oarepo-model-builder
+[2023-04-14 15:16:22] INFO root fetch - main [MainThread]: End processing [oc-delivery-apps] error
+[2023-04-14 15:16:22] INFO root fetch - processPackages [oarepo-model-builder]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-04-14 15:16:22] INFO root fetch - processPackages [polywrap-http-plugin]: Start processing: canonical
+[2023-04-14 15:16:22] INFO root fetch - main [MainThread]: End processing [polywrap-http-plugin]: success
+[2023-04-14 15:16:22] INFO root fetch - processPackages [canonical]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 15:16:22] INFO root fetch - processPackages [tinytext]: Downloading https://files.pythonhosted.org/packages/78/6c/e1f6d4b78360063925c96170cb8729187bf94a7c0f885f5214050bebad16/tinytext-3.4.0.tar.gz
+[2023-04-14 15:16:22] INFO root fetch - processPackages [oarepo-model-builder]: executing diffoscope
+[2023-04-14 15:16:22] INFO root fetch - processPackages [oarepo-model-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-3.2.8.tar.gz tmp/oarepo-model-builder-3.2.9.tar.gz --markdown 20230414/o/oarepo-model-builder/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-04-14 15:16:22] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/f1/a5/fcdc40c0fa7f6a90e14dd7782a06cea25bc997af242cc2866d559571c79d/nbdev-apl-0.0.713.tar.gz
+[2023-04-14 15:16:22] INFO root fetch - processPackages [dune-harmonizer]: Start processing: adafruit-blinka-bleio
+[2023-04-14 15:16:22] INFO root fetch - main [MainThread]: End processing [dune-harmonizer]: success
+[2023-04-14 15:16:22] INFO root fetch - processPackages [adafruit-blinka-bleio]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-04-14 15:16:22] INFO root fetch - processPackages [canonical]: Downloading https://files.pythonhosted.org/packages/a5/d2/a8a2ddf18c53dcd075763049d0b46580abf1b718bf3428537c995291c72d/canonical-0.8.0.tar.gz
+[2023-04-14 15:16:22] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-14 15:16:22] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.712.tar.gz tmp/nbdev-apl-0.0.713.tar.gz --markdown 20230414/n/nbdev-apl/0.0.712-0.0.713/diff.md --exclude *.pyd
+[2023-04-14 15:16:22] INFO root fetch - processPackages [tinytext]: Downloading https://files.pythonhosted.org/packages/42/04/863ca5f95cb4d1ba41eaef320e42344aa8ff149bf2dc09c422d7cadc9727/tinytext-3.5.0.tar.gz
+[2023-04-14 15:16:22] INFO root fetch - processPackages [adafruit-blinka-bleio]: Downloading https://files.pythonhosted.org/packages/68/be/00a25e1460590016a1cf856d7cdf6abf2b89f4c4adcfa3e8f9dd03732d9e/adafruit-blinka-bleio-4.0.0.tar.gz
+[2023-04-14 15:16:23] INFO root fetch - processPackages [tinytext]: executing diffoscope
+[2023-04-14 15:16:23] INFO root fetch - processPackages [tinytext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinytext-3.4.0.tar.gz tmp/tinytext-3.5.0.tar.gz --markdown 20230414/t/tinytext/3.4.0-3.5.0/diff.md --exclude *.pyd
+[2023-04-14 15:16:23] INFO root fetch - processPackages [canonical]: Downloading https://files.pythonhosted.org/packages/12/1f/2280296077ed31b38308f513c0fdfffeb1e131ffa62d7ccb2659a6d627fb/canonical-0.9.0.tar.gz
+[2023-04-14 15:16:23] INFO root fetch - processPackages [adafruit-blinka-bleio]: Downloading https://files.pythonhosted.org/packages/37/5c/d2ab9e48dde77fb01a636660053bb6cdf10650cefd21ff8552863ca10014/adafruit-blinka-bleio-4.0.1.tar.gz
+[2023-04-14 15:16:23] INFO root fetch - processPackages [canonical]: executing diffoscope
+[2023-04-14 15:16:23] INFO root fetch - processPackages [canonical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canonical-0.8.0.tar.gz tmp/canonical-0.9.0.tar.gz --markdown 20230414/c/canonical/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 15:16:23] INFO root fetch - processPackages [adafruit-blinka-bleio]: executing diffoscope
+[2023-04-14 15:16:23] INFO root fetch - processPackages [adafruit-blinka-bleio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-blinka-bleio-4.0.0.tar.gz tmp/adafruit-blinka-bleio-4.0.1.tar.gz --markdown 20230414/a/adafruit-blinka-bleio/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-04-14 15:16:23] INFO root fetch - processPackages [nbdev-apl]: Start processing: planetmapper
+[2023-04-14 15:16:23] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-04-14 15:16:23] INFO root fetch - processPackages [planetmapper]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-04-14 15:16:24] INFO root fetch - processPackages [planetmapper]: Downloading https://files.pythonhosted.org/packages/c8/08/eb9fd30dcad46074c5772cde3356fc1f52d17d4da8e2db9f5857a5cacc5f/planetmapper-1.6.2.tar.gz
+[2023-04-14 15:16:24] INFO root fetch - processPackages [tinytext]: Start processing: graphql-service-framework
+[2023-04-14 15:16:24] INFO root fetch - main [MainThread]: End processing [tinytext]: success
+[2023-04-14 15:16:24] INFO root fetch - processPackages [graphql-service-framework]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 15:16:24] INFO root fetch - processPackages [planetmapper]: executing diffoscope
+[2023-04-14 15:16:24] INFO root fetch - processPackages [planetmapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetmapper-1.6.1.tar.gz tmp/planetmapper-1.6.2.tar.gz --markdown 20230414/p/planetmapper/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-04-14 15:16:24] INFO root fetch - processPackages [graphql-service-framework]: executing diffoscope
+[2023-04-14 15:16:24] INFO root fetch - processPackages [graphql-service-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_service_framework-1.0.8.tar.gz tmp/graphql_service_framework-1.0.9.tar.gz --markdown 20230414/g/graphql-service-framework/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 15:16:24] INFO root fetch - processPackages [canonical]: Start processing: pytest-frappe
+[2023-04-14 15:16:24] INFO root fetch - main [MainThread]: End processing [canonical]: success
+[2023-04-14 15:16:24] WARNING root fetch - processPackages [pytest-frappe]: Skipping, unable to determine old version
+[2023-04-14 15:16:24] INFO root fetch - processPackages [pytest-frappe]: Start processing: pdpilot
+[2023-04-14 15:16:24] INFO root fetch - main [MainThread]: End processing [pytest-frappe] error
+[2023-04-14 15:16:24] INFO root fetch - processPackages [pdpilot]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-14 15:16:24] INFO root fetch - processPackages [oarepo-model-builder]: Start processing: polywrap-http-plugin
+[2023-04-14 15:16:24] INFO root fetch - main [MainThread]: End processing [oarepo-model-builder]: success
+[2023-04-14 15:16:24] INFO root fetch - processPackages [polywrap-http-plugin]: New version: [0.1.0a4] Old Version: [0.1.0a3]
+[2023-04-14 15:16:24] INFO root fetch - processPackages [pdpilot]: Downloading https://files.pythonhosted.org/packages/98/8f/bd037cefaa76b1770f99b4b30ea1bee6d11f1d678c8f14ea4d05a1efeaa1/pdpilot-0.4.5.tar.gz
+[2023-04-14 15:16:24] INFO root fetch - processPackages [polywrap-http-plugin]: Downloading https://files.pythonhosted.org/packages/16/73/09ef18410ee3f9e4dfb4b23e05b2966812de5319cad8f0bdee9483ba8ca6/polywrap_http_plugin-0.1.0a4.tar.gz
+[2023-04-14 15:16:25] INFO root fetch - processPackages [polywrap-http-plugin]: executing diffoscope
+[2023-04-14 15:16:25] INFO root fetch - processPackages [polywrap-http-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_http_plugin-0.1.0a3.tar.gz tmp/polywrap_http_plugin-0.1.0a4.tar.gz --markdown 20230414/p/polywrap-http-plugin/0.1.0a3-0.1.0a4/diff.md --exclude *.pyd
+[2023-04-14 15:16:25] INFO root fetch - processPackages [adafruit-blinka-bleio]: Start processing: cybrid-api-id-python
+[2023-04-14 15:16:25] INFO root fetch - main [MainThread]: End processing [adafruit-blinka-bleio]: success
+[2023-04-14 15:16:25] INFO root fetch - processPackages [pdpilot]: Downloading https://files.pythonhosted.org/packages/50/f6/cf9ceff524d5bbb6fbbfed98460f0f6a2c1ca912c553786b127cebfa918c/pdpilot-0.4.6.tar.gz
+[2023-04-14 15:16:25] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 15:16:25] INFO root fetch - processPackages [graphql-service-framework]: Start processing: somnium
+[2023-04-14 15:16:25] INFO root fetch - main [MainThread]: End processing [graphql-service-framework]: success
+[2023-04-14 15:16:25] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-04-14 15:16:25] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230414/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 15:16:25] WARNING root fetch - processPackages [somnium]: Skipping, unable to determine old version
+[2023-04-14 15:16:25] INFO root fetch - processPackages [somnium]: Start processing: cybrid-api-organization-python
+[2023-04-14 15:16:25] INFO root fetch - main [MainThread]: End processing [somnium] error
+[2023-04-14 15:16:25] INFO root fetch - main [MainThread]: End processing [planetmapper]: success
+[2023-04-14 15:16:25] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 15:16:25] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-04-14 15:16:25] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230414/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 15:16:25] INFO root fetch - processPackages [pdpilot]: executing diffoscope
+[2023-04-14 15:16:25] INFO root fetch - processPackages [pdpilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdpilot-0.4.5.tar.gz tmp/pdpilot-0.4.6.tar.gz --markdown 20230414/p/pdpilot/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-14 15:16:26] INFO root fetch - main [MainThread]: End processing [polywrap-http-plugin]: success
+[2023-04-14 15:16:26] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-04-14 15:16:27] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-04-14 15:16:37] INFO root fetch - main [MainThread]: End processing [pdpilot]: success
+[2023-04-14 15:16:37] INFO root fetch - main [MainThread]: Store serial: [17707613]
