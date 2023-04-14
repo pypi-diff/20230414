@@ -11966,3 +11966,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 12:54:08] INFO root fetch - main [MainThread]: End processing [eoq2]: success
 [2023-04-14 12:54:09] INFO root fetch - main [MainThread]: End processing [dao-analyzer]: success
 [2023-04-14 12:54:09] INFO root fetch - main [MainThread]: Store serial: [17706014]
+[2023-04-14 12:59:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706014]
+[2023-04-14 12:59:17] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 12:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyGuardPoint
+[2023-04-14 12:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tablite
+[2023-04-14 12:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libasd
+[2023-04-14 12:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slim-trees
+[2023-04-14 12:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: LightZero
+[2023-04-14 12:59:17] INFO root fetch - processPackages [tablite]: New version: [2022.9.3] Old Version: [2022.9.1]
+[2023-04-14 12:59:17] INFO root fetch - processPackages [slim-trees]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 12:59:17] INFO root fetch - processPackages [pyGuardPoint]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-14 12:59:17] INFO root fetch - processPackages [libasd]: New version: [1.5.6] Old Version: [1.5.5]
+[2023-04-14 12:59:17] WARNING root fetch - processPackages [LightZero]: Skipping, unable to determine old version
+[2023-04-14 12:59:17] INFO root fetch - processPackages [LightZero]: Start processing: cardano-clusterlib
+[2023-04-14 12:59:17] INFO root fetch - main [MainThread]: End processing [LightZero] error
+[2023-04-14 12:59:17] INFO root fetch - processPackages [cardano-clusterlib]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-14 12:59:17] INFO root fetch - processPackages [tablite]: Downloading https://files.pythonhosted.org/packages/05/27/6c9212665ca0b24094cf02acabc1d3090669759abf2bbf96f2985642cd01/tablite-2022.9.1-py3-none-any.whl
+[2023-04-14 12:59:17] INFO root fetch - processPackages [slim-trees]: Downloading https://files.pythonhosted.org/packages/7e/74/ba5bc2b136b252027f840750b9f4da9d49f100e75aecbaf61aa2b5600ceb/slim-trees-0.1.0.tar.gz
+[2023-04-14 12:59:17] INFO root fetch - processPackages [libasd]: Downloading https://files.pythonhosted.org/packages/94/81/4a2b40bb44376dd9c236857dc676bee7f9d348489bb00a54ad05f7985b08/libasd-1.5.5.tar.gz
+[2023-04-14 12:59:17] INFO root fetch - processPackages [pyGuardPoint]: Downloading https://files.pythonhosted.org/packages/d4/3d/6983ff8ca10cf774f2757fdcd8555cad4201f45e009f2b046881d5171cb8/pyGuardPoint-0.8.2.tar.gz
+[2023-04-14 12:59:17] INFO root fetch - processPackages [cardano-clusterlib]: Downloading https://files.pythonhosted.org/packages/18/e6/815c16a88988e334aa7374d77c6e0eb48f36877cf43419a1a25f2c5177fe/cardano-clusterlib-0.4.3.tar.gz
+[2023-04-14 12:59:17] INFO root fetch - processPackages [pyGuardPoint]: executing diffoscope
+[2023-04-14 12:59:17] INFO root fetch - processPackages [pyGuardPoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGuardPoint-0.8.1.tar.gz tmp/pyGuardPoint-0.8.2.tar.gz --markdown 20230414/p/pyGuardPoint/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-14 12:59:17] INFO root fetch - processPackages [slim-trees]: Downloading https://files.pythonhosted.org/packages/29/0d/d49fd0e36e4a94862e9f3963462a9cb06da37eca3b0f58d555787cf3e053/slim-trees-0.2.0.tar.gz
+[2023-04-14 12:59:17] INFO root fetch - processPackages [libasd]: Downloading https://files.pythonhosted.org/packages/67/c0/0e3b0ed77003a359b86e1bc6c4842a9079d8a7836e62e8b45734207fdd01/libasd-1.5.6-cp39-cp39-macosx_12_0_x86_64.whl
+[2023-04-14 12:59:17] INFO root fetch - processPackages [tablite]: Downloading https://files.pythonhosted.org/packages/60/12/a13081906a04561cea33c22985e9b922cf569851134cc72604fada07f2fd/tablite-2022.9.3-py3-none-any.whl
+[2023-04-14 12:59:17] INFO root fetch - processPackages [cardano-clusterlib]: Downloading https://files.pythonhosted.org/packages/f4/a4/bb71fcf308f72ec9eb22afa484b7342415cb68aca764b0234cec727464ff/cardano-clusterlib-0.4.4.tar.gz
+[2023-04-14 12:59:17] INFO root fetch - processPackages [slim-trees]: executing diffoscope
+[2023-04-14 12:59:17] INFO root fetch - processPackages [slim-trees]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slim-trees-0.1.0.tar.gz tmp/slim-trees-0.2.0.tar.gz --markdown 20230414/s/slim-trees/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 12:59:17] INFO root fetch - processPackages [libasd]: executing diffoscope
+[2023-04-14 12:59:17] INFO root fetch - processPackages [libasd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libasd-1.5.5.tar.gz tmp/libasd-1.5.6-cp39-cp39-macosx_12_0_x86_64.whl.zip --markdown 20230414/l/libasd/1.5.5-1.5.6/diff.md --exclude *.pyd
+[2023-04-14 12:59:18] INFO root fetch - processPackages [tablite]: executing diffoscope
+[2023-04-14 12:59:18] INFO root fetch - processPackages [cardano-clusterlib]: executing diffoscope
+[2023-04-14 12:59:18] INFO root fetch - processPackages [tablite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tablite-2022.9.1-py3-none-any.whl.zip tmp/tablite-2022.9.3-py3-none-any.whl.zip --markdown 20230414/t/tablite/2022.9.1-2022.9.3/diff.md --exclude *.pyd
+[2023-04-14 12:59:18] INFO root fetch - processPackages [cardano-clusterlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardano-clusterlib-0.4.3.tar.gz tmp/cardano-clusterlib-0.4.4.tar.gz --markdown 20230414/c/cardano-clusterlib/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-14 12:59:18] INFO root fetch - processPackages [slim-trees]: Start processing: defisheye
+[2023-04-14 12:59:18] INFO root fetch - main [MainThread]: End processing [slim-trees]: success
+[2023-04-14 12:59:18] INFO root fetch - processPackages [defisheye]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 12:59:19] INFO root fetch - processPackages [libasd]: Start processing: c2client
+[2023-04-14 12:59:19] INFO root fetch - main [MainThread]: End processing [libasd]: success
+[2023-04-14 12:59:19] INFO root fetch - processPackages [c2client]: New version: [0.9] Old Version: [0.8]
+[2023-04-14 12:59:19] INFO root fetch - processPackages [defisheye]: Downloading https://files.pythonhosted.org/packages/9a/2f/00eb93596d2910e5571f237dff2ef23004838b64ca6154da61a17b48a5ce/defisheye-1.0.2.tar.gz
+[2023-04-14 12:59:19] INFO root fetch - processPackages [tablite]: Start processing: cis-checks-2023
+[2023-04-14 12:59:19] INFO root fetch - main [MainThread]: End processing [tablite]: success
+[2023-04-14 12:59:19] INFO root fetch - processPackages [cis-checks-2023]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-14 12:59:19] INFO root fetch - processPackages [pyGuardPoint]: Start processing: django-freeman
+[2023-04-14 12:59:19] INFO root fetch - main [MainThread]: End processing [pyGuardPoint]: success
+[2023-04-14 12:59:19] WARNING root fetch - processPackages [django-freeman]: Skipping, unable to determine old version
+[2023-04-14 12:59:19] INFO root fetch - processPackages [django-freeman]: Start processing: graphql-service-framework
+[2023-04-14 12:59:19] INFO root fetch - main [MainThread]: End processing [django-freeman] error
+[2023-04-14 12:59:19] INFO root fetch - processPackages [graphql-service-framework]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 12:59:19] INFO root fetch - processPackages [cis-checks-2023]: executing diffoscope
+[2023-04-14 12:59:19] INFO root fetch - processPackages [cis-checks-2023]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cis_checks_2023-2.0.8.tar.gz tmp/cis_checks_2023-2.0.9.tar.gz --markdown 20230414/c/cis-checks-2023/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-14 12:59:19] INFO root fetch - main [MainThread]: End processing [cardano-clusterlib]: success
+[2023-04-14 12:59:19] INFO root fetch - processPackages [c2client]: Downloading https://files.pythonhosted.org/packages/90/a8/bb126537d181d85fe057216a056ec24e2f6f5e54287e6230ff51d02873a1/c2client-0.8.tar.gz
+[2023-04-14 12:59:19] INFO root fetch - processPackages [graphql-service-framework]: executing diffoscope
+[2023-04-14 12:59:19] INFO root fetch - processPackages [graphql-service-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_service_framework-1.0.8.tar.gz tmp/graphql_service_framework-1.0.9.tar.gz --markdown 20230414/g/graphql-service-framework/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 12:59:19] INFO root fetch - processPackages [defisheye]: executing diffoscope
+[2023-04-14 12:59:19] INFO root fetch - processPackages [defisheye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/defisheye-1.0.1.tar.gz tmp/defisheye-1.0.2.tar.gz --markdown 20230414/d/defisheye/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 12:59:19] INFO root fetch - processPackages [c2client]: Downloading https://files.pythonhosted.org/packages/22/ab/8f7d62861d9df80e5a0e003547ddafdb4c522f82040fee97b89871fb71fa/c2client-0.9.tar.gz
+[2023-04-14 12:59:19] INFO root fetch - processPackages [c2client]: executing diffoscope
+[2023-04-14 12:59:19] INFO root fetch - processPackages [c2client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2client-0.8.tar.gz tmp/c2client-0.9.tar.gz --markdown 20230414/c/c2client/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-14 12:59:20] INFO root fetch - main [MainThread]: End processing [graphql-service-framework]: success
+[2023-04-14 12:59:20] INFO root fetch - main [MainThread]: End processing [cis-checks-2023]: success
+[2023-04-14 12:59:20] INFO root fetch - main [MainThread]: End processing [defisheye]: success
+[2023-04-14 12:59:20] INFO root fetch - main [MainThread]: End processing [c2client]: success
+[2023-04-14 12:59:20] INFO root fetch - main [MainThread]: Store serial: [17706063]
