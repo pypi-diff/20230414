@@ -5991,3 +5991,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 04:15:55] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
 [2023-04-14 04:15:56] INFO root fetch - main [MainThread]: End processing [locust-je-test-pep621]: success
 [2023-04-14 04:15:56] INFO root fetch - main [MainThread]: Store serial: [17702499]
+[2023-04-14 04:20:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702499]
+[2023-04-14 04:21:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-14 04:21:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langflow
+[2023-04-14 04:21:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datacula
+[2023-04-14 04:21:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aliyun-python-sdk-cams
+[2023-04-14 04:21:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gama-cli
+[2023-04-14 04:21:04] WARNING root fetch - processPackages [datacula]: Skipping, unable to determine old version
+[2023-04-14 04:21:04] INFO root fetch - main [MainThread]: End processing [datacula] error
+[2023-04-14 04:21:04] INFO root fetch - processPackages [aliyun-python-sdk-cams]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-14 04:21:04] INFO root fetch - processPackages [langflow]: New version: [0.0.56] Old Version: [0.0.55]
+[2023-04-14 04:21:04] INFO root fetch - processPackages [gama-cli]: New version: [1.8.0] Old Version: [1.7.4]
+[2023-04-14 04:21:04] INFO root fetch - processPackages [aliyun-python-sdk-cams]: Downloading https://files.pythonhosted.org/packages/14/82/e5b0526672fd8fc2009f99a0880f8342718832ce296802c660f116bb8592/aliyun-python-sdk-cams-1.0.3.tar.gz
+[2023-04-14 04:21:04] INFO root fetch - processPackages [langflow]: Downloading https://files.pythonhosted.org/packages/dd/19/c8a68f5448142573065b38d6e5dc02d6b33333ec4747fb6452ab06705e68/langflow-0.0.56.tar.gz
+[2023-04-14 04:21:04] INFO root fetch - processPackages [gama-cli]: Downloading https://files.pythonhosted.org/packages/b0/b1/8bebc6fac896cec1144e9ce4e3e19e65f7bdd092dfe3271a765a8f185cd5/gama_cli-1.8.0.tar.gz
+[2023-04-14 04:21:04] INFO root fetch - processPackages [aliyun-python-sdk-cams]: Downloading https://files.pythonhosted.org/packages/0c/29/d482e84b18b8d655c644308667856277e5474bb9b3bb956ce75d78a87a47/aliyun-python-sdk-cams-1.0.4.tar.gz
+[2023-04-14 04:21:04] INFO root fetch - processPackages [gama-cli]: executing diffoscope
+[2023-04-14 04:21:04] INFO root fetch - processPackages [gama-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gama_cli-1.7.4.tar.gz tmp/gama_cli-1.8.0.tar.gz --markdown 20230414/g/gama-cli/1.7.4-1.8.0/diff.md --exclude *.pyd
+[2023-04-14 04:21:05] INFO root fetch - processPackages [aliyun-python-sdk-cams]: executing diffoscope
+[2023-04-14 04:21:05] INFO root fetch - processPackages [aliyun-python-sdk-cams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-cams-1.0.3.tar.gz tmp/aliyun-python-sdk-cams-1.0.4.tar.gz --markdown 20230414/a/aliyun-python-sdk-cams/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-14 04:21:05] INFO root fetch - processPackages [langflow]: executing diffoscope
+[2023-04-14 04:21:05] INFO root fetch - processPackages [langflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langflow-0.0.55.tar.gz tmp/langflow-0.0.56.tar.gz --markdown 20230414/l/langflow/0.0.55-0.0.56/diff.md --exclude *.pyd
+[2023-04-14 04:21:06] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-cams]: success
+[2023-04-14 04:21:06] INFO root fetch - main [MainThread]: End processing [gama-cli]: success
+[2023-04-14 04:22:44] INFO root fetch - main [MainThread]: End processing [langflow]: success
+[2023-04-14 04:22:44] INFO root fetch - main [MainThread]: Store serial: [17702510]
