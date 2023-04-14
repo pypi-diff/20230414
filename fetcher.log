@@ -7192,3 +7192,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 06:56:27] INFO root fetch - main [MainThread]: End processing [areixio]: success
 [2023-04-14 06:56:52] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-04-14 06:56:52] INFO root fetch - main [MainThread]: Store serial: [17703242]
+[2023-04-14 07:02:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703242]
+[2023-04-14 07:02:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 07:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: syft
+[2023-04-14 07:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: conversations
+[2023-04-14 07:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zepben.eas
+[2023-04-14 07:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: numpy-illustrated
+[2023-04-14 07:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hackyargparser
+[2023-04-14 07:02:04] INFO root fetch - processPackages [syft]: New version: [0.8.0b7] Old Version: [0.8.0b6]
+[2023-04-14 07:02:04] INFO root fetch - processPackages [zepben.eas]: New version: [0.9.0b3] Old Version: [0.9.0b2]
+[2023-04-14 07:02:05] INFO root fetch - processPackages [conversations]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 07:02:05] WARNING root fetch - processPackages [hackyargparser]: Skipping, unable to determine old version
+[2023-04-14 07:02:05] WARNING root fetch - processPackages [numpy-illustrated]: Skipping, unable to determine old version
+[2023-04-14 07:02:05] INFO root fetch - processPackages [hackyargparser]: Start processing: ypricemagic
+[2023-04-14 07:02:05] INFO root fetch - main [MainThread]: End processing [hackyargparser] error
+[2023-04-14 07:02:05] INFO root fetch - processPackages [numpy-illustrated]: Start processing: rapid-pe
+[2023-04-14 07:02:05] INFO root fetch - main [MainThread]: End processing [numpy-illustrated] error
+[2023-04-14 07:02:05] INFO root fetch - processPackages [rapid-pe]: New version: [0.0.7.dev20230413] Old Version: [0.0.7.dev20230412]
+[2023-04-14 07:02:05] INFO root fetch - processPackages [ypricemagic]: New version: [2.1.5] Old Version: [2.1.4]
+[2023-04-14 07:02:05] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-04-14 07:02:05] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.0.7.dev20230412.tar.gz tmp/rapid_pe-0.0.7.dev20230413.tar.gz --markdown 20230414/r/rapid-pe/0.0.7.dev20230412-0.0.7.dev20230413/diff.md --exclude *.pyd
+[2023-04-14 07:02:05] INFO root fetch - processPackages [zepben.eas]: executing diffoscope
+[2023-04-14 07:02:05] INFO root fetch - processPackages [zepben.eas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zepben.eas-0.9.0b2-py3-none-any.whl.zip tmp/zepben.eas-0.9.0b3-py3-none-any.whl.zip --markdown 20230414/z/zepben.eas/0.9.0b2-0.9.0b3/diff.md --exclude *.pyd
+[2023-04-14 07:02:05] INFO root fetch - processPackages [conversations]: Downloading https://files.pythonhosted.org/packages/91/46/f0e132fe12d9fb65f07ff29047e3b2c4bdc18812b901a9538e0290238315/conversations-0.8.0.tar.gz
+[2023-04-14 07:02:05] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/3f/3f/12229082f1941b56685ea7f4a1c747233cdd77dd752b858d2cbf4dbcd10a/syft-0.8.0b7.tar.gz
+[2023-04-14 07:02:05] INFO root fetch - processPackages [ypricemagic]: Downloading https://files.pythonhosted.org/packages/a7/3f/468727f0d6f6bc31cea351d5ad81668e39e07675f1e1839b174973ae568c/ypricemagic-2.1.5.tar.gz
+[2023-04-14 07:02:05] INFO root fetch - processPackages [ypricemagic]: executing diffoscope
+[2023-04-14 07:02:05] INFO root fetch - processPackages [ypricemagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ypricemagic-2.1.4.tar.gz tmp/ypricemagic-2.1.5.tar.gz --markdown 20230414/y/ypricemagic/2.1.4-2.1.5/diff.md --exclude *.pyd
+[2023-04-14 07:02:05] INFO root fetch - processPackages [syft]: executing diffoscope
+[2023-04-14 07:02:05] INFO root fetch - processPackages [syft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syft-0.8.0b6.tar.gz tmp/syft-0.8.0b7.tar.gz --markdown 20230414/s/syft/0.8.0b6-0.8.0b7/diff.md --exclude *.pyd
+[2023-04-14 07:02:05] INFO root fetch - processPackages [conversations]: Downloading https://files.pythonhosted.org/packages/eb/d8/a424b11c746c8a33dbbae6e012675ec1add7b6a2bbbf9f15df6249d4d127/conversations-0.9.0.tar.gz
+[2023-04-14 07:02:05] INFO root fetch - processPackages [conversations]: executing diffoscope
+[2023-04-14 07:02:05] INFO root fetch - processPackages [conversations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conversations-0.8.0.tar.gz tmp/conversations-0.9.0.tar.gz --markdown 20230414/c/conversations/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 07:02:06] INFO root fetch - main [MainThread]: End processing [zepben.eas]: success
+[2023-04-14 07:02:06] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-04-14 07:02:06] INFO root fetch - main [MainThread]: End processing [conversations]: success
+[2023-04-14 07:02:06] INFO root fetch - main [MainThread]: End processing [ypricemagic]: success
+[2023-04-14 07:02:07] INFO root fetch - main [MainThread]: End processing [syft]: success
+[2023-04-14 07:02:07] INFO root fetch - main [MainThread]: Store serial: [17703274]
