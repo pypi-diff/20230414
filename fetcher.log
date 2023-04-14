@@ -7170,3 +7170,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 06:51:08] INFO root fetch - processPackages [tweakwcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweakwcs-0.8.1.tar.gz tmp/tweakwcs-0.8.2.tar.gz --markdown 20230414/t/tweakwcs/0.8.1-0.8.2/diff.md --exclude *.pyd
 [2023-04-14 06:51:09] INFO root fetch - main [MainThread]: End processing [tweakwcs]: success
 [2023-04-14 06:51:09] INFO root fetch - main [MainThread]: Store serial: [17703229]
+[2023-04-14 06:56:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703229]
+[2023-04-14 06:56:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-14 06:56:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-yettagam
+[2023-04-14 06:56:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: areixio
+[2023-04-14 06:56:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tflite-runtime-nightly
+[2023-04-14 06:56:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imaginaition
+[2023-04-14 06:56:16] INFO root fetch - processPackages [py-yettagam]: New version: [0.0.2.9] Old Version: [0.0.2.8]
+[2023-04-14 06:56:16] INFO root fetch - processPackages [areixio]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-14 06:56:17] INFO root fetch - processPackages [py-yettagam]: executing diffoscope
+[2023-04-14 06:56:17] INFO root fetch - processPackages [py-yettagam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_yettagam-0.0.2.8.tar.gz tmp/py_yettagam-0.0.2.9.tar.gz --markdown 20230414/p/py-yettagam/0.0.2.8-0.0.2.9/diff.md --exclude *.pyd
+[2023-04-14 06:56:17] WARNING root fetch - processPackages [imaginaition]: Skipping, unable to determine old version
+[2023-04-14 06:56:17] INFO root fetch - main [MainThread]: End processing [imaginaition] error
+[2023-04-14 06:56:17] INFO root fetch - processPackages [areixio]: executing diffoscope
+[2023-04-14 06:56:17] INFO root fetch - processPackages [areixio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areixio-0.2.8.tar.gz tmp/areixio-0.2.9.tar.gz --markdown 20230414/a/areixio/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-14 06:56:17] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.13.0.dev20230413] Old Version: [2.13.0.dev20230410]
+[2023-04-14 06:56:17] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/dd/49/53370dbd3ffc7d45ac0f84985541462d52d66b4b9923ca812e433ab7bdb0/tflite_runtime_nightly-2.13.0.dev20230413-cp310-cp310-manylinux2014_x86_64.whl
+[2023-04-14 06:56:18] INFO root fetch - main [MainThread]: End processing [py-yettagam]: success
+[2023-04-14 06:56:18] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-04-14 06:56:18] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.13.0.dev20230410-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.13.0.dev20230413-cp310-cp310-manylinux2014_x86_64.whl.zip --markdown 20230414/t/tflite-runtime-nightly/2.13.0.dev20230410-2.13.0.dev20230413/diff.md --exclude *.pyd
+[2023-04-14 06:56:27] INFO root fetch - main [MainThread]: End processing [areixio]: success
+[2023-04-14 06:56:52] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-04-14 06:56:52] INFO root fetch - main [MainThread]: Store serial: [17703242]
