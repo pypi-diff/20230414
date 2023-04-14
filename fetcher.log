@@ -20876,3 +20876,96 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 21:19:32] INFO root fetch - main [MainThread]: End processing [django-ledger]: success
 [2023-04-14 21:19:35] INFO root fetch - main [MainThread]: End processing [nyxus]: success
 [2023-04-14 21:19:35] INFO root fetch - main [MainThread]: Store serial: [17712069]
+[2023-04-14 21:24:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712069]
+[2023-04-14 21:24:45] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 21:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stactools-cop-dem
+[2023-04-14 21:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecopipeline
+[2023-04-14 21:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wystia
+[2023-04-14 21:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: celloracle
+[2023-04-14 21:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipen-annotate
+[2023-04-14 21:24:45] INFO root fetch - processPackages [ecopipeline]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-14 21:24:45] INFO root fetch - processPackages [wystia]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-14 21:24:45] INFO root fetch - processPackages [stactools-cop-dem]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-14 21:24:45] INFO root fetch - processPackages [celloracle]: New version: [0.12.1] Old Version: [0.12.0]
+[2023-04-14 21:24:45] INFO root fetch - processPackages [pipen-annotate]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-14 21:24:46] INFO root fetch - processPackages [pipen-annotate]: Downloading https://files.pythonhosted.org/packages/2b/06/f9c15648471d1466838e56d74aebc83507859732d3f0146182ba08a3151a/pipen_annotate-0.7.1.tar.gz
+[2023-04-14 21:24:46] INFO root fetch - processPackages [stactools-cop-dem]: Downloading https://files.pythonhosted.org/packages/05/4b/f3b9c986029447449ee7871094edc6960b9962a086e610fddc13219bf9ab/stactools-cop-dem-0.3.0.tar.gz
+[2023-04-14 21:24:46] INFO root fetch - processPackages [celloracle]: Downloading https://files.pythonhosted.org/packages/21/2e/c8f17bb35129d64e6a6365ebac6e65151ea791b95b05b2746819089b90c5/celloracle-0.12.0.tar.gz
+[2023-04-14 21:24:46] INFO root fetch - processPackages [ecopipeline]: Downloading https://files.pythonhosted.org/packages/a6/cc/13b8de4cb8de6858a294ad62795d88f8b4d520c21397698f05f5fd24f81b/ecopipeline-0.0.7.tar.gz
+[2023-04-14 21:24:46] INFO root fetch - processPackages [wystia]: Downloading https://files.pythonhosted.org/packages/04/6f/a138e1fc74b767784466dbbee675a5f1f3f1884c8e7012ff747340801131/wystia-1.2.1.tar.gz
+[2023-04-14 21:24:46] WARNING root fetch - processPackages [celloracle]: Skipping package: exceeds size limit 10802345>=10485760
+[2023-04-14 21:24:46] INFO root fetch - processPackages [celloracle]: Start processing: lins-pix
+[2023-04-14 21:24:46] INFO root fetch - main [MainThread]: End processing [celloracle] error
+[2023-04-14 21:24:46] INFO root fetch - processPackages [lins-pix]: New version: [2.0.0.dev4] Old Version: [2.0.0.dev3]
+[2023-04-14 21:24:46] INFO root fetch - processPackages [pipen-annotate]: executing diffoscope
+[2023-04-14 21:24:46] INFO root fetch - processPackages [pipen-annotate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_annotate-0.7.0.tar.gz tmp/pipen_annotate-0.7.1.tar.gz --markdown 20230414/p/pipen-annotate/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-14 21:24:46] INFO root fetch - processPackages [stactools-cop-dem]: Downloading https://files.pythonhosted.org/packages/20/b6/5c42a865e4b3c4cc7112877d8e6bacd45e8b38e47ee44d875ece563962e3/stactools-cop-dem-0.4.0.tar.gz
+[2023-04-14 21:24:46] INFO root fetch - processPackages [ecopipeline]: executing diffoscope
+[2023-04-14 21:24:46] INFO root fetch - processPackages [ecopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecopipeline-0.0.6.tar.gz tmp/ecopipeline-0.0.7.tar.gz --markdown 20230414/e/ecopipeline/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-14 21:24:46] INFO root fetch - processPackages [wystia]: executing diffoscope
+[2023-04-14 21:24:46] INFO root fetch - processPackages [wystia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wystia-1.2.0.tar.gz tmp/wystia-1.2.1.tar.gz --markdown 20230414/w/wystia/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-14 21:24:46] INFO root fetch - processPackages [stactools-cop-dem]: executing diffoscope
+[2023-04-14 21:24:46] INFO root fetch - processPackages [stactools-cop-dem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stactools-cop-dem-0.3.0.tar.gz tmp/stactools-cop-dem-0.4.0.tar.gz --markdown 20230414/s/stactools-cop-dem/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-14 21:24:46] INFO root fetch - processPackages [lins-pix]: executing diffoscope
+[2023-04-14 21:24:46] INFO root fetch - processPackages [lins-pix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lins_pix-2.0.0.dev3.tar.gz tmp/lins_pix-2.0.0.dev4.tar.gz --markdown 20230414/l/lins-pix/2.0.0.dev3-2.0.0.dev4/diff.md --exclude *.pyd
+[2023-04-14 21:24:47] INFO root fetch - processPackages [pipen-annotate]: Start processing: ynca
+[2023-04-14 21:24:47] INFO root fetch - main [MainThread]: End processing [pipen-annotate]: success
+[2023-04-14 21:24:47] INFO root fetch - processPackages [ynca]: New version: [5.6.0] Old Version: [5.5.0]
+[2023-04-14 21:24:47] INFO root fetch - processPackages [ecopipeline]: Start processing: napari-threedee
+[2023-04-14 21:24:47] INFO root fetch - main [MainThread]: End processing [ecopipeline]: success
+[2023-04-14 21:24:47] INFO root fetch - processPackages [ynca]: Downloading https://files.pythonhosted.org/packages/fe/43/793becbf21dc45b517f9d1f7d2dbb4f5855da748ad053cd0dd96de5ac18d/ynca-5.6.0.tar.gz
+[2023-04-14 21:24:47] INFO root fetch - processPackages [napari-threedee]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 21:24:47] INFO root fetch - processPackages [stactools-cop-dem]: Start processing: deephaven-ipywidgets
+[2023-04-14 21:24:47] INFO root fetch - main [MainThread]: End processing [stactools-cop-dem]: success
+[2023-04-14 21:24:47] INFO root fetch - processPackages [deephaven-ipywidgets]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 21:24:47] INFO root fetch - processPackages [ynca]: executing diffoscope
+[2023-04-14 21:24:47] INFO root fetch - processPackages [ynca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ynca-5.5.0.tar.gz tmp/ynca-5.6.0.tar.gz --markdown 20230414/y/ynca/5.5.0-5.6.0/diff.md --exclude *.pyd
+[2023-04-14 21:24:47] INFO root fetch - processPackages [wystia]: Start processing: botocore
+[2023-04-14 21:24:47] INFO root fetch - main [MainThread]: End processing [wystia]: success
+[2023-04-14 21:24:47] INFO root fetch - processPackages [napari-threedee]: Downloading https://files.pythonhosted.org/packages/2f/38/3d372dcf027cb406060bd042e375d00e0c33b438425cf42ebf6a2ffb2151/napari-threedee-0.0.3.tar.gz
+[2023-04-14 21:24:48] INFO root fetch - processPackages [botocore]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-14 21:24:48] INFO root fetch - processPackages [lins-pix]: Start processing: awscli
+[2023-04-14 21:24:48] INFO root fetch - main [MainThread]: End processing [lins-pix]: success
+[2023-04-14 21:24:48] INFO root fetch - processPackages [deephaven-ipywidgets]: Downloading https://files.pythonhosted.org/packages/25/4b/7a987069aba22a420511163787986c9f7c19b417e44eae66fcd9da42a5b7/deephaven_ipywidgets-0.2.1.tar.gz
+[2023-04-14 21:24:48] INFO root fetch - processPackages [awscli]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-14 21:24:48] INFO root fetch - processPackages [botocore]: executing diffoscope
+[2023-04-14 21:24:48] INFO root fetch - processPackages [botocore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-1.9.8.tar.gz tmp/botocore-1.9.9.tar.gz --markdown 20230414/b/botocore/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-14 21:24:48] INFO root fetch - processPackages [awscli]: executing diffoscope
+[2023-04-14 21:24:48] INFO root fetch - processPackages [awscli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awscli-1.9.8.tar.gz tmp/awscli-1.9.9.tar.gz --markdown 20230414/a/awscli/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-14 21:24:48] INFO root fetch - processPackages [napari-threedee]: Downloading https://files.pythonhosted.org/packages/b4/fc/2e1d60d5a04e4173092129ce2d393726b13270e8e24be781a84a5f2bf61f/napari-threedee-0.0.4.tar.gz
+[2023-04-14 21:24:48] INFO root fetch - processPackages [deephaven-ipywidgets]: Downloading https://files.pythonhosted.org/packages/a0/13/4e03993caefd75d7e23b2710611e2b12c7050031c8c0dedfedc8d70a64fe/deephaven_ipywidgets-0.2.2.tar.gz
+[2023-04-14 21:24:48] INFO root fetch - processPackages [napari-threedee]: executing diffoscope
+[2023-04-14 21:24:48] INFO root fetch - processPackages [napari-threedee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-threedee-0.0.3.tar.gz tmp/napari-threedee-0.0.4.tar.gz --markdown 20230414/n/napari-threedee/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 21:24:48] INFO root fetch - processPackages [deephaven-ipywidgets]: executing diffoscope
+[2023-04-14 21:24:48] INFO root fetch - processPackages [deephaven-ipywidgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deephaven_ipywidgets-0.2.1.tar.gz tmp/deephaven_ipywidgets-0.2.2.tar.gz --markdown 20230414/d/deephaven-ipywidgets/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 21:24:49] INFO root fetch - processPackages [ynca]: Start processing: boto3
+[2023-04-14 21:24:49] INFO root fetch - main [MainThread]: End processing [ynca]: success
+[2023-04-14 21:24:49] INFO root fetch - processPackages [boto3]: New version: [1.9.99] Old Version: [1.9.98]
+[2023-04-14 21:24:49] INFO root fetch - processPackages [boto3]: executing diffoscope
+[2023-04-14 21:24:49] INFO root fetch - processPackages [boto3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boto3-1.9.98.tar.gz tmp/boto3-1.9.99.tar.gz --markdown 20230414/b/boto3/1.9.98-1.9.99/diff.md --exclude *.pyd
+[2023-04-14 21:24:50] INFO root fetch - processPackages [napari-threedee]: Start processing: propertysync
+[2023-04-14 21:24:50] INFO root fetch - main [MainThread]: End processing [napari-threedee]: success
+[2023-04-14 21:24:50] INFO root fetch - processPackages [propertysync]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-04-14 21:24:50] INFO root fetch - processPackages [propertysync]: Downloading https://files.pythonhosted.org/packages/3c/fc/f1fc5730715c662dd16e3a2ca280a46f0210121efcf37ba3318d171dd22a/propertysync-0.2.1.tar.gz
+[2023-04-14 21:24:50] INFO root fetch - processPackages [propertysync]: executing diffoscope
+[2023-04-14 21:24:50] INFO root fetch - processPackages [propertysync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propertysync-0.1.0.tar.gz tmp/propertysync-0.2.1.tar.gz --markdown 20230414/p/propertysync/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 21:24:51] INFO root fetch - processPackages [deephaven-ipywidgets]: Start processing: planetary-computer
+[2023-04-14 21:24:51] INFO root fetch - main [MainThread]: End processing [deephaven-ipywidgets]: success
+[2023-04-14 21:24:51] INFO root fetch - processPackages [planetary-computer]: New version: [0.5.1] Old Version: [0.4.9]
+[2023-04-14 21:24:51] INFO root fetch - processPackages [planetary-computer]: Downloading https://files.pythonhosted.org/packages/33/1d/76754835d017667e62e73b822b3e1b1f0d0cc047285d026996008f25a113/planetary-computer-0.4.9.tar.gz
+[2023-04-14 21:24:51] INFO root fetch - processPackages [propertysync]: Start processing: simulai-toolkit
+[2023-04-14 21:24:51] INFO root fetch - main [MainThread]: End processing [propertysync]: success
+[2023-04-14 21:24:51] INFO root fetch - processPackages [planetary-computer]: Downloading https://files.pythonhosted.org/packages/23/ce/b44f744e3a822efacd0a970d599ef6d7827a9f094c670dd56ced5a157d32/planetary-computer-0.5.1.tar.gz
+[2023-04-14 21:24:51] INFO root fetch - main [MainThread]: End processing [boto3]: success
+[2023-04-14 21:24:51] INFO root fetch - processPackages [simulai-toolkit]: New version: [0.99.9] Old Version: [0.99.8]
+[2023-04-14 21:24:52] INFO root fetch - processPackages [simulai-toolkit]: Downloading https://files.pythonhosted.org/packages/68/fd/10eb6045a48c23ed6339d03a625af9fa1fbc036a14b601cd56e6d51a9b71/simulai-toolkit-0.99.8.tar.gz
+[2023-04-14 21:24:52] INFO root fetch - processPackages [planetary-computer]: executing diffoscope
+[2023-04-14 21:24:52] INFO root fetch - processPackages [planetary-computer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetary-computer-0.4.9.tar.gz tmp/planetary-computer-0.5.1.tar.gz --markdown 20230414/p/planetary-computer/0.4.9-0.5.1/diff.md --exclude *.pyd
+[2023-04-14 21:24:52] INFO root fetch - processPackages [simulai-toolkit]: Downloading https://files.pythonhosted.org/packages/4e/59/d10e5443ca6c8e27098c2fe36431edcce43c24db217cffe69efd19d84f86/simulai-toolkit-0.99.9.tar.gz
+[2023-04-14 21:24:53] INFO root fetch - processPackages [simulai-toolkit]: executing diffoscope
+[2023-04-14 21:24:53] INFO root fetch - processPackages [simulai-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simulai-toolkit-0.99.8.tar.gz tmp/simulai-toolkit-0.99.9.tar.gz --markdown 20230414/s/simulai-toolkit/0.99.8-0.99.9/diff.md --exclude *.pyd
+[2023-04-14 21:24:53] INFO root fetch - main [MainThread]: End processing [planetary-computer]: success
+[2023-04-14 21:24:54] INFO root fetch - main [MainThread]: End processing [simulai-toolkit]: success
+[2023-04-14 21:24:59] INFO root fetch - main [MainThread]: End processing [awscli]: success
+[2023-04-14 21:25:09] INFO root fetch - main [MainThread]: End processing [botocore]: success
+[2023-04-14 21:25:09] INFO root fetch - main [MainThread]: Store serial: [17712115]
