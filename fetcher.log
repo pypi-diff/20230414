@@ -7230,3 +7230,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 07:02:06] INFO root fetch - main [MainThread]: End processing [ypricemagic]: success
 [2023-04-14 07:02:07] INFO root fetch - main [MainThread]: End processing [syft]: success
 [2023-04-14 07:02:07] INFO root fetch - main [MainThread]: Store serial: [17703274]
+[2023-04-14 07:07:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703274]
+[2023-04-14 07:07:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: motion-python
+[2023-04-14 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqlog
+[2023-04-14 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multi-model-server
+[2023-04-14 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ecodata
+[2023-04-14 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tflite-model-maker-nightly
+[2023-04-14 07:07:14] INFO root fetch - processPackages [motion-python]: New version: [0.1.34] Old Version: [0.1.33]
+[2023-04-14 07:07:14] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202304130517] Old Version: [0.4.3.dev202304120506]
+[2023-04-14 07:07:14] WARNING root fetch - processPackages [ecodata]: Skipping, unable to determine old version
+[2023-04-14 07:07:14] INFO root fetch - processPackages [ecodata]: Start processing: pytest-homeassistant-custom-component
+[2023-04-14 07:07:14] INFO root fetch - main [MainThread]: End processing [ecodata] error
+[2023-04-14 07:07:14] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230414] Old Version: [1.1.8b20230413]
+[2023-04-14 07:07:14] INFO root fetch - processPackages [seqlog]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 07:07:14] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 07:07:14] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-04-14 07:07:14] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202304120506.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202304130517.tar.gz --markdown 20230414/t/tflite-model-maker-nightly/0.4.3.dev202304120506-0.4.3.dev202304130517/diff.md --exclude *.pyd
+[2023-04-14 07:07:14] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: executing diffoscope
+[2023-04-14 07:07:14] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz --markdown 20230414/p/pytest-homeassistant-custom-component/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 07:07:14] INFO root fetch - processPackages [motion-python]: Downloading https://files.pythonhosted.org/packages/0d/82/a92f0476094810c1f9c0dd7179b23533b2df994766b0ee938f217878795f/motion_python-0.1.34.tar.gz
+[2023-04-14 07:07:14] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/57/87/078d865f3b3d4aa0262bb4c1dda4c1a82612f90be8082ba353deff2fe962/multi_model_server-1.1.8b20230414-py2.py3-none-any.whl
+[2023-04-14 07:07:15] INFO root fetch - processPackages [motion-python]: executing diffoscope
+[2023-04-14 07:07:15] INFO root fetch - processPackages [motion-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motion_python-0.1.33.tar.gz tmp/motion_python-0.1.34.tar.gz --markdown 20230414/m/motion-python/0.1.33-0.1.34/diff.md --exclude *.pyd
+[2023-04-14 07:07:15] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-04-14 07:07:15] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230413-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230414-py2.py3-none-any.whl.zip --markdown 20230414/m/multi-model-server/1.1.8b20230413-1.1.8b20230414/diff.md --exclude *.pyd
+[2023-04-14 07:07:15] INFO root fetch - processPackages [seqlog]: executing diffoscope
+[2023-04-14 07:07:15] INFO root fetch - processPackages [seqlog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqlog-0.3.8.tar.gz tmp/seqlog-0.3.9-py2.py3-none-any.whl.zip --markdown 20230414/s/seqlog/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 07:07:16] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Start processing: dank-mids
+[2023-04-14 07:07:16] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
+[2023-04-14 07:07:16] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-04-14 07:07:16] INFO root fetch - main [MainThread]: End processing [seqlog]: success
+[2023-04-14 07:07:16] INFO root fetch - main [MainThread]: End processing [motion-python]: success
+[2023-04-14 07:07:16] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-04-14 07:07:16] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230414/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-04-14 07:07:17] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-04-14 07:07:17] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-04-14 07:10:07] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-04-14 07:10:07] INFO root fetch - main [MainThread]: Store serial: [17703298]
