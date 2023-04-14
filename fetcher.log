@@ -9370,3 +9370,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 10:15:29] INFO root fetch - main [MainThread]: End processing [Orange3-Explain]: success
 [2023-04-14 10:15:34] INFO root fetch - main [MainThread]: End processing [pyclesperanto-prototype]: success
 [2023-04-14 10:15:34] INFO root fetch - main [MainThread]: Store serial: [17704436]
+[2023-04-14 10:20:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704436]
+[2023-04-14 10:20:42] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 10:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Slpapy
+[2023-04-14 10:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbis-er-diagram
+[2023-04-14 10:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: promsoft-dl-interface
+[2023-04-14 10:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyinflux3-cli
+[2023-04-14 10:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyinflux3
+[2023-04-14 10:20:42] INFO root fetch - processPackages [promsoft-dl-interface]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 10:20:42] INFO root fetch - processPackages [pyinflux3]: New version: [0.7.7] Old Version: [0.7.5]
+[2023-04-14 10:20:42] INFO root fetch - processPackages [dbis-er-diagram]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-14 10:20:42] INFO root fetch - processPackages [Slpapy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 10:20:43] INFO root fetch - processPackages [pyinflux3-cli]: New version: [0.7.7] Old Version: [0.7.4]
+[2023-04-14 10:20:43] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-04-14 10:20:43] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.1.8.tar.gz tmp/Slpapy-0.1.9.tar.gz --markdown 20230414/S/Slpapy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 10:20:43] INFO root fetch - processPackages [dbis-er-diagram]: Downloading https://files.pythonhosted.org/packages/e5/37/fb60cfa10f959566f5848c27b0dedcb907ca688de909632a99340a51f382/dbis-er-diagram-1.0.3.tar.gz
+[2023-04-14 10:20:43] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/82/ee/33e03b1cbde96ec495c54c4739a3663ba61972b29d48632256111e9bddd3/pyinflux3-0.7.7.tar.gz
+[2023-04-14 10:20:43] INFO root fetch - processPackages [promsoft-dl-interface]: Downloading https://files.pythonhosted.org/packages/8e/26/620b40145505330a6c7882fa8f62ed0543d62b97c398a4097e793b8b09ea/promsoft_dl_interface-0.1.5.tar.gz
+[2023-04-14 10:20:43] INFO root fetch - processPackages [pyinflux3-cli]: Downloading https://files.pythonhosted.org/packages/8d/8a/9c59eef1e6dbbe7bbb4a05dd4a024f07392d2d11a32492278d48904fdc84/pyinflux3-cli-0.7.4.tar.gz
+[2023-04-14 10:20:43] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-14 10:20:43] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.7.5.tar.gz tmp/pyinflux3-0.7.7.tar.gz --markdown 20230414/p/pyinflux3/0.7.5-0.7.7/diff.md --exclude *.pyd
+[2023-04-14 10:20:43] INFO root fetch - processPackages [pyinflux3-cli]: Downloading https://files.pythonhosted.org/packages/f9/4e/ca2705cbb6ac3310616a626afe71c09c1a4565b08117cd4bde0446c8a16c/pyinflux3-cli-0.7.7.tar.gz
+[2023-04-14 10:20:43] INFO root fetch - processPackages [dbis-er-diagram]: Downloading https://files.pythonhosted.org/packages/16/89/4db4a06ed0f1365b0824453132d69d870901c179d61cf207a8f69501a091/dbis-er-diagram-1.0.4.tar.gz
+[2023-04-14 10:20:43] INFO root fetch - processPackages [promsoft-dl-interface]: Downloading https://files.pythonhosted.org/packages/7e/52/e1aadf941f9324852b4f18a11da34c16fe9f66a934eb75234b983298a23b/promsoft_dl_interface-0.1.6.tar.gz
+[2023-04-14 10:20:43] INFO root fetch - processPackages [pyinflux3-cli]: executing diffoscope
+[2023-04-14 10:20:43] INFO root fetch - processPackages [pyinflux3-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-cli-0.7.4.tar.gz tmp/pyinflux3-cli-0.7.7.tar.gz --markdown 20230414/p/pyinflux3-cli/0.7.4-0.7.7/diff.md --exclude *.pyd
+[2023-04-14 10:20:43] INFO root fetch - processPackages [dbis-er-diagram]: executing diffoscope
+[2023-04-14 10:20:43] INFO root fetch - processPackages [promsoft-dl-interface]: executing diffoscope
+[2023-04-14 10:20:43] INFO root fetch - processPackages [dbis-er-diagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbis-er-diagram-1.0.3.tar.gz tmp/dbis-er-diagram-1.0.4.tar.gz --markdown 20230414/d/dbis-er-diagram/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-14 10:20:43] INFO root fetch - processPackages [promsoft-dl-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promsoft_dl_interface-0.1.5.tar.gz tmp/promsoft_dl_interface-0.1.6.tar.gz --markdown 20230414/p/promsoft-dl-interface/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 10:20:44] INFO root fetch - processPackages [Slpapy]: Start processing: pyaedt
+[2023-04-14 10:20:44] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
+[2023-04-14 10:20:44] INFO root fetch - processPackages [pyaedt]: New version: [0.6.71] Old Version: [0.6.70]
+[2023-04-14 10:20:44] INFO root fetch - processPackages [pyinflux3]: Start processing: vaynerqualityassessments
+[2023-04-14 10:20:44] INFO root fetch - main [MainThread]: End processing [pyinflux3]: success
+[2023-04-14 10:20:44] INFO root fetch - processPackages [vaynerqualityassessments]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 10:20:44] INFO root fetch - processPackages [vaynerqualityassessments]: executing diffoscope
+[2023-04-14 10:20:44] INFO root fetch - processPackages [vaynerqualityassessments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaynerqualityassessments-0.1.8.tar.gz tmp/vaynerqualityassessments-0.1.9.tar.gz --markdown 20230414/v/vaynerqualityassessments/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 10:20:44] INFO root fetch - processPackages [pyaedt]: Downloading https://files.pythonhosted.org/packages/e5/85/a7ef762ed2ec64250cc44347c61df9b34706e87b583e749afe8816f74534/pyaedt-0.6.71.tar.gz
+[2023-04-14 10:20:44] INFO root fetch - processPackages [pyinflux3-cli]: Start processing: pyoxynet
+[2023-04-14 10:20:44] INFO root fetch - main [MainThread]: End processing [pyinflux3-cli]: success
+[2023-04-14 10:20:44] INFO root fetch - processPackages [pyoxynet]: New version: [0.0.9.9] Old Version: [0.0.9.8]
+[2023-04-14 10:20:44] INFO root fetch - processPackages [promsoft-dl-interface]: Start processing: chellow
+[2023-04-14 10:20:44] INFO root fetch - main [MainThread]: End processing [promsoft-dl-interface]: success
+[2023-04-14 10:20:44] INFO root fetch - processPackages [pyoxynet]: executing diffoscope
+[2023-04-14 10:20:44] INFO root fetch - processPackages [pyoxynet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyoxynet-0.0.9.8.tar.gz tmp/pyoxynet-0.0.9.9.tar.gz --markdown 20230414/p/pyoxynet/0.0.9.8-0.0.9.9/diff.md --exclude *.pyd
+[2023-04-14 10:20:44] INFO root fetch - processPackages [chellow]: New version: [2827] Old Version: [2826]
+[2023-04-14 10:20:44] INFO root fetch - processPackages [dbis-er-diagram]: Start processing: ecodata
+[2023-04-14 10:20:44] INFO root fetch - main [MainThread]: End processing [dbis-er-diagram]: success
+[2023-04-14 10:20:44] INFO root fetch - processPackages [ecodata]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 10:20:45] INFO root fetch - processPackages [chellow]: executing diffoscope
+[2023-04-14 10:20:45] INFO root fetch - processPackages [chellow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chellow-2826.tar.gz tmp/chellow-2827.tar.gz --markdown 20230414/c/chellow/2826-2827/diff.md --exclude *.pyd
+[2023-04-14 10:20:45] INFO root fetch - processPackages [pyaedt]: executing diffoscope
+[2023-04-14 10:20:45] INFO root fetch - processPackages [pyaedt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaedt-0.6.70.tar.gz tmp/pyaedt-0.6.71.tar.gz --markdown 20230414/p/pyaedt/0.6.70-0.6.71/diff.md --exclude *.pyd
+[2023-04-14 10:20:45] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/38/ff/8e6fea7c316f0c51d37bca1aa40fe9f60a6980a87108038344e21d55c5a9/ecodata-0.0.1.tar.gz
+[2023-04-14 10:20:45] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/20/29/8136d0a432e00e6eb08b5869881f3e2839fd761bfc39dcbb872c3b28e33c/ecodata-0.0.2.tar.gz
+[2023-04-14 10:20:45] INFO root fetch - processPackages [vaynerqualityassessments]: Start processing: cfr
+[2023-04-14 10:20:45] INFO root fetch - main [MainThread]: End processing [vaynerqualityassessments]: success
+[2023-04-14 10:20:45] INFO root fetch - processPackages [cfr]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-14 10:20:45] INFO root fetch - processPackages [ecodata]: executing diffoscope
+[2023-04-14 10:20:45] INFO root fetch - processPackages [ecodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecodata-0.0.1.tar.gz tmp/ecodata-0.0.2.tar.gz --markdown 20230414/e/ecodata/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 10:20:45] INFO root fetch - processPackages [cfr]: Downloading https://files.pythonhosted.org/packages/18/09/32bf25578446241ac6cb957389925477090ead8986ade73aa7707c3daa61/cfr-0.4.4.tar.gz
+[2023-04-14 10:20:46] INFO root fetch - processPackages [cfr]: Downloading https://files.pythonhosted.org/packages/11/7d/32950824ab708ae8dd582fe7cf82ecf66df4d0a63bf796b9c39a3551ae46/cfr-0.4.5.tar.gz
+[2023-04-14 10:20:46] INFO root fetch - processPackages [cfr]: executing diffoscope
+[2023-04-14 10:20:46] INFO root fetch - processPackages [cfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfr-0.4.4.tar.gz tmp/cfr-0.4.5.tar.gz --markdown 20230414/c/cfr/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-14 10:20:46] INFO root fetch - processPackages [ecodata]: Start processing: robohive
+[2023-04-14 10:20:46] INFO root fetch - main [MainThread]: End processing [ecodata]: success
+[2023-04-14 10:20:46] INFO root fetch - processPackages [robohive]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-14 10:20:46] INFO root fetch - main [MainThread]: End processing [pyoxynet]: success
+[2023-04-14 10:20:46] INFO root fetch - processPackages [robohive]: Downloading https://files.pythonhosted.org/packages/09/16/3f4f84bde57b43f362d78448d7bc4c1dc7cbb46b40febccd7a747a84953f/robohive-0.4.0-py3-none-any.whl
+[2023-04-14 10:20:47] WARNING root fetch - processPackages [robohive]: Skipping package: exceeds size limit 100883830>=10485760
+[2023-04-14 10:20:47] INFO root fetch - main [MainThread]: End processing [robohive] error
+[2023-04-14 10:20:48] INFO root fetch - main [MainThread]: End processing [cfr]: success
+[2023-04-14 10:20:49] INFO root fetch - main [MainThread]: End processing [chellow]: success
+[2023-04-14 10:20:50] INFO root fetch - main [MainThread]: End processing [pyaedt]: success
+[2023-04-14 10:20:50] INFO root fetch - main [MainThread]: Store serial: [17704472]
