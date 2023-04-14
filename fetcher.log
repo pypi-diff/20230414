@@ -16941,3 +16941,65 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 17:33:57] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
 [2023-04-14 17:33:57] INFO root fetch - main [MainThread]: End processing [funasr]: success
 [2023-04-14 17:33:57] INFO root fetch - main [MainThread]: Store serial: [17709241]
+[2023-04-14 17:39:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17709241]
+[2023-04-14 17:39:05] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 17:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: etm-dgraham
+[2023-04-14 17:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bdew-datetimes
+[2023-04-14 17:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: legwork
+[2023-04-14 17:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lintilla
+[2023-04-14 17:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: libdeeplake
+[2023-04-14 17:39:05] INFO root fetch - processPackages [legwork]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-14 17:39:05] WARNING root fetch - processPackages [lintilla]: Skipping, unable to determine old version
+[2023-04-14 17:39:05] INFO root fetch - processPackages [lintilla]: Start processing: simplebox
+[2023-04-14 17:39:05] INFO root fetch - main [MainThread]: End processing [lintilla] error
+[2023-04-14 17:39:05] INFO root fetch - processPackages [etm-dgraham]: New version: [4.9.7] Old Version: [4.9.6]
+[2023-04-14 17:39:05] INFO root fetch - processPackages [bdew-datetimes]: New version: [0.3.8] Old Version: [0.3.6]
+[2023-04-14 17:39:05] INFO root fetch - processPackages [libdeeplake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 17:39:05] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a128] Old Version: [0.0.1a127]
+[2023-04-14 17:39:05] INFO root fetch - processPackages [etm-dgraham]: executing diffoscope
+[2023-04-14 17:39:05] INFO root fetch - processPackages [etm-dgraham]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etm-dgraham-4.9.6.tar.gz tmp/etm-dgraham-4.9.7.tar.gz --markdown 20230414/e/etm-dgraham/4.9.6-4.9.7/diff.md --exclude *.pyd
+[2023-04-14 17:39:06] INFO root fetch - processPackages [legwork]: Downloading https://files.pythonhosted.org/packages/49/3f/52512abd6085eecffd0f286517fc70ef3cef747bfa4e50b11e74d6aedbdd/legwork-0.4.5.tar.gz
+[2023-04-14 17:39:06] INFO root fetch - processPackages [libdeeplake]: Downloading https://files.pythonhosted.org/packages/90/d1/8cba2118c890778e1a4faa696a73b8e9aafdf7592d045c088c972941ad5f/libdeeplake-0.0.8-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-14 17:39:06] INFO root fetch - processPackages [bdew-datetimes]: Downloading https://files.pythonhosted.org/packages/de/d0/ff746e40c208b4c87f42503f5308d00de054d4bbe6a28d71ccc2db15b453/bdew_datetimes-0.3.8.tar.gz
+[2023-04-14 17:39:06] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/c9/78/983e6fb691bcf66d5cd1d9a86052b32e1bcfb216f5cc8af1655aa726bdc0/simplebox-0.0.1a128-py3-none-any.whl
+[2023-04-14 17:39:06] WARNING root fetch - processPackages [legwork]: Skipping package: exceeds size limit 24521885>=10485760
+[2023-04-14 17:39:06] INFO root fetch - processPackages [legwork]: Start processing: finbourne-identity-sdk
+[2023-04-14 17:39:06] INFO root fetch - main [MainThread]: End processing [legwork] error
+[2023-04-14 17:39:06] INFO root fetch - processPackages [bdew-datetimes]: executing diffoscope
+[2023-04-14 17:39:06] INFO root fetch - processPackages [bdew-datetimes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdew_datetimes-0.3.6.tar.gz tmp/bdew_datetimes-0.3.8.tar.gz --markdown 20230414/b/bdew-datetimes/0.3.6-0.3.8/diff.md --exclude *.pyd
+[2023-04-14 17:39:06] INFO root fetch - processPackages [finbourne-identity-sdk]: New version: [0.0.840] Old Version: [0.0.2383]
+[2023-04-14 17:39:06] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2023-04-14 17:39:06] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a127-py3-none-any.whl.zip tmp/simplebox-0.0.1a128-py3-none-any.whl.zip --markdown 20230414/s/simplebox/0.0.1a127-0.0.1a128/diff.md --exclude *.pyd
+[2023-04-14 17:39:06] WARNING root fetch - processPackages [libdeeplake]: Skipping package: exceeds size limit 20849540>=10485760
+[2023-04-14 17:39:06] INFO root fetch - processPackages [libdeeplake]: Start processing: pyvts
+[2023-04-14 17:39:06] INFO root fetch - main [MainThread]: End processing [libdeeplake] error
+[2023-04-14 17:39:06] INFO root fetch - processPackages [pyvts]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-04-14 17:39:06] INFO root fetch - processPackages [finbourne-identity-sdk]: Downloading https://files.pythonhosted.org/packages/94/82/b1aab4417ad400fd04ad9fcc07b1a715d83e5c296980f33fafcda0e4409e/finbourne-identity-sdk-0.0.2383.tar.gz
+[2023-04-14 17:39:06] INFO root fetch - processPackages [finbourne-identity-sdk]: executing diffoscope
+[2023-04-14 17:39:06] INFO root fetch - processPackages [finbourne-identity-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-identity-sdk-0.0.2383.tar.gz tmp/finbourne-identity-sdk-0.0.840.tar.gz --markdown 20230414/f/finbourne-identity-sdk/0.0.2383-0.0.840/diff.md --exclude *.pyd
+[2023-04-14 17:39:06] INFO root fetch - processPackages [pyvts]: Downloading https://files.pythonhosted.org/packages/28/b4/e31a48bbb698531abc08084f28deb32fdb70463abe620ce1c2bf7479d120/pyvts-0.2.4.tar.gz
+[2023-04-14 17:39:06] INFO root fetch - processPackages [pyvts]: executing diffoscope
+[2023-04-14 17:39:06] INFO root fetch - processPackages [pyvts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvts-0.2.2.macosx-13-arm64.tar.gz tmp/pyvts-0.2.4.tar.gz --markdown 20230414/p/pyvts/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-04-14 17:39:07] INFO root fetch - processPackages [bdew-datetimes]: Start processing: gravity
+[2023-04-14 17:39:07] INFO root fetch - main [MainThread]: End processing [bdew-datetimes]: success
+[2023-04-14 17:39:07] INFO root fetch - processPackages [gravity]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-14 17:39:07] INFO root fetch - processPackages [etm-dgraham]: Start processing: pulumi-aws-native
+[2023-04-14 17:39:07] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
+[2023-04-14 17:39:07] INFO root fetch - processPackages [gravity]: Downloading https://files.pythonhosted.org/packages/ce/54/c876a4be18e2a26891c9ae1d29f42e0bcec068c65b2586aef450719754f3/gravity-1.0.2.tar.gz
+[2023-04-14 17:39:07] INFO root fetch - processPackages [pulumi-aws-native]: New version: [0.9.1a1641826769] Old Version: [0.9.1a1641824984]
+[2023-04-14 17:39:07] INFO root fetch - processPackages [simplebox]: Start processing: strkit
+[2023-04-14 17:39:07] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2023-04-14 17:39:07] INFO root fetch - processPackages [strkit]: New version: [0.8.0a9] Old Version: [0.8.0a8]
+[2023-04-14 17:39:07] INFO root fetch - processPackages [pulumi-aws-native]: executing diffoscope
+[2023-04-14 17:39:07] INFO root fetch - processPackages [pulumi-aws-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws_native-0.9.1a1641824984.tar.gz tmp/pulumi_aws_native-0.9.1a1641826769.tar.gz --markdown 20230414/p/pulumi-aws-native/0.9.1a1641824984-0.9.1a1641826769/diff.md --exclude *.pyd
+[2023-04-14 17:39:08] INFO root fetch - processPackages [gravity]: Downloading https://files.pythonhosted.org/packages/e9/f4/e21d9b5a9053abde4b7d93ef66413e0322b04f7495d7ebb13b785682ce78/gravity-1.0.3.tar.gz
+[2023-04-14 17:39:08] INFO root fetch - main [MainThread]: End processing [pyvts]: success
+[2023-04-14 17:39:08] INFO root fetch - processPackages [strkit]: executing diffoscope
+[2023-04-14 17:39:08] INFO root fetch - processPackages [strkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strkit-0.8.0a8.tar.gz tmp/strkit-0.8.0a9.tar.gz --markdown 20230414/s/strkit/0.8.0a8-0.8.0a9/diff.md --exclude *.pyd
+[2023-04-14 17:39:08] INFO root fetch - processPackages [gravity]: executing diffoscope
+[2023-04-14 17:39:08] INFO root fetch - processPackages [gravity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravity-1.0.2.tar.gz tmp/gravity-1.0.3.tar.gz --markdown 20230414/g/gravity/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-14 17:39:08] INFO root fetch - main [MainThread]: End processing [finbourne-identity-sdk]: success
+[2023-04-14 17:39:09] INFO root fetch - main [MainThread]: End processing [strkit]: success
+[2023-04-14 17:39:09] INFO root fetch - main [MainThread]: End processing [gravity]: success
+[2023-04-14 17:39:32] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
+[2023-04-14 17:39:32] INFO root fetch - main [MainThread]: Store serial: [17709287]
