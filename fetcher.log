@@ -9579,3 +9579,80 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 10:31:45] INFO root fetch - main [MainThread]: End processing [holoviews]: success
 [2023-04-14 10:31:46] INFO root fetch - main [MainThread]: End processing [metdig]: success
 [2023-04-14 10:31:46] INFO root fetch - main [MainThread]: Store serial: [17704551]
+[2023-04-14 10:36:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704551]
+[2023-04-14 10:36:54] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-14 10:36:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exodusutils
+[2023-04-14 10:36:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thread-bySean
+[2023-04-14 10:36:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tarjan
+[2023-04-14 10:36:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: micromechanics-indentationGUI
+[2023-04-14 10:36:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-ai-timetable
+[2023-04-14 10:36:54] INFO root fetch - processPackages [exodusutils]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-14 10:36:54] INFO root fetch - processPackages [tarjan]: New version: [0.2.4] Old Version: [0.2.3.2]
+[2023-04-14 10:36:54] WARNING root fetch - processPackages [thread-bySean]: Skipping, unable to determine old version
+[2023-04-14 10:36:54] INFO root fetch - processPackages [thread-bySean]: Start processing: thinks-dash-components
+[2023-04-14 10:36:54] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: New version: [0.3.2] Old Version: [0.3.0]
+[2023-04-14 10:36:54] INFO root fetch - main [MainThread]: End processing [thread-bySean] error
+[2023-04-14 10:36:54] INFO root fetch - processPackages [micromechanics-indentationGUI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 10:36:54] INFO root fetch - processPackages [thinks-dash-components]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-14 10:36:54] INFO root fetch - processPackages [micromechanics-indentationGUI]: executing diffoscope
+[2023-04-14 10:36:54] INFO root fetch - processPackages [micromechanics-indentationGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics_indentationGUI-0.0.8-py3-none-any.whl.zip tmp/micromechanics_indentationGUI-0.0.9-py3-none-any.whl.zip --markdown 20230414/m/micromechanics-indentationGUI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 10:36:54] INFO root fetch - processPackages [tarjan]: Downloading https://files.pythonhosted.org/packages/7c/74/a35aabdb826eb6a29a74e792f75e1228d9ce3811fbf52b1931d515274cb2/tarjan-0.2.3.2.tar.gz
+[2023-04-14 10:36:54] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: Downloading https://files.pythonhosted.org/packages/ff/f1/d29c6e3b9bba4d494262dad05e575444d63cb9b3430e472b043eb178b3f7/nonebot_plugin_ai_timetable-0.3.0.tar.gz
+[2023-04-14 10:36:54] INFO root fetch - processPackages [thinks-dash-components]: Downloading https://files.pythonhosted.org/packages/b0/1a/e909d6f4cb2c6973497fb51c1b64a60744d4f6fb2765421f635fdf8a4f71/thinks_dash_components-0.3.4.tar.gz
+[2023-04-14 10:36:54] INFO root fetch - processPackages [exodusutils]: executing diffoscope
+[2023-04-14 10:36:54] INFO root fetch - processPackages [exodusutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exodusutils-0.3.7.tar.gz tmp/exodusutils-0.3.9.tar.gz --markdown 20230414/e/exodusutils/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 10:36:54] INFO root fetch - processPackages [thinks-dash-components]: executing diffoscope
+[2023-04-14 10:36:54] INFO root fetch - processPackages [thinks-dash-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thinks_dash_components-0.3.3.tar.gz tmp/thinks_dash_components-0.3.4.tar.gz --markdown 20230414/t/thinks-dash-components/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-14 10:36:54] INFO root fetch - processPackages [tarjan]: Downloading https://files.pythonhosted.org/packages/4a/ec/37c4395138b8307daf910d30e0aa77c854e7a83d4900799ace460e89bbf9/tarjan-0.2.4.tar.gz
+[2023-04-14 10:36:54] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: Downloading https://files.pythonhosted.org/packages/b2/30/5c4c8cf12122ab480c3b5c0932ab3a3b3d773e6390a3682bb5297e158fb4/nonebot_plugin_ai_timetable-0.3.2.tar.gz
+[2023-04-14 10:36:54] INFO root fetch - processPackages [tarjan]: executing diffoscope
+[2023-04-14 10:36:54] INFO root fetch - processPackages [tarjan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarjan-0.2.3.2.tar.gz tmp/tarjan-0.2.4.tar.gz --markdown 20230414/t/tarjan/0.2.3.2-0.2.4/diff.md --exclude *.pyd
+[2023-04-14 10:36:54] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: executing diffoscope
+[2023-04-14 10:36:54] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ai_timetable-0.3.0.tar.gz tmp/nonebot_plugin_ai_timetable-0.3.2.tar.gz --markdown 20230414/n/nonebot-plugin-ai-timetable/0.3.0-0.3.2/diff.md --exclude *.pyd
+[2023-04-14 10:36:55] INFO root fetch - processPackages [micromechanics-indentationGUI]: Start processing: opensesame-extension-osweb
+[2023-04-14 10:36:55] INFO root fetch - main [MainThread]: End processing [micromechanics-indentationGUI]: success
+[2023-04-14 10:36:55] INFO root fetch - processPackages [opensesame-extension-osweb]: New version: [2.0.0.0a8] Old Version: [2.0.0.0a7]
+[2023-04-14 10:36:55] INFO root fetch - processPackages [opensesame-extension-osweb]: executing diffoscope
+[2023-04-14 10:36:55] INFO root fetch - processPackages [opensesame-extension-osweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opensesame_extension_osweb-2.0.0.0a7.tar.gz tmp/opensesame_extension_osweb-2.0.0.0a8.tar.gz --markdown 20230414/o/opensesame-extension-osweb/2.0.0.0a7-2.0.0.0a8/diff.md --exclude *.pyd
+[2023-04-14 10:36:55] INFO root fetch - processPackages [exodusutils]: Start processing: visualime
+[2023-04-14 10:36:55] INFO root fetch - main [MainThread]: End processing [exodusutils]: success
+[2023-04-14 10:36:55] INFO root fetch - processPackages [visualime]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 10:36:55] INFO root fetch - processPackages [tarjan]: Start processing: tf-estimator-nightly
+[2023-04-14 10:36:55] INFO root fetch - main [MainThread]: End processing [tarjan]: success
+[2023-04-14 10:36:55] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-04-14 10:36:55] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-04-14 10:36:55] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230414/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-04-14 10:36:56] INFO root fetch - processPackages [visualime]: Downloading https://files.pythonhosted.org/packages/7a/13/57fe887470a56c596a51905604b3146db7811153546b33c1b2db024f5283/visualime-0.0.5.tar.gz
+[2023-04-14 10:36:56] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: Start processing: webshotpy
+[2023-04-14 10:36:56] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-ai-timetable]: success
+[2023-04-14 10:36:56] WARNING root fetch - processPackages [webshotpy]: Skipping, unable to determine old version
+[2023-04-14 10:36:56] INFO root fetch - processPackages [webshotpy]: Start processing: oc-pyfs
+[2023-04-14 10:36:56] INFO root fetch - main [MainThread]: End processing [webshotpy] error
+[2023-04-14 10:36:56] INFO root fetch - processPackages [oc-pyfs]: New version: [1.0.6] Old Version: [1.0.2]
+[2023-04-14 10:36:56] INFO root fetch - processPackages [visualime]: Downloading https://files.pythonhosted.org/packages/82/cf/b782d5781a22d9d88a77ae15427deed7b939d7e752390faf7c918d95d951/visualime-0.0.6.tar.gz
+[2023-04-14 10:36:56] INFO root fetch - processPackages [oc-pyfs]: Downloading https://files.pythonhosted.org/packages/cd/dc/9d962daea1e3939464506ee61261b6992416dd074f23694febd3bf1b2a12/oc_pyfs-1.0.6-py3-none-any.whl
+[2023-04-14 10:36:56] INFO root fetch - processPackages [visualime]: executing diffoscope
+[2023-04-14 10:36:56] INFO root fetch - processPackages [visualime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visualime-0.0.5.tar.gz tmp/visualime-0.0.6.tar.gz --markdown 20230414/v/visualime/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 10:36:56] INFO root fetch - processPackages [oc-pyfs]: executing diffoscope
+[2023-04-14 10:36:56] INFO root fetch - processPackages [oc-pyfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oc_pyfs-1.0.2-py3-none-any.whl.zip tmp/oc_pyfs-1.0.6-py3-none-any.whl.zip --markdown 20230414/o/oc-pyfs/1.0.2-1.0.6/diff.md --exclude *.pyd
+[2023-04-14 10:36:57] INFO root fetch - processPackages [thinks-dash-components]: Start processing: odoo-addon-l10n-it-fatturapa-in
+[2023-04-14 10:36:57] INFO root fetch - main [MainThread]: End processing [thinks-dash-components]: success
+[2023-04-14 10:36:57] WARNING root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Skipping, unable to determine old version
+[2023-04-14 10:36:57] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Start processing: OmniBridge
+[2023-04-14 10:36:57] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa-in] error
+[2023-04-14 10:36:57] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 10:36:57] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-14 10:36:57] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230414/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 10:36:57] INFO root fetch - processPackages [opensesame-extension-osweb]: Start processing: garpix-page
+[2023-04-14 10:36:57] INFO root fetch - main [MainThread]: End processing [opensesame-extension-osweb]: success
+[2023-04-14 10:36:57] INFO root fetch - processPackages [garpix-page]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-04-14 10:36:57] INFO root fetch - main [MainThread]: End processing [oc-pyfs]: success
+[2023-04-14 10:36:57] INFO root fetch - main [MainThread]: End processing [visualime]: success
+[2023-04-14 10:36:57] INFO root fetch - processPackages [garpix-page]: Downloading https://files.pythonhosted.org/packages/11/17/20c2a4cd79f6d4f1add00722e84ff9ae4f2d04fd3224f466af5c1b8de1ca/garpix_page-2.8.0.tar.gz
+[2023-04-14 10:36:57] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-04-14 10:36:58] INFO root fetch - processPackages [garpix-page]: Downloading https://files.pythonhosted.org/packages/f0/ba/ed6a5c2b76619fa0ca3bc7cbf58fb1306b3bbdde7ba4d718e5bee021991a/garpix_page-2.9.0.tar.gz
+[2023-04-14 10:36:58] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-14 10:36:58] INFO root fetch - processPackages [garpix-page]: executing diffoscope
+[2023-04-14 10:36:58] INFO root fetch - processPackages [garpix-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garpix_page-2.8.0.tar.gz tmp/garpix_page-2.9.0.tar.gz --markdown 20230414/g/garpix-page/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-04-14 10:36:59] INFO root fetch - main [MainThread]: End processing [garpix-page]: success
+[2023-04-14 10:36:59] INFO root fetch - main [MainThread]: Store serial: [17704595]
