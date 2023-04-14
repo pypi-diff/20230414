@@ -6205,3 +6205,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 04:43:38] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-constraint-chronology]: success
 [2023-04-14 04:43:38] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-04-14 04:43:38] INFO root fetch - main [MainThread]: Store serial: [17702636]
+[2023-04-14 04:48:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702636]
+[2023-04-14 04:48:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-14 04:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smplotlib
+[2023-04-14 04:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-partner-time-to-pay
+[2023-04-14 04:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyperdrive
+[2023-04-14 04:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xml-api
+[2023-04-14 04:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: imbalanced-metrics
+[2023-04-14 04:48:45] INFO root fetch - processPackages [odoo-addon-partner-time-to-pay]: New version: [15.0.1.2.0.1] Old Version: [15.0.1.2.0]
+[2023-04-14 04:48:45] WARNING root fetch - processPackages [xml-api]: Skipping, unable to determine old version
+[2023-04-14 04:48:45] ERROR root fetch - processPackages [imbalanced-metrics]: Unable to get metadata: No such project 'imbalanced-metrics'
+[2023-04-14 04:48:45] INFO root fetch - main [MainThread]: End processing [xml-api] error
+[2023-04-14 04:48:45] INFO root fetch - processPackages [smplotlib]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 04:48:45] INFO root fetch - main [MainThread]: End processing [imbalanced-metrics] error
+[2023-04-14 04:48:45] INFO root fetch - processPackages [hyperdrive]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-04-14 04:48:46] INFO root fetch - processPackages [hyperdrive]: executing diffoscope
+[2023-04-14 04:48:46] INFO root fetch - processPackages [hyperdrive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperdrive-1.9.5.tar.gz tmp/hyperdrive-1.9.6.tar.gz --markdown 20230414/h/hyperdrive/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-04-14 04:48:46] INFO root fetch - processPackages [smplotlib]: Downloading https://files.pythonhosted.org/packages/2a/79/420514f22e8fd6b577f1249b48f4dd9f1634a9bc38399d135db774a06a0b/smplotlib-0.0.1.tar.gz
+[2023-04-14 04:48:46] INFO root fetch - processPackages [odoo-addon-partner-time-to-pay]: Downloading https://files.pythonhosted.org/packages/fd/c1/882334aaf81ebf605be3b3d1bd0a88d2ff9d9517a3e94402b86f259ac6df/odoo_addon_partner_time_to_pay-15.0.1.2.0.1-py3-none-any.whl
+[2023-04-14 04:48:46] INFO root fetch - processPackages [odoo-addon-partner-time-to-pay]: executing diffoscope
+[2023-04-14 04:48:46] INFO root fetch - processPackages [odoo-addon-partner-time-to-pay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_time_to_pay-15.0.1.2.0-py3-none-any.whl.zip tmp/odoo_addon_partner_time_to_pay-15.0.1.2.0.1-py3-none-any.whl.zip --markdown 20230414/o/odoo-addon-partner-time-to-pay/15.0.1.2.0-15.0.1.2.0.1/diff.md --exclude *.pyd
+[2023-04-14 04:48:46] INFO root fetch - processPackages [smplotlib]: Downloading https://files.pythonhosted.org/packages/92/ca/230bebfb385b838cc6f8bdfb637e238225b30894897d03af977b69edc2c9/smplotlib-0.0.2.tar.gz
+[2023-04-14 04:48:46] INFO root fetch - processPackages [smplotlib]: executing diffoscope
+[2023-04-14 04:48:46] INFO root fetch - processPackages [smplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smplotlib-0.0.1.tar.gz tmp/smplotlib-0.0.2.tar.gz --markdown 20230414/s/smplotlib/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 04:48:47] INFO root fetch - main [MainThread]: End processing [hyperdrive]: success
+[2023-04-14 04:48:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-time-to-pay]: success
+[2023-04-14 04:48:48] INFO root fetch - main [MainThread]: End processing [smplotlib]: success
+[2023-04-14 04:48:48] INFO root fetch - main [MainThread]: Store serial: [17702661]
