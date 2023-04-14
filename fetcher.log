@@ -21325,3 +21325,89 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 21:53:40] INFO root fetch - main [MainThread]: End processing [candlestick-chart]: success
 [2023-04-14 21:53:44] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-04-14 21:53:44] INFO root fetch - main [MainThread]: Store serial: [17712314]
+[2023-04-14 21:58:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712314]
+[2023-04-14 21:58:51] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 21:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ezbeq
+[2023-04-14 21:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dr-sdk-lotr
+[2023-04-14 21:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gym-anm
+[2023-04-14 21:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tecton
+[2023-04-14 21:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tensorflow-model-analysis
+[2023-04-14 21:58:51] INFO root fetch - processPackages [tensorflow-model-analysis]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-14 21:58:51] INFO root fetch - processPackages [gym-anm]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-14 21:58:51] INFO root fetch - processPackages [dr-sdk-lotr]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 21:58:51] INFO root fetch - processPackages [ezbeq]: New version: [1.0.0b1] Old Version: [0.9.3]
+[2023-04-14 21:58:51] INFO root fetch - processPackages [tecton]: New version: [0.7.0b9] Old Version: [0.7.0b8]
+[2023-04-14 21:58:52] INFO root fetch - processPackages [tensorflow-model-analysis]: Downloading https://files.pythonhosted.org/packages/70/39/d7cb1f0a70d45415d2189a38b248b0fb994d119f00b95ade43e621170109/tensorflow_model_analysis-0.9.1.tar.gz
+[2023-04-14 21:58:52] INFO root fetch - processPackages [tecton]: executing diffoscope
+[2023-04-14 21:58:52] INFO root fetch - processPackages [tecton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tecton-0.7.0b8.tar.gz tmp/tecton-0.7.0b9.tar.gz --markdown 20230414/t/tecton/0.7.0b8-0.7.0b9/diff.md --exclude *.pyd
+[2023-04-14 21:58:52] INFO root fetch - processPackages [gym-anm]: Downloading https://files.pythonhosted.org/packages/82/62/8d17ba1e8b0736d02372513aca7a0a2e4de91e719cf219c239ce99c81a16/gym_anm-1.1.6-py3-none-any.whl
+[2023-04-14 21:58:52] INFO root fetch - processPackages [dr-sdk-lotr]: Downloading https://files.pythonhosted.org/packages/a9/b5/0d23b6a4bd4b3a89e5a24b9d0cebadf0a39151a36fec40fc92f54d26ff24/dr-sdk-lotr-0.0.3.tar.gz
+[2023-04-14 21:58:52] INFO root fetch - processPackages [ezbeq]: Downloading https://files.pythonhosted.org/packages/59/7c/061bffe9e6a8b75df63c621551540c335ac67afd033a2fdb02c1dece2a9d/ezbeq-1.0.0b1.tar.gz
+[2023-04-14 21:58:52] INFO root fetch - processPackages [gym-anm]: executing diffoscope
+[2023-04-14 21:58:52] INFO root fetch - processPackages [gym-anm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym_anm-1.1.5.tar.gz tmp/gym_anm-1.1.6-py3-none-any.whl.zip --markdown 20230414/g/gym-anm/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-14 21:58:52] INFO root fetch - processPackages [dr-sdk-lotr]: executing diffoscope
+[2023-04-14 21:58:52] INFO root fetch - processPackages [dr-sdk-lotr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dr-sdk-lotr-0.0.2.tar.gz tmp/dr-sdk-lotr-0.0.3.tar.gz --markdown 20230414/d/dr-sdk-lotr/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 21:58:52] INFO root fetch - processPackages [ezbeq]: executing diffoscope
+[2023-04-14 21:58:52] INFO root fetch - processPackages [ezbeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezbeq-0.9.3.tar.gz tmp/ezbeq-1.0.0b1.tar.gz --markdown 20230414/e/ezbeq/0.9.3-1.0.0b1/diff.md --exclude *.pyd
+[2023-04-14 21:58:52] INFO root fetch - processPackages [tensorflow-model-analysis]: Downloading https://files.pythonhosted.org/packages/9c/d5/4fd3bd99e8be45617aeab38e16bec841d07276859f0463c9fd387bf0415a/tensorflow_model_analysis-0.9.2.tar.gz
+[2023-04-14 21:58:52] INFO root fetch - processPackages [tensorflow-model-analysis]: executing diffoscope
+[2023-04-14 21:58:52] INFO root fetch - processPackages [tensorflow-model-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_model_analysis-0.9.1.tar.gz tmp/tensorflow_model_analysis-0.9.2.tar.gz --markdown 20230414/t/tensorflow-model-analysis/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-14 21:58:53] INFO root fetch - processPackages [gym-anm]: Start processing: phylum
+[2023-04-14 21:58:53] INFO root fetch - main [MainThread]: End processing [gym-anm]: success
+[2023-04-14 21:58:53] INFO root fetch - processPackages [phylum]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 21:58:53] INFO root fetch - processPackages [phylum]: executing diffoscope
+[2023-04-14 21:58:53] INFO root fetch - processPackages [phylum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phylum-0.9.0.tar.gz tmp/phylum-0.9.1.tar.gz --markdown 20230414/p/phylum/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 21:58:53] INFO root fetch - processPackages [dr-sdk-lotr]: Start processing: visiongraph
+[2023-04-14 21:58:53] INFO root fetch - main [MainThread]: End processing [dr-sdk-lotr]: success
+[2023-04-14 21:58:53] INFO root fetch - processPackages [visiongraph]: New version: [0.1.44.1] Old Version: [0.1.44]
+[2023-04-14 21:58:53] INFO root fetch - processPackages [visiongraph]: Downloading https://files.pythonhosted.org/packages/22/d8/587e145276846483fde5b0d3110cddb00a1e83c261bf53c801f57830fa4e/visiongraph-0.1.44.1-py3-none-any.whl
+[2023-04-14 21:58:54] INFO root fetch - processPackages [ezbeq]: Start processing: bassmap
+[2023-04-14 21:58:54] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
+[2023-04-14 21:58:54] INFO root fetch - processPackages [bassmap]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 21:58:54] INFO root fetch - processPackages [visiongraph]: executing diffoscope
+[2023-04-14 21:58:54] INFO root fetch - processPackages [visiongraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visiongraph-0.1.44-py3-none-any.whl.zip tmp/visiongraph-0.1.44.1-py3-none-any.whl.zip --markdown 20230414/v/visiongraph/0.1.44-0.1.44.1/diff.md --exclude *.pyd
+[2023-04-14 21:58:54] INFO root fetch - processPackages [bassmap]: Downloading https://files.pythonhosted.org/packages/3c/a5/5a2f8d82b9728776ae03dc696ffacf21d7bdf53e1d8a3392af58bd7d9d0d/bassmap-0.0.1.tar.gz
+[2023-04-14 21:58:54] INFO root fetch - processPackages [bassmap]: Downloading https://files.pythonhosted.org/packages/98/18/ed070da12ee6db0077090a0e7b187de520f201b8c0731e758036db99d333/bassmap-0.0.2.tar.gz
+[2023-04-14 21:58:54] INFO root fetch - processPackages [bassmap]: executing diffoscope
+[2023-04-14 21:58:54] INFO root fetch - processPackages [bassmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bassmap-0.0.1.tar.gz tmp/bassmap-0.0.2.tar.gz --markdown 20230414/b/bassmap/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 21:58:54] INFO root fetch - processPackages [phylum]: Start processing: dkist-processing-common
+[2023-04-14 21:58:54] INFO root fetch - main [MainThread]: End processing [phylum]: success
+[2023-04-14 21:58:54] INFO root fetch - processPackages [dkist-processing-common]: New version: [2.4.1rc1] Old Version: [2.4.0rc2]
+[2023-04-14 21:58:55] INFO root fetch - processPackages [dkist-processing-common]: Downloading https://files.pythonhosted.org/packages/17/ae/78194365398e36b4ef8c400717d36d264f2a77c6358267c84c49c918f649/dkist-processing-common-2.4.1rc1.tar.gz
+[2023-04-14 21:58:55] INFO root fetch - processPackages [dkist-processing-common]: executing diffoscope
+[2023-04-14 21:58:55] INFO root fetch - processPackages [dkist-processing-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-processing-common-2.4.0rc2.tar.gz tmp/dkist-processing-common-2.4.1rc1.tar.gz --markdown 20230414/d/dkist-processing-common/2.4.0rc2-2.4.1rc1/diff.md --exclude *.pyd
+[2023-04-14 21:58:55] INFO root fetch - processPackages [bassmap]: Start processing: np-vba
+[2023-04-14 21:58:55] INFO root fetch - main [MainThread]: End processing [bassmap]: success
+[2023-04-14 21:58:55] WARNING root fetch - processPackages [np-vba]: Skipping, unable to determine old version
+[2023-04-14 21:58:55] INFO root fetch - processPackages [np-vba]: Start processing: griptape-tools
+[2023-04-14 21:58:55] INFO root fetch - main [MainThread]: End processing [np-vba] error
+[2023-04-14 21:58:55] INFO root fetch - processPackages [griptape-tools]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-14 21:58:55] INFO root fetch - processPackages [griptape-tools]: Downloading https://files.pythonhosted.org/packages/e9/a2/cd69635167df574f3065fe4a2b8833e3104fa753867ae9e53c7bf746f4cb/griptape_tools-0.5.2.tar.gz
+[2023-04-14 21:58:56] INFO root fetch - processPackages [griptape-tools]: executing diffoscope
+[2023-04-14 21:58:56] INFO root fetch - processPackages [griptape-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape_tools-0.5.1.tar.gz tmp/griptape_tools-0.5.2.tar.gz --markdown 20230414/g/griptape-tools/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-14 21:58:56] INFO root fetch - processPackages [tensorflow-model-analysis]: Start processing: whappy
+[2023-04-14 21:58:56] INFO root fetch - main [MainThread]: End processing [tensorflow-model-analysis]: success
+[2023-04-14 21:58:56] INFO root fetch - processPackages [whappy]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 21:58:56] INFO root fetch - processPackages [whappy]: Downloading https://files.pythonhosted.org/packages/9c/2b/8cf8a59528cdeb208429038c2358624a7afa898344a5e4216f2bf074f90b/whappy-0.1.0.tar.gz
+[2023-04-14 21:58:56] INFO root fetch - processPackages [visiongraph]: Start processing: power-search
+[2023-04-14 21:58:56] INFO root fetch - main [MainThread]: End processing [visiongraph]: success
+[2023-04-14 21:58:56] WARNING root fetch - processPackages [power-search]: Skipping, unable to determine old version
+[2023-04-14 21:58:56] INFO root fetch - processPackages [power-search]: Start processing: scrnatools
+[2023-04-14 21:58:56] INFO root fetch - main [MainThread]: End processing [power-search] error
+[2023-04-14 21:58:56] INFO root fetch - processPackages [whappy]: Downloading https://files.pythonhosted.org/packages/09/82/1f00c853bdfdab83ad81f8e50bb2a8847d9fb47d627c7054612347d626fa/whappy-0.1.1.tar.gz
+[2023-04-14 21:58:56] INFO root fetch - processPackages [scrnatools]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-14 21:58:57] INFO root fetch - processPackages [dkist-processing-common]: Start processing: ckanext-datagovtheme
+[2023-04-14 21:58:57] INFO root fetch - main [MainThread]: End processing [dkist-processing-common]: success
+[2023-04-14 21:58:57] INFO root fetch - processPackages [scrnatools]: executing diffoscope
+[2023-04-14 21:58:57] INFO root fetch - processPackages [scrnatools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrnatools-0.3.4.tar.gz tmp/scrnatools-0.3.5.tar.gz --markdown 20230414/s/scrnatools/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-14 21:58:57] INFO root fetch - main [MainThread]: End processing [tecton]: success
+[2023-04-14 21:58:57] INFO root fetch - processPackages [ckanext-datagovtheme]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 21:58:57] INFO root fetch - processPackages [whappy]: executing diffoscope
+[2023-04-14 21:58:57] INFO root fetch - processPackages [whappy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whappy-0.1.0.tar.gz tmp/whappy-0.1.1.tar.gz --markdown 20230414/w/whappy/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 21:58:57] INFO root fetch - main [MainThread]: End processing [griptape-tools]: success
+[2023-04-14 21:58:57] INFO root fetch - processPackages [ckanext-datagovtheme]: executing diffoscope
+[2023-04-14 21:58:57] INFO root fetch - processPackages [ckanext-datagovtheme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-datagovtheme-0.1.8.tar.gz tmp/ckanext-datagovtheme-0.1.9.tar.gz --markdown 20230414/c/ckanext-datagovtheme/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 21:58:58] INFO root fetch - main [MainThread]: End processing [whappy]: success
+[2023-04-14 21:58:58] INFO root fetch - main [MainThread]: End processing [scrnatools]: success
+[2023-04-14 21:59:03] INFO root fetch - main [MainThread]: End processing [ckanext-datagovtheme]: success
+[2023-04-14 21:59:03] INFO root fetch - main [MainThread]: Store serial: [17712358]
