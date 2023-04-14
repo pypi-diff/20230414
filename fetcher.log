@@ -22717,3 +22717,62 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 23:33:41] INFO root fetch - main [MainThread]: End processing [vesselapi]: success
 [2023-04-14 23:33:46] INFO root fetch - main [MainThread]: End processing [astronomer-cosmos]: success
 [2023-04-14 23:33:46] INFO root fetch - main [MainThread]: Store serial: [17713118]
+[2023-04-14 23:38:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713118]
+[2023-04-14 23:38:53] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 23:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: butterneck-projen
+[2023-04-14 23:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psychoevals
+[2023-04-14 23:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aug-tool
+[2023-04-14 23:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robit
+[2023-04-14 23:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TheSilent
+[2023-04-14 23:38:53] INFO root fetch - processPackages [butterneck-projen]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 23:38:53] INFO root fetch - processPackages [robit]: New version: [0.3.0.1] Old Version: [0.3.0]
+[2023-04-14 23:38:53] WARNING root fetch - processPackages [psychoevals]: Skipping, unable to determine old version
+[2023-04-14 23:38:53] INFO root fetch - processPackages [psychoevals]: Start processing: bootloader
+[2023-04-14 23:38:53] INFO root fetch - main [MainThread]: End processing [psychoevals] error
+[2023-04-14 23:38:53] WARNING root fetch - processPackages [aug-tool]: Skipping, unable to determine old version
+[2023-04-14 23:38:53] INFO root fetch - processPackages [aug-tool]: Start processing: simple-hierarchical-transformer
+[2023-04-14 23:38:53] INFO root fetch - main [MainThread]: End processing [aug-tool] error
+[2023-04-14 23:38:53] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 23:38:53] INFO root fetch - processPackages [bootloader]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-14 23:38:53] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 23:38:53] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-14 23:38:53] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230414/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 23:38:53] INFO root fetch - processPackages [butterneck-projen]: Downloading https://files.pythonhosted.org/packages/7f/f5/59a325944b7011638ad76200b55f6cc0bd79d8f7d13f7941a9a52b585a7a/butterneck-projen-0.0.9.tar.gz
+[2023-04-14 23:38:54] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-14 23:38:54] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.8.tar.gz tmp/simple-hierarchical-transformer-0.0.9.tar.gz --markdown 20230414/s/simple-hierarchical-transformer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 23:38:54] INFO root fetch - processPackages [robit]: Downloading https://files.pythonhosted.org/packages/fd/67/347721752d859c12a5b8c11cd9d226a40403a8021877a5271f155e122056/robit-0.3.0.1.tar.gz
+[2023-04-14 23:38:54] INFO root fetch - processPackages [butterneck-projen]: executing diffoscope
+[2023-04-14 23:38:54] INFO root fetch - processPackages [butterneck-projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/butterneck-projen-0.0.8.tar.gz tmp/butterneck-projen-0.0.9.tar.gz --markdown 20230414/b/butterneck-projen/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 23:38:54] INFO root fetch - processPackages [bootloader]: Downloading https://files.pythonhosted.org/packages/49/11/af4c994de742f4ef4c54204c582b825016ba7b99458200553fc7a822df56/bootloader-1.4.0.tar.gz
+[2023-04-14 23:38:54] INFO root fetch - processPackages [robit]: executing diffoscope
+[2023-04-14 23:38:54] INFO root fetch - processPackages [robit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robit-0.3.0.tar.gz tmp/robit-0.3.0.1.tar.gz --markdown 20230414/r/robit/0.3.0-0.3.0.1/diff.md --exclude *.pyd
+[2023-04-14 23:38:54] INFO root fetch - processPackages [bootloader]: Downloading https://files.pythonhosted.org/packages/54/d8/7373d34fbf6aaf4e4a2f5ecf064ce71b520888054150a18abb508a2acd14/bootloader-1.4.1.tar.gz
+[2023-04-14 23:38:54] INFO root fetch - processPackages [bootloader]: executing diffoscope
+[2023-04-14 23:38:54] INFO root fetch - processPackages [bootloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bootloader-1.4.0.tar.gz tmp/bootloader-1.4.1.tar.gz --markdown 20230414/b/bootloader/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-14 23:38:55] INFO root fetch - processPackages [simple-hierarchical-transformer]: Start processing: vesselapi
+[2023-04-14 23:38:55] INFO root fetch - main [MainThread]: End processing [simple-hierarchical-transformer]: success
+[2023-04-14 23:38:55] INFO root fetch - processPackages [vesselapi]: New version: [3.5.2] Old Version: [3.2.2]
+[2023-04-14 23:38:55] INFO root fetch - processPackages [TheSilent]: Start processing: TheSilent
+[2023-04-14 23:38:55] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-14 23:38:55] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 23:38:55] INFO root fetch - processPackages [vesselapi]: executing diffoscope
+[2023-04-14 23:38:55] INFO root fetch - processPackages [vesselapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vesselapi-3.2.2.tar.gz tmp/vesselapi-3.5.2.tar.gz --markdown 20230414/v/vesselapi/3.2.2-3.5.2/diff.md --exclude *.pyd
+[2023-04-14 23:38:55] INFO root fetch - processPackages [butterneck-projen]: Start processing: flow-helpers-tps
+[2023-04-14 23:38:55] INFO root fetch - main [MainThread]: End processing [butterneck-projen]: success
+[2023-04-14 23:38:55] INFO root fetch - processPackages [flow-helpers-tps]: New version: [2023.4.14.2141] Old Version: [2023.4.11.1755]
+[2023-04-14 23:38:55] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-14 23:38:55] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230414/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 23:38:55] INFO root fetch - processPackages [robit]: Start processing: arize-phoenix
+[2023-04-14 23:38:55] INFO root fetch - main [MainThread]: End processing [robit]: success
+[2023-04-14 23:38:55] INFO root fetch - processPackages [arize-phoenix]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 23:38:55] INFO root fetch - main [MainThread]: End processing [bootloader]: success
+[2023-04-14 23:38:55] INFO root fetch - processPackages [flow-helpers-tps]: Downloading https://files.pythonhosted.org/packages/c6/ca/578a911b04d0914b8278113e130faffdbeb6bcf32dfd5ab2bc2c22ed63d3/flow_helpers_tps-2023.4.14.2141.tar.gz
+[2023-04-14 23:38:55] INFO root fetch - processPackages [flow-helpers-tps]: executing diffoscope
+[2023-04-14 23:38:55] INFO root fetch - processPackages [flow-helpers-tps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flow_helpers_tps-2023.4.11.1755.tar.gz tmp/flow_helpers_tps-2023.4.14.2141.tar.gz --markdown 20230414/f/flow-helpers-tps/2023.4.11.1755-2023.4.14.2141/diff.md --exclude *.pyd
+[2023-04-14 23:38:56] INFO root fetch - processPackages [arize-phoenix]: executing diffoscope
+[2023-04-14 23:38:56] INFO root fetch - processPackages [arize-phoenix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arize_phoenix-0.0.8.tar.gz tmp/arize_phoenix-0.0.9.tar.gz --markdown 20230414/a/arize-phoenix/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 23:38:56] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-14 23:38:56] INFO root fetch - main [MainThread]: End processing [flow-helpers-tps]: success
+[2023-04-14 23:38:57] INFO root fetch - main [MainThread]: End processing [vesselapi]: success
+[2023-04-14 23:39:14] INFO root fetch - main [MainThread]: End processing [arize-phoenix]: success
+[2023-04-14 23:39:14] INFO root fetch - main [MainThread]: Store serial: [17713155]
