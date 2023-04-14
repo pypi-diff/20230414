@@ -9294,3 +9294,79 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 10:10:08] INFO root fetch - processPackages [pylife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylife-2.0.2.tar.gz tmp/pylife-2.0.3rc3.tar.gz --markdown 20230414/p/pylife/2.0.2-2.0.3rc3/diff.md --exclude *.pyd
 [2023-04-14 10:10:13] INFO root fetch - main [MainThread]: End processing [pylife]: success
 [2023-04-14 10:10:13] INFO root fetch - main [MainThread]: Store serial: [17704395]
+[2023-04-14 10:15:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704395]
+[2023-04-14 10:15:21] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 10:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GeckoDrive
+[2023-04-14 10:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-healthchecks
+[2023-04-14 10:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sportran
+[2023-04-14 10:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-l10n-it-fatturapa-out
+[2023-04-14 10:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zytlib
+[2023-04-14 10:15:21] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: New version: [16.0.1.0.4] Old Version: [16.0.1.0.3.4]
+[2023-04-14 10:15:21] INFO root fetch - processPackages [sportran]: New version: [1.0.0rc4] Old Version: [1.0.0rc3]
+[2023-04-14 10:15:21] WARNING root fetch - processPackages [GeckoDrive]: Skipping, unable to determine old version
+[2023-04-14 10:15:21] INFO root fetch - processPackages [GeckoDrive]: Start processing: Orange3-Explain
+[2023-04-14 10:15:21] INFO root fetch - main [MainThread]: End processing [GeckoDrive] error
+[2023-04-14 10:15:21] INFO root fetch - processPackages [fastapi-healthchecks]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-14 10:15:21] INFO root fetch - processPackages [zytlib]: New version: [0.3.324] Old Version: [0.3.323]
+[2023-04-14 10:15:21] INFO root fetch - processPackages [Orange3-Explain]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-14 10:15:21] INFO root fetch - processPackages [sportran]: Downloading https://files.pythonhosted.org/packages/32/71/b063f48965bb5be0131c5c8d6886d3b8e87d3dc08deb56ebe71800836c2c/sportran-1.0.0rc3.tar.gz
+[2023-04-14 10:15:21] INFO root fetch - processPackages [fastapi-healthchecks]: Downloading https://files.pythonhosted.org/packages/5e/62/c6c8cd84a62e154ecf92c05a2cb6f55b17910c67e8308766606f58790aae/fastapi-healthchecks-1.0.6.tar.gz
+[2023-04-14 10:15:21] INFO root fetch - processPackages [Orange3-Explain]: Downloading https://files.pythonhosted.org/packages/11/90/65978409adc2d2c5a333b73e3def8f23e22a76cd56a96789a8e6e9c27578/Orange3-Explain-0.6.2.tar.gz
+[2023-04-14 10:15:21] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/4e/a0/eaf1c8a25ba858c5a33c0922511180adb5868cec046cd2eb1816ebe8c420/zytlib-0.3.324-py3-none-any.whl
+[2023-04-14 10:15:21] INFO root fetch - processPackages [zytlib]: executing diffoscope
+[2023-04-14 10:15:21] INFO root fetch - processPackages [zytlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zytlib-0.3.323-py3-none-any.whl.zip tmp/zytlib-0.3.324-py3-none-any.whl.zip --markdown 20230414/z/zytlib/0.3.323-0.3.324/diff.md --exclude *.pyd
+[2023-04-14 10:15:21] INFO root fetch - processPackages [fastapi-healthchecks]: Downloading https://files.pythonhosted.org/packages/31/4b/54ca3741249efc441930e63d267abc109acce03e44003a61dfa67b7369de/fastapi_healthchecks-1.0.7.tar.gz
+[2023-04-14 10:15:21] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: Downloading https://files.pythonhosted.org/packages/42/b8/0d223f05a31eaa8bd7f172ed9de1c9e24455af2f4e853406f5f4d2220215/odoo_addon_l10n_it_fatturapa_out-16.0.1.0.4-py3-none-any.whl
+[2023-04-14 10:15:22] INFO root fetch - processPackages [fastapi-healthchecks]: executing diffoscope
+[2023-04-14 10:15:22] INFO root fetch - processPackages [fastapi-healthchecks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-healthchecks-1.0.6.tar.gz tmp/fastapi_healthchecks-1.0.7.tar.gz --markdown 20230414/f/fastapi-healthchecks/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-14 10:15:22] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: executing diffoscope
+[2023-04-14 10:15:22] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_it_fatturapa_out-16.0.1.0.3.4-py3-none-any.whl.zip tmp/odoo_addon_l10n_it_fatturapa_out-16.0.1.0.4-py3-none-any.whl.zip --markdown 20230414/o/odoo-addon-l10n-it-fatturapa-out/16.0.1.0.3.4-16.0.1.0.4/diff.md --exclude *.pyd
+[2023-04-14 10:15:22] WARNING root fetch - processPackages [sportran]: Skipping package: exceeds size limit 15956248>=10485760
+[2023-04-14 10:15:22] INFO root fetch - processPackages [sportran]: Start processing: sectxt
+[2023-04-14 10:15:22] INFO root fetch - main [MainThread]: End processing [sportran] error
+[2023-04-14 10:15:22] INFO root fetch - processPackages [sectxt]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-14 10:15:22] INFO root fetch - processPackages [Orange3-Explain]: Downloading https://files.pythonhosted.org/packages/79/bd/4ee40549bf57809fd28000697f06609333a59fcf4bc07bc5ece59cb42e9e/Orange3-Explain-0.6.3.tar.gz
+[2023-04-14 10:15:22] INFO root fetch - processPackages [sectxt]: Downloading https://files.pythonhosted.org/packages/a9/4e/1d4ed2a968be2658255d5dfa6ac5457f05e87a18ec928fc7bda5ce4e6eff/sectxt-0.8.1.tar.gz
+[2023-04-14 10:15:22] INFO root fetch - processPackages [sectxt]: Downloading https://files.pythonhosted.org/packages/49/55/1d652713a9a8f4635670bb4ac1f83d60fdd220c0c19a20ea8f650ffed64e/sectxt-0.8.2.tar.gz
+[2023-04-14 10:15:22] INFO root fetch - processPackages [sectxt]: executing diffoscope
+[2023-04-14 10:15:22] INFO root fetch - processPackages [sectxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sectxt-0.8.1.tar.gz tmp/sectxt-0.8.2.tar.gz --markdown 20230414/s/sectxt/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-14 10:15:23] INFO root fetch - processPackages [fastapi-healthchecks]: Start processing: pipepermcalc
+[2023-04-14 10:15:23] INFO root fetch - main [MainThread]: End processing [fastapi-healthchecks]: success
+[2023-04-14 10:15:23] INFO root fetch - processPackages [zytlib]: Start processing: garpix-notify
+[2023-04-14 10:15:23] INFO root fetch - main [MainThread]: End processing [zytlib]: success
+[2023-04-14 10:15:23] INFO root fetch - processPackages [pipepermcalc]: New version: [0.8.6] Old Version: [0.0.5]
+[2023-04-14 10:15:23] INFO root fetch - processPackages [garpix-notify]: New version: [5.9.0] Old Version: [5.8.0]
+[2023-04-14 10:15:23] INFO root fetch - processPackages [pipepermcalc]: Downloading https://files.pythonhosted.org/packages/a3/01/4e98c4a81018e109dfbd2c917cec8b857e3d3bb8a27379043c0b45ce44f6/pipepermcalc-0.0.5.tar.gz
+[2023-04-14 10:15:23] INFO root fetch - processPackages [garpix-notify]: Downloading https://files.pythonhosted.org/packages/43/36/8e7a8d57f1cdf542f29e7cb09c0ffdae69c8f73d8590f7bfe024a670d006/garpix_notify-5.8.0.tar.gz
+[2023-04-14 10:15:23] INFO root fetch - processPackages [Orange3-Explain]: executing diffoscope
+[2023-04-14 10:15:23] INFO root fetch - processPackages [Orange3-Explain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Orange3-Explain-0.6.2.tar.gz tmp/Orange3-Explain-0.6.3.tar.gz --markdown 20230414/O/Orange3-Explain/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-14 10:15:23] INFO root fetch - processPackages [pipepermcalc]: Downloading https://files.pythonhosted.org/packages/96/6d/1595bc4b387d2fcbd00caa0b531d825f533255fb03b97913fdb7a5c2ea8e/pipepermcalc-0.8.6.tar.gz
+[2023-04-14 10:15:23] INFO root fetch - processPackages [garpix-notify]: Downloading https://files.pythonhosted.org/packages/e5/8a/be1ecb878c769a8846e87311db2f37c8daa2147f7afa04871ff5007cc79c/garpix_notify-5.9.0.tar.gz
+[2023-04-14 10:15:23] INFO root fetch - processPackages [pipepermcalc]: executing diffoscope
+[2023-04-14 10:15:23] INFO root fetch - processPackages [pipepermcalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipepermcalc-0.0.5.tar.gz tmp/pipepermcalc-0.8.6.tar.gz --markdown 20230414/p/pipepermcalc/0.0.5-0.8.6/diff.md --exclude *.pyd
+[2023-04-14 10:15:23] INFO root fetch - processPackages [garpix-notify]: executing diffoscope
+[2023-04-14 10:15:23] INFO root fetch - processPackages [garpix-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garpix_notify-5.8.0.tar.gz tmp/garpix_notify-5.9.0.tar.gz --markdown 20230414/g/garpix-notify/5.8.0-5.9.0/diff.md --exclude *.pyd
+[2023-04-14 10:15:23] INFO root fetch - processPackages [sectxt]: Start processing: melkit
+[2023-04-14 10:15:23] INFO root fetch - main [MainThread]: End processing [sectxt]: success
+[2023-04-14 10:15:23] INFO root fetch - processPackages [melkit]: New version: [0.1.7.1] Old Version: [0.1.7]
+[2023-04-14 10:15:24] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: Start processing: insight-python-win
+[2023-04-14 10:15:24] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa-out]: success
+[2023-04-14 10:15:24] INFO root fetch - processPackages [melkit]: Downloading https://files.pythonhosted.org/packages/c3/47/528814e1c756ad227a85530e69f0c272201794bfa9305d831703bdb83d79/melkit-0.1.7.1.tar.gz
+[2023-04-14 10:15:24] INFO root fetch - processPackages [insight-python-win]: New version: [4.2.2] Old Version: [4.2.1]
+[2023-04-14 10:15:24] INFO root fetch - processPackages [melkit]: executing diffoscope
+[2023-04-14 10:15:24] INFO root fetch - processPackages [melkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melkit-0.1.7.tar.gz tmp/melkit-0.1.7.1.tar.gz --markdown 20230414/m/melkit/0.1.7-0.1.7.1/diff.md --exclude *.pyd
+[2023-04-14 10:15:24] INFO root fetch - processPackages [insight-python-win]: Downloading https://files.pythonhosted.org/packages/9c/64/ecdabe243b8edaa887abfd7b52d61d9cae574f6ea9b4044af5b183162690/insight_python_win-4.2.1.tar.gz
+[2023-04-14 10:15:24] WARNING root fetch - processPackages [insight-python-win]: Skipping package: exceeds size limit 14676415>=10485760
+[2023-04-14 10:15:24] INFO root fetch - processPackages [insight-python-win]: Start processing: pyclesperanto-prototype
+[2023-04-14 10:15:24] INFO root fetch - main [MainThread]: End processing [insight-python-win] error
+[2023-04-14 10:15:24] INFO root fetch - processPackages [pyclesperanto-prototype]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-04-14 10:15:24] INFO root fetch - processPackages [pyclesperanto-prototype]: Downloading https://files.pythonhosted.org/packages/ac/0b/15e5b923187daf9762fc4254cd20834b0906472c5ea8eb9379030fb0d58a/pyclesperanto_prototype-0.9.7.tar.gz
+[2023-04-14 10:15:24] INFO root fetch - main [MainThread]: End processing [pipepermcalc]: success
+[2023-04-14 10:15:25] INFO root fetch - main [MainThread]: End processing [melkit]: success
+[2023-04-14 10:15:25] INFO root fetch - processPackages [pyclesperanto-prototype]: Downloading https://files.pythonhosted.org/packages/4b/f5/eed7c04b08961a90e632893a930b353d8613cbb3072c91f72157c8c92f4d/pyclesperanto_prototype-0.9.9.tar.gz
+[2023-04-14 10:15:25] INFO root fetch - main [MainThread]: End processing [garpix-notify]: success
+[2023-04-14 10:15:25] INFO root fetch - processPackages [pyclesperanto-prototype]: executing diffoscope
+[2023-04-14 10:15:25] INFO root fetch - processPackages [pyclesperanto-prototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclesperanto_prototype-0.9.7.tar.gz tmp/pyclesperanto_prototype-0.9.9.tar.gz --markdown 20230414/p/pyclesperanto-prototype/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 10:15:29] INFO root fetch - main [MainThread]: End processing [Orange3-Explain]: success
+[2023-04-14 10:15:34] INFO root fetch - main [MainThread]: End processing [pyclesperanto-prototype]: success
+[2023-04-14 10:15:34] INFO root fetch - main [MainThread]: Store serial: [17704436]
