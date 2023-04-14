@@ -6170,3 +6170,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 04:38:28] INFO root fetch - main [MainThread]: End processing [napalm-netonix]: success
 [2023-04-14 04:38:28] INFO root fetch - main [MainThread]: End processing [python-netonix-api]: success
 [2023-04-14 04:38:28] INFO root fetch - main [MainThread]: Store serial: [17702614]
+[2023-04-14 04:43:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702614]
+[2023-04-14 04:43:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-14 04:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cbra
+[2023-04-14 04:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xj-migrate
+[2023-04-14 04:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapidpredict
+[2023-04-14 04:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-invoice-constraint-chronology
+[2023-04-14 04:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-account-move-name-sequence
+[2023-04-14 04:43:35] INFO root fetch - processPackages [rapidpredict]: New version: [0.0.0.8] Old Version: [0.0.0.7]
+[2023-04-14 04:43:35] INFO root fetch - processPackages [xj-migrate]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-14 04:43:35] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a8]
+[2023-04-14 04:43:35] INFO root fetch - processPackages [odoo-addon-account-move-name-sequence]: New version: [16.0.1.1.3.5] Old Version: [16.0.1.1.3.3]
+[2023-04-14 04:43:35] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: New version: [16.0.1.0.2.6] Old Version: [16.0.1.0.2.5]
+[2023-04-14 04:43:35] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-14 04:43:35] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a8.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230414/c/cbra/2.0.0a8-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-14 04:43:36] INFO root fetch - processPackages [xj-migrate]: Downloading https://files.pythonhosted.org/packages/79/b7/47163ebd89814453fcce295a069a99a94a491cda828cff3e5d52196cfdfc/xj-migrate-1.0.6.tar.gz
+[2023-04-14 04:43:36] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: Downloading https://files.pythonhosted.org/packages/e3/82/d2a2273cfb6fc15e3d2c75d239efece04b0b7c328c64fd83f4b26e998f13/odoo_addon_account_invoice_constraint_chronology-16.0.1.0.2.5-py3-none-any.whl
+[2023-04-14 04:43:36] INFO root fetch - processPackages [odoo-addon-account-move-name-sequence]: Downloading https://files.pythonhosted.org/packages/77/cb/dcfb5cf4dce27c5f3c9e0c84f75621626ef3c77b8ed13a3a0d087e99c98f/odoo_addon_account_move_name_sequence-16.0.1.1.3.3-py3-none-any.whl
+[2023-04-14 04:43:36] INFO root fetch - processPackages [rapidpredict]: Downloading https://files.pythonhosted.org/packages/10/3e/dfec42e9b76312d21d23409a5e8ab30c3d2e477695556cf921d296b94d5f/rapidpredict-0.0.0.8.tar.gz
+[2023-04-14 04:43:36] INFO root fetch - processPackages [rapidpredict]: executing diffoscope
+[2023-04-14 04:43:36] INFO root fetch - processPackages [rapidpredict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpredict-0.0.0.7.tar.gz tmp/rapidpredict-0.0.0.8.tar.gz --markdown 20230414/r/rapidpredict/0.0.0.7-0.0.0.8/diff.md --exclude *.pyd
+[2023-04-14 04:43:36] INFO root fetch - processPackages [xj-migrate]: Downloading https://files.pythonhosted.org/packages/89/7e/95932d51ad1672d645b9f606bc82feca1410dabaede7772d5fcf195134f6/xj-migrate-1.0.7.tar.gz
+[2023-04-14 04:43:36] INFO root fetch - processPackages [xj-migrate]: executing diffoscope
+[2023-04-14 04:43:36] INFO root fetch - processPackages [xj-migrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj-migrate-1.0.6.tar.gz tmp/xj-migrate-1.0.7.tar.gz --markdown 20230414/x/xj-migrate/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-14 04:43:36] INFO root fetch - processPackages [odoo-addon-account-move-name-sequence]: Downloading https://files.pythonhosted.org/packages/a4/0e/0112ea72a68b0e82a90c053b53a979bb9aaaa42d77383fda7b98a1fe33b7/odoo_addon_account_move_name_sequence-16.0.1.1.3.5-py3-none-any.whl
+[2023-04-14 04:43:36] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: Downloading https://files.pythonhosted.org/packages/ca/4f/51872c2b4439eecb592b2b84904e2e510e4ba9efa8d7e0088aa9bb9ce8b7/odoo_addon_account_invoice_constraint_chronology-16.0.1.0.2.6-py3-none-any.whl
+[2023-04-14 04:43:36] INFO root fetch - processPackages [odoo-addon-account-move-name-sequence]: executing diffoscope
+[2023-04-14 04:43:36] INFO root fetch - processPackages [odoo-addon-account-move-name-sequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_move_name_sequence-16.0.1.1.3.3-py3-none-any.whl.zip tmp/odoo_addon_account_move_name_sequence-16.0.1.1.3.5-py3-none-any.whl.zip --markdown 20230414/o/odoo-addon-account-move-name-sequence/16.0.1.1.3.3-16.0.1.1.3.5/diff.md --exclude *.pyd
+[2023-04-14 04:43:36] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: executing diffoscope
+[2023-04-14 04:43:36] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_constraint_chronology-16.0.1.0.2.5-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_constraint_chronology-16.0.1.0.2.6-py3-none-any.whl.zip --markdown 20230414/o/odoo-addon-account-invoice-constraint-chronology/16.0.1.0.2.5-16.0.1.0.2.6/diff.md --exclude *.pyd
+[2023-04-14 04:43:37] INFO root fetch - main [MainThread]: End processing [rapidpredict]: success
+[2023-04-14 04:43:37] INFO root fetch - main [MainThread]: End processing [xj-migrate]: success
+[2023-04-14 04:43:37] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-move-name-sequence]: success
+[2023-04-14 04:43:38] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-constraint-chronology]: success
+[2023-04-14 04:43:38] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-04-14 04:43:38] INFO root fetch - main [MainThread]: Store serial: [17702636]
