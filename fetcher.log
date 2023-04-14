@@ -3725,3 +3725,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 03:02:40] INFO root fetch - main [MainThread]: End processing [nomoji]: success
 [2023-04-14 03:02:40] INFO root fetch - main [MainThread]: End processing [pandas-dq]: success
 [2023-04-14 03:02:40] INFO root fetch - main [MainThread]: Store serial: [17701105]
+[2023-04-14 03:07:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17701105]
+[2023-04-14 03:07:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 03:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spinqit
+[2023-04-14 03:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fookebox
+[2023-04-14 03:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rubicon-objc
+[2023-04-14 03:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyagrum-nightly
+[2023-04-14 03:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lightning-toolbox
+[2023-04-14 03:07:48] WARNING root fetch - processPackages [spinqit]: Skipping, unable to determine old version
+[2023-04-14 03:07:48] INFO root fetch - processPackages [spinqit]: Start processing: moodlepy
+[2023-04-14 03:07:48] INFO root fetch - main [MainThread]: End processing [spinqit] error
+[2023-04-14 03:07:48] INFO root fetch - processPackages [fookebox]: New version: [1.0.0] Old Version: [0.7.3]
+[2023-04-14 03:07:48] INFO root fetch - processPackages [lightning-toolbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 03:07:48] INFO root fetch - processPackages [rubicon-objc]: New version: [0.4.6] Old Version: [0.4.5rc1]
+[2023-04-14 03:07:48] INFO root fetch - processPackages [moodlepy]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-14 03:07:48] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.7.1.9.dev202304131681314159] Old Version: [1.7.1.9.dev202304121681237912]
+[2023-04-14 03:07:48] INFO root fetch - processPackages [lightning-toolbox]: executing diffoscope
+[2023-04-14 03:07:48] INFO root fetch - processPackages [lightning-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning_toolbox-0.0.8.tar.gz tmp/lightning_toolbox-0.0.9.tar.gz --markdown 20230414/l/lightning-toolbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 03:07:48] INFO root fetch - processPackages [rubicon-objc]: Downloading https://files.pythonhosted.org/packages/c2/4e/4ff2d3c20e052a676728593ff8b38d60b6818cf0aceeca5e41741fab9e1a/rubicon-objc-0.4.5rc1.tar.gz
+[2023-04-14 03:07:48] INFO root fetch - processPackages [fookebox]: Downloading https://files.pythonhosted.org/packages/7e/df/8cfefb0213a3872909b48106855fcbb4d214341ddeafc92791c454a0f0e2/fookebox-0.7.3.tar.gz
+[2023-04-14 03:07:48] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-04-14 03:07:48] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.7.1.9.dev202304121681237912-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.7.1.9.dev202304131681314159-cp39-cp39-win_amd64.whl.zip --markdown 20230414/p/pyagrum-nightly/1.7.1.9.dev202304121681237912-1.7.1.9.dev202304131681314159/diff.md --exclude *.pyd
+[2023-04-14 03:07:48] INFO root fetch - processPackages [fookebox]: Downloading https://files.pythonhosted.org/packages/3c/e8/df78e5f96683892b43636a826601e7b3eddc7e2751e2a621fd6359cbc6f4/fookebox-1.0.0.tar.gz
+[2023-04-14 03:07:48] INFO root fetch - processPackages [rubicon-objc]: Downloading https://files.pythonhosted.org/packages/29/23/2fef9bd16a5e01d309f7009e37f770baf6b37529392fd98bf230a2410a02/rubicon-objc-0.4.6.tar.gz
+[2023-04-14 03:07:48] INFO root fetch - processPackages [moodlepy]: executing diffoscope
+[2023-04-14 03:07:48] INFO root fetch - processPackages [moodlepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moodlepy-0.8.1.tar.gz tmp/moodlepy-0.9.0.tar.gz --markdown 20230414/m/moodlepy/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 03:07:49] INFO root fetch - processPackages [fookebox]: executing diffoscope
+[2023-04-14 03:07:49] INFO root fetch - processPackages [fookebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fookebox-0.7.3.tar.gz tmp/fookebox-1.0.0.tar.gz --markdown 20230414/f/fookebox/0.7.3-1.0.0/diff.md --exclude *.pyd
+[2023-04-14 03:07:49] INFO root fetch - processPackages [rubicon-objc]: executing diffoscope
+[2023-04-14 03:07:49] INFO root fetch - processPackages [rubicon-objc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rubicon-objc-0.4.5rc1.tar.gz tmp/rubicon-objc-0.4.6.tar.gz --markdown 20230414/r/rubicon-objc/0.4.5rc1-0.4.6/diff.md --exclude *.pyd
+[2023-04-14 03:07:49] INFO root fetch - processPackages [lightning-toolbox]: Start processing: cdk-sops-secrets
+[2023-04-14 03:07:49] INFO root fetch - main [MainThread]: End processing [lightning-toolbox]: success
+[2023-04-14 03:07:49] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-14 03:07:49] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-14 03:07:49] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230414/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-14 03:07:50] INFO root fetch - main [MainThread]: End processing [moodlepy]: success
+[2023-04-14 03:07:50] INFO root fetch - main [MainThread]: End processing [rubicon-objc]: success
+[2023-04-14 03:07:51] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-04-14 03:07:52] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-04-14 03:07:52] INFO root fetch - main [MainThread]: End processing [fookebox]: success
+[2023-04-14 03:07:52] INFO root fetch - main [MainThread]: Store serial: [17701153]
