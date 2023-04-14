@@ -17184,3 +17184,80 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 17:51:43] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
 [2023-04-14 17:51:48] INFO root fetch - main [MainThread]: End processing [morph-kgc]: success
 [2023-04-14 17:51:48] INFO root fetch - main [MainThread]: Store serial: [17709390]
+[2023-04-14 17:56:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17709390]
+[2023-04-14 17:56:57] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 17:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: morph-kgc
+[2023-04-14 17:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reddit-etl-abd
+[2023-04-14 17:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reddit-etl-abd
+[2023-04-14 17:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quera-ahs-utils
+[2023-04-14 17:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tensiometer
+[2023-04-14 17:56:57] INFO root fetch - processPackages [reddit-etl-abd]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 17:56:57] INFO root fetch - processPackages [reddit-etl-abd]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 17:56:57] INFO root fetch - processPackages [quera-ahs-utils]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-14 17:56:57] INFO root fetch - processPackages [morph-kgc]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-04-14 17:56:57] INFO root fetch - processPackages [tensiometer]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 17:56:57] INFO root fetch - processPackages [morph-kgc]: executing diffoscope
+[2023-04-14 17:56:57] INFO root fetch - processPackages [morph-kgc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morph_kgc-2.4.0.tar.gz tmp/morph_kgc-2.5.0.tar.gz --markdown 20230414/m/morph-kgc/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-04-14 17:56:57] ERROR root fetch - processPackages [reddit-etl-abd]: Unable to fetch info: No such project/version 'reddit-etl-abd' 0.0.2
+[2023-04-14 17:56:57] INFO root fetch - processPackages [reddit-etl-abd]: Start processing: dbt-iris
+[2023-04-14 17:56:57] ERROR root fetch - processPackages [reddit-etl-abd]: Unable to fetch info: No such project/version 'reddit-etl-abd' 0.0.2
+[2023-04-14 17:56:57] INFO root fetch - main [MainThread]: End processing [reddit-etl-abd] error
+[2023-04-14 17:56:57] INFO root fetch - processPackages [reddit-etl-abd]: Start processing: relion
+[2023-04-14 17:56:57] INFO root fetch - main [MainThread]: End processing [reddit-etl-abd] error
+[2023-04-14 17:56:57] INFO root fetch - processPackages [dbt-iris]: New version: [1.3.4b2] Old Version: [1.3.3]
+[2023-04-14 17:56:57] INFO root fetch - processPackages [quera-ahs-utils]: Downloading https://files.pythonhosted.org/packages/35/99/35f29b2c7bc891adfbe944ff5a054bb8a6bcc3b0b91c760cf70c2cd5a584/quera-ahs-utils-0.3.1.tar.gz
+[2023-04-14 17:56:57] INFO root fetch - processPackages [relion]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 17:56:57] INFO root fetch - processPackages [tensiometer]: Downloading https://files.pythonhosted.org/packages/cf/c9/9cefa69d0fe106351ef9eb4f2305eb1a7e469fbb5a11ca24a71053374fe8/tensiometer-0.1.1.tar.gz
+[2023-04-14 17:56:58] INFO root fetch - processPackages [dbt-iris]: Downloading https://files.pythonhosted.org/packages/42/03/48a82be35f7c5488a26bbe9c287eda8c9ec67b633d8b7375f71c753a1e7f/dbt-iris-1.3.4b2.tar.gz
+[2023-04-14 17:56:58] INFO root fetch - processPackages [relion]: Downloading https://files.pythonhosted.org/packages/e0/82/69a9de4ba7a280713f6191fe700469d5c59405c8691b42cf7436e7793241/relion-0.9.8.tar.gz
+[2023-04-14 17:56:58] INFO root fetch - processPackages [quera-ahs-utils]: Downloading https://files.pythonhosted.org/packages/95/83/8cb5c70404333b51b152bc7213b52773fe628eaa302dad068d6d899c4b71/quera-ahs-utils-0.3.2.tar.gz
+[2023-04-14 17:56:58] INFO root fetch - processPackages [quera-ahs-utils]: executing diffoscope
+[2023-04-14 17:56:58] INFO root fetch - processPackages [quera-ahs-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quera-ahs-utils-0.3.1.tar.gz tmp/quera-ahs-utils-0.3.2.tar.gz --markdown 20230414/q/quera-ahs-utils/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-14 17:56:58] INFO root fetch - processPackages [tensiometer]: Downloading https://files.pythonhosted.org/packages/f7/9d/630180507fb2f62574a1b1250f46ced6bd82003bd876d22d8431220312e9/tensiometer-0.1.2.tar.gz
+[2023-04-14 17:56:58] INFO root fetch - processPackages [tensiometer]: executing diffoscope
+[2023-04-14 17:56:58] INFO root fetch - processPackages [tensiometer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensiometer-0.1.1.tar.gz tmp/tensiometer-0.1.2.tar.gz --markdown 20230414/t/tensiometer/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 17:56:59] INFO root fetch - processPackages [relion]: Downloading https://files.pythonhosted.org/packages/f1/34/df132ddc1c4f86e0fbbbf6901e5d7faf00fc28548ec49050cf5ecc44ac6d/relion-0.9.9.tar.gz
+[2023-04-14 17:56:59] INFO root fetch - processPackages [quera-ahs-utils]: Start processing: pyvts
+[2023-04-14 17:56:59] INFO root fetch - main [MainThread]: End processing [quera-ahs-utils]: success
+[2023-04-14 17:56:59] INFO root fetch - processPackages [pyvts]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-14 17:56:59] INFO root fetch - processPackages [relion]: executing diffoscope
+[2023-04-14 17:56:59] INFO root fetch - processPackages [relion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relion-0.9.8.tar.gz tmp/relion-0.9.9.tar.gz --markdown 20230414/r/relion/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 17:56:59] INFO root fetch - processPackages [pyvts]: Downloading https://files.pythonhosted.org/packages/ce/27/ea2a145cfc016b9765a89b7f542f3770b01ae5d0d43992edca298645275f/pyvts-0.2.7.tar.gz
+[2023-04-14 17:56:59] INFO root fetch - processPackages [pyvts]: executing diffoscope
+[2023-04-14 17:56:59] INFO root fetch - processPackages [pyvts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvts-0.2.6.tar.gz tmp/pyvts-0.2.7.tar.gz --markdown 20230414/p/pyvts/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-14 17:56:59] INFO root fetch - processPackages [dbt-iris]: executing diffoscope
+[2023-04-14 17:56:59] INFO root fetch - processPackages [dbt-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-iris-1.3.3.tar.gz tmp/dbt-iris-1.3.4b2.tar.gz --markdown 20230414/d/dbt-iris/1.3.3-1.3.4b2/diff.md --exclude *.pyd
+[2023-04-14 17:57:00] INFO root fetch - processPackages [tensiometer]: Start processing: gov-uk-dashboards
+[2023-04-14 17:57:00] INFO root fetch - main [MainThread]: End processing [tensiometer]: success
+[2023-04-14 17:57:00] INFO root fetch - processPackages [gov-uk-dashboards]: New version: [9.1.1] Old Version: [9.0.0]
+[2023-04-14 17:57:00] INFO root fetch - processPackages [pyvts]: Start processing: deepqt
+[2023-04-14 17:57:00] INFO root fetch - main [MainThread]: End processing [pyvts]: success
+[2023-04-14 17:57:00] INFO root fetch - processPackages [deepqt]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-14 17:57:00] INFO root fetch - processPackages [relion]: Start processing: pysparkler
+[2023-04-14 17:57:00] INFO root fetch - main [MainThread]: End processing [relion]: success
+[2023-04-14 17:57:00] INFO root fetch - processPackages [pysparkler]: New version: [0.3.dev1681426864] Old Version: [0.3.dev1681426546]
+[2023-04-14 17:57:01] INFO root fetch - processPackages [pysparkler]: executing diffoscope
+[2023-04-14 17:57:01] INFO root fetch - processPackages [pysparkler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkler-0.3.dev1681426546-py3-none-any.whl.zip tmp/pysparkler-0.3.dev1681426864.tar.gz --markdown 20230414/p/pysparkler/0.3.dev1681426546-0.3.dev1681426864/diff.md --exclude *.pyd
+[2023-04-14 17:57:01] INFO root fetch - processPackages [deepqt]: Downloading https://files.pythonhosted.org/packages/04/76/4f23e177e8b0f2a65e7bfe5a32a77f7668007a96676081b89d5f811b5986/deepqt-1.1.2.tar.gz
+[2023-04-14 17:57:01] INFO root fetch - processPackages [deepqt]: Downloading https://files.pythonhosted.org/packages/b2/03/daef9b066ae05f3754d3b4fd845c7226e0d02fa923a6cee22200f8c17ad6/deepqt-1.1.3.tar.gz
+[2023-04-14 17:57:01] INFO root fetch - processPackages [deepqt]: executing diffoscope
+[2023-04-14 17:57:01] INFO root fetch - processPackages [deepqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepqt-1.1.2.tar.gz tmp/deepqt-1.1.3.tar.gz --markdown 20230414/d/deepqt/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-14 17:57:01] INFO root fetch - processPackages [dbt-iris]: Start processing: reddit-etl-abd
+[2023-04-14 17:57:01] INFO root fetch - main [MainThread]: End processing [dbt-iris]: success
+[2023-04-14 17:57:01] WARNING root fetch - processPackages [reddit-etl-abd]: Skipping, unable to determine old version
+[2023-04-14 17:57:01] INFO root fetch - processPackages [reddit-etl-abd]: Start processing: teneva
+[2023-04-14 17:57:01] INFO root fetch - main [MainThread]: End processing [reddit-etl-abd] error
+[2023-04-14 17:57:01] INFO root fetch - processPackages [gov-uk-dashboards]: Downloading https://files.pythonhosted.org/packages/be/bf/4f98413b943f3bf547ec1bb912573e6bc8b962841051d74a38cec0320570/gov_uk_dashboards-9.1.1.tar.gz
+[2023-04-14 17:57:01] INFO root fetch - processPackages [gov-uk-dashboards]: executing diffoscope
+[2023-04-14 17:57:01] INFO root fetch - processPackages [gov-uk-dashboards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gov_uk_dashboards-9.0.0.tar.gz tmp/gov_uk_dashboards-9.1.1.tar.gz --markdown 20230414/g/gov-uk-dashboards/9.0.0-9.1.1/diff.md --exclude *.pyd
+[2023-04-14 17:57:01] INFO root fetch - processPackages [teneva]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 17:57:01] INFO root fetch - processPackages [teneva]: Downloading https://files.pythonhosted.org/packages/b1/88/3b000cd4a56c24967885e089759a1ee17eb89e5227fe3308583f4da5821d/teneva-0.9.8.tar.gz
+[2023-04-14 17:57:01] INFO root fetch - main [MainThread]: End processing [pysparkler]: success
+[2023-04-14 17:57:02] INFO root fetch - main [MainThread]: End processing [deepqt]: success
+[2023-04-14 17:57:02] INFO root fetch - processPackages [teneva]: Downloading https://files.pythonhosted.org/packages/c7/6d/123ed8c74595fe37b18c943aace6fe0d4f69177a8727d0628081538a13e2/teneva-0.9.9.tar.gz
+[2023-04-14 17:57:02] INFO root fetch - main [MainThread]: End processing [gov-uk-dashboards]: success
+[2023-04-14 17:57:03] INFO root fetch - processPackages [teneva]: executing diffoscope
+[2023-04-14 17:57:03] INFO root fetch - processPackages [teneva]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teneva-0.9.8.tar.gz tmp/teneva-0.9.9.tar.gz --markdown 20230414/t/teneva/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 17:57:04] INFO root fetch - main [MainThread]: End processing [teneva]: success
+[2023-04-14 17:57:12] INFO root fetch - main [MainThread]: End processing [morph-kgc]: success
+[2023-04-14 17:57:12] INFO root fetch - main [MainThread]: Store serial: [17709534]
