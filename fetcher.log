@@ -14911,3 +14911,86 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 15:53:24] INFO root fetch - main [MainThread]: End processing [spinta]: success
 [2023-04-14 15:53:24] INFO root fetch - main [MainThread]: End processing [bcos]: success
 [2023-04-14 15:53:24] INFO root fetch - main [MainThread]: Store serial: [17707990]
+[2023-04-14 15:58:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17707990]
+[2023-04-14 15:58:31] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-14 15:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytrex
+[2023-04-14 15:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inels-mqtt-new
+[2023-04-14 15:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-factory
+[2023-04-14 15:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tikka
+[2023-04-14 15:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gtfg
+[2023-04-14 15:58:31] INFO root fetch - processPackages [pytrex]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-14 15:58:31] INFO root fetch - processPackages [database-factory]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-14 15:58:31] INFO root fetch - processPackages [tikka]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-14 15:58:31] WARNING root fetch - processPackages [gtfg]: Skipping, unable to determine old version
+[2023-04-14 15:58:31] INFO root fetch - processPackages [gtfg]: Start processing: alphastats
+[2023-04-14 15:58:31] INFO root fetch - main [MainThread]: End processing [gtfg] error
+[2023-04-14 15:58:31] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-14 15:58:31] INFO root fetch - processPackages [alphastats]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-14 15:58:32] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-14 15:58:32] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230414/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-14 15:58:32] INFO root fetch - processPackages [database-factory]: Downloading https://files.pythonhosted.org/packages/e0/20/bde4f2fce4feb752f5e476e36940d55fe87ad59b8722bb6c3f852ff7e771/database-factory-1.0.4.tar.gz
+[2023-04-14 15:58:32] INFO root fetch - processPackages [tikka]: Downloading https://files.pythonhosted.org/packages/08/d2/8fea6f57baac439f3afc71747a82d80d653b260cdfe4d7d5c0c6a6d4bd7b/tikka-0.8.2.tar.gz
+[2023-04-14 15:58:32] INFO root fetch - processPackages [pytrex]: Downloading https://files.pythonhosted.org/packages/16/9d/aae38431c05053d1894d98dcf76ec6f49c10de209a74d698748390b459cf/pytrex-0.9.1-py3-none-any.whl
+[2023-04-14 15:58:32] INFO root fetch - processPackages [alphastats]: Downloading https://files.pythonhosted.org/packages/1b/3a/f20bf64074bc9b194d66ac67bd68b0fb080fe934a972bc4738470ddd32b9/alphastats-0.5.1.tar.gz
+[2023-04-14 15:58:32] INFO root fetch - processPackages [pytrex]: Downloading https://files.pythonhosted.org/packages/57/26/f814877404116b82cf1bbe2c212c808b0fcdad30f4d3b2c0d5a63d2cf63e/pytrex-0.9.2-py3-none-any.whl
+[2023-04-14 15:58:32] INFO root fetch - processPackages [database-factory]: Downloading https://files.pythonhosted.org/packages/06/73/1ecc91f018bcb2109943defe4630fb533c0ac2749dd777ac15863873a3e3/database-factory-1.0.5.tar.gz
+[2023-04-14 15:58:32] INFO root fetch - processPackages [tikka]: Downloading https://files.pythonhosted.org/packages/23/69/5ac447359249775431420500f00304f66b327765709f49b4c6e4ce41ea16/tikka-0.9.0.tar.gz
+[2023-04-14 15:58:32] INFO root fetch - processPackages [pytrex]: executing diffoscope
+[2023-04-14 15:58:32] INFO root fetch - processPackages [pytrex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytrex-0.9.1-py3-none-any.whl.zip tmp/pytrex-0.9.2-py3-none-any.whl.zip --markdown 20230414/p/pytrex/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-14 15:58:32] INFO root fetch - processPackages [database-factory]: executing diffoscope
+[2023-04-14 15:58:32] INFO root fetch - processPackages [database-factory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database-factory-1.0.4.tar.gz tmp/database-factory-1.0.5.tar.gz --markdown 20230414/d/database-factory/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-14 15:58:33] INFO root fetch - processPackages [alphastats]: executing diffoscope
+[2023-04-14 15:58:33] INFO root fetch - processPackages [alphastats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphastats-0.5.0.tar.gz tmp/alphastats-0.5.1.tar.gz --markdown 20230414/a/alphastats/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-14 15:58:33] INFO root fetch - processPackages [tikka]: executing diffoscope
+[2023-04-14 15:58:33] INFO root fetch - processPackages [tikka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tikka-0.8.2.tar.gz tmp/tikka-0.9.0.tar.gz --markdown 20230414/t/tikka/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 15:58:33] INFO root fetch - processPackages [inels-mqtt-new]: Start processing: etl-csm-pet
+[2023-04-14 15:58:33] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
+[2023-04-14 15:58:33] WARNING root fetch - processPackages [etl-csm-pet]: Skipping, unable to determine old version
+[2023-04-14 15:58:33] INFO root fetch - processPackages [etl-csm-pet]: Start processing: netron
+[2023-04-14 15:58:33] INFO root fetch - main [MainThread]: End processing [etl-csm-pet] error
+[2023-04-14 15:58:33] INFO root fetch - processPackages [netron]: New version: [6.8.1] Old Version: [6.8.0]
+[2023-04-14 15:58:33] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/e7/9b/166fed4f8d9af488b9ec291c6a08bbf3605c5e473d996edc5618698d6c4f/netron-6.8.1-py3-none-any.whl
+[2023-04-14 15:58:33] INFO root fetch - processPackages [pytrex]: Start processing: pyGuardPoint
+[2023-04-14 15:58:33] INFO root fetch - main [MainThread]: End processing [pytrex]: success
+[2023-04-14 15:58:33] INFO root fetch - processPackages [pyGuardPoint]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-14 15:58:34] INFO root fetch - processPackages [netron]: executing diffoscope
+[2023-04-14 15:58:34] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-6.8.0-py3-none-any.whl.zip tmp/netron-6.8.1-py3-none-any.whl.zip --markdown 20230414/n/netron/6.8.0-6.8.1/diff.md --exclude *.pyd
+[2023-04-14 15:58:34] INFO root fetch - processPackages [pyGuardPoint]: Downloading https://files.pythonhosted.org/packages/d6/4a/0d3311b981c61c0805849bc27d164903a7cf788bf7e7948b45d1558902f9/pyGuardPoint-0.8.5.tar.gz
+[2023-04-14 15:58:34] INFO root fetch - processPackages [database-factory]: Start processing: dxsp
+[2023-04-14 15:58:34] INFO root fetch - main [MainThread]: End processing [database-factory]: success
+[2023-04-14 15:58:34] INFO root fetch - processPackages [dxsp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 15:58:34] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-14 15:58:34] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.8.tar.gz tmp/dxsp-1.0.9.tar.gz --markdown 20230414/d/dxsp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 15:58:34] INFO root fetch - processPackages [pyGuardPoint]: executing diffoscope
+[2023-04-14 15:58:34] INFO root fetch - processPackages [pyGuardPoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGuardPoint-0.8.4.tar.gz tmp/pyGuardPoint-0.8.5.tar.gz --markdown 20230414/p/pyGuardPoint/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-14 15:58:34] INFO root fetch - processPackages [alphastats]: Start processing: vds-api-client
+[2023-04-14 15:58:34] INFO root fetch - main [MainThread]: End processing [alphastats]: success
+[2023-04-14 15:58:35] INFO root fetch - processPackages [vds-api-client]: New version: [2.1.7] Old Version: [2.1.6]
+[2023-04-14 15:58:35] INFO root fetch - processPackages [dxsp]: Start processing: certora-cli-alpha-master
+[2023-04-14 15:58:35] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-14 15:58:35] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230414.9.39.372046] Old Version: [20230414.14.1.56470]
+[2023-04-14 15:58:35] INFO root fetch - processPackages [vds-api-client]: Downloading https://files.pythonhosted.org/packages/9a/d7/0031ba455851f5a67fbcea60a5a936ab2f1f2d8ca69489830dc00f978460/vds-api-client-2.1.7.tar.gz
+[2023-04-14 15:58:35] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/7e/c8/0f60412f040891ae635aa0205f73ccfc54e7344c517e14a09e5eda1444b9/certora-cli-alpha-master-20230414.14.1.56470.tar.gz
+[2023-04-14 15:58:35] INFO root fetch - processPackages [vds-api-client]: executing diffoscope
+[2023-04-14 15:58:35] INFO root fetch - processPackages [vds-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vds-api-client-2.1.6.tar.gz tmp/vds-api-client-2.1.7.tar.gz --markdown 20230414/v/vds-api-client/2.1.6-2.1.7/diff.md --exclude *.pyd
+[2023-04-14 15:58:35] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38003602>=10485760
+[2023-04-14 15:58:35] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: baidufanyiformind
+[2023-04-14 15:58:35] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-14 15:58:35] INFO root fetch - processPackages [baidufanyiformind]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 15:58:35] INFO root fetch - processPackages [pyGuardPoint]: Start processing: arm-jupyter-kernel
+[2023-04-14 15:58:35] INFO root fetch - main [MainThread]: End processing [pyGuardPoint]: success
+[2023-04-14 15:58:35] INFO root fetch - processPackages [baidufanyiformind]: Downloading https://files.pythonhosted.org/packages/8b/34/90f104d1542b7f94e4e50a71c0c0466e7644b81b9474579731de0dbce99e/baidufanyiformind-0.0.1.tar.gz
+[2023-04-14 15:58:35] INFO root fetch - processPackages [arm-jupyter-kernel]: New version: [1.1.0] Old Version: [1.0.8]
+[2023-04-14 15:58:36] INFO root fetch - processPackages [baidufanyiformind]: Downloading https://files.pythonhosted.org/packages/27/95/5a0ff30c84c177de3451c03e261de225898a370fb8f92d91f3a1a64a70df/baidufanyiformind-0.0.2.tar.gz
+[2023-04-14 15:58:36] INFO root fetch - processPackages [arm-jupyter-kernel]: Downloading https://files.pythonhosted.org/packages/05/b3/63f013d5458a6bf059e744f24e50e05344465a960182626383123dca7ab0/arm_jupyter_kernel-1.0.8.tar.gz
+[2023-04-14 15:58:36] INFO root fetch - processPackages [baidufanyiformind]: executing diffoscope
+[2023-04-14 15:58:36] INFO root fetch - processPackages [baidufanyiformind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baidufanyiformind-0.0.1.tar.gz tmp/baidufanyiformind-0.0.2.tar.gz --markdown 20230414/b/baidufanyiformind/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 15:58:36] INFO root fetch - processPackages [arm-jupyter-kernel]: Downloading https://files.pythonhosted.org/packages/f5/32/b9d1aed55302705f97891ea0c903da6052b51f3e1d91b264321858aaf31a/arm_jupyter_kernel-1.1.0.tar.gz
+[2023-04-14 15:58:36] INFO root fetch - main [MainThread]: End processing [vds-api-client]: success
+[2023-04-14 15:58:36] INFO root fetch - processPackages [arm-jupyter-kernel]: executing diffoscope
+[2023-04-14 15:58:36] INFO root fetch - processPackages [arm-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arm_jupyter_kernel-1.0.8.tar.gz tmp/arm_jupyter_kernel-1.1.0.tar.gz --markdown 20230414/a/arm-jupyter-kernel/1.0.8-1.1.0/diff.md --exclude *.pyd
+[2023-04-14 15:58:37] INFO root fetch - main [MainThread]: End processing [baidufanyiformind]: success
+[2023-04-14 15:58:37] INFO root fetch - main [MainThread]: End processing [arm-jupyter-kernel]: success
+[2023-04-14 15:58:38] INFO root fetch - main [MainThread]: End processing [tikka]: success
+[2023-04-14 15:58:39] INFO root fetch - main [MainThread]: End processing [netron]: success
+[2023-04-14 15:58:39] INFO root fetch - main [MainThread]: Store serial: [17708038]
