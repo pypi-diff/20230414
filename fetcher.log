@@ -12096,3 +12096,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 13:04:32] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
 [2023-04-14 13:04:32] INFO root fetch - main [MainThread]: End processing [flash-accounts]: success
 [2023-04-14 13:04:32] INFO root fetch - main [MainThread]: Store serial: [17706113]
+[2023-04-14 13:09:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706113]
+[2023-04-14 13:09:40] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 13:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: web-const
+[2023-04-14 13:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dao-analyzer
+[2023-04-14 13:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lightningchart
+[2023-04-14 13:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: butterneck-projen
+[2023-04-14 13:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: OpenGeode-ModuleTemplate
+[2023-04-14 13:09:40] WARNING root fetch - processPackages [OpenGeode-ModuleTemplate]: Skipping, unable to determine old version
+[2023-04-14 13:09:40] INFO root fetch - processPackages [OpenGeode-ModuleTemplate]: Start processing: Geode-MyModule
+[2023-04-14 13:09:40] INFO root fetch - main [MainThread]: End processing [OpenGeode-ModuleTemplate] error
+[2023-04-14 13:09:40] WARNING root fetch - processPackages [web-const]: Skipping, unable to determine old version
+[2023-04-14 13:09:40] ERROR root fetch - processPackages [lightningchart]: Unable to get metadata: No such project 'lightningchart'
+[2023-04-14 13:09:40] INFO root fetch - processPackages [web-const]: Start processing: qlcpy
+[2023-04-14 13:09:40] INFO root fetch - main [MainThread]: End processing [web-const] error
+[2023-04-14 13:09:40] INFO root fetch - processPackages [lightningchart]: Start processing: kilu
+[2023-04-14 13:09:40] INFO root fetch - main [MainThread]: End processing [lightningchart] error
+[2023-04-14 13:09:40] INFO root fetch - processPackages [Geode-MyModule]: New version: [2.0.0] Old Version: [1.2.0]
+[2023-04-14 13:09:40] INFO root fetch - processPackages [qlcpy]: New version: [1.0.9] Old Version: [1.0.4]
+[2023-04-14 13:09:40] INFO root fetch - processPackages [dao-analyzer]: New version: [1.2.6.dev9] Old Version: [1.2.6.dev8]
+[2023-04-14 13:09:40] WARNING root fetch - processPackages [kilu]: Skipping, unable to determine old version
+[2023-04-14 13:09:40] INFO root fetch - processPackages [kilu]: Start processing: byebyelogger
+[2023-04-14 13:09:40] INFO root fetch - main [MainThread]: End processing [kilu] error
+[2023-04-14 13:09:40] INFO root fetch - processPackages [byebyelogger]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 13:09:40] WARNING root fetch - processPackages [butterneck-projen]: Skipping, unable to determine old version
+[2023-04-14 13:09:40] INFO root fetch - processPackages [butterneck-projen]: Start processing: ipyautoui
+[2023-04-14 13:09:40] INFO root fetch - main [MainThread]: End processing [butterneck-projen] error
+[2023-04-14 13:09:40] INFO root fetch - processPackages [dao-analyzer]: executing diffoscope
+[2023-04-14 13:09:40] INFO root fetch - processPackages [dao-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dao-analyzer-1.2.6.dev8.tar.gz tmp/dao-analyzer-1.2.6.dev9.tar.gz --markdown 20230414/d/dao-analyzer/1.2.6.dev8-1.2.6.dev9/diff.md --exclude *.pyd
+[2023-04-14 13:09:40] INFO root fetch - processPackages [qlcpy]: Downloading https://files.pythonhosted.org/packages/e0/65/c81220058d326eb788eecce502b8ca38a94446108df168b8f04d12914adc/qlcpy-1.0.4.tar.gz
+[2023-04-14 13:09:40] INFO root fetch - processPackages [byebyelogger]: Downloading https://files.pythonhosted.org/packages/34/14/1cbf18605f3a9db2b7324009b38bf6d64b411dd94a8bdb834da136bc5499/byebyelogger-0.1.0.tar.gz
+[2023-04-14 13:09:40] INFO root fetch - processPackages [Geode-MyModule]: Downloading https://files.pythonhosted.org/packages/fd/84/aa5f7a8dddde5d45c73d3ba5a74f4c11fe9a226b81cd17fe6c27060c53d5/Geode_MyModule-1.2.0-cp39-cp39-win_amd64.whl
+[2023-04-14 13:09:40] INFO root fetch - processPackages [ipyautoui]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 13:09:40] INFO root fetch - processPackages [byebyelogger]: Downloading https://files.pythonhosted.org/packages/1f/c6/6242a108772f2c85b22c03a22a7e3eb82606b774f2ee45611e8d2daf8e86/byebyelogger-0.2.0.tar.gz
+[2023-04-14 13:09:40] INFO root fetch - processPackages [byebyelogger]: executing diffoscope
+[2023-04-14 13:09:40] INFO root fetch - processPackages [byebyelogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byebyelogger-0.1.0.tar.gz tmp/byebyelogger-0.2.0.tar.gz --markdown 20230414/b/byebyelogger/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 13:09:41] INFO root fetch - processPackages [qlcpy]: Downloading https://files.pythonhosted.org/packages/72/0d/883947a9d4ea4106065fc0e0487f6c1672ae9dfa7504fa86b5472730e1df/qlcpy-1.0.9.tar.gz
+[2023-04-14 13:09:41] INFO root fetch - processPackages [Geode-MyModule]: Downloading https://files.pythonhosted.org/packages/b2/a3/b886723accdafdbf6740203289088e1028a312c1ac163c239d6760666234/Geode_MyModule-2.0.0-cp39-cp39-win_amd64.whl
+[2023-04-14 13:09:41] INFO root fetch - processPackages [ipyautoui]: executing diffoscope
+[2023-04-14 13:09:41] INFO root fetch - processPackages [ipyautoui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyautoui-0.4.8.tar.gz tmp/ipyautoui-0.4.9.tar.gz --markdown 20230414/i/ipyautoui/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 13:09:41] INFO root fetch - processPackages [Geode-MyModule]: executing diffoscope
+[2023-04-14 13:09:41] INFO root fetch - processPackages [Geode-MyModule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_MyModule-1.2.0-cp39-cp39-win_amd64.whl.zip tmp/Geode_MyModule-2.0.0-cp39-cp39-win_amd64.whl.zip --markdown 20230414/G/Geode-MyModule/1.2.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-14 13:09:41] INFO root fetch - processPackages [qlcpy]: executing diffoscope
+[2023-04-14 13:09:41] INFO root fetch - processPackages [qlcpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlcpy-1.0.4.tar.gz tmp/qlcpy-1.0.9.tar.gz --markdown 20230414/q/qlcpy/1.0.4-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 13:09:41] INFO root fetch - main [MainThread]: End processing [byebyelogger]: success
+[2023-04-14 13:09:42] INFO root fetch - main [MainThread]: End processing [Geode-MyModule]: success
+[2023-04-14 13:09:42] INFO root fetch - main [MainThread]: End processing [qlcpy]: success
+[2023-04-14 13:09:42] INFO root fetch - main [MainThread]: End processing [ipyautoui]: success
+[2023-04-14 13:09:48] INFO root fetch - main [MainThread]: End processing [dao-analyzer]: success
+[2023-04-14 13:09:48] INFO root fetch - main [MainThread]: Store serial: [17706183]
