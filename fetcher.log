@@ -21288,3 +21288,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 21:48:27] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
 [2023-04-14 21:48:30] INFO root fetch - main [MainThread]: End processing [sphinx-gallery]: success
 [2023-04-14 21:48:30] INFO root fetch - main [MainThread]: Store serial: [17712294]
+[2023-04-14 21:53:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712294]
+[2023-04-14 21:53:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-14 21:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opta
+[2023-04-14 21:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: steamship-langchain
+[2023-04-14 21:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chalkpy
+[2023-04-14 21:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ressy
+[2023-04-14 21:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: candlestick-chart
+[2023-04-14 21:53:38] INFO root fetch - processPackages [steamship-langchain]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 21:53:38] INFO root fetch - processPackages [candlestick-chart]: New version: [2.6.0] Old Version: [2.5.1]
+[2023-04-14 21:53:38] INFO root fetch - processPackages [opta]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-14 21:53:38] WARNING root fetch - processPackages [ressy]: Skipping, unable to determine old version
+[2023-04-14 21:53:38] INFO root fetch - processPackages [ressy]: Start processing: escavador
+[2023-04-14 21:53:38] INFO root fetch - main [MainThread]: End processing [ressy] error
+[2023-04-14 21:53:38] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-14 21:53:38] INFO root fetch - processPackages [steamship-langchain]: executing diffoscope
+[2023-04-14 21:53:38] INFO root fetch - processPackages [steamship-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamship-langchain-0.0.8.tar.gz tmp/steamship-langchain-0.0.9.tar.gz --markdown 20230414/s/steamship-langchain/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 21:53:38] INFO root fetch - processPackages [escavador]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-14 21:53:38] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-14 21:53:38] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230414/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-14 21:53:38] INFO root fetch - processPackages [candlestick-chart]: Downloading https://files.pythonhosted.org/packages/a2/ab/04dd7bf53f1644e94780b384e3de210233bd2e95bcce4db12bc12f566c6e/candlestick-chart-2.5.1.tar.gz
+[2023-04-14 21:53:38] INFO root fetch - processPackages [opta]: Downloading https://files.pythonhosted.org/packages/f9/79/d5817682482e065656c0fca01c71cc11c0aec008afc39cdcaa759e6c5138/opta-0.3.0.tar.gz
+[2023-04-14 21:53:38] INFO root fetch - processPackages [escavador]: Downloading https://files.pythonhosted.org/packages/4d/09/9ce0c332968a3dfe11253224a43131b2f7a8da2d4333b154f86d2082c1ce/escavador-0.1.7.tar.gz
+[2023-04-14 21:53:38] INFO root fetch - processPackages [opta]: Downloading https://files.pythonhosted.org/packages/71/89/a353b1b7fb2aeaee72163b5ae98e551eab31eda86a3dd7394a9af2f28a4d/opta-0.3.1.tar.gz
+[2023-04-14 21:53:38] INFO root fetch - processPackages [candlestick-chart]: Downloading https://files.pythonhosted.org/packages/a8/31/ee867b422c1cb993cfe39fa18c162484ed235f1d0d4fa68371796e244ec2/candlestick-chart-2.6.0.tar.gz
+[2023-04-14 21:53:38] INFO root fetch - processPackages [opta]: executing diffoscope
+[2023-04-14 21:53:38] INFO root fetch - processPackages [opta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opta-0.3.0.tar.gz tmp/opta-0.3.1.tar.gz --markdown 20230414/o/opta/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-14 21:53:39] INFO root fetch - processPackages [escavador]: Downloading https://files.pythonhosted.org/packages/65/e2/a9a78cd4e11d82b1ac9696376eb72edb86ebd306b3e9a6ff7809874e25b1/escavador-0.1.8.tar.gz
+[2023-04-14 21:53:39] INFO root fetch - processPackages [candlestick-chart]: executing diffoscope
+[2023-04-14 21:53:39] INFO root fetch - processPackages [candlestick-chart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/candlestick-chart-2.5.1.tar.gz tmp/candlestick-chart-2.6.0.tar.gz --markdown 20230414/c/candlestick-chart/2.5.1-2.6.0/diff.md --exclude *.pyd
+[2023-04-14 21:53:39] INFO root fetch - processPackages [escavador]: executing diffoscope
+[2023-04-14 21:53:39] INFO root fetch - processPackages [escavador]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/escavador-0.1.7.tar.gz tmp/escavador-0.1.8.tar.gz --markdown 20230414/e/escavador/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-14 21:53:39] INFO root fetch - main [MainThread]: End processing [steamship-langchain]: success
+[2023-04-14 21:53:40] INFO root fetch - main [MainThread]: End processing [opta]: success
+[2023-04-14 21:53:40] INFO root fetch - main [MainThread]: End processing [escavador]: success
+[2023-04-14 21:53:40] INFO root fetch - main [MainThread]: End processing [candlestick-chart]: success
+[2023-04-14 21:53:44] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-04-14 21:53:44] INFO root fetch - main [MainThread]: Store serial: [17712314]
