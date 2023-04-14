@@ -19268,3 +19268,133 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 19:38:19] INFO root fetch - main [MainThread]: End processing [piedomains]: success
 [2023-04-14 19:38:36] INFO root fetch - main [MainThread]: End processing [openmetadata-ingestion]: success
 [2023-04-14 19:38:36] INFO root fetch - main [MainThread]: Store serial: [17710859]
+[2023-04-14 19:43:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17710859]
+[2023-04-14 19:43:44] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-14 19:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gptwrite
+[2023-04-14 19:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyroFork-dev
+[2023-04-14 19:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wave-venture
+[2023-04-14 19:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: citrine
+[2023-04-14 19:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: optipack
+[2023-04-14 19:43:44] INFO root fetch - processPackages [wave-venture]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 19:43:44] INFO root fetch - processPackages [gptwrite]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 19:43:44] INFO root fetch - processPackages [citrine]: New version: [2.8.0] Old Version: [2.2.1]
+[2023-04-14 19:43:44] WARNING root fetch - processPackages [optipack]: Skipping, unable to determine old version
+[2023-04-14 19:43:44] INFO root fetch - processPackages [optipack]: Start processing: jupyterlab-pachyderm
+[2023-04-14 19:43:44] INFO root fetch - main [MainThread]: End processing [optipack] error
+[2023-04-14 19:43:44] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.5.dev202304141742] Old Version: [2.1.5.dev202304121025]
+[2023-04-14 19:43:44] INFO root fetch - processPackages [jupyterlab-pachyderm]: New version: [2.6.0a5] Old Version: [2.6.0a3]
+[2023-04-14 19:43:44] INFO root fetch - processPackages [wave-venture]: Downloading https://files.pythonhosted.org/packages/86/63/14b399b719164dbb5ea50dd18c359c13aaec38ac61b47a8c0a7f0c976cf5/wave-venture-0.0.8.tar.gz
+[2023-04-14 19:43:44] INFO root fetch - processPackages [citrine]: Downloading https://files.pythonhosted.org/packages/75/95/d01f7a4c0b873cf2eb1b632c2bbcaae72ec9ef3dcc21f5c3f1d6268a0815/citrine-2.2.1.tar.gz
+[2023-04-14 19:43:44] INFO root fetch - processPackages [jupyterlab-pachyderm]: Downloading https://files.pythonhosted.org/packages/58/42/b4becdba615bf00026f9e9b2024576c7807f277a52e795e0e5e9a647166a/jupyterlab_pachyderm-2.6.0a5.tar.gz
+[2023-04-14 19:43:44] INFO root fetch - processPackages [gptwrite]: Downloading https://files.pythonhosted.org/packages/84/78/93f6521a9889dd14aae068d2c6ed92139aeae104c4f3a56f8e951a5a380d/gptwrite-0.1.3.tar.gz
+[2023-04-14 19:43:44] INFO root fetch - processPackages [PyroFork-dev]: Downloading https://files.pythonhosted.org/packages/ce/cf/65d54a3f38529e7b0fb653f739b57fd80e6cafcb99859840f24ba2bca7ca/PyroFork-dev-2.1.5.dev202304141742.tar.gz
+[2023-04-14 19:43:44] INFO root fetch - processPackages [jupyterlab-pachyderm]: executing diffoscope
+[2023-04-14 19:43:44] INFO root fetch - processPackages [jupyterlab-pachyderm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_pachyderm-2.6.0a3.tar.gz tmp/jupyterlab_pachyderm-2.6.0a5.tar.gz --markdown 20230414/j/jupyterlab-pachyderm/2.6.0a3-2.6.0a5/diff.md --exclude *.pyd
+[2023-04-14 19:43:44] INFO root fetch - processPackages [citrine]: Downloading https://files.pythonhosted.org/packages/4d/e9/57aee37f83c182e8ed1a38ed55b55329850ceaae19fe51c69eda76ab5854/citrine-2.8.0.tar.gz
+[2023-04-14 19:43:44] INFO root fetch - processPackages [gptwrite]: executing diffoscope
+[2023-04-14 19:43:44] INFO root fetch - processPackages [gptwrite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptwrite-0.1.2.tar.gz tmp/gptwrite-0.1.3.tar.gz --markdown 20230414/g/gptwrite/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 19:43:44] INFO root fetch - processPackages [wave-venture]: Downloading https://files.pythonhosted.org/packages/5a/a6/6033e5990114a1a5889a219b0e865c4a8e21c79d32e113b71c42f6b09cb3/wave-venture-0.0.9.tar.gz
+[2023-04-14 19:43:44] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-14 19:43:44] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.5.dev202304121025.tar.gz tmp/PyroFork-dev-2.1.5.dev202304141742.tar.gz --markdown 20230414/P/PyroFork-dev/2.1.5.dev202304121025-2.1.5.dev202304141742/diff.md --exclude *.pyd
+[2023-04-14 19:43:45] INFO root fetch - processPackages [citrine]: executing diffoscope
+[2023-04-14 19:43:45] INFO root fetch - processPackages [citrine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citrine-2.2.1.tar.gz tmp/citrine-2.8.0.tar.gz --markdown 20230414/c/citrine/2.2.1-2.8.0/diff.md --exclude *.pyd
+[2023-04-14 19:43:45] INFO root fetch - processPackages [wave-venture]: executing diffoscope
+[2023-04-14 19:43:45] INFO root fetch - processPackages [wave-venture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wave-venture-0.0.8.tar.gz tmp/wave-venture-0.0.9.tar.gz --markdown 20230414/w/wave-venture/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 19:43:45] INFO root fetch - processPackages [gptwrite]: Start processing: api-client-pydantic
+[2023-04-14 19:43:45] INFO root fetch - main [MainThread]: End processing [gptwrite]: success
+[2023-04-14 19:43:46] INFO root fetch - processPackages [api-client-pydantic]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-04-14 19:43:46] INFO root fetch - processPackages [api-client-pydantic]: Downloading https://files.pythonhosted.org/packages/93/b4/542225f873075f805cb9f2f9f5b672adac3ae4dc1618057c626f3802bf06/api-client-pydantic-2.2.0.tar.gz
+[2023-04-14 19:43:46] INFO root fetch - processPackages [wave-venture]: Start processing: statscend
+[2023-04-14 19:43:46] INFO root fetch - main [MainThread]: End processing [wave-venture]: success
+[2023-04-14 19:43:46] INFO root fetch - processPackages [api-client-pydantic]: Downloading https://files.pythonhosted.org/packages/0c/d0/69967ca4bd5a243f6dfbb9d46db54671e170f97f624905ff925d3d4bc959/api_client_pydantic-2.2.1.tar.gz
+[2023-04-14 19:43:46] INFO root fetch - processPackages [statscend]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-14 19:43:46] INFO root fetch - processPackages [statscend]: Downloading https://files.pythonhosted.org/packages/10/b3/f903d277448b91e39e8f37a4a3e23be7273281d578a7388ee9ff41442359/statscend-0.1.7.tar.gz
+[2023-04-14 19:43:46] INFO root fetch - processPackages [api-client-pydantic]: executing diffoscope
+[2023-04-14 19:43:46] INFO root fetch - processPackages [api-client-pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-client-pydantic-2.2.0.tar.gz tmp/api_client_pydantic-2.2.1.tar.gz --markdown 20230414/a/api-client-pydantic/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-04-14 19:43:46] INFO root fetch - processPackages [statscend]: executing diffoscope
+[2023-04-14 19:43:46] INFO root fetch - processPackages [statscend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statscend-0.1.6.tar.gz tmp/statscend-0.1.7.tar.gz --markdown 20230414/s/statscend/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-14 19:43:47] INFO root fetch - processPackages [citrine]: Start processing: gtfp
+[2023-04-14 19:43:47] INFO root fetch - main [MainThread]: End processing [citrine]: success
+[2023-04-14 19:43:47] WARNING root fetch - processPackages [gtfp]: Skipping, unable to determine old version
+[2023-04-14 19:43:47] INFO root fetch - processPackages [gtfp]: Start processing: chibi-command
+[2023-04-14 19:43:47] INFO root fetch - main [MainThread]: End processing [gtfp] error
+[2023-04-14 19:43:47] INFO root fetch - processPackages [chibi-command]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-14 19:43:47] INFO root fetch - processPackages [chibi-command]: Downloading https://files.pythonhosted.org/packages/38/9b/f469ad7cdcada6558438b2b72f48474d25d0477f70a72228f0e9407be4f9/chibi_command-0.4.1.tar.gz
+[2023-04-14 19:43:47] INFO root fetch - processPackages [chibi-command]: Downloading https://files.pythonhosted.org/packages/49/06/26bdc786936428a85f87e44036a81cd2ac23307942c25b40c784224200ff/chibi_command-0.4.2.tar.gz
+[2023-04-14 19:43:47] INFO root fetch - processPackages [chibi-command]: executing diffoscope
+[2023-04-14 19:43:47] INFO root fetch - processPackages [chibi-command]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chibi_command-0.4.1.tar.gz tmp/chibi_command-0.4.2.tar.gz --markdown 20230414/c/chibi-command/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-14 19:43:47] INFO root fetch - processPackages [api-client-pydantic]: Start processing: ringelcoord
+[2023-04-14 19:43:47] INFO root fetch - main [MainThread]: End processing [api-client-pydantic]: success
+[2023-04-14 19:43:47] WARNING root fetch - processPackages [ringelcoord]: Skipping, unable to determine old version
+[2023-04-14 19:43:47] INFO root fetch - processPackages [ringelcoord]: Start processing: finbourne-access-sdk
+[2023-04-14 19:43:47] INFO root fetch - main [MainThread]: End processing [ringelcoord] error
+[2023-04-14 19:43:47] INFO root fetch - processPackages [finbourne-access-sdk]: New version: [0.0.815] Old Version: [0.0.616]
+[2023-04-14 19:43:47] INFO root fetch - processPackages [statscend]: Start processing: piedomains
+[2023-04-14 19:43:47] INFO root fetch - main [MainThread]: End processing [statscend]: success
+[2023-04-14 19:43:47] INFO root fetch - processPackages [piedomains]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 19:43:47] INFO root fetch - processPackages [finbourne-access-sdk]: executing diffoscope
+[2023-04-14 19:43:47] INFO root fetch - processPackages [finbourne-access-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-access-sdk-0.0.616.tar.gz tmp/finbourne-access-sdk-0.0.815.tar.gz --markdown 20230414/f/finbourne-access-sdk/0.0.616-0.0.815/diff.md --exclude *.pyd
+[2023-04-14 19:43:47] INFO root fetch - processPackages [piedomains]: executing diffoscope
+[2023-04-14 19:43:47] INFO root fetch - processPackages [piedomains]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piedomains-0.0.8.tar.gz tmp/piedomains-0.0.9.tar.gz --markdown 20230414/p/piedomains/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 19:43:48] INFO root fetch - processPackages [jupyterlab-pachyderm]: Start processing: sling
+[2023-04-14 19:43:48] INFO root fetch - main [MainThread]: End processing [jupyterlab-pachyderm]: success
+[2023-04-14 19:43:48] INFO root fetch - processPackages [sling]: New version: [0.87.82] Old Version: [0.87.81]
+[2023-04-14 19:43:48] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/69/d2/e7cc2cd7f218f257de6ce945a39827588be47392a83557ab0a89b1cf3f2b/sling-0.87.81.tar.gz
+[2023-04-14 19:43:48] WARNING root fetch - processPackages [sling]: Skipping package: exceeds size limit 100399672>=10485760
+[2023-04-14 19:43:48] INFO root fetch - processPackages [sling]: Start processing: pyhealthbox3
+[2023-04-14 19:43:48] INFO root fetch - main [MainThread]: End processing [sling] error
+[2023-04-14 19:43:48] INFO root fetch - processPackages [pyhealthbox3]: New version: [0.0.19] Old Version: [0.0.17]
+[2023-04-14 19:43:48] INFO root fetch - processPackages [pyhealthbox3]: executing diffoscope
+[2023-04-14 19:43:48] INFO root fetch - processPackages [pyhealthbox3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhealthbox3-0.0.17.tar.gz tmp/pyhealthbox3-0.0.19.tar.gz --markdown 20230414/p/pyhealthbox3/0.0.17-0.0.19/diff.md --exclude *.pyd
+[2023-04-14 19:43:49] INFO root fetch - processPackages [chibi-command]: Start processing: pya0
+[2023-04-14 19:43:49] INFO root fetch - main [MainThread]: End processing [chibi-command]: success
+[2023-04-14 19:43:49] INFO root fetch - processPackages [pya0]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-14 19:43:49] INFO root fetch - processPackages [pya0]: Downloading https://files.pythonhosted.org/packages/71/96/4e5bc13cfcb1afdc88330a19f4872d3e8a43beb7345dbbd7c1b3022e149d/pya0-0.3.5-py3-none-manylinux_2_24_x86_64.whl
+[2023-04-14 19:43:49] WARNING root fetch - processPackages [pya0]: Skipping package: exceeds size limit 19268518>=10485760
+[2023-04-14 19:43:49] INFO root fetch - processPackages [pya0]: Start processing: yamicache
+[2023-04-14 19:43:49] INFO root fetch - main [MainThread]: End processing [pya0] error
+[2023-04-14 19:43:49] INFO root fetch - processPackages [yamicache]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-14 19:43:49] INFO root fetch - processPackages [yamicache]: executing diffoscope
+[2023-04-14 19:43:49] INFO root fetch - processPackages [yamicache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yamicache-0.6.0.tar.gz tmp/yamicache-0.7.0.tar.gz --markdown 20230414/y/yamicache/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-14 19:43:49] INFO root fetch - processPackages [pyhealthbox3]: Start processing: jobbergate-core
+[2023-04-14 19:43:49] INFO root fetch - main [MainThread]: End processing [pyhealthbox3]: success
+[2023-04-14 19:43:49] INFO root fetch - processPackages [jobbergate-core]: New version: [3.5.0a1] Old Version: [3.5.0a0]
+[2023-04-14 19:43:49] INFO root fetch - processPackages [finbourne-access-sdk]: Start processing: jobbergate-api
+[2023-04-14 19:43:49] INFO root fetch - main [MainThread]: End processing [finbourne-access-sdk]: success
+[2023-04-14 19:43:50] INFO root fetch - processPackages [jobbergate-core]: Downloading https://files.pythonhosted.org/packages/2c/c6/031ba019779b69000cc3b82c5804e57719d749650cace2b5caa6d410b8ba/jobbergate-core-3.5.0a0.tar.gz
+[2023-04-14 19:43:50] INFO root fetch - processPackages [jobbergate-api]: New version: [3.5.0a1] Old Version: [3.5.0a0]
+[2023-04-14 19:43:50] INFO root fetch - processPackages [jobbergate-core]: Downloading https://files.pythonhosted.org/packages/82/c5/8c61f6694ca391e84190217e859b074f20971471ed69578141ddf8882e40/jobbergate-core-3.5.0a1.tar.gz
+[2023-04-14 19:43:50] INFO root fetch - processPackages [jobbergate-core]: executing diffoscope
+[2023-04-14 19:43:50] INFO root fetch - processPackages [jobbergate-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jobbergate-core-3.5.0a0.tar.gz tmp/jobbergate-core-3.5.0a1.tar.gz --markdown 20230414/j/jobbergate-core/3.5.0a0-3.5.0a1/diff.md --exclude *.pyd
+[2023-04-14 19:43:50] INFO root fetch - processPackages [jobbergate-api]: Downloading https://files.pythonhosted.org/packages/91/05/b42c559a505679d8b8787e3213d31aeb26018dba2dce9f3e2f2890ba4889/jobbergate-api-3.5.0a0.tar.gz
+[2023-04-14 19:43:50] INFO root fetch - processPackages [yamicache]: Start processing: quadipy
+[2023-04-14 19:43:50] INFO root fetch - main [MainThread]: End processing [yamicache]: success
+[2023-04-14 19:43:50] INFO root fetch - processPackages [jobbergate-api]: Downloading https://files.pythonhosted.org/packages/a5/9a/a9f410c9fa732f17a455d1ddadf2500dc8adff404aa17162343cfb96cde0/jobbergate-api-3.5.0a1.tar.gz
+[2023-04-14 19:43:50] WARNING root fetch - processPackages [quadipy]: Skipping, unable to determine old version
+[2023-04-14 19:43:50] INFO root fetch - processPackages [quadipy]: Start processing: jobbergate-cli
+[2023-04-14 19:43:50] INFO root fetch - main [MainThread]: End processing [quadipy] error
+[2023-04-14 19:43:50] INFO root fetch - processPackages [jobbergate-api]: executing diffoscope
+[2023-04-14 19:43:50] INFO root fetch - processPackages [jobbergate-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jobbergate-api-3.5.0a0.tar.gz tmp/jobbergate-api-3.5.0a1.tar.gz --markdown 20230414/j/jobbergate-api/3.5.0a0-3.5.0a1/diff.md --exclude *.pyd
+[2023-04-14 19:43:50] INFO root fetch - processPackages [jobbergate-cli]: New version: [3.5.0a1] Old Version: [3.5.0a0]
+[2023-04-14 19:43:51] INFO root fetch - processPackages [jobbergate-cli]: Downloading https://files.pythonhosted.org/packages/d3/3c/e126e27d7dc0028448b8ec2366f6419443db19eea0f910284c531be00a4c/jobbergate-cli-3.5.0a0.tar.gz
+[2023-04-14 19:43:51] INFO root fetch - processPackages [PyroFork-dev]: Start processing: katalytic-pkg
+[2023-04-14 19:43:51] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
+[2023-04-14 19:43:51] INFO root fetch - processPackages [katalytic-pkg]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-14 19:43:51] INFO root fetch - processPackages [katalytic-pkg]: executing diffoscope
+[2023-04-14 19:43:51] INFO root fetch - processPackages [katalytic-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-pkg-0.2.3.tar.gz tmp/katalytic-pkg-0.2.4.tar.gz --markdown 20230414/k/katalytic-pkg/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-14 19:43:51] INFO root fetch - processPackages [jobbergate-cli]: Downloading https://files.pythonhosted.org/packages/df/fb/3b484fd9c93b09d4d7c606235f33f5b07d904810b205cefb975c8beb84ec/jobbergate-cli-3.5.0a1.tar.gz
+[2023-04-14 19:43:51] INFO root fetch - processPackages [jobbergate-cli]: executing diffoscope
+[2023-04-14 19:43:51] INFO root fetch - processPackages [jobbergate-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jobbergate-cli-3.5.0a0.tar.gz tmp/jobbergate-cli-3.5.0a1.tar.gz --markdown 20230414/j/jobbergate-cli/3.5.0a0-3.5.0a1/diff.md --exclude *.pyd
+[2023-04-14 19:43:51] INFO root fetch - processPackages [jobbergate-core]: Start processing: django-socio-grpc
+[2023-04-14 19:43:51] INFO root fetch - main [MainThread]: End processing [jobbergate-core]: success
+[2023-04-14 19:43:51] INFO root fetch - processPackages [django-socio-grpc]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-14 19:43:51] INFO root fetch - processPackages [django-socio-grpc]: Downloading https://files.pythonhosted.org/packages/7e/d6/0213129823e862591828fc556e6b339d32cd58621898f0696900155db751/django-socio-grpc-0.8.9.tar.gz
+[2023-04-14 19:43:52] INFO root fetch - main [MainThread]: End processing [katalytic-pkg]: success
+[2023-04-14 19:43:52] INFO root fetch - processPackages [django-socio-grpc]: Downloading https://files.pythonhosted.org/packages/7a/b0/8b962693ba3765edd0e0291489b777069cfb9989fddf435614a684afb60d/django-socio-grpc-0.9.0.tar.gz
+[2023-04-14 19:43:52] INFO root fetch - main [MainThread]: End processing [jobbergate-cli]: success
+[2023-04-14 19:43:52] INFO root fetch - processPackages [django-socio-grpc]: executing diffoscope
+[2023-04-14 19:43:52] INFO root fetch - processPackages [django-socio-grpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-socio-grpc-0.8.9.tar.gz tmp/django-socio-grpc-0.9.0.tar.gz --markdown 20230414/d/django-socio-grpc/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 19:43:53] INFO root fetch - main [MainThread]: End processing [piedomains]: success
+[2023-04-14 19:43:53] INFO root fetch - main [MainThread]: End processing [jobbergate-api]: success
+[2023-04-14 19:43:54] INFO root fetch - main [MainThread]: End processing [django-socio-grpc]: success
+[2023-04-14 19:43:54] INFO root fetch - main [MainThread]: Store serial: [17710952]
