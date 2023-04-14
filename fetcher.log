@@ -19101,3 +19101,93 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 19:27:39] INFO root fetch - main [MainThread]: End processing [oort-cloud]: success
 [2023-04-14 19:27:40] INFO root fetch - main [MainThread]: End processing [phanterpwa]: success
 [2023-04-14 19:27:40] INFO root fetch - main [MainThread]: Store serial: [17710689]
+[2023-04-14 19:32:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17710689]
+[2023-04-14 19:32:48] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-14 19:32:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyxsim
+[2023-04-14 19:32:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: napari-sam
+[2023-04-14 19:32:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-attachments
+[2023-04-14 19:32:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airbyte-cdk
+[2023-04-14 19:32:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torch-directml
+[2023-04-14 19:32:48] INFO root fetch - processPackages [torch-directml]: New version: [0.1.13.dev221216] Old Version: [0.1.13.dev221206]
+[2023-04-14 19:32:48] INFO root fetch - processPackages [napari-sam]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-14 19:32:48] INFO root fetch - processPackages [django-attachments]: New version: [1.9.1] Old Version: [1.9]
+[2023-04-14 19:32:48] INFO root fetch - processPackages [pyxsim]: New version: [4.2b0] Old Version: [4.2.0]
+[2023-04-14 19:32:48] INFO root fetch - processPackages [airbyte-cdk]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-14 19:32:49] INFO root fetch - processPackages [pyxsim]: Downloading https://files.pythonhosted.org/packages/23/f3/8bef9407afd85b2e7bd87a94107ee7f554d6d3e395d582085cf134e2a8f6/pyxsim-4.2.0.tar.gz
+[2023-04-14 19:32:49] INFO root fetch - processPackages [torch-directml]: Downloading https://files.pythonhosted.org/packages/7a/37/3f97039e3111e388caf10a6d3acdcc9d787e2ffd93ccda2791f4a021965f/torch_directml-0.1.13.dev221206-cp39-cp39-win_amd64.whl
+[2023-04-14 19:32:49] INFO root fetch - processPackages [django-attachments]: Downloading https://files.pythonhosted.org/packages/95/c2/c8056423e47b81ace2a3ebb36ef52273cf7b44b52f94a16c56ff7bc46e0f/django-attachments-1.9.tar.gz
+[2023-04-14 19:32:49] INFO root fetch - processPackages [napari-sam]: Downloading https://files.pythonhosted.org/packages/0a/d5/e6a73a2d5e7ca78d1f076e5f64251b233c851de68598f33d9d7ad5a612bc/napari-sam-0.3.7.tar.gz
+[2023-04-14 19:32:49] INFO root fetch - processPackages [airbyte-cdk]: executing diffoscope
+[2023-04-14 19:32:49] INFO root fetch - processPackages [airbyte-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-cdk-0.9.4.tar.gz tmp/airbyte-cdk-0.9.5.tar.gz --markdown 20230414/a/airbyte-cdk/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-14 19:32:49] INFO root fetch - processPackages [napari-sam]: executing diffoscope
+[2023-04-14 19:32:49] INFO root fetch - processPackages [napari-sam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-sam-0.3.6.tar.gz tmp/napari-sam-0.3.7.tar.gz --markdown 20230414/n/napari-sam/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-14 19:32:49] INFO root fetch - processPackages [django-attachments]: Downloading https://files.pythonhosted.org/packages/1a/84/987f0277794d4e122d4c64112b97087ba11ee7b5b001ab3db2ab494dc6b7/django-attachments-1.9.1.tar.gz
+[2023-04-14 19:32:49] INFO root fetch - processPackages [django-attachments]: executing diffoscope
+[2023-04-14 19:32:49] INFO root fetch - processPackages [django-attachments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-attachments-1.9.tar.gz tmp/django-attachments-1.9.1.tar.gz --markdown 20230414/d/django-attachments/1.9-1.9.1/diff.md --exclude *.pyd
+[2023-04-14 19:32:49] INFO root fetch - processPackages [pyxsim]: Downloading https://files.pythonhosted.org/packages/5c/94/51a2471a626ac912d2a2a166ce1af617cf7b2b4d96065626121b3fa436b4/pyxsim-4.2b0.tar.gz
+[2023-04-14 19:32:50] INFO root fetch - processPackages [pyxsim]: executing diffoscope
+[2023-04-14 19:32:50] INFO root fetch - processPackages [pyxsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxsim-4.2.0.tar.gz tmp/pyxsim-4.2b0.tar.gz --markdown 20230414/p/pyxsim/4.2.0-4.2b0/diff.md --exclude *.pyd
+[2023-04-14 19:32:50] INFO root fetch - processPackages [napari-sam]: Start processing: oak9-tython
+[2023-04-14 19:32:50] INFO root fetch - main [MainThread]: End processing [napari-sam]: success
+[2023-04-14 19:32:50] INFO root fetch - processPackages [oak9-tython]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-14 19:32:50] INFO root fetch - processPackages [django-attachments]: Start processing: croydon
+[2023-04-14 19:32:50] INFO root fetch - main [MainThread]: End processing [django-attachments]: success
+[2023-04-14 19:32:50] INFO root fetch - processPackages [croydon]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 19:32:51] INFO root fetch - processPackages [oak9-tython]: Downloading https://files.pythonhosted.org/packages/52/bb/88f2ae830cc8db38c034cd28828e817383be425b784c4a131b59858ebb76/oak9_tython-1.0.3.tar.gz
+[2023-04-14 19:32:51] INFO root fetch - processPackages [croydon]: executing diffoscope
+[2023-04-14 19:32:51] INFO root fetch - processPackages [croydon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croydon-0.9.0.tar.gz tmp/croydon-0.9.1.tar.gz --markdown 20230414/c/croydon/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 19:32:51] INFO root fetch - processPackages [oak9-tython]: executing diffoscope
+[2023-04-14 19:32:51] INFO root fetch - processPackages [oak9-tython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oak9_tython-1.0.2.tar.gz tmp/oak9_tython-1.0.3.tar.gz --markdown 20230414/o/oak9-tython/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-14 19:32:51] INFO root fetch - processPackages [airbyte-cdk]: Start processing: deltafi
+[2023-04-14 19:32:51] INFO root fetch - main [MainThread]: End processing [airbyte-cdk]: success
+[2023-04-14 19:32:51] INFO root fetch - processPackages [deltafi]: New version: [0.99.8] Old Version: [0.99.7]
+[2023-04-14 19:32:51] INFO root fetch - processPackages [torch-directml]: Downloading https://files.pythonhosted.org/packages/70/ee/71ccf4100e54d3fab8bb3b403608e0e0c4b69c9e30d6acd4dbb374217f95/torch_directml-0.1.13.dev221216-cp39-cp39-win_amd64.whl
+[2023-04-14 19:32:51] INFO root fetch - processPackages [deltafi]: Downloading https://files.pythonhosted.org/packages/e5/f8/236e8805990b60ffcdaac35919630085374f687fd7c4782f76db5bf15b42/deltafi-0.99.7.tar.gz
+[2023-04-14 19:32:52] INFO root fetch - processPackages [pyxsim]: Start processing: vowpal-wabbit-next
+[2023-04-14 19:32:52] INFO root fetch - main [MainThread]: End processing [pyxsim]: success
+[2023-04-14 19:32:52] INFO root fetch - processPackages [vowpal-wabbit-next]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-14 19:32:52] INFO root fetch - processPackages [deltafi]: Downloading https://files.pythonhosted.org/packages/58/b9/f37d0ee984101ded21f6250f64c03cddeeef3a4bbe18f51bbc7be71b793d/deltafi-0.99.8.tar.gz
+[2023-04-14 19:32:52] INFO root fetch - processPackages [croydon]: Start processing: pulumi-kubernetes
+[2023-04-14 19:32:52] INFO root fetch - main [MainThread]: End processing [croydon]: success
+[2023-04-14 19:32:52] INFO root fetch - processPackages [pulumi-kubernetes]: New version: [3.9.0] Old Version: [3.8.3]
+[2023-04-14 19:32:52] INFO root fetch - processPackages [deltafi]: executing diffoscope
+[2023-04-14 19:32:52] INFO root fetch - processPackages [deltafi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltafi-0.99.7.tar.gz tmp/deltafi-0.99.8.tar.gz --markdown 20230414/d/deltafi/0.99.7-0.99.8/diff.md --exclude *.pyd
+[2023-04-14 19:32:52] INFO root fetch - processPackages [vowpal-wabbit-next]: Downloading https://files.pythonhosted.org/packages/e5/13/b2cfedc08f7c03af0f84438ed944df347110a760cebc4d8ef6fc827b634a/vowpal-wabbit-next-0.3.0.tar.gz
+[2023-04-14 19:32:52] INFO root fetch - processPackages [pulumi-kubernetes]: executing diffoscope
+[2023-04-14 19:32:52] INFO root fetch - processPackages [pulumi-kubernetes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes-3.8.3.tar.gz tmp/pulumi_kubernetes-3.9.0.tar.gz --markdown 20230414/p/pulumi-kubernetes/3.8.3-3.9.0/diff.md --exclude *.pyd
+[2023-04-14 19:32:53] INFO root fetch - processPackages [vowpal-wabbit-next]: Downloading https://files.pythonhosted.org/packages/ab/3e/2953d3968e25d32851bb9678b43d866764961b864911ac895eec9424d60f/vowpal-wabbit-next-0.4.0.tar.gz
+[2023-04-14 19:32:53] INFO root fetch - processPackages [deltafi]: Start processing: lcbuilder
+[2023-04-14 19:32:53] INFO root fetch - main [MainThread]: End processing [deltafi]: success
+[2023-04-14 19:32:53] INFO root fetch - processPackages [lcbuilder]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 19:32:53] INFO root fetch - processPackages [vowpal-wabbit-next]: executing diffoscope
+[2023-04-14 19:32:53] INFO root fetch - processPackages [vowpal-wabbit-next]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vowpal-wabbit-next-0.3.0.tar.gz tmp/vowpal-wabbit-next-0.4.0.tar.gz --markdown 20230414/v/vowpal-wabbit-next/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-14 19:32:54] INFO root fetch - processPackages [lcbuilder]: executing diffoscope
+[2023-04-14 19:32:54] INFO root fetch - processPackages [lcbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcbuilder-0.9.8.tar.gz tmp/lcbuilder-0.9.9.tar.gz --markdown 20230414/l/lcbuilder/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 19:32:54] INFO root fetch - processPackages [torch-directml]: executing diffoscope
+[2023-04-14 19:32:54] INFO root fetch - processPackages [torch-directml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_directml-0.1.13.dev221206-cp39-cp39-win_amd64.whl.zip tmp/torch_directml-0.1.13.dev221216-cp39-cp39-win_amd64.whl.zip --markdown 20230414/t/torch-directml/0.1.13.dev221206-0.1.13.dev221216/diff.md --exclude *.pyd
+[2023-04-14 19:32:55] INFO root fetch - processPackages [lcbuilder]: Start processing: propertysync
+[2023-04-14 19:32:55] INFO root fetch - main [MainThread]: End processing [lcbuilder]: success
+[2023-04-14 19:32:55] INFO root fetch - processPackages [propertysync]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-14 19:32:55] INFO root fetch - processPackages [torch-directml]: Start processing: vocode
+[2023-04-14 19:32:55] INFO root fetch - main [MainThread]: End processing [torch-directml]: success
+[2023-04-14 19:32:55] INFO root fetch - processPackages [vocode]: New version: [0.1.92] Old Version: [0.1.91]
+[2023-04-14 19:32:55] INFO root fetch - processPackages [propertysync]: Downloading https://files.pythonhosted.org/packages/e8/7a/caf003b877226481f61fdfaaca3527c5b7f69eca51dff3a3981190d1fe2f/propertysync-0.0.4.tar.gz
+[2023-04-14 19:32:55] INFO root fetch - processPackages [propertysync]: Downloading https://files.pythonhosted.org/packages/8f/7d/1801d0dcb8b32042bfa302077bed96744abcc8c9aa2462745372a36b923c/propertysync-0.1.0.tar.gz
+[2023-04-14 19:32:55] INFO root fetch - processPackages [vocode]: Downloading https://files.pythonhosted.org/packages/44/cb/c6e91ddb63cb98faa9a314e6fa947b31e96ce67d8d3fef6cc636f7961cdb/vocode-0.1.92.tar.gz
+[2023-04-14 19:32:56] INFO root fetch - processPackages [propertysync]: executing diffoscope
+[2023-04-14 19:32:56] INFO root fetch - processPackages [propertysync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propertysync-0.0.4.tar.gz tmp/propertysync-0.1.0.tar.gz --markdown 20230414/p/propertysync/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-14 19:32:56] INFO root fetch - processPackages [vocode]: executing diffoscope
+[2023-04-14 19:32:56] INFO root fetch - processPackages [vocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocode-0.1.91.tar.gz tmp/vocode-0.1.92.tar.gz --markdown 20230414/v/vocode/0.1.91-0.1.92/diff.md --exclude *.pyd
+[2023-04-14 19:32:57] INFO root fetch - processPackages [propertysync]: Start processing: ydb
+[2023-04-14 19:32:57] INFO root fetch - main [MainThread]: End processing [propertysync]: success
+[2023-04-14 19:32:57] INFO root fetch - processPackages [ydb]: New version: [3.3.0] Old Version: [3.2.2]
+[2023-04-14 19:32:57] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes]: success
+[2023-04-14 19:32:57] INFO root fetch - processPackages [ydb]: Downloading https://files.pythonhosted.org/packages/7f/5c/8a6d905650b22c57f27076244ce562b0fed2498a626b4b2e7969f5e5075c/ydb-3.2.2.tar.gz
+[2023-04-14 19:32:57] INFO root fetch - processPackages [ydb]: Downloading https://files.pythonhosted.org/packages/92/e5/256d6d95d476dffc28242fb75e1936ae522f033692b5be5f421a278f0d62/ydb-3.3.0.tar.gz
+[2023-04-14 19:32:58] INFO root fetch - processPackages [ydb]: executing diffoscope
+[2023-04-14 19:32:58] INFO root fetch - processPackages [ydb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ydb-3.2.2.tar.gz tmp/ydb-3.3.0.tar.gz --markdown 20230414/y/ydb/3.2.2-3.3.0/diff.md --exclude *.pyd
+[2023-04-14 19:32:58] INFO root fetch - main [MainThread]: End processing [vocode]: success
+[2023-04-14 19:33:00] INFO root fetch - main [MainThread]: End processing [ydb]: success
+[2023-04-14 19:33:05] INFO root fetch - main [MainThread]: End processing [oak9-tython]: success
+[2023-04-14 19:33:07] INFO root fetch - main [MainThread]: End processing [vowpal-wabbit-next]: success
+[2023-04-14 19:33:07] INFO root fetch - main [MainThread]: Store serial: [17710775]
