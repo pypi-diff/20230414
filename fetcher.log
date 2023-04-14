@@ -5961,3 +5961,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 04:10:39] INFO root fetch - main [MainThread]: End processing [datamachine]: success
 [2023-04-14 04:10:46] INFO root fetch - main [MainThread]: End processing [systems-manager]: success
 [2023-04-14 04:10:46] INFO root fetch - main [MainThread]: Store serial: [17702485]
+[2023-04-14 04:15:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702485]
+[2023-04-14 04:15:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-14 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: novelai-api
+[2023-04-14 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zcbot-celery-sdk
+[2023-04-14 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ghstack
+[2023-04-14 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: locust-je-test-pep621
+[2023-04-14 04:15:53] INFO root fetch - processPackages [ghstack]: New version: [0.8.0] Old Version: [0.7.1]
+[2023-04-14 04:15:53] INFO root fetch - processPackages [zcbot-celery-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 04:15:53] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2023-04-14 04:15:53] INFO root fetch - processPackages [locust-je-test-pep621]: New version: [2.15.2.dev8] Old Version: [2.15.2.dev15]
+[2023-04-14 04:15:53] INFO root fetch - processPackages [locust-je-test-pep621]: Downloading https://files.pythonhosted.org/packages/cc/55/15cc6880fba9c1dddd780d22479029d640ac53fc9c2ea5f593d378ca4b5b/locust-je-test-pep621-2.15.2.dev15.tar.gz
+[2023-04-14 04:15:53] INFO root fetch - processPackages [ghstack]: Downloading https://files.pythonhosted.org/packages/8b/fb/0af6a996552e1e8fe9a3cd810f4c44e94c50f68d5b12caa7471d0833b63f/ghstack-0.7.1.tar.gz
+[2023-04-14 04:15:53] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/fc/5f/4521adcc080f088c499ad70d5ea4d991b23f72661d4aa68a9112d0b3283e/novelai-api-0.8.tar.gz
+[2023-04-14 04:15:53] INFO root fetch - processPackages [zcbot-celery-sdk]: Downloading https://files.pythonhosted.org/packages/4c/b5/afb2bfe70b2370676ef969e320b714a06c96a1bba3cad13f5f5040450b48/zcbot-celery-sdk-0.0.8.tar.gz
+[2023-04-14 04:15:54] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/69/ed/74960ad9154e8dc49c4d6c47cbc174dc97461bb9e5e113a548c167b72455/novelai-api-0.9.tar.gz
+[2023-04-14 04:15:54] INFO root fetch - processPackages [ghstack]: Downloading https://files.pythonhosted.org/packages/66/d0/7ea3a74e9529203f1ec2941462f1a8d9fa0e7d3f5078571abde8875d6b07/ghstack-0.8.0.tar.gz
+[2023-04-14 04:15:54] INFO root fetch - processPackages [zcbot-celery-sdk]: Downloading https://files.pythonhosted.org/packages/9a/d8/42b0d82e5095896d6ec2775f0d727ce292ea46e9948fb4aebbbd7ff44280/zcbot-celery-sdk-0.0.9.tar.gz
+[2023-04-14 04:15:54] INFO root fetch - processPackages [ghstack]: executing diffoscope
+[2023-04-14 04:15:54] INFO root fetch - processPackages [ghstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghstack-0.7.1.tar.gz tmp/ghstack-0.8.0.tar.gz --markdown 20230414/g/ghstack/0.7.1-0.8.0/diff.md --exclude *.pyd
+[2023-04-14 04:15:54] INFO root fetch - processPackages [locust-je-test-pep621]: executing diffoscope
+[2023-04-14 04:15:54] INFO root fetch - processPackages [locust-je-test-pep621]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-je-test-pep621-2.15.2.dev15.tar.gz tmp/locust_je_test_pep621-2.15.2.dev8.tar.gz --markdown 20230414/l/locust-je-test-pep621/2.15.2.dev15-2.15.2.dev8/diff.md --exclude *.pyd
+[2023-04-14 04:15:54] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2023-04-14 04:15:54] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20230414/n/novelai-api/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-14 04:15:54] INFO root fetch - processPackages [zcbot-celery-sdk]: executing diffoscope
+[2023-04-14 04:15:54] INFO root fetch - processPackages [zcbot-celery-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zcbot-celery-sdk-0.0.8.tar.gz tmp/zcbot-celery-sdk-0.0.9.tar.gz --markdown 20230414/z/zcbot-celery-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 04:15:55] INFO root fetch - main [MainThread]: End processing [zcbot-celery-sdk]: success
+[2023-04-14 04:15:55] INFO root fetch - main [MainThread]: End processing [ghstack]: success
+[2023-04-14 04:15:55] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2023-04-14 04:15:56] INFO root fetch - main [MainThread]: End processing [locust-je-test-pep621]: success
+[2023-04-14 04:15:56] INFO root fetch - main [MainThread]: Store serial: [17702499]
