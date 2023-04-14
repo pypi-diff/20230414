@@ -6963,3 +6963,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 06:09:42] INFO root fetch - main [MainThread]: End processing [console-timer]: success
 [2023-04-14 06:09:42] INFO root fetch - main [MainThread]: End processing [insights-extractor]: success
 [2023-04-14 06:09:42] INFO root fetch - main [MainThread]: Store serial: [17703087]
+[2023-04-14 06:14:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703087]
+[2023-04-14 06:14:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-14 06:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chalkpy
+[2023-04-14 06:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cfg-argparser
+[2023-04-14 06:14:50] INFO root fetch - processPackages [cfg-argparser]: New version: [1.0.5] Old Version: [1.0.0]
+[2023-04-14 06:14:50] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-14 06:14:50] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-14 06:14:50] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230414/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-14 06:14:50] INFO root fetch - processPackages [cfg-argparser]: Downloading https://files.pythonhosted.org/packages/87/56/baf3a8cb64cc7642e079baa772bfddef9b9ba27de294e00b96ee0aec4a3c/cfg-argparser-1.0.0.tar.gz
+[2023-04-14 06:14:50] INFO root fetch - processPackages [cfg-argparser]: Downloading https://files.pythonhosted.org/packages/51/cf/1e31f37211b9dd62e1ea62f5b33a8190ba9358fe08a74ccdd2dc60083e87/cfg-argparser-1.0.5.tar.gz
+[2023-04-14 06:14:51] INFO root fetch - processPackages [cfg-argparser]: executing diffoscope
+[2023-04-14 06:14:51] INFO root fetch - processPackages [cfg-argparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfg-argparser-1.0.0.tar.gz tmp/cfg-argparser-1.0.5.tar.gz --markdown 20230414/c/cfg-argparser/1.0.0-1.0.5/diff.md --exclude *.pyd
+[2023-04-14 06:14:52] INFO root fetch - main [MainThread]: End processing [cfg-argparser]: success
+[2023-04-14 06:14:56] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-04-14 06:14:56] INFO root fetch - main [MainThread]: Store serial: [17703094]
