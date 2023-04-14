@@ -15310,3 +15310,90 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 16:14:38] INFO root fetch - main [MainThread]: End processing [pollination-handlers]: success
 [2023-04-14 16:14:39] INFO root fetch - main [MainThread]: End processing [compressbinarytable]: success
 [2023-04-14 16:14:39] INFO root fetch - main [MainThread]: Store serial: [17708229]
+[2023-04-14 16:19:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17708229]
+[2023-04-14 16:19:46] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-14 16:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dvc-data
+[2023-04-14 16:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lesscode-py
+[2023-04-14 16:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: physicsLab
+[2023-04-14 16:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydotbot
+[2023-04-14 16:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: terka
+[2023-04-14 16:19:47] INFO root fetch - processPackages [terka]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-04-14 16:19:47] INFO root fetch - processPackages [physicsLab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-14 16:19:47] INFO root fetch - processPackages [dvc-data]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 16:19:47] INFO root fetch - processPackages [pydotbot]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-14 16:19:47] INFO root fetch - processPackages [lesscode-py]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 16:19:47] INFO root fetch - processPackages [lesscode-py]: executing diffoscope
+[2023-04-14 16:19:47] INFO root fetch - processPackages [lesscode-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode-py-0.3.8.tar.gz tmp/lesscode-py-0.3.9.tar.gz --markdown 20230414/l/lesscode-py/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 16:19:47] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/d2/52/748044b585755bd0a21f68cbaee05963f1811d6e27a1faeceaf06827b474/terka-1.5.3.tar.gz
+[2023-04-14 16:19:47] INFO root fetch - processPackages [dvc-data]: Downloading https://files.pythonhosted.org/packages/03/d5/0752bbc3e82edd356b4f0c69a11c9711eb09deabd1a6a8f948e2da46818d/dvc-data-0.8.0.tar.gz
+[2023-04-14 16:19:47] INFO root fetch - processPackages [pydotbot]: Downloading https://files.pythonhosted.org/packages/aa/9a/59ab845e50718857ba44a086c2e1cb3939caf3c6bdd755fc30a664d18dc4/pydotbot-0.9.2.tar.gz
+[2023-04-14 16:19:47] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-14 16:19:47] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.5.2.tar.gz tmp/terka-1.5.3.tar.gz --markdown 20230414/t/terka/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-04-14 16:19:47] INFO root fetch - processPackages [physicsLab]: executing diffoscope
+[2023-04-14 16:19:47] INFO root fetch - processPackages [physicsLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/physicsLab-1.1.8.tar.gz tmp/physicsLab-1.1.9.tar.gz --markdown 20230414/p/physicsLab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-14 16:19:47] INFO root fetch - processPackages [dvc-data]: Downloading https://files.pythonhosted.org/packages/8c/65/1d133c2ce7da48539e36d2edda0ae3f74534e639f26efaef0c696860e8c2/dvc-data-0.9.0.tar.gz
+[2023-04-14 16:19:48] INFO root fetch - processPackages [pydotbot]: Downloading https://files.pythonhosted.org/packages/86/4a/8cee9e295f9748bf3e272b098740fb75c98254d812f4ef6075a5a623ce64/pydotbot-0.9.3.tar.gz
+[2023-04-14 16:19:48] INFO root fetch - processPackages [pydotbot]: executing diffoscope
+[2023-04-14 16:19:48] INFO root fetch - processPackages [pydotbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydotbot-0.9.2.tar.gz tmp/pydotbot-0.9.3.tar.gz --markdown 20230414/p/pydotbot/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-14 16:19:48] INFO root fetch - processPackages [dvc-data]: executing diffoscope
+[2023-04-14 16:19:48] INFO root fetch - processPackages [dvc-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvc-data-0.8.0.tar.gz tmp/dvc-data-0.9.0.tar.gz --markdown 20230414/d/dvc-data/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 16:19:48] INFO root fetch - processPackages [terka]: Start processing: c8y-api
+[2023-04-14 16:19:48] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-14 16:19:48] INFO root fetch - processPackages [c8y-api]: New version: [1.8] Old Version: [1.7]
+[2023-04-14 16:19:48] INFO root fetch - processPackages [physicsLab]: Start processing: yellowdog-python-examples
+[2023-04-14 16:19:48] INFO root fetch - main [MainThread]: End processing [physicsLab]: success
+[2023-04-14 16:19:48] INFO root fetch - processPackages [yellowdog-python-examples]: New version: [5.0.2] Old Version: [5.0.1]
+[2023-04-14 16:19:48] INFO root fetch - processPackages [c8y-api]: Downloading https://files.pythonhosted.org/packages/e4/30/85abcf35fe2c25a417e9de218d404a1728b10b5f625bbf4c946c9f9adbe5/c8y_api-1.7.tar.gz
+[2023-04-14 16:19:48] INFO root fetch - processPackages [yellowdog-python-examples]: Downloading https://files.pythonhosted.org/packages/fb/f7/592aaf47392a0dc1e01fad43bc500fa3c8d541a5d0e794212b030524543a/yellowdog-python-examples-5.0.1.tar.gz
+[2023-04-14 16:19:48] INFO root fetch - processPackages [c8y-api]: Downloading https://files.pythonhosted.org/packages/a2/3f/d1ebf225e7e2bb9485059bd61bb5958e03b80b75512f2b7c71bdc2608943/c8y_api-1.8.tar.gz
+[2023-04-14 16:19:48] INFO root fetch - processPackages [yellowdog-python-examples]: Downloading https://files.pythonhosted.org/packages/fe/1d/bbd8daf0eade06c3a8609a1a7ed8dcd7cb4b0336c39c3a5673a5b105b60f/yellowdog-python-examples-5.0.2.tar.gz
+[2023-04-14 16:19:49] INFO root fetch - processPackages [yellowdog-python-examples]: executing diffoscope
+[2023-04-14 16:19:49] INFO root fetch - processPackages [yellowdog-python-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yellowdog-python-examples-5.0.1.tar.gz tmp/yellowdog-python-examples-5.0.2.tar.gz --markdown 20230414/y/yellowdog-python-examples/5.0.1-5.0.2/diff.md --exclude *.pyd
+[2023-04-14 16:19:49] INFO root fetch - processPackages [c8y-api]: executing diffoscope
+[2023-04-14 16:19:49] INFO root fetch - processPackages [c8y-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c8y_api-1.7.tar.gz tmp/c8y_api-1.8.tar.gz --markdown 20230414/c/c8y-api/1.7-1.8/diff.md --exclude *.pyd
+[2023-04-14 16:19:49] INFO root fetch - processPackages [dvc-data]: Start processing: eurogastp
+[2023-04-14 16:19:49] INFO root fetch - main [MainThread]: End processing [dvc-data]: success
+[2023-04-14 16:19:49] WARNING root fetch - processPackages [eurogastp]: Skipping, unable to determine old version
+[2023-04-14 16:19:49] INFO root fetch - processPackages [eurogastp]: Start processing: spanishconjugator
+[2023-04-14 16:19:49] INFO root fetch - main [MainThread]: End processing [eurogastp] error
+[2023-04-14 16:19:49] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-14 16:19:50] INFO root fetch - processPackages [pydotbot]: Start processing: spanishconjugator
+[2023-04-14 16:19:50] INFO root fetch - main [MainThread]: End processing [pydotbot]: success
+[2023-04-14 16:19:50] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-14 16:19:50] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230414/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-14 16:19:50] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-14 16:19:50] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-14 16:19:50] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230414/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-14 16:19:50] INFO root fetch - processPackages [yellowdog-python-examples]: Start processing: anadroid
+[2023-04-14 16:19:50] INFO root fetch - main [MainThread]: End processing [yellowdog-python-examples]: success
+[2023-04-14 16:19:50] INFO root fetch - processPackages [anadroid]: New version: [0.5.5] Old Version: [0.5.39]
+[2023-04-14 16:19:50] INFO root fetch - processPackages [anadroid]: Downloading https://files.pythonhosted.org/packages/39/3d/ef03caa0ffe420bc8babec63f4e8a10d47a3dd69dc0de5122858cb6ea48e/anadroid-0.5.39.tar.gz
+[2023-04-14 16:19:50] WARNING root fetch - processPackages [anadroid]: Skipping package: exceeds size limit 80759328>=10485760
+[2023-04-14 16:19:50] INFO root fetch - processPackages [anadroid]: Start processing: nalyst
+[2023-04-14 16:19:50] INFO root fetch - main [MainThread]: End processing [anadroid] error
+[2023-04-14 16:19:51] INFO root fetch - processPackages [nalyst]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 16:19:51] INFO root fetch - processPackages [spanishconjugator]: Start processing: seawolf
+[2023-04-14 16:19:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-14 16:19:51] WARNING root fetch - processPackages [seawolf]: Skipping, unable to determine old version
+[2023-04-14 16:19:51] INFO root fetch - processPackages [seawolf]: Start processing: optim3d
+[2023-04-14 16:19:51] INFO root fetch - main [MainThread]: End processing [seawolf] error
+[2023-04-14 16:19:51] INFO root fetch - processPackages [nalyst]: Downloading https://files.pythonhosted.org/packages/4e/b8/ed7b9647b137ac98819275c1423b0ed738d34ef5f600ada9d7739b59b4a0/nalyst-0.0.6.tar.gz
+[2023-04-14 16:19:51] INFO root fetch - processPackages [optim3d]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-04-14 16:19:51] INFO root fetch - processPackages [optim3d]: executing diffoscope
+[2023-04-14 16:19:51] INFO root fetch - processPackages [optim3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optim3d-0.2.9.tar.gz tmp/optim3d-0.3.0.tar.gz --markdown 20230414/o/optim3d/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 16:19:51] INFO root fetch - processPackages [spanishconjugator]: Start processing: Netfoll-TL
+[2023-04-14 16:19:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-14 16:19:51] WARNING root fetch - processPackages [Netfoll-TL]: Skipping, unable to determine old version
+[2023-04-14 16:19:51] INFO root fetch - processPackages [Netfoll-TL]: Start processing: chellow
+[2023-04-14 16:19:51] INFO root fetch - main [MainThread]: End processing [Netfoll-TL] error
+[2023-04-14 16:19:51] INFO root fetch - processPackages [chellow]: New version: [2827] Old Version: [2826]
+[2023-04-14 16:19:51] INFO root fetch - processPackages [nalyst]: executing diffoscope
+[2023-04-14 16:19:51] INFO root fetch - processPackages [nalyst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nalyst-0.0.5.tar.gz tmp/nalyst-0.0.6.tar.gz --markdown 20230414/n/nalyst/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 16:19:51] INFO root fetch - processPackages [chellow]: executing diffoscope
+[2023-04-14 16:19:51] INFO root fetch - processPackages [chellow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chellow-2826.tar.gz tmp/chellow-2827.tar.gz --markdown 20230414/c/chellow/2826-2827/diff.md --exclude *.pyd
+[2023-04-14 16:19:52] INFO root fetch - main [MainThread]: End processing [lesscode-py]: success
+[2023-04-14 16:19:52] INFO root fetch - main [MainThread]: End processing [optim3d]: success
+[2023-04-14 16:19:52] INFO root fetch - main [MainThread]: End processing [nalyst]: success
+[2023-04-14 16:19:52] INFO root fetch - main [MainThread]: End processing [c8y-api]: success
+[2023-04-14 16:19:56] INFO root fetch - main [MainThread]: End processing [chellow]: success
+[2023-04-14 16:19:56] INFO root fetch - main [MainThread]: Store serial: [17708304]
