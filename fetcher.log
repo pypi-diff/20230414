@@ -11435,3 +11435,75 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 12:04:42] INFO root fetch - main [MainThread]: End processing [test-query-tool]: success
 [2023-04-14 12:04:46] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
 [2023-04-14 12:04:46] INFO root fetch - main [MainThread]: Store serial: [17705684]
+[2023-04-14 12:09:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705684]
+[2023-04-14 12:09:54] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 12:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snoopy-bv
+[2023-04-14 12:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bbb-dl
+[2023-04-14 12:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qtreload
+[2023-04-14 12:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: areixio
+[2023-04-14 12:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yourtools
+[2023-04-14 12:09:54] INFO root fetch - processPackages [snoopy-bv]: New version: [2.0.1] Old Version: [2.0.0rc1]
+[2023-04-14 12:09:54] INFO root fetch - processPackages [bbb-dl]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-14 12:09:54] WARNING root fetch - processPackages [qtreload]: Skipping, unable to determine old version
+[2023-04-14 12:09:54] INFO root fetch - processPackages [qtreload]: Start processing: phpdoc-trans
+[2023-04-14 12:09:54] INFO root fetch - main [MainThread]: End processing [qtreload] error
+[2023-04-14 12:09:54] INFO root fetch - processPackages [areixio]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-14 12:09:54] INFO root fetch - processPackages [yourtools]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 12:09:54] INFO root fetch - processPackages [phpdoc-trans]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 12:09:54] INFO root fetch - processPackages [areixio]: executing diffoscope
+[2023-04-14 12:09:54] INFO root fetch - processPackages [areixio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areixio-0.2.8.tar.gz tmp/areixio-0.2.9.tar.gz --markdown 20230414/a/areixio/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-14 12:09:54] INFO root fetch - processPackages [snoopy-bv]: Downloading https://files.pythonhosted.org/packages/9c/44/7b90e81a40cfc4be86808ea72649deacbaff318e3036bc8a4ee4d8798bf4/snoopy_bv-2.0.0rc1-cp39-cp39-win_amd64.whl
+[2023-04-14 12:09:54] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/cf/04/0a4cb16319915f1dff6a1e14efde4599325a3021e0d39a6202384110dfb8/yourtools-0.4.9.tar.gz
+[2023-04-14 12:09:54] INFO root fetch - processPackages [phpdoc-trans]: Downloading https://files.pythonhosted.org/packages/96/a7/b00e951edf94a82df06767043e095b027cb2db817cb391a912392dc8aa47/phpdoc-trans-0.0.5.tar.gz
+[2023-04-14 12:09:54] INFO root fetch - processPackages [bbb-dl]: Downloading https://files.pythonhosted.org/packages/ac/34/3f22c3a92870dc4dbc14d168d1d95cd83fd49de4412759c789176938c817/bbb-dl-1.0.5.tar.gz
+[2023-04-14 12:09:55] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-14 12:09:55] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.4.8.tar.gz tmp/yourtools-0.4.9.tar.gz --markdown 20230414/y/yourtools/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 12:09:55] INFO root fetch - processPackages [phpdoc-trans]: executing diffoscope
+[2023-04-14 12:09:55] INFO root fetch - processPackages [phpdoc-trans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phpdoc-trans-0.0.4.tar.gz tmp/phpdoc-trans-0.0.5.tar.gz --markdown 20230414/p/phpdoc-trans/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 12:09:55] INFO root fetch - processPackages [bbb-dl]: executing diffoscope
+[2023-04-14 12:09:55] INFO root fetch - processPackages [bbb-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbb-dl-1.0.4.tar.gz tmp/bbb-dl-1.0.5.tar.gz --markdown 20230414/b/bbb-dl/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-14 12:09:55] INFO root fetch - processPackages [snoopy-bv]: Downloading https://files.pythonhosted.org/packages/13/ff/4d2c087f47cd8c16d03d42831ecefc1728473e58997d614c0ac8cd50ce84/snoopy_bv-2.0.1-cp38-cp38-manylinux_2_24_x86_64.whl
+[2023-04-14 12:09:56] INFO root fetch - processPackages [yourtools]: Start processing: maus
+[2023-04-14 12:09:56] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-14 12:09:56] INFO root fetch - processPackages [maus]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 12:09:56] INFO root fetch - processPackages [maus]: executing diffoscope
+[2023-04-14 12:09:56] INFO root fetch - processPackages [maus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maus-0.3.8.tar.gz tmp/maus-0.3.9.tar.gz --markdown 20230414/m/maus/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 12:09:56] INFO root fetch - processPackages [phpdoc-trans]: Start processing: returnn
+[2023-04-14 12:09:56] INFO root fetch - main [MainThread]: End processing [phpdoc-trans]: success
+[2023-04-14 12:09:56] INFO root fetch - processPackages [returnn]: New version: [1.20230414.114902] Old Version: [1.20230414.112721]
+[2023-04-14 12:09:56] INFO root fetch - processPackages [bbb-dl]: Start processing: test24234
+[2023-04-14 12:09:56] INFO root fetch - main [MainThread]: End processing [bbb-dl]: success
+[2023-04-14 12:09:56] INFO root fetch - processPackages [snoopy-bv]: executing diffoscope
+[2023-04-14 12:09:56] INFO root fetch - processPackages [snoopy-bv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snoopy_bv-2.0.0rc1-cp39-cp39-win_amd64.whl.zip tmp/snoopy_bv-2.0.1-cp38-cp38-manylinux_2_24_x86_64.whl.zip --markdown 20230414/s/snoopy-bv/2.0.0rc1-2.0.1/diff.md --exclude *.pyd
+[2023-04-14 12:09:56] WARNING root fetch - processPackages [test24234]: Skipping, unable to determine old version
+[2023-04-14 12:09:56] INFO root fetch - processPackages [test24234]: Start processing: gmltools
+[2023-04-14 12:09:56] INFO root fetch - main [MainThread]: End processing [test24234] error
+[2023-04-14 12:09:56] INFO root fetch - processPackages [gmltools]: New version: [0.0.57] Old Version: [0.0.56]
+[2023-04-14 12:09:56] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/63/ce/6871cc4b01181071eae029eaf6e1836d02aa0ed9f115d6f52f9ab33c2bdc/returnn-1.20230414.114902.tar.gz
+[2023-04-14 12:09:56] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/27/61/6d9af98ae061bfc838eb29d77f90bd1fbf6f9df849f363a8cee5b0522f89/gmltools-0.0.57.tar.gz
+[2023-04-14 12:09:56] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-14 12:09:56] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230414.112721.tar.gz tmp/returnn-1.20230414.114902.tar.gz --markdown 20230414/r/returnn/1.20230414.112721-1.20230414.114902/diff.md --exclude *.pyd
+[2023-04-14 12:09:57] INFO root fetch - processPackages [maus]: Start processing: policyengine-us
+[2023-04-14 12:09:57] INFO root fetch - main [MainThread]: End processing [maus]: success
+[2023-04-14 12:09:57] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-04-14 12:09:57] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.56.tar.gz tmp/gmltools-0.0.57.tar.gz --markdown 20230414/g/gmltools/0.0.56-0.0.57/diff.md --exclude *.pyd
+[2023-04-14 12:09:57] INFO root fetch - processPackages [policyengine-us]: New version: [0.286.2] Old Version: [0.286.1]
+[2023-04-14 12:09:57] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/15/3c/2926c9fe410190ab41d4250a29cd591fd5e5729d73cc8533219a8cf95852/policyengine-us-0.286.2.tar.gz
+[2023-04-14 12:09:58] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-14 12:09:58] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.286.1.tar.gz tmp/policyengine-us-0.286.2.tar.gz --markdown 20230414/p/policyengine-us/0.286.1-0.286.2/diff.md --exclude *.pyd
+[2023-04-14 12:09:58] INFO root fetch - processPackages [gmltools]: Start processing: gt-defect-dojo
+[2023-04-14 12:09:58] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-04-14 12:09:58] WARNING root fetch - processPackages [gt-defect-dojo]: Skipping, unable to determine old version
+[2023-04-14 12:09:58] INFO root fetch - processPackages [gt-defect-dojo]: Start processing: rqsdk
+[2023-04-14 12:09:58] INFO root fetch - main [MainThread]: End processing [gt-defect-dojo] error
+[2023-04-14 12:09:58] INFO root fetch - processPackages [rqsdk]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-14 12:09:59] INFO root fetch - processPackages [rqsdk]: Downloading https://files.pythonhosted.org/packages/65/d1/b0b4c8beb70e99eea92ce427f6a71382898b39b9999d46f0ed701c6352eb/rqsdk-1.4.8.tar.gz
+[2023-04-14 12:09:59] INFO root fetch - main [MainThread]: End processing [snoopy-bv]: success
+[2023-04-14 12:09:59] INFO root fetch - processPackages [rqsdk]: Downloading https://files.pythonhosted.org/packages/ab/92/0b83ec0ea45a826cf5864303d33d74d694ac557cdb29a5b128dba800e0ec/rqsdk-1.4.9.tar.gz
+[2023-04-14 12:09:59] INFO root fetch - processPackages [rqsdk]: executing diffoscope
+[2023-04-14 12:09:59] INFO root fetch - processPackages [rqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rqsdk-1.4.8.tar.gz tmp/rqsdk-1.4.9.tar.gz --markdown 20230414/r/rqsdk/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-14 12:10:00] INFO root fetch - main [MainThread]: End processing [rqsdk]: success
+[2023-04-14 12:10:01] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-14 12:10:04] INFO root fetch - main [MainThread]: End processing [areixio]: success
+[2023-04-14 12:11:01] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-14 12:11:01] INFO root fetch - main [MainThread]: Store serial: [17705724]
