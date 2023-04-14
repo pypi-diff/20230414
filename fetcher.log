@@ -22893,3 +22893,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 23:49:45] INFO root fetch - main [MainThread]: End processing [advancedrequests]: success
 [2023-04-14 23:49:46] INFO root fetch - main [MainThread]: End processing [mov-cli]: success
 [2023-04-14 23:49:46] INFO root fetch - main [MainThread]: Store serial: [17713223]
+[2023-04-14 23:54:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713223]
+[2023-04-14 23:54:53] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 23:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toolsql
+[2023-04-14 23:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swat
+[2023-04-14 23:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-artifactory
+[2023-04-14 23:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlprimitives
+[2023-04-14 23:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyUPC-EAN
+[2023-04-14 23:54:53] INFO root fetch - processPackages [toolsql]: New version: [0.5.0] Old Version: [0.3.9]
+[2023-04-14 23:54:53] INFO root fetch - processPackages [PyUPC-EAN]: New version: [2.9.4] Old Version: [2.9.2]
+[2023-04-14 23:54:53] INFO root fetch - processPackages [mlprimitives]: New version: [0.3.5] Old Version: [0.3.4.dev0]
+[2023-04-14 23:54:53] INFO root fetch - processPackages [pulumi-artifactory]: New version: [3.3.0a1681508153] Old Version: [3.3.0a1680907946]
+[2023-04-14 23:54:53] INFO root fetch - processPackages [swat]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-04-14 23:54:54] INFO root fetch - processPackages [PyUPC-EAN]: Downloading https://files.pythonhosted.org/packages/d5/41/2bd04f2b655967268c26d09eb27eb78f82558401d7451c665b2a5d98c4a5/PyUPC-EAN-2.9.4.tar.gz
+[2023-04-14 23:54:54] INFO root fetch - processPackages [toolsql]: Downloading https://files.pythonhosted.org/packages/e6/2f/83130e78e6b6e407fae73d3e160ff986287b952778fbe59a53505a2c499a/toolsql-0.3.9.tar.gz
+[2023-04-14 23:54:54] INFO root fetch - processPackages [mlprimitives]: Downloading https://files.pythonhosted.org/packages/99/fa/8c36e973fd256391dd11b8cf0c628f96cdae643a172dc979d2a795ac29f6/mlprimitives-0.3.4.dev0.tar.gz
+[2023-04-14 23:54:54] INFO root fetch - processPackages [swat]: Downloading https://files.pythonhosted.org/packages/eb/e7/039048f375c03edd72a9aa135d92e45defae824f2bb2fa45de1708a0285c/swat-1.9.2-0-cp39-cp39-win_amd64.whl
+[2023-04-14 23:54:54] INFO root fetch - processPackages [PyUPC-EAN]: executing diffoscope
+[2023-04-14 23:54:54] INFO root fetch - processPackages [PyUPC-EAN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyUPC-EAN-2.9.2.tar.gz tmp/PyUPC-EAN-2.9.4.tar.gz --markdown 20230414/P/PyUPC-EAN/2.9.2-2.9.4/diff.md --exclude *.pyd
+[2023-04-14 23:54:54] INFO root fetch - processPackages [pulumi-artifactory]: Downloading https://files.pythonhosted.org/packages/c9/21/dafa2c2794de06b29d6ba3387c87b1270750d23b03f56144afa25ca78f2c/pulumi_artifactory-3.3.0a1681508153.tar.gz
+[2023-04-14 23:54:54] INFO root fetch - processPackages [mlprimitives]: Downloading https://files.pythonhosted.org/packages/67/87/1ea0faf9e1314f1739a3e61781e411d230850f06532451ac3e2adf0df41c/mlprimitives-0.3.5.tar.gz
+[2023-04-14 23:54:54] INFO root fetch - processPackages [toolsql]: Downloading https://files.pythonhosted.org/packages/7c/f9/559b3be06fbb833684687bff8329af4eed108ad554e7746429fe69101bb1/toolsql-0.5.0.tar.gz
+[2023-04-14 23:54:54] INFO root fetch - processPackages [mlprimitives]: executing diffoscope
+[2023-04-14 23:54:54] INFO root fetch - processPackages [mlprimitives]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlprimitives-0.3.4.dev0.tar.gz tmp/mlprimitives-0.3.5.tar.gz --markdown 20230414/m/mlprimitives/0.3.4.dev0-0.3.5/diff.md --exclude *.pyd
+[2023-04-14 23:54:54] INFO root fetch - processPackages [pulumi-artifactory]: executing diffoscope
+[2023-04-14 23:54:54] INFO root fetch - processPackages [pulumi-artifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_artifactory-3.3.0a1680907946.tar.gz tmp/pulumi_artifactory-3.3.0a1681508153.tar.gz --markdown 20230414/p/pulumi-artifactory/3.3.0a1680907946-3.3.0a1681508153/diff.md --exclude *.pyd
+[2023-04-14 23:54:54] INFO root fetch - processPackages [toolsql]: executing diffoscope
+[2023-04-14 23:54:54] INFO root fetch - processPackages [toolsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolsql-0.3.9.tar.gz tmp/toolsql-0.5.0.tar.gz --markdown 20230414/t/toolsql/0.3.9-0.5.0/diff.md --exclude *.pyd
+[2023-04-14 23:54:54] WARNING root fetch - processPackages [swat]: Skipping package: exceeds size limit 50737360>=10485760
+[2023-04-14 23:54:54] INFO root fetch - processPackages [swat]: Start processing: psychoevals
+[2023-04-14 23:54:54] INFO root fetch - main [MainThread]: End processing [swat] error
+[2023-04-14 23:54:54] INFO root fetch - processPackages [psychoevals]: New version: [0.3] Old Version: [0.2]
+[2023-04-14 23:54:54] INFO root fetch - processPackages [psychoevals]: Downloading https://files.pythonhosted.org/packages/9b/9d/30dbf61b1041e648295974cfe20673fd032ffd8e35138efd46ab8d12ea56/psychoevals-0.3.tar.gz
+[2023-04-14 23:54:55] INFO root fetch - processPackages [psychoevals]: executing diffoscope
+[2023-04-14 23:54:55] INFO root fetch - processPackages [psychoevals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychoevals-0.2.tar.gz tmp/psychoevals-0.3.tar.gz --markdown 20230414/p/psychoevals/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-14 23:54:55] INFO root fetch - processPackages [toolsql]: Start processing: pyttb
+[2023-04-14 23:54:55] INFO root fetch - main [MainThread]: End processing [toolsql]: success
+[2023-04-14 23:54:55] INFO root fetch - processPackages [pyttb]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-14 23:54:55] INFO root fetch - processPackages [pyttb]: Downloading https://files.pythonhosted.org/packages/c2/61/3a68abf2238d53d4cfbbb919d9df51e26f5cd2afe71bf21675c50fa56a1b/pyttb-1.5.0.tar.gz
+[2023-04-14 23:54:56] INFO root fetch - processPackages [psychoevals]: Start processing: dbt-snowflake
+[2023-04-14 23:54:56] INFO root fetch - main [MainThread]: End processing [psychoevals]: success
+[2023-04-14 23:54:56] INFO root fetch - processPackages [dbt-snowflake]: New version: [1.5.0rc1] Old Version: [1.5.0b4]
+[2023-04-14 23:54:56] INFO root fetch - processPackages [pyttb]: Downloading https://files.pythonhosted.org/packages/72/61/496886ed6aa174778413fc01c2709ddf89701b53d1dc6f3de1a8e297e01e/pyttb-1.5.1.tar.gz
+[2023-04-14 23:54:56] INFO root fetch - processPackages [PyUPC-EAN]: Start processing: toolcli
+[2023-04-14 23:54:56] INFO root fetch - main [MainThread]: End processing [PyUPC-EAN]: success
+[2023-04-14 23:54:56] INFO root fetch - processPackages [dbt-snowflake]: Downloading https://files.pythonhosted.org/packages/40/01/4acb4eca10341c7c620022c866752bbe4a8b0eb4230dbcd4db89ea56d3b8/dbt-snowflake-1.5.0b4.tar.gz
+[2023-04-14 23:54:56] INFO root fetch - processPackages [toolcli]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-14 23:54:56] INFO root fetch - processPackages [pyttb]: executing diffoscope
+[2023-04-14 23:54:56] INFO root fetch - processPackages [pyttb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttb-1.5.0.tar.gz tmp/pyttb-1.5.1.tar.gz --markdown 20230414/p/pyttb/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-14 23:54:56] INFO root fetch - processPackages [toolcli]: Downloading https://files.pythonhosted.org/packages/95/0b/ed5c0e9085ae14116c76cb5a71495dfafb295f0eedb990273b6fd1fafe9f/toolcli-0.6.8.tar.gz
+[2023-04-14 23:54:56] INFO root fetch - processPackages [mlprimitives]: Start processing: aws-ket
+[2023-04-14 23:54:56] INFO root fetch - main [MainThread]: End processing [mlprimitives]: success
+[2023-04-14 23:54:56] INFO root fetch - processPackages [aws-ket]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-14 23:54:56] INFO root fetch - processPackages [dbt-snowflake]: Downloading https://files.pythonhosted.org/packages/fd/86/87f537e4c972279a8e0495e350d88191f5e64884f2b3ca2cfe3e17f0d87a/dbt-snowflake-1.5.0rc1.tar.gz
+[2023-04-14 23:54:56] INFO root fetch - processPackages [aws-ket]: executing diffoscope
+[2023-04-14 23:54:56] INFO root fetch - processPackages [aws-ket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-ket-0.1.2.tar.gz tmp/aws-ket-0.1.3.tar.gz --markdown 20230414/a/aws-ket/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-14 23:54:56] INFO root fetch - processPackages [toolcli]: Downloading https://files.pythonhosted.org/packages/46/36/cf6f9145b26c206c7f50a8bbed886b8b9266c93707abc261dc77530b8cdf/toolcli-0.6.9-py3-none-any.whl
+[2023-04-14 23:54:56] INFO root fetch - processPackages [dbt-snowflake]: executing diffoscope
+[2023-04-14 23:54:56] INFO root fetch - processPackages [dbt-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-snowflake-1.5.0b4.tar.gz tmp/dbt-snowflake-1.5.0rc1.tar.gz --markdown 20230414/d/dbt-snowflake/1.5.0b4-1.5.0rc1/diff.md --exclude *.pyd
+[2023-04-14 23:54:56] INFO root fetch - processPackages [toolcli]: executing diffoscope
+[2023-04-14 23:54:56] INFO root fetch - processPackages [toolcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolcli-0.6.8.tar.gz tmp/toolcli-0.6.9-py3-none-any.whl.zip --markdown 20230414/t/toolcli/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-14 23:54:57] INFO root fetch - processPackages [aws-ket]: Start processing: sporestack
+[2023-04-14 23:54:57] INFO root fetch - main [MainThread]: End processing [aws-ket]: success
+[2023-04-14 23:54:57] INFO root fetch - processPackages [sporestack]: New version: [9.1.1] Old Version: [9.1.0]
+[2023-04-14 23:54:57] INFO root fetch - processPackages [sporestack]: executing diffoscope
+[2023-04-14 23:54:57] INFO root fetch - processPackages [sporestack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sporestack-9.1.0.tar.gz tmp/sporestack-9.1.1.tar.gz --markdown 20230414/s/sporestack/9.1.0-9.1.1/diff.md --exclude *.pyd
+[2023-04-14 23:54:58] INFO root fetch - main [MainThread]: End processing [pyttb]: success
+[2023-04-14 23:54:58] INFO root fetch - main [MainThread]: End processing [toolcli]: success
+[2023-04-14 23:54:58] INFO root fetch - main [MainThread]: End processing [dbt-snowflake]: success
+[2023-04-14 23:54:59] INFO root fetch - main [MainThread]: End processing [sporestack]: success
+[2023-04-14 23:55:00] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
+[2023-04-14 23:55:00] INFO root fetch - main [MainThread]: Store serial: [17713285]
