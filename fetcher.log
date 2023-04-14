@@ -10971,3 +10971,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 11:43:36] INFO root fetch - main [MainThread]: End processing [yourtools]: success
 [2023-04-14 11:43:36] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2023-04-14 11:43:36] INFO root fetch - main [MainThread]: Store serial: [17705470]
+[2023-04-14 11:48:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705470]
+[2023-04-14 11:48:44] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 11:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akamaiproperty
+[2023-04-14 11:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-raycast-engine
+[2023-04-14 11:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf
+[2023-04-14 11:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycurly
+[2023-04-14 11:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rqdatac
+[2023-04-14 11:48:44] INFO root fetch - processPackages [py-raycast-engine]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 11:48:44] INFO root fetch - processPackages [pycurly]: New version: [1.0.3] Old Version: [1.0.1]
+[2023-04-14 11:48:44] INFO root fetch - processPackages [akamaiproperty]: New version: [2.6] Old Version: [2.5]
+[2023-04-14 11:48:44] INFO root fetch - processPackages [cdktf]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-14 11:48:44] INFO root fetch - processPackages [rqdatac]: New version: [2.9.8] Old Version: [2.9.7]
+[2023-04-14 11:48:44] INFO root fetch - processPackages [py-raycast-engine]: Downloading https://files.pythonhosted.org/packages/35/e3/92b195da785d79e58a4ca4a71e6e0b49aa012892edda2df4c6646dfa8c68/py_raycast_engine-0.1.0.tar.gz
+[2023-04-14 11:48:44] INFO root fetch - processPackages [pycurly]: Downloading https://files.pythonhosted.org/packages/3a/44/0b35dfc44b350d5b944e31203018c85f4c643e22d8207b77750e5b6c2c4d/pycurly-1.0.1.tar.gz
+[2023-04-14 11:48:45] INFO root fetch - processPackages [cdktf]: executing diffoscope
+[2023-04-14 11:48:45] INFO root fetch - processPackages [cdktf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-0.9.3.tar.gz tmp/cdktf-0.9.4.tar.gz --markdown 20230414/c/cdktf/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-14 11:48:45] INFO root fetch - processPackages [rqdatac]: executing diffoscope
+[2023-04-14 11:48:45] INFO root fetch - processPackages [rqdatac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rqdatac-2.9.7-cp38-cp38-win_amd64.whl.zip tmp/rqdatac-2.9.8-cp38-cp38-win_amd64.whl.zip --markdown 20230414/r/rqdatac/2.9.7-2.9.8/diff.md --exclude *.pyd
+[2023-04-14 11:48:45] INFO root fetch - processPackages [akamaiproperty]: Downloading https://files.pythonhosted.org/packages/c0/5a/55de69db5d7fe3999787fd775001bfb1452c2d2914d3e0e3cc96bd666d46/akamaiproperty-2.5-py3-none-any.whl
+[2023-04-14 11:48:45] INFO root fetch - processPackages [py-raycast-engine]: Downloading https://files.pythonhosted.org/packages/a2/0b/e105a1a23a0832c6bd28b1824ef6fd3131811a4176f2aba783850b3329a5/py_raycast_engine-0.1.1.tar.gz
+[2023-04-14 11:48:45] INFO root fetch - processPackages [pycurly]: Downloading https://files.pythonhosted.org/packages/a8/51/0f5d1134e095aabd5dd79bae993ff8d4836afbd4ef2e2cfb9c145945ec47/pycurly-1.0.3.tar.gz
+[2023-04-14 11:48:45] INFO root fetch - processPackages [py-raycast-engine]: executing diffoscope
+[2023-04-14 11:48:45] INFO root fetch - processPackages [py-raycast-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_raycast_engine-0.1.0.tar.gz tmp/py_raycast_engine-0.1.1.tar.gz --markdown 20230414/p/py-raycast-engine/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 11:48:45] INFO root fetch - processPackages [akamaiproperty]: Downloading https://files.pythonhosted.org/packages/78/4f/5fe5cdafef82225e15bcc22413dfa25d8328e8e67cec6237761657e60e90/akamaiproperty-2.6-py3-none-any.whl
+[2023-04-14 11:48:45] INFO root fetch - processPackages [pycurly]: executing diffoscope
+[2023-04-14 11:48:45] INFO root fetch - processPackages [pycurly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycurly-1.0.1.tar.gz tmp/pycurly-1.0.3.tar.gz --markdown 20230414/p/pycurly/1.0.1-1.0.3/diff.md --exclude *.pyd
+[2023-04-14 11:48:45] INFO root fetch - processPackages [akamaiproperty]: executing diffoscope
+[2023-04-14 11:48:45] INFO root fetch - processPackages [akamaiproperty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akamaiproperty-2.5-py3-none-any.whl.zip tmp/akamaiproperty-2.6-py3-none-any.whl.zip --markdown 20230414/a/akamaiproperty/2.5-2.6/diff.md --exclude *.pyd
+[2023-04-14 11:48:46] INFO root fetch - processPackages [cdktf]: Start processing: webshoter
+[2023-04-14 11:48:46] INFO root fetch - main [MainThread]: End processing [cdktf]: success
+[2023-04-14 11:48:46] INFO root fetch - processPackages [webshoter]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-14 11:48:46] INFO root fetch - processPackages [py-raycast-engine]: Start processing: alfred5
+[2023-04-14 11:48:46] INFO root fetch - main [MainThread]: End processing [py-raycast-engine]: success
+[2023-04-14 11:48:46] INFO root fetch - processPackages [alfred5]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-14 11:48:46] INFO root fetch - processPackages [webshoter]: Downloading https://files.pythonhosted.org/packages/94/bf/b1c0c562bfd266dd93d5a814294e92e2834f6126a4be10bd59a186f26e8a/webshoter-1.0.4.tar.gz
+[2023-04-14 11:48:46] INFO root fetch - processPackages [rqdatac]: Start processing: wizata-dsapi
+[2023-04-14 11:48:46] INFO root fetch - main [MainThread]: End processing [rqdatac]: success
+[2023-04-14 11:48:46] INFO root fetch - processPackages [webshoter]: executing diffoscope
+[2023-04-14 11:48:46] INFO root fetch - processPackages [webshoter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webshoter-1.0.3.tar.gz tmp/webshoter-1.0.4.tar.gz --markdown 20230414/w/webshoter/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-14 11:48:46] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 11:48:46] INFO root fetch - processPackages [akamaiproperty]: Start processing: seisbench
+[2023-04-14 11:48:46] INFO root fetch - main [MainThread]: End processing [akamaiproperty]: success
+[2023-04-14 11:48:46] INFO root fetch - processPackages [seisbench]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-04-14 11:48:46] INFO root fetch - processPackages [alfred5]: Downloading https://files.pythonhosted.org/packages/26/4f/0760a5bdd529e65db7b061776c29bb6babc61225e63d62359822b37576ae/alfred5-1.1.3.tar.gz
+[2023-04-14 11:48:46] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-14 11:48:46] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230414/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 11:48:46] INFO root fetch - processPackages [alfred5]: executing diffoscope
+[2023-04-14 11:48:46] INFO root fetch - processPackages [alfred5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfred5-1.1.2.tar.gz tmp/alfred5-1.1.3.tar.gz --markdown 20230414/a/alfred5/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-14 11:48:46] INFO root fetch - processPackages [seisbench]: Downloading https://files.pythonhosted.org/packages/1f/8c/a1c2f90cdae9eb70f6ca2c5262bc02842bcfdb8deb85c87ed56853d7d41f/seisbench-0.3.2.tar.gz
+[2023-04-14 11:48:46] INFO root fetch - processPackages [pycurly]: Start processing: nanolayer
+[2023-04-14 11:48:46] INFO root fetch - main [MainThread]: End processing [pycurly]: success
+[2023-04-14 11:48:46] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 11:48:46] WARNING root fetch - processPackages [seisbench]: Skipping package: exceeds size limit 12131390>=10485760
+[2023-04-14 11:48:46] INFO root fetch - processPackages [seisbench]: Start processing: aws-lambda-powertools
+[2023-04-14 11:48:46] INFO root fetch - main [MainThread]: End processing [seisbench] error
+[2023-04-14 11:48:46] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-14 11:48:46] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230414/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 11:48:46] INFO root fetch - processPackages [aws-lambda-powertools]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-04-14 11:48:47] INFO root fetch - processPackages [aws-lambda-powertools]: Downloading https://files.pythonhosted.org/packages/a9/49/8be7a6c4973e4fb63e8009f75db67a06c1ea25a36e8e03e7562d90b909fd/aws_lambda_powertools-2.9.0.tar.gz
+[2023-04-14 11:48:47] INFO root fetch - processPackages [webshoter]: Start processing: django-snowflake
+[2023-04-14 11:48:47] INFO root fetch - main [MainThread]: End processing [webshoter]: success
+[2023-04-14 11:48:47] INFO root fetch - processPackages [aws-lambda-powertools]: Downloading https://files.pythonhosted.org/packages/be/e3/ff85c035be26d266a4c353fb3f7d653f04b94e5cf23913e93f530125c7d6/aws_lambda_powertools-2.9.1.tar.gz
+[2023-04-14 11:48:47] INFO root fetch - processPackages [django-snowflake]: New version: [4.2b1] Old Version: [4.2a1]
+[2023-04-14 11:48:47] INFO root fetch - processPackages [aws-lambda-powertools]: executing diffoscope
+[2023-04-14 11:48:47] INFO root fetch - processPackages [aws-lambda-powertools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_lambda_powertools-2.9.0.tar.gz tmp/aws_lambda_powertools-2.9.1.tar.gz --markdown 20230414/a/aws-lambda-powertools/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-04-14 11:48:47] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-04-14 11:48:47] INFO root fetch - main [MainThread]: End processing [alfred5]: success
+[2023-04-14 11:48:47] INFO root fetch - processPackages [django-snowflake]: executing diffoscope
+[2023-04-14 11:48:47] INFO root fetch - processPackages [django-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-snowflake-4.2a1.tar.gz tmp/django-snowflake-4.2b1.tar.gz --markdown 20230414/d/django-snowflake/4.2a1-4.2b1/diff.md --exclude *.pyd
+[2023-04-14 11:48:47] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-04-14 11:48:49] INFO root fetch - main [MainThread]: End processing [django-snowflake]: success
+[2023-04-14 11:48:49] INFO root fetch - main [MainThread]: End processing [aws-lambda-powertools]: success
+[2023-04-14 11:48:49] INFO root fetch - main [MainThread]: Store serial: [17705510]
