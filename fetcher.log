@@ -18620,3 +18620,74 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 18:53:53] INFO root fetch - main [MainThread]: End processing [transformers]: success
 [2023-04-14 18:54:03] INFO root fetch - main [MainThread]: End processing [mixturemapping]: success
 [2023-04-14 18:54:03] INFO root fetch - main [MainThread]: Store serial: [17710348]
+[2023-04-14 18:59:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17710348]
+[2023-04-14 18:59:11] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 18:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: protofcp
+[2023-04-14 18:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anipy-cli
+[2023-04-14 18:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-google-native
+[2023-04-14 18:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-azure-native
+[2023-04-14 18:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: inmanta-dev-dependencies
+[2023-04-14 18:59:11] INFO root fetch - processPackages [anipy-cli]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-14 18:59:11] INFO root fetch - processPackages [inmanta-dev-dependencies]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-04-14 18:59:11] INFO root fetch - processPackages [protofcp]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 18:59:11] INFO root fetch - processPackages [pulumi-azure-native]: New version: [1.99.3a1681488349] Old Version: [1.99.3a1681473063]
+[2023-04-14 18:59:11] INFO root fetch - processPackages [pulumi-google-native]: New version: [0.9.1a1638807539] Old Version: [0.9.1a1638555770]
+[2023-04-14 18:59:11] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/a6/4b/b8ee18f4c94f9cb39219a0dd79816adf06670a26e5f3b23885cc357a6f21/pulumi_azure_native-1.99.3a1681473063.tar.gz
+[2023-04-14 18:59:11] INFO root fetch - processPackages [protofcp]: Downloading https://files.pythonhosted.org/packages/b9/a8/599cb4ecefd757f4f8ef70b710ab112bd4e77b5fe5ec953877bba6bed02b/protofcp-0.0.4.tar.gz
+[2023-04-14 18:59:11] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 62617189>=10485760
+[2023-04-14 18:59:11] INFO root fetch - processPackages [pulumi-azure-native]: Start processing: TapisCL-ICICLE
+[2023-04-14 18:59:11] INFO root fetch - main [MainThread]: End processing [pulumi-azure-native] error
+[2023-04-14 18:59:11] INFO root fetch - processPackages [TapisCL-ICICLE]: New version: [0.0.24] Old Version: [0.0.23]
+[2023-04-14 18:59:11] INFO root fetch - processPackages [protofcp]: executing diffoscope
+[2023-04-14 18:59:11] INFO root fetch - processPackages [protofcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protofcp-0.0.3.tar.gz tmp/protofcp-0.0.4.tar.gz --markdown 20230414/p/protofcp/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 18:59:11] INFO root fetch - processPackages [anipy-cli]: executing diffoscope
+[2023-04-14 18:59:11] INFO root fetch - processPackages [inmanta-dev-dependencies]: executing diffoscope
+[2023-04-14 18:59:11] INFO root fetch - processPackages [anipy-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anipy_cli-2.7.8.tar.gz tmp/anipy_cli-2.7.9.tar.gz --markdown 20230414/a/anipy-cli/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-14 18:59:11] INFO root fetch - processPackages [inmanta-dev-dependencies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inmanta-dev-dependencies-2.8.0.tar.gz tmp/inmanta-dev-dependencies-2.9.0.tar.gz --markdown 20230414/i/inmanta-dev-dependencies/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-04-14 18:59:11] INFO root fetch - processPackages [pulumi-google-native]: executing diffoscope
+[2023-04-14 18:59:11] INFO root fetch - processPackages [pulumi-google-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_google_native-0.9.1a1638555770.tar.gz tmp/pulumi_google_native-0.9.1a1638807539.tar.gz --markdown 20230414/p/pulumi-google-native/0.9.1a1638555770-0.9.1a1638807539/diff.md --exclude *.pyd
+[2023-04-14 18:59:11] INFO root fetch - processPackages [TapisCL-ICICLE]: Downloading https://files.pythonhosted.org/packages/09/eb/9d6770393fd0e8ab5ffdb760bdf2a445cbe417f4be2bdc3fd707ba54ccac/TapisCL-ICICLE-0.0.24.tar.gz
+[2023-04-14 18:59:11] INFO root fetch - processPackages [TapisCL-ICICLE]: executing diffoscope
+[2023-04-14 18:59:11] INFO root fetch - processPackages [TapisCL-ICICLE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TapisCL-ICICLE-0.0.23.tar.gz tmp/TapisCL-ICICLE-0.0.24.tar.gz --markdown 20230414/T/TapisCL-ICICLE/0.0.23-0.0.24/diff.md --exclude *.pyd
+[2023-04-14 18:59:12] INFO root fetch - processPackages [protofcp]: Start processing: danling
+[2023-04-14 18:59:12] INFO root fetch - main [MainThread]: End processing [protofcp]: success
+[2023-04-14 18:59:12] INFO root fetch - processPackages [danling]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-14 18:59:12] INFO root fetch - processPackages [danling]: Downloading https://files.pythonhosted.org/packages/7f/04/4768546c5dcdb576fc9879acee88f01bfae3af84df388595d9a4bbe7449e/danling-0.2.2.tar.gz
+[2023-04-14 18:59:13] INFO root fetch - processPackages [TapisCL-ICICLE]: Start processing: cloud2sql
+[2023-04-14 18:59:13] INFO root fetch - main [MainThread]: End processing [TapisCL-ICICLE]: success
+[2023-04-14 18:59:13] INFO root fetch - processPackages [cloud2sql]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-14 18:59:13] INFO root fetch - processPackages [danling]: executing diffoscope
+[2023-04-14 18:59:13] INFO root fetch - processPackages [danling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danling-0.2.1.tar.gz tmp/danling-0.2.2.tar.gz --markdown 20230414/d/danling/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-14 18:59:13] INFO root fetch - processPackages [anipy-cli]: Start processing: kiwitcms-github-marketplace
+[2023-04-14 18:59:13] INFO root fetch - main [MainThread]: End processing [anipy-cli]: success
+[2023-04-14 18:59:13] INFO root fetch - processPackages [cloud2sql]: Downloading https://files.pythonhosted.org/packages/94/6d/99e25dc273664f164da6d035e7d36dc3f8fb72753215520f7a8f743b789b/cloud2sql-0.8.0.tar.gz
+[2023-04-14 18:59:13] INFO root fetch - processPackages [kiwitcms-github-marketplace]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-04-14 18:59:13] INFO root fetch - processPackages [cloud2sql]: Downloading https://files.pythonhosted.org/packages/aa/20/108db3dc4ce16d0f21054e2bd53a432294406e6d3678af32ec7a538f8ae7/cloud2sql-0.8.1.tar.gz
+[2023-04-14 18:59:14] INFO root fetch - processPackages [kiwitcms-github-marketplace]: Downloading https://files.pythonhosted.org/packages/12/ff/9034276c0dec9a1f4b26669cb0e26513bc82fe5890210272a428f57933b6/kiwitcms-github-marketplace-2.2.0.tar.gz
+[2023-04-14 18:59:14] INFO root fetch - processPackages [cloud2sql]: executing diffoscope
+[2023-04-14 18:59:14] INFO root fetch - processPackages [cloud2sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud2sql-0.8.0.tar.gz tmp/cloud2sql-0.8.1.tar.gz --markdown 20230414/c/cloud2sql/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-14 18:59:14] INFO root fetch - processPackages [kiwitcms-github-marketplace]: Downloading https://files.pythonhosted.org/packages/ec/ca/a3e18138ce5f750edbdc18d41a8ef481f7bc3d5cb0fb714b01192fcc9922/kiwitcms-github-marketplace-2.3.0.tar.gz
+[2023-04-14 18:59:14] INFO root fetch - processPackages [kiwitcms-github-marketplace]: executing diffoscope
+[2023-04-14 18:59:14] INFO root fetch - processPackages [kiwitcms-github-marketplace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwitcms-github-marketplace-2.2.0.tar.gz tmp/kiwitcms-github-marketplace-2.3.0.tar.gz --markdown 20230414/k/kiwitcms-github-marketplace/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-04-14 18:59:15] INFO root fetch - processPackages [danling]: Start processing: soxs
+[2023-04-14 18:59:15] INFO root fetch - main [MainThread]: End processing [danling]: success
+[2023-04-14 18:59:15] INFO root fetch - processPackages [cloud2sql]: Start processing: gem-opt
+[2023-04-14 18:59:15] INFO root fetch - main [MainThread]: End processing [cloud2sql]: success
+[2023-04-14 18:59:15] WARNING root fetch - processPackages [gem-opt]: Skipping, unable to determine old version
+[2023-04-14 18:59:15] INFO root fetch - processPackages [gem-opt]: Start processing: acoustic-analyser
+[2023-04-14 18:59:15] INFO root fetch - main [MainThread]: End processing [gem-opt] error
+[2023-04-14 18:59:15] WARNING root fetch - processPackages [acoustic-analyser]: Skipping, unable to determine old version
+[2023-04-14 18:59:15] INFO root fetch - processPackages [acoustic-analyser]: Start processing: zalo-sdk
+[2023-04-14 18:59:15] INFO root fetch - main [MainThread]: End processing [acoustic-analyser] error
+[2023-04-14 18:59:15] INFO root fetch - processPackages [zalo-sdk]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 18:59:16] INFO root fetch - processPackages [zalo-sdk]: executing diffoscope
+[2023-04-14 18:59:16] INFO root fetch - processPackages [zalo-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zalo_sdk-0.1.1-py3-none-any.whl.zip tmp/zalo_sdk-0.1.2-py3-none-any.whl.zip --markdown 20230414/z/zalo-sdk/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 18:59:16] INFO root fetch - main [MainThread]: End processing [kiwitcms-github-marketplace]: success
+[2023-04-14 18:59:16] INFO root fetch - processPackages [soxs]: New version: [4.5.1] Old Version: [4.5.0]
+[2023-04-14 18:59:16] INFO root fetch - processPackages [soxs]: Downloading https://files.pythonhosted.org/packages/de/97/fa9ecb8dfc0665d1c79844e8f995f95ff5130f9fcc22d29ae2ad3ad1c8e3/soxs-4.5.0.tar.gz
+[2023-04-14 18:59:16] WARNING root fetch - processPackages [soxs]: Skipping package: exceeds size limit 14174640>=10485760
+[2023-04-14 18:59:16] INFO root fetch - main [MainThread]: End processing [soxs] error
+[2023-04-14 18:59:16] INFO root fetch - main [MainThread]: End processing [inmanta-dev-dependencies]: success
+[2023-04-14 18:59:17] INFO root fetch - main [MainThread]: End processing [zalo-sdk]: success
+[2023-04-14 19:00:45] INFO root fetch - main [MainThread]: End processing [pulumi-google-native]: success
+[2023-04-14 19:00:45] INFO root fetch - main [MainThread]: Store serial: [17710401]
