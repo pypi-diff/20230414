@@ -13605,3 +13605,185 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 14:46:51] INFO root fetch - main [MainThread]: End processing [create-docker-compose]: success
 [2023-04-14 14:46:51] INFO root fetch - main [MainThread]: End processing [duit]: success
 [2023-04-14 14:46:51] INFO root fetch - main [MainThread]: Store serial: [17707188]
+[2023-04-14 14:51:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17707188]
+[2023-04-14 14:51:58] INFO root fetch - main [MainThread]: Found 28 changed packages
+[2023-04-14 14:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CTkMessagebox
+[2023-04-14 14:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: veetility
+[2023-04-14 14:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tcarlae
+[2023-04-14 14:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: naruno
+[2023-04-14 14:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: naruno-api
+[2023-04-14 14:51:58] INFO root fetch - processPackages [CTkMessagebox]: New version: [1.80] Old Version: [1.8]
+[2023-04-14 14:51:58] INFO root fetch - processPackages [naruno]: New version: [0.56.3] Old Version: [0.56.2]
+[2023-04-14 14:51:58] INFO root fetch - processPackages [tcarlae]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 14:51:58] INFO root fetch - processPackages [veetility]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 14:51:58] INFO root fetch - processPackages [naruno-api]: New version: [0.56.3] Old Version: [0.56.2]
+[2023-04-14 14:51:59] INFO root fetch - processPackages [veetility]: executing diffoscope
+[2023-04-14 14:51:59] INFO root fetch - processPackages [veetility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veetility-0.1.8.tar.gz tmp/veetility-0.1.9.tar.gz --markdown 20230414/v/veetility/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 14:51:59] INFO root fetch - processPackages [CTkMessagebox]: Downloading https://files.pythonhosted.org/packages/8d/7b/aa8b237d4344de677ec00021e1b70b258e9015b5de6a2c414bf394579d0e/CTkMessagebox-1.80.tar.gz
+[2023-04-14 14:51:59] INFO root fetch - processPackages [tcarlae]: Downloading https://files.pythonhosted.org/packages/c4/0d/72d37cbcc017148a3c0808b40755f8a65574293358cc35e5228657e42bbb/tcarlae-0.1.0.tar.gz
+[2023-04-14 14:51:59] INFO root fetch - processPackages [naruno]: Downloading https://files.pythonhosted.org/packages/83/ce/9fa639008bb6fffe00d50625b8a6bf675bcb6341c551fafa7fdbf556d439/naruno-0.56.3.tar.gz
+[2023-04-14 14:51:59] INFO root fetch - processPackages [naruno-api]: Downloading https://files.pythonhosted.org/packages/df/ee/17add8d01d749b247111b226f5b86622fcb3929879cd1431e61520dd4882/naruno_api-0.56.3.tar.gz
+[2023-04-14 14:51:59] INFO root fetch - processPackages [CTkMessagebox]: executing diffoscope
+[2023-04-14 14:51:59] INFO root fetch - processPackages [CTkMessagebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTkMessagebox-1.8.tar.gz tmp/CTkMessagebox-1.80.tar.gz --markdown 20230414/C/CTkMessagebox/1.8-1.80/diff.md --exclude *.pyd
+[2023-04-14 14:51:59] INFO root fetch - processPackages [tcarlae]: Downloading https://files.pythonhosted.org/packages/7c/24/bb848331822fa929d462a84de77475863f27329b550e96f4bfced5b372b9/tcarlae-0.2.0.tar.gz
+[2023-04-14 14:51:59] INFO root fetch - processPackages [naruno-api]: executing diffoscope
+[2023-04-14 14:51:59] INFO root fetch - processPackages [naruno-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_api-0.56.2.tar.gz tmp/naruno_api-0.56.3.tar.gz --markdown 20230414/n/naruno-api/0.56.2-0.56.3/diff.md --exclude *.pyd
+[2023-04-14 14:51:59] INFO root fetch - processPackages [naruno]: executing diffoscope
+[2023-04-14 14:51:59] INFO root fetch - processPackages [naruno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno-0.56.2.tar.gz tmp/naruno-0.56.3.tar.gz --markdown 20230414/n/naruno/0.56.2-0.56.3/diff.md --exclude *.pyd
+[2023-04-14 14:51:59] INFO root fetch - processPackages [tcarlae]: executing diffoscope
+[2023-04-14 14:51:59] INFO root fetch - processPackages [tcarlae]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcarlae-0.1.0.tar.gz tmp/tcarlae-0.2.0.tar.gz --markdown 20230414/t/tcarlae/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 14:52:00] INFO root fetch - processPackages [veetility]: Start processing: ansys-tools-path
+[2023-04-14 14:52:00] INFO root fetch - main [MainThread]: End processing [veetility]: success
+[2023-04-14 14:52:00] INFO root fetch - processPackages [ansys-tools-path]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 14:52:00] INFO root fetch - processPackages [ansys-tools-path]: Downloading https://files.pythonhosted.org/packages/08/8b/a80447460997b8e74c7aaa45cd619b8d44c469abf7d6d48224cc0eb98646/ansys-tools-path-0.1.1.tar.gz
+[2023-04-14 14:52:00] INFO root fetch - processPackages [CTkMessagebox]: Start processing: naruno-gui
+[2023-04-14 14:52:00] INFO root fetch - main [MainThread]: End processing [CTkMessagebox]: success
+[2023-04-14 14:52:00] INFO root fetch - processPackages [naruno-gui]: New version: [0.56.3] Old Version: [0.56.2]
+[2023-04-14 14:52:00] INFO root fetch - processPackages [naruno-api]: Start processing: wagtailstreamforms
+[2023-04-14 14:52:00] INFO root fetch - main [MainThread]: End processing [naruno-api]: success
+[2023-04-14 14:52:00] INFO root fetch - processPackages [wagtailstreamforms]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-04-14 14:52:00] INFO root fetch - processPackages [ansys-tools-path]: Downloading https://files.pythonhosted.org/packages/11/1d/7230c8b538a4b3cc9d7e8af70534b956c641c328be8fe715fb14346e7ff1/ansys-tools-path-0.1.2.tar.gz
+[2023-04-14 14:52:00] INFO root fetch - processPackages [tcarlae]: Start processing: naruno-remote-app
+[2023-04-14 14:52:00] INFO root fetch - main [MainThread]: End processing [tcarlae]: success
+[2023-04-14 14:52:00] INFO root fetch - processPackages [naruno-remote-app]: New version: [0.56.3] Old Version: [0.56.2]
+[2023-04-14 14:52:00] INFO root fetch - processPackages [ansys-tools-path]: executing diffoscope
+[2023-04-14 14:52:00] INFO root fetch - processPackages [ansys-tools-path]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansys-tools-path-0.1.1.tar.gz tmp/ansys-tools-path-0.1.2.tar.gz --markdown 20230414/a/ansys-tools-path/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 14:52:00] INFO root fetch - processPackages [naruno-gui]: Downloading https://files.pythonhosted.org/packages/7d/05/ba627610b03a9058ac0e57beca1d72c9e0a78121feab6da74794e8a62a34/naruno_gui-0.56.3.tar.gz
+[2023-04-14 14:52:00] INFO root fetch - processPackages [wagtailstreamforms]: Downloading https://files.pythonhosted.org/packages/55/3c/19ac89de87c5e1e0f351b5b07f4ddf732e78e243bbfaf2fc644af29fce85/wagtailstreamforms-4.0.3.tar.gz
+[2023-04-14 14:52:00] INFO root fetch - processPackages [naruno-gui]: executing diffoscope
+[2023-04-14 14:52:00] INFO root fetch - processPackages [naruno-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_gui-0.56.2.tar.gz tmp/naruno_gui-0.56.3.tar.gz --markdown 20230414/n/naruno-gui/0.56.2-0.56.3/diff.md --exclude *.pyd
+[2023-04-14 14:52:01] INFO root fetch - processPackages [naruno-remote-app]: Downloading https://files.pythonhosted.org/packages/22/21/43446924c8934c47a48419eae1daa84f1648225cd68328924f80da517372/naruno_remote_app-0.56.3.tar.gz
+[2023-04-14 14:52:01] INFO root fetch - processPackages [wagtailstreamforms]: executing diffoscope
+[2023-04-14 14:52:01] INFO root fetch - processPackages [wagtailstreamforms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtailstreamforms-4.0.2.tar.gz tmp/wagtailstreamforms-4.0.3.tar.gz --markdown 20230414/w/wagtailstreamforms/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-04-14 14:52:01] INFO root fetch - processPackages [naruno-remote-app]: executing diffoscope
+[2023-04-14 14:52:01] INFO root fetch - processPackages [naruno-remote-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_remote_app-0.56.2.tar.gz tmp/naruno_remote_app-0.56.3.tar.gz --markdown 20230414/n/naruno-remote-app/0.56.2-0.56.3/diff.md --exclude *.pyd
+[2023-04-14 14:52:01] INFO root fetch - processPackages [ansys-tools-path]: Start processing: naruno-tests
+[2023-04-14 14:52:01] INFO root fetch - main [MainThread]: End processing [ansys-tools-path]: success
+[2023-04-14 14:52:01] INFO root fetch - processPackages [naruno-tests]: New version: [0.56.3] Old Version: [0.56.2]
+[2023-04-14 14:52:01] INFO root fetch - processPackages [naruno]: Start processing: slurm-mongo
+[2023-04-14 14:52:01] INFO root fetch - main [MainThread]: End processing [naruno]: success
+[2023-04-14 14:52:02] INFO root fetch - processPackages [slurm-mongo]: New version: [0.1] Old Version: [0.0.1]
+[2023-04-14 14:52:02] INFO root fetch - processPackages [naruno-tests]: Downloading https://files.pythonhosted.org/packages/4d/87/ba3aa6190a7904ef1317a77ae33eeaa6631dd1bbdde94d9de02e03b08639/naruno_tests-0.56.3.tar.gz
+[2023-04-14 14:52:02] INFO root fetch - processPackages [naruno-gui]: Start processing: qgis-deployment-toolbelt
+[2023-04-14 14:52:02] INFO root fetch - main [MainThread]: End processing [naruno-gui]: success
+[2023-04-14 14:52:02] INFO root fetch - processPackages [qgis-deployment-toolbelt]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 14:52:02] INFO root fetch - processPackages [slurm-mongo]: Downloading https://files.pythonhosted.org/packages/ee/9d/7fd249bc0e62a780792b515a00f1f3b8555e070a568898f005f7fbc9d1b9/slurm_mongo-0.0.1.tar.gz
+[2023-04-14 14:52:02] INFO root fetch - processPackages [naruno-remote-app]: Start processing: create-docker-compose
+[2023-04-14 14:52:02] INFO root fetch - main [MainThread]: End processing [naruno-remote-app]: success
+[2023-04-14 14:52:02] INFO root fetch - processPackages [create-docker-compose]: New version: [0.3] Old Version: [0.2]
+[2023-04-14 14:52:02] INFO root fetch - processPackages [naruno-tests]: executing diffoscope
+[2023-04-14 14:52:02] INFO root fetch - processPackages [naruno-tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_tests-0.56.2.tar.gz tmp/naruno_tests-0.56.3.tar.gz --markdown 20230414/n/naruno-tests/0.56.2-0.56.3/diff.md --exclude *.pyd
+[2023-04-14 14:52:02] INFO root fetch - processPackages [qgis-deployment-toolbelt]: Downloading https://files.pythonhosted.org/packages/4d/af/26cc6ca37c9029d2a68da3981972d583a710238e073fe44d2f33c039d869/qgis-deployment-toolbelt-0.8.0.tar.gz
+[2023-04-14 14:52:02] INFO root fetch - processPackages [create-docker-compose]: Downloading https://files.pythonhosted.org/packages/1d/a1/f1316c3c6cfa952fa0d40956851c737a4af2dc948a47e004f151e7455ab1/create_docker_compose-0.3.tar.gz
+[2023-04-14 14:52:02] INFO root fetch - processPackages [wagtailstreamforms]: Start processing: welcomepackage
+[2023-04-14 14:52:02] INFO root fetch - main [MainThread]: End processing [wagtailstreamforms]: success
+[2023-04-14 14:52:02] WARNING root fetch - processPackages [welcomepackage]: Skipping, unable to determine old version
+[2023-04-14 14:52:02] INFO root fetch - processPackages [welcomepackage]: Start processing: izihawa-configurator
+[2023-04-14 14:52:02] INFO root fetch - main [MainThread]: End processing [welcomepackage] error
+[2023-04-14 14:52:02] INFO root fetch - processPackages [izihawa-configurator]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 14:52:02] INFO root fetch - processPackages [slurm-mongo]: Downloading https://files.pythonhosted.org/packages/f1/4c/9809300222e341291ed27ae99baf4a5678b728b5e4d6cea58d63aa23d8f5/slurm_mongo-0.1.tar.gz
+[2023-04-14 14:52:02] INFO root fetch - processPackages [create-docker-compose]: executing diffoscope
+[2023-04-14 14:52:02] INFO root fetch - processPackages [create-docker-compose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/create_docker_compose-0.2.tar.gz tmp/create_docker_compose-0.3.tar.gz --markdown 20230414/c/create-docker-compose/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-14 14:52:02] INFO root fetch - processPackages [izihawa-configurator]: Downloading https://files.pythonhosted.org/packages/46/fb/d460096c44f78981527d14e6abe5ab9c9123c9423f448bf51523dc14033e/izihawa_configurator-1.0.0-py3-none-any.whl
+[2023-04-14 14:52:02] INFO root fetch - processPackages [slurm-mongo]: executing diffoscope
+[2023-04-14 14:52:02] INFO root fetch - processPackages [slurm-mongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slurm_mongo-0.0.1.tar.gz tmp/slurm_mongo-0.1.tar.gz --markdown 20230414/s/slurm-mongo/0.0.1-0.1/diff.md --exclude *.pyd
+[2023-04-14 14:52:02] INFO root fetch - processPackages [qgis-deployment-toolbelt]: Downloading https://files.pythonhosted.org/packages/d5/9a/086bf308844e6a51bcccd209e648d370690f6c9e5bb19bcf231bf1cad2dc/qgis-deployment-toolbelt-0.9.0.tar.gz
+[2023-04-14 14:52:02] INFO root fetch - processPackages [izihawa-configurator]: Downloading https://files.pythonhosted.org/packages/27/2a/50ab2519dc77fdc99e0371528710b1cabf1521256bb7f348b91fb9d314a7/izihawa_configurator-1.0.1-py3-none-any.whl
+[2023-04-14 14:52:03] INFO root fetch - processPackages [izihawa-configurator]: executing diffoscope
+[2023-04-14 14:52:03] INFO root fetch - processPackages [izihawa-configurator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/izihawa_configurator-1.0.0-py3-none-any.whl.zip tmp/izihawa_configurator-1.0.1-py3-none-any.whl.zip --markdown 20230414/i/izihawa-configurator/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 14:52:03] INFO root fetch - processPackages [naruno-tests]: Start processing: cloudfoundry-client
+[2023-04-14 14:52:03] INFO root fetch - main [MainThread]: End processing [naruno-tests]: success
+[2023-04-14 14:52:03] INFO root fetch - processPackages [cloudfoundry-client]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-14 14:52:03] INFO root fetch - processPackages [qgis-deployment-toolbelt]: executing diffoscope
+[2023-04-14 14:52:03] INFO root fetch - processPackages [qgis-deployment-toolbelt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgis-deployment-toolbelt-0.8.0.tar.gz tmp/qgis-deployment-toolbelt-0.9.0.tar.gz --markdown 20230414/q/qgis-deployment-toolbelt/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 14:52:03] INFO root fetch - processPackages [cloudfoundry-client]: Downloading https://files.pythonhosted.org/packages/20/9d/99e5d890e6765de459205dc09268f793312a5677c6c6c01fe5bdfcd3cfd0/cloudfoundry-client-1.8.0.tar.gz
+[2023-04-14 14:52:03] INFO root fetch - processPackages [create-docker-compose]: Start processing: ignore-flake8-error
+[2023-04-14 14:52:03] INFO root fetch - main [MainThread]: End processing [create-docker-compose]: success
+[2023-04-14 14:52:03] INFO root fetch - processPackages [ignore-flake8-error]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 14:52:03] INFO root fetch - processPackages [slurm-mongo]: Start processing: dsw-command-queue
+[2023-04-14 14:52:03] INFO root fetch - main [MainThread]: End processing [slurm-mongo]: success
+[2023-04-14 14:52:03] INFO root fetch - processPackages [dsw-command-queue]: New version: [3.22.1] Old Version: [3.22.0]
+[2023-04-14 14:52:03] INFO root fetch - processPackages [cloudfoundry-client]: Downloading https://files.pythonhosted.org/packages/55/78/4daaeca27bd3ade38295a089555f453630d5f2b13180002f6f74c5807c43/cloudfoundry-client-1.9.0.tar.gz
+[2023-04-14 14:52:03] INFO root fetch - processPackages [ignore-flake8-error]: Downloading https://files.pythonhosted.org/packages/fa/d2/c8d71e1f56d4ed67a51c12d9f7523197e07b57bb5252bb1dd595f8703c7e/ignore_flake8_error-0.1.0.tar.gz
+[2023-04-14 14:52:03] INFO root fetch - processPackages [dsw-command-queue]: Downloading https://files.pythonhosted.org/packages/dc/7a/29b06545b83cbd29a0e38ff2067fa3ba7f046c569c14ec45a8e60e92d544/dsw-command-queue-3.22.0.tar.gz
+[2023-04-14 14:52:03] INFO root fetch - processPackages [cloudfoundry-client]: executing diffoscope
+[2023-04-14 14:52:03] INFO root fetch - processPackages [cloudfoundry-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudfoundry-client-1.8.0.tar.gz tmp/cloudfoundry-client-1.9.0.tar.gz --markdown 20230414/c/cloudfoundry-client/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-14 14:52:04] INFO root fetch - processPackages [izihawa-configurator]: Start processing: dsw-config
+[2023-04-14 14:52:04] INFO root fetch - main [MainThread]: End processing [izihawa-configurator]: success
+[2023-04-14 14:52:04] INFO root fetch - processPackages [ignore-flake8-error]: Downloading https://files.pythonhosted.org/packages/27/c2/ad5151cdf5dcf89ea33aab60d146c3c711940bdfb7f7d54e304bf7294934/ignore_flake8_error-0.2.0.tar.gz
+[2023-04-14 14:52:04] INFO root fetch - processPackages [dsw-config]: New version: [3.22.1] Old Version: [3.22.0]
+[2023-04-14 14:52:04] INFO root fetch - processPackages [dsw-command-queue]: Downloading https://files.pythonhosted.org/packages/3e/f6/47522b48c73cdcf230724a325246ed3ececdc1779312667f207982ec92d1/dsw-command-queue-3.22.1.tar.gz
+[2023-04-14 14:52:04] INFO root fetch - processPackages [ignore-flake8-error]: executing diffoscope
+[2023-04-14 14:52:04] INFO root fetch - processPackages [ignore-flake8-error]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ignore_flake8_error-0.1.0.tar.gz tmp/ignore_flake8_error-0.2.0.tar.gz --markdown 20230414/i/ignore-flake8-error/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 14:52:04] INFO root fetch - processPackages [dsw-config]: Downloading https://files.pythonhosted.org/packages/a4/59/e18b3f803cf00461cc7406ca406f1120d8ef55fb30d4f0f72fc062184f3b/dsw-config-3.22.0.tar.gz
+[2023-04-14 14:52:04] INFO root fetch - processPackages [qgis-deployment-toolbelt]: Start processing: Photini
+[2023-04-14 14:52:04] INFO root fetch - main [MainThread]: End processing [qgis-deployment-toolbelt]: success
+[2023-04-14 14:52:04] INFO root fetch - processPackages [Photini]: New version: [2023.4.0.2] Old Version: [2023.4.0.1]
+[2023-04-14 14:52:04] INFO root fetch - processPackages [dsw-command-queue]: executing diffoscope
+[2023-04-14 14:52:04] INFO root fetch - processPackages [dsw-command-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsw-command-queue-3.22.0.tar.gz tmp/dsw-command-queue-3.22.1.tar.gz --markdown 20230414/d/dsw-command-queue/3.22.0-3.22.1/diff.md --exclude *.pyd
+[2023-04-14 14:52:04] INFO root fetch - processPackages [dsw-config]: Downloading https://files.pythonhosted.org/packages/cb/db/d018d43f0bd2045a85ff20e5d644dcfe304e73b28e78894dca0bf88609ac/dsw-config-3.22.1.tar.gz
+[2023-04-14 14:52:04] INFO root fetch - processPackages [Photini]: Downloading https://files.pythonhosted.org/packages/32/97/270c4ec702f25f7ad150d9bab798e7938035ffb87263d03f038d0c95700a/Photini-2023.4.0.2-py3-none-any.whl
+[2023-04-14 14:52:04] INFO root fetch - processPackages [dsw-config]: executing diffoscope
+[2023-04-14 14:52:04] INFO root fetch - processPackages [dsw-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsw-config-3.22.0.tar.gz tmp/dsw-config-3.22.1.tar.gz --markdown 20230414/d/dsw-config/3.22.0-3.22.1/diff.md --exclude *.pyd
+[2023-04-14 14:52:04] INFO root fetch - processPackages [Photini]: executing diffoscope
+[2023-04-14 14:52:04] INFO root fetch - processPackages [Photini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Photini-2023.4.0.1.tar.gz tmp/Photini-2023.4.0.2-py3-none-any.whl.zip --markdown 20230414/P/Photini/2023.4.0.1-2023.4.0.2/diff.md --exclude *.pyd
+[2023-04-14 14:52:05] INFO root fetch - processPackages [cloudfoundry-client]: Start processing: randomread
+[2023-04-14 14:52:05] INFO root fetch - main [MainThread]: End processing [cloudfoundry-client]: success
+[2023-04-14 14:52:05] INFO root fetch - processPackages [randomread]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 14:52:05] INFO root fetch - processPackages [ignore-flake8-error]: Start processing: dsw-models
+[2023-04-14 14:52:05] INFO root fetch - main [MainThread]: End processing [ignore-flake8-error]: success
+[2023-04-14 14:52:05] INFO root fetch - processPackages [dsw-models]: New version: [3.22.1] Old Version: [3.22.0]
+[2023-04-14 14:52:05] INFO root fetch - processPackages [randomread]: Downloading https://files.pythonhosted.org/packages/2d/5c/398f7d1851015ec8d2d3f8d98839e196df7a22267f7f1d51c996ef038431/randomread-0.1.0.tar.gz
+[2023-04-14 14:52:05] INFO root fetch - processPackages [dsw-models]: Downloading https://files.pythonhosted.org/packages/20/09/3ba95a6388e7d6279a91ef1ea56140053ae50801e28f65b12038432870af/dsw-models-3.22.0.tar.gz
+[2023-04-14 14:52:05] INFO root fetch - processPackages [dsw-command-queue]: Start processing: dsw-database
+[2023-04-14 14:52:05] INFO root fetch - main [MainThread]: End processing [dsw-command-queue]: success
+[2023-04-14 14:52:05] INFO root fetch - processPackages [dsw-database]: New version: [3.22.1] Old Version: [3.22.0]
+[2023-04-14 14:52:05] INFO root fetch - processPackages [randomread]: Downloading https://files.pythonhosted.org/packages/58/d7/cb61b11b0d1ad155c7ab6c6c9ce83935c56d28e7f20b81fcf56870497912/randomread-0.2.0.tar.gz
+[2023-04-14 14:52:05] INFO root fetch - processPackages [dsw-config]: Start processing: dsw-storage
+[2023-04-14 14:52:05] INFO root fetch - main [MainThread]: End processing [dsw-config]: success
+[2023-04-14 14:52:05] INFO root fetch - processPackages [dsw-storage]: New version: [3.22.1] Old Version: [3.22.0]
+[2023-04-14 14:52:05] INFO root fetch - processPackages [dsw-database]: Downloading https://files.pythonhosted.org/packages/0c/f7/ea1f602ae84e8fc9270ec8f1490fdcaeadaf2f324b3398001dcbe05b9af5/dsw-database-3.22.0.tar.gz
+[2023-04-14 14:52:05] INFO root fetch - processPackages [dsw-models]: Downloading https://files.pythonhosted.org/packages/25/b0/c9051d97cb5c1da758ca6be5ab6f104e0172d1de4a348527930d38b12e42/dsw-models-3.22.1.tar.gz
+[2023-04-14 14:52:05] INFO root fetch - processPackages [randomread]: executing diffoscope
+[2023-04-14 14:52:05] INFO root fetch - processPackages [randomread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/randomread-0.1.0.tar.gz tmp/randomread-0.2.0.tar.gz --markdown 20230414/r/randomread/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 14:52:05] INFO root fetch - processPackages [dsw-storage]: Downloading https://files.pythonhosted.org/packages/db/98/8397ec49f2b9466057acf7412640d51ef0c99f58396c5ad38f263799f77d/dsw-storage-3.22.0.tar.gz
+[2023-04-14 14:52:06] INFO root fetch - processPackages [dsw-database]: Downloading https://files.pythonhosted.org/packages/a4/18/4ab649c061d4705270949e369da8b41226b044fffcfbf909018ff19930e0/dsw-database-3.22.1.tar.gz
+[2023-04-14 14:52:06] INFO root fetch - processPackages [dsw-models]: executing diffoscope
+[2023-04-14 14:52:06] INFO root fetch - processPackages [dsw-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsw-models-3.22.0.tar.gz tmp/dsw-models-3.22.1.tar.gz --markdown 20230414/d/dsw-models/3.22.0-3.22.1/diff.md --exclude *.pyd
+[2023-04-14 14:52:06] INFO root fetch - processPackages [dsw-storage]: Downloading https://files.pythonhosted.org/packages/a4/97/69569cc061de86de217848a84a2c0300993de66564ac484bfb6b4cde6907/dsw-storage-3.22.1.tar.gz
+[2023-04-14 14:52:06] INFO root fetch - processPackages [dsw-database]: executing diffoscope
+[2023-04-14 14:52:06] INFO root fetch - processPackages [dsw-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsw-database-3.22.0.tar.gz tmp/dsw-database-3.22.1.tar.gz --markdown 20230414/d/dsw-database/3.22.0-3.22.1/diff.md --exclude *.pyd
+[2023-04-14 14:52:06] INFO root fetch - processPackages [Photini]: Start processing: django-outbox-pattern
+[2023-04-14 14:52:06] INFO root fetch - main [MainThread]: End processing [Photini]: success
+[2023-04-14 14:52:06] INFO root fetch - processPackages [dsw-storage]: executing diffoscope
+[2023-04-14 14:52:06] INFO root fetch - processPackages [dsw-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsw-storage-3.22.0.tar.gz tmp/dsw-storage-3.22.1.tar.gz --markdown 20230414/d/dsw-storage/3.22.0-3.22.1/diff.md --exclude *.pyd
+[2023-04-14 14:52:06] INFO root fetch - processPackages [django-outbox-pattern]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 14:52:06] INFO root fetch - processPackages [django-outbox-pattern]: Downloading https://files.pythonhosted.org/packages/86/2f/763edbc7461afb96edf9ea8aad2fb2c4688e997db1c9d253815cda789bc2/django-outbox-pattern-0.8.0.tar.gz
+[2023-04-14 14:52:06] INFO root fetch - processPackages [randomread]: Start processing: findontime
+[2023-04-14 14:52:06] INFO root fetch - main [MainThread]: End processing [randomread]: success
+[2023-04-14 14:52:06] INFO root fetch - processPackages [findontime]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-14 14:52:07] INFO root fetch - processPackages [django-outbox-pattern]: Downloading https://files.pythonhosted.org/packages/16/c6/14aa465f8d9163e12b5a0e71bf37c313185a8c2bd7132dbd29df7aedcf36/django-outbox-pattern-0.9.0.tar.gz
+[2023-04-14 14:52:07] INFO root fetch - processPackages [dsw-models]: Start processing: cleanchausie
+[2023-04-14 14:52:07] INFO root fetch - main [MainThread]: End processing [dsw-models]: success
+[2023-04-14 14:52:07] INFO root fetch - processPackages [cleanchausie]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-14 14:52:07] INFO root fetch - processPackages [findontime]: Downloading https://files.pythonhosted.org/packages/d4/b3/d78dacad834a3ec6b811dfc90d61fd394c33dd6a7175183fb2f0aa0cd892/findontime-0.1.0.tar.gz
+[2023-04-14 14:52:07] INFO root fetch - processPackages [dsw-database]: Start processing: dsw-tdk
+[2023-04-14 14:52:07] INFO root fetch - main [MainThread]: End processing [dsw-database]: success
+[2023-04-14 14:52:07] INFO root fetch - processPackages [dsw-tdk]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-04-14 14:52:07] INFO root fetch - processPackages [findontime]: Downloading https://files.pythonhosted.org/packages/67/1d/3a52efd5979d26f58426d83e6e1093b9eb6f505806a7631a7a0250e92249/findontime-0.2.0.tar.gz
+[2023-04-14 14:52:07] INFO root fetch - processPackages [dsw-tdk]: Downloading https://files.pythonhosted.org/packages/49/a5/97e62ad725a08a351055c0dec289369428ed8405344fa96af05e8d02e5ea/dsw-tdk-3.8.0.tar.gz
+[2023-04-14 14:52:07] INFO root fetch - main [MainThread]: End processing [dsw-storage]: success
+[2023-04-14 14:52:07] INFO root fetch - processPackages [cleanchausie]: executing diffoscope
+[2023-04-14 14:52:07] INFO root fetch - processPackages [cleanchausie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cleanchausie-1.9.0.tar.gz tmp/cleanchausie-1.9.1.tar.gz --markdown 20230414/c/cleanchausie/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-14 14:52:07] INFO root fetch - processPackages [django-outbox-pattern]: executing diffoscope
+[2023-04-14 14:52:07] INFO root fetch - processPackages [django-outbox-pattern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-outbox-pattern-0.8.0.tar.gz tmp/django-outbox-pattern-0.9.0.tar.gz --markdown 20230414/d/django-outbox-pattern/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 14:52:07] INFO root fetch - processPackages [findontime]: executing diffoscope
+[2023-04-14 14:52:07] INFO root fetch - processPackages [findontime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findontime-0.1.0.tar.gz tmp/findontime-0.2.0.tar.gz --markdown 20230414/f/findontime/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 14:52:07] INFO root fetch - processPackages [dsw-tdk]: Downloading https://files.pythonhosted.org/packages/e6/22/1df5f0817ea3b3e038995c9fd42ba3152c3cef9595e173d161482976f698/dsw-tdk-3.9.0.tar.gz
+[2023-04-14 14:52:08] INFO root fetch - processPackages [dsw-tdk]: executing diffoscope
+[2023-04-14 14:52:08] INFO root fetch - processPackages [dsw-tdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsw-tdk-3.8.0.tar.gz tmp/dsw-tdk-3.9.0.tar.gz --markdown 20230414/d/dsw-tdk/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-04-14 14:52:08] INFO root fetch - main [MainThread]: End processing [django-outbox-pattern]: success
+[2023-04-14 14:52:08] INFO root fetch - main [MainThread]: End processing [cleanchausie]: success
+[2023-04-14 14:52:08] INFO root fetch - main [MainThread]: End processing [findontime]: success
+[2023-04-14 14:52:09] INFO root fetch - main [MainThread]: End processing [dsw-tdk]: success
+[2023-04-14 14:52:09] INFO root fetch - main [MainThread]: Store serial: [17707266]
