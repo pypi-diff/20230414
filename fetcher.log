@@ -22776,3 +22776,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 23:38:57] INFO root fetch - main [MainThread]: End processing [vesselapi]: success
 [2023-04-14 23:39:14] INFO root fetch - main [MainThread]: End processing [arize-phoenix]: success
 [2023-04-14 23:39:14] INFO root fetch - main [MainThread]: Store serial: [17713155]
+[2023-04-14 23:44:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713155]
+[2023-04-14 23:44:22] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 23:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MGSurvE
+[2023-04-14 23:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: corgy
+[2023-04-14 23:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TheSilent
+[2023-04-14 23:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openabc
+[2023-04-14 23:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sopel-twitter
+[2023-04-14 23:44:23] INFO root fetch - processPackages [openabc]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 23:44:23] INFO root fetch - processPackages [corgy]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-14 23:44:23] WARNING root fetch - processPackages [sopel-twitter]: Skipping, unable to determine old version
+[2023-04-14 23:44:23] INFO root fetch - processPackages [sopel-twitter]: Start processing: irisml
+[2023-04-14 23:44:23] INFO root fetch - main [MainThread]: End processing [sopel-twitter] error
+[2023-04-14 23:44:23] INFO root fetch - processPackages [MGSurvE]: New version: [0.8.0.2] Old Version: [0.8.0.1]
+[2023-04-14 23:44:23] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 23:44:23] INFO root fetch - processPackages [irisml]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 23:44:23] INFO root fetch - processPackages [openabc]: Downloading https://files.pythonhosted.org/packages/bb/1b/c40a625f22a58448415b34920fb498b66a7f91b6d45d23e2226435bcb82b/openabc-1.0.1.tar.gz
+[2023-04-14 23:44:23] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-14 23:44:23] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230414/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 23:44:23] INFO root fetch - processPackages [irisml]: Downloading https://files.pythonhosted.org/packages/d4/77/8fe10cadf12b529cfcb45955279bced0df877351825f09eec8e8e3dc70cc/irisml-0.0.8.tar.gz
+[2023-04-14 23:44:23] INFO root fetch - processPackages [corgy]: Downloading https://files.pythonhosted.org/packages/d8/9b/7f9d2c14b3d26bd5c96392eae257ad425744791ba74a8ad061e13882f3e4/corgy-8.0.0.tar.gz
+[2023-04-14 23:44:23] INFO root fetch - processPackages [MGSurvE]: Downloading https://files.pythonhosted.org/packages/32/f0/ea884c1ca0008b2b4618faa14818b5a56ea22eef9de14bb9710ad571c9aa/MGSurvE-0.8.0.2.tar.gz
+[2023-04-14 23:44:23] INFO root fetch - processPackages [openabc]: Downloading https://files.pythonhosted.org/packages/4b/3c/7dbbb402b4e764436280aa645f25ceba1582c363cdf0de8b4f5b9f49e22b/openabc-1.0.2.tar.gz
+[2023-04-14 23:44:23] INFO root fetch - processPackages [corgy]: executing diffoscope
+[2023-04-14 23:44:23] INFO root fetch - processPackages [corgy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corgy-7.0.0.tar.gz tmp/corgy-8.0.0.tar.gz --markdown 20230414/c/corgy/7.0.0-8.0.0/diff.md --exclude *.pyd
+[2023-04-14 23:44:23] INFO root fetch - processPackages [MGSurvE]: executing diffoscope
+[2023-04-14 23:44:23] INFO root fetch - processPackages [MGSurvE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MGSurvE-0.8.0.1.tar.gz tmp/MGSurvE-0.8.0.2.tar.gz --markdown 20230414/M/MGSurvE/0.8.0.1-0.8.0.2/diff.md --exclude *.pyd
+[2023-04-14 23:44:23] INFO root fetch - processPackages [openabc]: executing diffoscope
+[2023-04-14 23:44:23] INFO root fetch - processPackages [openabc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openabc-1.0.1.tar.gz tmp/openabc-1.0.2.tar.gz --markdown 20230414/o/openabc/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 23:44:23] INFO root fetch - processPackages [irisml]: Downloading https://files.pythonhosted.org/packages/89/fc/e470679233b923db63ba24ec0fe777e6ba04634022230150073d36bfe279/irisml-0.0.9.tar.gz
+[2023-04-14 23:44:24] INFO root fetch - processPackages [irisml]: executing diffoscope
+[2023-04-14 23:44:24] INFO root fetch - processPackages [irisml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irisml-0.0.8.tar.gz tmp/irisml-0.0.9.tar.gz --markdown 20230414/i/irisml/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 23:44:24] INFO root fetch - processPackages [TheSilent]: Start processing: psychoevals
+[2023-04-14 23:44:24] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-14 23:44:24] INFO root fetch - processPackages [psychoevals]: New version: [0.2] Old Version: [0.1]
+[2023-04-14 23:44:24] INFO root fetch - processPackages [MGSurvE]: Start processing: spgci
+[2023-04-14 23:44:24] INFO root fetch - main [MainThread]: End processing [MGSurvE]: success
+[2023-04-14 23:44:24] INFO root fetch - processPackages [spgci]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 23:44:24] INFO root fetch - processPackages [psychoevals]: Downloading https://files.pythonhosted.org/packages/2d/2b/b0049a1321477e9e36b406bcedbaf55f66b27ab43c9647f8ea57752b7f1d/psychoevals-0.1.tar.gz
+[2023-04-14 23:44:24] INFO root fetch - processPackages [corgy]: Start processing: shreycriclivemac
+[2023-04-14 23:44:24] INFO root fetch - main [MainThread]: End processing [corgy]: success
+[2023-04-14 23:44:24] WARNING root fetch - processPackages [shreycriclivemac]: Skipping, unable to determine old version
+[2023-04-14 23:44:24] INFO root fetch - processPackages [shreycriclivemac]: Start processing: trainml
+[2023-04-14 23:44:24] INFO root fetch - main [MainThread]: End processing [shreycriclivemac] error
+[2023-04-14 23:44:24] INFO root fetch - processPackages [psychoevals]: Downloading https://files.pythonhosted.org/packages/7c/bc/d0ab6d47804e4f3b7810fab9e1cb5437431a51f0f51625c2467fee4f0608/psychoevals-0.2.tar.gz
+[2023-04-14 23:44:24] INFO root fetch - processPackages [trainml]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 23:44:25] INFO root fetch - processPackages [openabc]: Start processing: TheSilent
+[2023-04-14 23:44:25] INFO root fetch - main [MainThread]: End processing [openabc]: success
+[2023-04-14 23:44:25] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 23:44:25] INFO root fetch - processPackages [psychoevals]: executing diffoscope
+[2023-04-14 23:44:25] INFO root fetch - processPackages [psychoevals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychoevals-0.1.tar.gz tmp/psychoevals-0.2.tar.gz --markdown 20230414/p/psychoevals/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-14 23:44:25] INFO root fetch - processPackages [spgci]: executing diffoscope
+[2023-04-14 23:44:25] INFO root fetch - processPackages [spgci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spgci-0.0.8.tar.gz tmp/spgci-0.0.9.tar.gz --markdown 20230414/s/spgci/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 23:44:25] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-14 23:44:25] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230414/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 23:44:25] INFO root fetch - processPackages [trainml]: Downloading https://files.pythonhosted.org/packages/20/24/ea220dcc8659ead1b29cf006c7bc802195039cdd8acd135148d01e9d3513/trainml-0.4.8.tar.gz
+[2023-04-14 23:44:25] INFO root fetch - processPackages [trainml]: Downloading https://files.pythonhosted.org/packages/e0/09/b1a8ca09d1357635498b83078517fae91e9500812c5b77ddbd320c62e743/trainml-0.4.9.tar.gz
+[2023-04-14 23:44:25] INFO root fetch - main [MainThread]: End processing [irisml]: success
+[2023-04-14 23:44:25] INFO root fetch - processPackages [trainml]: executing diffoscope
+[2023-04-14 23:44:25] INFO root fetch - processPackages [trainml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trainml-0.4.8.tar.gz tmp/trainml-0.4.9.tar.gz --markdown 20230414/t/trainml/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 23:44:26] INFO root fetch - main [MainThread]: End processing [spgci]: success
+[2023-04-14 23:44:26] INFO root fetch - main [MainThread]: End processing [psychoevals]: success
+[2023-04-14 23:44:27] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-14 23:44:35] INFO root fetch - main [MainThread]: End processing [trainml]: success
+[2023-04-14 23:44:35] INFO root fetch - main [MainThread]: Store serial: [17713191]
