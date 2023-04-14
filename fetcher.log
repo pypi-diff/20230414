@@ -6943,3 +6943,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 06:04:33] INFO root fetch - main [MainThread]: End processing [odoo14-addon-fieldservice]: success
 [2023-04-14 06:04:33] INFO root fetch - main [MainThread]: End processing [symbol-sdk-python]: success
 [2023-04-14 06:04:33] INFO root fetch - main [MainThread]: Store serial: [17703074]
+[2023-04-14 06:09:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703074]
+[2023-04-14 06:09:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-14 06:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esddns
+[2023-04-14 06:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: insights-extractor
+[2023-04-14 06:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: console-timer
+[2023-04-14 06:09:41] WARNING root fetch - processPackages [esddns]: Skipping, unable to determine old version
+[2023-04-14 06:09:41] INFO root fetch - main [MainThread]: End processing [esddns] error
+[2023-04-14 06:09:41] INFO root fetch - processPackages [insights-extractor]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 06:09:41] INFO root fetch - processPackages [console-timer]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 06:09:41] INFO root fetch - processPackages [insights-extractor]: Downloading https://files.pythonhosted.org/packages/89/2a/033885e59af29969e1f35d5ab34b773d08ceb06d7ac2f6553ab8cde5a631/insights-extractor-0.1.0.tar.gz
+[2023-04-14 06:09:41] INFO root fetch - processPackages [console-timer]: Downloading https://files.pythonhosted.org/packages/32/92/3a10db9ffd850c9208462511a946083ceeafeffb2fea9278ccb09a70cead/console_timer-0.1.0.tar.gz
+[2023-04-14 06:09:41] INFO root fetch - processPackages [insights-extractor]: Downloading https://files.pythonhosted.org/packages/2c/92/ca9d8d3192fe06f1b5305332636748d655ea5639568b846c62cfc7cdbe84/insights-extractor-0.1.1.tar.gz
+[2023-04-14 06:09:41] INFO root fetch - processPackages [console-timer]: Downloading https://files.pythonhosted.org/packages/14/d1/9204feebb5a848f829c48dbf5f621375aca7d5afd95b48ed5928121bdb4e/console_timer-0.1.1.tar.gz
+[2023-04-14 06:09:41] INFO root fetch - processPackages [console-timer]: executing diffoscope
+[2023-04-14 06:09:41] INFO root fetch - processPackages [console-timer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/console_timer-0.1.0.tar.gz tmp/console_timer-0.1.1.tar.gz --markdown 20230414/c/console-timer/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 06:09:41] INFO root fetch - processPackages [insights-extractor]: executing diffoscope
+[2023-04-14 06:09:41] INFO root fetch - processPackages [insights-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/insights-extractor-0.1.0.tar.gz tmp/insights-extractor-0.1.1.tar.gz --markdown 20230414/i/insights-extractor/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 06:09:42] INFO root fetch - main [MainThread]: End processing [console-timer]: success
+[2023-04-14 06:09:42] INFO root fetch - main [MainThread]: End processing [insights-extractor]: success
+[2023-04-14 06:09:42] INFO root fetch - main [MainThread]: Store serial: [17703087]
