@@ -5754,3 +5754,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 03:43:35] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
 [2023-04-14 03:44:20] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2023-04-14 03:44:20] INFO root fetch - main [MainThread]: Store serial: [17702347]
+[2023-04-14 03:49:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702347]
+[2023-04-14 03:49:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 03:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rosbag-merge
+[2023-04-14 03:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-augmentation-GASPLN
+[2023-04-14 03:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: study-id-generator
+[2023-04-14 03:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ml-starter
+[2023-04-14 03:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipen
+[2023-04-14 03:49:28] INFO root fetch - processPackages [study-id-generator]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 03:49:28] INFO root fetch - processPackages [pipen]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 03:49:28] INFO root fetch - processPackages [data-augmentation-GASPLN]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-14 03:49:28] INFO root fetch - processPackages [ml-starter]: New version: [0.0.17] Old Version: [0.0.16]
+[2023-04-14 03:49:28] INFO root fetch - processPackages [rosbag-merge]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-14 03:49:28] INFO root fetch - processPackages [study-id-generator]: Downloading https://files.pythonhosted.org/packages/40/ed/a15a246caa41f68a7a762f1a9e24540a1035c73c2e099a860136e9b8156f/study_id_generator-0.0.1.tar.gz
+[2023-04-14 03:49:28] INFO root fetch - processPackages [pipen]: Downloading https://files.pythonhosted.org/packages/9f/6a/2701dab8e0c7fb2411de014a4bdaceed26d63d4ad18aaa867ff21b1d6d67/pipen-0.9.1.tar.gz
+[2023-04-14 03:49:28] INFO root fetch - processPackages [data-augmentation-GASPLN]: Downloading https://files.pythonhosted.org/packages/40/b6/28f7180cdba6af71d9cb810eabe4c935358fdca5204e2259c8f62334e981/data_augmentation_GASPLN-0.2.3.tar.gz
+[2023-04-14 03:49:28] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/5a/b5/591f3cdf108a5b68dbf9d5caa3ea686db409862bfcfd7455a86cd404a191/ml-starter-0.0.17.tar.gz
+[2023-04-14 03:49:28] INFO root fetch - processPackages [rosbag-merge]: Downloading https://files.pythonhosted.org/packages/ee/09/f4e5957b3b5e678e0f6cea021cb2cfe03a8e4959da90788c2c52543ab10c/rosbag_merge-0.0.7.tar.gz
+[2023-04-14 03:49:28] INFO root fetch - processPackages [pipen]: executing diffoscope
+[2023-04-14 03:49:28] INFO root fetch - processPackages [pipen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen-0.9.0.tar.gz tmp/pipen-0.9.1.tar.gz --markdown 20230414/p/pipen/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 03:49:28] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-04-14 03:49:28] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.16.tar.gz tmp/ml-starter-0.0.17.tar.gz --markdown 20230414/m/ml-starter/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2023-04-14 03:49:28] INFO root fetch - processPackages [rosbag-merge]: Downloading https://files.pythonhosted.org/packages/23/3a/cbc56d23677e904e2482a04efc6c07773ef6d7f541ccac7031777fb52b43/rosbag_merge-0.0.9.tar.gz
+[2023-04-14 03:49:28] INFO root fetch - processPackages [study-id-generator]: Downloading https://files.pythonhosted.org/packages/c3/03/5416d3d4ee0de8c83dc4753f7a2c4970ec891828edfcab73e2ba8848e7e9/study_id_generator-0.0.2.tar.gz
+[2023-04-14 03:49:29] INFO root fetch - processPackages [rosbag-merge]: executing diffoscope
+[2023-04-14 03:49:29] INFO root fetch - processPackages [rosbag-merge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rosbag_merge-0.0.7.tar.gz tmp/rosbag_merge-0.0.9.tar.gz --markdown 20230414/r/rosbag-merge/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 03:49:29] INFO root fetch - processPackages [study-id-generator]: executing diffoscope
+[2023-04-14 03:49:29] INFO root fetch - processPackages [study-id-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/study_id_generator-0.0.1.tar.gz tmp/study_id_generator-0.0.2.tar.gz --markdown 20230414/s/study-id-generator/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 03:49:29] INFO root fetch - processPackages [data-augmentation-GASPLN]: executing diffoscope
+[2023-04-14 03:49:29] INFO root fetch - processPackages [data-augmentation-GASPLN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_augmentation_GASPLN-0.2.2.tar.gz tmp/data_augmentation_GASPLN-0.2.3.tar.gz --markdown 20230414/d/data-augmentation-GASPLN/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-14 03:49:30] INFO root fetch - processPackages [study-id-generator]: Start processing: boa-fm
+[2023-04-14 03:49:30] INFO root fetch - main [MainThread]: End processing [study-id-generator]: success
+[2023-04-14 03:49:30] INFO root fetch - processPackages [boa-fm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 03:49:30] INFO root fetch - processPackages [rosbag-merge]: Start processing: so-vits-svc-fork
+[2023-04-14 03:49:30] INFO root fetch - main [MainThread]: End processing [rosbag-merge]: success
+[2023-04-14 03:49:30] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.6.1] Old Version: [3.6.0]
+[2023-04-14 03:49:30] INFO root fetch - main [MainThread]: End processing [pipen]: success
+[2023-04-14 03:49:30] INFO root fetch - processPackages [boa-fm]: Downloading https://files.pythonhosted.org/packages/a8/43/225785ac21674b764ab9afaf217a2048823eb830f698fdd2ec6a32c39586/boa_fm-0.0.8.tar.gz
+[2023-04-14 03:49:30] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/97/5b/1f7a261073e0f23f0c80fc9a7aff5cad7bbd6e6df9c83f63491c56631bb4/so_vits_svc_fork-3.6.1.tar.gz
+[2023-04-14 03:49:30] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-04-14 03:49:30] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-14 03:49:30] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.6.0.tar.gz tmp/so_vits_svc_fork-3.6.1.tar.gz --markdown 20230414/s/so-vits-svc-fork/3.6.0-3.6.1/diff.md --exclude *.pyd
+[2023-04-14 03:49:30] INFO root fetch - processPackages [boa-fm]: Downloading https://files.pythonhosted.org/packages/94/35/4ec4f6f3cffdcd4b28d21f8e3caa5ad6d75fe27c9a90787463cad904cc5b/boa_fm-0.0.9.tar.gz
+[2023-04-14 03:49:30] INFO root fetch - main [MainThread]: End processing [data-augmentation-GASPLN]: success
+[2023-04-14 03:49:30] INFO root fetch - processPackages [boa-fm]: executing diffoscope
+[2023-04-14 03:49:30] INFO root fetch - processPackages [boa-fm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boa_fm-0.0.8.tar.gz tmp/boa_fm-0.0.9.tar.gz --markdown 20230414/b/boa-fm/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 03:49:31] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-14 03:49:31] INFO root fetch - main [MainThread]: End processing [boa-fm]: success
+[2023-04-14 03:49:31] INFO root fetch - main [MainThread]: Store serial: [17702372]
