@@ -6636,3 +6636,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 05:21:17] INFO root fetch - processPackages [ApiLogicServer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ApiLogicServer-8.1.5.tar.gz tmp/ApiLogicServer-8.2.0.tar.gz --markdown 20230414/A/ApiLogicServer/8.1.5-8.2.0/diff.md --exclude *.pyd
 [2023-04-14 05:21:26] INFO root fetch - main [MainThread]: End processing [ApiLogicServer]: success
 [2023-04-14 05:21:26] INFO root fetch - main [MainThread]: Store serial: [17702858]
+[2023-04-14 05:26:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702858]
+[2023-04-14 05:26:34] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 05:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smplotlib
+[2023-04-14 05:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omniplot
+[2023-04-14 05:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hagrid
+[2023-04-14 05:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lusid-sdk
+[2023-04-14 05:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lusid-sdk-preview
+[2023-04-14 05:26:34] INFO root fetch - processPackages [omniplot]: New version: [0.3.0] Old Version: [0.2.6]
+[2023-04-14 05:26:34] WARNING root fetch - processPackages [smplotlib]: Skipping, unable to determine old version
+[2023-04-14 05:26:34] INFO root fetch - processPackages [smplotlib]: Start processing: konfuzio-sdk
+[2023-04-14 05:26:34] INFO root fetch - main [MainThread]: End processing [smplotlib] error
+[2023-04-14 05:26:34] INFO root fetch - processPackages [hagrid]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-04-14 05:26:34] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-04-14 05:26:34] INFO root fetch - processPackages [lusid-sdk-preview]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 05:26:34] INFO root fetch - processPackages [lusid-sdk]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 05:26:34] INFO root fetch - processPackages [omniplot]: Downloading https://files.pythonhosted.org/packages/b6/72/5153b54906a6a9a784099497644406bdb5252297ec140dcad981dd50f2c7/omniplot-0.2.6.tar.gz
+[2023-04-14 05:26:34] INFO root fetch - processPackages [hagrid]: Downloading https://files.pythonhosted.org/packages/ab/67/21644bcaab0141f0926c82aa24eb1c37edd71eded4052c5a60de7ad07d7f/hagrid-0.2.98.tar.gz
+[2023-04-14 05:26:34] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-04-14 05:26:34] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230414/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-04-14 05:26:35] INFO root fetch - processPackages [omniplot]: Downloading https://files.pythonhosted.org/packages/95/7b/f3dd4a5369b904f565a3624760e12831452cac4bf0f442737d772b3e12f7/omniplot-0.3.0.tar.gz
+[2023-04-14 05:26:35] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2023-04-14 05:26:35] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-1.0.8.tar.gz tmp/lusid-sdk-1.0.9.tar.gz --markdown 20230414/l/lusid-sdk/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 05:26:35] INFO root fetch - processPackages [lusid-sdk-preview]: executing diffoscope
+[2023-04-14 05:26:35] INFO root fetch - processPackages [lusid-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-preview-1.0.8.tar.gz tmp/lusid-sdk-preview-1.0.9.tar.gz --markdown 20230414/l/lusid-sdk-preview/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 05:26:35] INFO root fetch - processPackages [hagrid]: Downloading https://files.pythonhosted.org/packages/44/7e/c72fe44c06d9008a60e34842b1382879bce7a98a54da73f13bae8db204fe/hagrid-0.2.99.tar.gz
+[2023-04-14 05:26:35] INFO root fetch - processPackages [omniplot]: executing diffoscope
+[2023-04-14 05:26:35] INFO root fetch - processPackages [omniplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omniplot-0.2.6.tar.gz tmp/omniplot-0.3.0.tar.gz --markdown 20230414/o/omniplot/0.2.6-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 05:26:35] INFO root fetch - processPackages [hagrid]: executing diffoscope
+[2023-04-14 05:26:35] INFO root fetch - processPackages [hagrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagrid-0.2.98.tar.gz tmp/hagrid-0.2.99.tar.gz --markdown 20230414/h/hagrid/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-04-14 05:26:36] INFO root fetch - processPackages [konfuzio-sdk]: Start processing: message-pusher-sdk
+[2023-04-14 05:26:36] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-04-14 05:26:36] WARNING root fetch - processPackages [message-pusher-sdk]: Skipping, unable to determine old version
+[2023-04-14 05:26:36] INFO root fetch - processPackages [message-pusher-sdk]: Start processing: hotbox
+[2023-04-14 05:26:36] INFO root fetch - main [MainThread]: End processing [message-pusher-sdk] error
+[2023-04-14 05:26:36] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 05:26:36] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-04-14 05:26:36] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230414/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 05:26:36] INFO root fetch - processPackages [omniplot]: Start processing: MyJpHolidays
+[2023-04-14 05:26:36] INFO root fetch - main [MainThread]: End processing [omniplot]: success
+[2023-04-14 05:26:36] INFO root fetch - processPackages [MyJpHolidays]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-14 05:26:37] INFO root fetch - processPackages [hagrid]: Start processing: seven-cloudapp-frame
+[2023-04-14 05:26:37] INFO root fetch - main [MainThread]: End processing [hagrid]: success
+[2023-04-14 05:26:37] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-04-14 05:26:37] INFO root fetch - processPackages [MyJpHolidays]: Downloading https://files.pythonhosted.org/packages/3b/83/d07499ca9312ba460d923aeba0698614126bc36c65d9c8441878040a5e15/MyJpHolidays-0.8.2.tar.gz
+[2023-04-14 05:26:37] INFO root fetch - processPackages [MyJpHolidays]: Downloading https://files.pythonhosted.org/packages/3c/3a/4cafddf137849f3c383e511242c45164709e1f5899fc210fc2372347c923/MyJpHolidays-0.8.3.tar.gz
+[2023-04-14 05:26:37] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-04-14 05:26:37] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230414/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-04-14 05:26:37] INFO root fetch - processPackages [MyJpHolidays]: executing diffoscope
+[2023-04-14 05:26:37] INFO root fetch - processPackages [MyJpHolidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyJpHolidays-0.8.2.tar.gz tmp/MyJpHolidays-0.8.3.tar.gz --markdown 20230414/M/MyJpHolidays/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-14 05:26:37] INFO root fetch - processPackages [hotbox]: Start processing: formant
+[2023-04-14 05:26:37] INFO root fetch - main [MainThread]: End processing [hotbox]: success
+[2023-04-14 05:26:37] INFO root fetch - processPackages [formant]: New version: [1.99.25] Old Version: [1.99.10]
+[2023-04-14 05:26:38] INFO root fetch - processPackages [formant]: executing diffoscope
+[2023-04-14 05:26:38] INFO root fetch - processPackages [formant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formant-1.99.10.tar.gz tmp/formant-1.99.25.tar.gz --markdown 20230414/f/formant/1.99.10-1.99.25/diff.md --exclude *.pyd
+[2023-04-14 05:26:38] INFO root fetch - main [MainThread]: End processing [MyJpHolidays]: success
+[2023-04-14 05:26:39] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-04-14 05:26:39] INFO root fetch - main [MainThread]: End processing [formant]: success
+[2023-04-14 05:26:51] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2023-04-14 05:27:05] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
+[2023-04-14 05:27:05] INFO root fetch - main [MainThread]: Store serial: [17702903]
