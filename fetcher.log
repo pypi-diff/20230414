@@ -9081,3 +9081,121 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 09:59:37] ERROR root fetch - processPackages [aspose-diagram]: Timeout during execution of pkgdiff
 [2023-04-14 09:59:37] INFO root fetch - main [MainThread]: End processing [aspose-diagram] error
 [2023-04-14 09:59:37] INFO root fetch - main [MainThread]: Store serial: [17704294]
+[2023-04-14 10:04:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704294]
+[2023-04-14 10:04:44] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-14 10:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-weasypdf
+[2023-04-14 10:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: statscend
+[2023-04-14 10:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ddr-analysis-tools
+[2023-04-14 10:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pxmcmc
+[2023-04-14 10:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: akshare
+[2023-04-14 10:04:45] INFO root fetch - processPackages [ddr-analysis-tools]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-14 10:04:45] INFO root fetch - processPackages [django-weasypdf]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-14 10:04:45] INFO root fetch - processPackages [pxmcmc]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-14 10:04:45] INFO root fetch - processPackages [statscend]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 10:04:45] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-14 10:04:45] INFO root fetch - processPackages [django-weasypdf]: Downloading https://files.pythonhosted.org/packages/d9/44/036cae5ec77f1959033815707a1b31cff390dce0fb6f2dd712cd97b10c90/django_weasypdf-0.0.5-py2.py3-none-any.whl
+[2023-04-14 10:04:45] INFO root fetch - processPackages [pxmcmc]: Downloading https://files.pythonhosted.org/packages/ff/e5/476faafd78aa88becfaf1ff8e927e2e97bbe9d0e9535c8d3242a6644d6e1/PxMCMC-0.1.4.tar.gz
+[2023-04-14 10:04:45] INFO root fetch - processPackages [ddr-analysis-tools]: Downloading https://files.pythonhosted.org/packages/15/7b/32a06f9d1ca60724672f939b0e963901991e50989e8d2c4cd694b48c7f9a/ddr_analysis_tools-0.0.7.tar.gz
+[2023-04-14 10:04:45] INFO root fetch - processPackages [statscend]: Downloading https://files.pythonhosted.org/packages/d0/15/8d0037988498e37f620763373589abae4a1dccb0c14aecf4424bcbbc39ff/statscend-0.1.6.tar.gz
+[2023-04-14 10:04:45] INFO root fetch - processPackages [django-weasypdf]: Downloading https://files.pythonhosted.org/packages/b2/07/460f63bc4a39dfab8ce595056ea8a70e91e098991d36753ff4f8c2db83b0/django_weasypdf-0.1.0-py2.py3-none-any.whl
+[2023-04-14 10:04:45] INFO root fetch - processPackages [statscend]: executing diffoscope
+[2023-04-14 10:04:45] INFO root fetch - processPackages [statscend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statscend-0.1.5.tar.gz tmp/statscend-0.1.6.tar.gz --markdown 20230414/s/statscend/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 10:04:45] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-04-14 10:04:45] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230414/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-14 10:04:45] INFO root fetch - processPackages [django-weasypdf]: executing diffoscope
+[2023-04-14 10:04:45] INFO root fetch - processPackages [django-weasypdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_weasypdf-0.0.5-py2.py3-none-any.whl.zip tmp/django_weasypdf-0.1.0-py2.py3-none-any.whl.zip --markdown 20230414/d/django-weasypdf/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-14 10:04:45] INFO root fetch - processPackages [pxmcmc]: Downloading https://files.pythonhosted.org/packages/e8/95/f90260253c21de7b9ffc70e1cac8385ff5af7b212bbba94754401deebc6a/pxmcmc-0.1.5.tar.gz
+[2023-04-14 10:04:45] INFO root fetch - processPackages [ddr-analysis-tools]: Downloading https://files.pythonhosted.org/packages/7d/51/8d2fbb3c0cff3548c7b75292ce6a2109eed3c0a6759aaad40949c942060d/ddr_analysis_tools-0.0.8.tar.gz
+[2023-04-14 10:04:45] INFO root fetch - processPackages [pxmcmc]: executing diffoscope
+[2023-04-14 10:04:45] INFO root fetch - processPackages [pxmcmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PxMCMC-0.1.4.tar.gz tmp/pxmcmc-0.1.5.tar.gz --markdown 20230414/p/pxmcmc/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-14 10:04:45] INFO root fetch - processPackages [ddr-analysis-tools]: executing diffoscope
+[2023-04-14 10:04:45] INFO root fetch - processPackages [ddr-analysis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddr_analysis_tools-0.0.7.tar.gz tmp/ddr_analysis_tools-0.0.8.tar.gz --markdown 20230414/d/ddr-analysis-tools/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 10:04:46] INFO root fetch - processPackages [statscend]: Start processing: html2django
+[2023-04-14 10:04:46] INFO root fetch - main [MainThread]: End processing [statscend]: success
+[2023-04-14 10:04:46] WARNING root fetch - processPackages [html2django]: Skipping, unable to determine old version
+[2023-04-14 10:04:46] INFO root fetch - processPackages [html2django]: Start processing: gmltools
+[2023-04-14 10:04:46] INFO root fetch - main [MainThread]: End processing [html2django] error
+[2023-04-14 10:04:46] INFO root fetch - processPackages [gmltools]: New version: [0.0.54] Old Version: [0.0.53]
+[2023-04-14 10:04:46] INFO root fetch - processPackages [pxmcmc]: Start processing: jumpthegun
+[2023-04-14 10:04:46] INFO root fetch - main [MainThread]: End processing [pxmcmc]: success
+[2023-04-14 10:04:46] INFO root fetch - processPackages [jumpthegun]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 10:04:46] INFO root fetch - processPackages [django-weasypdf]: Start processing: cccrontab
+[2023-04-14 10:04:46] INFO root fetch - main [MainThread]: End processing [django-weasypdf]: success
+[2023-04-14 10:04:46] INFO root fetch - processPackages [cccrontab]: New version: [1.1] Old Version: [1.0]
+[2023-04-14 10:04:46] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/a4/83/1926524beec18b5d2cc4fc135b731223182ff6858ea7334d95d8a5b6e60e/gmltools-0.0.54.tar.gz
+[2023-04-14 10:04:46] INFO root fetch - processPackages [jumpthegun]: Downloading https://files.pythonhosted.org/packages/28/5b/bba802f0c920ada139ef24617a4ea9a74fd7e3b0261e5f73d53f129fac2a/jumpthegun-0.0.3.tar.gz
+[2023-04-14 10:04:46] INFO root fetch - processPackages [cccrontab]: Downloading https://files.pythonhosted.org/packages/9e/db/628d421dd05d3fff5a7cf8ddf3192589f1a2ea8cee46dded1183280269df/cccrontab-1.0.tar.gz
+[2023-04-14 10:04:46] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-04-14 10:04:46] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.53.tar.gz tmp/gmltools-0.0.54.tar.gz --markdown 20230414/g/gmltools/0.0.53-0.0.54/diff.md --exclude *.pyd
+[2023-04-14 10:04:47] INFO root fetch - processPackages [jumpthegun]: executing diffoscope
+[2023-04-14 10:04:47] INFO root fetch - processPackages [jumpthegun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jumpthegun-0.0.2.tar.gz tmp/jumpthegun-0.0.3.tar.gz --markdown 20230414/j/jumpthegun/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 10:04:47] INFO root fetch - processPackages [cccrontab]: Downloading https://files.pythonhosted.org/packages/50/99/f4fab053cb83e1e2a69a0730d33430dc3b29aa87c9e1389382c0ba40cd87/cccrontab-1.1.tar.gz
+[2023-04-14 10:04:47] INFO root fetch - processPackages [cccrontab]: executing diffoscope
+[2023-04-14 10:04:47] INFO root fetch - processPackages [cccrontab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cccrontab-1.0.tar.gz tmp/cccrontab-1.1.tar.gz --markdown 20230414/c/cccrontab/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-14 10:04:47] INFO root fetch - processPackages [ddr-analysis-tools]: Start processing: OmniBridge
+[2023-04-14 10:04:47] INFO root fetch - main [MainThread]: End processing [ddr-analysis-tools]: success
+[2023-04-14 10:04:47] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 10:04:47] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-14 10:04:47] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230414/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 10:04:48] INFO root fetch - processPackages [jumpthegun]: Start processing: fawltydeps
+[2023-04-14 10:04:48] INFO root fetch - main [MainThread]: End processing [jumpthegun]: success
+[2023-04-14 10:04:48] INFO root fetch - processPackages [fawltydeps]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 10:04:48] INFO root fetch - processPackages [cccrontab]: Start processing: Tom-Toolbox
+[2023-04-14 10:04:48] INFO root fetch - main [MainThread]: End processing [cccrontab]: success
+[2023-04-14 10:04:48] INFO root fetch - processPackages [Tom-Toolbox]: New version: [0.0.1.post1] Old Version: [0.0.1]
+[2023-04-14 10:04:48] INFO root fetch - processPackages [fawltydeps]: Downloading https://files.pythonhosted.org/packages/7d/9a/15e241b9628884e859c3b589ee6e8562a9dd06880f12923b27712aca0a9d/fawltydeps-0.8.0.tar.gz
+[2023-04-14 10:04:48] INFO root fetch - processPackages [Tom-Toolbox]: Downloading https://files.pythonhosted.org/packages/ed/44/13c414e51246412d20ff912dbb8532d6ddb21bd3ecfa44dc6356533781fe/Tom%20Toolbox-0.0.1.tar.gz
+[2023-04-14 10:04:48] INFO root fetch - processPackages [fawltydeps]: Downloading https://files.pythonhosted.org/packages/d2/24/3326bfb619e855b09baee07d9e86bcd12797608ec0b91d04fb8e1b35baff/fawltydeps-0.9.0.tar.gz
+[2023-04-14 10:04:48] INFO root fetch - processPackages [OmniBridge]: Start processing: dissect.target
+[2023-04-14 10:04:48] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-14 10:04:48] INFO root fetch - processPackages [dissect.target]: New version: [3.9.dev9] Old Version: [3.9.dev8]
+[2023-04-14 10:04:48] INFO root fetch - processPackages [fawltydeps]: executing diffoscope
+[2023-04-14 10:04:48] INFO root fetch - processPackages [fawltydeps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fawltydeps-0.8.0.tar.gz tmp/fawltydeps-0.9.0.tar.gz --markdown 20230414/f/fawltydeps/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 10:04:48] INFO root fetch - processPackages [dissect.target]: Downloading https://files.pythonhosted.org/packages/b1/a4/24f9ce2eb6a1913b82598a01b68b634c9fe5535a9484bff3d7d56a0ae929/dissect.target-3.9.dev8.tar.gz
+[2023-04-14 10:04:48] INFO root fetch - processPackages [Tom-Toolbox]: Downloading https://files.pythonhosted.org/packages/c5/9d/8ae5404e8a2064de3a34795ba38122d04ca9705068041085b42c256d3020/Tom-Toolbox-0.0.1.post1.tar.gz
+[2023-04-14 10:04:48] INFO root fetch - processPackages [Tom-Toolbox]: executing diffoscope
+[2023-04-14 10:04:48] INFO root fetch - processPackages [Tom-Toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Tom Toolbox-0.0.1.tar.gz tmp/Tom-Toolbox-0.0.1.post1.tar.gz --markdown 20230414/T/Tom-Toolbox/0.0.1-0.0.1.post1/diff.md --exclude *.pyd
+[2023-04-14 10:04:49] WARNING root fetch - processPackages [dissect.target]: Skipping package: exceeds size limit 63555307>=10485760
+[2023-04-14 10:04:49] INFO root fetch - processPackages [dissect.target]: Start processing: zytlib
+[2023-04-14 10:04:49] INFO root fetch - main [MainThread]: End processing [dissect.target] error
+[2023-04-14 10:04:49] INFO root fetch - processPackages [akshare]: Start processing: pyoxynet
+[2023-04-14 10:04:49] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-04-14 10:04:49] INFO root fetch - processPackages [zytlib]: New version: [0.3.322] Old Version: [0.3.321]
+[2023-04-14 10:04:49] INFO root fetch - processPackages [pyoxynet]: New version: [0.0.9.9] Old Version: [0.0.9.8]
+[2023-04-14 10:04:49] INFO root fetch - processPackages [gmltools]: Start processing: OmniBridge
+[2023-04-14 10:04:49] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-04-14 10:04:49] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 10:04:49] INFO root fetch - processPackages [pyoxynet]: executing diffoscope
+[2023-04-14 10:04:49] INFO root fetch - processPackages [pyoxynet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyoxynet-0.0.9.8.tar.gz tmp/pyoxynet-0.0.9.9.tar.gz --markdown 20230414/p/pyoxynet/0.0.9.8-0.0.9.9/diff.md --exclude *.pyd
+[2023-04-14 10:04:49] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-14 10:04:49] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230414/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 10:04:49] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/b5/f0/51b47ec073ac8dbd25213eebe9f6bb44311c70f18ea5d0db0adfbe518f75/zytlib-0.3.322-py3-none-any.whl
+[2023-04-14 10:04:49] INFO root fetch - processPackages [zytlib]: executing diffoscope
+[2023-04-14 10:04:49] INFO root fetch - processPackages [zytlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zytlib-0.3.321-py3-none-any.whl.zip tmp/zytlib-0.3.322-py3-none-any.whl.zip --markdown 20230414/z/zytlib/0.3.321-0.3.322/diff.md --exclude *.pyd
+[2023-04-14 10:04:49] INFO root fetch - processPackages [Tom-Toolbox]: Start processing: pyglove
+[2023-04-14 10:04:49] INFO root fetch - main [MainThread]: End processing [Tom-Toolbox]: success
+[2023-04-14 10:04:49] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230414] Old Version: [0.3.1.dev20230413]
+[2023-04-14 10:04:49] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/98/6e/db99ee7facd70185038048e8aa7a22d6472b7546cc174b1e103e632c7efc/pyglove-0.3.1.dev20230414.tar.gz
+[2023-04-14 10:04:50] INFO root fetch - processPackages [OmniBridge]: Start processing: leadguru-data
+[2023-04-14 10:04:50] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-14 10:04:50] INFO root fetch - processPackages [leadguru-data]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-14 10:04:50] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-04-14 10:04:50] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230413.tar.gz tmp/pyglove-0.3.1.dev20230414.tar.gz --markdown 20230414/p/pyglove/0.3.1.dev20230413-0.3.1.dev20230414/diff.md --exclude *.pyd
+[2023-04-14 10:04:50] INFO root fetch - processPackages [fawltydeps]: Start processing: leadguru-common
+[2023-04-14 10:04:50] INFO root fetch - main [MainThread]: End processing [fawltydeps]: success
+[2023-04-14 10:04:50] INFO root fetch - processPackages [zytlib]: Start processing: dune-query-translator
+[2023-04-14 10:04:50] INFO root fetch - main [MainThread]: End processing [zytlib]: success
+[2023-04-14 10:04:50] INFO root fetch - processPackages [leadguru-common]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-14 10:04:50] INFO root fetch - processPackages [dune-query-translator]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-14 10:04:50] INFO root fetch - processPackages [leadguru-data]: executing diffoscope
+[2023-04-14 10:04:50] INFO root fetch - processPackages [leadguru-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leadguru_data-0.98.0.tar.gz tmp/leadguru_data-0.99.0.tar.gz --markdown 20230414/l/leadguru-data/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-14 10:04:50] INFO root fetch - processPackages [dune-query-translator]: executing diffoscope
+[2023-04-14 10:04:50] INFO root fetch - processPackages [dune-query-translator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_query_translator-0.3.1.tar.gz tmp/dune_query_translator-0.4.0.tar.gz --markdown 20230414/d/dune-query-translator/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-14 10:04:51] INFO root fetch - processPackages [leadguru-common]: executing diffoscope
+[2023-04-14 10:04:51] INFO root fetch - processPackages [leadguru-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leadguru_common-0.98.0.tar.gz tmp/leadguru_common-0.99.0.tar.gz --markdown 20230414/l/leadguru-common/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-14 10:04:51] INFO root fetch - main [MainThread]: End processing [pyoxynet]: success
+[2023-04-14 10:04:51] INFO root fetch - main [MainThread]: End processing [leadguru-data]: success
+[2023-04-14 10:04:51] INFO root fetch - main [MainThread]: End processing [dune-query-translator]: success
+[2023-04-14 10:04:51] INFO root fetch - main [MainThread]: End processing [leadguru-common]: success
+[2023-04-14 10:04:54] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-04-14 10:04:54] INFO root fetch - main [MainThread]: Store serial: [17704351]
