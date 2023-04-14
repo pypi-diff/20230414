@@ -5834,3 +5834,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 03:54:41] INFO root fetch - main [MainThread]: End processing [fastel]: success
 [2023-04-14 03:55:01] INFO root fetch - main [MainThread]: End processing [insights-core]: success
 [2023-04-14 03:55:01] INFO root fetch - main [MainThread]: Store serial: [17702388]
+[2023-04-14 04:00:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702388]
+[2023-04-14 04:00:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 04:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monad-aa
+[2023-04-14 04:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alibabacloud-dingtalk
+[2023-04-14 04:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: boa-fm
+[2023-04-14 04:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monad-aa
+[2023-04-14 04:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: core-universal
+[2023-04-14 04:00:09] INFO root fetch - processPackages [boa-fm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 04:00:09] INFO root fetch - processPackages [monad-aa]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 04:00:09] INFO root fetch - processPackages [monad-aa]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 04:00:09] INFO root fetch - processPackages [core-universal]: New version: [2.4.9] Old Version: [2.4.8]
+[2023-04-14 04:00:09] INFO root fetch - processPackages [alibabacloud-dingtalk]: New version: [1.5.64] Old Version: [1.5.63]
+[2023-04-14 04:00:09] INFO root fetch - processPackages [boa-fm]: executing diffoscope
+[2023-04-14 04:00:09] INFO root fetch - processPackages [boa-fm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boa_fm-0.0.8.tar.gz tmp/boa_fm-0.0.9.tar.gz --markdown 20230414/b/boa-fm/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 04:00:09] INFO root fetch - processPackages [monad-aa]: Downloading https://files.pythonhosted.org/packages/bb/6f/906e22b3adfe628d91239004e5d3021b89fcbace5e35c81dfa8bb17e0733/monad_aa-0.0.8.tar.gz
+[2023-04-14 04:00:09] INFO root fetch - processPackages [monad-aa]: Downloading https://files.pythonhosted.org/packages/bb/6f/906e22b3adfe628d91239004e5d3021b89fcbace5e35c81dfa8bb17e0733/monad_aa-0.0.8.tar.gz
+[2023-04-14 04:00:09] INFO root fetch - processPackages [core-universal]: Downloading https://files.pythonhosted.org/packages/21/d3/671229efeeae3c217ddde89070c91662c2dcde269cf929f23e3e02d8c451/core_universal-2.4.8-py2.py3-none-win_amd64.whl
+[2023-04-14 04:00:09] WARNING root fetch - processPackages [core-universal]: Skipping package: exceeds size limit 23920061>=10485760
+[2023-04-14 04:00:09] INFO root fetch - processPackages [core-universal]: Start processing: hyperdrive
+[2023-04-14 04:00:09] INFO root fetch - main [MainThread]: End processing [core-universal] error
+[2023-04-14 04:00:09] INFO root fetch - processPackages [hyperdrive]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-04-14 04:00:09] INFO root fetch - processPackages [alibabacloud-dingtalk]: Downloading https://files.pythonhosted.org/packages/af/f4/fa41ed5c675a96ecaf02a1993e86357430e253c8b0c6821467cfe73ff493/alibabacloud_dingtalk-1.5.64.tar.gz
+[2023-04-14 04:00:09] INFO root fetch - processPackages [hyperdrive]: Downloading https://files.pythonhosted.org/packages/38/15/4781539e3471340b6477c42f42eea56c1525464cd3eadad93b22eb81e50d/hyperdrive-1.9.5.tar.gz
+[2023-04-14 04:00:09] INFO root fetch - processPackages [monad-aa]: Downloading https://files.pythonhosted.org/packages/1b/1d/8e70dd9f4ac4ab57801102c462f2fb7649eeab800f5c9e674b769ac1fe4e/monad_aa-0.0.9.tar.gz
+[2023-04-14 04:00:09] INFO root fetch - processPackages [monad-aa]: Downloading https://files.pythonhosted.org/packages/1b/1d/8e70dd9f4ac4ab57801102c462f2fb7649eeab800f5c9e674b769ac1fe4e/monad_aa-0.0.9.tar.gz
+[2023-04-14 04:00:09] INFO root fetch - processPackages [alibabacloud-dingtalk]: executing diffoscope
+[2023-04-14 04:00:09] INFO root fetch - processPackages [alibabacloud-dingtalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dingtalk-1.5.63.tar.gz tmp/alibabacloud_dingtalk-1.5.64.tar.gz --markdown 20230414/a/alibabacloud-dingtalk/1.5.63-1.5.64/diff.md --exclude *.pyd
+[2023-04-14 04:00:10] INFO root fetch - processPackages [monad-aa]: executing diffoscope
+[2023-04-14 04:00:10] INFO root fetch - processPackages [monad-aa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monad_aa-0.0.8.tar.gz tmp/monad_aa-0.0.9.tar.gz --markdown 20230414/m/monad-aa/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 04:00:10] INFO root fetch - processPackages [monad-aa]: executing diffoscope
+[2023-04-14 04:00:10] INFO root fetch - processPackages [monad-aa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monad_aa-0.0.8.tar.gz tmp/monad_aa-0.0.9.tar.gz --markdown 20230414/m/monad-aa/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 04:00:10] INFO root fetch - processPackages [hyperdrive]: Downloading https://files.pythonhosted.org/packages/13/86/8d620021a02e34e1bb50f6af84b59685e4f9f930093918de1c6a204c9f39/hyperdrive-1.9.6.tar.gz
+[2023-04-14 04:00:10] INFO root fetch - processPackages [hyperdrive]: executing diffoscope
+[2023-04-14 04:00:10] INFO root fetch - processPackages [hyperdrive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperdrive-1.9.5.tar.gz tmp/hyperdrive-1.9.6.tar.gz --markdown 20230414/h/hyperdrive/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-04-14 04:00:10] INFO root fetch - processPackages [boa-fm]: Start processing: qingqiu
+[2023-04-14 04:00:10] INFO root fetch - main [MainThread]: End processing [boa-fm]: success
+[2023-04-14 04:00:10] INFO root fetch - processPackages [qingqiu]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-14 04:00:10] INFO root fetch - processPackages [qingqiu]: Downloading https://files.pythonhosted.org/packages/4f/d0/251102db0d17cec2a896d1bc89d1cf107138deb1f3b7ebf88c782d4a6dc6/qingqiu-0.0.6.tar.gz
+[2023-04-14 04:00:11] INFO root fetch - processPackages [qingqiu]: Downloading https://files.pythonhosted.org/packages/ef/4c/26ae931f68f4f0ba476536b88e09c5a22904c8e8a2779ed7f63e85eafd13/qingqiu-0.0.7.tar.gz
+[2023-04-14 04:00:11] INFO root fetch - main [MainThread]: End processing [monad-aa]: success
+[2023-04-14 04:00:11] INFO root fetch - processPackages [qingqiu]: executing diffoscope
+[2023-04-14 04:00:11] INFO root fetch - processPackages [qingqiu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qingqiu-0.0.6.tar.gz tmp/qingqiu-0.0.7.tar.gz --markdown 20230414/q/qingqiu/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-14 04:00:11] INFO root fetch - main [MainThread]: End processing [monad-aa]: success
+[2023-04-14 04:00:11] INFO root fetch - main [MainThread]: End processing [hyperdrive]: success
+[2023-04-14 04:00:12] INFO root fetch - main [MainThread]: End processing [qingqiu]: success
+[2023-04-14 04:00:14] INFO root fetch - main [MainThread]: End processing [alibabacloud-dingtalk]: success
+[2023-04-14 04:00:14] INFO root fetch - main [MainThread]: Store serial: [17702415]
