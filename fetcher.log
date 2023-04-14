@@ -7336,3 +7336,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 07:15:21] INFO root fetch - main [MainThread]: End processing [pylbm]: success
 [2023-04-14 07:15:24] INFO root fetch - main [MainThread]: End processing [dxsp]: success
 [2023-04-14 07:15:24] INFO root fetch - main [MainThread]: Store serial: [17703335]
+[2023-04-14 07:20:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703335]
+[2023-04-14 07:20:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-14 07:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ecodata
+[2023-04-14 07:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bingbong
+[2023-04-14 07:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: analysisbykwok
+[2023-04-14 07:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-yettagam
+[2023-04-14 07:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tg-upload
+[2023-04-14 07:20:32] WARNING root fetch - processPackages [ecodata]: Skipping, unable to determine old version
+[2023-04-14 07:20:32] INFO root fetch - main [MainThread]: End processing [ecodata] error
+[2023-04-14 07:20:32] INFO root fetch - processPackages [bingbong]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 07:20:32] INFO root fetch - processPackages [analysisbykwok]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-04-14 07:20:32] INFO root fetch - processPackages [py-yettagam]: New version: [0.0.2.9] Old Version: [0.0.2.8]
+[2023-04-14 07:20:32] INFO root fetch - processPackages [tg-upload]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-14 07:20:32] INFO root fetch - processPackages [py-yettagam]: executing diffoscope
+[2023-04-14 07:20:32] INFO root fetch - processPackages [py-yettagam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_yettagam-0.0.2.8.tar.gz tmp/py_yettagam-0.0.2.9.tar.gz --markdown 20230414/p/py-yettagam/0.0.2.8-0.0.2.9/diff.md --exclude *.pyd
+[2023-04-14 07:20:32] INFO root fetch - processPackages [analysisbykwok]: Downloading https://files.pythonhosted.org/packages/8e/2e/49e6bc7c109e73924750c2a07dcacec4c7e01379f33e0b8407131e9b6bad/analysisbykwok-0.0.18.tar.gz
+[2023-04-14 07:20:32] INFO root fetch - processPackages [tg-upload]: Downloading https://files.pythonhosted.org/packages/d8/37/c7005b3908fbe21a1864afe410203a5e76ceebc0b4986e110dba95ea46ad/tg_upload-1.0.1-py3-none-any.whl
+[2023-04-14 07:20:32] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/ef/9e/07ef671ff92d1fd74f7a8709649fcdcd37f032407209089dfd9340f94884/bingbong-0.1.6-py3-none-any.whl
+[2023-04-14 07:20:32] INFO root fetch - processPackages [bingbong]: executing diffoscope
+[2023-04-14 07:20:32] INFO root fetch - processPackages [bingbong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingbong-0.1.5-py3-none-any.whl.zip tmp/bingbong-0.1.6-py3-none-any.whl.zip --markdown 20230414/b/bingbong/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 07:20:32] INFO root fetch - processPackages [analysisbykwok]: Downloading https://files.pythonhosted.org/packages/1c/eb/22178db7631547c52b574befa081845454fdab9d8081d8b30238607cccdf/analysisbykwok-0.0.19.tar.gz
+[2023-04-14 07:20:32] INFO root fetch - processPackages [tg-upload]: Downloading https://files.pythonhosted.org/packages/e9/52/e293f4575f71a2756b8fc36fc182f6f3a9bb2d08a49fb3064c2b94b06aea/tg_upload-1.0.2-py3-none-any.whl
+[2023-04-14 07:20:32] INFO root fetch - processPackages [analysisbykwok]: executing diffoscope
+[2023-04-14 07:20:32] INFO root fetch - processPackages [analysisbykwok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/analysisbykwok-0.0.18.tar.gz tmp/analysisbykwok-0.0.19.tar.gz --markdown 20230414/a/analysisbykwok/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-04-14 07:20:33] INFO root fetch - processPackages [tg-upload]: executing diffoscope
+[2023-04-14 07:20:33] INFO root fetch - processPackages [tg-upload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tg_upload-1.0.1-py3-none-any.whl.zip tmp/tg_upload-1.0.2-py3-none-any.whl.zip --markdown 20230414/t/tg-upload/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-14 07:20:33] INFO root fetch - main [MainThread]: End processing [py-yettagam]: success
+[2023-04-14 07:20:33] INFO root fetch - main [MainThread]: End processing [bingbong]: success
+[2023-04-14 07:20:33] INFO root fetch - main [MainThread]: End processing [analysisbykwok]: success
+[2023-04-14 07:20:34] INFO root fetch - main [MainThread]: End processing [tg-upload]: success
+[2023-04-14 07:20:34] INFO root fetch - main [MainThread]: Store serial: [17703350]
