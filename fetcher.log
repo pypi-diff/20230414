@@ -9656,3 +9656,167 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 10:36:58] INFO root fetch - processPackages [garpix-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garpix_page-2.8.0.tar.gz tmp/garpix_page-2.9.0.tar.gz --markdown 20230414/g/garpix-page/2.8.0-2.9.0/diff.md --exclude *.pyd
 [2023-04-14 10:36:59] INFO root fetch - main [MainThread]: End processing [garpix-page]: success
 [2023-04-14 10:36:59] INFO root fetch - main [MainThread]: Store serial: [17704595]
+[2023-04-14 10:42:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17704595]
+[2023-04-14 10:42:07] INFO root fetch - main [MainThread]: Found 28 changed packages
+[2023-04-14 10:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tff-nightly
+[2023-04-14 10:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecodata
+[2023-04-14 10:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimeograph
+[2023-04-14 10:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: melkit
+[2023-04-14 10:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mkdocs-encryptcontent-plugin
+[2023-04-14 10:42:07] INFO root fetch - processPackages [mkdocs-encryptcontent-plugin]: New version: [2.5.2] Old Version: [2.5.1]
+[2023-04-14 10:42:07] INFO root fetch - processPackages [ecodata]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 10:42:07] INFO root fetch - processPackages [mimeograph]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-14 10:42:07] INFO root fetch - processPackages [melkit]: New version: [0.1.7.2] Old Version: [0.1.7.1]
+[2023-04-14 10:42:07] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230414] Old Version: [0.0.1.dev20230413]
+[2023-04-14 10:42:07] INFO root fetch - processPackages [mkdocs-encryptcontent-plugin]: Downloading https://files.pythonhosted.org/packages/51/50/6be5a2c32af20e692c026780505918e63e5be7a8d57fb1a5c1e618c3724b/mkdocs-encryptcontent-plugin-2.5.2.tar.gz
+[2023-04-14 10:42:07] INFO root fetch - processPackages [melkit]: Downloading https://files.pythonhosted.org/packages/30/67/0b23b1c0784ceae29d3da8fc91523f349779258c77a5ff50b8617fccb93a/melkit-0.1.7.2.tar.gz
+[2023-04-14 10:42:07] INFO root fetch - processPackages [mimeograph]: Downloading https://files.pythonhosted.org/packages/73/7d/addb8e5bb6e1cc86972c237e43004652d5d02b6da6f5f293bce039f03891/mimeograph-0.2.0.tar.gz
+[2023-04-14 10:42:07] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/1c/93/d830ebb104fc1695310312066af3f2158918f69f28bb3afebad1decb250b/tff_nightly-0.0.1.dev20230413-py2.py3-none-any.whl
+[2023-04-14 10:42:07] INFO root fetch - processPackages [melkit]: executing diffoscope
+[2023-04-14 10:42:07] INFO root fetch - processPackages [melkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melkit-0.1.7.1.tar.gz tmp/melkit-0.1.7.2.tar.gz --markdown 20230414/m/melkit/0.1.7.1-0.1.7.2/diff.md --exclude *.pyd
+[2023-04-14 10:42:07] INFO root fetch - processPackages [ecodata]: Downloading https://files.pythonhosted.org/packages/f3/48/d035bfd6801a33679411e28b49a20b2148dc24d07ccba97eab5371aec765/ecodata-0.0.3.tar.gz
+[2023-04-14 10:42:07] INFO root fetch - processPackages [mkdocs-encryptcontent-plugin]: executing diffoscope
+[2023-04-14 10:42:07] INFO root fetch - processPackages [mkdocs-encryptcontent-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-encryptcontent-plugin-2.5.1.tar.gz tmp/mkdocs-encryptcontent-plugin-2.5.2.tar.gz --markdown 20230414/m/mkdocs-encryptcontent-plugin/2.5.1-2.5.2/diff.md --exclude *.pyd
+[2023-04-14 10:42:07] INFO root fetch - processPackages [ecodata]: executing diffoscope
+[2023-04-14 10:42:07] INFO root fetch - processPackages [ecodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecodata-0.0.2.tar.gz tmp/ecodata-0.0.3.tar.gz --markdown 20230414/e/ecodata/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 10:42:08] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/f1/c6/399e2a9f693bb8370eaeb398c20c4e73841b363e6b41d654ef906078dd6c/tff_nightly-0.0.1.dev20230414-py2.py3-none-any.whl
+[2023-04-14 10:42:08] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-04-14 10:42:08] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230413-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230414-py2.py3-none-any.whl.zip --markdown 20230414/t/tff-nightly/0.0.1.dev20230413-0.0.1.dev20230414/diff.md --exclude *.pyd
+[2023-04-14 10:42:08] INFO root fetch - processPackages [mimeograph]: Downloading https://files.pythonhosted.org/packages/1d/36/0c50952a217a557561e5dd9c5dad99b0e15d2834146c8bc8ac24a455d129/mimeograph-0.3.0.tar.gz
+[2023-04-14 10:42:08] INFO root fetch - processPackages [mimeograph]: executing diffoscope
+[2023-04-14 10:42:08] INFO root fetch - processPackages [mimeograph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimeograph-0.2.0.tar.gz tmp/mimeograph-0.3.0.tar.gz --markdown 20230414/m/mimeograph/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 10:42:08] INFO root fetch - processPackages [melkit]: Start processing: dataset-iterator
+[2023-04-14 10:42:08] INFO root fetch - main [MainThread]: End processing [melkit]: success
+[2023-04-14 10:42:08] INFO root fetch - processPackages [dataset-iterator]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-14 10:42:08] INFO root fetch - processPackages [ecodata]: Start processing: pyinflux3-cli
+[2023-04-14 10:42:08] INFO root fetch - main [MainThread]: End processing [ecodata]: success
+[2023-04-14 10:42:09] INFO root fetch - processPackages [pyinflux3-cli]: New version: [0.8.0] Old Version: [0.7.7]
+[2023-04-14 10:42:09] INFO root fetch - processPackages [mkdocs-encryptcontent-plugin]: Start processing: pyinflux3
+[2023-04-14 10:42:09] INFO root fetch - main [MainThread]: End processing [mkdocs-encryptcontent-plugin]: success
+[2023-04-14 10:42:09] INFO root fetch - processPackages [pyinflux3]: New version: [0.8.0] Old Version: [0.7.7]
+[2023-04-14 10:42:09] INFO root fetch - processPackages [dataset-iterator]: Downloading https://files.pythonhosted.org/packages/35/53/a221f63ed3975ca0fd04adb8d3bcc1a70ebbabddbcff15824837121ed844/dataset_iterator-0.2.8.tar.gz
+[2023-04-14 10:42:09] INFO root fetch - processPackages [pyinflux3-cli]: Downloading https://files.pythonhosted.org/packages/34/c4/7c708ef7982bdbf30007a11c86f93a5f2901192d8d2d9aee7c9e5fe6d113/pyinflux3-cli-0.8.0.tar.gz
+[2023-04-14 10:42:09] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/07/9f/b8d2684a2de025ce1be1a54af91fda69c4fcedd2c64c31d92769ba655e4e/pyinflux3-0.8.0.tar.gz
+[2023-04-14 10:42:09] INFO root fetch - processPackages [dataset-iterator]: Downloading https://files.pythonhosted.org/packages/98/6d/49fa7f1f483a7d44b34ff6541089fa226d9e1433974c245bc4612a9a6f37/dataset_iterator-0.2.9.tar.gz
+[2023-04-14 10:42:09] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-14 10:42:09] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.7.7.tar.gz tmp/pyinflux3-0.8.0.tar.gz --markdown 20230414/p/pyinflux3/0.7.7-0.8.0/diff.md --exclude *.pyd
+[2023-04-14 10:42:09] INFO root fetch - processPackages [pyinflux3-cli]: executing diffoscope
+[2023-04-14 10:42:09] INFO root fetch - processPackages [pyinflux3-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-cli-0.7.7.tar.gz tmp/pyinflux3-cli-0.8.0.tar.gz --markdown 20230414/p/pyinflux3-cli/0.7.7-0.8.0/diff.md --exclude *.pyd
+[2023-04-14 10:42:09] INFO root fetch - processPackages [dataset-iterator]: executing diffoscope
+[2023-04-14 10:42:09] INFO root fetch - processPackages [dataset-iterator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataset_iterator-0.2.8.tar.gz tmp/dataset_iterator-0.2.9.tar.gz --markdown 20230414/d/dataset-iterator/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-14 10:42:09] INFO root fetch - processPackages [mimeograph]: Start processing: gardener-cicd-base
+[2023-04-14 10:42:09] INFO root fetch - main [MainThread]: End processing [mimeograph]: success
+[2023-04-14 10:42:09] INFO root fetch - processPackages [gardener-cicd-base]: New version: [1.2033.0] Old Version: [1.2032.0]
+[2023-04-14 10:42:10] INFO root fetch - processPackages [gardener-cicd-base]: Downloading https://files.pythonhosted.org/packages/20/c5/9527a4ef13bbba3346da37da4b579878a5e1f2cc038fdcccd2c7cfaf92f2/gardener-cicd-base-1.2032.0.tar.gz
+[2023-04-14 10:42:10] INFO root fetch - processPackages [gardener-cicd-base]: Downloading https://files.pythonhosted.org/packages/48/55/bc137ffc8b1bd6d5b713189375cdc3e2d6308251bc66bbd680dcf3a79b9e/gardener-cicd-base-1.2033.0.tar.gz
+[2023-04-14 10:42:10] INFO root fetch - processPackages [gardener-cicd-base]: executing diffoscope
+[2023-04-14 10:42:10] INFO root fetch - processPackages [gardener-cicd-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-base-1.2032.0.tar.gz tmp/gardener-cicd-base-1.2033.0.tar.gz --markdown 20230414/g/gardener-cicd-base/1.2032.0-1.2033.0/diff.md --exclude *.pyd
+[2023-04-14 10:42:10] INFO root fetch - processPackages [pyinflux3]: Start processing: gardener-cicd-cli
+[2023-04-14 10:42:10] INFO root fetch - main [MainThread]: End processing [pyinflux3]: success
+[2023-04-14 10:42:10] INFO root fetch - processPackages [pyinflux3-cli]: Start processing: compensating-transaction
+[2023-04-14 10:42:10] INFO root fetch - main [MainThread]: End processing [pyinflux3-cli]: success
+[2023-04-14 10:42:10] INFO root fetch - processPackages [gardener-cicd-cli]: New version: [1.2033.0] Old Version: [1.2032.0]
+[2023-04-14 10:42:10] WARNING root fetch - processPackages [compensating-transaction]: Skipping, unable to determine old version
+[2023-04-14 10:42:10] INFO root fetch - processPackages [compensating-transaction]: Start processing: gardener-cicd-dso
+[2023-04-14 10:42:10] INFO root fetch - main [MainThread]: End processing [compensating-transaction] error
+[2023-04-14 10:42:10] INFO root fetch - processPackages [gardener-cicd-dso]: New version: [1.2033.0] Old Version: [1.2032.0]
+[2023-04-14 10:42:10] INFO root fetch - processPackages [dataset-iterator]: Start processing: gardener-cicd-libs
+[2023-04-14 10:42:10] INFO root fetch - main [MainThread]: End processing [dataset-iterator]: success
+[2023-04-14 10:42:10] INFO root fetch - processPackages [gardener-cicd-libs]: New version: [1.2033.0] Old Version: [1.2032.0]
+[2023-04-14 10:42:10] INFO root fetch - processPackages [gardener-cicd-dso]: Downloading https://files.pythonhosted.org/packages/ab/d4/b12db90f95edc15977d772c1649188e772dda3864ce131244ac83e022e3b/gardener-cicd-dso-1.2032.0.tar.gz
+[2023-04-14 10:42:10] INFO root fetch - processPackages [gardener-cicd-cli]: Downloading https://files.pythonhosted.org/packages/76/f4/339398e92b1ea87df1cd5f650c9d9e5b2c2a6d724d004d1755e036708a3e/gardener-cicd-cli-1.2033.0.tar.gz
+[2023-04-14 10:42:10] INFO root fetch - processPackages [gardener-cicd-libs]: Downloading https://files.pythonhosted.org/packages/dc/47/5072407a98630172b32a41d597790deaa4fe03ef0ba56ce9353a7e8ba8be/gardener-cicd-libs-1.2032.0.tar.gz
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-cli]: executing diffoscope
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-cli-1.2032.0.tar.gz tmp/gardener-cicd-cli-1.2033.0.tar.gz --markdown 20230414/g/gardener-cicd-cli/1.2032.0-1.2033.0/diff.md --exclude *.pyd
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-dso]: Downloading https://files.pythonhosted.org/packages/07/8d/def4c90607a03f80275360817e822395c6ad8c69f8b8c212ce8cf49d4850/gardener-cicd-dso-1.2033.0.tar.gz
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-libs]: Downloading https://files.pythonhosted.org/packages/90/9f/f18526d9dd781cc8fb0b1b57ea310f0ec228ce02f05aa703fd9b2f5b53b1/gardener-cicd-libs-1.2033.0.tar.gz
+[2023-04-14 10:42:11] INFO root fetch - processPackages [tff-nightly]: Start processing: gardener-cicd-whd
+[2023-04-14 10:42:11] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-whd]: New version: [1.2033.0] Old Version: [1.2032.0]
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-libs]: executing diffoscope
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-libs-1.2032.0.tar.gz tmp/gardener-cicd-libs-1.2033.0.tar.gz --markdown 20230414/g/gardener-cicd-libs/1.2032.0-1.2033.0/diff.md --exclude *.pyd
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-dso]: executing diffoscope
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-dso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-dso-1.2032.0.tar.gz tmp/gardener-cicd-dso-1.2033.0.tar.gz --markdown 20230414/g/gardener-cicd-dso/1.2032.0-1.2033.0/diff.md --exclude *.pyd
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-whd]: Downloading https://files.pythonhosted.org/packages/89/20/906c7f894fbc627349fd9c6a1c6fce437356f18910068d800f0b979c2336/gardener-cicd-whd-1.2032.0.tar.gz
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-base]: Start processing: gardener-oci
+[2023-04-14 10:42:11] INFO root fetch - main [MainThread]: End processing [gardener-cicd-base]: success
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-oci]: New version: [1.999.0] Old Version: [1.998.0]
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-whd]: Downloading https://files.pythonhosted.org/packages/9e/71/9b6350cdb5e5a7cf0c0d1c048cb295f3dd60adfb678c0ea9c8ed25af9a8e/gardener-cicd-whd-1.2033.0.tar.gz
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-whd]: executing diffoscope
+[2023-04-14 10:42:11] INFO root fetch - processPackages [gardener-cicd-whd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-whd-1.2032.0.tar.gz tmp/gardener-cicd-whd-1.2033.0.tar.gz --markdown 20230414/g/gardener-cicd-whd/1.2032.0-1.2033.0/diff.md --exclude *.pyd
+[2023-04-14 10:42:12] INFO root fetch - processPackages [gardener-oci]: executing diffoscope
+[2023-04-14 10:42:12] INFO root fetch - processPackages [gardener-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-oci-1.998.0.tar.gz tmp/gardener-oci-1.999.0.tar.gz --markdown 20230414/g/gardener-oci/1.998.0-1.999.0/diff.md --exclude *.pyd
+[2023-04-14 10:42:12] INFO root fetch - processPackages [gardener-cicd-dso]: Start processing: subtotals
+[2023-04-14 10:42:12] INFO root fetch - main [MainThread]: End processing [gardener-cicd-dso]: success
+[2023-04-14 10:42:12] WARNING root fetch - processPackages [subtotals]: Skipping, unable to determine old version
+[2023-04-14 10:42:12] INFO root fetch - processPackages [subtotals]: Start processing: ayugespidertools
+[2023-04-14 10:42:12] INFO root fetch - main [MainThread]: End processing [subtotals] error
+[2023-04-14 10:42:12] INFO root fetch - processPackages [ayugespidertools]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-14 10:42:12] INFO root fetch - processPackages [gardener-cicd-cli]: Start processing: bluepyefe
+[2023-04-14 10:42:12] INFO root fetch - main [MainThread]: End processing [gardener-cicd-cli]: success
+[2023-04-14 10:42:12] INFO root fetch - processPackages [bluepyefe]: New version: [2.2.47] Old Version: [2.2.46]
+[2023-04-14 10:42:12] INFO root fetch - processPackages [ayugespidertools]: Downloading https://files.pythonhosted.org/packages/34/72/fdf2b32e61851a8638f48cfa1a0f5573492bac49bb3febe526c33d777816/ayugespidertools-1.1.8.tar.gz
+[2023-04-14 10:42:12] INFO root fetch - processPackages [gardener-cicd-whd]: Start processing: alibabacloud-dypnsapi20170525-py2
+[2023-04-14 10:42:12] INFO root fetch - main [MainThread]: End processing [gardener-cicd-whd]: success
+[2023-04-14 10:42:12] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525-py2]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 10:42:12] INFO root fetch - processPackages [ayugespidertools]: executing diffoscope
+[2023-04-14 10:42:12] INFO root fetch - processPackages [ayugespidertools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ayugespidertools-1.1.7.tar.gz tmp/ayugespidertools-1.1.8.tar.gz --markdown 20230414/a/ayugespidertools/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-14 10:42:13] INFO root fetch - processPackages [gardener-oci]: Start processing: aliyun-python-sdk-airec
+[2023-04-14 10:42:13] INFO root fetch - main [MainThread]: End processing [gardener-oci]: success
+[2023-04-14 10:42:13] INFO root fetch - processPackages [bluepyefe]: Downloading https://files.pythonhosted.org/packages/a9/19/f5d9b09fea9021ffad33450ba168777d74a68adf82d806f3eae4163095c5/bluepyefe-2.2.47.tar.gz
+[2023-04-14 10:42:13] INFO root fetch - processPackages [aliyun-python-sdk-airec]: New version: [2.1.0] Old Version: [2.0.1]
+[2023-04-14 10:42:13] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525-py2]: Downloading https://files.pythonhosted.org/packages/29/e8/9c6bcd178ec62b180e51c620d48346c8a62ec570c6889f486be3ecba6303/alibabacloud_dypnsapi20170525_py2-1.0.0.tar.gz
+[2023-04-14 10:42:13] INFO root fetch - processPackages [bluepyefe]: executing diffoscope
+[2023-04-14 10:42:13] INFO root fetch - processPackages [bluepyefe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluepyefe-2.2.46.tar.gz tmp/bluepyefe-2.2.47.tar.gz --markdown 20230414/b/bluepyefe/2.2.46-2.2.47/diff.md --exclude *.pyd
+[2023-04-14 10:42:13] INFO root fetch - processPackages [aliyun-python-sdk-airec]: Downloading https://files.pythonhosted.org/packages/e5/58/7283023513223d2f1fd3732cffbd1e88fcee4d6a48b56127bc9f62df98f5/aliyun-python-sdk-airec-2.0.1.tar.gz
+[2023-04-14 10:42:13] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525-py2]: Downloading https://files.pythonhosted.org/packages/bc/80/0b5779e317ea3721b265a4b051c2b041ae788f826fec859cba0712208d22/alibabacloud_dypnsapi20170525_py2-1.0.1.tar.gz
+[2023-04-14 10:42:13] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525-py2]: executing diffoscope
+[2023-04-14 10:42:13] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dypnsapi20170525_py2-1.0.0.tar.gz tmp/alibabacloud_dypnsapi20170525_py2-1.0.1.tar.gz --markdown 20230414/a/alibabacloud-dypnsapi20170525-py2/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 10:42:13] INFO root fetch - processPackages [aliyun-python-sdk-airec]: Downloading https://files.pythonhosted.org/packages/00/c3/e5707001251e9422b4518f50f194059bee0ff9f33dc9a5fd0b6c324975aa/aliyun-python-sdk-airec-2.1.0.tar.gz
+[2023-04-14 10:42:13] INFO root fetch - processPackages [aliyun-python-sdk-airec]: executing diffoscope
+[2023-04-14 10:42:13] INFO root fetch - processPackages [aliyun-python-sdk-airec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-airec-2.0.1.tar.gz tmp/aliyun-python-sdk-airec-2.1.0.tar.gz --markdown 20230414/a/aliyun-python-sdk-airec/2.0.1-2.1.0/diff.md --exclude *.pyd
+[2023-04-14 10:42:13] INFO root fetch - processPackages [gardener-cicd-libs]: Start processing: krkn-lib-kubernetes-draft
+[2023-04-14 10:42:13] INFO root fetch - main [MainThread]: End processing [gardener-cicd-libs]: success
+[2023-04-14 10:42:13] INFO root fetch - processPackages [krkn-lib-kubernetes-draft]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 10:42:14] INFO root fetch - processPackages [krkn-lib-kubernetes-draft]: executing diffoscope
+[2023-04-14 10:42:14] INFO root fetch - processPackages [krkn-lib-kubernetes-draft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krkn_lib_kubernetes_draft-0.1.8.tar.gz tmp/krkn_lib_kubernetes_draft-0.1.9.tar.gz --markdown 20230414/k/krkn-lib-kubernetes-draft/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 10:42:14] INFO root fetch - processPackages [bluepyefe]: Start processing: alibabacloud-dypnsapi20170525
+[2023-04-14 10:42:14] INFO root fetch - main [MainThread]: End processing [bluepyefe]: success
+[2023-04-14 10:42:14] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 10:42:14] INFO root fetch - processPackages [ayugespidertools]: Start processing: acryl-datahub
+[2023-04-14 10:42:14] INFO root fetch - main [MainThread]: End processing [ayugespidertools]: success
+[2023-04-14 10:42:14] INFO root fetch - processPackages [acryl-datahub]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-04-14 10:42:14] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525-py2]: Start processing: OpenFisca-France
+[2023-04-14 10:42:14] INFO root fetch - main [MainThread]: End processing [alibabacloud-dypnsapi20170525-py2]: success
+[2023-04-14 10:42:14] INFO root fetch - processPackages [OpenFisca-France]: New version: [99.0.1] Old Version: [99.0.0]
+[2023-04-14 10:42:14] INFO root fetch - processPackages [acryl-datahub]: executing diffoscope
+[2023-04-14 10:42:14] INFO root fetch - processPackages [acryl-datahub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-0.9.6rc0.tar.gz tmp/acryl-datahub-0.9.6rc1.tar.gz --markdown 20230414/a/acryl-datahub/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-04-14 10:42:14] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525]: Downloading https://files.pythonhosted.org/packages/14/cc/548013211c4bac29c89c39f4c82d45441795240e86690b07547acd6b7801/alibabacloud_dypnsapi20170525-1.0.8.tar.gz
+[2023-04-14 10:42:14] INFO root fetch - processPackages [OpenFisca-France]: executing diffoscope
+[2023-04-14 10:42:14] INFO root fetch - processPackages [OpenFisca-France]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenFisca_France-99.0.0-py3-none-any.whl.zip tmp/OpenFisca_France-99.0.1-py3-none-any.whl.zip --markdown 20230414/O/OpenFisca-France/99.0.0-99.0.1/diff.md --exclude *.pyd
+[2023-04-14 10:42:14] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525]: Downloading https://files.pythonhosted.org/packages/b9/9a/8147902af6ce0809ab38d4d68223691661bbfc73ab76effec80db1b48ef1/alibabacloud_dypnsapi20170525-1.0.9.tar.gz
+[2023-04-14 10:42:14] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525]: executing diffoscope
+[2023-04-14 10:42:14] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dypnsapi20170525-1.0.8.tar.gz tmp/alibabacloud_dypnsapi20170525-1.0.9.tar.gz --markdown 20230414/a/alibabacloud-dypnsapi20170525/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 10:42:15] INFO root fetch - processPackages [krkn-lib-kubernetes-draft]: Start processing: compel
+[2023-04-14 10:42:15] INFO root fetch - main [MainThread]: End processing [krkn-lib-kubernetes-draft]: success
+[2023-04-14 10:42:15] INFO root fetch - processPackages [compel]: New version: [1.1.3.dev0] Old Version: [1.1.2]
+[2023-04-14 10:42:15] INFO root fetch - processPackages [compel]: Downloading https://files.pythonhosted.org/packages/c2/dc/bfcefb5810fb8392f1d05820b0b2f72f7a8ccbcc4f101a3d91d61ca8c348/compel-1.1.3.dev0.tar.gz
+[2023-04-14 10:42:15] INFO root fetch - processPackages [compel]: executing diffoscope
+[2023-04-14 10:42:15] INFO root fetch - processPackages [compel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compel-1.1.2.tar.gz tmp/compel-1.1.3.dev0.tar.gz --markdown 20230414/c/compel/1.1.2-1.1.3.dev0/diff.md --exclude *.pyd
+[2023-04-14 10:42:16] INFO root fetch - processPackages [alibabacloud-dypnsapi20170525]: Start processing: acryl-datahub-airflow-plugin
+[2023-04-14 10:42:16] INFO root fetch - main [MainThread]: End processing [alibabacloud-dypnsapi20170525]: success
+[2023-04-14 10:42:16] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-04-14 10:42:16] INFO root fetch - processPackages [aliyun-python-sdk-airec]: Start processing: webshoter
+[2023-04-14 10:42:16] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-airec]: success
+[2023-04-14 10:42:16] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: executing diffoscope
+[2023-04-14 10:42:16] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-airflow-plugin-0.9.6rc0.tar.gz tmp/acryl-datahub-airflow-plugin-0.9.6rc1.tar.gz --markdown 20230414/a/acryl-datahub-airflow-plugin/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-04-14 10:42:16] WARNING root fetch - processPackages [webshoter]: Skipping, unable to determine old version
+[2023-04-14 10:42:16] INFO root fetch - processPackages [webshoter]: Start processing: pice-core
+[2023-04-14 10:42:16] INFO root fetch - main [MainThread]: End processing [webshoter] error
+[2023-04-14 10:42:16] WARNING root fetch - processPackages [pice-core]: Skipping, unable to determine old version
+[2023-04-14 10:42:16] INFO root fetch - main [MainThread]: End processing [pice-core] error
+[2023-04-14 10:42:16] INFO root fetch - main [MainThread]: End processing [compel]: success
+[2023-04-14 10:42:17] INFO root fetch - main [MainThread]: End processing [acryl-datahub-airflow-plugin]: success
+[2023-04-14 10:42:20] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
+[2023-04-14 10:43:32] INFO root fetch - main [MainThread]: End processing [OpenFisca-France]: success
+[2023-04-14 10:43:32] INFO root fetch - main [MainThread]: Store serial: [17704687]
