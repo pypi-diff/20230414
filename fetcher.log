@@ -19987,3 +19987,85 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:16:37] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
 [2023-04-14 20:18:04] INFO root fetch - main [MainThread]: End processing [pulumi-google-native]: success
 [2023-04-14 20:18:04] INFO root fetch - main [MainThread]: Store serial: [17711372]
+[2023-04-14 20:23:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711372]
+[2023-04-14 20:23:12] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 20:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xfaster
+[2023-04-14 20:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dfcx-scrapi
+[2023-04-14 20:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ccxt
+[2023-04-14 20:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nextline
+[2023-04-14 20:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kangas
+[2023-04-14 20:23:12] INFO root fetch - processPackages [ccxt]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-14 20:23:12] INFO root fetch - processPackages [xfaster]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-14 20:23:12] INFO root fetch - processPackages [dfcx-scrapi]: New version: [1.6.3] Old Version: [1.6.2]
+[2023-04-14 20:23:12] INFO root fetch - processPackages [kangas]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-04-14 20:23:12] INFO root fetch - processPackages [nextline]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-14 20:23:12] INFO root fetch - processPackages [dfcx-scrapi]: Downloading https://files.pythonhosted.org/packages/36/79/c37bc58713830e78fe6762621f5d25295763301a3e90226066e0096459a4/dfcx-scrapi-1.6.2.tar.gz
+[2023-04-14 20:23:12] INFO root fetch - processPackages [xfaster]: Downloading https://files.pythonhosted.org/packages/b7/13/4f920a2f203c11a83d8172adbc28a597f743f55f390f34210e67e2d3226b/xfaster-1.1.0.tar.gz
+[2023-04-14 20:23:12] INFO root fetch - processPackages [nextline]: Downloading https://files.pythonhosted.org/packages/1c/03/de1feb1f1dca15b346398f3bb90916c220d3048fa10b2510f1fa705aa5fc/nextline-0.5.3.tar.gz
+[2023-04-14 20:23:12] INFO root fetch - processPackages [kangas]: Downloading https://files.pythonhosted.org/packages/55/80/6426e99d41e9e4ceaec0fdf31652226f2cafbfc8d90381d9e999cfe6ac64/kangas-2.2.9-py3-none-any.whl
+[2023-04-14 20:23:12] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-04-14 20:23:12] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.8.tar.gz tmp/ccxt-3.0.9.tar.gz --markdown 20230414/c/ccxt/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-14 20:23:13] INFO root fetch - processPackages [xfaster]: Downloading https://files.pythonhosted.org/packages/f5/b3/91f718ec9361b6b5e8ef480f7a6dc761917f2c07dd8ed6d5ebef8901c412/xfaster-1.1.1.tar.gz
+[2023-04-14 20:23:13] WARNING root fetch - processPackages [kangas]: Skipping package: exceeds size limit 15665893>=10485760
+[2023-04-14 20:23:13] INFO root fetch - processPackages [kangas]: Start processing: folio-migration-tools
+[2023-04-14 20:23:13] INFO root fetch - main [MainThread]: End processing [kangas] error
+[2023-04-14 20:23:13] INFO root fetch - processPackages [nextline]: Downloading https://files.pythonhosted.org/packages/35/21/de42003573521debae864e3617ee9efa1f81348a3b6bb833356b6ff8f179/nextline-0.5.4.tar.gz
+[2023-04-14 20:23:13] INFO root fetch - processPackages [folio-migration-tools]: New version: [1.7.9rc2] Old Version: [1.7.9rc1]
+[2023-04-14 20:23:13] INFO root fetch - processPackages [dfcx-scrapi]: Downloading https://files.pythonhosted.org/packages/5d/99/2b2572d7aad094c4240ba9b7fffb1ae92aaafd71dbe7dbe5d280517e4068/dfcx-scrapi-1.6.3.tar.gz
+[2023-04-14 20:23:13] INFO root fetch - processPackages [xfaster]: executing diffoscope
+[2023-04-14 20:23:13] INFO root fetch - processPackages [xfaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xfaster-1.1.0.tar.gz tmp/xfaster-1.1.1.tar.gz --markdown 20230414/x/xfaster/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-14 20:23:13] INFO root fetch - processPackages [nextline]: executing diffoscope
+[2023-04-14 20:23:13] INFO root fetch - processPackages [nextline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextline-0.5.3.tar.gz tmp/nextline-0.5.4.tar.gz --markdown 20230414/n/nextline/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-14 20:23:13] INFO root fetch - processPackages [folio-migration-tools]: Downloading https://files.pythonhosted.org/packages/66/2b/c5c4c457139350ba20f4d7ca11cd7c4efefa634cca83bc980418d8984555/folio_migration_tools-1.7.9rc1.tar.gz
+[2023-04-14 20:23:13] INFO root fetch - processPackages [dfcx-scrapi]: executing diffoscope
+[2023-04-14 20:23:13] INFO root fetch - processPackages [dfcx-scrapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfcx-scrapi-1.6.2.tar.gz tmp/dfcx-scrapi-1.6.3.tar.gz --markdown 20230414/d/dfcx-scrapi/1.6.2-1.6.3/diff.md --exclude *.pyd
+[2023-04-14 20:23:13] INFO root fetch - processPackages [folio-migration-tools]: Downloading https://files.pythonhosted.org/packages/20/46/b9efd19e54c332f68d22acc3deff2fe8d0b716d8cc8c94f9b27ab2b6a2fe/folio_migration_tools-1.7.9rc2.tar.gz
+[2023-04-14 20:23:13] INFO root fetch - processPackages [folio-migration-tools]: executing diffoscope
+[2023-04-14 20:23:13] INFO root fetch - processPackages [folio-migration-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/folio_migration_tools-1.7.9rc1.tar.gz tmp/folio_migration_tools-1.7.9rc2.tar.gz --markdown 20230414/f/folio-migration-tools/1.7.9rc1-1.7.9rc2/diff.md --exclude *.pyd
+[2023-04-14 20:23:14] INFO root fetch - processPackages [xfaster]: Start processing: artemis-common
+[2023-04-14 20:23:14] INFO root fetch - main [MainThread]: End processing [xfaster]: success
+[2023-04-14 20:23:14] INFO root fetch - processPackages [artemis-common]: New version: [0.2.4b0] Old Version: [0.2.3b0]
+[2023-04-14 20:23:14] INFO root fetch - processPackages [nextline]: Start processing: dash-dndkit
+[2023-04-14 20:23:14] INFO root fetch - main [MainThread]: End processing [nextline]: success
+[2023-04-14 20:23:14] WARNING root fetch - processPackages [dash-dndkit]: Skipping, unable to determine old version
+[2023-04-14 20:23:14] INFO root fetch - processPackages [dash-dndkit]: Start processing: gen3git
+[2023-04-14 20:23:14] INFO root fetch - main [MainThread]: End processing [dash-dndkit] error
+[2023-04-14 20:23:14] INFO root fetch - processPackages [gen3git]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-14 20:23:14] INFO root fetch - processPackages [artemis-common]: Downloading https://files.pythonhosted.org/packages/e6/b7/29f5b0f5e00772347eabd99ac32117a90e3a15a0a8127808c616d93dc49c/artemis-common-0.2.4b0.tar.gz
+[2023-04-14 20:23:14] INFO root fetch - processPackages [gen3git]: Downloading https://files.pythonhosted.org/packages/92/90/101cfea09cc472fbcba6ab1b72d77e0f47e4fa9f93a1378bc05a3521a97b/gen3git-0.7.0.tar.gz
+[2023-04-14 20:23:14] INFO root fetch - processPackages [artemis-common]: executing diffoscope
+[2023-04-14 20:23:14] INFO root fetch - processPackages [artemis-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artemis-common-0.2.3b0.tar.gz tmp/artemis-common-0.2.4b0.tar.gz --markdown 20230414/a/artemis-common/0.2.3b0-0.2.4b0/diff.md --exclude *.pyd
+[2023-04-14 20:23:15] INFO root fetch - processPackages [gen3git]: Downloading https://files.pythonhosted.org/packages/33/c5/b8b509803be166e78215f39f35643e23b602c6ef91e21e893efe93ca6859/gen3git-0.7.1.tar.gz
+[2023-04-14 20:23:15] INFO root fetch - processPackages [dfcx-scrapi]: Start processing: coredb-pgmq-python
+[2023-04-14 20:23:15] INFO root fetch - main [MainThread]: End processing [dfcx-scrapi]: success
+[2023-04-14 20:23:15] INFO root fetch - processPackages [coredb-pgmq-python]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 20:23:15] INFO root fetch - processPackages [gen3git]: executing diffoscope
+[2023-04-14 20:23:15] INFO root fetch - processPackages [gen3git]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen3git-0.7.0.tar.gz tmp/gen3git-0.7.1.tar.gz --markdown 20230414/g/gen3git/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-14 20:23:15] INFO root fetch - processPackages [coredb-pgmq-python]: Downloading https://files.pythonhosted.org/packages/46/dc/80ed01f5dc16cda7c1193c6b3d963170bd3e5acbee25596d52882b5ff5ab/coredb_pgmq_python-0.1.0.tar.gz
+[2023-04-14 20:23:15] INFO root fetch - processPackages [folio-migration-tools]: Start processing: zerobug
+[2023-04-14 20:23:15] INFO root fetch - main [MainThread]: End processing [folio-migration-tools]: success
+[2023-04-14 20:23:15] INFO root fetch - processPackages [zerobug]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-14 20:23:15] INFO root fetch - processPackages [zerobug]: Downloading https://files.pythonhosted.org/packages/01/26/9334addcb2eb91af25832e502ca8747773c2935b69945ade4094037a24ff/zerobug-2.0.4.tar.gz
+[2023-04-14 20:23:15] INFO root fetch - processPackages [coredb-pgmq-python]: Downloading https://files.pythonhosted.org/packages/42/aa/ab300aafde304a2586976d3c063e4c6e80b0715770a9b90219fbb578261d/coredb_pgmq_python-0.1.1.tar.gz
+[2023-04-14 20:23:15] INFO root fetch - processPackages [zerobug]: Downloading https://files.pythonhosted.org/packages/70/2a/660140799f5ae32c3295d807097b58e16596eb45aad21b19907b9fa11879/zerobug-2.0.5.tar.gz
+[2023-04-14 20:23:15] INFO root fetch - processPackages [coredb-pgmq-python]: executing diffoscope
+[2023-04-14 20:23:15] INFO root fetch - processPackages [coredb-pgmq-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coredb_pgmq_python-0.1.0.tar.gz tmp/coredb_pgmq_python-0.1.1.tar.gz --markdown 20230414/c/coredb-pgmq-python/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 20:23:16] INFO root fetch - processPackages [zerobug]: executing diffoscope
+[2023-04-14 20:23:16] INFO root fetch - processPackages [zerobug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerobug-2.0.4.tar.gz tmp/zerobug-2.0.5.tar.gz --markdown 20230414/z/zerobug/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-14 20:23:16] INFO root fetch - processPackages [artemis-common]: Start processing: basaran
+[2023-04-14 20:23:16] INFO root fetch - main [MainThread]: End processing [artemis-common]: success
+[2023-04-14 20:23:16] INFO root fetch - processPackages [basaran]: New version: [0.15.1] Old Version: [0.15.0]
+[2023-04-14 20:23:16] INFO root fetch - processPackages [basaran]: Downloading https://files.pythonhosted.org/packages/34/4e/941cf06ccc8e977ea79cbe24584cb05efc7fd823c3df63b6b6212833f415/basaran-0.15.1.tar.gz
+[2023-04-14 20:23:16] INFO root fetch - processPackages [gen3git]: Start processing: coiled
+[2023-04-14 20:23:16] INFO root fetch - main [MainThread]: End processing [gen3git]: success
+[2023-04-14 20:23:16] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-14 20:23:16] INFO root fetch - processPackages [basaran]: executing diffoscope
+[2023-04-14 20:23:16] INFO root fetch - processPackages [basaran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basaran-0.15.0.tar.gz tmp/basaran-0.15.1.tar.gz --markdown 20230414/b/basaran/0.15.0-0.15.1/diff.md --exclude *.pyd
+[2023-04-14 20:23:16] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-14 20:23:16] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230414/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-14 20:23:16] INFO root fetch - main [MainThread]: End processing [coredb-pgmq-python]: success
+[2023-04-14 20:23:17] INFO root fetch - main [MainThread]: End processing [zerobug]: success
+[2023-04-14 20:23:17] INFO root fetch - main [MainThread]: End processing [basaran]: success
+[2023-04-14 20:23:17] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-04-14 20:23:19] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-14 20:23:19] INFO root fetch - main [MainThread]: Store serial: [17711411]
