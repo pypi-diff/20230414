@@ -11888,3 +11888,37 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 12:43:46] INFO root fetch - main [MainThread]: End processing [lndb_storage]: success
 [2023-04-14 12:43:47] INFO root fetch - main [MainThread]: End processing [supervisely]: success
 [2023-04-14 12:43:47] INFO root fetch - main [MainThread]: Store serial: [17705925]
+[2023-04-14 12:48:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705925]
+[2023-04-14 12:48:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-14 12:48:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yourtools
+[2023-04-14 12:48:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: subdomainlivedetector
+[2023-04-14 12:48:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lamindb
+[2023-04-14 12:48:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyprocessors-afp_entities
+[2023-04-14 12:48:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cis-checks-2023
+[2023-04-14 12:48:55] WARNING root fetch - processPackages [subdomainlivedetector]: Skipping, unable to determine old version
+[2023-04-14 12:48:55] INFO root fetch - processPackages [subdomainlivedetector]: Start processing: create-docker-compose
+[2023-04-14 12:48:55] INFO root fetch - main [MainThread]: End processing [subdomainlivedetector] error
+[2023-04-14 12:48:55] INFO root fetch - processPackages [cis-checks-2023]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-14 12:48:55] INFO root fetch - processPackages [lamindb]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-04-14 12:48:55] INFO root fetch - processPackages [pyprocessors-afp_entities]: New version: [0.5.98] Old Version: [0.5.92]
+[2023-04-14 12:48:55] INFO root fetch - processPackages [yourtools]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-14 12:48:55] WARNING root fetch - processPackages [create-docker-compose]: Skipping, unable to determine old version
+[2023-04-14 12:48:55] INFO root fetch - processPackages [create-docker-compose]: Start processing: hb-test-generator
+[2023-04-14 12:48:55] INFO root fetch - main [MainThread]: End processing [create-docker-compose] error
+[2023-04-14 12:48:55] WARNING root fetch - processPackages [hb-test-generator]: Skipping, unable to determine old version
+[2023-04-14 12:48:55] INFO root fetch - main [MainThread]: End processing [hb-test-generator] error
+[2023-04-14 12:48:55] INFO root fetch - processPackages [pyprocessors-afp_entities]: executing diffoscope
+[2023-04-14 12:48:55] INFO root fetch - processPackages [pyprocessors-afp_entities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprocessors-afp_entities-0.5.92.tar.gz tmp/pyprocessors-afp_entities-0.5.98.tar.gz --markdown 20230414/p/pyprocessors-afp_entities/0.5.92-0.5.98/diff.md --exclude *.pyd
+[2023-04-14 12:48:55] INFO root fetch - processPackages [cis-checks-2023]: Downloading https://files.pythonhosted.org/packages/eb/03/4cda2c99f7187c05f6c1bd52b514030dc957ecbd9c96d481cbac632e5ec5/cis_checks_2023-2.0.9.tar.gz
+[2023-04-14 12:48:55] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/08/2e/dde3b5f850625b63edc755d0c0f6eaf8a372f82f2a6abc68ce99294a1328/yourtools-0.5.2.tar.gz
+[2023-04-14 12:48:55] INFO root fetch - processPackages [cis-checks-2023]: executing diffoscope
+[2023-04-14 12:48:55] INFO root fetch - processPackages [cis-checks-2023]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cis_checks_2023-2.0.8.tar.gz tmp/cis_checks_2023-2.0.9.tar.gz --markdown 20230414/c/cis-checks-2023/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-14 12:48:55] INFO root fetch - processPackages [lamindb]: executing diffoscope
+[2023-04-14 12:48:55] INFO root fetch - processPackages [lamindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb-0.9.4.tar.gz tmp/lamindb-0.9.6.tar.gz --markdown 20230414/l/lamindb/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-04-14 12:48:56] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-14 12:48:56] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.5.1.tar.gz tmp/yourtools-0.5.2.tar.gz --markdown 20230414/y/yourtools/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-14 12:48:56] INFO root fetch - main [MainThread]: End processing [cis-checks-2023]: success
+[2023-04-14 12:48:57] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-14 12:48:57] INFO root fetch - main [MainThread]: End processing [lamindb]: success
+[2023-04-14 12:48:58] INFO root fetch - main [MainThread]: End processing [pyprocessors-afp_entities]: success
+[2023-04-14 12:48:58] INFO root fetch - main [MainThread]: Store serial: [17705985]
