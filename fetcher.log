@@ -22447,3 +22447,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 23:12:33] INFO root fetch - main [MainThread]: End processing [airbyte-cdk]: success
 [2023-04-14 23:12:34] INFO root fetch - main [MainThread]: End processing [shillelagh]: success
 [2023-04-14 23:12:34] INFO root fetch - main [MainThread]: Store serial: [17712961]
+[2023-04-14 23:17:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712961]
+[2023-04-14 23:17:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-14 23:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discord-advert-framework
+[2023-04-14 23:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatarena
+[2023-04-14 23:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mount
+[2023-04-14 23:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellworld
+[2023-04-14 23:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: turbo-queue
+[2023-04-14 23:17:42] INFO root fetch - processPackages [chatarena]: New version: [0.1.8.dev0] Old Version: [0.1.8]
+[2023-04-14 23:17:42] INFO root fetch - processPackages [discord-advert-framework]: New version: [2.6.2] Old Version: [2.6.0]
+[2023-04-14 23:17:42] INFO root fetch - processPackages [mount]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 23:17:42] INFO root fetch - processPackages [turbo-queue]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-14 23:17:42] INFO root fetch - processPackages [cellworld]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 23:17:42] INFO root fetch - processPackages [discord-advert-framework]: Downloading https://files.pythonhosted.org/packages/91/8c/f24ea56d1a71a4a9d5e5d151d99b0864f6aceecb0665cadce44dcf24aa29/discord-advert-framework-2.6.0.tar.gz
+[2023-04-14 23:17:42] INFO root fetch - processPackages [cellworld]: executing diffoscope
+[2023-04-14 23:17:42] INFO root fetch - processPackages [cellworld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellworld-0.0.98.tar.gz tmp/cellworld-0.0.99.tar.gz --markdown 20230414/c/cellworld/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 23:17:42] INFO root fetch - processPackages [mount]: Downloading https://files.pythonhosted.org/packages/9f/45/5a3f61fa74364b1f9ef6af404ff88c1aa1d8e0eca77b4d88b9ea7c336e75/mount-0.1.0-py3-none-any.whl
+[2023-04-14 23:17:42] INFO root fetch - processPackages [turbo-queue]: Downloading https://files.pythonhosted.org/packages/70/6c/e1e21c4b4ffd973ff6c4190f2d736250fea458275578b337ab63104f31c6/turbo_queue-0.5.1.tar.gz
+[2023-04-14 23:17:42] WARNING root fetch - processPackages [discord-advert-framework]: Skipping package: exceeds size limit 17686720>=10485760
+[2023-04-14 23:17:42] INFO root fetch - processPackages [discord-advert-framework]: Start processing: openabc
+[2023-04-14 23:17:42] INFO root fetch - main [MainThread]: End processing [discord-advert-framework] error
+[2023-04-14 23:17:42] INFO root fetch - processPackages [openabc]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 23:17:43] INFO root fetch - processPackages [chatarena]: Downloading https://files.pythonhosted.org/packages/86/e0/c9e6be405708dabdbd9d89ab161d23bb0679e8283482beb136bc5b5982ac/chatarena-0.1.8.dev0.tar.gz
+[2023-04-14 23:17:43] WARNING root fetch - processPackages [openabc]: fallback to get urls: [1.0.0]
+[2023-04-14 23:17:43] WARNING root fetch - processPackages [openabc]: None
+[2023-04-14 23:17:43] INFO root fetch - processPackages [chatarena]: executing diffoscope
+[2023-04-14 23:17:43] INFO root fetch - processPackages [chatarena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatarena-0.1.8.tar.gz tmp/chatarena-0.1.8.dev0.tar.gz --markdown 20230414/c/chatarena/0.1.8-0.1.8.dev0/diff.md --exclude *.pyd
+[2023-04-14 23:17:43] WARNING root fetch - processPackages [openabc]: None
+[2023-04-14 23:17:43] INFO root fetch - processPackages [mount]: Downloading https://files.pythonhosted.org/packages/c1/b5/d39d12fb81c2ae6a5ec7f226e159d083dfc2c7c08a2ab31f0be55974dca3/mount-0.1.1.tar.gz
+[2023-04-14 23:17:43] WARNING root fetch - processPackages [openabc]: unable to get url for both version [1.0.0]
+[2023-04-14 23:17:43] WARNING root fetch - processPackages [openabc]: None
+[2023-04-14 23:17:43] INFO root fetch - main [MainThread]: End processing [openabc] error
+[2023-04-14 23:17:43] INFO root fetch - processPackages [turbo-queue]: Downloading https://files.pythonhosted.org/packages/27/c3/c8d386b2c21bddf0de4891dc04665c3283607732e3fef5ab85721236b2f7/turbo_queue-0.5.2.tar.gz
+[2023-04-14 23:17:43] INFO root fetch - processPackages [mount]: executing diffoscope
+[2023-04-14 23:17:43] INFO root fetch - processPackages [mount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mount-0.1.0-py3-none-any.whl.zip tmp/mount-0.1.1.tar.gz --markdown 20230414/m/mount/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 23:17:43] INFO root fetch - processPackages [turbo-queue]: executing diffoscope
+[2023-04-14 23:17:43] INFO root fetch - processPackages [turbo-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_queue-0.5.1.tar.gz tmp/turbo_queue-0.5.2.tar.gz --markdown 20230414/t/turbo-queue/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-14 23:17:43] INFO root fetch - main [MainThread]: End processing [cellworld]: success
+[2023-04-14 23:17:44] INFO root fetch - main [MainThread]: End processing [mount]: success
+[2023-04-14 23:17:44] INFO root fetch - main [MainThread]: End processing [turbo-queue]: success
+[2023-04-14 23:17:44] INFO root fetch - main [MainThread]: End processing [chatarena]: success
+[2023-04-14 23:17:44] INFO root fetch - main [MainThread]: Store serial: [17712991]
