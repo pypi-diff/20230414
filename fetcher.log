@@ -12145,3 +12145,46 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 13:09:42] INFO root fetch - main [MainThread]: End processing [ipyautoui]: success
 [2023-04-14 13:09:48] INFO root fetch - main [MainThread]: End processing [dao-analyzer]: success
 [2023-04-14 13:09:48] INFO root fetch - main [MainThread]: Store serial: [17706183]
+[2023-04-14 13:14:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706183]
+[2023-04-14 13:14:55] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-14 13:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nudecrawler
+[2023-04-14 13:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: subdomaindetectorstatus
+[2023-04-14 13:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: orion-nais
+[2023-04-14 13:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dracoon
+[2023-04-14 13:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chanfig
+[2023-04-14 13:14:55] INFO root fetch - processPackages [nudecrawler]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 13:14:55] WARNING root fetch - processPackages [subdomaindetectorstatus]: Skipping, unable to determine old version
+[2023-04-14 13:14:55] INFO root fetch - processPackages [chanfig]: New version: [0.0.9.post7] Old Version: [0.0.9.post5]
+[2023-04-14 13:14:55] INFO root fetch - processPackages [subdomaindetectorstatus]: Start processing: moto
+[2023-04-14 13:14:55] INFO root fetch - main [MainThread]: End processing [subdomaindetectorstatus] error
+[2023-04-14 13:14:55] INFO root fetch - processPackages [orion-nais]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 13:14:55] INFO root fetch - processPackages [dracoon]: New version: [1.9.0] Old Version: [1.8.4]
+[2023-04-14 13:14:55] INFO root fetch - processPackages [moto]: New version: [4.1.8.dev9] Old Version: [4.1.8.dev8]
+[2023-04-14 13:14:55] INFO root fetch - processPackages [orion-nais]: Downloading https://files.pythonhosted.org/packages/1c/cb/fa8498bb480b569a26c25dc26dabb13d3a454fa3817b144cbda94089769a/orion_nais-0.1.0.tar.gz
+[2023-04-14 13:14:55] INFO root fetch - processPackages [dracoon]: Downloading https://files.pythonhosted.org/packages/6b/8d/e1378e3e8bd27f1971f09d9ab5f8fb4a4aee147ccfa5a5029a4f744512fd/dracoon-1.8.4.tar.gz
+[2023-04-14 13:14:56] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-14 13:14:56] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.8.dev8.tar.gz tmp/moto-4.1.8.dev9.tar.gz --markdown 20230414/m/moto/4.1.8.dev8-4.1.8.dev9/diff.md --exclude *.pyd
+[2023-04-14 13:14:56] INFO root fetch - processPackages [chanfig]: executing diffoscope
+[2023-04-14 13:14:56] INFO root fetch - processPackages [chanfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chanfig-0.0.9.post5.tar.gz tmp/chanfig-0.0.9.post7.tar.gz --markdown 20230414/c/chanfig/0.0.9.post5-0.0.9.post7/diff.md --exclude *.pyd
+[2023-04-14 13:14:56] INFO root fetch - processPackages [nudecrawler]: executing diffoscope
+[2023-04-14 13:14:56] INFO root fetch - processPackages [nudecrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudecrawler-0.3.8.tar.gz tmp/nudecrawler-0.3.9.tar.gz --markdown 20230414/n/nudecrawler/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 13:14:56] INFO root fetch - processPackages [orion-nais]: Downloading https://files.pythonhosted.org/packages/3e/c6/4fbb6046c4832359df6877d455b83079784f2878414bf1cc6c53952ca931/orion_nais-0.1.1.tar.gz
+[2023-04-14 13:14:56] INFO root fetch - processPackages [orion-nais]: executing diffoscope
+[2023-04-14 13:14:56] INFO root fetch - processPackages [orion-nais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orion_nais-0.1.0.tar.gz tmp/orion_nais-0.1.1.tar.gz --markdown 20230414/o/orion-nais/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 13:14:56] INFO root fetch - processPackages [dracoon]: Downloading https://files.pythonhosted.org/packages/02/a2/31b610bc5833402d97dcc06f32513cdf107f66a002102b12838f314d164d/dracoon-1.9.0.tar.gz
+[2023-04-14 13:14:56] INFO root fetch - processPackages [dracoon]: executing diffoscope
+[2023-04-14 13:14:56] INFO root fetch - processPackages [dracoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dracoon-1.8.4.tar.gz tmp/dracoon-1.9.0.tar.gz --markdown 20230414/d/dracoon/1.8.4-1.9.0/diff.md --exclude *.pyd
+[2023-04-14 13:14:57] INFO root fetch - processPackages [nudecrawler]: Start processing: sourcery-nightly
+[2023-04-14 13:14:57] INFO root fetch - main [MainThread]: End processing [nudecrawler]: success
+[2023-04-14 13:14:57] INFO root fetch - processPackages [chanfig]: Start processing: text-quality
+[2023-04-14 13:14:57] INFO root fetch - main [MainThread]: End processing [chanfig]: success
+[2023-04-14 13:14:57] INFO root fetch - processPackages [sourcery-nightly]: New version: [1.2.0] Old Version: [1.1.1b22]
+[2023-04-14 13:14:57] WARNING root fetch - processPackages [text-quality]: Skipping, unable to determine old version
+[2023-04-14 13:14:57] INFO root fetch - main [MainThread]: End processing [text-quality] error
+[2023-04-14 13:14:57] INFO root fetch - main [MainThread]: End processing [orion-nais]: success
+[2023-04-14 13:14:57] INFO root fetch - processPackages [sourcery-nightly]: Downloading https://files.pythonhosted.org/packages/bc/22/48d56d0341bec0079c81d885be4fbabfc366945dff8f3d2229a047268739/sourcery_nightly-1.1.1b22-py2.py3-none-win_amd64.whl
+[2023-04-14 13:14:57] WARNING root fetch - processPackages [sourcery-nightly]: Skipping package: exceeds size limit 58328708>=10485760
+[2023-04-14 13:14:57] INFO root fetch - main [MainThread]: End processing [sourcery-nightly] error
+[2023-04-14 13:14:58] INFO root fetch - main [MainThread]: End processing [dracoon]: success
+[2023-04-14 13:15:28] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-04-14 13:15:28] INFO root fetch - main [MainThread]: Store serial: [17706219]
