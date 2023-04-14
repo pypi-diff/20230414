@@ -13887,3 +13887,97 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 14:57:24] INFO root fetch - main [MainThread]: End processing [cir4mics]: success
 [2023-04-14 14:57:28] INFO root fetch - main [MainThread]: End processing [capellambse]: success
 [2023-04-14 14:57:28] INFO root fetch - main [MainThread]: Store serial: [17707336]
+[2023-04-14 15:02:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17707336]
+[2023-04-14 15:02:36] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-14 15:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphql-service-framework
+[2023-04-14 15:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compilecls
+[2023-04-14 15:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fca-algorithms
+[2023-04-14 15:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inductiva
+[2023-04-14 15:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-04-14 15:02:36] INFO root fetch - processPackages [fca-algorithms]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-14 15:02:36] INFO root fetch - processPackages [graphql-service-framework]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 15:02:36] INFO root fetch - processPackages [inductiva]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 15:02:36] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-14 15:02:36] INFO root fetch - processPackages [compilecls]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-14 15:02:36] INFO root fetch - processPackages [graphql-service-framework]: executing diffoscope
+[2023-04-14 15:02:36] INFO root fetch - processPackages [graphql-service-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_service_framework-1.0.8.tar.gz tmp/graphql_service_framework-1.0.9.tar.gz --markdown 20230414/g/graphql-service-framework/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 15:02:36] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-04-14 15:02:36] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.4.8-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.4.9-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230414/f/fbgemm-gpu-nightly-cpu/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-14 15:02:36] INFO root fetch - processPackages [inductiva]: Downloading https://files.pythonhosted.org/packages/66/8c/41e6f743b1cb237403e96113a0d1f57bd8b76d7462c0d42293e2ea2d7359/inductiva-0.0.9.tar.gz
+[2023-04-14 15:02:37] INFO root fetch - processPackages [fca-algorithms]: Downloading https://files.pythonhosted.org/packages/81/bf/6a1de6a30781abb2ed0dd987b1a6c4a6741b0271eb329835dc2a45e6b2a1/fca-algorithms-0.2.2.tar.gz
+[2023-04-14 15:02:37] INFO root fetch - processPackages [compilecls]: Downloading https://files.pythonhosted.org/packages/59/81/4d9e86d78d59d2f4e50d029b58b2e8e7b28d3b26f86907f7c43a6e8fdf80/compilecls-1.0.5.tar.gz
+[2023-04-14 15:02:37] INFO root fetch - processPackages [inductiva]: executing diffoscope
+[2023-04-14 15:02:37] INFO root fetch - processPackages [inductiva]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inductiva-0.0.8.tar.gz tmp/inductiva-0.0.9.tar.gz --markdown 20230414/i/inductiva/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 15:02:37] INFO root fetch - processPackages [compilecls]: executing diffoscope
+[2023-04-14 15:02:37] INFO root fetch - processPackages [compilecls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compilecls-1.0.4.tar.gz tmp/compilecls-1.0.5.tar.gz --markdown 20230414/c/compilecls/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-14 15:02:37] INFO root fetch - processPackages [fca-algorithms]: Downloading https://files.pythonhosted.org/packages/9b/e4/e8554267a34c60e087ff3323c7a908d49679f890b305afdad5510efc61e1/fca-algorithms-0.2.3.tar.gz
+[2023-04-14 15:02:37] INFO root fetch - processPackages [fca-algorithms]: executing diffoscope
+[2023-04-14 15:02:37] INFO root fetch - processPackages [fca-algorithms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fca-algorithms-0.2.2.tar.gz tmp/fca-algorithms-0.2.3.tar.gz --markdown 20230414/f/fca-algorithms/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-14 15:02:37] INFO root fetch - processPackages [graphql-service-framework]: Start processing: dask-histogram
+[2023-04-14 15:02:37] INFO root fetch - main [MainThread]: End processing [graphql-service-framework]: success
+[2023-04-14 15:02:38] INFO root fetch - processPackages [dask-histogram]: New version: [2023.4.1] Old Version: [2023.4.0]
+[2023-04-14 15:02:38] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Start processing: langchain-sap-llm
+[2023-04-14 15:02:38] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-04-14 15:02:38] WARNING root fetch - processPackages [langchain-sap-llm]: Skipping, unable to determine old version
+[2023-04-14 15:02:38] INFO root fetch - processPackages [langchain-sap-llm]: Start processing: mdxpy
+[2023-04-14 15:02:38] INFO root fetch - main [MainThread]: End processing [langchain-sap-llm] error
+[2023-04-14 15:02:38] INFO root fetch - processPackages [mdxpy]: New version: [1.3] Old Version: [1.2]
+[2023-04-14 15:02:38] INFO root fetch - processPackages [compilecls]: Start processing: gptwrite
+[2023-04-14 15:02:38] INFO root fetch - main [MainThread]: End processing [compilecls]: success
+[2023-04-14 15:02:38] INFO root fetch - processPackages [dask-histogram]: Downloading https://files.pythonhosted.org/packages/0b/a1/15912029d160ea618448bef0e3870cacccadd88a49d50df4e0cfc85ddaf6/dask_histogram-2023.4.1.tar.gz
+[2023-04-14 15:02:38] INFO root fetch - processPackages [gptwrite]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 15:02:38] INFO root fetch - processPackages [mdxpy]: Downloading https://files.pythonhosted.org/packages/46/72/e16ebcbfcf4af46cf03879f44e8e2b48220e024095ef3826b61dd63e05db/mdxpy-1.2.tar.gz
+[2023-04-14 15:02:38] INFO root fetch - processPackages [dask-histogram]: executing diffoscope
+[2023-04-14 15:02:38] INFO root fetch - processPackages [dask-histogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask_histogram-2023.4.0.tar.gz tmp/dask_histogram-2023.4.1.tar.gz --markdown 20230414/d/dask-histogram/2023.4.0-2023.4.1/diff.md --exclude *.pyd
+[2023-04-14 15:02:38] INFO root fetch - processPackages [gptwrite]: Downloading https://files.pythonhosted.org/packages/05/46/c899266bab5b64e3bc4574c71defcddda119f8e8f82374138f6276c6ee9a/gptwrite-0.1.0.tar.gz
+[2023-04-14 15:02:38] INFO root fetch - processPackages [fca-algorithms]: Start processing: vagas-cfs
+[2023-04-14 15:02:38] INFO root fetch - main [MainThread]: End processing [fca-algorithms]: success
+[2023-04-14 15:02:38] WARNING root fetch - processPackages [vagas-cfs]: Skipping, unable to determine old version
+[2023-04-14 15:02:38] INFO root fetch - processPackages [vagas-cfs]: Start processing: lusid-scheduler-sdk-preview
+[2023-04-14 15:02:38] INFO root fetch - main [MainThread]: End processing [vagas-cfs] error
+[2023-04-14 15:02:38] INFO root fetch - processPackages [lusid-scheduler-sdk-preview]: New version: [0.0.787] Old Version: [0.0.786]
+[2023-04-14 15:02:38] INFO root fetch - processPackages [inductiva]: Start processing: molgraph
+[2023-04-14 15:02:38] INFO root fetch - main [MainThread]: End processing [inductiva]: success
+[2023-04-14 15:02:38] INFO root fetch - processPackages [molgraph]: New version: [0.3.0] Old Version: [0.2.4]
+[2023-04-14 15:02:38] INFO root fetch - processPackages [mdxpy]: Downloading https://files.pythonhosted.org/packages/5d/51/090e6a2260e3b50a78093eee80f1157bed79d7f3efed07dce6659ee0b713/mdxpy-1.3.tar.gz
+[2023-04-14 15:02:38] INFO root fetch - processPackages [gptwrite]: Downloading https://files.pythonhosted.org/packages/a3/cb/3dfd4239a260c715b31e4aab009a7bcd31e985523c07a28ee4ff66ce520d/gptwrite-0.1.1.tar.gz
+[2023-04-14 15:02:38] INFO root fetch - processPackages [lusid-scheduler-sdk-preview]: Downloading https://files.pythonhosted.org/packages/1c/3a/4d08f60323c580b2a7e407603dd3a6b4f42fa87bfab7da6d155456f9cd77/lusid-scheduler-sdk-preview-0.0.786.tar.gz
+[2023-04-14 15:02:38] INFO root fetch - processPackages [molgraph]: Downloading https://files.pythonhosted.org/packages/ba/89/1f31d696a52d6b63372d196ebcd0d85a9362fa368603bf9ca06209f16762/molgraph-0.2.4.tar.gz
+[2023-04-14 15:02:38] INFO root fetch - processPackages [mdxpy]: executing diffoscope
+[2023-04-14 15:02:38] INFO root fetch - processPackages [mdxpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdxpy-1.2.tar.gz tmp/mdxpy-1.3.tar.gz --markdown 20230414/m/mdxpy/1.2-1.3/diff.md --exclude *.pyd
+[2023-04-14 15:02:39] INFO root fetch - processPackages [gptwrite]: executing diffoscope
+[2023-04-14 15:02:39] INFO root fetch - processPackages [gptwrite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptwrite-0.1.0.tar.gz tmp/gptwrite-0.1.1.tar.gz --markdown 20230414/g/gptwrite/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 15:02:39] INFO root fetch - processPackages [lusid-scheduler-sdk-preview]: Downloading https://files.pythonhosted.org/packages/8e/ec/0efb753d1e2775e524bcc32fa0a8dbe901d9f961c180fb71ca5eed91391c/lusid-scheduler-sdk-preview-0.0.787.tar.gz
+[2023-04-14 15:02:39] INFO root fetch - processPackages [molgraph]: Downloading https://files.pythonhosted.org/packages/40/bc/678d9738cd64ee835b6828e8129803a9995c07dd437030a9f772526eec35/molgraph-0.3.0.tar.gz
+[2023-04-14 15:02:39] INFO root fetch - processPackages [lusid-scheduler-sdk-preview]: executing diffoscope
+[2023-04-14 15:02:39] INFO root fetch - processPackages [lusid-scheduler-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-scheduler-sdk-preview-0.0.786.tar.gz tmp/lusid-scheduler-sdk-preview-0.0.787.tar.gz --markdown 20230414/l/lusid-scheduler-sdk-preview/0.0.786-0.0.787/diff.md --exclude *.pyd
+[2023-04-14 15:02:39] INFO root fetch - processPackages [molgraph]: executing diffoscope
+[2023-04-14 15:02:39] INFO root fetch - processPackages [molgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molgraph-0.2.4.tar.gz tmp/molgraph-0.3.0.tar.gz --markdown 20230414/m/molgraph/0.2.4-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 15:02:39] INFO root fetch - processPackages [dask-histogram]: Start processing: bibtexautocomplete
+[2023-04-14 15:02:39] INFO root fetch - main [MainThread]: End processing [dask-histogram]: success
+[2023-04-14 15:02:39] INFO root fetch - processPackages [bibtexautocomplete]: New version: [1.2.0] Old Version: [1.1.8]
+[2023-04-14 15:02:39] INFO root fetch - processPackages [bibtexautocomplete]: Downloading https://files.pythonhosted.org/packages/99/43/f15dcd746d146bae91136e676b4d5ace3d7aa5fde883a780c7a153333765/bibtexautocomplete-1.1.8.tar.gz
+[2023-04-14 15:02:40] INFO root fetch - processPackages [bibtexautocomplete]: Downloading https://files.pythonhosted.org/packages/c8/6d/81fdfe5aef92ed516998ba7d19029e75071f5dd02f73f7cd945a1d569e0a/bibtexautocomplete-1.2.0.tar.gz
+[2023-04-14 15:02:40] INFO root fetch - processPackages [gptwrite]: Start processing: npe2
+[2023-04-14 15:02:40] INFO root fetch - main [MainThread]: End processing [gptwrite]: success
+[2023-04-14 15:02:40] INFO root fetch - processPackages [npe2]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-04-14 15:02:40] INFO root fetch - processPackages [bibtexautocomplete]: executing diffoscope
+[2023-04-14 15:02:40] INFO root fetch - processPackages [bibtexautocomplete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibtexautocomplete-1.1.8.tar.gz tmp/bibtexautocomplete-1.2.0.tar.gz --markdown 20230414/b/bibtexautocomplete/1.1.8-1.2.0/diff.md --exclude *.pyd
+[2023-04-14 15:02:40] INFO root fetch - processPackages [npe2]: Downloading https://files.pythonhosted.org/packages/6e/ac/aa4f236c2473825c193e184d92f40468993778537307f7c965d96ae45a81/npe2-0.6.2.tar.gz
+[2023-04-14 15:02:40] INFO root fetch - processPackages [mdxpy]: Start processing: enough
+[2023-04-14 15:02:40] INFO root fetch - main [MainThread]: End processing [mdxpy]: success
+[2023-04-14 15:02:40] INFO root fetch - processPackages [enough]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-04-14 15:02:40] INFO root fetch - processPackages [npe2]: Downloading https://files.pythonhosted.org/packages/a9/08/5f30a5123ac7a0c8e1643c6544d4197a3ad5ced925decfc91150bc50bc72/npe2-0.7.0.tar.gz
+[2023-04-14 15:02:40] INFO root fetch - processPackages [enough]: Downloading https://files.pythonhosted.org/packages/50/9b/6ea82fdea9b2845e199d7fad429c0d59e5051c584d2ebc8dd1bc8994d024/enough-2.2.8.tar.gz
+[2023-04-14 15:02:40] INFO root fetch - processPackages [npe2]: executing diffoscope
+[2023-04-14 15:02:40] INFO root fetch - processPackages [npe2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npe2-0.6.2.tar.gz tmp/npe2-0.7.0.tar.gz --markdown 20230414/n/npe2/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-04-14 15:02:40] INFO root fetch - main [MainThread]: End processing [molgraph]: success
+[2023-04-14 15:02:41] INFO root fetch - main [MainThread]: End processing [lusid-scheduler-sdk-preview]: success
+[2023-04-14 15:02:41] INFO root fetch - main [MainThread]: End processing [bibtexautocomplete]: success
+[2023-04-14 15:02:41] INFO root fetch - processPackages [enough]: Downloading https://files.pythonhosted.org/packages/4f/81/999139ff303999e3aaee84084e050f5640abeea079d6f770bd3997370e16/enough-2.2.9.tar.gz
+[2023-04-14 15:02:43] INFO root fetch - processPackages [enough]: executing diffoscope
+[2023-04-14 15:02:43] INFO root fetch - processPackages [enough]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enough-2.2.8.tar.gz tmp/enough-2.2.9.tar.gz --markdown 20230414/e/enough/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-04-14 15:02:43] INFO root fetch - main [MainThread]: End processing [npe2]: success
+[2023-04-14 15:05:43] ERROR root fetch - processPackages [enough]: Timeout during execution of pkgdiff
+[2023-04-14 15:05:43] INFO root fetch - main [MainThread]: End processing [enough] error
+[2023-04-14 15:05:43] INFO root fetch - main [MainThread]: Store serial: [17707393]
