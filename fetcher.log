@@ -17003,3 +17003,88 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 17:39:09] INFO root fetch - main [MainThread]: End processing [gravity]: success
 [2023-04-14 17:39:32] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
 [2023-04-14 17:39:32] INFO root fetch - main [MainThread]: Store serial: [17709287]
+[2023-04-14 17:44:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17709287]
+[2023-04-14 17:44:41] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-14 17:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beamer-slider
+[2023-04-14 17:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bodo-jupyterlab
+[2023-04-14 17:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastspell
+[2023-04-14 17:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nowcasting-datamodel
+[2023-04-14 17:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ecoindex-cli
+[2023-04-14 17:44:41] INFO root fetch - processPackages [bodo-jupyterlab]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-04-14 17:44:41] INFO root fetch - processPackages [beamer-slider]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 17:44:41] INFO root fetch - processPackages [fastspell]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-14 17:44:41] INFO root fetch - processPackages [ecoindex-cli]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-04-14 17:44:41] INFO root fetch - processPackages [nowcasting-datamodel]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-14 17:44:41] INFO root fetch - processPackages [ecoindex-cli]: executing diffoscope
+[2023-04-14 17:44:41] INFO root fetch - processPackages [ecoindex-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecoindex-cli-2.8.1.tar.gz tmp/ecoindex-cli-2.9.0.tar.gz --markdown 20230414/e/ecoindex-cli/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-04-14 17:44:41] INFO root fetch - processPackages [beamer-slider]: Downloading https://files.pythonhosted.org/packages/d9/59/f1d14eb325bf3f6806b470fd808c364522b711906ba00ad8fc0ed716c75f/beamer-slider-0.1.8.tar.gz
+[2023-04-14 17:44:41] INFO root fetch - processPackages [fastspell]: Downloading https://files.pythonhosted.org/packages/7e/56/d267cf0580f1e727a9b2729a5679e35f8bf4e7fda0865e855fbb4dd7f8c1/fastspell-0.8.0.tar.gz
+[2023-04-14 17:44:41] INFO root fetch - processPackages [nowcasting-datamodel]: Downloading https://files.pythonhosted.org/packages/43/d6/f33453e702924570d95a38f3f45238a7e98daffce89c091135ef10b7393b/nowcasting_datamodel-1.3.4.tar.gz
+[2023-04-14 17:44:41] INFO root fetch - processPackages [nowcasting-datamodel]: executing diffoscope
+[2023-04-14 17:44:41] INFO root fetch - processPackages [nowcasting-datamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nowcasting_datamodel-1.3.3.tar.gz tmp/nowcasting_datamodel-1.3.4.tar.gz --markdown 20230414/n/nowcasting-datamodel/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-14 17:44:41] INFO root fetch - processPackages [bodo-jupyterlab]: executing diffoscope
+[2023-04-14 17:44:41] INFO root fetch - processPackages [bodo-jupyterlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bodo_jupyterlab-1.7.0.tar.gz tmp/bodo_jupyterlab-1.9.0.tar.gz --markdown 20230414/b/bodo-jupyterlab/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-14 17:44:42] INFO root fetch - processPackages [fastspell]: Downloading https://files.pythonhosted.org/packages/b9/16/982040fea1e3de767b6b9d6b16dafe69ba9fd0c0e7317a794e31276db80d/fastspell-0.9.0.tar.gz
+[2023-04-14 17:44:42] INFO root fetch - processPackages [beamer-slider]: Downloading https://files.pythonhosted.org/packages/93/ae/5cacf262cb7248d6b7f0bf540e58f1cc53b607cdac5b59bfe74501a4bed4/beamer-slider-0.1.9.tar.gz
+[2023-04-14 17:44:42] INFO root fetch - processPackages [fastspell]: executing diffoscope
+[2023-04-14 17:44:42] INFO root fetch - processPackages [fastspell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastspell-0.8.0.tar.gz tmp/fastspell-0.9.0.tar.gz --markdown 20230414/f/fastspell/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 17:44:42] INFO root fetch - processPackages [beamer-slider]: executing diffoscope
+[2023-04-14 17:44:42] INFO root fetch - processPackages [beamer-slider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beamer-slider-0.1.8.tar.gz tmp/beamer-slider-0.1.9.tar.gz --markdown 20230414/b/beamer-slider/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 17:44:42] INFO root fetch - processPackages [ecoindex-cli]: Start processing: relatio
+[2023-04-14 17:44:42] INFO root fetch - main [MainThread]: End processing [ecoindex-cli]: success
+[2023-04-14 17:44:42] INFO root fetch - processPackages [relatio]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-14 17:44:43] INFO root fetch - processPackages [relatio]: Downloading https://files.pythonhosted.org/packages/72/c1/1e2b310c584dc5349b64e886777dee5066798a57d492c1ea7a3dc3ffbb28/relatio-0.3.0.tar.gz
+[2023-04-14 17:44:43] INFO root fetch - processPackages [fastspell]: Start processing: hlatypingtools
+[2023-04-14 17:44:43] INFO root fetch - main [MainThread]: End processing [fastspell]: success
+[2023-04-14 17:44:43] INFO root fetch - processPackages [relatio]: executing diffoscope
+[2023-04-14 17:44:43] INFO root fetch - processPackages [relatio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relatio-0.2.1.tar.gz tmp/relatio-0.3.0.tar.gz --markdown 20230414/r/relatio/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-14 17:44:43] INFO root fetch - processPackages [hlatypingtools]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 17:44:43] INFO root fetch - processPackages [beamer-slider]: Start processing: simplebox
+[2023-04-14 17:44:43] INFO root fetch - main [MainThread]: End processing [beamer-slider]: success
+[2023-04-14 17:44:43] WARNING root fetch - processPackages [simplebox]: Skipping, unable to determine old version
+[2023-04-14 17:44:43] INFO root fetch - processPackages [simplebox]: Start processing: lqs-client
+[2023-04-14 17:44:43] INFO root fetch - main [MainThread]: End processing [simplebox] error
+[2023-04-14 17:44:43] INFO root fetch - processPackages [lqs-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 17:44:43] INFO root fetch - processPackages [hlatypingtools]: Downloading https://files.pythonhosted.org/packages/9f/83/8e323e0a707eaa6bf0e31b5b433fe3fd4204350f06bfb90c9bfde0ca76f7/hlatypingtools-0.1.0.tar.gz
+[2023-04-14 17:44:43] INFO root fetch - processPackages [hlatypingtools]: Downloading https://files.pythonhosted.org/packages/4d/ed/28d05da809956d87099c17403618c36b7007a41d790476a37f14a00cf46c/hlatypingtools-0.1.1.tar.gz
+[2023-04-14 17:44:43] INFO root fetch - processPackages [hlatypingtools]: executing diffoscope
+[2023-04-14 17:44:43] INFO root fetch - processPackages [hlatypingtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hlatypingtools-0.1.0.tar.gz tmp/hlatypingtools-0.1.1.tar.gz --markdown 20230414/h/hlatypingtools/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 17:44:43] INFO root fetch - processPackages [lqs-client]: executing diffoscope
+[2023-04-14 17:44:43] INFO root fetch - processPackages [lqs-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lqs-client-0.0.8.tar.gz tmp/lqs-client-0.0.9.tar.gz --markdown 20230414/l/lqs-client/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 17:44:44] INFO root fetch - processPackages [relatio]: Start processing: coiled
+[2023-04-14 17:44:44] INFO root fetch - main [MainThread]: End processing [relatio]: success
+[2023-04-14 17:44:44] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-14 17:44:44] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-14 17:44:44] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230414/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-14 17:44:44] INFO root fetch - processPackages [hlatypingtools]: Start processing: codesnipper
+[2023-04-14 17:44:44] INFO root fetch - main [MainThread]: End processing [hlatypingtools]: success
+[2023-04-14 17:44:44] INFO root fetch - processPackages [lqs-client]: Start processing: Finance-Jindowin
+[2023-04-14 17:44:44] INFO root fetch - main [MainThread]: End processing [lqs-client]: success
+[2023-04-14 17:44:44] INFO root fetch - processPackages [codesnipper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 17:44:44] INFO root fetch - processPackages [Finance-Jindowin]: New version: [1.2.5.1] Old Version: [1.2.5]
+[2023-04-14 17:44:45] INFO root fetch - processPackages [codesnipper]: Downloading https://files.pythonhosted.org/packages/65/d9/de05aee394ce1c78ccb349444481193ec865390ada7522b386dd36d2df9f/codesnipper-0.1.8.tar.gz
+[2023-04-14 17:44:45] INFO root fetch - processPackages [Finance-Jindowin]: Downloading https://files.pythonhosted.org/packages/50/20/2e5fe6a40a2f8951cfd0f176323c0c02af3e2486ca53c1b04019475ce4c5/Finance-Jindowin-1.2.5.tar.gz
+[2023-04-14 17:44:45] INFO root fetch - processPackages [nowcasting-datamodel]: Start processing: pulumi-google-native
+[2023-04-14 17:44:45] INFO root fetch - main [MainThread]: End processing [nowcasting-datamodel]: success
+[2023-04-14 17:44:45] INFO root fetch - processPackages [pulumi-google-native]: New version: [0.9.1a1638807539] Old Version: [0.9.1a1638555770]
+[2023-04-14 17:44:45] INFO root fetch - processPackages [codesnipper]: Downloading https://files.pythonhosted.org/packages/e3/a7/e4e37561040f5cfb9ce25a151c9d8d2ef413ac81e59f80f16350ceab4b94/codesnipper-0.1.9.tar.gz
+[2023-04-14 17:44:45] INFO root fetch - processPackages [codesnipper]: executing diffoscope
+[2023-04-14 17:44:45] INFO root fetch - processPackages [codesnipper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codesnipper-0.1.8.tar.gz tmp/codesnipper-0.1.9.tar.gz --markdown 20230414/c/codesnipper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 17:44:45] INFO root fetch - processPackages [pulumi-google-native]: executing diffoscope
+[2023-04-14 17:44:45] INFO root fetch - processPackages [pulumi-google-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_google_native-0.9.1a1638555770.tar.gz tmp/pulumi_google_native-0.9.1a1638807539.tar.gz --markdown 20230414/p/pulumi-google-native/0.9.1a1638555770-0.9.1a1638807539/diff.md --exclude *.pyd
+[2023-04-14 17:44:45] INFO root fetch - processPackages [Finance-Jindowin]: Downloading https://files.pythonhosted.org/packages/e3/b5/0cb71fa64e64ca514d43735e24013904a0c8ee9d7b509f73a0db185524d4/Finance-Jindowin-1.2.5.1.tar.gz
+[2023-04-14 17:44:45] INFO root fetch - processPackages [Finance-Jindowin]: executing diffoscope
+[2023-04-14 17:44:45] INFO root fetch - processPackages [Finance-Jindowin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Finance-Jindowin-1.2.5.tar.gz tmp/Finance-Jindowin-1.2.5.1.tar.gz --markdown 20230414/F/Finance-Jindowin/1.2.5-1.2.5.1/diff.md --exclude *.pyd
+[2023-04-14 17:44:46] INFO root fetch - processPackages [codesnipper]: Start processing: htmlpack
+[2023-04-14 17:44:46] INFO root fetch - main [MainThread]: End processing [codesnipper]: success
+[2023-04-14 17:44:46] INFO root fetch - processPackages [htmlpack]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 17:44:46] INFO root fetch - processPackages [htmlpack]: Downloading https://files.pythonhosted.org/packages/68/54/a5e7901b054fbd7632763f6904e16d54e203f8c24f51c7d02fc284a3fb23/htmlpack-0.1.1.tar.gz
+[2023-04-14 17:44:47] INFO root fetch - processPackages [htmlpack]: Downloading https://files.pythonhosted.org/packages/1e/20/7b2ae6cd0599dc6d33e5fe7e2a169ce7a54ea4b1a412766369c817993a07/htmlpack-0.1.2.tar.gz
+[2023-04-14 17:44:47] INFO root fetch - processPackages [htmlpack]: executing diffoscope
+[2023-04-14 17:44:47] INFO root fetch - processPackages [htmlpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmlpack-0.1.1.tar.gz tmp/htmlpack-0.1.2.tar.gz --markdown 20230414/h/htmlpack/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 17:44:47] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-14 17:44:48] INFO root fetch - main [MainThread]: End processing [htmlpack]: success
+[2023-04-14 17:44:49] INFO root fetch - main [MainThread]: End processing [Finance-Jindowin]: success
+[2023-04-14 17:44:49] INFO root fetch - main [MainThread]: End processing [bodo-jupyterlab]: success
+[2023-04-14 17:46:18] INFO root fetch - main [MainThread]: End processing [pulumi-google-native]: success
+[2023-04-14 17:46:18] INFO root fetch - main [MainThread]: Store serial: [17709330]
