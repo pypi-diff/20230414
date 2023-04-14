@@ -18004,3 +18004,111 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 18:21:47] INFO root fetch - main [MainThread]: End processing [mixturemapping]: success
 [2023-04-14 18:21:57] INFO root fetch - main [MainThread]: End processing [python-inspector]: success
 [2023-04-14 18:21:57] INFO root fetch - main [MainThread]: Store serial: [17709912]
+[2023-04-14 18:27:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17709912]
+[2023-04-14 18:27:06] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-14 18:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyadi-iio
+[2023-04-14 18:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tsdownsample
+[2023-04-14 18:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datafusion
+[2023-04-14 18:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: taipy-gui
+[2023-04-14 18:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ghid
+[2023-04-14 18:27:06] WARNING root fetch - processPackages [ghid]: Skipping, unable to determine old version
+[2023-04-14 18:27:06] INFO root fetch - processPackages [ghid]: Start processing: async-http-requests
+[2023-04-14 18:27:06] INFO root fetch - main [MainThread]: End processing [ghid] error
+[2023-04-14 18:27:06] INFO root fetch - processPackages [taipy-gui]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-04-14 18:27:06] INFO root fetch - processPackages [datafusion]: New version: [22.0.0] Old Version: [21.0.0]
+[2023-04-14 18:27:06] INFO root fetch - processPackages [pyadi-iio]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 18:27:06] INFO root fetch - processPackages [tsdownsample]: New version: [0.1.2a1] Old Version: [0.1.2a0]
+[2023-04-14 18:27:06] WARNING root fetch - processPackages [async-http-requests]: Skipping, unable to determine old version
+[2023-04-14 18:27:06] INFO root fetch - processPackages [async-http-requests]: Start processing: pulumi-aws-native
+[2023-04-14 18:27:06] INFO root fetch - main [MainThread]: End processing [async-http-requests] error
+[2023-04-14 18:27:06] INFO root fetch - processPackages [pulumi-aws-native]: New version: [0.9.1a1641826769] Old Version: [0.9.1a1641824984]
+[2023-04-14 18:27:06] INFO root fetch - processPackages [datafusion]: Downloading https://files.pythonhosted.org/packages/f2/46/63985a46fd8c186862cbb1c34b85505154815f095bb13e6528a66e18d261/datafusion-21.0.0.tar.gz
+[2023-04-14 18:27:06] INFO root fetch - processPackages [pyadi-iio]: Downloading https://files.pythonhosted.org/packages/c3/d3/64149b755c6c2a704fbf88ecd4ca6990bf1bced51068faf6e47698b83638/pyadi-iio-0.0.8.tar.gz
+[2023-04-14 18:27:06] INFO root fetch - processPackages [taipy-gui]: Downloading https://files.pythonhosted.org/packages/ec/65/9a60e6be06e2e422af7638906d0ac5cd03c30112adb8dcb8221a66ab88d6/taipy-gui-2.2.1.tar.gz
+[2023-04-14 18:27:06] INFO root fetch - processPackages [pulumi-aws-native]: executing diffoscope
+[2023-04-14 18:27:06] INFO root fetch - processPackages [pulumi-aws-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws_native-0.9.1a1641824984.tar.gz tmp/pulumi_aws_native-0.9.1a1641826769.tar.gz --markdown 20230414/p/pulumi-aws-native/0.9.1a1641824984-0.9.1a1641826769/diff.md --exclude *.pyd
+[2023-04-14 18:27:06] INFO root fetch - processPackages [tsdownsample]: Downloading https://files.pythonhosted.org/packages/89/0d/8e07fd8f52d759e33cd31251aeb4d230598fcf8fda80b06f2bc6a478fdfc/tsdownsample-0.1.2a1.tar.gz
+[2023-04-14 18:27:06] INFO root fetch - processPackages [datafusion]: Downloading https://files.pythonhosted.org/packages/df/d7/f2d4e3618b33330f5f9878fef1b3845f321f3a9f40207d850cfdc5c2936c/datafusion-22.0.0.tar.gz
+[2023-04-14 18:27:06] INFO root fetch - processPackages [tsdownsample]: executing diffoscope
+[2023-04-14 18:27:06] INFO root fetch - processPackages [tsdownsample]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsdownsample-0.1.2a0.tar.gz tmp/tsdownsample-0.1.2a1.tar.gz --markdown 20230414/t/tsdownsample/0.1.2a0-0.1.2a1/diff.md --exclude *.pyd
+[2023-04-14 18:27:06] INFO root fetch - processPackages [pyadi-iio]: Downloading https://files.pythonhosted.org/packages/42/cd/6c132d4fed9bc1c3889ae3e0e3b4ecd2a820083cb1d95754ce8a7021d10c/pyadi-iio-0.0.9.tar.gz
+[2023-04-14 18:27:06] INFO root fetch - processPackages [datafusion]: executing diffoscope
+[2023-04-14 18:27:06] INFO root fetch - processPackages [datafusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datafusion-21.0.0.tar.gz tmp/datafusion-22.0.0.tar.gz --markdown 20230414/d/datafusion/21.0.0-22.0.0/diff.md --exclude *.pyd
+[2023-04-14 18:27:06] INFO root fetch - processPackages [pyadi-iio]: executing diffoscope
+[2023-04-14 18:27:06] INFO root fetch - processPackages [pyadi-iio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyadi-iio-0.0.8.tar.gz tmp/pyadi-iio-0.0.9.tar.gz --markdown 20230414/p/pyadi-iio/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 18:27:07] INFO root fetch - processPackages [taipy-gui]: executing diffoscope
+[2023-04-14 18:27:07] INFO root fetch - processPackages [taipy-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taipy-gui-2.2.0.tar.gz tmp/taipy-gui-2.2.1.tar.gz --markdown 20230414/t/taipy-gui/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-04-14 18:27:08] INFO root fetch - processPackages [tsdownsample]: Start processing: libpipe
+[2023-04-14 18:27:08] INFO root fetch - main [MainThread]: End processing [tsdownsample]: success
+[2023-04-14 18:27:08] INFO root fetch - processPackages [libpipe]: New version: [0.3] Old Version: [0.2]
+[2023-04-14 18:27:08] INFO root fetch - processPackages [libpipe]: Downloading https://files.pythonhosted.org/packages/d1/3e/b60e7cc335889bbe2c359966138b1e47ddf9280bef7774d73021a665bcb7/libpipe-0.2.tar.gz
+[2023-04-14 18:27:08] INFO root fetch - processPackages [pyadi-iio]: Start processing: pytest-ansible
+[2023-04-14 18:27:08] INFO root fetch - main [MainThread]: End processing [pyadi-iio]: success
+[2023-04-14 18:27:08] INFO root fetch - processPackages [pytest-ansible]: New version: [3.0.0] Old Version: [2.2.4]
+[2023-04-14 18:27:08] INFO root fetch - processPackages [libpipe]: Downloading https://files.pythonhosted.org/packages/49/38/6b8c6cf0f4f74116589522668df352689a1a70fb4fd91f7778c9d04ddf57/libpipe-0.3.tar.gz
+[2023-04-14 18:27:08] INFO root fetch - processPackages [pytest-ansible]: Downloading https://files.pythonhosted.org/packages/92/16/b5527f0470ba9a30e29084bbfb387c12f06f7cd949f98590e2bbbd7ef815/pytest-ansible-2.2.4.tar.gz
+[2023-04-14 18:27:08] INFO root fetch - processPackages [datafusion]: Start processing: magyar
+[2023-04-14 18:27:08] INFO root fetch - main [MainThread]: End processing [datafusion]: success
+[2023-04-14 18:27:08] INFO root fetch - processPackages [magyar]: New version: [2.7.0] Old Version: [2.6.2]
+[2023-04-14 18:27:08] INFO root fetch - processPackages [libpipe]: executing diffoscope
+[2023-04-14 18:27:08] INFO root fetch - processPackages [libpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libpipe-0.2.tar.gz tmp/libpipe-0.3.tar.gz --markdown 20230414/l/libpipe/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-14 18:27:08] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/74/60/1da48d1f96a131b25c4d56969b3eca999a6205c334b8e7059288844b58d5/magyar-2.7.0.tar.gz
+[2023-04-14 18:27:08] INFO root fetch - processPackages [pytest-ansible]: Downloading https://files.pythonhosted.org/packages/8c/9e/cc6233f1ee4accbc863f4732dd0fcb5ff181173732be161f45e6d33f65a5/pytest-ansible-3.0.0.tar.gz
+[2023-04-14 18:27:09] INFO root fetch - processPackages [pytest-ansible]: executing diffoscope
+[2023-04-14 18:27:09] INFO root fetch - processPackages [pytest-ansible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-ansible-2.2.4.tar.gz tmp/pytest-ansible-3.0.0.tar.gz --markdown 20230414/p/pytest-ansible/2.2.4-3.0.0/diff.md --exclude *.pyd
+[2023-04-14 18:27:09] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2023-04-14 18:27:09] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-2.6.2.tar.gz tmp/magyar-2.7.0.tar.gz --markdown 20230414/m/magyar/2.6.2-2.7.0/diff.md --exclude *.pyd
+[2023-04-14 18:27:10] INFO root fetch - processPackages [libpipe]: Start processing: isogeo-pysdk
+[2023-04-14 18:27:10] INFO root fetch - main [MainThread]: End processing [libpipe]: success
+[2023-04-14 18:27:10] INFO root fetch - processPackages [isogeo-pysdk]: New version: [3.8.1] Old Version: [3.8.0]
+[2023-04-14 18:27:10] INFO root fetch - processPackages [magyar]: Start processing: pofile
+[2023-04-14 18:27:10] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2023-04-14 18:27:10] INFO root fetch - processPackages [pofile]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 18:27:10] INFO root fetch - processPackages [pytest-ansible]: Start processing: mkdocs-material-otf
+[2023-04-14 18:27:10] INFO root fetch - main [MainThread]: End processing [pytest-ansible]: success
+[2023-04-14 18:27:10] WARNING root fetch - processPackages [mkdocs-material-otf]: Skipping, unable to determine old version
+[2023-04-14 18:27:10] INFO root fetch - processPackages [mkdocs-material-otf]: Start processing: poppt
+[2023-04-14 18:27:10] INFO root fetch - main [MainThread]: End processing [mkdocs-material-otf] error
+[2023-04-14 18:27:10] INFO root fetch - processPackages [poppt]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-14 18:27:10] INFO root fetch - processPackages [pofile]: executing diffoscope
+[2023-04-14 18:27:10] INFO root fetch - processPackages [pofile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pofile-0.0.8.tar.gz tmp/pofile-0.0.9.tar.gz --markdown 20230414/p/pofile/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 18:27:10] INFO root fetch - processPackages [isogeo-pysdk]: Downloading https://files.pythonhosted.org/packages/6f/b9/9010ad07ddb6f7406ef5e89e206a25122052aa8e559c5d3c35b8b295a180/isogeo-pysdk-3.8.0.tar.gz
+[2023-04-14 18:27:10] INFO root fetch - processPackages [poppt]: Downloading https://files.pythonhosted.org/packages/3d/b5/0e0e954698fa8ba422e02d799729646ce70d1c330aca1100c7497f971f90/poppt-0.0.8.tar.gz
+[2023-04-14 18:27:10] INFO root fetch - processPackages [isogeo-pysdk]: Downloading https://files.pythonhosted.org/packages/f0/35/f73693c42ff747194f73075d7578c41dc570a3bcb6dc855cbedd94871de6/isogeo-pysdk-3.8.1.tar.gz
+[2023-04-14 18:27:10] INFO root fetch - processPackages [poppt]: executing diffoscope
+[2023-04-14 18:27:10] INFO root fetch - processPackages [poppt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poppt-0.0.7.tar.gz tmp/poppt-0.0.8.tar.gz --markdown 20230414/p/poppt/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-14 18:27:11] INFO root fetch - processPackages [isogeo-pysdk]: executing diffoscope
+[2023-04-14 18:27:11] INFO root fetch - processPackages [isogeo-pysdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isogeo-pysdk-3.8.0.tar.gz tmp/isogeo-pysdk-3.8.1.tar.gz --markdown 20230414/i/isogeo-pysdk/3.8.0-3.8.1/diff.md --exclude *.pyd
+[2023-04-14 18:27:11] INFO root fetch - processPackages [pofile]: Start processing: pinax-templates
+[2023-04-14 18:27:11] INFO root fetch - main [MainThread]: End processing [pofile]: success
+[2023-04-14 18:27:11] INFO root fetch - processPackages [pinax-templates]: New version: [3.0.0] Old Version: [2.0.6]
+[2023-04-14 18:27:11] INFO root fetch - processPackages [poppt]: Start processing: anita-maheen-338-package
+[2023-04-14 18:27:11] INFO root fetch - main [MainThread]: End processing [poppt]: success
+[2023-04-14 18:27:11] WARNING root fetch - processPackages [anita-maheen-338-package]: Skipping, unable to determine old version
+[2023-04-14 18:27:11] INFO root fetch - processPackages [anita-maheen-338-package]: Start processing: dimensionality-reductions-jmsv
+[2023-04-14 18:27:11] INFO root fetch - main [MainThread]: End processing [anita-maheen-338-package] error
+[2023-04-14 18:27:11] WARNING root fetch - processPackages [dimensionality-reductions-jmsv]: Skipping, unable to determine old version
+[2023-04-14 18:27:11] INFO root fetch - processPackages [dimensionality-reductions-jmsv]: Start processing: iio
+[2023-04-14 18:27:11] INFO root fetch - main [MainThread]: End processing [dimensionality-reductions-jmsv] error
+[2023-04-14 18:27:11] INFO root fetch - processPackages [pinax-templates]: Downloading https://files.pythonhosted.org/packages/5d/13/329e84de4ddb3a5e3ee43053ad86207a1fab78160bccda77e858e1de91f6/pinax-templates-2.0.6.tar.gz
+[2023-04-14 18:27:11] INFO root fetch - processPackages [iio]: New version: [9] Old Version: [8]
+[2023-04-14 18:27:12] INFO root fetch - processPackages [pinax-templates]: Downloading https://files.pythonhosted.org/packages/7d/73/1a866ea0a1ca21732e12948cc88134cc4d84a83b7468fb6d04bb2e067748/pinax-templates-3.0.0.tar.gz
+[2023-04-14 18:27:12] INFO root fetch - processPackages [pinax-templates]: executing diffoscope
+[2023-04-14 18:27:12] INFO root fetch - processPackages [pinax-templates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinax-templates-2.0.6.tar.gz tmp/pinax-templates-3.0.0.tar.gz --markdown 20230414/p/pinax-templates/2.0.6-3.0.0/diff.md --exclude *.pyd
+[2023-04-14 18:27:12] INFO root fetch - processPackages [iio]: executing diffoscope
+[2023-04-14 18:27:12] INFO root fetch - processPackages [iio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iio-8.tar.gz tmp/iio-9.tar.gz --markdown 20230414/i/iio/8-9/diff.md --exclude *.pyd
+[2023-04-14 18:27:12] INFO root fetch - processPackages [isogeo-pysdk]: Start processing: skytapsdk
+[2023-04-14 18:27:12] INFO root fetch - main [MainThread]: End processing [isogeo-pysdk]: success
+[2023-04-14 18:27:12] INFO root fetch - processPackages [skytapsdk]: New version: [20230414.0] Old Version: [20230411.0]
+[2023-04-14 18:27:13] INFO root fetch - processPackages [iio]: Start processing: meroua
+[2023-04-14 18:27:13] INFO root fetch - main [MainThread]: End processing [iio]: success
+[2023-04-14 18:27:13] INFO root fetch - processPackages [skytapsdk]: Downloading https://files.pythonhosted.org/packages/3b/d2/1f3a18a25c67440bd8f92a12844c27cc70ddd5df9e324c1da510bd2e0b4c/skytapsdk-20230414.0.tar.gz
+[2023-04-14 18:27:13] WARNING root fetch - processPackages [meroua]: Skipping, unable to determine old version
+[2023-04-14 18:27:13] INFO root fetch - main [MainThread]: End processing [meroua] error
+[2023-04-14 18:27:13] INFO root fetch - processPackages [skytapsdk]: executing diffoscope
+[2023-04-14 18:27:13] INFO root fetch - processPackages [skytapsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skytapsdk-20230411.0.tar.gz tmp/skytapsdk-20230414.0.tar.gz --markdown 20230414/s/skytapsdk/20230411.0-20230414.0/diff.md --exclude *.pyd
+[2023-04-14 18:27:13] INFO root fetch - main [MainThread]: End processing [pinax-templates]: success
+[2023-04-14 18:27:14] INFO root fetch - main [MainThread]: End processing [skytapsdk]: success
+[2023-04-14 18:27:19] INFO root fetch - main [MainThread]: End processing [taipy-gui]: success
+[2023-04-14 18:27:31] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
+[2023-04-14 18:27:31] INFO root fetch - main [MainThread]: Store serial: [17710052]
