@@ -15397,3 +15397,98 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 16:19:52] INFO root fetch - main [MainThread]: End processing [c8y-api]: success
 [2023-04-14 16:19:56] INFO root fetch - main [MainThread]: End processing [chellow]: success
 [2023-04-14 16:19:56] INFO root fetch - main [MainThread]: Store serial: [17708304]
+[2023-04-14 16:24:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17708304]
+[2023-04-14 16:25:04] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-14 16:25:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chellow
+[2023-04-14 16:25:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: csrnet
+[2023-04-14 16:25:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyabsa
+[2023-04-14 16:25:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telescoop-backup
+[2023-04-14 16:25:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bacpypes3
+[2023-04-14 16:25:04] INFO root fetch - processPackages [telescoop-backup]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 16:25:04] INFO root fetch - processPackages [pyabsa]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-04-14 16:25:04] WARNING root fetch - processPackages [csrnet]: Skipping, unable to determine old version
+[2023-04-14 16:25:04] INFO root fetch - processPackages [csrnet]: Start processing: pyxll-jupyter
+[2023-04-14 16:25:04] INFO root fetch - main [MainThread]: End processing [csrnet] error
+[2023-04-14 16:25:04] INFO root fetch - processPackages [bacpypes3]: New version: [0.0.69] Old Version: [0.0.68]
+[2023-04-14 16:25:04] INFO root fetch - processPackages [pyxll-jupyter]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-14 16:25:04] INFO root fetch - processPackages [chellow]: New version: [2827] Old Version: [2826]
+[2023-04-14 16:25:04] INFO root fetch - processPackages [chellow]: executing diffoscope
+[2023-04-14 16:25:04] INFO root fetch - processPackages [chellow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chellow-2826.tar.gz tmp/chellow-2827.tar.gz --markdown 20230414/c/chellow/2826-2827/diff.md --exclude *.pyd
+[2023-04-14 16:25:04] INFO root fetch - processPackages [telescoop-backup]: Downloading https://files.pythonhosted.org/packages/39/6f/82cbba690f0667c0aed6406778a6d6b6306e870cf78cec67e1564da4224b/telescoop-backup-0.1.5.tar.gz
+[2023-04-14 16:25:04] INFO root fetch - processPackages [pyxll-jupyter]: Downloading https://files.pythonhosted.org/packages/35/d4/382aa1ffc84f1ed03c46c2b6b1c3f43a409cd3b4e55fa437ebd83e56d6c3/pyxll_jupyter-0.3.3-py3-none-any.whl
+[2023-04-14 16:25:04] INFO root fetch - processPackages [pyabsa]: Downloading https://files.pythonhosted.org/packages/c5/8f/b2b5e669d2ca3421f5a651b6301028ec92660f5e202ee116b4459d3396a6/pyabsa-2.2.2-py3-none-any.whl
+[2023-04-14 16:25:04] INFO root fetch - processPackages [bacpypes3]: Downloading https://files.pythonhosted.org/packages/29/b1/250119e21d55258be1c6fe86ac393e94233dabd13b5fb307361d3b332c38/bacpypes3-0.0.69-py3-none-any.whl
+[2023-04-14 16:25:04] INFO root fetch - processPackages [telescoop-backup]: Downloading https://files.pythonhosted.org/packages/fe/a7/1d07c8e43beffb2c11bef15bf6a8e3004bf425ac5c91f9bbd01600667da1/telescoop-backup-0.1.6.tar.gz
+[2023-04-14 16:25:04] INFO root fetch - processPackages [pyabsa]: Downloading https://files.pythonhosted.org/packages/12/53/cc8a888395951758f6a04f421be578caef89e3555172d81b77e104b56a17/pyabsa-2.2.3-py3-none-any.whl
+[2023-04-14 16:25:04] INFO root fetch - processPackages [pyxll-jupyter]: Downloading https://files.pythonhosted.org/packages/ff/69/e0e079fe802ed27720bd04895731d119bcd0ebd82bac127c1c887db4b512/pyxll_jupyter-0.3.4-py3-none-any.whl
+[2023-04-14 16:25:04] INFO root fetch - processPackages [bacpypes3]: executing diffoscope
+[2023-04-14 16:25:04] INFO root fetch - processPackages [bacpypes3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacpypes3-0.0.68-py3-none-any.whl.zip tmp/bacpypes3-0.0.69-py3-none-any.whl.zip --markdown 20230414/b/bacpypes3/0.0.68-0.0.69/diff.md --exclude *.pyd
+[2023-04-14 16:25:04] INFO root fetch - processPackages [pyxll-jupyter]: executing diffoscope
+[2023-04-14 16:25:04] INFO root fetch - processPackages [pyxll-jupyter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxll_jupyter-0.3.3-py3-none-any.whl.zip tmp/pyxll_jupyter-0.3.4-py3-none-any.whl.zip --markdown 20230414/p/pyxll-jupyter/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-14 16:25:04] INFO root fetch - processPackages [telescoop-backup]: executing diffoscope
+[2023-04-14 16:25:04] INFO root fetch - processPackages [telescoop-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telescoop-backup-0.1.5.tar.gz tmp/telescoop-backup-0.1.6.tar.gz --markdown 20230414/t/telescoop-backup/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 16:25:04] INFO root fetch - processPackages [pyabsa]: executing diffoscope
+[2023-04-14 16:25:04] INFO root fetch - processPackages [pyabsa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyabsa-2.2.2-py3-none-any.whl.zip tmp/pyabsa-2.2.3-py3-none-any.whl.zip --markdown 20230414/p/pyabsa/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-04-14 16:25:06] INFO root fetch - processPackages [pyxll-jupyter]: Start processing: konfuzio-sdk
+[2023-04-14 16:25:06] INFO root fetch - main [MainThread]: End processing [pyxll-jupyter]: success
+[2023-04-14 16:25:06] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-04-14 16:25:06] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-04-14 16:25:06] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230414/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-04-14 16:25:06] INFO root fetch - processPackages [telescoop-backup]: Start processing: hestia-earth-models
+[2023-04-14 16:25:06] INFO root fetch - main [MainThread]: End processing [telescoop-backup]: success
+[2023-04-14 16:25:06] INFO root fetch - processPackages [hestia-earth-models]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 16:25:06] INFO root fetch - processPackages [hestia-earth-models]: executing diffoscope
+[2023-04-14 16:25:06] INFO root fetch - processPackages [hestia-earth-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hestia-earth-models-0.9.0.tar.gz tmp/hestia-earth-models-0.9.1.tar.gz --markdown 20230414/h/hestia-earth-models/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 16:25:06] INFO root fetch - processPackages [bacpypes3]: Start processing: mechanical-bull
+[2023-04-14 16:25:06] INFO root fetch - main [MainThread]: End processing [bacpypes3]: success
+[2023-04-14 16:25:06] INFO root fetch - processPackages [mechanical-bull]: New version: [0.0.3] Old Version: [0.0.2.1]
+[2023-04-14 16:25:06] INFO root fetch - processPackages [mechanical-bull]: Downloading https://files.pythonhosted.org/packages/f6/47/a262bb66685ab3029009b9df9973544c05826ff39c2e54dc8cecfaf0fd1e/mechanical_bull-0.0.3.tar.gz
+[2023-04-14 16:25:06] INFO root fetch - processPackages [mechanical-bull]: executing diffoscope
+[2023-04-14 16:25:06] INFO root fetch - processPackages [mechanical-bull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mechanical_bull-0.0.2.1.tar.gz tmp/mechanical_bull-0.0.3.tar.gz --markdown 20230414/m/mechanical-bull/0.0.2.1-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 16:25:07] INFO root fetch - processPackages [konfuzio-sdk]: Start processing: ob-dj-store
+[2023-04-14 16:25:07] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-04-14 16:25:07] INFO root fetch - processPackages [ob-dj-store]: New version: [0.0.9.8] Old Version: [0.0.9.7]
+[2023-04-14 16:25:07] INFO root fetch - processPackages [ob-dj-store]: Downloading https://files.pythonhosted.org/packages/0c/a8/fd8fc20d9e25ffdfa38a5915686c016f42b533aaa82d359ff30484814ada/ob-dj-store-0.0.9.7.tar.gz
+[2023-04-14 16:25:07] INFO root fetch - processPackages [ob-dj-store]: Downloading https://files.pythonhosted.org/packages/10/95/20bbd86eb725e4c9efaf8686a43df4977f38c591c117280967801b2d331f/ob-dj-store-0.0.9.8.tar.gz
+[2023-04-14 16:25:08] INFO root fetch - processPackages [mechanical-bull]: Start processing: starknet-devnet
+[2023-04-14 16:25:08] INFO root fetch - main [MainThread]: End processing [mechanical-bull]: success
+[2023-04-14 16:25:08] INFO root fetch - processPackages [starknet-devnet]: New version: [0.5.0a2] Old Version: [0.5.0a1]
+[2023-04-14 16:25:08] INFO root fetch - processPackages [starknet-devnet]: Downloading https://files.pythonhosted.org/packages/37/58/ff8bd1da3a2dff453cd7fe782ba32feabaa663cc52eac2b0e1cb2e839166/starknet_devnet-0.5.0a1.tar.gz
+[2023-04-14 16:25:08] INFO root fetch - processPackages [ob-dj-store]: executing diffoscope
+[2023-04-14 16:25:08] INFO root fetch - processPackages [ob-dj-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ob-dj-store-0.0.9.7.tar.gz tmp/ob-dj-store-0.0.9.8.tar.gz --markdown 20230414/o/ob-dj-store/0.0.9.7-0.0.9.8/diff.md --exclude *.pyd
+[2023-04-14 16:25:08] INFO root fetch - processPackages [starknet-devnet]: Downloading https://files.pythonhosted.org/packages/ce/ed/6def4b157cf722d5b9a888a2323157fab3c17d4fff90557b30e63c90b9e0/starknet_devnet-0.5.0a2.tar.gz
+[2023-04-14 16:25:08] INFO root fetch - processPackages [starknet-devnet]: executing diffoscope
+[2023-04-14 16:25:08] INFO root fetch - processPackages [starknet-devnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starknet_devnet-0.5.0a1.tar.gz tmp/starknet_devnet-0.5.0a2.tar.gz --markdown 20230414/s/starknet-devnet/0.5.0a1-0.5.0a2/diff.md --exclude *.pyd
+[2023-04-14 16:25:09] INFO root fetch - processPackages [pyabsa]: Start processing: llama-api-server
+[2023-04-14 16:25:09] INFO root fetch - main [MainThread]: End processing [pyabsa]: success
+[2023-04-14 16:25:09] INFO root fetch - processPackages [llama-api-server]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-04-14 16:25:09] INFO root fetch - processPackages [chellow]: Start processing: apache-airflow-providers-fastetl
+[2023-04-14 16:25:09] INFO root fetch - main [MainThread]: End processing [chellow]: success
+[2023-04-14 16:25:09] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-14 16:25:09] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: Downloading https://files.pythonhosted.org/packages/94/8f/c6940a57458dd569ee5e5deba649236e1d23b7cc6a32de9b7b9b65ddbcd4/apache-airflow-providers-fastetl-0.0.5.tar.gz
+[2023-04-14 16:25:09] INFO root fetch - processPackages [llama-api-server]: Downloading https://files.pythonhosted.org/packages/0e/42/a420c2b64b503b5f530b5e32e03f11a2f0a989cd0d7a5228c5e5c40c4b4b/llama_api_server-0.2.0.tar.gz
+[2023-04-14 16:25:09] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: executing diffoscope
+[2023-04-14 16:25:09] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-fastetl-0.0.4.tar.gz tmp/apache-airflow-providers-fastetl-0.0.5.tar.gz --markdown 20230414/a/apache-airflow-providers-fastetl/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-14 16:25:09] INFO root fetch - processPackages [llama-api-server]: executing diffoscope
+[2023-04-14 16:25:09] INFO root fetch - processPackages [llama-api-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_api_server-0.1.3.tar.gz tmp/llama_api_server-0.2.0.tar.gz --markdown 20230414/l/llama-api-server/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 16:25:09] INFO root fetch - processPackages [ob-dj-store]: Start processing: pyodbc
+[2023-04-14 16:25:09] INFO root fetch - main [MainThread]: End processing [ob-dj-store]: success
+[2023-04-14 16:25:09] INFO root fetch - processPackages [pyodbc]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-04-14 16:25:10] INFO root fetch - processPackages [hestia-earth-models]: Start processing: newick-tree-builder
+[2023-04-14 16:25:10] INFO root fetch - main [MainThread]: End processing [hestia-earth-models]: success
+[2023-04-14 16:25:10] INFO root fetch - processPackages [newick-tree-builder]: New version: [0.4.4] Old Version: [0.4.0]
+[2023-04-14 16:25:10] INFO root fetch - processPackages [starknet-devnet]: Start processing: recommendation-68911
+[2023-04-14 16:25:10] INFO root fetch - main [MainThread]: End processing [starknet-devnet]: success
+[2023-04-14 16:25:10] INFO root fetch - processPackages [newick-tree-builder]: Downloading https://files.pythonhosted.org/packages/38/c7/47dc0f5cad681d2c9fd8aaace835ab4a39c560bcf2621a0f765b73bd5d80/newick-tree-builder-0.4.0.tar.gz
+[2023-04-14 16:25:10] WARNING root fetch - processPackages [recommendation-68911]: Skipping, unable to determine old version
+[2023-04-14 16:25:10] INFO root fetch - main [MainThread]: End processing [recommendation-68911] error
+[2023-04-14 16:25:10] INFO root fetch - processPackages [pyodbc]: executing diffoscope
+[2023-04-14 16:25:10] INFO root fetch - processPackages [pyodbc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyodbc-4.0.8.tar.gz tmp/pyodbc-4.0.9.tar.gz --markdown 20230414/p/pyodbc/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-04-14 16:25:10] INFO root fetch - processPackages [newick-tree-builder]: Downloading https://files.pythonhosted.org/packages/87/c1/d12fca6106062f70e850a7fcf9b6cf2439a631d8b850b12d1dc2e866df20/newick-tree-builder-0.4.4.tar.gz
+[2023-04-14 16:25:10] INFO root fetch - processPackages [newick-tree-builder]: executing diffoscope
+[2023-04-14 16:25:10] INFO root fetch - processPackages [newick-tree-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newick-tree-builder-0.4.0.tar.gz tmp/newick-tree-builder-0.4.4.tar.gz --markdown 20230414/n/newick-tree-builder/0.4.0-0.4.4/diff.md --exclude *.pyd
+[2023-04-14 16:25:11] INFO root fetch - main [MainThread]: End processing [llama-api-server]: success
+[2023-04-14 16:25:11] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-fastetl]: success
+[2023-04-14 16:25:11] INFO root fetch - main [MainThread]: End processing [pyodbc]: success
+[2023-04-14 16:25:11] INFO root fetch - main [MainThread]: End processing [newick-tree-builder]: success
+[2023-04-14 16:25:11] INFO root fetch - main [MainThread]: Store serial: [17708390]
