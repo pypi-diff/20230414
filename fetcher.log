@@ -10763,3 +10763,128 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 11:32:59] INFO root fetch - main [MainThread]: End processing [kupala]: success
 [2023-04-14 11:32:59] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
 [2023-04-14 11:32:59] INFO root fetch - main [MainThread]: Store serial: [17705315]
+[2023-04-14 11:38:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17705315]
+[2023-04-14 11:38:09] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-14 11:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peaqevcore
+[2023-04-14 11:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nanolayer
+[2023-04-14 11:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tardis-client
+[2023-04-14 11:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellmap
+[2023-04-14 11:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ccxt
+[2023-04-14 11:38:09] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 11:38:09] INFO root fetch - processPackages [tardis-client]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-14 11:38:09] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304140937] Old Version: [1.0.1.dev202304140154]
+[2023-04-14 11:38:09] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-04-14 11:38:09] INFO root fetch - processPackages [ccxt]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-14 11:38:09] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-14 11:38:09] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230414/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 11:38:09] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/50/af/d57660be4c4bbae646d646086fba3acebff7a6e35448d801a9386d325b57/cellmap-1.0.1.dev202304140937-py3-none-any.whl
+[2023-04-14 11:38:09] INFO root fetch - processPackages [tardis-client]: Downloading https://files.pythonhosted.org/packages/c0/2e/8b25465980ceba7e61dbfeb0d50cef1df816d93a2367c61e3504bc146457/tardis-client-1.3.3.tar.gz
+[2023-04-14 11:38:09] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-04-14 11:38:09] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230414/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-04-14 11:38:10] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-04-14 11:38:10] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.8.tar.gz tmp/ccxt-3.0.9.tar.gz --markdown 20230414/c/ccxt/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-14 11:38:10] INFO root fetch - processPackages [tardis-client]: Downloading https://files.pythonhosted.org/packages/91/8d/bd61452ceb0d4686c8526c0f2ba23116375834fde3f5eec5a46fc2e93035/tardis-client-1.3.4.tar.gz
+[2023-04-14 11:38:10] INFO root fetch - processPackages [tardis-client]: executing diffoscope
+[2023-04-14 11:38:10] INFO root fetch - processPackages [tardis-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tardis-client-1.3.3.tar.gz tmp/tardis-client-1.3.4.tar.gz --markdown 20230414/t/tardis-client/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-14 11:38:10] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-14 11:38:10] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304140154-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304140937-py3-none-any.whl.zip --markdown 20230414/c/cellmap/1.0.1.dev202304140154-1.0.1.dev202304140937/diff.md --exclude *.pyd
+[2023-04-14 11:38:10] INFO root fetch - processPackages [nanolayer]: Start processing: planetmint
+[2023-04-14 11:38:10] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-04-14 11:38:10] INFO root fetch - processPackages [planetmint]: New version: [2.4.2] Old Version: [2.4.1]
+[2023-04-14 11:38:11] INFO root fetch - processPackages [planetmint]: Downloading https://files.pythonhosted.org/packages/2f/26/79e7185ad9b7047c289dc2f44dad36561a743a9011d65ff6b64cfa2d74ac/planetmint-2.4.2.tar.gz
+[2023-04-14 11:38:11] INFO root fetch - processPackages [tardis-client]: Start processing: Geode-Hybrid
+[2023-04-14 11:38:11] INFO root fetch - main [MainThread]: End processing [tardis-client]: success
+[2023-04-14 11:38:11] WARNING root fetch - processPackages [Geode-Hybrid]: Skipping, unable to determine old version
+[2023-04-14 11:38:11] INFO root fetch - processPackages [Geode-Hybrid]: Start processing: rqdatac
+[2023-04-14 11:38:11] INFO root fetch - main [MainThread]: End processing [Geode-Hybrid] error
+[2023-04-14 11:38:11] INFO root fetch - processPackages [planetmint]: executing diffoscope
+[2023-04-14 11:38:11] INFO root fetch - processPackages [planetmint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetmint-2.4.1.tar.gz tmp/planetmint-2.4.2.tar.gz --markdown 20230414/p/planetmint/2.4.1-2.4.2/diff.md --exclude *.pyd
+[2023-04-14 11:38:11] INFO root fetch - processPackages [rqdatac]: New version: [2.9.8] Old Version: [2.9.7]
+[2023-04-14 11:38:11] INFO root fetch - processPackages [peaqevcore]: Start processing: vaynerqualityassessments
+[2023-04-14 11:38:11] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-04-14 11:38:11] INFO root fetch - processPackages [vaynerqualityassessments]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 11:38:11] INFO root fetch - processPackages [cellmap]: Start processing: certora-cli-alpha-master
+[2023-04-14 11:38:11] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-14 11:38:11] INFO root fetch - processPackages [vaynerqualityassessments]: executing diffoscope
+[2023-04-14 11:38:11] INFO root fetch - processPackages [vaynerqualityassessments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaynerqualityassessments-0.1.8.tar.gz tmp/vaynerqualityassessments-0.1.9.tar.gz --markdown 20230414/v/vaynerqualityassessments/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 11:38:11] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230414.9.39.372046] Old Version: [20230413.9.5.948824]
+[2023-04-14 11:38:11] INFO root fetch - processPackages [rqdatac]: executing diffoscope
+[2023-04-14 11:38:11] INFO root fetch - processPackages [rqdatac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rqdatac-2.9.7-cp38-cp38-win_amd64.whl.zip tmp/rqdatac-2.9.8-cp38-cp38-win_amd64.whl.zip --markdown 20230414/r/rqdatac/2.9.7-2.9.8/diff.md --exclude *.pyd
+[2023-04-14 11:38:11] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/82/5a/4ed351968cf7774080bd98553f2ca05955fac643a937459a42139da58b89/certora-cli-alpha-master-20230413.9.5.948824.tar.gz
+[2023-04-14 11:38:11] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 28058142>=10485760
+[2023-04-14 11:38:11] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: py-raycast-engine
+[2023-04-14 11:38:11] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-14 11:38:11] WARNING root fetch - processPackages [py-raycast-engine]: Skipping, unable to determine old version
+[2023-04-14 11:38:11] INFO root fetch - processPackages [py-raycast-engine]: Start processing: matemuzb
+[2023-04-14 11:38:11] INFO root fetch - main [MainThread]: End processing [py-raycast-engine] error
+[2023-04-14 11:38:11] WARNING root fetch - processPackages [matemuzb]: Skipping, unable to determine old version
+[2023-04-14 11:38:11] INFO root fetch - processPackages [matemuzb]: Start processing: webshoter
+[2023-04-14 11:38:11] INFO root fetch - main [MainThread]: End processing [matemuzb] error
+[2023-04-14 11:38:11] INFO root fetch - processPackages [webshoter]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-14 11:38:12] INFO root fetch - processPackages [webshoter]: Downloading https://files.pythonhosted.org/packages/60/ec/6124541200e09129aab7257c8a98b6028553f60bfcf29b1d26a6b72d653d/webshoter-1.0.3.tar.gz
+[2023-04-14 11:38:12] INFO root fetch - processPackages [webshoter]: executing diffoscope
+[2023-04-14 11:38:12] INFO root fetch - processPackages [webshoter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webshoter-1.0.2.tar.gz tmp/webshoter-1.0.3.tar.gz --markdown 20230414/w/webshoter/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-14 11:38:12] INFO root fetch - processPackages [vaynerqualityassessments]: Start processing: xllabelme
+[2023-04-14 11:38:12] INFO root fetch - main [MainThread]: End processing [vaynerqualityassessments]: success
+[2023-04-14 11:38:12] INFO root fetch - processPackages [xllabelme]: New version: [5.1.4] Old Version: [5.1.3]
+[2023-04-14 11:38:12] INFO root fetch - processPackages [planetmint]: Start processing: xj-role
+[2023-04-14 11:38:12] INFO root fetch - main [MainThread]: End processing [planetmint]: success
+[2023-04-14 11:38:12] INFO root fetch - processPackages [xj-role]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 11:38:12] INFO root fetch - processPackages [xllabelme]: Downloading https://files.pythonhosted.org/packages/f1/f7/0b5845b0b57e99817b2ed383344cb4ed9f0a411fae15b491c25e6ce2fddc/xllabelme-5.1.3.tar.gz
+[2023-04-14 11:38:12] INFO root fetch - processPackages [xj-role]: executing diffoscope
+[2023-04-14 11:38:12] INFO root fetch - processPackages [xj-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_role-1.0.8.tar.gz tmp/xj_role-1.0.9.tar.gz --markdown 20230414/x/xj-role/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 11:38:13] INFO root fetch - processPackages [xllabelme]: Downloading https://files.pythonhosted.org/packages/70/d7/7a945aa7fabd249089cb198dd3c1d3149448772093d1a328480485ed3ead/xllabelme-5.1.4.tar.gz
+[2023-04-14 11:38:13] INFO root fetch - processPackages [xllabelme]: executing diffoscope
+[2023-04-14 11:38:13] INFO root fetch - processPackages [xllabelme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xllabelme-5.1.3.tar.gz tmp/xllabelme-5.1.4.tar.gz --markdown 20230414/x/xllabelme/5.1.3-5.1.4/diff.md --exclude *.pyd
+[2023-04-14 11:38:13] INFO root fetch - processPackages [rqdatac]: Start processing: braintracer
+[2023-04-14 11:38:13] INFO root fetch - main [MainThread]: End processing [rqdatac]: success
+[2023-04-14 11:38:13] INFO root fetch - processPackages [braintracer]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-14 11:38:13] INFO root fetch - processPackages [webshoter]: Start processing: jupylet
+[2023-04-14 11:38:13] INFO root fetch - main [MainThread]: End processing [webshoter]: success
+[2023-04-14 11:38:13] INFO root fetch - processPackages [jupylet]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-14 11:38:13] INFO root fetch - processPackages [braintracer]: Downloading https://files.pythonhosted.org/packages/2f/55/1db270b7c9837b03dcbf0bd8b54ad5b4b86870f11c4590b29c33a9a4dd5b/braintracer-0.1.3.tar.gz
+[2023-04-14 11:38:13] INFO root fetch - processPackages [jupylet]: Downloading https://files.pythonhosted.org/packages/b6/d6/6659b319d2490de09211fbe397a45ed353e8b4fb90483ac8baf8eb03cafc/jupylet-0.8.9.tar.gz
+[2023-04-14 11:38:13] INFO root fetch - processPackages [jupylet]: Downloading https://files.pythonhosted.org/packages/64/58/54585e3b02ab67161151b1a43597832e3887b2c9efc1db1e6d09bc71b818/jupylet-0.9.0.tar.gz
+[2023-04-14 11:38:13] INFO root fetch - processPackages [jupylet]: executing diffoscope
+[2023-04-14 11:38:13] INFO root fetch - processPackages [jupylet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupylet-0.8.9.tar.gz tmp/jupylet-0.9.0.tar.gz --markdown 20230414/j/jupylet/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 11:38:13] INFO root fetch - processPackages [braintracer]: Downloading https://files.pythonhosted.org/packages/bc/ec/1c90fab7330dd18c7e2492ac01369bcab63e33b5443c4041a57342bdbe0b/braintracer-0.1.4.tar.gz
+[2023-04-14 11:38:13] INFO root fetch - processPackages [braintracer]: executing diffoscope
+[2023-04-14 11:38:13] INFO root fetch - processPackages [braintracer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/braintracer-0.1.3.tar.gz tmp/braintracer-0.1.4.tar.gz --markdown 20230414/b/braintracer/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-14 11:38:14] INFO root fetch - processPackages [xj-role]: Start processing: gmltools
+[2023-04-14 11:38:14] INFO root fetch - main [MainThread]: End processing [xj-role]: success
+[2023-04-14 11:38:14] INFO root fetch - processPackages [gmltools]: New version: [0.0.56] Old Version: [0.0.55]
+[2023-04-14 11:38:14] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/85/7f/4ac3f66e034f95e691bfdcd643cb9254608b7dd8f1a622bbba0c93c14e4f/gmltools-0.0.56.tar.gz
+[2023-04-14 11:38:14] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-04-14 11:38:14] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.55.tar.gz tmp/gmltools-0.0.56.tar.gz --markdown 20230414/g/gmltools/0.0.55-0.0.56/diff.md --exclude *.pyd
+[2023-04-14 11:38:14] INFO root fetch - processPackages [xllabelme]: Start processing: Geode-Viewables
+[2023-04-14 11:38:14] INFO root fetch - main [MainThread]: End processing [xllabelme]: success
+[2023-04-14 11:38:14] ERROR root fetch - processPackages [Geode-Viewables]: Unable to get metadata: No such project 'Geode-Viewables'
+[2023-04-14 11:38:14] INFO root fetch - processPackages [Geode-Viewables]: Start processing: cmip
+[2023-04-14 11:38:14] INFO root fetch - main [MainThread]: End processing [Geode-Viewables] error
+[2023-04-14 11:38:14] INFO root fetch - processPackages [cmip]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-14 11:38:14] INFO root fetch - processPackages [cmip]: Downloading https://files.pythonhosted.org/packages/a1/c1/fdeca63fa168618468c58b855863576ad835a78a3361f5a06b4aac087a3f/cmip-0.0.1.tar.gz
+[2023-04-14 11:38:15] INFO root fetch - processPackages [ccxt]: Start processing: returnn
+[2023-04-14 11:38:15] INFO root fetch - processPackages [cmip]: Downloading https://files.pythonhosted.org/packages/98/8a/3aab878bcc194a6f63518dc565718a437eb31c1346ca5f8b66886117b5b8/cmip-0.0.2.tar.gz
+[2023-04-14 11:38:15] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-04-14 11:38:15] INFO root fetch - processPackages [returnn]: New version: [1.20230414.112721] Old Version: [1.20230414.110554]
+[2023-04-14 11:38:15] INFO root fetch - processPackages [jupylet]: Start processing: pawnlib
+[2023-04-14 11:38:15] INFO root fetch - main [MainThread]: End processing [jupylet]: success
+[2023-04-14 11:38:15] INFO root fetch - processPackages [cmip]: executing diffoscope
+[2023-04-14 11:38:15] INFO root fetch - processPackages [cmip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmip-0.0.1.tar.gz tmp/cmip-0.0.2.tar.gz --markdown 20230414/c/cmip/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-14 11:38:15] INFO root fetch - processPackages [pawnlib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 11:38:15] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/3d/b7/480ac19bb8cf2e5f0c321dc09dd007119f39beb2c42cf885a2b4803e282e/returnn-1.20230414.112721.tar.gz
+[2023-04-14 11:38:15] INFO root fetch - processPackages [braintracer]: Start processing: kcli
+[2023-04-14 11:38:15] INFO root fetch - main [MainThread]: End processing [braintracer]: success
+[2023-04-14 11:38:15] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-14 11:38:15] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230414.110554.tar.gz tmp/returnn-1.20230414.112721.tar.gz --markdown 20230414/r/returnn/1.20230414.110554-1.20230414.112721/diff.md --exclude *.pyd
+[2023-04-14 11:38:15] INFO root fetch - processPackages [kcli]: New version: [99.0.202304131224] Old Version: [99.0.202304130943]
+[2023-04-14 11:38:15] INFO root fetch - processPackages [pawnlib]: executing diffoscope
+[2023-04-14 11:38:15] INFO root fetch - processPackages [pawnlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pawnlib-0.1.8-py3-none-any.whl.zip tmp/pawnlib-0.1.9-py3-none-any.whl.zip --markdown 20230414/p/pawnlib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 11:38:15] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-14 11:38:15] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304130943-py3-none-any.whl.zip tmp/kcli-99.0.202304131224-py3-none-any.whl.zip --markdown 20230414/k/kcli/99.0.202304130943-99.0.202304131224/diff.md --exclude *.pyd
+[2023-04-14 11:38:15] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-04-14 11:38:16] INFO root fetch - main [MainThread]: End processing [cmip]: success
+[2023-04-14 11:38:16] INFO root fetch - main [MainThread]: End processing [pawnlib]: success
+[2023-04-14 11:38:20] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-14 11:38:23] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-14 11:38:23] INFO root fetch - main [MainThread]: Store serial: [17705411]
