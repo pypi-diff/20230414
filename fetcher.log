@@ -8382,3 +8382,80 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 09:07:32] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-04-14 09:08:23] INFO root fetch - main [MainThread]: End processing [OpenFisca-France]: success
 [2023-04-14 09:08:23] INFO root fetch - main [MainThread]: Store serial: [17703921]
+[2023-04-14 09:13:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703921]
+[2023-04-14 09:13:31] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-14 09:13:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-models-nightly
+[2023-04-14 09:13:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qufit
+[2023-04-14 09:13:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: diator
+[2023-04-14 09:13:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unitest
+[2023-04-14 09:13:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-04-14 09:13:31] INFO root fetch - processPackages [unitest]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-14 09:13:31] INFO root fetch - processPackages [qufit]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-14 09:13:31] INFO root fetch - processPackages [diator]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-14 09:13:31] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-04-14 09:13:31] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-04-14 09:13:31] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-04-14 09:13:31] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230414/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-04-14 09:13:31] INFO root fetch - processPackages [qufit]: Downloading https://files.pythonhosted.org/packages/77/00/5a1f4af1827490ac03b5df046bee1988cec6773f280bf9c2d7740a4d49e9/qufit-1.0.6.tar.gz
+[2023-04-14 09:13:31] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-04-14 09:13:31] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230414/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 09:13:31] INFO root fetch - processPackages [unitest]: Downloading https://files.pythonhosted.org/packages/1c/a3/13b2aa4cbe1b0b25a6fb1b5f547aa99f426f5a3383440471a4cc7f2920ec/unitest-1.4.8.tar.gz
+[2023-04-14 09:13:31] INFO root fetch - processPackages [diator]: Downloading https://files.pythonhosted.org/packages/79/b7/98efb8351c2ea323cf206ec006729ddcda58db85af3c8fdc9c5b3e1f869c/diator-0.1.0.tar.gz
+[2023-04-14 09:13:32] INFO root fetch - processPackages [diator]: Downloading https://files.pythonhosted.org/packages/fc/37/edccdf46dc88568131c5716077d25dfa94b4aef34a9412869e30ec2d4a5a/diator-0.1.1.tar.gz
+[2023-04-14 09:13:32] INFO root fetch - processPackages [diator]: executing diffoscope
+[2023-04-14 09:13:32] INFO root fetch - processPackages [diator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diator-0.1.0.tar.gz tmp/diator-0.1.1.tar.gz --markdown 20230414/d/diator/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-14 09:13:32] INFO root fetch - processPackages [qufit]: Downloading https://files.pythonhosted.org/packages/b3/7c/c9d4dbe9ec63d07ada01ab955ec41b07865551cae7411c0fdbb37288442d/qufit-1.0.7.tar.gz
+[2023-04-14 09:13:32] INFO root fetch - processPackages [qufit]: executing diffoscope
+[2023-04-14 09:13:32] INFO root fetch - processPackages [qufit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qufit-1.0.6.tar.gz tmp/qufit-1.0.7.tar.gz --markdown 20230414/q/qufit/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-14 09:13:32] INFO root fetch - processPackages [unitest]: Downloading https://files.pythonhosted.org/packages/52/e4/3cdcd6c42b835b0dffbfe54278f12a1c8f58576292e1a558d8efdeec26e0/unitest-1.4.9.tar.gz
+[2023-04-14 09:13:32] INFO root fetch - processPackages [unitest]: executing diffoscope
+[2023-04-14 09:13:32] INFO root fetch - processPackages [unitest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitest-1.4.8.tar.gz tmp/unitest-1.4.9.tar.gz --markdown 20230414/u/unitest/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-14 09:13:33] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: Start processing: devito
+[2023-04-14 09:13:33] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-04-14 09:13:33] INFO root fetch - processPackages [devito]: New version: [4.8.1] Old Version: [4.8.0]
+[2023-04-14 09:13:33] INFO root fetch - processPackages [diator]: Start processing: DXR
+[2023-04-14 09:13:33] INFO root fetch - main [MainThread]: End processing [diator]: success
+[2023-04-14 09:13:33] INFO root fetch - processPackages [DXR]: New version: [1.6.8] Old Version: [1.6.7]
+[2023-04-14 09:13:33] INFO root fetch - processPackages [devito]: Downloading https://files.pythonhosted.org/packages/8e/13/5871720f75f850e174beca7dcb93ba61e1e8dda636badced9bcdd73745b9/devito-4.8.0.tar.gz
+[2023-04-14 09:13:33] INFO root fetch - processPackages [qufit]: Start processing: OpenGeode-GeosciencesIO
+[2023-04-14 09:13:33] INFO root fetch - main [MainThread]: End processing [qufit]: success
+[2023-04-14 09:13:33] INFO root fetch - processPackages [OpenGeode-GeosciencesIO]: New version: [4.0.0] Old Version: [3.9.2]
+[2023-04-14 09:13:33] INFO root fetch - processPackages [OpenGeode-GeosciencesIO]: Downloading https://files.pythonhosted.org/packages/80/fd/bbb2647da9eafcc8b56dfbbe7bf1216294a87c84ad09594b666bb3fad3f8/OpenGeode_GeosciencesIO-3.9.2-cp39-cp39-win_amd64.whl
+[2023-04-14 09:13:33] INFO root fetch - processPackages [DXR]: Downloading https://files.pythonhosted.org/packages/b9/e6/42a075ae0dd35fbd2d9cb73abf4b4fb3d16f36994bc7cb9872de2eea69e7/DXR-1.6.8.tar.gz
+[2023-04-14 09:13:33] INFO root fetch - processPackages [unitest]: Start processing: safezip
+[2023-04-14 09:13:33] INFO root fetch - main [MainThread]: End processing [unitest]: success
+[2023-04-14 09:13:33] ERROR root fetch - processPackages [safezip]: Unable to get metadata: No such project 'safezip'
+[2023-04-14 09:13:33] INFO root fetch - processPackages [safezip]: Start processing: mypy_baseline
+[2023-04-14 09:13:33] INFO root fetch - main [MainThread]: End processing [safezip] error
+[2023-04-14 09:13:33] INFO root fetch - processPackages [devito]: Downloading https://files.pythonhosted.org/packages/c2/fe/63a54dd3ce4e4056f61738bd48d40130452b58d9c0e1732cc1814a763fb1/devito-4.8.1.tar.gz
+[2023-04-14 09:13:33] INFO root fetch - processPackages [mypy_baseline]: New version: [0.5.0] Old Version: [0.4.5]
+[2023-04-14 09:13:33] INFO root fetch - processPackages [DXR]: executing diffoscope
+[2023-04-14 09:13:33] INFO root fetch - processPackages [DXR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DXR-1.6.7.tar.gz tmp/DXR-1.6.8.tar.gz --markdown 20230414/D/DXR/1.6.7-1.6.8/diff.md --exclude *.pyd
+[2023-04-14 09:13:33] INFO root fetch - processPackages [devito]: executing diffoscope
+[2023-04-14 09:13:33] INFO root fetch - processPackages [devito]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devito-4.8.0.tar.gz tmp/devito-4.8.1.tar.gz --markdown 20230414/d/devito/4.8.0-4.8.1/diff.md --exclude *.pyd
+[2023-04-14 09:13:33] INFO root fetch - processPackages [mypy_baseline]: Downloading https://files.pythonhosted.org/packages/52/e2/f132ab1ccd038830bd376268a1669874a529ba4082a059a5f42418084a0c/mypy_baseline-0.4.5.tar.gz
+[2023-04-14 09:13:34] INFO root fetch - processPackages [OpenGeode-GeosciencesIO]: Downloading https://files.pythonhosted.org/packages/b7/f1/2f0612e9016dfed8da8637154c2944b34c1e7b837834b3d84d0b0c78cea2/OpenGeode_GeosciencesIO-4.0.0-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-14 09:13:34] INFO root fetch - processPackages [OpenGeode-GeosciencesIO]: executing diffoscope
+[2023-04-14 09:13:34] INFO root fetch - processPackages [OpenGeode-GeosciencesIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_GeosciencesIO-3.9.2-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_GeosciencesIO-4.0.0-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230414/O/OpenGeode-GeosciencesIO/3.9.2-4.0.0/diff.md --exclude *.pyd
+[2023-04-14 09:13:34] INFO root fetch - processPackages [mypy_baseline]: Downloading https://files.pythonhosted.org/packages/d0/3e/eb3c0d17981073408bf3a2dbf939034f08628de2b0811a1082d8200ae5c0/mypy_baseline-0.5.0.tar.gz
+[2023-04-14 09:13:34] INFO root fetch - processPackages [mypy_baseline]: executing diffoscope
+[2023-04-14 09:13:34] INFO root fetch - processPackages [mypy_baseline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy_baseline-0.4.5.tar.gz tmp/mypy_baseline-0.5.0.tar.gz --markdown 20230414/m/mypy_baseline/0.4.5-0.5.0/diff.md --exclude *.pyd
+[2023-04-14 09:13:34] INFO root fetch - processPackages [DXR]: Start processing: dune-query-translator
+[2023-04-14 09:13:34] INFO root fetch - main [MainThread]: End processing [DXR]: success
+[2023-04-14 09:13:35] INFO root fetch - processPackages [dune-query-translator]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-14 09:13:35] INFO root fetch - processPackages [dune-query-translator]: Downloading https://files.pythonhosted.org/packages/56/5a/7788ff308bf71658c7c15b12cfdc17b55fc1ea2072ed7a5854a56965d620/dune_query_translator-0.4.0.tar.gz
+[2023-04-14 09:13:35] INFO root fetch - processPackages [dune-query-translator]: executing diffoscope
+[2023-04-14 09:13:35] INFO root fetch - processPackages [dune-query-translator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_query_translator-0.3.1.tar.gz tmp/dune_query_translator-0.4.0.tar.gz --markdown 20230414/d/dune-query-translator/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-14 09:13:35] INFO root fetch - processPackages [OpenGeode-GeosciencesIO]: Start processing: orpy
+[2023-04-14 09:13:35] INFO root fetch - main [MainThread]: End processing [OpenGeode-GeosciencesIO]: success
+[2023-04-14 09:13:35] INFO root fetch - processPackages [orpy]: New version: [1.0.4] Old Version: [1.0.2]
+[2023-04-14 09:13:35] INFO root fetch - main [MainThread]: End processing [mypy_baseline]: success
+[2023-04-14 09:13:35] INFO root fetch - processPackages [orpy]: Downloading https://files.pythonhosted.org/packages/bf/04/fd77a3d0879d8b765b0dace8bb2fd05c88c1436bf5a45f783ae1eafd3492/orpy-1.0.2.tar.gz
+[2023-04-14 09:13:35] INFO root fetch - processPackages [orpy]: Downloading https://files.pythonhosted.org/packages/21/34/9fbaeba9a38037f59937796e241f2f82810ebf1fa414948ba42945d888a8/orpy-1.0.4.tar.gz
+[2023-04-14 09:13:36] INFO root fetch - processPackages [orpy]: executing diffoscope
+[2023-04-14 09:13:36] INFO root fetch - processPackages [orpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orpy-1.0.2.tar.gz tmp/orpy-1.0.4.tar.gz --markdown 20230414/o/orpy/1.0.2-1.0.4/diff.md --exclude *.pyd
+[2023-04-14 09:13:36] INFO root fetch - main [MainThread]: End processing [dune-query-translator]: success
+[2023-04-14 09:13:36] INFO root fetch - main [MainThread]: End processing [devito]: success
+[2023-04-14 09:13:37] INFO root fetch - main [MainThread]: End processing [orpy]: success
+[2023-04-14 09:13:48] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-04-14 09:13:48] INFO root fetch - main [MainThread]: Store serial: [17703962]
