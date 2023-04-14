@@ -20425,3 +20425,56 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 20:44:18] INFO root fetch - main [MainThread]: End processing [surveyequivalence]: success
 [2023-04-14 20:44:21] INFO root fetch - main [MainThread]: End processing [dask]: success
 [2023-04-14 20:44:21] INFO root fetch - main [MainThread]: Store serial: [17711752]
+[2023-04-14 20:49:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17711752]
+[2023-04-14 20:49:33] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-14 20:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flawmop-fishdish
+[2023-04-14 20:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dearwatson
+[2023-04-14 20:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sinacor-negs
+[2023-04-14 20:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: basaran
+[2023-04-14 20:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytransform3d
+[2023-04-14 20:49:33] WARNING root fetch - processPackages [flawmop-fishdish]: Skipping, unable to determine old version
+[2023-04-14 20:49:33] INFO root fetch - processPackages [flawmop-fishdish]: Start processing: lusid-sdk
+[2023-04-14 20:49:33] INFO root fetch - main [MainThread]: End processing [flawmop-fishdish] error
+[2023-04-14 20:49:33] INFO root fetch - processPackages [sinacor-negs]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-14 20:49:33] INFO root fetch - processPackages [basaran]: New version: [0.15.2] Old Version: [0.15.1]
+[2023-04-14 20:49:33] INFO root fetch - processPackages [pytransform3d]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-04-14 20:49:33] INFO root fetch - processPackages [dearwatson]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-14 20:49:33] INFO root fetch - processPackages [lusid-sdk]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 20:49:34] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2023-04-14 20:49:34] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-1.0.8.tar.gz tmp/lusid-sdk-1.0.9.tar.gz --markdown 20230414/l/lusid-sdk/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 20:49:34] INFO root fetch - processPackages [sinacor-negs]: Downloading https://files.pythonhosted.org/packages/fc/29/4f10337a2c8a2abf7b7b577199468947b5e93282c10a4f6fdab5f478178d/sinacor_negs-0.1.2.tar.gz
+[2023-04-14 20:49:34] INFO root fetch - processPackages [pytransform3d]: Downloading https://files.pythonhosted.org/packages/39/1c/01e7b1fe55ef41afb26f0e111a22af72594b672530c0823ff3d23d11e5e4/pytransform3d-3.0.0.tar.gz
+[2023-04-14 20:49:34] INFO root fetch - processPackages [basaran]: Downloading https://files.pythonhosted.org/packages/81/1b/7d0643370efc4b25951d3d78cb50243c021aed2b003e90fbba2fa4713330/basaran-0.15.2.tar.gz
+[2023-04-14 20:49:34] INFO root fetch - processPackages [dearwatson]: Downloading https://files.pythonhosted.org/packages/bc/0d/9c06afb0c62c3f8b3cab05fd7fdbb06672e4f98a91e9531491eb40a631a9/dearwatson-0.7.0.tar.gz
+[2023-04-14 20:49:34] INFO root fetch - processPackages [basaran]: executing diffoscope
+[2023-04-14 20:49:34] INFO root fetch - processPackages [basaran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basaran-0.15.1.tar.gz tmp/basaran-0.15.2.tar.gz --markdown 20230414/b/basaran/0.15.1-0.15.2/diff.md --exclude *.pyd
+[2023-04-14 20:49:34] INFO root fetch - processPackages [sinacor-negs]: executing diffoscope
+[2023-04-14 20:49:34] INFO root fetch - processPackages [sinacor-negs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinacor_negs-0.1.1.tar.gz tmp/sinacor_negs-0.1.2.tar.gz --markdown 20230414/s/sinacor-negs/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-14 20:49:34] INFO root fetch - processPackages [pytransform3d]: Downloading https://files.pythonhosted.org/packages/e6/4c/6dc006b517bd90180598dc238bd77bcfdfe78144e6f39500e21da280dd1a/pytransform3d-3.1.0.tar.gz
+[2023-04-14 20:49:34] INFO root fetch - processPackages [pytransform3d]: executing diffoscope
+[2023-04-14 20:49:34] INFO root fetch - processPackages [pytransform3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytransform3d-3.0.0.tar.gz tmp/pytransform3d-3.1.0.tar.gz --markdown 20230414/p/pytransform3d/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-04-14 20:49:34] INFO root fetch - processPackages [dearwatson]: executing diffoscope
+[2023-04-14 20:49:34] INFO root fetch - processPackages [dearwatson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dearwatson-0.6.1.tar.gz tmp/dearwatson-0.7.0.tar.gz --markdown 20230414/d/dearwatson/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-14 20:49:35] INFO root fetch - processPackages [basaran]: Start processing: gs-peer-connection
+[2023-04-14 20:49:35] INFO root fetch - main [MainThread]: End processing [basaran]: success
+[2023-04-14 20:49:35] INFO root fetch - processPackages [gs-peer-connection]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 20:49:35] INFO root fetch - processPackages [sinacor-negs]: Start processing: lusid-sdk-preview
+[2023-04-14 20:49:35] INFO root fetch - main [MainThread]: End processing [sinacor-negs]: success
+[2023-04-14 20:49:35] INFO root fetch - processPackages [lusid-sdk-preview]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 20:49:35] INFO root fetch - processPackages [gs-peer-connection]: executing diffoscope
+[2023-04-14 20:49:35] INFO root fetch - processPackages [gs-peer-connection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs-peer-connection-0.0.8.tar.gz tmp/gs-peer-connection-0.0.9.tar.gz --markdown 20230414/g/gs-peer-connection/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 20:49:35] INFO root fetch - processPackages [lusid-sdk-preview]: executing diffoscope
+[2023-04-14 20:49:35] INFO root fetch - processPackages [lusid-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-preview-1.0.8.tar.gz tmp/lusid-sdk-preview-1.0.9.tar.gz --markdown 20230414/l/lusid-sdk-preview/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 20:49:36] INFO root fetch - processPackages [gs-peer-connection]: Start processing: shipday
+[2023-04-14 20:49:36] INFO root fetch - main [MainThread]: End processing [gs-peer-connection]: success
+[2023-04-14 20:49:36] INFO root fetch - processPackages [shipday]: New version: [1.2.0] Old Version: [1.1.4]
+[2023-04-14 20:49:37] INFO root fetch - main [MainThread]: End processing [dearwatson]: success
+[2023-04-14 20:49:37] INFO root fetch - processPackages [shipday]: Downloading https://files.pythonhosted.org/packages/d7/03/184dadaeab68d522a683d30688203bd69b48ba0c0fe97933801f91d770cc/shipday-1.1.4.tar.gz
+[2023-04-14 20:49:37] INFO root fetch - processPackages [shipday]: Downloading https://files.pythonhosted.org/packages/63/d8/7d7da436d45bf9437e53b0e48c64eaa1c6692bc1e082722254f55fb57709/shipday-1.2.0.tar.gz
+[2023-04-14 20:49:37] INFO root fetch - processPackages [shipday]: executing diffoscope
+[2023-04-14 20:49:37] INFO root fetch - processPackages [shipday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shipday-1.1.4.tar.gz tmp/shipday-1.2.0.tar.gz --markdown 20230414/s/shipday/1.1.4-1.2.0/diff.md --exclude *.pyd
+[2023-04-14 20:49:38] INFO root fetch - main [MainThread]: End processing [shipday]: success
+[2023-04-14 20:49:39] INFO root fetch - main [MainThread]: End processing [pytransform3d]: success
+[2023-04-14 20:49:52] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2023-04-14 20:50:08] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
+[2023-04-14 20:50:08] INFO root fetch - main [MainThread]: Store serial: [17711813]
