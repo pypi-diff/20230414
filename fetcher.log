@@ -13000,3 +13000,101 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 14:09:46] INFO root fetch - main [MainThread]: End processing [test-23234231]: success
 [2023-04-14 14:09:52] INFO root fetch - main [MainThread]: End processing [test-23234231]: success
 [2023-04-14 14:09:52] INFO root fetch - main [MainThread]: Store serial: [17706788]
+[2023-04-14 14:14:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17706788]
+[2023-04-14 14:14:59] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-14 14:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nudecrawler
+[2023-04-14 14:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: secapi-tl
+[2023-04-14 14:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pathaia
+[2023-04-14 14:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cftdeploy
+[2023-04-14 14:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: coolhtml
+[2023-04-14 14:15:00] INFO root fetch - processPackages [cftdeploy]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-14 14:15:00] INFO root fetch - processPackages [pathaia]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-14 14:15:00] INFO root fetch - processPackages [nudecrawler]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 14:15:00] WARNING root fetch - processPackages [coolhtml]: Skipping, unable to determine old version
+[2023-04-14 14:15:00] INFO root fetch - processPackages [coolhtml]: Start processing: duonijo-commons
+[2023-04-14 14:15:00] INFO root fetch - main [MainThread]: End processing [coolhtml] error
+[2023-04-14 14:15:00] INFO root fetch - processPackages [secapi-tl]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-14 14:15:00] WARNING root fetch - processPackages [duonijo-commons]: Skipping, unable to determine old version
+[2023-04-14 14:15:00] INFO root fetch - processPackages [duonijo-commons]: Start processing: kmRead
+[2023-04-14 14:15:00] INFO root fetch - main [MainThread]: End processing [duonijo-commons] error
+[2023-04-14 14:15:00] INFO root fetch - processPackages [kmRead]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-14 14:15:00] INFO root fetch - processPackages [cftdeploy]: Downloading https://files.pythonhosted.org/packages/dc/0b/80d8c584a48b6074550824beb72911f5ff9359eec45637e28aeed7ae5e2f/cftdeploy-1.0.5.tar.gz
+[2023-04-14 14:15:00] INFO root fetch - processPackages [kmRead]: Downloading https://files.pythonhosted.org/packages/5a/5e/c88ae03b257bce438612be959185fc5739b17db5d175f46e26ce7b80d317/kmRead-0.1.4.tar.gz
+[2023-04-14 14:15:00] INFO root fetch - processPackages [pathaia]: Downloading https://files.pythonhosted.org/packages/44/80/96a1b4dc44ec974a5db3698a83a5b9f050b3668f0cf01e7dc69b71638a11/pathaia-0.2.3.tar.gz
+[2023-04-14 14:15:00] INFO root fetch - processPackages [secapi-tl]: Downloading https://files.pythonhosted.org/packages/81/68/e535fa3072cf46bac686692acd32caef241c5926b10e6a3777289e56fb4b/secapi-tl-1.1.1.tar.gz
+[2023-04-14 14:15:00] INFO root fetch - processPackages [nudecrawler]: executing diffoscope
+[2023-04-14 14:15:00] INFO root fetch - processPackages [nudecrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudecrawler-0.3.8.tar.gz tmp/nudecrawler-0.3.9.tar.gz --markdown 20230414/n/nudecrawler/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 14:15:00] INFO root fetch - processPackages [secapi-tl]: executing diffoscope
+[2023-04-14 14:15:00] INFO root fetch - processPackages [secapi-tl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secapi-tl-1.1.0.tar.gz tmp/secapi-tl-1.1.1.tar.gz --markdown 20230414/s/secapi-tl/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-14 14:15:00] INFO root fetch - processPackages [pathaia]: executing diffoscope
+[2023-04-14 14:15:00] INFO root fetch - processPackages [pathaia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pathaia-0.2.2.tar.gz tmp/pathaia-0.2.3.tar.gz --markdown 20230414/p/pathaia/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-14 14:15:00] INFO root fetch - processPackages [cftdeploy]: Downloading https://files.pythonhosted.org/packages/81/99/d1e17c3fbb8da97454d43a65b422bb3a77fade403beec55737fa598c4f1a/cftdeploy-1.0.6.tar.gz
+[2023-04-14 14:15:00] INFO root fetch - processPackages [kmRead]: Downloading https://files.pythonhosted.org/packages/ae/d3/13fc50dcef2360ff182355ea348798e6c0fb860268f31e003b617601e4e9/kmRead-0.1.5.tar.gz
+[2023-04-14 14:15:00] INFO root fetch - processPackages [cftdeploy]: executing diffoscope
+[2023-04-14 14:15:00] INFO root fetch - processPackages [cftdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cftdeploy-1.0.5.tar.gz tmp/cftdeploy-1.0.6.tar.gz --markdown 20230414/c/cftdeploy/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-14 14:15:00] INFO root fetch - processPackages [kmRead]: executing diffoscope
+[2023-04-14 14:15:00] INFO root fetch - processPackages [kmRead]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmRead-0.1.4.tar.gz tmp/kmRead-0.1.5.tar.gz --markdown 20230414/k/kmRead/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-14 14:15:01] INFO root fetch - processPackages [secapi-tl]: Start processing: minder-downloader
+[2023-04-14 14:15:01] INFO root fetch - main [MainThread]: End processing [secapi-tl]: success
+[2023-04-14 14:15:01] INFO root fetch - processPackages [minder-downloader]: New version: [0.1.6] Old Version: [0.1.4]
+[2023-04-14 14:15:01] INFO root fetch - processPackages [nudecrawler]: Start processing: nops-metadata
+[2023-04-14 14:15:01] INFO root fetch - main [MainThread]: End processing [nudecrawler]: success
+[2023-04-14 14:15:01] INFO root fetch - processPackages [nops-metadata]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-14 14:15:01] INFO root fetch - processPackages [pathaia]: Start processing: umierrorcorrect
+[2023-04-14 14:15:01] INFO root fetch - main [MainThread]: End processing [pathaia]: success
+[2023-04-14 14:15:01] INFO root fetch - processPackages [umierrorcorrect]: New version: [0.26] Old Version: [0.25]
+[2023-04-14 14:15:01] INFO root fetch - processPackages [cftdeploy]: Start processing: pyreason
+[2023-04-14 14:15:01] INFO root fetch - main [MainThread]: End processing [cftdeploy]: success
+[2023-04-14 14:15:01] INFO root fetch - processPackages [minder-downloader]: Downloading https://files.pythonhosted.org/packages/a6/ca/d8791f7a55473bc37052dd38392f7a0694b758dd0523265dfa50629f9c85/minder_downloader-0.1.4.tar.gz
+[2023-04-14 14:15:01] INFO root fetch - processPackages [pyreason]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-04-14 14:15:01] INFO root fetch - processPackages [kmRead]: Start processing: StaticVar
+[2023-04-14 14:15:01] INFO root fetch - main [MainThread]: End processing [kmRead]: success
+[2023-04-14 14:15:01] INFO root fetch - processPackages [StaticVar]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 14:15:01] INFO root fetch - processPackages [umierrorcorrect]: Downloading https://files.pythonhosted.org/packages/37/bc/1f9af750dcbd84275eebad99b577daf51b33bd4f4a720594a955d7eb9fa9/umierrorcorrect-0.25.tar.gz
+[2023-04-14 14:15:01] INFO root fetch - processPackages [nops-metadata]: Downloading https://files.pythonhosted.org/packages/c5/c3/19b48bbd4dd701eee841e49fd661ba3a80c0f3fd72643c330fea3b5f8526/nops_metadata-0.4.8.tar.gz
+[2023-04-14 14:15:02] INFO root fetch - processPackages [pyreason]: Downloading https://files.pythonhosted.org/packages/af/03/15e0155231c163f8c4e47335e961e28b84a328b4d5490e675a98631fc248/pyreason-1.2.9.tar.gz
+[2023-04-14 14:15:02] INFO root fetch - processPackages [StaticVar]: Downloading https://files.pythonhosted.org/packages/8c/97/bc7a1a2c07da29df1b27e130365dfb7c8c8a8f5b7449082e9b4a9f25de48/StaticVar-0.0.3.tar.gz
+[2023-04-14 14:15:02] INFO root fetch - processPackages [minder-downloader]: Downloading https://files.pythonhosted.org/packages/4c/a0/55e83b2e73bac496590ad61a4c44c54a6e337e53f60af07c6ebead269c1f/minder_downloader-0.1.6.tar.gz
+[2023-04-14 14:15:02] INFO root fetch - processPackages [minder-downloader]: executing diffoscope
+[2023-04-14 14:15:02] INFO root fetch - processPackages [minder-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minder_downloader-0.1.4.tar.gz tmp/minder_downloader-0.1.6.tar.gz --markdown 20230414/m/minder-downloader/0.1.4-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 14:15:02] INFO root fetch - processPackages [umierrorcorrect]: Downloading https://files.pythonhosted.org/packages/b7/6d/3b2e2dfd9493f11b20ec62493c3622ffe48e2a6fbcd11794d7a0d8ba664b/umierrorcorrect-0.26.tar.gz
+[2023-04-14 14:15:02] INFO root fetch - processPackages [StaticVar]: executing diffoscope
+[2023-04-14 14:15:02] INFO root fetch - processPackages [StaticVar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StaticVar-0.0.2.tar.gz tmp/StaticVar-0.0.3.tar.gz --markdown 20230414/S/StaticVar/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 14:15:02] INFO root fetch - processPackages [nops-metadata]: Downloading https://files.pythonhosted.org/packages/aa/2c/d6fbcac978f45d53f10db94de59a367ff7890840829cbfb2589011481810/nops_metadata-0.4.9.tar.gz
+[2023-04-14 14:15:02] INFO root fetch - processPackages [pyreason]: Downloading https://files.pythonhosted.org/packages/8c/83/edf2042b528afceacfcf95763e829c4cb8e57716af663a34a6241c0070a4/pyreason-1.3.0.tar.gz
+[2023-04-14 14:15:02] INFO root fetch - processPackages [umierrorcorrect]: executing diffoscope
+[2023-04-14 14:15:02] INFO root fetch - processPackages [umierrorcorrect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/umierrorcorrect-0.25.tar.gz tmp/umierrorcorrect-0.26.tar.gz --markdown 20230414/u/umierrorcorrect/0.25-0.26/diff.md --exclude *.pyd
+[2023-04-14 14:15:02] INFO root fetch - processPackages [nops-metadata]: executing diffoscope
+[2023-04-14 14:15:02] INFO root fetch - processPackages [nops-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nops_metadata-0.4.8.tar.gz tmp/nops_metadata-0.4.9.tar.gz --markdown 20230414/n/nops-metadata/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-14 14:15:02] INFO root fetch - processPackages [pyreason]: executing diffoscope
+[2023-04-14 14:15:02] INFO root fetch - processPackages [pyreason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyreason-1.2.9.tar.gz tmp/pyreason-1.3.0.tar.gz --markdown 20230414/p/pyreason/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-04-14 14:15:03] INFO root fetch - processPackages [minder-downloader]: Start processing: aiogram-ext
+[2023-04-14 14:15:03] INFO root fetch - main [MainThread]: End processing [minder-downloader]: success
+[2023-04-14 14:15:03] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 14:15:03] INFO root fetch - processPackages [StaticVar]: Start processing: seven-cloudapp-frame
+[2023-04-14 14:15:03] INFO root fetch - main [MainThread]: End processing [StaticVar]: success
+[2023-04-14 14:15:03] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-04-14 14:15:03] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-14 14:15:03] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.0.8.tar.gz tmp/aiogram-ext-0.0.9.tar.gz --markdown 20230414/a/aiogram-ext/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 14:15:03] INFO root fetch - processPackages [nops-metadata]: Start processing: XZGUtil
+[2023-04-14 14:15:03] INFO root fetch - main [MainThread]: End processing [nops-metadata]: success
+[2023-04-14 14:15:03] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-04-14 14:15:03] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230414/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-04-14 14:15:03] INFO root fetch - processPackages [XZGUtil]: New version: [2.3.8] Old Version: [2.3.7]
+[2023-04-14 14:15:03] INFO root fetch - processPackages [umierrorcorrect]: Start processing: fastphase
+[2023-04-14 14:15:03] INFO root fetch - main [MainThread]: End processing [umierrorcorrect]: success
+[2023-04-14 14:15:03] INFO root fetch - processPackages [fastphase]: New version: [2.0.dev3] Old Version: [2.0.dev2]
+[2023-04-14 14:15:03] INFO root fetch - processPackages [XZGUtil]: Downloading https://files.pythonhosted.org/packages/58/77/f2845c026c8e1e710842e2a155a0e43b536f1919dff86d68fdbc558d99ab/XZGUtil-2.3.7.tar.gz
+[2023-04-14 14:15:03] INFO root fetch - processPackages [fastphase]: Downloading https://files.pythonhosted.org/packages/07/34/14c635a199c68ce858b9cd2eec1df145f96f3cd26c4ea295ed6f310a6b13/fastphase-2.0.dev2.tar.gz
+[2023-04-14 14:15:03] INFO root fetch - main [MainThread]: End processing [pyreason]: success
+[2023-04-14 14:15:03] INFO root fetch - processPackages [XZGUtil]: Downloading https://files.pythonhosted.org/packages/3e/08/9c049a1ae955d05c243889ddb728cb05f73428d2cbea112a85c1705e542b/XZGUtil-2.3.8.tar.gz
+[2023-04-14 14:15:04] INFO root fetch - processPackages [XZGUtil]: executing diffoscope
+[2023-04-14 14:15:04] INFO root fetch - processPackages [XZGUtil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/XZGUtil-2.3.7.tar.gz tmp/XZGUtil-2.3.8.tar.gz --markdown 20230414/X/XZGUtil/2.3.7-2.3.8/diff.md --exclude *.pyd
+[2023-04-14 14:15:04] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-14 14:15:04] INFO root fetch - processPackages [fastphase]: Downloading https://files.pythonhosted.org/packages/d9/e0/c1d8f57daceb426248c98382926130ca6ff072273c558d93a74f799e2c65/fastphase-2.0.dev3.tar.gz
+[2023-04-14 14:15:04] INFO root fetch - processPackages [fastphase]: executing diffoscope
+[2023-04-14 14:15:04] INFO root fetch - processPackages [fastphase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastphase-2.0.dev2.tar.gz tmp/fastphase-2.0.dev3.tar.gz --markdown 20230414/f/fastphase/2.0.dev2-2.0.dev3/diff.md --exclude *.pyd
+[2023-04-14 14:15:05] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-04-14 14:15:05] INFO root fetch - main [MainThread]: End processing [XZGUtil]: success
+[2023-04-14 14:15:07] INFO root fetch - main [MainThread]: End processing [fastphase]: success
+[2023-04-14 14:15:07] INFO root fetch - main [MainThread]: Store serial: [17706842]
