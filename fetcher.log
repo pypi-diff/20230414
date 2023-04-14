@@ -17261,3 +17261,72 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 17:57:04] INFO root fetch - main [MainThread]: End processing [teneva]: success
 [2023-04-14 17:57:12] INFO root fetch - main [MainThread]: End processing [morph-kgc]: success
 [2023-04-14 17:57:12] INFO root fetch - main [MainThread]: Store serial: [17709534]
+[2023-04-14 18:02:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17709534]
+[2023-04-14 18:02:21] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-14 18:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyMOL-advance
+[2023-04-14 18:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protofcp
+[2023-04-14 18:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyberdrop-dl
+[2023-04-14 18:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: istec-p4
+[2023-04-14 18:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdp-py
+[2023-04-14 18:02:21] WARNING root fetch - processPackages [istec-p4]: Skipping, unable to determine old version
+[2023-04-14 18:02:21] INFO root fetch - processPackages [istec-p4]: Start processing: coiled
+[2023-04-14 18:02:21] INFO root fetch - main [MainThread]: End processing [istec-p4] error
+[2023-04-14 18:02:21] WARNING root fetch - processPackages [PyMOL-advance]: Skipping, unable to determine old version
+[2023-04-14 18:02:21] INFO root fetch - processPackages [PyMOL-advance]: Start processing: zillion
+[2023-04-14 18:02:21] INFO root fetch - main [MainThread]: End processing [PyMOL-advance] error
+[2023-04-14 18:02:21] INFO root fetch - processPackages [cdp-py]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-04-14 18:02:21] INFO root fetch - processPackages [protofcp]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 18:02:21] INFO root fetch - processPackages [zillion]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-14 18:02:21] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.1.11] Old Version: [4.1.1]
+[2023-04-14 18:02:21] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-14 18:02:21] INFO root fetch - processPackages [zillion]: executing diffoscope
+[2023-04-14 18:02:21] INFO root fetch - processPackages [zillion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zillion-0.9.8.tar.gz tmp/zillion-0.9.9.tar.gz --markdown 20230414/z/zillion/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-14 18:02:21] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-14 18:02:21] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230414/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-14 18:02:21] INFO root fetch - processPackages [protofcp]: Downloading https://files.pythonhosted.org/packages/1c/e9/d4932f9352957a8cde436f8c7f5726b0ae1a6dcbcc9bf7c899088a7aaaff/protofcp-0.0.2.tar.gz
+[2023-04-14 18:02:21] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/a2/36/ffac746a90b097441a7bd3e0be35b2db7cb8815ef4fd45aeb2d08c7f6559/cyberdrop-dl-4.1.1.tar.gz
+[2023-04-14 18:02:21] INFO root fetch - processPackages [cdp-py]: Downloading https://files.pythonhosted.org/packages/d7/25/8adfe0b35b706571ee70a0e018654c4c30fcf795c22c46f47f5494482797/cdp-py-1.6.2.tar.gz
+[2023-04-14 18:02:21] INFO root fetch - processPackages [cdp-py]: executing diffoscope
+[2023-04-14 18:02:21] INFO root fetch - processPackages [cdp-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdp-py-1.6.1.tar.gz tmp/cdp-py-1.6.2.tar.gz --markdown 20230414/c/cdp-py/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-04-14 18:02:22] INFO root fetch - processPackages [protofcp]: Downloading https://files.pythonhosted.org/packages/b8/78/77ae3f37503030969f4fa2db71d7075d268a64e60ca5bc91971d69eea353/protofcp-0.0.3.tar.gz
+[2023-04-14 18:02:22] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/d0/76/88d32a5ee85bcf5411dc59cb39208abfde7d4396f210996aa4e21fd0a29e/cyberdrop-dl-4.1.11.tar.gz
+[2023-04-14 18:02:22] INFO root fetch - processPackages [protofcp]: executing diffoscope
+[2023-04-14 18:02:22] INFO root fetch - processPackages [protofcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protofcp-0.0.2.tar.gz tmp/protofcp-0.0.3.tar.gz --markdown 20230414/p/protofcp/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 18:02:22] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-04-14 18:02:22] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.1.1.tar.gz tmp/cyberdrop-dl-4.1.11.tar.gz --markdown 20230414/c/cyberdrop-dl/4.1.1-4.1.11/diff.md --exclude *.pyd
+[2023-04-14 18:02:23] INFO root fetch - processPackages [protofcp]: Start processing: shub
+[2023-04-14 18:02:23] INFO root fetch - main [MainThread]: End processing [protofcp]: success
+[2023-04-14 18:02:23] INFO root fetch - processPackages [shub]: New version: [2.9.0] Old Version: [2.8.2]
+[2023-04-14 18:02:23] INFO root fetch - processPackages [shub]: Downloading https://files.pythonhosted.org/packages/ec/73/0b0a9cf96beec02feb715dd4a0f1cbba23f50d95f0936da70cff4c53cd00/shub-2.8.2.tar.gz
+[2023-04-14 18:02:23] INFO root fetch - processPackages [cdp-py]: Start processing: hatch-datadog-build-metadata
+[2023-04-14 18:02:23] INFO root fetch - main [MainThread]: End processing [cdp-py]: success
+[2023-04-14 18:02:23] WARNING root fetch - processPackages [hatch-datadog-build-metadata]: Skipping, unable to determine old version
+[2023-04-14 18:02:23] INFO root fetch - processPackages [hatch-datadog-build-metadata]: Start processing: lusid-workflow-sdk-preview
+[2023-04-14 18:02:23] INFO root fetch - main [MainThread]: End processing [hatch-datadog-build-metadata] error
+[2023-04-14 18:02:23] INFO root fetch - processPackages [cyberdrop-dl]: Start processing: lilyanncabinets
+[2023-04-14 18:02:23] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-04-14 18:02:23] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: New version: [0.1.209] Old Version: [0.1.208]
+[2023-04-14 18:02:23] INFO root fetch - processPackages [lilyanncabinets]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-14 18:02:23] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: Downloading https://files.pythonhosted.org/packages/ee/44/514a348a73ce7661653ca1d2755ec8b01fc20b1a3abfc2f9478a254d24c5/lusid-workflow-sdk-preview-0.1.209.tar.gz
+[2023-04-14 18:02:23] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: executing diffoscope
+[2023-04-14 18:02:23] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-workflow-sdk-preview-0.1.208.tar.gz tmp/lusid-workflow-sdk-preview-0.1.209.tar.gz --markdown 20230414/l/lusid-workflow-sdk-preview/0.1.208-0.1.209/diff.md --exclude *.pyd
+[2023-04-14 18:02:23] INFO root fetch - processPackages [zillion]: Start processing: reinautils
+[2023-04-14 18:02:23] INFO root fetch - main [MainThread]: End processing [zillion]: success
+[2023-04-14 18:02:24] WARNING root fetch - processPackages [reinautils]: Skipping, unable to determine old version
+[2023-04-14 18:02:24] INFO root fetch - processPackages [reinautils]: Start processing: pyttsx4
+[2023-04-14 18:02:24] INFO root fetch - main [MainThread]: End processing [reinautils] error
+[2023-04-14 18:02:24] INFO root fetch - processPackages [shub]: Downloading https://files.pythonhosted.org/packages/d1/5d/75924371ddd7f9d13fa94f2901470dc2ca6158c33d3a6f0059b5005356a5/shub-2.9.0.tar.gz
+[2023-04-14 18:02:24] INFO root fetch - processPackages [pyttsx4]: New version: [3.0.7] Old Version: [3.0.6]
+[2023-04-14 18:02:24] INFO root fetch - processPackages [lilyanncabinets]: Downloading https://files.pythonhosted.org/packages/5b/fa/09f59ffdb39d8623d332747465b4d654ce42d36ecd1e9ff5aa2b18d74dda/lilyanncabinets-1.5.2.tar.gz
+[2023-04-14 18:02:24] INFO root fetch - processPackages [pyttsx4]: executing diffoscope
+[2023-04-14 18:02:24] INFO root fetch - processPackages [pyttsx4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttsx4-3.0.6-py3-none-any.whl.zip tmp/pyttsx4-3.0.7-py3-none-any.whl.zip --markdown 20230414/p/pyttsx4/3.0.6-3.0.7/diff.md --exclude *.pyd
+[2023-04-14 18:02:24] INFO root fetch - processPackages [shub]: executing diffoscope
+[2023-04-14 18:02:24] INFO root fetch - processPackages [shub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shub-2.8.2.tar.gz tmp/shub-2.9.0.tar.gz --markdown 20230414/s/shub/2.8.2-2.9.0/diff.md --exclude *.pyd
+[2023-04-14 18:02:24] INFO root fetch - processPackages [lilyanncabinets]: executing diffoscope
+[2023-04-14 18:02:24] INFO root fetch - processPackages [lilyanncabinets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lilyanncabinets-1.5.1.tar.gz tmp/lilyanncabinets-1.5.2.tar.gz --markdown 20230414/l/lilyanncabinets/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-14 18:02:25] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-14 18:02:25] INFO root fetch - main [MainThread]: End processing [pyttsx4]: success
+[2023-04-14 18:02:25] INFO root fetch - main [MainThread]: End processing [lilyanncabinets]: success
+[2023-04-14 18:02:25] INFO root fetch - main [MainThread]: End processing [lusid-workflow-sdk-preview]: success
+[2023-04-14 18:02:25] INFO root fetch - main [MainThread]: End processing [shub]: success
+[2023-04-14 18:02:25] INFO root fetch - main [MainThread]: Store serial: [17709581]
