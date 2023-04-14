@@ -5684,3 +5684,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 03:33:16] INFO root fetch - main [MainThread]: End processing [lumibot] error
 [2023-04-14 03:33:17] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-04-14 03:33:17] INFO root fetch - main [MainThread]: Store serial: [17702297]
+[2023-04-14 03:38:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17702297]
+[2023-04-14 03:38:25] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 03:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-pytorch
+[2023-04-14 03:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-scipy
+[2023-04-14 03:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phpdoc-trans
+[2023-04-14 03:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aesim.simba
+[2023-04-14 03:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: butter-cli
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 03:38:25] WARNING root fetch - processPackages [butter-cli]: Skipping, unable to determine old version
+[2023-04-14 03:38:25] INFO root fetch - processPackages [butter-cli]: Start processing: nbdev-sphinx
+[2023-04-14 03:38:25] INFO root fetch - main [MainThread]: End processing [butter-cli] error
+[2023-04-14 03:38:25] WARNING root fetch - processPackages [phpdoc-trans]: Skipping, unable to determine old version
+[2023-04-14 03:38:25] INFO root fetch - processPackages [phpdoc-trans]: Start processing: IOTELLME
+[2023-04-14 03:38:25] INFO root fetch - main [MainThread]: End processing [phpdoc-trans] error
+[2023-04-14 03:38:25] INFO root fetch - processPackages [aesim.simba]: New version: [2023.4.13a1] Old Version: [2023.3.24a1]
+[2023-04-14 03:38:25] WARNING root fetch - processPackages [IOTELLME]: Skipping, unable to determine old version
+[2023-04-14 03:38:25] INFO root fetch - processPackages [IOTELLME]: Start processing: proactive
+[2023-04-14 03:38:25] INFO root fetch - main [MainThread]: End processing [IOTELLME] error
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 03:38:25] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230414/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 03:38:25] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230414/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230414/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 03:38:25] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-04-14 03:38:25] INFO root fetch - processPackages [proactive]: Start processing: nbdev-django
+[2023-04-14 03:38:25] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 03:38:25] INFO root fetch - processPackages [aesim.simba]: Downloading https://files.pythonhosted.org/packages/3e/b8/650ad6a5281d94bfa810a42c79fecb2548148c8639e2461f5cbfd9091b7a/aesim.simba-2023.3.24a1-py3-none-win_amd64.whl
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-14 03:38:25] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230414/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 03:38:25] WARNING root fetch - processPackages [aesim.simba]: Skipping package: exceeds size limit 86824134>=10485760
+[2023-04-14 03:38:25] INFO root fetch - processPackages [aesim.simba]: Start processing: proactive-jupyter-kernel
+[2023-04-14 03:38:25] INFO root fetch - main [MainThread]: End processing [aesim.simba] error
+[2023-04-14 03:38:25] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-04-14 03:38:26] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-04-14 03:38:26] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230414/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-04-14 03:38:26] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-04-14 03:38:26] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-04-14 03:38:26] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-14 03:38:26] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-04-14 03:38:27] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-04-14 03:38:27] INFO root fetch - main [MainThread]: Store serial: [17702333]
