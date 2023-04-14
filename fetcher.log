@@ -7926,3 +7926,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 08:18:30] INFO root fetch - main [MainThread]: End processing [pulumiverse-heroku]: success
 [2023-04-14 08:18:31] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-04-14 08:18:31] INFO root fetch - main [MainThread]: Store serial: [17703687]
+[2023-04-14 08:23:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703687]
+[2023-04-14 08:23:39] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 08:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pice-core
+[2023-04-14 08:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: global-query-conn
+[2023-04-14 08:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Slpapy
+[2023-04-14 08:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lanfacesdk
+[2023-04-14 08:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alibabacloud-pds20220301
+[2023-04-14 08:23:39] WARNING root fetch - processPackages [pice-core]: Skipping, unable to determine old version
+[2023-04-14 08:23:39] INFO root fetch - processPackages [pice-core]: Start processing: xml-api
+[2023-04-14 08:23:39] INFO root fetch - main [MainThread]: End processing [pice-core] error
+[2023-04-14 08:23:39] INFO root fetch - processPackages [Slpapy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 08:23:39] WARNING root fetch - processPackages [global-query-conn]: Skipping, unable to determine old version
+[2023-04-14 08:23:39] INFO root fetch - processPackages [xml-api]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 08:23:39] INFO root fetch - processPackages [global-query-conn]: Start processing: django-vite-react
+[2023-04-14 08:23:39] INFO root fetch - processPackages [alibabacloud-pds20220301]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-14 08:23:39] INFO root fetch - main [MainThread]: End processing [global-query-conn] error
+[2023-04-14 08:23:39] INFO root fetch - processPackages [lanfacesdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 08:23:39] WARNING root fetch - processPackages [django-vite-react]: Skipping, unable to determine old version
+[2023-04-14 08:23:39] INFO root fetch - processPackages [django-vite-react]: Start processing: mingdaoyun-sdk
+[2023-04-14 08:23:39] INFO root fetch - main [MainThread]: End processing [django-vite-react] error
+[2023-04-14 08:23:39] INFO root fetch - processPackages [mingdaoyun-sdk]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-14 08:23:39] INFO root fetch - processPackages [lanfacesdk]: executing diffoscope
+[2023-04-14 08:23:39] INFO root fetch - processPackages [lanfacesdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lanfacesdk-0.0.8.tar.gz tmp/lanfacesdk-0.0.9.tar.gz --markdown 20230414/l/lanfacesdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 08:23:39] INFO root fetch - processPackages [xml-api]: Downloading https://files.pythonhosted.org/packages/a3/57/625d88780e5b9fc787656526d1fb89883e835d96d4007402ddbea7ea5180/xml_api-0.0.3.tar.gz
+[2023-04-14 08:23:39] INFO root fetch - processPackages [alibabacloud-pds20220301]: Downloading https://files.pythonhosted.org/packages/76/a9/250a87d1bd7efa3f5007f8dda383cb3064555be6f646977821069da6474d/alibabacloud_pds20220301-1.0.7.tar.gz
+[2023-04-14 08:23:39] INFO root fetch - processPackages [mingdaoyun-sdk]: Downloading https://files.pythonhosted.org/packages/5e/e5/e32db1bf5bc47d82b0196bf9d478e8bc13bdc6f074d552013cb7b4909f85/mingdaoyun_sdk-0.0.4.tar.gz
+[2023-04-14 08:23:39] INFO root fetch - processPackages [Slpapy]: Downloading https://files.pythonhosted.org/packages/51/a2/9caaceba5767f5e43007d994b11196dac5affc289d2e74eba28b20bae0ec/Slpapy-0.1.9.tar.gz
+[2023-04-14 08:23:39] INFO root fetch - processPackages [mingdaoyun-sdk]: executing diffoscope
+[2023-04-14 08:23:39] INFO root fetch - processPackages [mingdaoyun-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mingdaoyun_sdk-0.0.3.tar.gz tmp/mingdaoyun_sdk-0.0.4.tar.gz --markdown 20230414/m/mingdaoyun-sdk/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 08:23:39] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-04-14 08:23:39] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.1.8.tar.gz tmp/Slpapy-0.1.9.tar.gz --markdown 20230414/S/Slpapy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 08:23:40] INFO root fetch - processPackages [alibabacloud-pds20220301]: Downloading https://files.pythonhosted.org/packages/09/40/e9ddea9ec92f9ef473afe6e2d63faceeac9d3043dbfda1fed0e45cb8943b/alibabacloud_pds20220301-1.0.8.tar.gz
+[2023-04-14 08:23:40] INFO root fetch - processPackages [xml-api]: Downloading https://files.pythonhosted.org/packages/81/39/d9878b7fb297ee84ba7cc8a44a93b752a459874eadda0d5090e188b79f24/xml_api-0.0.4.tar.gz
+[2023-04-14 08:23:40] INFO root fetch - processPackages [alibabacloud-pds20220301]: executing diffoscope
+[2023-04-14 08:23:40] INFO root fetch - processPackages [alibabacloud-pds20220301]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_pds20220301-1.0.7.tar.gz tmp/alibabacloud_pds20220301-1.0.8.tar.gz --markdown 20230414/a/alibabacloud-pds20220301/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-14 08:23:40] INFO root fetch - processPackages [xml-api]: executing diffoscope
+[2023-04-14 08:23:40] INFO root fetch - processPackages [xml-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xml_api-0.0.3.tar.gz tmp/xml_api-0.0.4.tar.gz --markdown 20230414/x/xml-api/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-14 08:23:40] INFO root fetch - processPackages [Slpapy]: Start processing: ixnetwork-restpy
+[2023-04-14 08:23:40] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
+[2023-04-14 08:23:40] INFO root fetch - processPackages [ixnetwork-restpy]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-14 08:23:41] INFO root fetch - processPackages [lanfacesdk]: Start processing: relenv
+[2023-04-14 08:23:41] INFO root fetch - main [MainThread]: End processing [lanfacesdk]: success
+[2023-04-14 08:23:41] INFO root fetch - processPackages [relenv]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-14 08:23:41] INFO root fetch - processPackages [ixnetwork-restpy]: Downloading https://files.pythonhosted.org/packages/2e/73/bd66c25684e2fdde0952dd8ada329c11fab9864384e90a3a1770bc6f4ef6/ixnetwork_restpy-1.1.8.tar.gz
+[2023-04-14 08:23:41] INFO root fetch - processPackages [mingdaoyun-sdk]: Start processing: fake-bpy-module-latest
+[2023-04-14 08:23:41] INFO root fetch - main [MainThread]: End processing [mingdaoyun-sdk]: success
+[2023-04-14 08:23:41] INFO root fetch - processPackages [relenv]: executing diffoscope
+[2023-04-14 08:23:41] INFO root fetch - processPackages [relenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relenv-0.8.2-py3-none-any.whl.zip tmp/relenv-0.9.0-py3-none-any.whl.zip --markdown 20230414/r/relenv/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 08:23:41] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230414] Old Version: [20230412]
+[2023-04-14 08:23:41] INFO root fetch - main [MainThread]: End processing [alibabacloud-pds20220301]: success
+[2023-04-14 08:23:41] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/a3/29/15b33325fd38e5acef8307e20f4a3f293e5eba96a0dae3e0ebea43ac4deb/fake-bpy-module-latest-20230414.tar.gz
+[2023-04-14 08:23:41] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-04-14 08:23:41] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230412.tar.gz tmp/fake-bpy-module-latest-20230414.tar.gz --markdown 20230414/f/fake-bpy-module-latest/20230412-20230414/diff.md --exclude *.pyd
+[2023-04-14 08:23:42] INFO root fetch - processPackages [ixnetwork-restpy]: Downloading https://files.pythonhosted.org/packages/68/80/2c71d12b69fe74c1ceeb1ea1913d7afdaf5d82ec06f86338f86266b91b69/ixnetwork_restpy-1.1.9.tar.gz
+[2023-04-14 08:23:42] INFO root fetch - main [MainThread]: End processing [xml-api]: success
+[2023-04-14 08:23:42] INFO root fetch - main [MainThread]: End processing [relenv]: success
+[2023-04-14 08:23:43] INFO root fetch - processPackages [ixnetwork-restpy]: executing diffoscope
+[2023-04-14 08:23:43] INFO root fetch - processPackages [ixnetwork-restpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ixnetwork_restpy-1.1.8.tar.gz tmp/ixnetwork_restpy-1.1.9.tar.gz --markdown 20230414/i/ixnetwork-restpy/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-14 08:23:49] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-04-14 08:26:43] ERROR root fetch - processPackages [ixnetwork-restpy]: Timeout during execution of pkgdiff
+[2023-04-14 08:26:43] INFO root fetch - main [MainThread]: End processing [ixnetwork-restpy] error
+[2023-04-14 08:26:43] INFO root fetch - main [MainThread]: Store serial: [17703723]
