@@ -8095,3 +8095,92 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 08:41:07] ERROR root fetch - processPackages [delphixpy]: Timeout during execution of pkgdiff
 [2023-04-14 08:41:07] INFO root fetch - main [MainThread]: End processing [delphixpy] error
 [2023-04-14 08:41:07] INFO root fetch - main [MainThread]: Store serial: [17703787]
+[2023-04-14 08:46:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703787]
+[2023-04-14 08:46:16] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-14 08:46:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docrawl
+[2023-04-14 08:46:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dfeed
+[2023-04-14 08:46:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-gateway-pds
+[2023-04-14 08:46:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alibabacloud-gateway-pds-py2
+[2023-04-14 08:46:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipen-log2file
+[2023-04-14 08:46:16] INFO root fetch - processPackages [pipen-log2file]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-04-14 08:46:16] INFO root fetch - processPackages [dfeed]: New version: [0.0b1] Old Version: [0.0.2]
+[2023-04-14 08:46:16] INFO root fetch - processPackages [docrawl]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-14 08:46:16] INFO root fetch - processPackages [alibabacloud-gateway-pds]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 08:46:16] INFO root fetch - processPackages [alibabacloud-gateway-pds-py2]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 08:46:16] INFO root fetch - processPackages [dfeed]: Downloading https://files.pythonhosted.org/packages/c3/31/eb7ff0db4ad9918efefc3d4645f287b6f22fa7d1a2541d842bd2c5571c52/dfeed-0.0.2.tar.gz
+[2023-04-14 08:46:16] INFO root fetch - processPackages [alibabacloud-gateway-pds-py2]: Downloading https://files.pythonhosted.org/packages/81/e9/c2667890e8ed994d54e26f3f95e11628ca3b8fee5040796827b50f455492/alibabacloud_gateway_pds_py2-0.0.5.tar.gz
+[2023-04-14 08:46:16] INFO root fetch - processPackages [alibabacloud-gateway-pds]: Downloading https://files.pythonhosted.org/packages/65/3d/97e5490ebe44a4e34ea4de6b3aa63f7b421598e05b3eebbcbcf3f7a6ad09/alibabacloud_gateway_pds-0.0.5.tar.gz
+[2023-04-14 08:46:16] INFO root fetch - processPackages [docrawl]: Downloading https://files.pythonhosted.org/packages/f7/27/f1ce817dfa0c7b93cd961ef3039fc38fa9e098b104fea147402cf1660524/docrawl-0.4.3.tar.gz
+[2023-04-14 08:46:16] INFO root fetch - processPackages [pipen-log2file]: Downloading https://files.pythonhosted.org/packages/f2/b5/3d9ac34b92ca32e491fe8e24b5acc40d73b66d01f924429d845b0b01af00/pipen_log2file-0.2.1.tar.gz
+[2023-04-14 08:46:16] INFO root fetch - processPackages [dfeed]: executing diffoscope
+[2023-04-14 08:46:16] INFO root fetch - processPackages [dfeed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfeed-0.0.2.tar.gz tmp/dfeed-0.0b1.tar.gz --markdown 20230414/d/dfeed/0.0.2-0.0b1/diff.md --exclude *.pyd
+[2023-04-14 08:46:16] INFO root fetch - processPackages [pipen-log2file]: executing diffoscope
+[2023-04-14 08:46:16] INFO root fetch - processPackages [pipen-log2file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_log2file-0.1.0.tar.gz tmp/pipen_log2file-0.2.1.tar.gz --markdown 20230414/p/pipen-log2file/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 08:46:16] INFO root fetch - processPackages [alibabacloud-gateway-pds-py2]: Downloading https://files.pythonhosted.org/packages/4a/18/bf889fa514f77e2dd0f862248e234d6891489b085d8915e2e7785cb333bd/alibabacloud_gateway_pds_py2-0.0.6.tar.gz
+[2023-04-14 08:46:16] INFO root fetch - processPackages [alibabacloud-gateway-pds]: Downloading https://files.pythonhosted.org/packages/b8/fb/f5d76eac15f23746fb7a8f2e25a0cf511dbd3962859ecdc6c047c7b36b31/alibabacloud_gateway_pds-0.0.6.tar.gz
+[2023-04-14 08:46:16] INFO root fetch - processPackages [docrawl]: Downloading https://files.pythonhosted.org/packages/1d/8a/68a99cc882c623ced815452ca5e95d0054da0ca6cbdbb2d5f3a411cedae8/docrawl-0.4.4.tar.gz
+[2023-04-14 08:46:16] INFO root fetch - processPackages [alibabacloud-gateway-pds-py2]: executing diffoscope
+[2023-04-14 08:46:16] INFO root fetch - processPackages [alibabacloud-gateway-pds-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_gateway_pds_py2-0.0.5.tar.gz tmp/alibabacloud_gateway_pds_py2-0.0.6.tar.gz --markdown 20230414/a/alibabacloud-gateway-pds-py2/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 08:46:16] INFO root fetch - processPackages [alibabacloud-gateway-pds]: executing diffoscope
+[2023-04-14 08:46:16] INFO root fetch - processPackages [alibabacloud-gateway-pds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_gateway_pds-0.0.5.tar.gz tmp/alibabacloud_gateway_pds-0.0.6.tar.gz --markdown 20230414/a/alibabacloud-gateway-pds/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 08:46:16] INFO root fetch - processPackages [docrawl]: executing diffoscope
+[2023-04-14 08:46:16] INFO root fetch - processPackages [docrawl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docrawl-0.4.3.tar.gz tmp/docrawl-0.4.4.tar.gz --markdown 20230414/d/docrawl/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-14 08:46:17] INFO root fetch - processPackages [pipen-log2file]: Start processing: hydromt
+[2023-04-14 08:46:17] INFO root fetch - main [MainThread]: End processing [pipen-log2file]: success
+[2023-04-14 08:46:17] INFO root fetch - processPackages [hydromt]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-14 08:46:17] INFO root fetch - processPackages [dfeed]: Start processing: py-yettagam
+[2023-04-14 08:46:17] INFO root fetch - main [MainThread]: End processing [dfeed]: success
+[2023-04-14 08:46:17] INFO root fetch - processPackages [py-yettagam]: New version: [0.0.2.9] Old Version: [0.0.2.8]
+[2023-04-14 08:46:17] INFO root fetch - processPackages [alibabacloud-gateway-pds-py2]: Start processing: blockapi
+[2023-04-14 08:46:17] INFO root fetch - main [MainThread]: End processing [alibabacloud-gateway-pds-py2]: success
+[2023-04-14 08:46:17] INFO root fetch - processPackages [blockapi]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-14 08:46:17] INFO root fetch - processPackages [py-yettagam]: executing diffoscope
+[2023-04-14 08:46:17] INFO root fetch - processPackages [py-yettagam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_yettagam-0.0.2.8.tar.gz tmp/py_yettagam-0.0.2.9.tar.gz --markdown 20230414/p/py-yettagam/0.0.2.8-0.0.2.9/diff.md --exclude *.pyd
+[2023-04-14 08:46:17] INFO root fetch - processPackages [hydromt]: Downloading https://files.pythonhosted.org/packages/fc/c6/21093e43c09518839d8d83b215d71b5fcd474971470a77933989bf442a56/hydromt-0.7.0.tar.gz
+[2023-04-14 08:46:17] INFO root fetch - processPackages [blockapi]: executing diffoscope
+[2023-04-14 08:46:17] INFO root fetch - processPackages [blockapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockapi-0.8.1.tar.gz tmp/blockapi-0.9.0.tar.gz --markdown 20230414/b/blockapi/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-14 08:46:17] INFO root fetch - processPackages [alibabacloud-gateway-pds]: Start processing: dark-emulator
+[2023-04-14 08:46:17] INFO root fetch - main [MainThread]: End processing [alibabacloud-gateway-pds]: success
+[2023-04-14 08:46:18] INFO root fetch - processPackages [dark-emulator]: New version: [1.1.1] Old Version: [1.0.23]
+[2023-04-14 08:46:18] INFO root fetch - processPackages [dark-emulator]: Downloading https://files.pythonhosted.org/packages/08/2f/e79bdb130e49f6d86fc5c324284855041992bfd3757e12641fadc90e7562/dark_emulator-1.0.23.tar.gz
+[2023-04-14 08:46:18] INFO root fetch - processPackages [hydromt]: Downloading https://files.pythonhosted.org/packages/a5/67/4b7da2b7cb2f8f59af8028bee29c80591a661deab5cedc5de4584a4b4caf/hydromt-0.7.1.tar.gz
+[2023-04-14 08:46:18] INFO root fetch - processPackages [hydromt]: executing diffoscope
+[2023-04-14 08:46:18] INFO root fetch - processPackages [hydromt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydromt-0.7.0.tar.gz tmp/hydromt-0.7.1.tar.gz --markdown 20230414/h/hydromt/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-14 08:46:18] INFO root fetch - processPackages [dark-emulator]: Downloading https://files.pythonhosted.org/packages/82/70/42ccca41f7da9e0ffe7edf0027a20cd89ef6168ebc4222cde43c09561baa/dark_emulator-1.1.1.tar.gz
+[2023-04-14 08:46:18] INFO root fetch - processPackages [dark-emulator]: executing diffoscope
+[2023-04-14 08:46:18] INFO root fetch - processPackages [dark-emulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dark_emulator-1.0.23.tar.gz tmp/dark_emulator-1.1.1.tar.gz --markdown 20230414/d/dark-emulator/1.0.23-1.1.1/diff.md --exclude *.pyd
+[2023-04-14 08:46:18] INFO root fetch - processPackages [py-yettagam]: Start processing: odoo-addon-module-auto-update
+[2023-04-14 08:46:18] INFO root fetch - main [MainThread]: End processing [py-yettagam]: success
+[2023-04-14 08:46:18] INFO root fetch - processPackages [odoo-addon-module-auto-update]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-14 08:46:19] INFO root fetch - processPackages [odoo-addon-module-auto-update]: Downloading https://files.pythonhosted.org/packages/a7/24/883397d23eac4196a28ec23d192e19efb0955756f9db22ebf09b20281d75/odoo_addon_module_auto_update-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-14 08:46:19] INFO root fetch - processPackages [odoo-addon-module-auto-update]: executing diffoscope
+[2023-04-14 08:46:19] INFO root fetch - processPackages [odoo-addon-module-auto-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_module_auto_update-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_module_auto_update-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230414/o/odoo-addon-module-auto-update/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-14 08:46:20] INFO root fetch - processPackages [odoo-addon-module-auto-update]: Start processing: odoo-addons-oca-server-tools
+[2023-04-14 08:46:20] INFO root fetch - main [MainThread]: End processing [odoo-addon-module-auto-update]: success
+[2023-04-14 08:46:20] INFO root fetch - processPackages [odoo-addons-oca-server-tools]: New version: [16.0.20230413.0] Old Version: [16.0.20230302.1]
+[2023-04-14 08:46:20] INFO root fetch - processPackages [odoo-addons-oca-server-tools]: Downloading https://files.pythonhosted.org/packages/51/27/965af4f777e37d2e9ec254ec7aee9ba7cd24a7db27cb24304f73b694ffec/odoo_addons_oca_server_tools-16.0.20230302.1-py3-none-any.whl
+[2023-04-14 08:46:21] INFO root fetch - processPackages [odoo-addons-oca-server-tools]: Downloading https://files.pythonhosted.org/packages/00/e1/72f5a0d5bcad400f1988bb2a8232857398830fe85045506c0c6c3d1978a1/odoo_addons_oca_server_tools-16.0.20230413.0-py3-none-any.whl
+[2023-04-14 08:46:21] INFO root fetch - processPackages [odoo-addons-oca-server-tools]: executing diffoscope
+[2023-04-14 08:46:21] INFO root fetch - processPackages [odoo-addons-oca-server-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_server_tools-16.0.20230302.1-py3-none-any.whl.zip tmp/odoo_addons_oca_server_tools-16.0.20230413.0-py3-none-any.whl.zip --markdown 20230414/o/odoo-addons-oca-server-tools/16.0.20230302.1-16.0.20230413.0/diff.md --exclude *.pyd
+[2023-04-14 08:46:21] INFO root fetch - processPackages [blockapi]: Start processing: bk-resource
+[2023-04-14 08:46:21] INFO root fetch - main [MainThread]: End processing [blockapi]: success
+[2023-04-14 08:46:21] WARNING root fetch - processPackages [bk-resource]: Skipping, unable to determine old version
+[2023-04-14 08:46:21] INFO root fetch - processPackages [bk-resource]: Start processing: fastapi-oracle
+[2023-04-14 08:46:21] INFO root fetch - main [MainThread]: End processing [bk-resource] error
+[2023-04-14 08:46:21] INFO root fetch - processPackages [fastapi-oracle]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-14 08:46:21] INFO root fetch - processPackages [hydromt]: Start processing: MicroLIA
+[2023-04-14 08:46:21] INFO root fetch - main [MainThread]: End processing [hydromt]: success
+[2023-04-14 08:46:21] INFO root fetch - processPackages [MicroLIA]: New version: [2.0.5] Old Version: [2.0.1]
+[2023-04-14 08:46:21] INFO root fetch - processPackages [MicroLIA]: Downloading https://files.pythonhosted.org/packages/01/92/b6c4c5f5599c6af444ed2b53c4bbc644deb20fc470a743497e99eadf7e44/MicroLIA-2.0.1.tar.gz
+[2023-04-14 08:46:21] INFO root fetch - processPackages [fastapi-oracle]: Downloading https://files.pythonhosted.org/packages/f7/17/d2d3d83ce83f38907d5b293723b4f4ad3fac9b07291123442873e7c16e81/fastapi_oracle-0.7.0-py3-none-any.whl
+[2023-04-14 08:46:21] INFO root fetch - main [MainThread]: End processing [docrawl]: success
+[2023-04-14 08:46:21] INFO root fetch - main [MainThread]: End processing [dark-emulator]: success
+[2023-04-14 08:46:21] INFO root fetch - processPackages [fastapi-oracle]: executing diffoscope
+[2023-04-14 08:46:21] INFO root fetch - processPackages [fastapi-oracle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_oracle-0.6.1-py3-none-any.whl.zip tmp/fastapi_oracle-0.7.0-py3-none-any.whl.zip --markdown 20230414/f/fastapi-oracle/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-14 08:46:22] INFO root fetch - processPackages [MicroLIA]: Downloading https://files.pythonhosted.org/packages/39/d8/e8219d8cc0949ab8c00b6e615c1c6d7feb072bd562bedd4e873e9916713f/MicroLIA-2.0.5.tar.gz
+[2023-04-14 08:46:22] INFO root fetch - processPackages [MicroLIA]: executing diffoscope
+[2023-04-14 08:46:22] INFO root fetch - processPackages [MicroLIA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MicroLIA-2.0.1.tar.gz tmp/MicroLIA-2.0.5.tar.gz --markdown 20230414/M/MicroLIA/2.0.1-2.0.5/diff.md --exclude *.pyd
+[2023-04-14 08:46:22] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-server-tools]: success
+[2023-04-14 08:46:22] INFO root fetch - main [MainThread]: End processing [fastapi-oracle]: success
+[2023-04-14 08:46:24] INFO root fetch - main [MainThread]: End processing [MicroLIA]: success
+[2023-04-14 08:46:24] INFO root fetch - main [MainThread]: Store serial: [17703825]
