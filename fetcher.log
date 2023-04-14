@@ -21995,3 +21995,70 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-14 22:35:46] INFO root fetch - main [MainThread]: End processing [MGSurvE]: success
 [2023-04-14 22:35:47] INFO root fetch - main [MainThread]: End processing [bashparser]: success
 [2023-04-14 22:35:47] INFO root fetch - main [MainThread]: Store serial: [17712696]
+[2023-04-14 22:40:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17712696]
+[2023-04-14 22:40:54] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-14 22:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xGPR
+[2023-04-14 22:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-core
+[2023-04-14 22:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: helpers-mbk
+[2023-04-14 22:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellworld
+[2023-04-14 22:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: frasa
+[2023-04-14 22:40:54] INFO root fetch - processPackages [ovos-core]: New version: [0.0.8a4] Old Version: [0.0.8a3]
+[2023-04-14 22:40:54] INFO root fetch - processPackages [xGPR]: New version: [0.1.0.5] Old Version: [0.1.0.4]
+[2023-04-14 22:40:54] INFO root fetch - processPackages [cellworld]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 22:40:54] INFO root fetch - processPackages [helpers-mbk]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 22:40:54] WARNING root fetch - processPackages [frasa]: Skipping, unable to determine old version
+[2023-04-14 22:40:54] INFO root fetch - processPackages [frasa]: Start processing: returnn
+[2023-04-14 22:40:54] INFO root fetch - main [MainThread]: End processing [frasa] error
+[2023-04-14 22:40:54] INFO root fetch - processPackages [returnn]: New version: [1.20230414.222530] Old Version: [1.20230414.114902]
+[2023-04-14 22:40:54] INFO root fetch - processPackages [cellworld]: executing diffoscope
+[2023-04-14 22:40:54] INFO root fetch - processPackages [cellworld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellworld-0.0.98.tar.gz tmp/cellworld-0.0.99.tar.gz --markdown 20230414/c/cellworld/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 22:40:54] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/6a/d8/867468a9e10f57d6a6c2b7b0b32370298bc19e08181bd378409533e28ae0/returnn-1.20230414.222530.tar.gz
+[2023-04-14 22:40:54] INFO root fetch - processPackages [xGPR]: Downloading https://files.pythonhosted.org/packages/04/60/e9e25387c3a52a4ad2863ee3b468da65ee70fe7d0369e95cfc3c2a3b9509/xGPR-0.1.0.5.tar.gz
+[2023-04-14 22:40:55] INFO root fetch - processPackages [helpers-mbk]: Downloading https://files.pythonhosted.org/packages/56/b0/879dc3641f2a7911a991f4a0b7248e3fbae9ec5ef6647bbb118072f39372/helpers-mbk-1.0.1.tar.gz
+[2023-04-14 22:40:55] INFO root fetch - processPackages [ovos-core]: Downloading https://files.pythonhosted.org/packages/0a/31/c823c566c61ff8fe2f003f4bf377c3fce9d9e3c3bd97f5ec9471f1d9d6ae/ovos_core-0.0.8a4-py3-none-any.whl
+[2023-04-14 22:40:55] INFO root fetch - processPackages [xGPR]: executing diffoscope
+[2023-04-14 22:40:55] INFO root fetch - processPackages [xGPR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xGPR-0.1.0.4.tar.gz tmp/xGPR-0.1.0.5.tar.gz --markdown 20230414/x/xGPR/0.1.0.4-0.1.0.5/diff.md --exclude *.pyd
+[2023-04-14 22:40:55] INFO root fetch - processPackages [helpers-mbk]: executing diffoscope
+[2023-04-14 22:40:55] INFO root fetch - processPackages [helpers-mbk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helpers-mbk-1.0.0.tar.gz tmp/helpers-mbk-1.0.1.tar.gz --markdown 20230414/h/helpers-mbk/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 22:40:55] INFO root fetch - processPackages [ovos-core]: executing diffoscope
+[2023-04-14 22:40:55] INFO root fetch - processPackages [ovos-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_core-0.0.8a3-py3-none-any.whl.zip tmp/ovos_core-0.0.8a4-py3-none-any.whl.zip --markdown 20230414/o/ovos-core/0.0.8a3-0.0.8a4/diff.md --exclude *.pyd
+[2023-04-14 22:40:55] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-14 22:40:55] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230414.114902.tar.gz tmp/returnn-1.20230414.222530.tar.gz --markdown 20230414/r/returnn/1.20230414.114902-1.20230414.222530/diff.md --exclude *.pyd
+[2023-04-14 22:40:56] INFO root fetch - processPackages [cellworld]: Start processing: little-helpers
+[2023-04-14 22:40:56] INFO root fetch - main [MainThread]: End processing [cellworld]: success
+[2023-04-14 22:40:56] INFO root fetch - processPackages [little-helpers]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-14 22:40:56] INFO root fetch - processPackages [little-helpers]: Downloading https://files.pythonhosted.org/packages/10/a9/6a3e78575ef29877c12e42170ec5021045e1a6496138de1f61bb395b868f/little_helpers-0.0.5.tar.gz
+[2023-04-14 22:40:56] INFO root fetch - processPackages [helpers-mbk]: Start processing: shinyswatch
+[2023-04-14 22:40:56] INFO root fetch - main [MainThread]: End processing [helpers-mbk]: success
+[2023-04-14 22:40:56] INFO root fetch - processPackages [shinyswatch]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-14 22:40:56] INFO root fetch - processPackages [little-helpers]: Downloading https://files.pythonhosted.org/packages/4f/6c/c8515d5e33667f64ef11af5fbc891636432548580c529ca21e736190b18a/little_helpers-0.0.6.tar.gz
+[2023-04-14 22:40:56] INFO root fetch - processPackages [shinyswatch]: Downloading https://files.pythonhosted.org/packages/3a/43/ba3057005a94947121bdc7be79540a2b8fcbf84834a244b92ac0f2f584df/shinyswatch-0.2.0.tar.gz
+[2023-04-14 22:40:56] INFO root fetch - processPackages [little-helpers]: executing diffoscope
+[2023-04-14 22:40:56] INFO root fetch - processPackages [little-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/little_helpers-0.0.5.tar.gz tmp/little_helpers-0.0.6.tar.gz --markdown 20230414/l/little-helpers/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-14 22:40:56] INFO root fetch - processPackages [shinyswatch]: executing diffoscope
+[2023-04-14 22:40:56] INFO root fetch - processPackages [shinyswatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinyswatch-0.1.1.tar.gz tmp/shinyswatch-0.2.0.tar.gz --markdown 20230414/s/shinyswatch/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-14 22:40:56] INFO root fetch - processPackages [xGPR]: Start processing: chalkpy
+[2023-04-14 22:40:56] INFO root fetch - main [MainThread]: End processing [xGPR]: success
+[2023-04-14 22:40:56] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-14 22:40:57] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-14 22:40:57] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230414/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-14 22:40:57] INFO root fetch - processPackages [little-helpers]: Start processing: frasa
+[2023-04-14 22:40:57] INFO root fetch - main [MainThread]: End processing [little-helpers]: success
+[2023-04-14 22:40:57] INFO root fetch - processPackages [frasa]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-14 22:40:58] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/73/42/a3a44574ff650c7e90f1a5e6a2d4be802855b51c6dd140f5eb1458c67f5d/frasa-0.0.2.tar.gz
+[2023-04-14 22:40:58] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/a4/f8/e8b4f1a4d965612b065d3099a202364f76edc5995f2da5d6c48a13a740a5/frasa-0.0.3.tar.gz
+[2023-04-14 22:40:58] INFO root fetch - processPackages [frasa]: executing diffoscope
+[2023-04-14 22:40:58] INFO root fetch - processPackages [frasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frasa-0.0.2.tar.gz tmp/frasa-0.0.3.tar.gz --markdown 20230414/f/frasa/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-14 22:40:59] INFO root fetch - processPackages [frasa]: Start processing: obp
+[2023-04-14 22:40:59] INFO root fetch - main [MainThread]: End processing [frasa]: success
+[2023-04-14 22:41:00] INFO root fetch - processPackages [obp]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-04-14 22:41:00] INFO root fetch - processPackages [obp]: Downloading https://files.pythonhosted.org/packages/0f/97/91c5fb3e67664e018a45b0d7edd4c3e7e64e7702cbd7490ca08eac7bf035/obp-0.5.5.tar.gz
+[2023-04-14 22:41:00] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-14 22:41:00] INFO root fetch - processPackages [obp]: Downloading https://files.pythonhosted.org/packages/e1/aa/385750d334765a3d587fb99980508d44e8808f220498833acbca4e394c5b/obp-0.5.6.tar.gz
+[2023-04-14 22:41:01] INFO root fetch - processPackages [obp]: executing diffoscope
+[2023-04-14 22:41:01] INFO root fetch - processPackages [obp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obp-0.5.5.tar.gz tmp/obp-0.5.6.tar.gz --markdown 20230414/o/obp/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-04-14 22:41:01] INFO root fetch - main [MainThread]: End processing [shinyswatch]: success
+[2023-04-14 22:41:03] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-04-14 22:41:03] INFO root fetch - main [MainThread]: End processing [obp]: success
+[2023-04-14 22:41:06] INFO root fetch - main [MainThread]: End processing [ovos-core]: success
+[2023-04-14 22:41:06] INFO root fetch - main [MainThread]: Store serial: [17712730]
