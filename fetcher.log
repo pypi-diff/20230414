@@ -7036,3 +7036,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 06:20:08] INFO root fetch - main [MainThread]: End processing [stability-sdk]: success
 [2023-04-14 06:20:10] INFO root fetch - main [MainThread]: End processing [favicons]: success
 [2023-04-14 06:20:10] INFO root fetch - main [MainThread]: Store serial: [17703119]
+[2023-04-14 06:25:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703119]
+[2023-04-14 06:25:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-14 06:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: d2lapi
+[2023-04-14 06:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quickstart-vdk
+[2023-04-14 06:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coiled
+[2023-04-14 06:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arcana-bids
+[2023-04-14 06:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: YOLOLogic
+[2023-04-14 06:25:18] WARNING root fetch - processPackages [d2lapi]: Skipping, unable to determine old version
+[2023-04-14 06:25:18] INFO root fetch - main [MainThread]: End processing [d2lapi] error
+[2023-04-14 06:25:18] WARNING root fetch - processPackages [YOLOLogic]: Skipping, unable to determine old version
+[2023-04-14 06:25:18] INFO root fetch - main [MainThread]: End processing [YOLOLogic] error
+[2023-04-14 06:25:18] INFO root fetch - processPackages [arcana-bids]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-14 06:25:18] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.836982976.dev9245] Old Version: [0.2.835757538.dev9183]
+[2023-04-14 06:25:18] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-14 06:25:18] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-14 06:25:18] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230414/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-14 06:25:18] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/a1/b2/43648c754393a3481e82ba9b89cff736706811f443713c5fa8b0b5069ba6/quickstart-vdk-0.2.836982976.dev9245.tar.gz
+[2023-04-14 06:25:18] INFO root fetch - processPackages [arcana-bids]: Downloading https://files.pythonhosted.org/packages/71/98/76ff7a83b391f529e2614a59404d0e0efc1992336603e3f303a367fbd3e4/arcana_bids-0.2.4.tar.gz
+[2023-04-14 06:25:18] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-04-14 06:25:18] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.835757538.dev9183.tar.gz tmp/quickstart-vdk-0.2.836982976.dev9245.tar.gz --markdown 20230414/q/quickstart-vdk/0.2.835757538.dev9183-0.2.836982976.dev9245/diff.md --exclude *.pyd
+[2023-04-14 06:25:18] INFO root fetch - processPackages [arcana-bids]: executing diffoscope
+[2023-04-14 06:25:18] INFO root fetch - processPackages [arcana-bids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcana_bids-0.2.3.tar.gz tmp/arcana_bids-0.2.4.tar.gz --markdown 20230414/a/arcana-bids/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-14 06:25:19] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-04-14 06:25:19] INFO root fetch - main [MainThread]: End processing [arcana-bids]: success
+[2023-04-14 06:25:21] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-14 06:25:21] INFO root fetch - main [MainThread]: Store serial: [17703136]
