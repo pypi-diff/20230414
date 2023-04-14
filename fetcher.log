@@ -8459,3 +8459,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-14 09:13:37] INFO root fetch - main [MainThread]: End processing [orpy]: success
 [2023-04-14 09:13:48] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-04-14 09:13:48] INFO root fetch - main [MainThread]: Store serial: [17703962]
+[2023-04-14 09:18:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17703962]
+[2023-04-14 09:18:57] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 09:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: octogaming-apiist
+[2023-04-14 09:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yyxx-game-pkg
+[2023-04-14 09:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfq-nightly
+[2023-04-14 09:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imio.smartweb.core
+[2023-04-14 09:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: katalytic-files
+[2023-04-14 09:18:57] INFO root fetch - processPackages [octogaming-apiist]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-14 09:18:57] INFO root fetch - processPackages [yyxx-game-pkg]: New version: [2023.4.7.1] Old Version: [2023.4.4.1]
+[2023-04-14 09:18:57] INFO root fetch - processPackages [katalytic-files]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-14 09:18:57] INFO root fetch - processPackages [imio.smartweb.core]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-14 09:18:57] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230413] Old Version: [0.7.3.dev20230412]
+[2023-04-14 09:18:57] INFO root fetch - processPackages [yyxx-game-pkg]: executing diffoscope
+[2023-04-14 09:18:57] INFO root fetch - processPackages [yyxx-game-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yyxx_game_pkg-2023.4.4.1.tar.gz tmp/yyxx_game_pkg-2023.4.7.1.tar.gz --markdown 20230414/y/yyxx-game-pkg/2023.4.4.1-2023.4.7.1/diff.md --exclude *.pyd
+[2023-04-14 09:18:57] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-14 09:18:57] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.3.8.tar.gz tmp/katalytic-files-0.3.9.tar.gz --markdown 20230414/k/katalytic-files/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-14 09:18:57] INFO root fetch - processPackages [octogaming-apiist]: Downloading https://files.pythonhosted.org/packages/9a/eb/38c16f0669d318897bddcca2dc1ec910798d10ee25ff3dc48c65243fcf44/octogaming-apiist-1.0.0.tar.gz
+[2023-04-14 09:18:57] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/ec/33/5fd42526ea25e91349d56560d059e463cd7c25841bb9cf04b5f2918e8a48/tfq_nightly-0.7.3.dev20230412-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-14 09:18:57] INFO root fetch - processPackages [imio.smartweb.core]: Downloading https://files.pythonhosted.org/packages/39/01/1ae2ef4e6028f2c52dd5a3806f86711119ccb76425e1d8277c4247f19feb/imio.smartweb.core-1.1.8.tar.gz
+[2023-04-14 09:18:57] INFO root fetch - processPackages [octogaming-apiist]: Downloading https://files.pythonhosted.org/packages/40/7a/d1a9bbc193fe1b4141b91c9a077f0906dc40080b49b76c6d0db7d457d926/octogaming-apiist-1.0.1.tar.gz
+[2023-04-14 09:18:57] INFO root fetch - processPackages [octogaming-apiist]: executing diffoscope
+[2023-04-14 09:18:57] INFO root fetch - processPackages [octogaming-apiist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octogaming-apiist-1.0.0.tar.gz tmp/octogaming-apiist-1.0.1.tar.gz --markdown 20230414/o/octogaming-apiist/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-14 09:18:57] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819849>=10485760
+[2023-04-14 09:18:57] INFO root fetch - processPackages [tfq-nightly]: Start processing: hkkang-utils
+[2023-04-14 09:18:57] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-04-14 09:18:57] INFO root fetch - processPackages [hkkang-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-14 09:18:57] INFO root fetch - processPackages [imio.smartweb.core]: Downloading https://files.pythonhosted.org/packages/0f/a3/6cca5dd5885aab74c6eda6e55cfd18561b54b23359684f77ff3a38bf4be8/imio.smartweb.core-1.1.9.tar.gz
+[2023-04-14 09:18:58] INFO root fetch - processPackages [katalytic-files]: Start processing: django-webdav-ui
+[2023-04-14 09:18:58] INFO root fetch - main [MainThread]: End processing [katalytic-files]: success
+[2023-04-14 09:18:58] INFO root fetch - processPackages [imio.smartweb.core]: executing diffoscope
+[2023-04-14 09:18:58] INFO root fetch - processPackages [imio.smartweb.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imio.smartweb.core-1.1.8.tar.gz tmp/imio.smartweb.core-1.1.9.tar.gz --markdown 20230414/i/imio.smartweb.core/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-14 09:18:58] WARNING root fetch - processPackages [django-webdav-ui]: Skipping, unable to determine old version
+[2023-04-14 09:18:58] INFO root fetch - processPackages [django-webdav-ui]: Start processing: bmb-martlet-organization-client
+[2023-04-14 09:18:58] INFO root fetch - main [MainThread]: End processing [django-webdav-ui] error
+[2023-04-14 09:18:58] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-14 09:18:58] INFO root fetch - processPackages [hkkang-utils]: executing diffoscope
+[2023-04-14 09:18:58] INFO root fetch - processPackages [hkkang-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkkang_utils-0.1.8.tar.gz tmp/hkkang_utils-0.1.9.tar.gz --markdown 20230414/h/hkkang-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-14 09:18:58] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-04-14 09:18:58] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230414/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-14 09:18:58] INFO root fetch - processPackages [octogaming-apiist]: Start processing: imio.smartweb.common
+[2023-04-14 09:18:58] INFO root fetch - main [MainThread]: End processing [octogaming-apiist]: success
+[2023-04-14 09:18:58] INFO root fetch - processPackages [imio.smartweb.common]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-14 09:18:58] INFO root fetch - processPackages [imio.smartweb.common]: Downloading https://files.pythonhosted.org/packages/1b/7d/b621d3db614061332cafb9f9b81b939b28ab63f4d16cce2a83f81312f30d/imio.smartweb.common-1.1.5.tar.gz
+[2023-04-14 09:18:59] INFO root fetch - processPackages [imio.smartweb.common]: Downloading https://files.pythonhosted.org/packages/64/c2/8158254b0b0e5d18de5a743ebdeb1f107a0f9978c85f64fdc2ea8000783a/imio.smartweb.common-1.1.6.tar.gz
+[2023-04-14 09:18:59] INFO root fetch - processPackages [imio.smartweb.common]: executing diffoscope
+[2023-04-14 09:18:59] INFO root fetch - processPackages [imio.smartweb.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imio.smartweb.common-1.1.5.tar.gz tmp/imio.smartweb.common-1.1.6.tar.gz --markdown 20230414/i/imio.smartweb.common/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-14 09:18:59] INFO root fetch - processPackages [yyxx-game-pkg]: Start processing: yoctopuce
+[2023-04-14 09:18:59] INFO root fetch - main [MainThread]: End processing [yyxx-game-pkg]: success
+[2023-04-14 09:18:59] INFO root fetch - processPackages [yoctopuce]: New version: [1.10.54037] Old Version: [1.10.53532]
+[2023-04-14 09:18:59] INFO root fetch - main [MainThread]: End processing [hkkang-utils]: success
+[2023-04-14 09:18:59] INFO root fetch - processPackages [yoctopuce]: Downloading https://files.pythonhosted.org/packages/57/08/37c95cca118cf7f99c279709d8db8bc7c6cb713c7c9c85417bd679e26031/yoctopuce-1.10.53532.tar.gz
+[2023-04-14 09:18:59] INFO root fetch - processPackages [yoctopuce]: Downloading https://files.pythonhosted.org/packages/10/a1/3957be2753d38f42ce92a3dc4f5eae3b4edf515f0e0895868a061d203a9f/yoctopuce-1.10.54037.tar.gz
+[2023-04-14 09:18:59] INFO root fetch - processPackages [yoctopuce]: executing diffoscope
+[2023-04-14 09:18:59] INFO root fetch - processPackages [yoctopuce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoctopuce-1.10.53532.tar.gz tmp/yoctopuce-1.10.54037.tar.gz --markdown 20230414/y/yoctopuce/1.10.53532-1.10.54037/diff.md --exclude *.pyd
+[2023-04-14 09:19:00] INFO root fetch - main [MainThread]: End processing [imio.smartweb.common]: success
+[2023-04-14 09:19:02] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
+[2023-04-14 09:19:03] INFO root fetch - main [MainThread]: End processing [imio.smartweb.core]: success
+[2023-04-14 09:19:31] INFO root fetch - main [MainThread]: End processing [yoctopuce]: success
+[2023-04-14 09:19:31] INFO root fetch - main [MainThread]: Store serial: [17703993]
