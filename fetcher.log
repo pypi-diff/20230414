@@ -1451,3 +1451,60 @@
 [2023-04-14 02:03:13] INFO root fetch - main [MainThread]: End processing [tccli]: success
 [2023-04-14 02:03:14] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-04-14 02:03:14] INFO root fetch - main [MainThread]: Store serial: [17699861]
+[2023-04-14 02:08:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17699861]
+[2023-04-14 02:08:22] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-14 02:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchlayers-nightly
+[2023-04-14 02:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phoebusgen
+[2023-04-14 02:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openbb-nightly
+[2023-04-14 02:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-common
+[2023-04-14 02:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NEURON-nightly
+[2023-04-14 02:08:22] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc1.dev20230413] Old Version: [3.0.0rc1.dev20230411]
+[2023-04-14 02:08:22] INFO root fetch - processPackages [phoebusgen]: New version: [2.5.1] Old Version: [2.5]
+[2023-04-14 02:08:22] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-14 02:08:22] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-04-14 02:08:22] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc1.dev20230411.tar.gz tmp/openbb_nightly-3.0.0rc1.dev20230413.tar.gz --markdown 20230414/o/openbb-nightly/3.0.0rc1.dev20230411-3.0.0rc1.dev20230413/diff.md --exclude *.pyd
+[2023-04-14 02:08:22] INFO root fetch - processPackages [NEURON-nightly]: New version: [9.0.dev1330] Old Version: [9.0.dev1329]
+[2023-04-14 02:08:22] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1681430811] Old Version: [1681344396]
+[2023-04-14 02:08:22] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-04-14 02:08:22] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230414/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-14 02:08:23] INFO root fetch - processPackages [phoebusgen]: Downloading https://files.pythonhosted.org/packages/ce/85/2c4f51d40c6b2358031253d42e1dcd756dd2c9aa6b87574c87fd1cd080f1/phoebusgen-2.5.1.tar.gz
+[2023-04-14 02:08:23] INFO root fetch - processPackages [NEURON-nightly]: Downloading https://files.pythonhosted.org/packages/47/61/80ef789f5821dc3f01adb940d5379081928b538984da5159d48a402ccde2/NEURON_nightly-9.0.dev1329-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-14 02:08:23] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/7a/70/d484496fe6297690b9606934daae6baeca7b6253e5ac1aeffe51fa4ee2f0/torchlayers-nightly-1681344396.tar.gz
+[2023-04-14 02:08:23] INFO root fetch - processPackages [phoebusgen]: executing diffoscope
+[2023-04-14 02:08:23] INFO root fetch - processPackages [phoebusgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phoebusgen-2.5.tar.gz tmp/phoebusgen-2.5.1.tar.gz --markdown 20230414/p/phoebusgen/2.5-2.5.1/diff.md --exclude *.pyd
+[2023-04-14 02:08:23] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/3f/86/ea5e6bb3fa1c06e85405f917b977d3723bb2c364625fce89025b99c91f0c/torchlayers-nightly-1681430811.tar.gz
+[2023-04-14 02:08:23] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-04-14 02:08:23] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1681344396.tar.gz tmp/torchlayers-nightly-1681430811.tar.gz --markdown 20230414/t/torchlayers-nightly/1681344396-1681430811/diff.md --exclude *.pyd
+[2023-04-14 02:08:23] WARNING root fetch - processPackages [NEURON-nightly]: Skipping package: exceeds size limit 13186624>=10485760
+[2023-04-14 02:08:23] INFO root fetch - processPackages [NEURON-nightly]: Start processing: speakeasy-client-sdk-python
+[2023-04-14 02:08:23] INFO root fetch - main [MainThread]: End processing [NEURON-nightly] error
+[2023-04-14 02:08:23] INFO root fetch - processPackages [speakeasy-client-sdk-python]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-14 02:08:23] INFO root fetch - processPackages [speakeasy-client-sdk-python]: executing diffoscope
+[2023-04-14 02:08:23] INFO root fetch - processPackages [speakeasy-client-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speakeasy-client-sdk-python-1.9.0.tar.gz tmp/speakeasy-client-sdk-python-1.9.1.tar.gz --markdown 20230414/s/speakeasy-client-sdk-python/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-14 02:08:24] INFO root fetch - processPackages [phoebusgen]: Start processing: constructs
+[2023-04-14 02:08:24] INFO root fetch - main [MainThread]: End processing [phoebusgen]: success
+[2023-04-14 02:08:24] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-04-14 02:08:24] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-04-14 02:08:24] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230414/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-04-14 02:08:24] INFO root fetch - processPackages [torchlayers-nightly]: Start processing: EmailEctractor
+[2023-04-14 02:08:24] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-04-14 02:08:24] INFO root fetch - processPackages [EmailEctractor]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-14 02:08:24] INFO root fetch - processPackages [EmailEctractor]: Downloading https://files.pythonhosted.org/packages/72/96/d1fdf71ebf717a0b4af471bd80b66947f9e1c4178e48abc229d9d78d80f2/EmailEctractor-0.2.1.tar.gz
+[2023-04-14 02:08:24] INFO root fetch - processPackages [EmailEctractor]: executing diffoscope
+[2023-04-14 02:08:24] INFO root fetch - processPackages [EmailEctractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EmailEctractor-0.2.0.tar.gz tmp/EmailEctractor-0.2.1.tar.gz --markdown 20230414/E/EmailEctractor/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-14 02:08:25] INFO root fetch - processPackages [speakeasy-client-sdk-python]: Start processing: cdk-aws-discord-notifiers
+[2023-04-14 02:08:25] INFO root fetch - main [MainThread]: End processing [speakeasy-client-sdk-python]: success
+[2023-04-14 02:08:25] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-14 02:08:25] INFO root fetch - processPackages [constructs]: Start processing: pepperize.cdk-github
+[2023-04-14 02:08:25] INFO root fetch - main [MainThread]: End processing [constructs]: success
+[2023-04-14 02:08:25] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-04-14 02:08:25] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230414/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-14 02:08:25] INFO root fetch - processPackages [pepperize.cdk-github]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-14 02:08:25] INFO root fetch - processPackages [pepperize.cdk-github]: executing diffoscope
+[2023-04-14 02:08:25] INFO root fetch - processPackages [pepperize.cdk-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-github-0.0.98.tar.gz tmp/pepperize.cdk-github-0.0.99.tar.gz --markdown 20230414/p/pepperize.cdk-github/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-14 02:08:25] INFO root fetch - main [MainThread]: End processing [EmailEctractor]: success
+[2023-04-14 02:08:26] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-04-14 02:08:26] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-github]: success
+[2023-04-14 02:08:27] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-04-14 02:08:39] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-04-14 02:08:39] INFO root fetch - main [MainThread]: Store serial: [17699894]
