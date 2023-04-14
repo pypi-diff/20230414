@@ -15492,3 +15492,104 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-14 16:25:11] INFO root fetch - main [MainThread]: End processing [pyodbc]: success
 [2023-04-14 16:25:11] INFO root fetch - main [MainThread]: End processing [newick-tree-builder]: success
 [2023-04-14 16:25:11] INFO root fetch - main [MainThread]: Store serial: [17708390]
+[2023-04-14 16:30:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17708390]
+[2023-04-14 16:30:19] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-14 16:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gamma-pytools
+[2023-04-14 16:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-master
+[2023-04-14 16:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arelle-release
+[2023-04-14 16:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lbt-recipes
+[2023-04-14 16:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rul-datasets
+[2023-04-14 16:30:19] INFO root fetch - processPackages [gamma-pytools]: New version: [2.1rc2] Old Version: [2.1rc1]
+[2023-04-14 16:30:19] INFO root fetch - processPackages [rul-datasets]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 16:30:19] INFO root fetch - processPackages [arelle-release]: New version: [2.6.0] Old Version: [2.5.8]
+[2023-04-14 16:30:19] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230414.9.39.372046] Old Version: [20230414.14.29.277981]
+[2023-04-14 16:30:19] INFO root fetch - processPackages [lbt-recipes]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-14 16:30:19] INFO root fetch - processPackages [rul-datasets]: executing diffoscope
+[2023-04-14 16:30:19] INFO root fetch - processPackages [rul-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rul_datasets-0.9.0.tar.gz tmp/rul_datasets-0.9.1.tar.gz --markdown 20230414/r/rul-datasets/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 16:30:20] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/1b/e0/1e0ce05d7dcd950fbddf823e8a5c124c2422885bd2912aa8286002753aaf/certora-cli-alpha-master-20230414.14.29.277981.tar.gz
+[2023-04-14 16:30:20] INFO root fetch - processPackages [arelle-release]: Downloading https://files.pythonhosted.org/packages/c2/3e/07b2bd146ab0a6ac8083f5a7cad86eb1a43f2f68aca09d4abb6cf7a96575/arelle-release-2.5.8.tar.gz
+[2023-04-14 16:30:20] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38003638>=10485760
+[2023-04-14 16:30:20] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: finbourne-access-sdk
+[2023-04-14 16:30:20] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-14 16:30:20] INFO root fetch - processPackages [lbt-recipes]: Downloading https://files.pythonhosted.org/packages/69/f6/b4d9167d8390905370e4cb40cc23cf10ac640051293bc3158615d5b2a0cb/lbt-recipes-0.9.0.tar.gz
+[2023-04-14 16:30:20] INFO root fetch - processPackages [finbourne-access-sdk]: New version: [0.0.815] Old Version: [0.0.616]
+[2023-04-14 16:30:20] INFO root fetch - processPackages [finbourne-access-sdk]: executing diffoscope
+[2023-04-14 16:30:20] INFO root fetch - processPackages [finbourne-access-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-access-sdk-0.0.616.tar.gz tmp/finbourne-access-sdk-0.0.815.tar.gz --markdown 20230414/f/finbourne-access-sdk/0.0.616-0.0.815/diff.md --exclude *.pyd
+[2023-04-14 16:30:20] INFO root fetch - processPackages [gamma-pytools]: Downloading https://files.pythonhosted.org/packages/c9/e3/97cb7c779bc44f611f642959d072a603c54491ce568a41b4926fd9b67172/gamma-pytools-2.1rc2.tar.gz
+[2023-04-14 16:30:20] INFO root fetch - processPackages [gamma-pytools]: executing diffoscope
+[2023-04-14 16:30:20] INFO root fetch - processPackages [gamma-pytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gamma-pytools-2.1rc1.tar.gz tmp/gamma-pytools-2.1rc2.tar.gz --markdown 20230414/g/gamma-pytools/2.1rc1-2.1rc2/diff.md --exclude *.pyd
+[2023-04-14 16:30:20] INFO root fetch - processPackages [lbt-recipes]: Downloading https://files.pythonhosted.org/packages/35/60/e6ba2724f3fa325e0df5cfdb976d9de29cdbdc783aa4b490795b16c1228f/lbt-recipes-0.9.1.tar.gz
+[2023-04-14 16:30:21] INFO root fetch - processPackages [lbt-recipes]: executing diffoscope
+[2023-04-14 16:30:21] INFO root fetch - processPackages [lbt-recipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-recipes-0.9.0.tar.gz tmp/lbt-recipes-0.9.1.tar.gz --markdown 20230414/l/lbt-recipes/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-14 16:30:21] INFO root fetch - processPackages [rul-datasets]: Start processing: symbol-sdk-python
+[2023-04-14 16:30:21] INFO root fetch - main [MainThread]: End processing [rul-datasets]: success
+[2023-04-14 16:30:21] INFO root fetch - processPackages [symbol-sdk-python]: New version: [3.0.6] Old Version: [3.0.5]
+[2023-04-14 16:30:21] INFO root fetch - processPackages [symbol-sdk-python]: Downloading https://files.pythonhosted.org/packages/c1/1c/70647c36ba73e4fbd2def23774a8edb079058277fb8ec12f7e9d776eb8f1/symbol-sdk-python-3.0.6.tar.gz
+[2023-04-14 16:30:21] INFO root fetch - processPackages [symbol-sdk-python]: executing diffoscope
+[2023-04-14 16:30:21] INFO root fetch - processPackages [symbol-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbol-sdk-python-3.0.5.tar.gz tmp/symbol-sdk-python-3.0.6.tar.gz --markdown 20230414/s/symbol-sdk-python/3.0.5-3.0.6/diff.md --exclude *.pyd
+[2023-04-14 16:30:21] INFO root fetch - processPackages [arelle-release]: Downloading https://files.pythonhosted.org/packages/fc/3c/30f36ad2feaf525649d70deef114c416a329c06a59269a67768949a0e287/arelle-release-2.6.0.tar.gz
+[2023-04-14 16:30:21] INFO root fetch - processPackages [arelle-release]: executing diffoscope
+[2023-04-14 16:30:21] INFO root fetch - processPackages [arelle-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arelle-release-2.5.8.tar.gz tmp/arelle-release-2.6.0.tar.gz --markdown 20230414/a/arelle-release/2.5.8-2.6.0/diff.md --exclude *.pyd
+[2023-04-14 16:30:22] INFO root fetch - processPackages [gamma-pytools]: Start processing: rbx
+[2023-04-14 16:30:22] INFO root fetch - main [MainThread]: End processing [gamma-pytools]: success
+[2023-04-14 16:30:22] INFO root fetch - processPackages [rbx]: New version: [3.0.3.dev20] Old Version: [3.0.3.dev18]
+[2023-04-14 16:30:22] INFO root fetch - processPackages [finbourne-access-sdk]: Start processing: dbt-iris
+[2023-04-14 16:30:22] INFO root fetch - main [MainThread]: End processing [finbourne-access-sdk]: success
+[2023-04-14 16:30:22] INFO root fetch - processPackages [dbt-iris]: New version: [1.3.2b3] Old Version: [1.3.2b2]
+[2023-04-14 16:30:22] INFO root fetch - processPackages [rbx]: Downloading https://files.pythonhosted.org/packages/24/de/f90bbc5612e716eac244f12f405540731f46ad8fea1aa3e9a1be5d46e19c/rbx-3.0.3.dev18.tar.gz
+[2023-04-14 16:30:22] INFO root fetch - processPackages [lbt-recipes]: Start processing: roboflow
+[2023-04-14 16:30:22] INFO root fetch - main [MainThread]: End processing [lbt-recipes]: success
+[2023-04-14 16:30:22] INFO root fetch - processPackages [roboflow]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-14 16:30:22] INFO root fetch - processPackages [dbt-iris]: Downloading https://files.pythonhosted.org/packages/2e/32/ab00b43e47ccdad95ce6d51293cf02415fb584adeb1de899f8be9e637faf/dbt-iris-1.3.2b2.tar.gz
+[2023-04-14 16:30:22] INFO root fetch - processPackages [rbx]: Downloading https://files.pythonhosted.org/packages/fa/1a/eefe6de89ea9a456c6b909f3a6f2127076e61bbf21128b8bf46ede1ac00f/rbx-3.0.3.dev20.tar.gz
+[2023-04-14 16:30:22] INFO root fetch - processPackages [rbx]: executing diffoscope
+[2023-04-14 16:30:22] INFO root fetch - processPackages [rbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rbx-3.0.3.dev18.tar.gz tmp/rbx-3.0.3.dev20.tar.gz --markdown 20230414/r/rbx/3.0.3.dev18-3.0.3.dev20/diff.md --exclude *.pyd
+[2023-04-14 16:30:22] INFO root fetch - processPackages [symbol-sdk-python]: Start processing: dataquality
+[2023-04-14 16:30:22] INFO root fetch - main [MainThread]: End processing [symbol-sdk-python]: success
+[2023-04-14 16:30:22] INFO root fetch - processPackages [dataquality]: New version: [0.8.9] Old Version: [0.8.8a0]
+[2023-04-14 16:30:22] INFO root fetch - processPackages [roboflow]: Downloading https://files.pythonhosted.org/packages/94/57/49568a9c853c65f148b2707bbde59f492ea1f597a91f70f0c7544335f8e4/roboflow-1.0.4.tar.gz
+[2023-04-14 16:30:22] INFO root fetch - processPackages [roboflow]: executing diffoscope
+[2023-04-14 16:30:22] INFO root fetch - processPackages [roboflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboflow-1.0.3.tar.gz tmp/roboflow-1.0.4.tar.gz --markdown 20230414/r/roboflow/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-14 16:30:22] INFO root fetch - processPackages [dbt-iris]: Downloading https://files.pythonhosted.org/packages/84/3d/0030b3b0fc3fda2316afcc363bc2147bb5fe50dd42205c9d859383098a31/dbt-iris-1.3.2b3.tar.gz
+[2023-04-14 16:30:22] INFO root fetch - processPackages [dataquality]: executing diffoscope
+[2023-04-14 16:30:22] INFO root fetch - processPackages [dataquality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataquality-0.8.8a0.tar.gz tmp/dataquality-0.8.9.tar.gz --markdown 20230414/d/dataquality/0.8.8a0-0.8.9/diff.md --exclude *.pyd
+[2023-04-14 16:30:23] INFO root fetch - processPackages [dbt-iris]: executing diffoscope
+[2023-04-14 16:30:23] INFO root fetch - processPackages [dbt-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-iris-1.3.2b2.tar.gz tmp/dbt-iris-1.3.2b3.tar.gz --markdown 20230414/d/dbt-iris/1.3.2b2-1.3.2b3/diff.md --exclude *.pyd
+[2023-04-14 16:30:24] INFO root fetch - processPackages [rbx]: Start processing: xpag
+[2023-04-14 16:30:24] INFO root fetch - main [MainThread]: End processing [rbx]: success
+[2023-04-14 16:30:24] INFO root fetch - processPackages [xpag]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-14 16:30:24] INFO root fetch - processPackages [roboflow]: Start processing: sparrow-python
+[2023-04-14 16:30:24] INFO root fetch - main [MainThread]: End processing [roboflow]: success
+[2023-04-14 16:30:24] INFO root fetch - processPackages [sparrow-python]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-04-14 16:30:24] INFO root fetch - processPackages [xpag]: Downloading https://files.pythonhosted.org/packages/56/19/192a1baac5c6d71f23387080b0d6a63c448e1e03bb87165f366697e28989/xpag-0.1.5-py3-none-any.whl
+[2023-04-14 16:30:24] INFO root fetch - processPackages [xpag]: Downloading https://files.pythonhosted.org/packages/28/19/1ecd25e3f4df4e0366c8be81fd550fb7fc52300115fe66c4dd34f218b0de/xpag-0.1.6-py3-none-any.whl
+[2023-04-14 16:30:24] INFO root fetch - processPackages [sparrow-python]: Downloading https://files.pythonhosted.org/packages/ae/36/90cbc6f6837fff9c1c240be7ea4914f47fa0326f97e850926eaedd4a2220/sparrow_python-0.0.8.tar.gz
+[2023-04-14 16:30:24] INFO root fetch - processPackages [xpag]: executing diffoscope
+[2023-04-14 16:30:24] INFO root fetch - processPackages [xpag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpag-0.1.5-py3-none-any.whl.zip tmp/xpag-0.1.6-py3-none-any.whl.zip --markdown 20230414/x/xpag/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-14 16:30:24] INFO root fetch - processPackages [dbt-iris]: Start processing: efel
+[2023-04-14 16:30:24] INFO root fetch - main [MainThread]: End processing [dbt-iris]: success
+[2023-04-14 16:30:24] INFO root fetch - processPackages [efel]: New version: [4.1.91] Old Version: [4.1.86]
+[2023-04-14 16:30:24] INFO root fetch - processPackages [dataquality]: Start processing: dxsp
+[2023-04-14 16:30:24] INFO root fetch - main [MainThread]: End processing [dataquality]: success
+[2023-04-14 16:30:24] INFO root fetch - processPackages [dxsp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-14 16:30:25] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-14 16:30:25] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.8.tar.gz tmp/dxsp-1.0.9.tar.gz --markdown 20230414/d/dxsp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-14 16:30:25] INFO root fetch - processPackages [efel]: Downloading https://files.pythonhosted.org/packages/b9/0d/c07b7b107f1a5fbb8f14925c7c490fc9ec8b276967ac660357407055d039/efel-4.1.91.tar.gz
+[2023-04-14 16:30:25] INFO root fetch - processPackages [efel]: executing diffoscope
+[2023-04-14 16:30:25] INFO root fetch - processPackages [efel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/efel-4.1.86.tar.gz tmp/efel-4.1.91.tar.gz --markdown 20230414/e/efel/4.1.86-4.1.91/diff.md --exclude *.pyd
+[2023-04-14 16:30:25] INFO root fetch - processPackages [sparrow-python]: Downloading https://files.pythonhosted.org/packages/84/7a/517ed7b6ce5f439e08908bc440cece1c4cf66dc114c931658378bd08f19b/sparrow_python-0.1.0.tar.gz
+[2023-04-14 16:30:25] INFO root fetch - processPackages [sparrow-python]: executing diffoscope
+[2023-04-14 16:30:25] INFO root fetch - processPackages [sparrow-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow_python-0.0.8.tar.gz tmp/sparrow_python-0.1.0.tar.gz --markdown 20230414/s/sparrow-python/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-04-14 16:30:25] INFO root fetch - processPackages [xpag]: Start processing: ubuntu-package-status
+[2023-04-14 16:30:25] INFO root fetch - main [MainThread]: End processing [xpag]: success
+[2023-04-14 16:30:26] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-14 16:30:26] INFO root fetch - processPackages [ubuntu-package-status]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-04-14 16:30:26] INFO root fetch - processPackages [ubuntu-package-status]: Downloading https://files.pythonhosted.org/packages/5a/f4/22e367d1dba2466fb4d531551bf5abd02eeb275d5ccf320f30c355c7c39b/ubuntu-package-status-0.0.7.tar.gz
+[2023-04-14 16:30:26] INFO root fetch - main [MainThread]: End processing [efel]: success
+[2023-04-14 16:30:26] INFO root fetch - processPackages [ubuntu-package-status]: Downloading https://files.pythonhosted.org/packages/a5/a8/a4dd68bb243431e81f559ef5240f05ba26ef6650f2b3bb39e51a7d27a001/ubuntu-package-status-0.1.0.tar.gz
+[2023-04-14 16:30:27] INFO root fetch - processPackages [ubuntu-package-status]: executing diffoscope
+[2023-04-14 16:30:27] INFO root fetch - processPackages [ubuntu-package-status]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230414:/home/abi/fetcher/20230414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubuntu-package-status-0.0.7.tar.gz tmp/ubuntu-package-status-0.1.0.tar.gz --markdown 20230414/u/ubuntu-package-status/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-04-14 16:30:27] INFO root fetch - main [MainThread]: End processing [sparrow-python]: success
+[2023-04-14 16:30:28] INFO root fetch - main [MainThread]: End processing [ubuntu-package-status]: success
+[2023-04-14 16:30:31] INFO root fetch - main [MainThread]: End processing [arelle-release]: success
+[2023-04-14 16:30:31] INFO root fetch - main [MainThread]: Store serial: [17708457]
